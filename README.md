@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/syncrypt-icon-1024.png" width="120" />
+</p>
+
 # lua-obfuscator-samples
 
 A continuously updated collection of real-world Lua obfuscator samples, automatically collected and categorized by obfuscator type and version.
