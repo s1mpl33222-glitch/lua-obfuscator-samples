@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/syncrypt-icon-1024.png" width="120" />
-</p>
-
 # lua-obfuscator-samples
 
 A continuously updated collection of real-world Lua obfuscator samples, automatically collected and categorized by obfuscator type and version.
@@ -76,3 +72,6 @@ Coverage expands as new obfuscators appear in the wild.
 The samples in this repository are third-party content — no license is granted over them by this repository.
 
 https://discord.gg/syncrypt
+<p align="center">
+  <img src="assets/syncrypt-icon-1024.png" width="120" />
+</p>
