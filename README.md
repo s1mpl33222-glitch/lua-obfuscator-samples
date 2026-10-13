@@ -9,7 +9,7 @@ A continuously updated collection of real-world Lua obfuscator samples, automati
 ```
 samples/
 ├── Luraph/
-│   ├── v14.7/
+│   ├── v14.x/
 │   └── v15.x/
 ├── MoonSec/
 ├── Moonveil/
