@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WenIix/MM2/refs/heads/main/primordial/script/Overdrive"))()
