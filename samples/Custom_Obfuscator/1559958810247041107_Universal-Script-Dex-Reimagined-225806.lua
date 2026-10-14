@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://github.com/undertalereal/DexReimagined/releases/latest/download/dex-reimagined.lua"))()
