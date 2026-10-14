@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://github.com/FusionWTF/Dex-Explorer/releases/download/Beta/out.lua"))()
