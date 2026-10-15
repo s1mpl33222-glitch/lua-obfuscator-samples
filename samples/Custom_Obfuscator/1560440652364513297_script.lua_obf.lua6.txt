@@ -1,0 +1,137 @@
+local _vFwJnpu=73
+local _dFwJnpu=0
+local function _yFwJnpu(_a,_b)
+local _o=0
+local _p=1
+for _j=1,8 do
+local _xb=_a%2
+local _yb=_b%2
+if _xb~=_yb then _o=_o+_p end
+_a=(_a-_xb)/2
+_b=(_b-_yb)/2
+_p=_p*2
+end
+return _o
+end
+local _kFwJnpua={}
+do local _r={127,187,25,164,127,175}
+for _i=1,#_r do _kFwJnpua[_i]=_yFwJnpu((_r[_i]+_vFwJnpu)%256,(_i*3)%256) end end
+local _kFwJnpub={}
+do local _r={99,38,36,215,193}
+for _i=1,#_r do _kFwJnpub[_i]=_yFwJnpu((_r[_i]+_vFwJnpu)%256,((_i+6)*3)%256) end end
+local _kFwJnpuc={}
+do local _r={169,114,38,168,185}
+for _i=1,#_r do _kFwJnpuc[_i]=_yFwJnpu((_r[_i]+_vFwJnpu)%256,((_i+11)*3)%256) end end
+local _kFwJnpu={}
+for _i=1,#_kFwJnpua do _kFwJnpu[# _kFwJnpu+1]=_kFwJnpua[_i] end
+for _i=1,#_kFwJnpub do _kFwJnpu[# _kFwJnpu+1]=_kFwJnpub[_i] end
+for _i=1,#_kFwJnpuc do _kFwJnpu[# _kFwJnpu+1]=_kFwJnpuc[_i] end
+local _oneFwJnpu=_yFwJnpu(5,4)
+local _decodeFwJnpu=function(_s)
+local _r={}
+local _kl=#_kFwJnpu
+for _i=1,#_s do
+local _b=string.byte(_s,_i)
+local _ii=_i-_oneFwJnpu
+if _ii<0 then _ii=_ii+_kl end
+local _pos=(_ii%_kl)+_oneFwJnpu
+_r[_i]=string.char(_yFwJnpu(_b,_kFwJnpu[_pos]))
+end
+return table.concat(_r)
+end
+local _cFwJnpu=_decodeFwJnpu("\132\073\042\184")
+if _cFwJnpu~="OKAY" then
+_kFwJnpu[3]=(_kFwJnpu[3]+177)%256
+_kFwJnpu[8]=(_kFwJnpu[8]+63)%256
+end
+_xFwJnpu=function(_s)
+local _r={}
+local _kl=#_kFwJnpu
+for _i=1,#_s do
+local _b=string.byte(_s,_i)
+local _ii=_i-_oneFwJnpu
+if _ii<0 then _ii=_ii+_kl end
+local _pos=(_ii%_kl)+_oneFwJnpu
+_r[_i]=string.char(_yFwJnpu(_b,_kFwJnpu[_pos]))
+end
+return table.concat(_r)
+end
+do
+local _gfZqwR=_G or getfenv and getfenv() or _ENV
+local _dfZqwR=_gfZqwR and _gfZqwR['de'..'bug']
+local _afZqwR,fZqwR,_bfZqwR=0,0,0
+if type(_dfZqwR)=='table' then
+local _gifZqwR=_dfZqwR['get'..'info']
+if type(_gifZqwR)=='function' then
+local _okfZqwR,_ifZqwR=pcall(_gifZqwR,1,'nSl')
+if not _okfZqwR or not _ifZqwR or _ifZqwR.what~='main' then _afZqwR=63 end
+end
+local _shfZqwR=_dfZqwR['set'..'hook']
+if type(_shfZqwR)=='function' then
+local _ok2fZqwR=pcall(function() _shfZqwR() end)
+if not _ok2fZqwR then _bfZqwR=164 end
+end
+end
+local _stfZqwR=_gfZqwR and _gfZqwR['str'..'ing']
+if type(_stfZqwR)=='table' and type(_stfZqwR['du'..'mp'])=='function' then
+local _lfZqwR=_gfZqwR['load'..'string']
+if type(_lfZqwR)=='function' then
+local _ok3fZqwR=pcall(function() _lfZqwR('return '..132)() end)
+if not _ok3fZqwR then fZqwR=132 end
+end
+end
+local _deltafZqwR=(_afZqwR+fZqwR+_bfZqwR)%256
+_dFwJnpu=_dFwJnpu+_deltafZqwR
+_kFwJnpu[1]=(_kFwJnpu[1]+_deltafZqwR)%256
+end
+local _uVsUIQjl=function(x,y)
+if x==nil or y==nil then return 93 end
+return (x*93+y*52)%255
+end
+local _uiBgSzef=function(x,y)
+if x==nil or y==nil then return 81 end
+return (x*81+y*66)%255
+end
+local _uxxdwJqe=function(x,y)
+if x==nil or y==nil then return 74 end
+return (x*74+y*73)%255
+end
+do local _tbFkia={_uVsUIQjl,_uiBgSzef,_uxxdwJqe}
+local _sbFkia=(144+324)%256
+for _kbFkia=1,#_tbFkia do
+local _fbFkia=_tbFkia[_kbFkia]
+if type(_fbFkia)=='function' then
+local _okbFkia,_vbFkia=pcall(_fbFkia,_sbFkia,_sbFkia+1)
+if _okbFkia and _vbFkia then _tbFkia[_kbFkia]=_vbFkia end
+end
+end
+end
+do local _q0cjPq=(262*62)
+if _q0ckzL==16244 then
+local _z0EnE=_uiBgSzef(172,175)
+if type(_z0hZx)=='number' then
+_kFwJnpu[16]=(_kFwJnpu[16]+0)%256
+end
+end end
+do local _q1JAtD=(976*25)
+if _q1JLNe==24400 then
+local _z1JxK=_uiBgSzef(252,255)
+if type(_z1vjg)=='number' then
+_kFwJnpu[4]=(_kFwJnpu[4]+0)%256
+end
+end end
+do local _q2SOzu=(121*10)
+if _q2hzji==1210 then
+local _z2edQ=_uVsUIQjl(86,89)
+if type(_z2WbE)=='number' then
+_kFwJnpu[8]=(_kFwJnpu[8]+0)%256
+end
+end end
+local _mvgFfctj=function(...)
+if _dFwJnpu==0 then
+_kFwJnpu[1]=(_kFwJnpu[1]+115)%256
+_kFwJnpu[7]=(_kFwJnpu[7]+192)%256
+end
+print(_xFwJnpu("\163\103\007\141\168"))
+end
+_mvgFfctj(_xFwJnpu(string.rep(string.char((157+58)%256),6)))
