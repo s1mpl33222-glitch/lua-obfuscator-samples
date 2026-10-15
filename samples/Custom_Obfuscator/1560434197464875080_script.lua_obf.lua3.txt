@@ -1,0 +1,84 @@
+local _vUIzwRb=83
+local _kUIzwRb={}
+do local _r={249,49,203,12,75,174,114,102,150,218,248,131,172,163,210,107}
+for _i=1,#_r do _kUIzwRb[_i]=((_r[_i]+_vUIzwRb)%256) end
+for _i=1,#_kUIzwRb do _kUIzwRb[_i]=_kUIzwRb[_i]~_vUIzwRb end
+for _i=1,#_kUIzwRb do _kUIzwRb[_i]=(_kUIzwRb[_i]+_i*3)%256 end end
+_dUIzwRb=function(_s)
+local _r={}
+local _kl=#_kUIzwRb
+for _i=1,#_s do
+local _b=string.byte(_s,_i)
+local _c=_kUIzwRb[((_i-1)%_kl)+1]
+local _o=0
+local _p=1
+for _j=1,8 do
+local _xb=_b%2
+local _yb=_c%2
+if _xb~=_yb then _o=_o+_p end
+_b=(_b-_xb)/2
+_c=(_c-_yb)/2
+_p=_p*2
+end
+_r[_i]=string.char(_o)
+end
+return table.concat(_r)
+end
+do
+local _aQfEeZ,QfEeZ,_bQfEeZ=0,0,0
+if type(debug)=='table' then
+if type(debug.getinfo)=='function' then
+local _okQfEeZ,_iQfEeZ=pcall(debug.getinfo,1,'nSl')
+if not _okQfEeZ or not _iQfEeZ or _iQfEeZ.what~='main' then _aQfEeZ=125 end
+end
+if type(debug.sethook)=='function' then
+local _ok2QfEeZ=pcall(function() debug.sethook() end)
+if not _ok2QfEeZ then _bQfEeZ=139 end
+end
+end
+if type(string.dump)=='function' and type(loadstring)=='function' then
+local _ok3QfEeZ=pcall(function() loadstring('return 1')() end)
+if not _ok3QfEeZ then QfEeZ=70 end
+end
+_kUIzwRb[1]=(_kUIzwRb[1]+_aQfEeZ+QfEeZ+_bQfEeZ)%256
+end
+local _uVlomjBA=function(x,y)
+if x==nil or y==nil then return 7 end
+return (x*7+y*12)%255
+end
+local _urGlVCkz=function(x,y)
+if x==nil or y==nil then return 68 end
+return (x*68+y*52)%255
+end
+local _ureVTOAH=function(x,y)
+if x==nil or y==nil then return 97 end
+return (x*97+y*80)%255
+end
+if 3==9 then
+local _r0qeBRu=_uVlomjBA(27,3)
+_r0qeBRu=_uVlomjBA(3,27)
+local _r1qeBRu=_urGlVCkz(40,9)
+_r1qeBRu=_urGlVCkz(9,40)
+local _r2qeBRu=_ureVTOAH(34,8)
+_r2qeBRu=_ureVTOAH(8,34)
+end
+if (406*16)==6496 then
+local _q0jTEp=0
+end
+if (757*91)==68887 then
+local _q1KTaO=0
+end
+if (686*10)==6860 then
+local _q2xOoC=0
+end
+local _decUvYqF=function(_p)
+local _o=_p
+_o=_dUIzwRb(_o)
+_o=_dUIzwRb(_o)
+_o=_dUIzwRb(_o)
+return _o
+end
+local _mTcisBhc=function(...)
+print(_xUIzwRb("\074\184\058\116\179"))
+end
+_mTcisBhc(_xUIzwRb("\255\255\255"))
