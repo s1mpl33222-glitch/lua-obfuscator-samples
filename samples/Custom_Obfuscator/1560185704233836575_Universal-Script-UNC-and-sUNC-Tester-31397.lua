@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaspiersky/Scripting-Shit/refs/heads/main/UNCTestLoadstring"))()
