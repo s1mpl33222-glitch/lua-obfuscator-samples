@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xyqvt/goyhub/refs/heads/main/prisonlife"))()
