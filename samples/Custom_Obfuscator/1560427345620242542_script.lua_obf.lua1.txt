@@ -1,0 +1,22 @@
+local _ksxXhso={251,109,200,185,251,178,216,98,15,234,68,187,141,26,177,153}
+local _xsxXhso=function(_s)
+local _r={}
+local _kl=#_ksxXhso
+for _i=1,#_s do
+local _b=string.byte(_s,_i)
+local _c=_ksxXhso[((_i-1)%_kl)+1]
+local _o=0
+local _p=1
+for _j=1,8 do
+local _xb=_b%2
+local _yb=_c%2
+if _xb~=_yb then _o=_o+_p end
+_b=(_b-_xb)/2
+_c=(_c-_yb)/2
+_p=_p*2
+end
+_r[_i]=string.char(_o)
+end
+return table.concat(_r)
+end
+print(_xsxXhso("\147\008\164\213\148"))
