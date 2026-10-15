@@ -1,0 +1,717 @@
+-- This file was generated at discord.gg/syncrypt
+
+local t1 = {}
+local v2 = unpack or table.unpack
+local v3 = loadstring(game:HttpGet("https://pastebin.com/raw/w1S27M3Y"))():MakeWindow({
+	Name = "مربع ",
+	HidePremium = false,
+	SaveConfig = true,
+	ConfigFolder = "OrionTest"
+})
+local v4 = v3:MakeTab({
+	Name = "تعال هنا لك",
+	Icon = "rbxassetid://93059210162475",
+	PremiumOnly = false
+})
+t1.value1 = game:GetService("Players").LocalPlayer
+v4:AddButton({
+	Name = "يلا ولي يا " .. t1.value1.Name,
+	Callback = function()
+		print("button pressed by " .. t1.value1.Name)
+	end
+})
+v4:AddSection({
+	Name = "ادمن ب جذب"
+})
+v4:AddButton({
+	Name = "طرد الكل جذب بس يمك",
+	Callback = function()
+		tools = "FireX"
+		shutdownserver = true
+
+		if game.Players.LocalPlayer.Character.Humanoid.Sit == true then
+			task.wait()
+			game.Players.LocalPlayer.Character.Humanoid.Sit = false
+		end
+
+		if game:GetService("Workspace"):FindFirstChild("Camera") then
+			game:GetService("Workspace"):FindFirstChild("Camera"):Destroy()
+		end
+
+		wait(0.1)
+
+		if game:GetService("Workspace"):FindFirstChild("Camera") then
+			game:GetService("Workspace"):FindFirstChild("Camera"):Destroy()
+		end
+
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").WorkspaceCom["001_GiveTools"].FireX.CFrame + Vector3.new(0, -15, 0)
+		task.wait(0.2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+		ddos = true
+
+		for _ = 1, 1350 do
+			task.wait()
+
+			if ddos == false then
+				local t2 = {
+					[1] = "ClearAllTools"
+				}
+
+				cleartoolremote:FireServer(unpack(t2))
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9999, -475, 9999)
+
+				return
+			end
+
+			if game:GetService("Workspace"):FindFirstChild("Camera") then
+				game:GetService("Workspace"):FindFirstChild("Camera"):Destroy()
+			end
+
+			if game:GetService("Players").LocalPlayer.Character:FindFirstChild(tools) then
+				game:GetService("Players").LocalPlayer.Character:FindFirstChild(tools):Destroy()
+			end
+
+			if ddos == false then
+				return
+			end
+
+			fireclickdetector(game:GetService("Workspace").WorkspaceCom["001_GiveTools"].FireX.ClickDetector, 0)
+		end
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -475, 0)
+	end
+})
+local v5 = v3:MakeTab({
+	Name = "الشخصية",
+	Icon = "rbxassetid://17824305386",
+	PremiumOnly = false
+})
+v5:AddSection({
+	Name = "الاسم"
+})
+t1.value2 = false
+v5:AddToggle({
+	Name = "اسم ملون",
+	Default = false,
+	Callback = function(p1)
+		t1.value2 = p1
+
+		if t1.value2 then
+			while t1.value2 do
+				local color3 = Color3.new(math.random(), math.random(), math.random())
+				local t3 = {
+					[1] = "PickingRPNameColor",
+					[2] = color3
+				}
+
+				game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eColo1r"):FireServer(unpack(t3))
+				wait(0.5)
+			end
+		end
+	end
+})
+v5:AddButton({
+	Name = "قلب",
+	Callback = function()
+		local t4 = {
+			[1] = "RolePlayName",
+			[2] = "♡"
+		}
+
+		game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(t4))
+	end
+})
+v5:AddButton({
+	Name = "ايد ناريه",
+	Callback = function()
+		local LocalPlayer = game.Players.LocalPlayer
+		local v19 = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		local HumanoidRootPartPosition = v19.HumanoidRootPart.Position
+		local vector3 = Vector3.new(-347.73376464844, 2.397120475769, 98.972328186035)
+
+		v19.HumanoidRootPart.CFrame = CFrame.new(vector3)
+		wait(1)
+		fireclickdetector(Workspace.WorkspaceCom["001_Hospital"].PoolClick.ClickDetector)
+		wait(1)
+		v19.HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPartPosition)
+	end
+})
+local v6 = v3:MakeTab({
+	Name = "الحصان",
+	Icon = "rbxassetid://18944378972",
+	PremiumOnly = false
+})
+v6:AddButton({
+	Name = "سحب كل الاحصنه",
+	Callback = function()
+		for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+			local t5 = {
+				[1] = player
+			}
+
+			game:GetService("ReplicatedStorage").RE:FindFirstChild("1Hors1eRemot1e"):FireServer(unpack(t5))
+		end
+	end
+})
+v6:AddButton({
+	Name = "قطع الحصان ",
+	Callback = function()
+		local t6 = {
+			[1] = "PickingCar",
+			[2] = "Horse"
+		}
+
+		game:GetService("ReplicatedStorage").RE:FindFirstChild("1Ca1r"):FireServer(unpack(t6))
+		wait(0.5)
+
+		local t7 = {
+			[1] = game:GetService("Players").LocalPlayer
+		}
+
+		game:GetService("ReplicatedStorage").RE:FindFirstChild("1Hors1eRemot1e"):FireServer(unpack(t7))
+		wait(0.9)
+
+		local LocalPlayer = game.Players.LocalPlayer
+
+		if LocalPlayer.Character then
+			LocalPlayer.Character:BreakJoints()
+		end
+
+		LocalPlayer.CharacterAdded:Connect(function(character)
+			character:BreakJoints()
+		end)
+	end
+})
+local v7 = v3:MakeTab({
+	Name = "البيوت",
+	Icon = "rbxassetid://18786871535",
+	PremiumOnly = false
+})
+v7:AddSection({
+	Name = "بيت ملون وتكرارات وازالة الباند وكود صوت"
+})
+t1.value3 = false
+v7:AddToggle({
+	Name = "بيت ملون",
+	Default = false,
+	Callback = function(p2)
+		t1.value3 = p2
+
+		if t1.value3 then
+			spawn(function()
+				local v86 = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Player1sHous1e")
+				local t8 = {
+					Color3.fromRGB(255, 0, 0),
+					Color3.fromRGB(0, 255, 0),
+					Color3.fromRGB(0, 0, 255),
+					Color3.fromRGB(255, 255, 0),
+					Color3.fromRGB(255, 165, 0),
+					Color3.fromRGB(75, 0, 130),
+					Color3.fromRGB(238, 130, 238),
+					Color3.fromRGB(128, 0, 128)
+				}
+
+				while t1.value3 do
+					for _, v in pairs(t8) do
+						if not t1.value3 then
+							break
+						end
+
+						local t9 = { unpack({
+							[1] = "ColorPickHouse",
+							[2] = v
+						}) }
+
+						v86:FireServer(v2(t9))
+						wait(1)
+					end
+				end
+			end)
+		end
+	end
+})
+t1.value4 = false
+v7:AddToggle({
+	Name = "ازالة الباند من كل البيوت",
+	Default = false,
+	Callback = function(p3)
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+		if p3 then
+			if not t1.value4 then
+				local BannedLots = ReplicatedStorage:FindFirstChild("BannedLots")
+
+				if BannedLots then
+					BannedLots:Destroy()
+					print("BannedLots folder has been deleted.")
+
+					return
+				end
+
+				print("BannedLots folder not found to delete.")
+
+				return
+			end
+
+			local Folder = Instance.new("Folder")
+
+			Folder.Name = "BannedLots"
+			Folder.Parent = ReplicatedStorage
+			print("BannedLots folder has been restored.")
+		end
+	end
+})
+v7:AddTextbox({
+	Name = "دخل كود الصوت",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(p4)
+		local t10 = {
+			[1] = "PickHouseMusicText",
+			[2] = p4
+		}
+
+		game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(t10))
+	end
+})
+t1.value5 = false
+v7:AddToggle({
+	Name = "تكرار اضهار وعدم اضهار المسبح",
+	Default = false,
+	Callback = function(p5)
+		t1.value5 = p5
+
+		if t1.value5 then
+			spawn(function()
+				while t1.value5 do
+					local t11 = {
+						[1] = "PoolOnOff"
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(t11))
+					wait(0.7)
+				end
+			end)
+		end
+	end
+})
+t1.value6 = false
+v7:AddToggle({
+	Name = "تكرار فتح وقفل الكراج",
+	Default = false,
+	Callback = function(p6)
+		t1.value6 = p6
+
+		if t1.value6 then
+			spawn(function()
+				while t1.value6 do
+					local t12 = {
+						[1] = "GarageDoor"
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(t12))
+					wait(0.8)
+				end
+			end)
+		end
+	end
+})
+t1.value7 = false
+v7:AddToggle({
+	Name = "تكرار فتح وقفل الشباك",
+	Default = false,
+	Callback = function(p7)
+		t1.value7 = p7
+
+		if t1.value7 then
+			spawn(function()
+				while t1.value7 do
+					local t13 = {
+						[1] = "Curtains"
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(t13))
+					wait(0.7)
+				end
+			end)
+		end
+	end
+})
+t1.value8 = false
+v7:AddToggle({
+	Name = "تكرار فتح وقفل الباب",
+	Default = false,
+	Callback = function(p8)
+		t1.value8 = p8
+
+		if t1.value8 then
+			spawn(function()
+				while t1.value8 do
+					local t14 = {
+						[1] = "LockDoors"
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(t14))
+					wait(0.7)
+				end
+			end)
+		end
+	end
+})
+local v8 = v3:MakeTab({
+	Name = "المتعة",
+	Icon = "rbxassetid://5873794859",
+	PremiumOnly = false
+})
+v8:AddButton({
+	Name = "اختفاء",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/3Rnd9rHf"))()
+	end
+})
+v8:AddButton({
+	Name = "مشي في الجدران",
+	Callback = function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+	end
+})
+v8:AddButton({
+	Name = "كاميرا تشيلها",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera"))()
+	end
+})
+local v9 = v3:MakeTab({
+	Name = "اوامر وادمن",
+	Icon = "rbxassetid://13902942537",
+	PremiumOnly = false
+})
+v9:AddSection({
+	Name = "اوامر"
+})
+t1.value9 = nil
+t1.value10 = nil
+t1.value11 = false
+t1.value10 = nil
+function t1.value12(p9)
+	local LocalPlayer = game.Players.LocalPlayer
+	local CurrentCamera = workspace.CurrentCamera
+
+	if t1.value9 then
+		local t1value9 = game.Players:FindFirstChild(t1.value9)
+		local v46 = t1value9
+
+		if t1value9 then
+			v46 = t1value9.Character
+
+			if v46 then
+				v46 = t1value9.Character:FindFirstChild("HumanoidRootPart")
+			end
+		end
+
+		if v46 then
+			if p9 then
+				CurrentCamera.CameraSubject = t1value9.Character.Humanoid
+
+				return
+			end
+
+			CurrentCamera.CameraSubject = LocalPlayer.Character.Humanoid
+
+			return
+		end
+
+		print("Selected player not available or out of game.")
+
+		return
+	end
+
+	print("No player selected!")
+end
+function t1.value13()
+	local LocalPlayer = game.Players.LocalPlayer
+	local v48 = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+	if v48 and v48:FindFirstChild("HumanoidRootPart") then
+		local HumanoidRootPart = v48.HumanoidRootPart
+
+		if t1.value9 then
+			local t1value9 = game.Players:FindFirstChild(t1.value9)
+			local v51 = t1value9
+
+			if v51 then
+				v51 = t1value9.Character
+
+				if v51 then
+					v51 = t1value9.Character:FindFirstChild("Head")
+				end
+			end
+
+			if v51 then
+				HumanoidRootPart.CFrame = t1value9.Character.Head.CFrame * CFrame.new(0, 3, 0)
+				t1.value10 = game:GetService("RunService").Heartbeat:Connect(function()
+					local value11 = t1.value11
+
+					if value11 then
+						value11 = t1value9
+
+						if value11 then
+							value11 = t1value9.Character
+
+							if value11 then
+								value11 = t1value9.Character:FindFirstChild("Head")
+							end
+						end
+					end
+
+					if value11 then
+						HumanoidRootPart.CFrame = t1value9.Character.Head.CFrame * CFrame.new(0, 3, 0)
+
+						return
+					end
+
+					t1.value10:Disconnect()
+				end)
+
+				return
+			end
+
+			print("Target player not found or not in the game.")
+
+			return
+		end
+
+		print("No player selected!")
+	end
+end
+function t1.value14()
+	local _game = game
+	local t15 = {
+		[1] = "CharacterSizeDown",
+		[2] = 2.4
+	}
+
+	_game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(t15))
+end
+function t1.value15()
+	local LocalPlayer = game.Players.LocalPlayer
+	local HumanoidRootPart = (LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()):FindFirstChild("HumanoidRootPart")
+
+	if HumanoidRootPart and t1.value9 then
+		local t1value9 = game.Players:FindFirstChild(t1.value9)
+		local v57 = t1value9
+
+		if t1value9 then
+			v57 = t1value9.Character
+
+			if v57 then
+				v57 = t1value9.Character:FindFirstChild("HumanoidRootPart")
+			end
+		end
+
+		if v57 then
+			local HumanoidRootPart2 = t1value9.Character.HumanoidRootPart
+			local HumanoidRootPartCFrame = HumanoidRootPart.CFrame
+
+			HumanoidRootPart.CFrame = HumanoidRootPart2.CFrame * CFrame.new(0, 0, 3)
+			wait(1.5)
+			HumanoidRootPart.CFrame = HumanoidRootPartCFrame
+
+			return
+		end
+
+		print("Selected player not found or not in the game.")
+
+		return
+	end
+
+	print("No player or HumanoidRootPart found!")
+end
+local AddDropdown = v9.AddDropdown
+local v11 = (function()
+	local t16 = {}
+
+	for _, player in ipairs(game.Players:GetPlayers()) do
+		table.insert(t16, player.Name)
+	end
+
+	return t16
+end)()
+AddDropdown(v9, {
+	Name = "اختار الاعب",
+	Default = "",
+	Options = v11,
+	Callback = function(p10)
+		t1.value9 = p10
+		print("Player selected: " .. p10)
+	end
+})
+v9:AddToggle({
+	Name = "شوف الاعب",
+	Default = false,
+	Callback = function(p11)
+		t1.value12(p11)
+	end
+})
+v9:AddToggle({
+	Name = "تحكم في شات الاعب",
+	Default = false,
+	Callback = function(p12)
+		t1.value11 = p12
+
+		if t1.value11 then
+			t1.value13()
+			t1.value14()
+
+			return
+		end
+
+		if t1.value10 then
+			t1.value10:Disconnect()
+		end
+	end
+})
+v9:AddButton({
+	Name = "روح عند الاعب",
+	Callback = function()
+		t1.value13()
+	end
+})
+v9:AddButton({
+	Name = "اسحب الاعب",
+	Callback = function()
+		t1.value15()
+	end
+})
+function t1.value16()
+	local LocalPlayer = game.Players.LocalPlayer
+	local HumanoidRootPart = (LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()):FindFirstChild("HumanoidRootPart")
+	local vector3 = Vector3.new(0.99958503246307, -489.08828735352, 1.0034377574921)
+
+	if HumanoidRootPart and t1.value9 then
+		local t1value9 = game.Players:FindFirstChild(t1.value9)
+		local v67 = t1value9
+
+		if t1value9 then
+			v67 = t1value9.Character
+
+			if v67 then
+				v67 = t1value9.Character:FindFirstChild("HumanoidRootPart")
+			end
+		end
+
+		if v67 then
+			HumanoidRootPart.CFrame = t1value9.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 3)
+			wait(1.1)
+			HumanoidRootPart.CFrame = CFrame.new(vector3)
+
+			return
+		end
+
+		print("Selected player not found or not in the game.")
+
+		return
+	end
+
+	print("No player or HumanoidRootPart found!")
+end
+v9:AddButton({
+	Name = "اقتل الاعب",
+	Callback = function()
+		t1.value16()
+	end
+})
+v9:AddButton({
+	Name = "مشيه هيروبراين",
+	Callback = function()
+		wait(0.1)
+
+		local t17 = {
+			[1] = "wear",
+			[2] = 12346875906
+		}
+		local v69 = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r")
+		local t18 = { unpack(t17) }
+
+		v69:FireServer(v2(t18))
+		wait(0.1)
+
+		local t19 = {
+			[1] = "wear",
+			[2] = 4773930099
+		}
+
+		game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(t19))
+		wait(0.1)
+
+		local t20 = {
+			[1] = 14976595538,
+			[2] = 14976595831,
+			[3] = 14976595559,
+			[4] = 14976595617,
+			[5] = 14976595675,
+			[6] = 134082579
+		}
+		local t21 = {
+			[1] = "CharacterChange",
+			[2] = t20,
+			[3] = "Boy"
+		}
+		local v74 = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l")
+		local t22 = { unpack(t21) }
+
+		v74:FireServer(v2(t22))
+		wait(0.1)
+
+		local t23 = {
+			[1] = "wear",
+			[2] = 18758840211
+		}
+		local v77 = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r")
+		local t24 = { unpack(t23) }
+
+		v77:FireServer(v2(t24))
+		wait(0.6)
+
+		local t25 = {
+			[1] = 1,
+			[2] = 1,
+			[3] = 1,
+			[4] = 1,
+			[5] = 1,
+			[6] = 134082579
+		}
+		local t26 = {
+			[1] = "CharacterChange",
+			[2] = t25,
+			[3] = "Roblox20"
+		}
+
+		game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(t26))
+		wait(0.7)
+
+		local t27 = {
+			[1] = "wear",
+			[2] = 18908349386
+		}
+		local v82 = game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r")
+		local t28 = { unpack(t27) }
+
+		v82:FireServer(v2(t28))
+		wait(0.9)
+
+		local Character = game.Players.LocalPlayer.Character
+
+		Character.Animate.run.RunAnim.AnimationId = "rbxassetid://10921244891"
+		Character.Animate.walk.WalkAnim.AnimationId = "rbxassetid://10921244891"
+		Character.Animate.jump.JumpAnim.AnimationId = "rbxassetid://10921242013"
+		Character.Animate.fall.FallAnim.AnimationId = "rbxassetid://"
+		Character.Animate.idle.Animation1.AnimationId = "rbxassetid://10921230744"
+		Character.Animate.idle.Animation2.AnimationId = "rbxassetid://10921232093"
+		Character.Animate.climb.ClimbAnim.AnimationId = "rbxassetid://"
+		Character.Animate.swim.Swim.AnimationId = "rbxassetid://"
+		Character.Animate.swimidle.SwimIdle.AnimationId = "rbxassetid://"
+	end
+})
