@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Noodlesdoodlescuddles/LAVA-CORE/main/loader.lua"))()
