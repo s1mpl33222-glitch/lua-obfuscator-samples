@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aslan90101/resonance/refs/heads/main/Resonanse.lua"))();
