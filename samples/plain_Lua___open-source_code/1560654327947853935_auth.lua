@@ -1,0 +1,1 @@
+game:GetService("Players").LocalPlayer:Kick("Invalid license key format. Purchase at https://nexushub.lol")
