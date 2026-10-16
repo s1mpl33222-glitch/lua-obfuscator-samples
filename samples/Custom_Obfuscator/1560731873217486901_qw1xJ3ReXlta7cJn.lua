@@ -1,0 +1,1 @@
+--FAIL:Invalid or missing script key.
