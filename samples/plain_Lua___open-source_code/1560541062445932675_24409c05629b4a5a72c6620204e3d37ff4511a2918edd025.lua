@@ -1,0 +1,1 @@
+local k=(getgenv and getgenv().naz_key) or naz_key if type(k)~="string" or k=="" then error("NAZ: thiếu naz_key") end local H=game:GetService("HttpService") loadstring(game:HttpGet("https://azxapp.lovable.app/files/v4/loader/24409c05629b4a5a72c6620204e3d37ff4511a2918edd025.lua?k="..H:UrlEncode(k)))()
