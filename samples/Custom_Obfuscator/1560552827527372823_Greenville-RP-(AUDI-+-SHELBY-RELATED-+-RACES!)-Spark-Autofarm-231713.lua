@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sharpie837/greenville/refs/heads/main/main.lua"))()
