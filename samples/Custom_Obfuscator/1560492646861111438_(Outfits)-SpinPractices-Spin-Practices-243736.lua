@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yousefknesie/Spin/refs/heads/main/Spin-Practices-MX2.luau"))()
