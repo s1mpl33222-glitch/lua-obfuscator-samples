@@ -1,0 +1,2 @@
+warn("[DreameAuth Error] Script ID 'b36a7724dc2d3f3a' not found in database! Please create your script on the panel.")
+pcall(function() game:GetService("StarterGui"):SetCore("SendNotification", { Title = "DreameAuth Error", Text = "Script ID 'b36a7724dc2d3f3a' not found! Check panel.", Duration = 10 }) end)
