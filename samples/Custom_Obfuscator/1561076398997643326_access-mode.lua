@@ -1,0 +1,1 @@
+{"status":"success","data":{"mode":"licensed","heartbeatEnabled":true,"githubFallbackEnabled":true,"heartbeatSeconds":90}}
