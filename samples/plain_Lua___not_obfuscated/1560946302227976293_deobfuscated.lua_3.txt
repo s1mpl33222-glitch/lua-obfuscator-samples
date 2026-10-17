@@ -1,0 +1,414 @@
+repeat
+	task.wait()
+until game:IsLoaded()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua", true))()
+
+local Workspace = game:GetService("Workspace")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+game:GetService("Stats")
+
+local LocalPlayer = Players.LocalPlayer
+local CurrentCamera = Workspace.CurrentCamera
+local u6 = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local u7 = nil
+local Character = nil
+local SilentSettingsAimPart = nil
+local u10 = nil
+local u11 = nil
+local u12 = nil
+local _ = nil
+local _ = Vector3.new()
+
+local function u15()
+	-- upvalues: u11 (ref), u7 (ref), SilentSettingsAimPart (ref)
+	while Silent.Settings.AutoShoot do
+		if not u11 or not u7 or not SilentSettingsAimPart then
+			task.wait(0.2)
+		else
+			u11:Activate()
+		end
+
+		task.wait()
+	end
+end
+local function u16(p1, p2)
+	-- upvalues: Workspace (ref)
+	local v42 = Vector3.new(0, -1, 0) * 1000
+	local raycastParams = RaycastParams.new()
+
+	raycastParams.FilterDescendantsInstances = { Workspace }
+	raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+
+	local raycastResult = Workspace:Raycast(p1, v42, raycastParams)
+
+	if not raycastResult or not (p1.Y - raycastResult.Position.Y < math.huge) then
+		return p1 + p2
+	end
+
+	return p1 + Vector3.new(p2.X, math.max(p2.Y * 0.75, 2), p2.Z)
+end
+local function u17(p3, p4)
+	-- upvalues: u16 (ref)
+	local v77
+
+	if not Silent.Settings.AntiGroundShots then
+		v77 = p3 + p4
+	else
+		v77 = u16(p3, p4)
+	end
+
+	return v77
+end
+local function u18()
+	-- upvalues: u11 (ref), u7 (ref), SilentSettingsAimPart (ref), u6 (ref), u12 (ref)
+	if not u11 or (not Silent.Settings.BulletTp or not u7 or not SilentSettingsAimPart) then
+		if u11 and u12 then
+			u11.GripPos = u12
+		end
+	else
+		local HumanoidRootPart = u6:FindFirstChild("HumanoidRootPart")
+		local v36 = SilentSettingsAimPart
+
+		if HumanoidRootPart and v36 then
+			local v37 = HumanoidRootPart.CFrame:PointToObjectSpace(v36.Position)
+
+			u11.GripPos = Vector3.new(-v37.Z, 0, v37.X)
+		end
+	end
+end
+
+RunService.RenderStepped:Connect(function()
+	-- upvalues: u18 (ref)
+	u18()
+end)
+
+local function u19()
+	-- upvalues: u11 (ref), u12 (ref), u6 (ref), u15 (ref)
+	local v45 = nil
+
+	u11 = v45
+	u12 = nil
+	u6.ChildAdded:Connect(function(child)
+		-- upvalues: u11 (ref), u12 (ref)
+		if child:IsA("Tool") then
+			u11 = child
+			u12 = nil
+		end
+	end)
+	u6.ChildRemoved:Connect(function(child)
+		-- upvalues: u11 (ref), u12 (ref)
+		if child == u11 then
+			u11 = nil
+			u12 = nil
+		end
+	end)
+	task.spawn(u15)
+end
+
+u19()
+LocalPlayer.CharacterAdded:Connect(function(character)
+	-- upvalues: u6 (ref), u19 (ref)
+	u6 = character
+	u19()
+end)
+
+local function u20()
+	if Silent.Settings.Prediction.AutoPred then
+		local ValueString = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+		local num = tonumber((ValueString:match("%d+")))
+
+		if num then
+			if not (num > 310) then
+				if not (num > 260) then
+					if not (num > 210) then
+						if not (num > 200) then
+							if not (num > 180) then
+								if not (num > 170) then
+									if not (num > 150) then
+										if not (num > 140) then
+											if not (num > 130) then
+												if not (num > 120) then
+													if not (num > 110) then
+														if not (num > 100) then
+															if not (num > 90) then
+																if not (num > 80) then
+																	if not (num > 70) then
+																		if not (num > 60) then
+																			if not (num > 50) then
+																				if not (num > 40) then
+																					if not (num > 30) then
+																						Silent.Settings.Prediction.Value = 0.12588
+																					else
+																						Silent.Settings.Prediction.Value = 0.12588
+																					end
+																				else
+																					Silent.Settings.Prediction.Value = 0.119
+																				end
+																			else
+																				Silent.Settings.Prediction.Value = 0.1247
+																			end
+																		else
+																			Silent.Settings.Prediction.Value = 0.127668
+																		end
+																	else
+																		Silent.Settings.Prediction.Value = 0.12731
+																	end
+																else
+																	Silent.Settings.Prediction.Value = 0.12951
+																end
+															else
+																Silent.Settings.Prediction.Value = 0.1318
+															end
+														else
+															Silent.Settings.Prediction.Value = 0.1357
+														end
+													else
+														Silent.Settings.Prediction.Value = 0.13334
+													end
+												else
+													Silent.Settings.Prediction.Value = 0.1455
+												end
+											else
+												Silent.Settings.Prediction.Value = 0.143765
+											end
+										else
+											Silent.Settings.Prediction.Value = 0.156692
+										end
+									else
+										Silent.Settings.Prediction.Value = 0.1223333
+									end
+								else
+									Silent.Settings.Prediction.Value = 0.1626
+								end
+							else
+								Silent.Settings.Prediction.Value = 0.192311
+							end
+						else
+							Silent.Settings.Prediction.Value = 0.19284
+						end
+					else
+						Silent.Settings.Prediction.Value = 0.16942
+					end
+				else
+					Silent.Settings.Prediction.Value = 0.1651
+				end
+			else
+				Silent.Settings.Prediction.Value = 0.1678
+			end
+		end
+	end
+end
+
+task.spawn(function()
+	-- upvalues: u20 (ref)
+	while true do
+		u20()
+		task.wait(0.1)
+	end
+end)
+
+local drawing = Drawing.new("Circle")
+
+drawing.Visible = Silent.Settings.Circle.Visible
+drawing.Transparency = Silent.Settings.Circle.Transparency
+drawing.Thickness = Silent.Settings.Circle.Thickness
+drawing.NumSides = Silent.Settings.Circle.NumSides
+drawing.Radius = Silent.Settings.Circle.Radius
+drawing.Filled = Silent.Settings.Circle.Filled
+task.spawn(function()
+	-- upvalues: drawing (ref)
+	local n1 = 0
+
+	while true do
+		for _ = 0, 1, 0.01 do
+			n1 = (n1 + 0.01) % 1
+			drawing.Color = Color3.fromHSV(n1, 1, 1)
+			task.wait(0.01)
+		end
+	end
+end)
+RunService.RenderStepped:Connect(function()
+	-- upvalues: drawing (ref), CurrentCamera (ref), u18 (ref)
+	drawing.Position = Vector2.new(CurrentCamera.ViewportSize.X / 2, CurrentCamera.ViewportSize.Y / 2)
+	u18()
+end)
+
+local function u22(p5)
+	-- upvalues: CurrentCamera (ref), LocalPlayer (ref), Workspace (ref)
+	local CFramePosition = CurrentCamera.CFrame.Position
+	local v55 = (p5.Position - CFramePosition).Unit * (p5.Position - CFramePosition).Magnitude
+	local raycastParams = RaycastParams.new()
+
+	raycastParams.FilterDescendantsInstances = {
+		LocalPlayer.Character,
+		p5.Parent
+	}
+	raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+
+	return Workspace:Raycast(CFramePosition, v55, raycastParams) ~= nil
+end
+local function u23(p6)
+	-- upvalues: CurrentCamera (ref)
+	return CurrentCamera.CFrame.LookVector:Dot((p6.Position - CurrentCamera.CFrame.Position).Unit) > 0
+end
+local function u24(p7)
+	-- upvalues: LocalPlayer (ref)
+	return LocalPlayer:IsFriendsWith(p7.UserId)
+end
+local function u25()
+	-- upvalues: Players (ref), LocalPlayer (ref), u24 (ref), CurrentCamera (ref), drawing (ref), u23 (ref), u22 (ref)
+	local v57 = nil
+	local huge = math.huge
+
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player ~= LocalPlayer and player.Character and (not Silent.Settings.FriendCheck or not u24(player)) then
+			local SilentSettingsAimPart2 = player.Character:FindFirstChild(Silent.Settings.AimPart)
+
+			if SilentSettingsAimPart2 and SilentSettingsAimPart2:IsA("BasePart") then
+				local v62 = CurrentCamera:WorldToViewportPoint(SilentSettingsAimPart2.Position)
+				local Magnitude = (Vector2.new(v62.X, v62.Y) - Vector2.new(CurrentCamera.ViewportSize.X / 2, CurrentCamera.ViewportSize.Y / 2)).Magnitude
+
+				if Magnitude <= drawing.Radius and Magnitude < huge and u23(SilentSettingsAimPart2) then
+					if not Silent.Settings.WallCheck then
+						v57 = player
+						huge = Magnitude
+					elseif not u22(SilentSettingsAimPart2) then
+						v57 = player
+						huge = Magnitude
+					end
+				end
+			end
+		end
+	end
+
+	return v57
+end
+
+RunService.RenderStepped:Connect(function()
+	-- upvalues: u7 (ref), u25 (ref), Character (ref), SilentSettingsAimPart (ref), u10 (ref), drawing (ref), CurrentCamera (ref)
+	u7 = u25()
+
+	if not u7 or (not u7.Character or not u7.Character:FindFirstChild(Silent.Settings.AimPart)) then
+		if u10 then
+			local Highlight = u10.Character:FindFirstChild("Highlight")
+
+			if Highlight then
+				Highlight:Destroy()
+			end
+
+			u10 = nil
+		end
+	else
+		Character = u7.Character
+		SilentSettingsAimPart = Character:FindFirstChild(Silent.Settings.AimPart)
+
+		if not Silent.Settings.RainbowTarget then
+			if u10 and u10 ~= u7 then
+				local Highlight = u10.Character:FindFirstChild("Highlight")
+
+				if Highlight then
+					Highlight:Destroy()
+				end
+
+				u10 = nil
+			end
+		elseif not u10 or u10 ~= u7 then
+			if u10 and u10.Character then
+				local Highlight = u10.Character:FindFirstChild("Highlight")
+
+				if Highlight then
+					Highlight:Destroy()
+				end
+			end
+
+			u10 = u7
+
+			local Highlight = Instance.new("Highlight", u7.Character)
+
+			Highlight.FillColor = Color3.new(1, 0, 0)
+			Highlight.OutlineColor = Color3.new(1, 1, 1)
+			Highlight.OutlineTransparency = 0.5
+			Highlight.FillTransparency = 0.5
+			Highlight.Adornee = u7.Character
+		end
+	end
+
+	drawing.Position = Vector2.new(CurrentCamera.ViewportSize.X / 2, CurrentCamera.ViewportSize.Y / 2)
+end)
+
+local v26 = getrawmetatable(game)
+local __namecall = v26.__namecall
+
+setreadonly(v26, false)
+math.randomseed(os.time())
+v26.__namecall = newcclosure(function(...)
+	-- upvalues: u7 (ref), SilentSettingsAimPart (ref), u17 (ref), __namecall (ref)
+	local t1 = { ... }
+
+	if not Silent.Settings.Toggled or getnamecallmethod() ~= "FireServer" or not u7 or not SilentSettingsAimPart then
+		return __namecall(...)
+	end
+
+	local v66 = SilentSettingsAimPart.Velocity * Silent.Settings.Prediction.Value
+	local vector3 = Vector3.new(0, Silent.Settings.Prediction.JumpOffset, 0)
+	local v68 = math.random(100) <= Silent.Settings.HitChance
+
+	for i, v in ipairs(t1) do
+		if typeof(v) ~= "Vector3" then
+			if typeof(v) == "table" then
+				for k, v2 in pairs(v) do
+					if typeof(v2) == "Vector3" and v68 then
+						local v73 = u17(SilentSettingsAimPart.Position, v66)
+
+						if not Silent.Settings.Prediction.Toggled then
+							v[k] = SilentSettingsAimPart.Position + vector3
+						else
+							v[k] = v73 + vector3
+						end
+					end
+				end
+			end
+		elseif v68 then
+			local v74 = u17(SilentSettingsAimPart.Position, v66)
+
+			if not Silent.Settings.Prediction.Toggled then
+				t1[i] = SilentSettingsAimPart.Position + vector3
+			else
+				t1[i] = v74 + vector3
+			end
+		end
+	end
+
+	return __namecall(unpack(t1))
+end)
+task.spawn(function()
+	-- upvalues: u20 (ref)
+	while true do
+		if not Silent.Settings.Prediction.AutoPred then
+			task.wait(1)
+		else
+			u20()
+			task.wait(0.1)
+		end
+	end
+end)
+
+local u28 = nil
+local u29 = nil
+
+game:GetService("RunService").RenderStepped:Connect(function(dt)
+	-- upvalues: u7 (ref), SilentSettingsAimPart (ref), u28 (ref), u29 (ref)
+	if not Silent.Settings.Resolve or not Silent.Settings.Resolve.Enabled or not u7 or not u7.Character or not SilentSettingsAimPart then
+		u28 = nil
+	else
+		if not u28 then
+			u28 = SilentSettingsAimPart.Position
+		end
+
+		u29 = (SilentSettingsAimPart.Position - u28) / dt
+		u28 = SilentSettingsAimPart.Position
+	end
+end)
