@@ -1,0 +1,2 @@
+warn("are you dumb or wha ? U tryna get my source with a simple .Get like this gonna share you my whole source your a lil dumbass man , the only thing yall can get is tha shi stub + u cant do anything with tha only if u decode it ig but after this there is only the bootstrap , stop tryna get my source u not gna get anything - smvll (TM)")
+return 0
