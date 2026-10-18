@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MantikDaFantik/TPS-Ultimate-Soccer/refs/heads/main/terminal-velocity'))() 
