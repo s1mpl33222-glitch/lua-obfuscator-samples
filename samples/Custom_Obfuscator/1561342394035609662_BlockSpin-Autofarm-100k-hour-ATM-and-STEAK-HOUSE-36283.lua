@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/diego987roher/RBLXHUB/refs/heads/main/Block%20Spin%20autofarm%20Atm", true))()
