@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/indistiputed/fastflags-injector/refs/heads/main/fastflags%20injector"))()
