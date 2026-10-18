@@ -1,0 +1,216 @@
+-- This file was generated at discord.gg/syncrypt
+
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "button"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+LocalPlayer = Instance.new("TextButton")
+LocalPlayer.Size = UDim2.fromOffset(120, 50)
+LocalPlayer.Position = UDim2.new(0.5, -60, 0.5, -25)
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LocalPlayer.TextColor3 = Color3.new(1, 1, 1)
+LocalPlayer.TextScaled = true
+LocalPlayer.Text = "off"
+LocalPlayer.Parent = ScreenGui
+local u4
+ScreenGui = LocalPlayer.MouseButton1Click
+local function v5()
+    if u4 then
+        LocalPlayer.Text = "off"
+        u4 = false
+
+        return
+    else
+        LocalPlayer.Text = "on"
+        u4 = true
+
+        return
+    end
+end
+ScreenGui:Connect(v5)
+local u6 = false
+local Position
+local Position2
+LocalPlayer.InputBegan:Connect(function(input)
+    if not (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+        return
+    end
+
+    u6 = true
+    Position = input.Position
+    Position2 = LocalPlayer.Position
+    input.Changed:Connect(function()
+        if input.UserInputState ~= Enum.UserInputState.End then
+            return
+        end
+
+        u6 = false
+    end)
+end)
+UserInputService.InputChanged:Connect(function(input)
+    local v9 = u6
+
+    if v9 then
+        v9 = input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch
+    end
+
+    if not v9 then
+        return
+    end
+
+    v9 = input.Position - Position
+    LocalPlayer.Position = UDim2.new(Position2.X.Scale, Position2.X.Offset + v9.X, Position2.Y.Scale, Position2.Y.Offset + v9.Y)
+end)
+UserInputService = game:GetService("Players")
+LocalPlayer = UserInputService.LocalPlayer
+ScreenGui = range or 3
+v5 = duration or 0.7
+local v10
+UserInputService = function()
+    local v11 = v10()
+
+    if v11 then
+        local huge = math.huge
+        local v13 = UserInputService
+        local v14
+        for _, player in ipairs(v13:GetPlayers()) do
+            if player ~= LocalPlayer then
+                local Character = player.Character
+                local Humanoid
+
+                if Character then
+                    Humanoid = Character:FindFirstChildOfClass("Humanoid")
+                else
+                    Humanoid = Character
+                end
+
+                if Character then
+                    Character = Character:FindFirstChild("HumanoidRootPart")
+                end
+
+                if Humanoid then
+                    if Character then
+                        if Humanoid.Health > 0 then
+                            Humanoid = Humanoid.MaxHealth >= 250
+                        else
+                            Humanoid = false
+                        end
+                    else
+                        Humanoid = Character
+                    end
+                end
+
+                if Humanoid then
+                    Humanoid = (Character.Position - v11.Position).Magnitude
+
+                    if Humanoid < huge then
+                        v14 = Character
+                        huge = Humanoid
+                    end
+                end
+            end
+        end
+
+        return v14
+    else
+        return nil
+    end
+end
+v10 = function(p1)
+    local Character = p1 or LocalPlayer.Character
+
+    if not Character then
+        return Character
+    end
+
+    Character = Character:FindFirstChild("HumanoidRootPart")
+
+    return Character
+end
+UserInputService = function()
+    local v20 = v10()
+
+    if v20 then
+        v20.CFrame = v20.CFrame + Vector3.new(0, 1000, 0)
+        task.wait(0.01)
+        v20.CFrame = v20.CFrame + Vector3.new(0, 1000, 0)
+        task.wait(0.01)
+        v20.CFrame = v20.CFrame + Vector3.new(0, 1000, 0)
+        task.wait(0.01)
+        v20.CFrame = v20.CFrame + Vector3.new(0, 1000, 0)
+        task.wait(0.01)
+        v20.CFrame = v20.CFrame + Vector3.new(0, 1000, 0)
+
+        local v21 = UserInputService()
+
+        if v21 then
+            local v22 = tick() + v5
+
+            while v22 > tick() and (v20.Parent and v21.Parent) do
+                v20.CFrame = v21.CFrame * CFrame.new(0, 0, ScreenGui)
+                task.wait()
+            end
+
+            return
+        else
+            return
+        end
+
+        return
+    else
+        return
+    end
+end
+LocalPlayer = game:GetService("Players").LocalPlayer
+ScreenGui = {
+	["100725497418533"] = true,
+	["89448354637442"] = true
+}
+v5 = function(p2)
+    p2:WaitForChild("Humanoid"):WaitForChild("Animator").AnimationPlayed:Connect(function(p3)
+        local Animation = p3.Animation
+
+        if not Animation then
+            return
+        end
+
+        Animation = ScreenGui[Animation.AnimationId:match("%d+")]
+
+        if Animation then
+            Animation = u4
+        end
+
+        if not Animation then
+            return
+        end
+
+        UserInputService()
+    end)
+end
+if not LocalPlayer.Character then
+    LocalPlayer.CharacterAdded:Connect(v5)
+
+    return
+end
+LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("Animator").AnimationPlayed:Connect(function(p4)
+    local Animation = p4.Animation
+
+    if not Animation then
+        return
+    end
+
+    Animation = ScreenGui[Animation.AnimationId:match("%d+")]
+
+    if Animation then
+        Animation = u4
+    end
+
+    if not Animation then
+        return
+    end
+
+    UserInputService()
+end)
+LocalPlayer.CharacterAdded:Connect(v5)
