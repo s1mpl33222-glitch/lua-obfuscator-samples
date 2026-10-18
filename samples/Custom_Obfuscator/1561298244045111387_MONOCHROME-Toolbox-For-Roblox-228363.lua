@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hanzo2TX/ScriptBloxScripts/refs/heads/main/Monochrome%20Loader"))()
