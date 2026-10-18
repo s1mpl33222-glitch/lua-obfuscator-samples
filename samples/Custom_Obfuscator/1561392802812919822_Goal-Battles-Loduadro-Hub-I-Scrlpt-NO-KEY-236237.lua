@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SARBELFCB/goalbattlesscript/refs/heads/main/goalbattlesscript.lua"))()
