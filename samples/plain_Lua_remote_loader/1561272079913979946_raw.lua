@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mawww123/Mawwwhub/refs/heads/main/loader/free"))()
