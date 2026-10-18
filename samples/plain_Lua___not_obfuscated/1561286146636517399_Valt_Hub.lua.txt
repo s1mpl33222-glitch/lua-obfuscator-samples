@@ -1,0 +1,60 @@
+-- LuaShield VM · VM proprietária para scripts Lua/Luau compatíveis
+do
+ local _OBiwiOt=(getfenv and getfenv(0)) or _ENV or _G
+ local _XSozXvq={{51,176,196,199,219,251,13,28,36,58,68},{197,61,72,101,110},{121,210,15,32,45,21,68,100},{227,92,121,138,151,171,131,137,154,227,246,17,35,238,56,75,103,108,138,136,172,187,190,220,222,251,11,34,36,62,85,32,102,131,146,101,146,185,222,219,255,5,35,45,65,15,36,103,73,89,108,120,140,157,173,192,255,15,240,7,67,34,54,75,135,151,124,188,156,175,194,202,228,32,6,68,37,49,64,148,148,187,132,159,173,188,203,220,238,46,62,35,52,72,134,105,117,132,151,215,192,251,14,29,45,17,32,98,67,87,98,117,131,197,172,235,208,219,236,251,63,82,97,61,101,156,176,201,171,233,231,195,233,254,246,39,90,94,118,138,148,110,189,215,212}}
+ local _BFEeuvm={{c={5,1,5,2,9,4,3,13,10,4,4,16,2,16,1,16,0,8,21,0},p={}}}
+ local function _QVDVhGU(v)
+  local r={}
+  for i=2,#v do r[#r+1]=string.char((v[i]-v[1]-(i-1)*17)%256) end
+  return table.concat(r)
+ end
+ for i=1,#_XSozXvq do _XSozXvq[i]=_QVDVhGU(_XSozXvq[i]) end
+ local _QSvvBYz=table.unpack or unpack
+ local function _ralqEqq(id,parent,varargs)
+  local fn=_BFEeuvm[id]
+  local code=fn.c
+  local args=varargs or {}
+  local _zpicZPQ={__parent=parent,__decl={},__vals={},__varargs={}}
+  for i,k in ipairs(fn.p) do
+   local name=_XSozXvq[k]
+   _zpicZPQ.__decl[name]=true
+   _zpicZPQ.__vals[name]=args[i]
+  end
+  for i=#fn.p+1,#args do _zpicZPQ.__varargs[#_zpicZPQ.__varargs+1]=args[i] end
+  local s={} local top=0 local scopes={} local _szKaSOU=1
+  local function push(v) top=top+1 s[top]=v end
+  local function pop() local v=s[top] s[top]=nil top=top-1 return v end
+  while true do
+   local op=code[_szKaSOU] _szKaSOU=_szKaSOU+1
+   if not op then return end
+   if op==1 then push(nil)
+   elseif op==2 then local v=code[_szKaSOU] _szKaSOU=_szKaSOU+1 push(v~=0)
+   elseif op==3 then local v=code[_szKaSOU] _szKaSOU=_szKaSOU+1 push(v)
+   elseif op==4 then local v=code[_szKaSOU] _szKaSOU=_szKaSOU+1 push(_XSozXvq[v])
+   elseif op==5 then local k=_XSozXvq[code[_szKaSOU]] _szKaSOU=_szKaSOU+1 local q=_zpicZPQ while q and not q.__decl[k] do q=q.__parent end if q then push(q.__vals[k]) else push(_OBiwiOt[k]) end
+   elseif op==6 then local k=_XSozXvq[code[_szKaSOU]] _szKaSOU=_szKaSOU+1 local value=pop() local q=_zpicZPQ while q and not q.__decl[k] do q=q.__parent end if q then q.__vals[k]=value else _OBiwiOt[k]=value end
+   elseif op==7 then local k=_XSozXvq[code[_szKaSOU]] _szKaSOU=_szKaSOU+1 _zpicZPQ.__decl[k]=true _zpicZPQ.__vals[k]=pop()
+   elseif op==8 then pop()
+   elseif op==9 then push(s[top])
+   elseif op==10 then local a=pop() local b=pop() push(a) push(b)
+   elseif op==11 then local k=_XSozXvq[code[_szKaSOU]] _szKaSOU=_szKaSOU+1 local b=pop() local a=pop() local v if k=="+" then v=a+b elseif k=="-" then v=a-b elseif k=="*" then v=a*b elseif k=="/" then v=a/b elseif k=="//" then v=math.floor(a/b) elseif k=="%" then v=a%b elseif k=="^" then v=a^b elseif k==".." then v=a..b elseif k=="==" then v=(a==b) elseif k=="~=" then v=(a~=b) elseif k=="<" then v=(a<b) elseif k=="<=" then v=(a<=b) elseif k==">" then v=(a>b) elseif k==">=" then v=(a>=b) else error("LuaShield: operador não suportado: "..tostring(k)) end push(v)
+   elseif op==12 then local k=_XSozXvq[code[_szKaSOU]] _szKaSOU=_szKaSOU+1 local a=pop() if k=="not" then push(not a) elseif k=="-" then push(-a) elseif k=="#" then push(#a) else error("LuaShield: operador unário não suportado") end
+   elseif op==13 then local k=pop() local t=pop() push(t[k])
+   elseif op==14 then local value=pop() local k=pop() local t=pop() t[k]=value
+   elseif op==15 then push({})
+   elseif op==16 then local n=code[_szKaSOU] _szKaSOU=_szKaSOU+1 local args={} for i=n,1,-1 do args[i]=pop() end local fn=pop() push(fn(_QSvvBYz(args,1,n)))
+   elseif op==17 then _szKaSOU=code[_szKaSOU]
+   elseif op==18 then local target=code[_szKaSOU] _szKaSOU=_szKaSOU+1 if not pop() then _szKaSOU=target end
+   elseif op==19 then local target=code[_szKaSOU] _szKaSOU=_szKaSOU+1 if pop() then _szKaSOU=target end
+   elseif op==20 then local target=code[_szKaSOU] _szKaSOU=_szKaSOU+1 push(function(...) return _ralqEqq(target,_zpicZPQ,{...}) end)
+   elseif op==21 then local n=code[_szKaSOU] _szKaSOU=_szKaSOU+1 local values={} for i=n,1,-1 do values[i]=pop() end return _QSvvBYz(values,1,n)
+   elseif op==22 then scopes[#scopes+1]=_zpicZPQ _zpicZPQ={__parent=_zpicZPQ,__decl={},__vals={},__varargs=_zpicZPQ.__varargs}
+   elseif op==23 then _zpicZPQ=scopes[#scopes] scopes[#scopes]=nil
+   elseif op==24 then local i=code[_szKaSOU] _szKaSOU=_szKaSOU+1 push(_zpicZPQ.__varargs[i])
+   elseif op==25 then local name=_XSozXvq[code[_szKaSOU]] local endname=_XSozXvq[code[_szKaSOU+1]] local stepname=_XSozXvq[code[_szKaSOU+2]] local target=code[_szKaSOU+3] _szKaSOU=_szKaSOU+4 local step=pop() local finish=pop() local start=pop() _zpicZPQ.__decl[name]=true _zpicZPQ.__vals[name]=start _zpicZPQ.__decl[endname]=true _zpicZPQ.__vals[endname]=finish _zpicZPQ.__decl[stepname]=true _zpicZPQ.__vals[stepname]=step if (step>=0 and start>finish) or (step<0 and start<finish) then _szKaSOU=target end
+   elseif op==26 then local name=_XSozXvq[code[_szKaSOU]] local endname=_XSozXvq[code[_szKaSOU+1]] local stepname=_XSozXvq[code[_szKaSOU+2]] local target=code[_szKaSOU+3] _szKaSOU=_szKaSOU+4 local value=_zpicZPQ.__vals[name]+_zpicZPQ.__vals[stepname] _zpicZPQ.__vals[name]=value if (_zpicZPQ.__vals[stepname]>=0 and value<=_zpicZPQ.__vals[endname]) or (_zpicZPQ.__vals[stepname]<0 and value>=_zpicZPQ.__vals[endname]) then _szKaSOU=target end
+   else error("LuaShield: bytecode inválido") end
+  end
+ end
+ _ralqEqq(1,nil,{})
+end
