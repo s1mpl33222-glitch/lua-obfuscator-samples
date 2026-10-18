@@ -1,0 +1,1 @@
+{"status":"success","country":"United States","countryCode":"US","region":"NY","regionName":"New York","city":"Buffalo","zip":"14202","lat":42.8943,"lon":-78.8736,"timezone":"America/New_York","isp":"B2 Net Solutions Inc.","org":"B2 Net Solutions Inc","as":"AS55286 B2 Net Solutions Inc.","query":"23.236.227.153"}
