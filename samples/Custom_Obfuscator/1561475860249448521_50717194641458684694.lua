@@ -1,0 +1,1 @@
+("LuaProt V3 Loader - Unauthorized tampering or debugging of protected scripts is strictly prohibited and will result in a global blacklist from all LuaProt protected scripts."):sub(1,1);loadstring(game:HttpGet("https://luaprot.net/api/v3/loaders/get/50717194641458684694"))()
