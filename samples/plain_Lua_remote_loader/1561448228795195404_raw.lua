@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nekopoichan-dev/NHUB/refs/heads/main/loader"))()
