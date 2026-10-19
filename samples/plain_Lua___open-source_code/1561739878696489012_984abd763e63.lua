@@ -1,0 +1,1 @@
+local p=game:GetService("Players").LocalPlayer if p then p:Kick("[m6loader] Invalid Roblox identity") end error("Invalid Roblox identity")
