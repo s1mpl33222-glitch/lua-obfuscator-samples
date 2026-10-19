@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Main-Scripts-Ready-V9/Mvs-Open-Source/refs/heads/main/By-Stev-and-Ren.lua"))()
