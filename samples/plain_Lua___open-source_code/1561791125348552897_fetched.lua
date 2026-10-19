@@ -1,0 +1,1 @@
+game:GetService("Players").LocalPlayer:Kick("❌ يرجى وضع المفتاح أولاً!")
