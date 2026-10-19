@@ -1,0 +1,33 @@
+if not game:IsLoaded()then game.Loaded:Wait()end;do ("JNKIE Game Loader - Unauthorized tampering or debugging of protected scripts is strictly prohibited and may result in a global blacklist from JNKIE protected scripts."):sub(1,1);local S,P,G={"b4cc448018e31f63bbe0b361901145b6eb3243b24528525d9fb56cadc2166c71","85654bb7ec1edf6983a00fc40e4d0bb7c7a684f74038deded3783e894b284073","fac74f86cd1a4dce833301c95c749df3507ceb41833159b7985017633e24b0e3","eb3727433e53a6b8bf42e78dd8c336e6ffe49502498193e9636024a2bca1e112"},{[994732206]=1,[17625359962]=2,[107778070777162]=3,[124216119978534]=4},{[2753915549]=1,[6035872082]=2,[10035204815]=4,[10563114921]=3};local i=P[game.PlaceId]or G[game.GameId];if not i then local h="Unsupported game [LDR-NOMAP]";warn(h);task.spawn(function()pcall(function()game:GetService("Players").LocalPlayer:Kick(h)end);task.wait();pcall(function()local p=game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ErrorPrompt;p.TitleFrame.ErrorTitle.Text="SAVAGE";p.MessageArea.ErrorFrame.ErrorMessage.Text=h end)end);return end;-- Docs 
+-- https://github.com/sarahsophiesee-bot/SakuraUI/blob/main/README.md
+
+local Sakura = loadstring(game:HttpGet("https://cdn.jnkie.com/SakuraUI.lua"))()
+
+Sakura.Appearance = {
+    Title = "SAVAGE",
+    Subtitle = "Enter your key for access",
+    Tagline = "Discord https://discord.gg/2ZYNJGVjK6",
+    Icon = "rbxassetid://116255434488074",
+    IconSize = UDim2.fromOffset(30, 30),
+}
+
+Sakura.Links.Discord = "https://discord.gg/2ZYNJGVjK6"
+Sakura.Storage.FileName = "Jnkie_key"
+-- Sakura.Options.KeylessUi = "true"
+
+Sakura.Shop = {
+    Enabled = true,
+    Icon = "",
+    Title = "Get a Premium key",
+    Subtitle = "Instant delivery • 24/7 support",
+    ButtonText = "Buy",
+    Link = "https://discord.gg/2ZYNJGVjK6"
+}
+
+
+Sakura:LaunchJunkie({
+    Service = "SAVAGE",
+    Identifier = "1200668",
+    Provider = "LINKUNLOCKER"
+})
+do local k=getgenv().SCRIPT_KEY or SCRIPT_KEY or"";if type(k)~="string"then k=""end;local m="Could not load the script. Check your internet connection and try again later.";local function v(h)warn(h);task.spawn(function()pcall(function()game:GetService("Players").LocalPlayer:Kick(h)end);task.wait();pcall(function()local p=game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ErrorPrompt;p.TitleFrame.ErrorTitle.Text="JNKIE";p.MessageArea.ErrorFrame.ErrorMessage.Text=h end)end)end;local r=(type(syn)=="table"and type(syn.request)=="function"and syn.request)or(type(request)=="function"and request)or(type(http_request)=="function"and http_request)or(type(http)=="table"and type(http.request)=="function"and http.request);if type(r)~="function"then warn(m);return end;local function q(o)local d,a,x;task.spawn(function()a,x=pcall(r,o);d=true end);local s=os.clock();repeat task.wait()until d or os.clock()-s>15;if not d then return false,nil end;return a,x end;local a,x=q({Url="https://api.jnkie.com/api/v1/luascripts/delivery/"..S[i].."?v=2&errors=text",Method="POST",Headers={["Content-Type"]="text/plain"},Body=k});local h=a and type(x)=="table"and type(x.Body)=="string"and(x.StatusCode==400 or x.StatusCode==401 or x.StatusCode==403)and x.Body;if h then local c,n=h:match("^([^\r\n]+)\n([^\r\n]+)$");c=c or h;if#c<=75 and(c=="LDR-DENIED"or c:match("^LDR%-DENIED:[A-Z_]+$"))then if not n or#n>512 then n=m;if k==""or k:match("^%s*$")then n="No key provided. Get a key from the script provider, enter it, then try again." end end;v(n.." ("..c..")");return end end;if not a or type(x)~="table"or x.StatusCode~=200 or type(x.Body)~="string"then warn(m);return end;if not (string.sub(x.Body,1,8)=="https://")then warn(m);return end;a,x=q({Url=x.Body,Method="GET"});if not a or type(x)~="table"or x.StatusCode~=200 or type(x.Body)~="string"or#x.Body==0 then warn(m);return end;local b=x.Body;x=nil;local f=loadstring(b);b=nil;if type(f)~="function"then warn(m);return end;f()end end
