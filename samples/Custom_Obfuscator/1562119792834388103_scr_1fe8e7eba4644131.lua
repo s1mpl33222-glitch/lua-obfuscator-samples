@@ -1,0 +1,1 @@
+local _=657610040 local t={} for i=1,8 do t[i]=("6lrl9bdpjl4"):sub(1,i) end return
