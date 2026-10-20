@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Scripting-404/Script/refs/heads/main/scripts/steal-an-egg.lua"))()
