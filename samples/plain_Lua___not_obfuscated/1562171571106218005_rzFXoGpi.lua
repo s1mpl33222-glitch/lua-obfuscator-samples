@@ -1,0 +1,3 @@
+-- hiddenbin:blocked
+-- script oculto
+-- use o loadstring gerado para executar.
