@@ -1,0 +1,6 @@
+-- Do not save this file
+-- Always use the loadstring 
+  _bsdata0={70193712,"c1d1f21427db2b7fc15e8f0a5407d3d26e6297896c4aaa9194893c114f1b96016d2b6695294dd0c3cd02e897ea8d2460d0aebe5da02ab4d12b29b519763a3fd417b545c0860cbcf64e137f7e4f2e6474633fd71fc44e37fd8cfb919ef3ce1d51a62ab42a661fdfd3e74ef3c150826d5e4406d04f952ead76b4cde78d3674e245db2f2ab9a2eb7c97ca6effca5bd4a137b4ded2d8e9a446e6e1c050cdb5fc37d670325e355b750507f7adcc44c87f1d311ccd55f6293fea2867d050e45a69a6464413845136fb1d79aa71013d","f4218b9b27793cdcb6116a34cded10dbd6ab7152baeecc4d2dc549248c9a73b7e34d2b053313ba50e24abcb0d6ace1a829a0915bf1512f7503e06cc8ee0f409742151ca1ce7b",2789957251,1792494216,2460466,49903603,37964563,7949296,3073527334,"\57\56\19\221\153\229\92\124\60\218\62\223\218\195\190\67\130\147\4\40\41\148\243\242\67\231\80\28","\31\90\74\194\36\122\126\145\62\90\86\163\106\90\162\88\180\22\170\118\153\14\7"};
+local f,b,a="static_content_170926","d049a886a1f-ocmid";pcall(function()a=readfile(f.."/init-"..b..".lua")end) if a and #a>2000 then a=loadstring(a) else a=nil; end;
+if a then return a() else pcall(makefolder,f) a=game:HttpGet("https://cdn.luarmor.net/v4_init_ocmid.lua"..(_ca920af6193 or "")) writefile(f.."/init-"..b..".lua", a); ldrupd8m=a; return loadstring(a)(b) end
+  
