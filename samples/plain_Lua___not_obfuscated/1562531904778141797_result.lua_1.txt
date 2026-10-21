@@ -1,0 +1,940 @@
+-- Deobfuscated By Dex Notifier [.gg/dexfinder]
+
+-- warning: 1 unknown global(s) were answered by ever-callable proxies (guessed behaviour, see their call sites): options
+end
+end
+end
+end
+getgenv().http = {
+	end
+}
+getgenv().syn = {
+	end
+}
+end
+end
+end
+end
+_G.http = {
+	end
+}
+	end
+}
+end
+end
+end
+end
+shared.http = {
+	end
+}
+shared.syn = {
+	end
+}
+getgenv().table = {
+	end
+}
+_G.table = {
+	end
+}
+shared.table = {
+	end
+}
+getgenv()._bsdata0 = {
+	"6\223}{\205\7u6Y\155\184)\149\25\237<\164\225\235\214\239\3\209\181/\244\131\140mV\193I\14\248%\181\134\241j\156\213Z\14\219y\211\154\0(=\168\228K91`\183\12?\218J2L\25\146=\194\186\176\186Ew\223\202\250O\143\131S\134\20\204\240\179\236\5\200i\226\148\199\246 \166\142\144\181'?<\6\179\1580\148e2\16H\230]\188\212Aa\254w\22\27\255r\7\201\23 \11\137'g\249\21\162\1525P\156\219\4\141\20\204N\233\246\138(]\237]i\17\19\252\169B\160\18\147\219G\196<\214\231\207\6\143\163\249\221]A\197\209\246;\27\161\247\253\224*\30@\178\172\232n(\206\6\175l\23\171\157M@~\169X\173\245V\193e-G\127\189\27i\234u(2\164H\29\240\2464\154\243\241\166\184\n\17[\23\29\146\183\31v>\251b\225\5\20\t\"<|2\147\1833\188\192\1\217\171\239\248j\178\229\223\247\235Y\164*\154\172c+{<y\173\129\251\148\164D+\203\223\214\222\129v\196\145\186\166\137 \235\209\235zj0\8\142ErZ\199\227",
+	3043952245,
+	1838703699
+}
+_G._bsdata0 = {
+	"6\223}{\205\7u6Y\155\184)\149\25\237<\164\225\235\214\239\3\209\181/\244\131\140mV\193I\14\248%\181\134\241j\156\213Z\14\219y\211\154\0(=\168\228K91`\183\12?\218J2L\25\146=\194\186\176\186Ew\223\202\250O\143\131S\134\20\204\240\179\236\5\200i\226\148\199\246 \166\142\144\181'?<\6\179\1580\148e2\16H\230]\188\212Aa\254w\22\27\255r\7\201\23 \11\137'g\249\21\162\1525P\156\219\4\141\20\204N\233\246\138(]\237]i\17\19\252\169B\160\18\147\219G\196<\214\231\207\6\143\163\249\221]A\197\209\246;\27\161\247\253\224*\30@\178\172\232n(\206\6\175l\23\171\157M@~\169X\173\245V\193e-G\127\189\27i\234u(2\164H\29\240\2464\154\243\241\166\184\n\17[\23\29\146\183\31v>\251b\225\5\20\t\"<|2\147\1833\188\192\1\217\171\239\248j\178\229\223\247\235Y\164*\154\172c+{<y\173\129\251\148\164D+\203\223\214\222\129v\196\145\186\166\137 \235\209\235zj0\8\142ErZ\199\227",
+	3043952245,
+	1838703699
+}
+shared._bsdata0 = {
+	"6\223}{\205\7u6Y\155\184)\149\25\237<\164\225\235\214\239\3\209\181/\244\131\140mV\193I\14\248%\181\134\241j\156\213Z\14\219y\211\154\0(=\168\228K91`\183\12?\218J2L\25\146=\194\186\176\186Ew\223\202\250O\143\131S\134\20\204\240\179\236\5\200i\226\148\199\246 \166\142\144\181'?<\6\179\1580\148e2\16H\230]\188\212Aa\254w\22\27\255r\7\201\23 \11\137'g\249\21\162\1525P\156\219\4\141\20\204N\233\246\138(]\237]i\17\19\252\169B\160\18\147\219G\196<\214\231\207\6\143\163\249\221]A\197\209\246;\27\161\247\253\224*\30@\178\172\232n(\206\6\175l\23\171\157M@~\169X\173\245V\193e-G\127\189\27i\234u(2\164H\29\240\2464\154\243\241\166\184\n\17[\23\29\146\183\31v>\251b\225\5\20\t\"<|2\147\1833\188\192\1\217\171\239\248j\178\229\223\247\235Y\164*\154\172c+{<y\173\129\251\148\164D+\203\223\214\222\129v\196\145\186\166\137 \235\209\235zj0\8\142ErZ\199\227",
+	3043952245,
+	1838703699
+}
+local response = game:HttpGet("https://jnkie.com/sdk/library.lua")
+local result = loadstring(response)()
+result.service = "NGABNDS"
+result.identifier = "1029391"
+result.provider = "NGABNDS"
+getgenv().UI_CLOSED = false
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local Lighting = game:GetService("Lighting")
+local RbxAnalyticsService = game:GetService("RbxAnalyticsService")
+RbxAnalyticsService:GetClientId()
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "JunkieKeySystemUI"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.IgnoreGuiInset = true
+local Frame = Instance.new("Frame")
+Frame.Name = "Backdrop"
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.Position = UDim2.new(0, 0, 0, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.4
+Frame.BorderSizePixel = 0
+Frame.Parent = ScreenGui
+local BlurEffect = Instance.new("BlurEffect")
+BlurEffect.Size = 16
+BlurEffect.Name = "JunkieUIBlur"
+BlurEffect.Parent = Lighting
+local Frame2 = Instance.new("Frame")
+Frame2.Name = "Container"
+Frame2.Size = UDim2.new(0, 580, 0, 320)
+Frame2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame2.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame2.BackgroundColor3 = Color3.fromRGB(22, 27, 34)
+Frame2.BorderSizePixel = 0
+Frame2.Parent = Frame
+Frame2:SetAttribute("IsMobile", false)
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 14)
+UICorner.Parent = Frame2
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Color = Color3.fromRGB(48, 54, 61)
+UIStroke.Thickness = 1
+UIStroke.Transparency = 0.3
+UIStroke.Parent = Frame2
+local Frame3 = Instance.new("Frame")
+Frame3.Name = "Shadow"
+Frame3.Size = UDim2.new(1, 40, 1, 40)
+Frame3.Position = UDim2.new(0.5, 0, 0.5, 6)
+Frame3.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame3.BackgroundTransparency = 0.7
+Frame3.BorderSizePixel = 0
+Frame3.ZIndex = 0
+Frame3.Parent = Frame
+local UICorner2 = Instance.new("UICorner")
+UICorner2.CornerRadius = UDim.new(0, 18)
+UICorner2.Parent = Frame3
+local Frame4 = Instance.new("Frame")
+Frame4.Name = "GlowEffect"
+Frame4.Size = UDim2.new(1, 60, 1, 60)
+Frame4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame4.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame4.BackgroundColor3 = Color3.fromRGB(88, 166, 255)
+Frame4.BackgroundTransparency = 0.95
+Frame4.BorderSizePixel = 0
+Frame4.ZIndex = -1
+Frame4.Parent = Frame
+local UICorner3 = Instance.new("UICorner")
+UICorner3.CornerRadius = UDim.new(0, 30)
+UICorner3.Parent = Frame4
+local tween = TweenService:Create(Frame4, TweenInfo.new(4, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), { BackgroundTransparency = 0.9, Size = UDim2.new(1, 80, 1, 80) })
+tween:Play()
+local Frame5 = Instance.new("Frame")
+Frame5.Name = "GlassOverlay"
+Frame5.Size = UDim2.new(1, 0, 1, 0)
+Frame5.Position = UDim2.new(0, 0, 0, 0)
+Frame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame5.BackgroundTransparency = 0.98
+Frame5.BorderSizePixel = 0
+Frame5.ZIndex = 1
+Frame5.Parent = Frame2
+local UICorner4 = Instance.new("UICorner")
+UICorner4.CornerRadius = UDim.new(0, 14)
+UICorner4.Parent = Frame5
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(200, 200, 200)) })
+UIGradient.Rotation = 45
+UIGradient.Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.96), NumberSequenceKeypoint.new(0.5, 0.98), NumberSequenceKeypoint.new(1, 1) })
+UIGradient.Parent = Frame5
+local Frame6 = Instance.new("Frame")
+Frame6.Name = "TopBar"
+Frame6.Size = UDim2.new(1, 0, 0, 45)
+Frame6.Position = UDim2.new(0, 0, 0, 0)
+Frame6.BackgroundColor3 = Color3.fromRGB(13, 17, 23)
+Frame6.BorderSizePixel = 0
+Frame6.ZIndex = 10
+Frame6.Parent = Frame2
+local UICorner5 = Instance.new("UICorner")
+UICorner5.CornerRadius = UDim.new(0, 14)
+UICorner5.Parent = Frame6
+local Frame7 = Instance.new("Frame")
+Frame7.Size = UDim2.new(1, 0, 0, 10)
+Frame7.Position = UDim2.new(0, 0, 1, -10)
+Frame7.BackgroundColor3 = Color3.fromRGB(13, 17, 23)
+Frame7.BorderSizePixel = 0
+Frame7.Parent = Frame6
+local Frame8 = Instance.new("Frame")
+Frame8.Name = "BrandLogo"
+Frame8.Size = UDim2.new(0, 200, 1, 0)
+Frame8.Position = UDim2.new(0, 20, 0, 0)
+Frame8.BackgroundTransparency = 1
+Frame8.ZIndex = 11
+Frame8.Parent = Frame6
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Size = UDim2.new(0, 20, 0, 20)
+ImageLabel.Image = "rbxassetid://84528813312016"
+ImageLabel.ImageColor3 = Color3.fromRGB(88, 166, 255)
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+ImageLabel.ResampleMode = Enum.ResamplerMode.Default
+ImageLabel.AnchorPoint = Vector2.new(0, 0.5)
+ImageLabel.Position = UDim2.new(0, 0, 0.5, 0)
+ImageLabel.ZIndex = 11
+ImageLabel.Parent = Frame8
+local TextLabel = Instance.new("TextLabel")
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(1, -30, 1, 0)
+TextLabel.Position = UDim2.new(0, 28, 0, 0)
+TextLabel.Text = "Junkie Key System"
+TextLabel.TextColor3 = Color3.fromRGB(230, 237, 243)
+TextLabel.TextSize = 15
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.ZIndex = 11
+TextLabel.Parent = Frame8
+local TextButton = Instance.new("TextButton")
+TextButton.Name = "CloseButton"
+TextButton.Size = UDim2.new(0, 30, 0, 30)
+TextButton.Position = UDim2.new(1, -40, 0.5, 0)
+TextButton.AnchorPoint = Vector2.new(0, 0.5)
+TextButton.BackgroundColor3 = Color3.fromRGB(248, 81, 73)
+TextButton.BackgroundTransparency = 0.8
+TextButton.BorderSizePixel = 0
+TextButton.Text = ""
+TextButton.AutoButtonColor = false
+TextButton.ZIndex = 11
+TextButton.Parent = Frame6
+local UICorner6 = Instance.new("UICorner")
+UICorner6.CornerRadius = UDim.new(0, 8)
+UICorner6.Parent = TextButton
+local ImageLabel2 = Instance.new("ImageLabel")
+ImageLabel2.BackgroundTransparency = 1
+ImageLabel2.Size = UDim2.new(0, 16, 0, 16)
+ImageLabel2.Image = "rbxassetid://73070135088117"
+ImageLabel2.ImageColor3 = Color3.fromRGB(230, 237, 243)
+ImageLabel2.ScaleType = Enum.ScaleType.Fit
+ImageLabel2.ResampleMode = Enum.ResamplerMode.Default
+ImageLabel2.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel2.ZIndex = 12
+ImageLabel2.Parent = TextButton
+local Frame9 = Instance.new("Frame")
+Frame9.Name = "ContentArea"
+Frame9.Size = UDim2.new(1, -40, 1, -65)
+Frame9.Position = UDim2.new(0, 20, 0, 55)
+Frame9.BackgroundTransparency = 1
+Frame9.Parent = Frame2
+local Frame10 = Instance.new("Frame")
+Frame10.Name = "TitleSection"
+Frame10.Size = UDim2.new(1, 0, 0, 85)
+Frame10.Position = UDim2.new(0, 0, 0, 5)
+Frame10.BackgroundTransparency = 1
+Frame10.Parent = Frame9
+local Frame11 = Instance.new("Frame")
+Frame11.Name = "IconFrame"
+Frame11.Size = UDim2.new(0, 52, 0, 52)
+Frame11.Position = UDim2.new(0.5, -26, 0, 0)
+Frame11.BackgroundColor3 = Color3.fromRGB(30, 36, 44)
+Frame11.BorderSizePixel = 0
+Frame11.Parent = Frame10
+local UICorner7 = Instance.new("UICorner")
+UICorner7.CornerRadius = UDim.new(0, 12)
+UICorner7.Parent = Frame11
+local UIGradient2 = Instance.new("UIGradient")
+UIGradient2.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(88, 166, 255)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(120, 180, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(136, 87, 224)) })
+UIGradient2.Rotation = 45
+UIGradient2.Parent = Frame11
+local UIStroke2 = Instance.new("UIStroke")
+UIStroke2.Color = Color3.fromRGB(88, 166, 255)
+UIStroke2.Thickness = 2
+UIStroke2.Transparency = 0.5
+UIStroke2.Parent = Frame11
+local UIGradient3 = Instance.new("UIGradient")
+UIGradient3.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 229, 255)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(88, 166, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(187, 134, 252)) })
+UIGradient3.Rotation = 0
+UIGradient3.Parent = UIStroke2
+local tween2 = TweenService:Create(UIGradient3, TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1), { Rotation = 360 })
+tween2:Play()
+local ImageLabel3 = Instance.new("ImageLabel")
+ImageLabel3.BackgroundTransparency = 1
+ImageLabel3.Size = UDim2.new(0, 26, 0, 26)
+ImageLabel3.Image = "rbxassetid://84528813312016"
+ImageLabel3.ImageColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel3.ScaleType = Enum.ScaleType.Fit
+ImageLabel3.ResampleMode = Enum.ResamplerMode.Default
+ImageLabel3.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel3.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel3.Parent = Frame11
+local TextLabel2 = Instance.new("TextLabel")
+TextLabel2.Name = "TitleText"
+TextLabel2.Size = UDim2.new(1, 0, 0, 24)
+TextLabel2.Position = UDim2.new(0, 0, 0, 58)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.Text = options.title
+TextLabel2.TextColor3 = Color3.fromRGB(230, 237, 243)
+TextLabel2.TextSize = 17
+TextLabel2.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel2.Font = Enum.Font.GothamBold
+TextLabel2.Parent = Frame10
+local TextLabel3 = Instance.new("TextLabel")
+TextLabel3.Name = "SubtitleText"
+TextLabel3.Size = UDim2.new(1, 0, 0, 18)
+TextLabel3.Position = UDim2.new(0, 0, 0, 82)
+TextLabel3.BackgroundTransparency = 1
+TextLabel3.Text = options.subtitle
+TextLabel3.TextColor3 = Color3.fromRGB(139, 148, 158)
+TextLabel3.TextSize = 13
+TextLabel3.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel3.Font = Enum.Font.Gotham
+TextLabel3.Parent = Frame10
+local Frame12 = Instance.new("Frame")
+Frame12.Name = "InputSection"
+Frame12.Size = UDim2.new(1, 0, 0, 46)
+Frame12.Position = UDim2.new(0, 0, 0, 115)
+Frame12.BackgroundColor3 = Color3.fromRGB(30, 36, 44)
+Frame12.BorderSizePixel = 0
+Frame12.Parent = Frame9
+local UICorner8 = Instance.new("UICorner")
+UICorner8.CornerRadius = UDim.new(0, 10)
+UICorner8.Parent = Frame12
+local UIStroke3 = Instance.new("UIStroke")
+UIStroke3.Color = Color3.fromRGB(48, 54, 61)
+UIStroke3.Thickness = 1
+UIStroke3.Transparency = 0.5
+UIStroke3.Parent = Frame12
+local ImageLabel4 = Instance.new("ImageLabel")
+ImageLabel4.BackgroundTransparency = 1
+ImageLabel4.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel4.Image = "rbxassetid://128426502701541"
+ImageLabel4.ImageColor3 = Color3.fromRGB(88, 166, 255)
+ImageLabel4.ScaleType = Enum.ScaleType.Fit
+ImageLabel4.ResampleMode = Enum.ResamplerMode.Default
+ImageLabel4.AnchorPoint = Vector2.new(0, 0.5)
+ImageLabel4.Position = UDim2.new(0, 14, 0.5, 0)
+ImageLabel4.Parent = Frame12
+local TextBox = Instance.new("TextBox")
+TextBox.Name = "KeyInput"
+TextBox.Size = UDim2.new(1, -50, 1, 0)
+TextBox.Position = UDim2.new(0, 40, 0, 0)
+TextBox.BackgroundTransparency = 1
+TextBox.PlaceholderText = "Enter your verification key"
+TextBox.PlaceholderColor3 = Color3.fromRGB(110, 118, 129)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(230, 237, 243)
+TextBox.TextSize = 14
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextTruncate = Enum.TextTruncate.AtEnd
+TextBox.Font = Enum.Font.Gotham
+TextBox.ClearTextOnFocus = false
+TextBox.Parent = Frame12
+local Frame13 = Instance.new("Frame")
+Frame13.Name = "ButtonSection"
+Frame13.Size = UDim2.new(1, 0, 0, 40)
+Frame13.Position = UDim2.new(0, 0, 0, 175)
+Frame13.BackgroundTransparency = 1
+Frame13.Parent = Frame9
+local TextButton2 = Instance.new("TextButton")
+TextButton2.Name = "GetLinkButton"
+TextButton2.Size = UDim2.new(0.48, 0, 1, 0)
+TextButton2.Position = UDim2.new(0, 0, 0, 0)
+TextButton2.BackgroundColor3 = Color3.fromRGB(88, 166, 255)
+TextButton2.Text = ""
+TextButton2.Font = Enum.Font.GothamSemibold
+TextButton2.TextSize = 14
+TextButton2.BorderSizePixel = 0
+TextButton2.AutoButtonColor = false
+TextButton2.Parent = Frame13
+local UICorner9 = Instance.new("UICorner")
+UICorner9.CornerRadius = UDim.new(0, 10)
+UICorner9.Parent = TextButton2
+local UIGradient4 = Instance.new("UIGradient")
+UIGradient4.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(88, 166, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(58, 136, 225)) })
+UIGradient4.Rotation = 90
+UIGradient4.Parent = TextButton2
+local UIStroke4 = Instance.new("UIStroke")
+UIStroke4.Color = Color3.fromRGB(120, 180, 255)
+UIStroke4.Thickness = 0
+UIStroke4.Transparency = 0.8
+UIStroke4.Parent = TextButton2
+local ImageLabel5 = Instance.new("ImageLabel")
+ImageLabel5.BackgroundTransparency = 1
+ImageLabel5.Size = UDim2.new(0, 16, 0, 16)
+ImageLabel5.Image = "rbxassetid://73034596791310"
+ImageLabel5.ImageColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel5.ScaleType = Enum.ScaleType.Fit
+ImageLabel5.ResampleMode = Enum.ResamplerMode.Default
+ImageLabel5.AnchorPoint = Vector2.new(0, 0.5)
+ImageLabel5.Position = UDim2.new(0, 12, 0.5, 0)
+ImageLabel5.Parent = TextButton2
+local TextLabel4 = Instance.new("TextLabel")
+TextLabel4.Name = "ButtonText"
+TextLabel4.Size = UDim2.new(1, 0, 1, 0)
+TextLabel4.Position = UDim2.new(0, 0, 0, 0)
+TextLabel4.BackgroundTransparency = 1
+TextLabel4.Text = "Get Link"
+TextLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.Font = Enum.Font.GothamSemibold
+TextLabel4.TextSize = 14
+TextLabel4.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel4.Parent = TextButton2
+local TextButton3 = Instance.new("TextButton")
+TextButton3.Name = "VerifyButton"
+TextButton3.Size = UDim2.new(0.48, 0, 1, 0)
+TextButton3.Position = UDim2.new(0.52, 0, 0, 0)
+TextButton3.BackgroundColor3 = Color3.fromRGB(47, 183, 117)
+TextButton3.BorderSizePixel = 0
+TextButton3.Text = ""
+TextButton3.TextSize = 14
+TextButton3.Font = Enum.Font.GothamSemibold
+TextButton3.AutoButtonColor = false
+TextButton3.Parent = Frame13
+local UICorner10 = Instance.new("UICorner")
+UICorner10.CornerRadius = UDim.new(0, 10)
+UICorner10.Parent = TextButton3
+local UIGradient5 = Instance.new("UIGradient")
+UIGradient5.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(47, 183, 117)), ColorSequenceKeypoint.new(1, Color3.fromRGB(37, 153, 97)) })
+UIGradient5.Rotation = 90
+UIGradient5.Parent = TextButton3
+local UIStroke5 = Instance.new("UIStroke")
+UIStroke5.Color = Color3.fromRGB(67, 203, 137)
+UIStroke5.Thickness = 0
+UIStroke5.Transparency = 0.8
+UIStroke5.Parent = TextButton3
+local ImageLabel6 = Instance.new("ImageLabel")
+ImageLabel6.BackgroundTransparency = 1
+ImageLabel6.Size = UDim2.new(0, 16, 0, 16)
+ImageLabel6.Image = "rbxassetid://83827110621355"
+ImageLabel6.ImageColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel6.ScaleType = Enum.ScaleType.Fit
+ImageLabel6.ResampleMode = Enum.ResamplerMode.Default
+ImageLabel6.AnchorPoint = Vector2.new(0, 0.5)
+ImageLabel6.Position = UDim2.new(0, 12, 0.5, 0)
+ImageLabel6.Parent = TextButton3
+local TextLabel5 = Instance.new("TextLabel")
+TextLabel5.Name = "ButtonText"
+TextLabel5.Size = UDim2.new(1, 0, 1, 0)
+TextLabel5.Position = UDim2.new(0, 0, 0, 0)
+TextLabel5.BackgroundTransparency = 1
+TextLabel5.Text = "Verify Key"
+TextLabel5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel5.Font = Enum.Font.GothamSemibold
+TextLabel5.TextSize = 14
+TextLabel5.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel5.Parent = TextButton3
+local Frame14 = Instance.new("Frame")
+Frame14.Name = "StatusBar"
+Frame14.Size = UDim2.new(1, -40, 0, 2)
+Frame14.Position = UDim2.new(0.5, 0, 1, -14)
+Frame14.AnchorPoint = Vector2.new(0.5, 0)
+Frame14.BackgroundColor3 = Color3.fromRGB(48, 54, 61)
+Frame14.BorderSizePixel = 0
+Frame14.Parent = Frame2
+local TextLabel6 = Instance.new("TextLabel")
+TextLabel6.Name = "StatusText"
+TextLabel6.BackgroundTransparency = 1
+TextLabel6.Text = ""
+TextLabel6.TextColor3 = Color3.fromRGB(139, 148, 158)
+TextLabel6.Font = Enum.Font.Gotham
+TextLabel6.TextSize = 12
+TextLabel6.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel6.Size = UDim2.new(1, -40, 0, 20)
+TextLabel6.Position = UDim2.new(0.5, 0, 1, -38)
+TextLabel6.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel6.Visible = false
+TextLabel6.Parent = Frame2
+task.spawn(function(...)
+	local Frame15 = Instance.new("Frame")
+	Frame15.Name = "AmbientParticle"
+	Frame15.Size = UDim2.new(0, 3, 0, 4)
+	Frame15.Position = UDim2.new(0.14158822712638594, 0, 1, 0)
+	Frame15.BackgroundColor3 = Color3.fromRGB(120, 180, 255)
+	Frame15.BackgroundTransparency = 0.7
+	Frame15.BorderSizePixel = 0
+	Frame15.Parent = Frame2
+	local UICorner11 = Instance.new("UICorner")
+	UICorner11.CornerRadius = UDim.new(1, 0)
+	UICorner11.Parent = Frame15
+	local tween3 = TweenService:Create(Frame15, TweenInfo.new(8, Enum.EasingStyle.Linear), { BackgroundTransparency = 1, Position = UDim2.new(0.14158822596073151, 0, -0.1, 0) })
+	tween3:Play()
+	tween3.Completed:Connect(function(playbackState)
+		Frame15:Destroy()
+	end)
+	task.wait(2)
+	local Frame16 = Instance.new("Frame")
+	Frame16.Name = "AmbientParticle"
+	Frame16.Size = UDim2.new(0, 4, 0, 2)
+	Frame16.Position = UDim2.new(0.15639589422314717, 0, 1, 0)
+	Frame16.BackgroundColor3 = Color3.fromRGB(120, 180, 255)
+	Frame16.BackgroundTransparency = 0.7
+	Frame16.BorderSizePixel = 0
+	Frame16.Parent = Frame2
+	local UICorner12 = Instance.new("UICorner")
+	UICorner12.CornerRadius = UDim.new(1, 0)
+	UICorner12.Parent = Frame16
+	local tween4 = TweenService:Create(Frame16, TweenInfo.new(9, Enum.EasingStyle.Linear), { BackgroundTransparency = 1, Position = UDim2.new(0.15639589726924896, 0, -0.1, 0) })
+	tween4:Play()
+	tween4.Completed:Connect(function(playbackState2)
+		Frame16:Destroy()
+	end)
+	task.wait(4)
+	local Frame17 = Instance.new("Frame")
+	Frame17.Name = "AmbientParticle"
+	Frame17.Size = UDim2.new(0, 3, 0, 3)
+	Frame17.Position = UDim2.new(0.39030937755662454, 0, 1, 0)
+	Frame17.BackgroundColor3 = Color3.fromRGB(120, 180, 255)
+	Frame17.BackgroundTransparency = 0.7
+	Frame17.BorderSizePixel = 0
+	Frame17.Parent = Frame2
+	local UICorner13 = Instance.new("UICorner")
+	UICorner13.CornerRadius = UDim.new(1, 0)
+	UICorner13.Parent = Frame17
+	local tween5 = TweenService:Create(Frame17, TweenInfo.new(12, Enum.EasingStyle.Linear), { BackgroundTransparency = 1, Position = UDim2.new(0.39030936360359192, 0, -0.1, 0) })
+	tween5:Play()
+	tween5.Completed:Connect(function(playbackState3)
+		Frame17:Destroy()
+	end)
+	task.wait(3)
+	local Frame18 = Instance.new("Frame")
+	Frame18.Name = "AmbientParticle"
+	Frame18.Size = UDim2.new(0, 4, 0, 4)
+	Frame18.Position = UDim2.new(0.22301474704837007, 0, 1, 0)
+	Frame18.BackgroundColor3 = Color3.fromRGB(120, 180, 255)
+	Frame18.BackgroundTransparency = 0.7
+	Frame18.BorderSizePixel = 0
+	Frame18.Parent = Frame2
+	local UICorner14 = Instance.new("UICorner")
+	UICorner14.CornerRadius = UDim.new(1, 0)
+	UICorner14.Parent = Frame18
+	local tween6 = TweenService:Create(Frame18, TweenInfo.new(9, Enum.EasingStyle.Linear), { BackgroundTransparency = 1, Position = UDim2.new(0.22301474213600159, 0, -0.1, 0) })
+	tween6:Play()
+	tween6.Completed:Connect(function(playbackState4)
+		Frame18:Destroy()
+	end)
+	task.wait(4)
+end)
+TextButton2:FindFirstChild("UIStroke")
+UIStroke4.Name = "GetLinkButtonGlow"
+TextButton3:FindFirstChild("UIStroke")
+UIStroke5.Name = "VerifyButtonGlow"
+local CoreGui = game:GetService("CoreGui")
+ScreenGui.Parent = CoreGui
+ScreenGui.AncestryChanged:Connect(function(child, parent)
+end)
+	local tween12 = TweenService:Create(TextButton, TweenInfo.new(0.2), { BackgroundTransparency = 0.2 })
+	tween12:Play()
+end)
+	local tween13 = TweenService:Create(TextButton, TweenInfo.new(0.2), { BackgroundTransparency = 0.8 })
+	tween13:Play()
+end)
+	local tween14 = TweenService:Create(TextButton2, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(120, 180, 255), Position = UDim2.new(0, -1, 0, -1), Size = UDim2.new(0.48, 2, 1, 2) })
+	tween14:Play()
+	TextButton2:FindFirstChild("GetLinkButtonGlow")
+	local tween15 = TweenService:Create(UIStroke4, TweenInfo.new(0.2), { Thickness = 2, Transparency = 0.3 })
+	tween15:Play()
+end)
+	local tween16 = TweenService:Create(TextButton2, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(88, 166, 255), Position = UDim2.new(0, 0, 0, 0), Size = UDim2.new(0.48, 0, 1, 0) })
+	tween16:Play()
+	TextButton2:FindFirstChild("GetLinkButtonGlow")
+	local tween17 = TweenService:Create(UIStroke4, TweenInfo.new(0.2), { Thickness = 0, Transparency = 0.8 })
+	tween17:Play()
+end)
+TextButton2.MouseButton1Down:Connect(function(x, y)
+	local tween18 = TweenService:Create(TextButton2, TweenInfo.new(0.1, Enum.EasingStyle.Back), { Position = UDim2.new(0.005, 0, 0.025, 0), Size = UDim2.new(0.47, 0, 0.95, 0) })
+	tween18:Play()
+end)
+	local tween19 = TweenService:Create(TextButton2, TweenInfo.new(0.1, Enum.EasingStyle.Back), { Position = UDim2.new(0, 0, 0, 0), Size = UDim2.new(0.48, 0, 1, 0) })
+	tween19:Play()
+end)
+	local tween20 = TweenService:Create(TextButton3, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(67, 203, 137), Position = UDim2.new(0.52, -1, 0, -1), Size = UDim2.new(0.48, 2, 1, 2) })
+	tween20:Play()
+	TextButton3:FindFirstChild("VerifyButtonGlow")
+	local tween21 = TweenService:Create(UIStroke5, TweenInfo.new(0.2), { Thickness = 2, Transparency = 0.3 })
+	tween21:Play()
+end)
+	local tween22 = TweenService:Create(TextButton3, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(47, 183, 117), Position = UDim2.new(0.52, 0, 0, 0), Size = UDim2.new(0.48, 0, 1, 0) })
+	tween22:Play()
+	TextButton3:FindFirstChild("VerifyButtonGlow")
+	local tween23 = TweenService:Create(UIStroke5, TweenInfo.new(0.2), { Thickness = 0, Transparency = 0.8 })
+	tween23:Play()
+end)
+TextButton3.MouseButton1Down:Connect(function(x2, y2)
+	local tween24 = TweenService:Create(TextButton3, TweenInfo.new(0.1, Enum.EasingStyle.Back), { Position = UDim2.new(0.525, 0, 0.025, 0), Size = UDim2.new(0.47, 0, 0.95, 0) })
+	tween24:Play()
+end)
+	local tween25 = TweenService:Create(TextButton3, TweenInfo.new(0.1, Enum.EasingStyle.Back), { Position = UDim2.new(0.52, 0, 0, 0), Size = UDim2.new(0.48, 0, 1, 0) })
+	tween25:Play()
+end)
+	local tween26 = TweenService:Create(UIStroke3, TweenInfo.new(0.2), { Color = Color3.fromRGB(88, 166, 255), Thickness = 2, Transparency = 0 })
+	tween26:Play()
+end)
+TextBox.FocusLost:Connect(function(enterPressed, inputObject)
+	local tween27 = TweenService:Create(UIStroke3, TweenInfo.new(0.2), { Color = Color3.fromRGB(48, 54, 61), Thickness = 1, Transparency = 0.5 })
+	tween27:Play()
+end)
+Frame2.BackgroundTransparency = 1
+local tween7 = TweenService:Create(Frame2, TweenInfo.new(0.3, Enum.EasingStyle.Quad), { BackgroundTransparency = 0 })
+tween7:Play()
+Frame.BackgroundTransparency = 1
+local tween8 = TweenService:Create(Frame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), { BackgroundTransparency = 0.4 })
+tween8:Play()
+TextButton.MouseButton1Click:Connect(function()
+	getgenv().UI_CLOSED = true
+	Lighting:FindFirstChild("JunkieUIBlur")
+	local tween28 = TweenService:Create(Frame2, TweenInfo.new(0.2), { BackgroundTransparency = 1 })
+	tween28:Play()
+	local tween29 = TweenService:Create(Frame, TweenInfo.new(0.2), { BackgroundTransparency = 1 })
+	tween29:Play()
+	task.wait(0.2)
+	BlurEffect:Destroy()
+	ScreenGui:Destroy()
+end)
+TextButton2.MouseButton1Click:Connect(function()
+	local result2 = result.get_key_link()
+	setclipboard(result2)
+	TextLabel6.Text = "Link copied to clipboard!"
+	TextLabel6.TextColor3 = Color3.fromRGB(47, 183, 117)
+	TextLabel6.Visible = true
+	local tween30 = TweenService:Create(Frame14, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(47, 183, 117), Size = UDim2.new(1, -40, 0, 3) })
+	tween30:Play()
+	task.delay(3, function(...)
+	end)
+end)
+TextButton3.MouseButton1Click:Connect(function()
+	TextLabel6.Text = "Please enter a key"
+	TextLabel6.TextColor3 = Color3.fromRGB(248, 81, 73)
+	TextLabel6.Visible = true
+	local tween31 = TweenService:Create(Frame14, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(248, 81, 73), Size = UDim2.new(1, -40, 0, 3) })
+	tween31:Play()
+	task.delay(3, function(...)
+	end)
+	local tween32 = TweenService:Create(Frame12, TweenInfo.new(0.05), { Position = UDim2.new(0, -8, 0, 115) })
+	tween32:Play()
+	task.wait(0.05)
+	local tween33 = TweenService:Create(Frame12, TweenInfo.new(0.05), { Position = UDim2.new(0, 8, 0, 115) })
+	tween33:Play()
+	task.wait(0.05)
+end)
+TextBox.FocusLost:Connect(function(enterPressed2, inputObject2)
+	TextLabel6.Text = "Please enter a key"
+	TextLabel6.TextColor3 = Color3.fromRGB(248, 81, 73)
+	TextLabel6.Visible = true
+	local tween34 = TweenService:Create(Frame14, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(248, 81, 73), Size = UDim2.new(1, -40, 0, 3) })
+	tween34:Play()
+	task.delay(3, function(...)
+	end)
+	local tween35 = TweenService:Create(Frame12, TweenInfo.new(0.05), { Position = UDim2.new(0, -8, 0, 115) })
+	tween35:Play()
+	task.wait(0.05)
+	local tween36 = TweenService:Create(Frame12, TweenInfo.new(0.05), { Position = UDim2.new(0, 8, 0, 115) })
+	tween36:Play()
+	task.wait(0.05)
+end)
+Frame12.Visible = false
+TextButton3.Visible = false
+TextButton2.Visible = false
+Frame11.Visible = false
+TextLabel2.Visible = false
+TextLabel3.Visible = false
+Frame2:FindFirstChild("LoadingOverlay")
+local Frame19 = Instance.new("Frame")
+Frame19.Name = "LoadingOverlay"
+Frame19.BackgroundTransparency = 1
+Frame19.Size = UDim2.new(1, 0, 1, 0)
+Frame19.Position = UDim2.new(0, 0, 0, 0)
+Frame19.ZIndex = 100
+Frame19.Parent = Frame2
+local CanvasGroup = Instance.new("CanvasGroup")
+CanvasGroup.Name = "MainContainer"
+CanvasGroup.BackgroundTransparency = 1
+CanvasGroup.AnchorPoint = Vector2.new(0.5, 0.5)
+CanvasGroup.Position = UDim2.new(0.5, 0, 0.5, 0)
+CanvasGroup.Size = UDim2.new(0, 280, 0, 200)
+CanvasGroup.Parent = Frame19
+local Frame20 = Instance.new("Frame")
+Frame20.Name = "SpinnerContainer"
+Frame20.BackgroundTransparency = 1
+Frame20.AnchorPoint = Vector2.new(0.5, 0)
+Frame20.Position = UDim2.new(0.5, 0, 0, 20)
+Frame20.Size = UDim2.new(0, 80, 0, 80)
+Frame20.Parent = CanvasGroup
+local Frame21 = Instance.new("Frame")
+Frame21.Name = "BgCircle"
+Frame21.BackgroundTransparency = 1
+Frame21.Size = UDim2.new(1, 0, 1, 0)
+Frame21.ZIndex = 2
+Frame21.Parent = Frame20
+local UIStroke6 = Instance.new("UIStroke")
+UIStroke6.Color = Color3.fromRGB(136, 87, 224)
+UIStroke6.Thickness = 4
+UIStroke6.Transparency = 0.85
+UIStroke6.Parent = Frame21
+local UICorner15 = Instance.new("UICorner")
+UICorner15.CornerRadius = UDim.new(1, 0)
+UICorner15.Parent = Frame21
+local Frame22 = Instance.new("Frame")
+Frame22.Name = "ArcCircle"
+Frame22.BackgroundTransparency = 1
+Frame22.Size = UDim2.new(1, 0, 1, 0)
+Frame22.ZIndex = 3
+Frame22.Parent = Frame20
+local UIStroke7 = Instance.new("UIStroke")
+UIStroke7.Color = Color3.fromRGB(136, 87, 224)
+UIStroke7.Thickness = 4
+UIStroke7.Transparency = 0
+UIStroke7.Parent = Frame22
+local UICorner16 = Instance.new("UICorner")
+UICorner16.CornerRadius = UDim.new(1, 0)
+UICorner16.Parent = Frame22
+local UIGradient6 = Instance.new("UIGradient")
+UIGradient6.Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(0.4, 0), NumberSequenceKeypoint.new(0.7, 0.3), NumberSequenceKeypoint.new(0.85, 0.7), NumberSequenceKeypoint.new(1, 1) })
+UIGradient6.Rotation = 0
+UIGradient6.Parent = UIStroke7
+local tween9 = TweenService:Create(Frame20, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1), { Rotation = 360 })
+tween9:Play()
+task.spawn(function(...)
+	UIGradient6.Rotation = 8
+	task.wait(0.03)
+	UIGradient6.Rotation = 16
+	task.wait(0.03)
+	UIGradient6.Rotation = 24
+	task.wait(0.03)
+	UIGradient6.Rotation = 32
+	task.wait(0.03)
+	UIGradient6.Rotation = 40
+	task.wait(0.03)
+	UIGradient6.Rotation = 48
+	task.wait(0.03)
+	UIGradient6.Rotation = 56
+	task.wait(0.03)
+	UIGradient6.Rotation = 64
+	task.wait(0.03)
+	UIGradient6.Rotation = 72
+	task.wait(0.03)
+	UIGradient6.Rotation = 80
+	task.wait(0.03)
+	UIGradient6.Rotation = 88
+	task.wait(0.03)
+	UIGradient6.Rotation = 96
+	task.wait(0.03)
+	UIGradient6.Rotation = 104
+	task.wait(0.03)
+	UIGradient6.Rotation = 112
+	task.wait(0.03)
+	UIGradient6.Rotation = 120
+	task.wait(0.03)
+	UIGradient6.Rotation = 128
+	task.wait(0.03)
+	UIGradient6.Rotation = 136
+	task.wait(0.03)
+	UIGradient6.Rotation = 144
+	task.wait(0.03)
+	UIGradient6.Rotation = 152
+	task.wait(0.03)
+	UIGradient6.Rotation = 160
+	task.wait(0.03)
+	UIGradient6.Rotation = 168
+	task.wait(0.03)
+	UIGradient6.Rotation = 176
+	task.wait(0.03)
+	UIGradient6.Rotation = 184
+	task.wait(0.03)
+	UIGradient6.Rotation = 192
+	task.wait(0.03)
+	UIGradient6.Rotation = 200
+	task.wait(0.03)
+	UIGradient6.Rotation = 208
+	task.wait(0.03)
+	UIGradient6.Rotation = 216
+	task.wait(0.03)
+	UIGradient6.Rotation = 224
+	task.wait(0.03)
+	UIGradient6.Rotation = 232
+	task.wait(0.03)
+	UIGradient6.Rotation = 240
+	task.wait(0.03)
+	UIGradient6.Rotation = 248
+	task.wait(0.03)
+	UIGradient6.Rotation = 256
+	task.wait(0.03)
+	UIGradient6.Rotation = 264
+	task.wait(0.03)
+	UIGradient6.Rotation = 272
+	task.wait(0.03)
+	UIGradient6.Rotation = 280
+	task.wait(0.03)
+	UIGradient6.Rotation = 288
+	task.wait(0.03)
+	UIGradient6.Rotation = 296
+	task.wait(0.03)
+	UIGradient6.Rotation = 304
+	task.wait(0.03)
+	UIGradient6.Rotation = 312
+	task.wait(0.03)
+	UIGradient6.Rotation = 320
+	task.wait(0.03)
+	UIGradient6.Rotation = 328
+	task.wait(0.03)
+	UIGradient6.Rotation = 336
+	task.wait(0.03)
+	UIGradient6.Rotation = 344
+	task.wait(0.03)
+	UIGradient6.Rotation = 352
+	task.wait(0.03)
+	UIGradient6.Rotation = 0
+	task.wait(0.03)
+	UIGradient6.Rotation = 8
+	task.wait(0.03)
+	UIGradient6.Rotation = 16
+	task.wait(0.03)
+	UIGradient6.Rotation = 24
+	task.wait(0.03)
+	UIGradient6.Rotation = 32
+	task.wait(0.03)
+	UIGradient6.Rotation = 40
+	task.wait(0.03)
+	UIGradient6.Rotation = 48
+	task.wait(0.03)
+end)
+local TextLabel7 = Instance.new("TextLabel")
+TextLabel7.Name = "LoadingText"
+TextLabel7.BackgroundTransparency = 1
+TextLabel7.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel7.Position = UDim2.new(0.5, 0, 0, 130)
+TextLabel7.Size = UDim2.new(1, 0, 0, 25)
+TextLabel7.Font = Enum.Font.GothamBold
+TextLabel7.Text = "Checking verification..."
+TextLabel7.TextColor3 = Color3.fromRGB(230, 237, 243)
+TextLabel7.TextSize = 16
+TextLabel7.Parent = CanvasGroup
+local TextLabel8 = Instance.new("TextLabel")
+TextLabel8.Name = "HintText"
+TextLabel8.BackgroundTransparency = 1
+TextLabel8.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel8.Position = UDim2.new(0.5, 0, 0, 160)
+TextLabel8.Size = UDim2.new(1, 0, 0, 20)
+TextLabel8.Font = Enum.Font.Gotham
+TextLabel8.Text = "Please wait a moment"
+TextLabel8.TextColor3 = Color3.fromRGB(139, 148, 158)
+TextLabel8.TextSize = 12
+TextLabel8.TextTransparency = 0.3
+TextLabel8.Parent = CanvasGroup
+local tween10 = TweenService:Create(TextLabel8, TweenInfo.new(1.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, -1, true), { TextTransparency = 0.6 })
+tween10:Play()
+task.spawn(function(...)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification...."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification....."
+	task.wait(0.5)
+	TextLabel7.Text = "Checking verification......"
+	task.wait(0.5)
+end)
+CanvasGroup.GroupTransparency = 1
+local tween11 = TweenService:Create(CanvasGroup, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { GroupTransparency = 0 })
+tween11:Play()
+Frame19.Visible = true
+local contents = readfile("verified_key.txt")
+result.check_key(contents)
+Frame12.Visible = true
+TextButton3.Visible = true
+TextButton2.Visible = true
+Frame11.Visible = true
+TextLabel2.Visible = true
+TextLabel3.Visible = true
+Frame2:FindFirstChild("LoadingOverlay")
+Frame19:Destroy()
+task.wait(0.1)
+task.wait(0.1)
