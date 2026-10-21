@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/NTheDrone-come/a8baee342a1d6314ac70b7e25fd3736b/raw/EattheworldHuiHuiHui"))()
