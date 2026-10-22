@@ -1,0 +1,1 @@
+{"mode":"on","title":{"pt":"","en":""},"message":{"pt":"teste, se fodam","en":"fuck u"},"announce":{"pt":"","en":""},"discord":"","kick":false}
