@@ -1,0 +1,139 @@
+--[[
+    RVX Hub — Loader (Ophyn UI + เชื่อมระบบ Key Gate ของเว็บ)
+    ต้องตั้งค่าในหน้า /key-admin ให้ "เวลาผูกอุปกรณ์" = first_use
+]]
+
+-- ===================== ตั้งค่า (แก้ตรงนี้ที่เดียว) =====================
+local SITE     = "https://www.rvxhub.site"                      -- โดเมนเว็บที่รันระบบคีย์
+local MAIN_URL = SITE .. "/raw/cca31b760609d8fc/hub.lua"        -- สคริปต์หลักที่จะรันหลังคีย์ผ่าน (hub.lua = main.lua เดิม)
+local GETKEY   = SITE .. "/key"                                  -- หน้ารับคีย์
+
+-- แบรนด์ที่แสดงในหน้าต่างกรอกคีย์
+local HUB_NAME     = "RVX Hub"
+local HUB_LOGO     = "rbxassetid://105425268579832"             -- โลโก้ RVX (ตัวเดียวกับหน้าโหลด)
+local DISCORD_LINK = "discord.gg/DYtbR5tnuf"
+-- ======================================================================
+
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+
+-- รหัสอุปกรณ์: ต้องตรงกับ regex ของเซิร์ฟเวอร์ ^[A-Za-z0-9_.:-]{8,128}$
+local function getDeviceId()
+    local raw
+    pcall(function() raw = (gethwid and gethwid()) end)
+    if not raw or raw == "" then
+        pcall(function() raw = game:GetService("RbxAnalyticsService"):GetClientId() end)
+    end
+    raw = tostring(raw or ("U" .. Players.LocalPlayer.UserId))
+    raw = raw:gsub("[^%w_.:%-]", "")
+    local id = "RBX-" .. raw
+    if #id < 8 then id = id .. string.rep("0", 8 - #id) end
+    return id:sub(1, 128)
+end
+local DEVICE = getDeviceId()
+
+local httpRequest = (syn and syn.request) or http_request or request
+    or (fluxus and fluxus.request) or (http and http.request)
+
+-- ตรวจคีย์กับเซิร์ฟเวอร์: POST /api/key/verify
+local function verifyKey(key)
+    key = tostring(key or ""):gsub("^%s+", ""):gsub("%s+$", "")
+    if key == "" then return false, "กรุณากรอกคีย์" end
+    if not httpRequest then return false, "executor ไม่รองรับ HTTP request" end
+
+    local ok, res = pcall(httpRequest, {
+        Url = SITE .. "/api/key/verify",
+        Method = "POST",
+        Headers = { ["Content-Type"] = "application/json" },
+        Body = HttpService:JSONEncode({ key = key, device = DEVICE }),
+    })
+    if not ok or type(res) ~= "table" then return false, "เชื่อมต่อเซิร์ฟเวอร์ไม่สำเร็จ" end
+
+    local decoded
+    pcall(function() decoded = HttpService:JSONDecode(res.Body or "") end)
+    if type(decoded) ~= "table" then return false, "เซิร์ฟเวอร์ตอบกลับผิดปกติ (" .. tostring(res.StatusCode) .. ")" end
+
+    if decoded.ok == true then return true end
+
+    local msgs = {
+        invalid = "คีย์ไม่ถูกต้อง",
+        revoked = "คีย์นี้ถูกเพิกถอน",
+        expired = "คีย์หมดอายุแล้ว",
+        device_mismatch = "คีย์นี้ผูกกับอุปกรณ์อื่นแล้ว",
+        bad_device = "รหัสอุปกรณ์ไม่ถูกต้อง",
+        rate_limited = "ตรวจคีย์ผิดบ่อยเกินไป รอ 10 นาที",
+    }
+    return false, msgs[decoded.code] or decoded.error or "ตรวจคีย์ไม่ผ่าน"
+end
+
+local Ophyn = loadstring(game:HttpGet("https://ophyn.space/interface"))()
+
+Ophyn.new({
+    -- Window
+    Title = HUB_NAME,
+    Description = "Key System",
+    Logo = HUB_LOGO,
+    Theme = "Dark",
+    Folder = "RVXHub_key",
+
+    -- Buttons
+    getkey = true,
+
+    -- Intro
+    Intro = "true",
+    startintro_size = 80,
+    squareintro_time = 1.2,
+
+    -- Appearance
+    Changelogocolor = true,
+    Changeiconscolor = true,
+    NotifStyle = "1",
+
+    -- Links
+    discord_link = DISCORD_LINK,
+    website_link = SITE .. "/",
+
+    -- Cards
+    Discord = "true",
+    Website = "true",
+
+    -- Games (PlaceId = true)
+    SupportedGames = {
+        [124216119978534] = true,
+        [4924922222] = true,
+        [79546208627805] = true,
+        [126509999114328] = true,
+        [537413528] = true,
+        [107778070777162] = true,
+        [13772394625] = true,
+        [2753915549] = true,
+        [85211729168715] = true,
+        [4442272183] = true,
+        [79091703265657] = true,
+        [7449423635] = true,
+        [100117331123089] = true,
+        [131481383443764] = true,
+        [116921506811323] = true,
+        [104050046639813] = true,
+        [142823291] = true,
+        [93978595733734] = true,
+        [16732694052] = true,
+        [118805555015549] = true,
+        [122446657157717] = true,
+    },
+
+    -- Key System: ตรวจกับเซิร์ฟเวอร์ทุกครั้ง (รวมคีย์ที่เซฟไว้ จึงหมดอายุ/ถูกเพิกถอนแล้วใช้ไม่ได้)
+    KeySystem = {
+        Key = verifyKey,
+        URL = GETKEY,
+        SaveKey = true,
+    },
+
+    -- Script (รันหลังคีย์ผ่าน)
+    Callback = function(key)
+        -- เก็บคีย์+รหัสอุปกรณ์ให้ hub.lua แนบไปตอนโหลดไฟล์จากเซิร์ฟเวอร์ (/raw ต้องมีคีย์)
+        local env = (getgenv and getgenv()) or _G
+        env.RVX_AUTH = { key = tostring(key or ""), device = DEVICE }
+        loadstring(game:HttpGet(MAIN_URL .. "?k=" .. env.RVX_AUTH.key .. "&d=" .. DEVICE))()
+    end,
+})
