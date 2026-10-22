@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SinoScripting/-OP-Racket-Rivals-AUTOFARM-BOT-Script.-Farm-YEN-while-AFK/refs/heads/main/Sinorackeetering.lua"))()
