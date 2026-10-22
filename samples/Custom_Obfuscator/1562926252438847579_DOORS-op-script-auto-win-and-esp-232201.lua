@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sariscute/scripts/refs/heads/main/doors%20%7C%20abysall"))()
