@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NothingIsAuthorized/ItsNothingHub/refs/heads/main/Piggy/currency%20farm.lua"))()
