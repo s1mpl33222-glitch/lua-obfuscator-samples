@@ -1,0 +1,195 @@
+-- This File Is Protected by 8mSX Obfuscator v4.3.1 [https://dsc.gg/MZXHUB]
+return(function()
+local B=string.byte local CHR=string.char local FL=math.floor
+local UN=(table.unpack or unpack)
+local XR=(bit32 and bit32.bxor)or function(a,b) local r,p=0,1 while a>0 or b>0 do local ab=a%2 local bb=b%2 if ab~=bb then r=r+p end a=FL(a/2) b=FL(b/2) p=p*2 end return r end
+local function _DC(t) local k=t[1] local s='' for i=2,#t do s=s..CHR(XR(t[i],k)) end return s end
+local _EM1={146,170,255,193,202,178,194,192,215,209,218,215,209,217,168,178,247,252,228,251,224,253,252,255,247,252,230,178,255,251,225,225,251,252,245,178,224,247,227,231,251,224,247,246,178,226,224,251,255,251,230,251,228,247,225}
+local _EM2={70,126,43,21,30,124,102,40,41,50,102,39,40,102,126,43,21,30,102,53,50,52,35,39,43,102,110,43,39,33,47,37,102,43,47,53,43,39,50,37,46,111}
+local _EM3={237,213,128,190,181,215,205,132,131,153,136,138,159,132,153,148,205,142,133,136,142,134,205,139,140,132,129,136,137,205,197,142,130,159,159,152,157,153,136,137,205,130,159,205,153,140,128,157,136,159,136,137,205,143,152,132,129,137,196}
+local _EM4={248,192,149,171,160,194,216,139,140,138,157,153,149,216,158,153,141,148,140}
+if not(B and CHR and FL and UN and select and tostring and rawget and type(rawset)=='function' and type(setmetatable)=='function') then error(_DC(_EM1),0) end
+local ENV=(getfenv and getfenv())or _G
+do local _j872284=0 for _j872284i=1,5 do _j872284=_j872284+_j872284i*194 end if _j872284>404783388 then _j872284=nil end end
+do local _j932887=106417 local _j932887b=XR(_j932887,80) if _j932887b==610723364 then _j932887=nil end _j932887=_j932887+FL(_j932887b/17) end
+local _mkc={178,199,217,210,213,197,200,204,223,217,201,203,222,207,206} local _mks='' for mi=1,#_mkc do _mks=_mks..CHR(XR(_mkc[mi],138)) end ENV[_mks]=true
+local MSTR="\\<_2\"-OM`A8Y$T#/5<:B[!_<LB2AQ_!P!<1\\$FQ0T?_@VW4TKRA9:BM.PY]WXJ>E.!H=6B9/=7!]TL*@250?<M+%\"+]3ZZQOZAZ=@-8+)K(?*5HPXK6N[2MQ;+6SDWNY[=Z0L^&,XEUC864?:_]?C[0L+T8TAVFJP)0)T+*CW>YSG&Z/>X>!%>]W'1G742E(IE\"ILFP.1VQ9F:<XVA4B<%^$U\\HS-(,;]\\)YIG\\TN4@'Q]34^N]/4&WEMDO4LB6\\:E%DE&$=1T'G0,A)%V<PVO.T_E3Y2.LT3\\^BCHF\"\\C/T!3R9EAK>>L$8`V&81WB^\\<8XZUZ[;ZN\\4>WJM\"Q^%89J_JSM`XU>%G;ARJ&\\0U[7K\"]R!+9/FZCOJW&4Y/FAW*$I\"GNW[IN&6Y0TMZ4G/CRN2PZB\\\\\\KS55)AT.<&M]?12DCC*#(4.OLC><L.DX+K]/9<Y>4/`^A5\"GE?<,7IC5S5%A`G`)=SHQP\"(7=JEOV9CGZ$4WQL)?:^97_`CF*3P%D5,*\\/QBN[*?BIM\\,[AW7JCKFZ\"0,&UN<7==9?D*6)_>_-2EI[8*'B#F9I_:B!QX-4^61]*PYNF1W\\N5P*RGQM)>7,(2XF\"B#R,8<,B^#<:/$\"<EII[5.YHM:D8U%6>IG31LT#_!0Q>V^R2>+2F@5I%9`\\2DRW^0Y6`;ZZZ:H:UG/J3[Q6E9*/6>UZ+)'@OMF3^2,H)R@ZJX)DV%-,ZRK!09ENH^8/FG+U.0\"W'26D:;0Y65%ZK(GV(0A2_74MU,N)EICHS[7^5\"9(;X[7:F\\*C6EW:*)`TX301UJ:<-/!IY`)2NW6>^MA99/L!L44P%*!SQRLN3EV?ZA%:'<YN>;<<!GT:#32^G4(OZMX%QG6IX3AXLEXG;Z2S[,T1/3\\E4_?*CBUL)L:^?!L'6%A&0M.*01*D3*./\\&P<1&IP2V0PQ>W1BZF),H)#-$[*7')CD$_\\EG@$8Q6BPD%/@&B*W!HUB<JEM1-!UX1VB$<.U3^D/,#!`M>AO6'D!NZ<UN6_<)\"6Q7VMW$B,ZL8I/M`?\"W/[N$6E2VE-!:373ERZ?X(1FX6X(QQ.``>E*F'F]T]$KL+JC+*8)BZ-;WM:O=!\\6[F(MV5*?\"D7PN4^3Q<?P.M<CP/:E+GS3E?+=2W(X^DB)0I-:MMPL!$!&FPMG9H\\K7ZE\"&KB?QYZR+#V'XQO\\[HQK%A8\\#VCHE\"C,+O\\+`\"`D-D55];7P`E%=*!8&L[,G1'74(6>J/BIPR7(A'M5^J>9Z^8#XE_:LI8NPCV5.I)\"Y#ZP$)L6E6A0UNF`!@W7H32D4ONEU\\=Q4Q.T&7A/A-7Y`Y%7T(3?4HJ;6^/B_.(DE#P7S7!X$8P+^L5L[+.4\\9$X.ON:^\"FA:7?KD@HW7?V^5)S'<<UR$0]?O-0O0.K4F8,=`R`.;L9G-H'VA[;_R8`E-UB8`OAO0;'VW3)?#Z,-1G6;3!SJ1)8_]]/=ETT2UE4=6<.<AQ^>M8409[6W_M-NJX+!EHC'SKFUMB[BZ@6:8H&G$$\\_3W@7NG]W6_AL!I8J_5[POL\"9$Q\\1D'RW3#7<:I.6(8**,[U,S@0G-R\"<MF/,$G$O03DYK\\8D71Q/);*3.<3N(Q,H\"J+]8$,BKU!,!0)#7X0;>$Q;&N3O\\:('+<,.\\\\P+MLR=+@/(?/:]K%!A[EOE(PW!!O7%\\X%.JK/MT_*7CMA:66JG@^0&ZGP*;^,C<S6R=O&^H)0J0X\"Z@'PWTUC9@CA<4#[=OL54Z5A?J*MQ.']O8V&A*L(BJTCLU4D:T@+@3R3G_8'S!\"D/<+GJB1-V7P-LS)Z7$4UJ2$#G&L1A!M@.4<_2,9VQ.EO\"+[X8@)?/`67!1L>54A:*1&MT\\KFGQ50-=YSDF%JP<:%D1;)%@5S29>*7;:C727D4P\\T_,F:VD93[`&Q*O3DQNQQV)KW/:$1<L71J5&^P1CQ&/7*,\">4`X_+P9YZMO%QN;W<1\\(]M.%O=];&%'Z6?)5<'Q<)0@*\"!<H8*.;R+76X=2_@_I^3@ST!!6D<S3!;`)+:L+!B')ZJC/F/%D@S87<S[4-K4![3Z8!17$%L91*!Y:G>2T?[^!TC0:_G4Z%N+WKH,`G<GSK'O4XH^X,YXSC&O6LJG?*C)D\",]AU^7./IRT4QUY*=8\\3#CUK&(<;]'7Z=;MU4=VP=6,.1[B`9OWSV6A1:OM&O_&TF*O8\\!<ARZM$=+$CU0D:`_VG%$9=1P_89@BQSM,JPW\\,R3OI`N1R7+ZX%]\"6RT%>:C@B6ZN'3[)SKQ,UXPUIRJJX,.Z+/->2&[\\WC6_%?*BFK:4Z:KXZ=4]F/RC\"DA]*D&,;J,QH]+',VZVR.VMG=V[O[4P)3!XO#:![>42!ZJ<2ZWV4,*RFJ1$,;7!^`AK336U.46/>.#<P@E)I8.C,%]*=@G&'8&$<7E`YA3D##PT^;59KNQCAW%Q;*^J?^G0\"<%$!ZKGS(WUVB68G(XCFM\\.I[,Y]FHB:94?--!NR=^[YI-)`5UTY5X,!OUHC8?#F3)`0`55YH;>N%%:C/4^T89<67W6'@QADO1WTKF(^PD,JT`4>R208ID\\<KSDZQ^-IPG#]NX4>ZE?38'\\O`N*^CQ&@0G^JS(#LM$Z7%S33Y?E$UY;*#\\4O#XFJWIT@7OQOA_Y_^6PU*Q6IUA:K'K-SP1'LKF3^FE,Z.P+UZW[LQO_&*_??BE/?E7F1X:S3Y'L7#W4O5KWA+#&U:^!9H#\"[)>3;AQ((+/1I>WF&!`82U78+3(VML*?.`YK#60PW(GNG`\"W*'%V;2!S^F]=\\,/H%C10_\"U4%OAUSWC8>VP>=_QF$CI4F'K7H\"#1&*<WF'NQ^;L>]\"X.,'*(F.F&=PCR=FNT\\--LO47SK\"*:FTO+,.0!C<XD86N.B>%(G*5X%3&$\"Q^GH8O)OI8P.P,TO(0YJ<(V6&ZQOK?R&G7@FT0,>]))`C>N/1MA%)UGO,XX2XQHP3VQ6Z0RWLF80](G$^A@(O<;2$R6]RI9]\"W:B%XTU8UK'];K08=/XN2CD-TT(9\"T6HW?\"TAMC:CPC\"`Y]F>/XN.@5OY]5-$%NW=-/-V[L$8C&F1;(Y=FTOGX>4L\\0-L>.]JNVU&K*/(;^H(ZEK>>NS3\"0P1#GDM9ZJ_2CX7WF9!5S@HO[%:B\\IW16%&SG9`V8JW-E-SMMF?C:\"=@&1;7IKR/N?EXQX0FM;5-[Y$'GVI0S1HJ)M?;FW%'2):%]RK\"JT8#\\J^3/.MY2;KQQWI+BV?AWP9:H3%BH-)>`^%+7==R@6=CE60_'9Y:SB;X(K;*WV<MK]V9[_/&(,^LM/HH?:QN@4+>J#2&8!SQZA'L>SW]_2'^)ULS(^Q[,FDI5Z$UQ8'O?-%8,.<L;@P`M-1YO?;`]A^:?Z98]&NF@)R),:!X!+GQCR!TR%+G0&[;)YML,\\NG/G*.!MU;#GI90+^_;+`$QE'L$#@2WTV[H4C6!OV0L'CVD97\\13PO329(AL@OEW&)YX7U0O0(N!1TO\",YA&4-5Y;G_F3XY_O'.X7D(P1OUL!5:'.A%#<SA:!/GI$!.C*,>/U!S3K+*=?&1NN1X\\\\>(K\"_EEO61.C[YQ[52KN3KG#C^UF=$2VLM8<L(_*<;/WPE0[(FQ[=(@7#T'QI-0=\\#/KZ0L:\\ZKQ*?DN(FF5\\4IWCP7V\\]R-:W8*#Z:;Q+#//Z.Z*5:;BD#!@`2\"2+<$VDPICH5P#*)\\_V34Z^.#Q%=][YKXR;'NJ<?)&;Z*.*JGY.8I*.-`$)R?;N5JEF$##YQJZ_[7K@R1%I8:2-\\=!L<B2/67_)`5=E8=)R:T%<91M9Q?M'3K38O1(C-N.:A?%F-0PW%\\+WBDFT>#8RMGRE5S\\$!DGDZ+<+DUF0$Q<`:L8\\4\"%%OW1\\P0TP[2$)*G_U.;:J#?CC%W>5&H0.MEV9&8,\")YA0H]!MYINJQ@6,#^N;V6^\\S5\"/YS\"\\*>-V=+E,%&'*L$=Z\\RVTD1GCOL(/H=F@YMA9IZCK7\"VM()=L^8X0$:81W*\"MI.#[*Y<D2O]7\"P537;]/ZE;'0HU+NPP2NL%*ZM#[<:?KNR0[H!F5-,R/YJ.8LH:'\"^G8FQEF=6PS+?\"[IZ=\"\"B3V*-E#;9C.$-:@L1D*6`%$?WLQO3>^+GXT2T]=UVD*@60.[7U/A(%<N=X)-ND:E0G+N^4XI]0=4HNJ4=?ASS!$V4[21B$,-9P+-_J4E:[N5V1'4Q#BL)38:;YX5Q4IU_&2WKE'E]J(R6Y=.J$AZRTB$#B@V+$X!N-'U5Y^1SZ,RM\";`%SA!Z3,D;*9E@0'%\\GI<Q^2Q3_F6F)SI;#^*]N%ZI>'0ZG.RT\"4.=6+[E(+L)7V_**Z/.,VY:?#2Q0\\$9UG:KD/9HZEL`*`:P8&@$07SOPS'$I)KF2GYB2[?3S$COTA2C`K%$/W(1I:W15VW?S^&&:);V4GW@,6X!3\"WY#0?'K,T,L2R91S1Q7\\-Z0H\\!RG-Q;K+8^/Q_[Y>\\&P7%;6H#6)U`-9J@I*##6T'$'4G=\\3^DFJI:AVZX>`72&<!?0$M@KY\\@.6NV4EO;SXX:\\VLJ!%2G@)RMA<TN<8+I4-Q!C;,+AHTOQL_LUTL2L4498*)UP$,1S`)OIQ(<D;JHL,4>_V87`GUN;&]\"F(J</0Z4?=XC#OH9?@-'M)$;.M,_G#-Y6C&<?9^'\\QMFSFP!1Y-#`^RIN4.^CV?,15K?/GG-B_IMA`B43%]K@#GC?C\\/S(E]WY'%,`=PG;V^`]XYAPAR8G3U*`<U:NMOWF/#D,Y4@U%3TF?XE[=B];AY7UUZ1N)P0\\]>T&T/K4U:M<L'B4/J;]6@L%]+&JG,XB6?&@ZO2K)D?)EU%;YHTB'_=?WVL.30E$51&DZ)_=\"GD\"8CE>B%C\\;OJDA4J-2@.:'G??5;$=P$U-`>HW@\"&I8;2CZ\"4XZMN-\\I$:K*0GW%F'*[E5^4L:P$1B!H5PVW)'!2X52@(3=NWT#?-N1E1+10@EA5-<Z:84[+`:<4_'396JYQ#5M&S2F380<PK!4\"75+04B<B0Y<93;1>4&4JHW^2Y?%FI?!$`T3GO8WTCEI^AN$B`?';V29*));09S5^(Q)$;Z,V\"?A`#>@\\54$@R@#P.I=+V7)ZXC\\5#2+1&0MAZ]JOD21^--R2J/`9EB.R\\ZQ6!-GFOKH?.=AL5*X]6F!BD+CL*]ZSGZ;]1]H.\\C^KE@?.H5ZX.5FWQERY'3C,6>)W,-.NZ\"0D:00FH0S51#D\\C\\B:PA6,@RP';0C%P;8T?NV`]9EE;->[7:I..9$`!&P8*?RLXC920(UPY7+#]-JF>\"Z(D9[@#XS#Z$Z=ONUE0HF:ZQG/=TPQE%;I'W_.X<+\"2:&YH23Q)%<+F=B:;,9VL:\"/IFQ<*4YY@>`*B\"V9OYES:PA.=E2JYQEUUGAB'#*$H8\\X`P[!&$UUI*-HB0$IB:`>15J=(YO)F]I_:IIQ;K\"\\CNR*XV9*'(^]H>2JQWPLK-'.&\",9-6:;P[Q-#WV._</P$Z.-1F':=Q*IXE()01DMB1+I463X&(VNWVY&UJ)D\")%B98\\2\\2O?[)/EQ^\\@G$]&M5-KWMK@ON*RB;B[,,W)8`I_FZ`:S)\\LR'3+I>SK>-4)Z)C_U*-4#\"WBDHRYZ0EV'^)L[S\"9B6^>E)ZQOQS2P0*7U[,1:OB&:VXC!Q@%NCAF8*PVHU6`_NSJBKX>;9`@6`N,DH?1]$(%J7U@[\"WB_>$P<G`<X14;*DWF/#P[)='>152AQ\"#,FN$\\FC@\\VBX'V;OV%!LT!<=$)ME;9/&]3[TE??;N&0W&.4B74\\;I9*T\\XKNFR#:L\\FO--MF74!SSVF_37`:_AK]OA`-W.&T=<I%./2!-^]\"U_,8<$YD#3Y^2BE).#1#A>NU3=],3)=_[M;1:]@*!M3%#:%MX^\"_J\"9E#[;M6X0E-W1'LVDGP\"A<[GS$;5E1]0VWT`::71:#,GY^T@00'$V4:4XG0N6S3](B?8JCD(<E715XA`Y;I?E16-*HTW+;G.N_XMFBK8Y3!M#^'ZRQ\\4GM`.$_.Y0YNUU`?WD$>I\\4Q,4>S(W?@\\U]W%IOB)*&-K$\"F_0`56.CU*FYP#V-&+A75RF9H\\)5G[;MA7?AH944K^D(FJ!IXVPO[(>TSL)IW58:DA[)N;+7%K4679:\\2;K:;Y;NS2(Y/KS;G1/JQI%?H.Y_U!9UH^4I3)<UFIFY7\":WW=U<TX_M\\;4W.(()P(!J'B,W(LY_A(F5/WSVS@QB'UX\"*OO(#@;:=G/&!OOEXG0(95XAJY=VPY)(32Y-B'=?,+%MO<LHDH79';`;W;;/!%.JM0<Q]*A/T]NRA\\OKF)6;75*20^H'..]H;->Z/F>X7L/S`U(MNT3\\$U^UG!TN=<V\\:\\1X&O\"J\"J5D*.P@Z)6\"KML#.[$A:&=T3<;R402O!>_\\4_\\?%#YA6`H47H3\"'K``ND7EX\\\\O6AP]%N0Q8Y2/K]),SD;$0R%))[P9::*5A//![^;P%V`2;7'??`75VC(%U$W:K*V*][S`90\"R);P*P<B>_:M<_B*[WP4ZIYG?2AQ_Z#J77V.X<S^OFM5++2-`U9!:PO<VWGZW'+(0)@75<\"J4S$X1TK*X4C'&XH)S0]+08!@3FH>L@;G?/U@U*USVC7+F[L,R_$V*H,!_-D4.+.>B-3,F&=1!5%0]^:GF$##;^*R(,YQ);(>7)W^92UT7Z><0DPQ!,W5IFC`_W]2=H`YS0I_]3^0<;?+3$D]@0AL<`8S1*WJ[X8?-VEUUZWC)0%'],,R!TT_Y`A*ZP?16\"./C-+(5:X6+#K&1@`*75+'B4:S<Y\"[D5V]7J\",NI^:H/OB4(-3N!]S\"03Y`N#9;\"\\P),4P5,@/.SE(^JV##/)S?\"MAG!V)UW%!-F$HK=P_F^3FUL6G+1T](PHA8B:N.&5ZU2XW+W-6&%:.[^?%1#$@+/>!8^6,<5([%P8<F<>F^&GVY6K>KCT2WH+G[G8#9B7#]F;Q6.=\"\\=$:?1[O*\"9RJ'*8#]'4,NV\"R1=@UJ]\"Z#ZTNV)DS-W2\\^$=L\\-YN&GA5-4*Z'-)Q)5D2]1#.BQ9BAJ+4/H;Q8<=/6:(+QH)Z(YTZFAZ\\,(35LSG+M6<*4\"<\\FW5CE=<-IX1TPJ@Z#C@$+0`K27<WS:GMN;K(<2X=,RIM&WA0:%O@*V>S,EI_]M:)VEHGW.MF3P=KX&@7%*OR9D-]F+!BK>GZWC<Z>\"OC'%1CB@;,`]Q-%`2T#RR+M447*0SR=1]6X?!US4L/.JZ%;CR`=NI2.BC9G21T$?G.T>HGCO@GD3_*B]2FUNI8X%:L@OJT.Z0]ZG^TNIH&M5^]79E8\"ZWVS'&[\"#RX0E`MS!'Q)XXQ+Z,P_*U_-(EO;CF)&/#@MG`K,,@>&&#NX/_A,Y$LE;`P6L67D:_4!,RKB\"\\+)6>;!]-*HI7+.FY5&3&7BLWY3BZ%JCQ$XV_I_5YA$O79;FX0-TQ?(=DU$,-\"NE/-GU^CW12\"A3K0UR+'YC4-@V+2#Q@@SW4ET9/?/@\"IBWCL.G&GS.A&M<BY!MVED,XB1W:/;JN\\9D\\_>L.`X;HJWS14[B[Y6^DC4RG&W\"1F\"A;IS::W\"J71=4M(<P-HUOO-C2R29::-@'R,@K;D[2`95(RGHBJ0Z@>^2L#R$-76%&K.R\"\"X\"%-139M[!05?+G*S->?5;XB\\V?.H2JS-\"OXQF!.>6ZF+]%*!A18J=Q[DZAU6Z-(ANN@KQJJ4S;)J@1UL:2P]S6S_%*]Y,W>,F@8HH#4B7>DL;F7:\\:7F[,PN`]\\$.@!`,3\"H@)GE^0%G\"F/_6%;K[H9TUHO]^C==I&D\\`53DTT:H9SKKAA.#_R+S1,>\")?U1;X1LFDQ^DBN;WB46G*`]4H.\"@`N3=B`3PSYNBA>?:*2%1PAAK4ZUJT<2X_TR@-BMP-\"[2\"D+LHZ054Y)$\\)/O4;PW:MJ-?22`:.H0-J9OHY41_[AYXO']*HV#='Z\"@ZD)OWS0\\`[[#]#9P+=UA'.+STL2ZNU[1!-ZWER_FRORX\\3*\"@3L5E2)L1A@QSI%`&L@1U/UA._6II)/9I)C#'R<RATYCO%E\"Y(4,[9,[EVBWH2Q<5(W*,`HF@\\L\",#EW4P13__;1\"77IJJ?Z;%2A1+I?)DUTGS]FZ-A+=^8>9(ZGK(B]1V[G35N;3-?X_'0OIEK`%UFDH[X_Z)COG-*)HC+\"W6-#IU,>XY)VE<`>3#+^%':&H]=#,=M,MX\"HGS.UM_[P$A/JB?^N^M6[-\"V%+DD\\.Y%_=[0Y3S<W`?9@(NY=?HJ'D(O)Y#]ZYZ[*2-V+\\44<S4I`Q/D/CR[7R%GV*1TC8)<6BZ(4[R4=TC(@\">O]+W]`8Q3ZL-Q?<RU*_LR4F9007HA5RWS5B1M5`Y)\"^N]+-Y1PB2,CL\"ZI[I%X%%'K@C\">UAH-#',LN]\\6-T@5TX#-.C+I@?'A*Z5XF*E3PM@5+0`5?T?ZST6_?CP\"\\\\M;CR-&U@$9!HT*C[7+)W+:1I^5YQ3TP2Z8H>AV=>0R\"D@265_H?W_#WFW8ZS*U#W8N@E0U1?38\"^.23=E$%(JD$'V?ESF#GIPJY6UPDD@>8=8CCRFL,V2)\":(3JZ-TVYFJU*&HHBU1(G\"E712(`@JRO:<05\"WK8KE@ZJHBL@N0)1`!O-//QU':E/&\"3>$%+S^P8,=*SS)4T6O][CT^<Q^+_K5K^%CQ]NIJ=C!2V9XO!Y\"V0>BV\\HZ6C131X$_G0GD?(BV+!M>@4>\"$J@`3=0.6OADKQ[TL/^'A:)@X(+/6(W%T'\"6[8<_:JGD2:(G$N?O`%HJ1+.W'9JM,VMYAJ`T!DVOXOJ4?865@\"JM87-+?7R'[N3S]D'B?4D\"M(ZT<LBB^96.V>1GT_&&;,B`%Y.RF>L'$Y).:=%[JQY/&%@KD6&L_'/=,1GL/C+0\"$.M9\"Q5`;3E_H1E^V3OD[C1&(YV)1QD8;04;N-]$J9QB(J%+479\\(8B75UX^F30GYF_XB=[X!_*Y:-!%CBCK(?8'$+&GE:ZY,G=I,?H<^F\\C9R%'1N\"]V%W;?\";U(T'R0I7M$QW5D.*\"_]!#J'.V!C8.VJ:*>._ZD_>S'*H'HJ`89*XZ+\"W*H`_#J@OK3\\.;+8'_HZ8BN]8'#9J\"[GWOXA\\BE;(XX:7I7=F31X$*\\]OT\\;^C/9'87K2QS'@8+4IZ4$HU\"W*'Q?UNL!;-?B?1,#H6%9E8I[=Y@L&K0PF,V`@.H4II1]2$;K*F?@-UW_!OY'_+-?S&[F:&Q2@XBU/UB)W8NJTU]:8@,$1-,5\"/&P_<Q[OPTT3;O6+AX*)R8@^$'^(-#K+\"0ETZ$KU8-J5S/A]VWNYHU,%8L]OQF@H2%-_'HSU^@V]H*Q+E$5@BRDNAX=L3J<\"V-M4N2#(OUM*@;5M3@[S*J\"[71N!P=E!)CNR%S]1W0VWQ/L&73\"\\7\\:=$.;`;>.T*BV'3VR5F5XCBFPIOOB.5W-;F;I3P;[;0..V.AN]9@_J5*WJ;,*DRJLDQ^QJ-P@G1KX(,2YKHQZI>%H0KCP&J`^\"VBVAG0#5Q-IF6X.D/*_OZ;/Y3[G;&N?V4X6!A37*'+8A/(?_%\"U_R('@]6>-LPN=FW%8A2'-!MSOAO86;'$TAS;+-B\"E^R#-.^>W3A[YVKS9%JQW`61\\/J^?/%P$(+-BAJUM8E(0Q/!/125+<5@$8Z0$P!$:21^^%N,\"#1<`Y:4Z6=O<@JUDG%AG-/\"2CA'+MY.$1W\"<FY8EL.Z`A<+GI$S3LUI04-<N(J'40IR25I^IB#H@\"3AMNSMC-PU,L$$@_V.DY(Z8'[1!A^O*;V1-,YPP!\\&+4;`)917\\C]94\\U^%&A=^>BB,?82N*3CHUK=!!SI/L'G<?['7.)FC5]B'6%E6A;XWU$RFJZ#:PR'I/;'T$V?T>731]/[#+9:W!BAEZQ0$P5=27JI^DU5/+1EACRX:!'FH*A;J/692FD\\6=H3YDT.B5:T7.=[U_A%_<O4+!X/6;KGI[5C:9:D<'\\9>JZ8ADDNPQHJ5_<^,:?M2&G-O=X<'%0>';O_5K5WM))VJ\"TYT!YA08^'LC$X[>UO0NE>><^H79,(\\WP?463$Y6#>6O^0OG*A-(9;AY4B]62-Z*7T$0_-V,UK4QT*\";0VXCRD&_4\\\\4C8H\">Y9SE2:^:B$B+<;()A5:'>4$K@>IC[5//'.:,*_J,$_F@#%G7'-QV43;[#7PF7<FQ^4,:1T3CZ9_X0CPTC%M,F4\\2EKK6;A>]$[_ZFF-[0G?[]A>8[0)0\\\"G_TNHE'?O3DAZ\\-PNQ)OKO,7Q[\\<#B>S+L)E3<J^TT+'Q-LJ_,4AZR]LB..:`Y?JKHF[(0`'AXI$C$#A9N6$$=04Q-E*$0KM_#+%W1Z..&C6Z/NO)IT`'Z/\"M'@JYRF+OL!F.!*@`<.[A0]0_EG'A%<I+6&F7CE$\\5*V9%'9C8]I*.M;\"+1Q9P!=CEPBE=CFFWO\\K7%YVR_$7I.3)XK!\"6V&)U7!W^)Z`IN01M=)D-`I;A)[4]P_TYG^%,0OY^XT,:M_:,I9SK:C#^EN[17=-\"A'`J!I8B)DZTM*;@BAFRM#%WH56.>FH.KIR1_?Y!8&_/#D^I6'SZ?0O0<N>/'ZT16O)!R._8^1_0.6'\"9]7'!E(U5L*-+`,D#%Y>W8Y%6'MDOR#VI+-U0DG^*$J:2<19L*6RWM!==;)9`#_-X9*T[H(?N<2J`7B#BO]21FS?'`]OA=:A`>1=K*7-?;0@#2<:HC/IZO$,+$24R\"5:MT^QP6X-IR2>?A4K:>]GVTWKH67@5TNH?3*-MPR$<TT8[.B'L)W2^(EOUUWRU4V?<9%W6Q'V6S2F6C1KNYEJ\"JJ7K,H61.X>=O[O6D>&>`/XQ0D+]!EO5O2%05LLP*T7;!(^A]9MTJ_SE^(^AGIYY:@C:\\'@RGCCCPDX9`(RQR!0Q%DTGL6)?[J7(L!XF!V(_FU1\\RC,4-;.QX^R0BWS8.5_]$*>/8<>N2AM]/MC'5^<G4--S!8\"UU_?*(^SS_-7'EGHRT=>BZ*S'\">;M'Z[%;O\"W(,JJJ-4EN]=RNIK,2CVK^32-\"-,S8_=X^)PG\"R_O4S1\"IV`)3A+28VO3KC4#3!2'J)$@'&BZXS&XG><+>>PME4(>L(G?.AX^G#$E\"D.`=Y<=(<8+[$D-#\")X:GX*$8X1*`D_>Y9R\\(!ZDE9NT6C/_#4VS`A@`>)SSXT6[9_$QP+[DZL6J8;LEG5OS(3;>>1H1H&1^I_(FD,/V``GYRGW)EX#02:[5WT99CF'4K<4XKG=#\\EO,J`*N#E\"=X$2C@%,Z(*%9P<;?+F[V:!',QQQW;_(UO-RB*@#V.ICFP\":/Z;15<.=?]#^9:=J@ZW]`%*H09T5D+TE`_5\"E\"1S5)9=/,RT[:H$[F-^^MST)C_>_)@E10JB@)_W$6CD<O3GY'JSY;_,=602Z`>1!P?5G`2'*<MZ*Q10]B)KVPH).XCD[MLR^.(X%MK(X?G.;T]J\\HAIM>1'I;*T:<T<!(5H81RH[JN^D<7MQM@VSYX6)$U:MFY/]UW%\\;0`-H*@/][\\;(\"]J6KC+AT@FU\\A_##[V4/;6K2#BFX#Z:[Q.RN3NP-VM^R-;`BS623OPX%2^K,Z]_0S:.-Y5Q\\GGD(\\;BXAN[L8*I1JEI_08455##S)TLQ2P_S9EV,?,#_&GRB76*_L6-O)**:&:.8%L325;00:<DQ7E1;$CI#;L.\\;(3XL.566AF/H8FNNK\\Q\"94P\\C7\"3M$L.XQ/&68]\\\\]!4W6YM&MHF]N:!<IU/?8^T!2WQ'U>&SA'G,Q\"FZP'F*-:O/ZH:JKC+V:\\C2>).IID#J[TZ'9WPCEJS\"6!\"@[[(#.NH1[Y0DZ<#QM)?X7$LFW'6!!X#3SM5XD83WN@L;VRF\"Q^+H58J8U)8KO4P>\\ZGYZQBI71<)&ISC\"]TYJX:IF\"=#2KCO)EJ2T+^1_=(-!,E\"*3?96+T4%AY8GG<+#@2/[%X2)[VVA>OK@JX=P[#51Y/3Z&V>M`@\"Y!1`:/..Z)C@PQ3M5:&RHD\\1M]&MAF3`B-04OX=.HMX(?Y%9_TN\"5A,8!5L_6F8OO,O&19G&[9T3JL%;Y/UXTYT5K&50-L1XT.5\\\"R<;.Z)==LY5;\"^WMM>,N&EU`E8R)<A88([1_W3/:>Y_7Q0%/608GTI'7E5JG<X$BBZSLW;@WAJ)O,RI-!Z?(+S;.&(8M>&<++IXT?P_^:O'^AD2CT+M.HV];Z@>GY%C7M7J\\QS!`Y+2R<8;1^MW*[Y\"2L;)O23+S[7JH\\2;_,A-=]4I[Z-NB(97_)=*F9=(\\644[%64DA'Y-0K/NF+?]7^K8D&,CTTOHG:8.4K$9+NW(^J9M[TQWP29E@2\\\\]1B&M``1SB=]6SS<:-363N.6%1`=\"_P+_`X3*\"!V3J]R87S!DZO*8GSI:LW58$M:W;00VCIE>Z)`&=Q$*&CC+1_\\0!IN-G*$W92H'X?(:^\"AK?+3`P;)PE'5FX#EJPWLT2GTJ,9@@N#@>B[LXT9GOW2EXK&F'W\\)O>^AV93,FP<-#YQFQ-\\9Y>^8@\\4#M8]2VL%B.=JCCJ&TWS\"I\\%E4F(!'(A(H!D4_&,AH1$NL2'AK!*Y&@(W?LQUDV[:`+4FM`[8/4NOP^D,_V=^L,BDTY;*(P#PI%VK'C<79L&<J=,NPG++ZD28]_PKSDO,#4S=3IT8@:YIR\"^`BT^)#F5P5^<XF?F0'_G&TI-H>WX.$T&EJ308Q$8`;%`_3R9S+:C?=BF36]8\"U\\8V%U)AT1D`N!)@-O#-/W5%A65Q2JUCRJAGGH):\"?![[W(-ZV0_<M:AKP7YF,R:7(+J-),=^W&^%V?>_H=\"-S/XT,#R6_)K]%')=8O/-#*/>1?!!;(,7G)0$Q,@FJ/+9>XM(=Y@YOTO(PA2NQKRL1D:\\A<A,73P0%N%HAI.BW!-PIO[0EW`84&:>6S3W*8Y+HMK9_C(_S=DC\\RB&.,0.[5`8J`&M98`SC]*\\H#%A^D35@FPA.LU>FID7TFNZ-LEYZ!SG\\EF;TN!HSB_9XU;@@=?#=?4A*;4+UM*N]C>J\\E(9P&=-_RRDD$WVE]]C/\\&K'B6-*EIXK7XE%\"$=&#*UA%&<0U3AH[>DQ.Z)NO6R2[+.NAE5ZB'^STD#+AX%HE!$)?`R?'YC\"[]/-0CF;K*+0=^$/_`X*FE)9_[2G8TKUK*#$\\<'$,!Z#]_[.D;+;1B_J,$<OX^&]6-A$W=XH/FOIF>A@%Y.+8+?A@]YS+-[V8`Z9JDH@<;D;S&'3DC&\"$Z5)_T0%Y10C=N@RH:'K\"?YOH\"CQ3J[?;0JXUX/X3=SS%R$3C'$G9M88[O7))GU:)6\\WY\"!E@7;6ME@U($JIXG/#K9@QT,_GL#M4O3;9Z2>WPV3\\`<<YMZI]T68?9*DX9U'T(MS)U\"])KDC+%ML;7HLDL-:'I'&,:%ELZ[7Z7O\\>.,V]5[UE1;FP&FX%@62BBF6'-CZ<]FU;`I1Z<?7'Y\"V'.9>=*HX^P$7\\I0OQA*E%>2UP0\"&%#$0[=D$AY_^-TA'SSJQ#>4-[+0^S@56KF$3KILGH_BNW$B%TR\"`>>YE>#J8EA>\\F&%PAL=/!`%#\\EEV3:X%<&Z0@\"^=0/?$RUB^WX--&$U)6MT[KO^Y+@1%,S][1P\"3X_SW'G1;P\"E*V/@9P,Z5@5H?\"4J3!MI=!CP,E+%5FZK\"=Y(KYJ_L:J<*M78LGNIH+^[S2X0A=50#3[BIST'B8*0?^N)0`XN7GTMZD`[>6XV_F;+J\"6K.>D[6%<M:#.:?BY;.LI6<:/)<:5H;EJ2'HLQ$^5\\.+;)REBSXWL&$'F2/R8%+$N3$0V!\",=\"/1E;JA`'6@/?:B?MM@UFJFVQM3,*OPT+2``L8<M7ID`IOZTI[$`GZ6(Q\"=&*5Q_I'<GJW+P\\Z-#S1,&\"W%W@+T,&7#R2Y51[A_YU?%#?$->6I&YEYC\"E\"A-EH29.L#<UU?0<9?[/2-RE'Q%1LZ'G:;<ITNU(:%*DY-=/<=72PY'M:#(R$C:$\"-D[SA<CSI3RDE,K%05_9C*?`%G9B*TX^?XIKUACA6\"<;0ED?.G^3409KF;A3VJBD`!+E90G!)G%PVZQ#`0M.(ZN+1-@5GCAG@NN=/5['%7%8K$<X6#.UOEY?:`:3!?N7?1*NNO3G.W'&D[H^3)&/5P1S7(>:?>;CF14U*-Q`(X)B4-4'\"K^*)[01+8C`0P,\",?E\\VA)T<_MT?Q82HON3-&:7%<-EL!.>&./#+J==\\G0WO>2K_4\"40HB15</_C@\\&]I6Y,L0&!BSX!3=(]IEQ7I;%(/BW-Z\"FP-_Q'&NY>NDDMHI%=FD8'Q!$.>Z=`N3$IGYEV$*W[4JXNB-H/&U&HA.3UO;KWF>`:PK9QR,#I:=!T9)>(/BM5TYL_)%,C@31CNTT49&*8[9)Y1\\<UM.'@*Y5#H-#<1/4W(UMKJ\">3<_(S!-.,_:R8'`(^E>MGQ^W8Y[MV\"%-EB]#TO?E&2@:&LT:(2BE+HF9#@`6\\HQ[S=.(6D$*ROX180UK^[MO$M\\SQQCGR!$OB?Z(N&`1!XA<!KV]?-NEJU<(IXUB.PJL#)KG2HDH@`S7CZW#8L4RW_6+;Z.ANC-_LXK$$]&]W9^*\"LD(?R)(N$73].DODSU@7YP\"<7?Z7YY$@_X2YBL!R-N=]#Q;U!/8<R($9O@%BJ6$@@N*42,+JO`[>^<Z6#*N[<&]]?8^=AA\\?KE/?AG-G]'Z93X'OU9,\\X/V<Q\\P1T4>]#ZNT_YH3/6%KCL3`D`@5*5Y?4SB,Z[43\":\\DPVE(,GFG4J4]KH$'N>\\I9I&*@.HT6G\\E)0AW^VCK<9>4Q<A5'Z%/+0)@+(.P,YA_S/K#,2NY@YW4.Q@+5/08X3IZ/&X&:,^Q)D&^C=)$\"!YFWQ&W*RW_$=G!Z;D=MLV7R3?B'#P46$J/D8T30>24S??T-^&0`E,OB2K##][>%@2]2<U,(ACV?6JF8U'YWY+\\((4'];3L=;T74S_!^N-!V+.]720]]M;`D0776A3PY`W+7H8S6I:CMZ^U-F1P^Z`N@BM%T<08&&>$SJY7[8],H9UQ7\";2J51&0>3T@1FBLW&_=J!?]DXR>L&0X%@RA,ZC[K\"\"W'9<?['@WT'R\",D69_U#Y?%4$JW8\\908[/_BOA*TJ<,L225Z+NEN]+OE^P&R4=3BFE=V(L,,6W1]6K\\3M>6L]V_G!;D+>`CH?SS(6^Z;A>K'IZ;8-[JPW7&?%O9K.L:YKOW/^P2]F2:ARQM*:+R+XMH6!C/E/H.2#[5SM%I[D@(RQE._6NQ]:H5R:74I+;;.C:FXZW+[B:C]O`Q#?X(#B@>P?)'&&SP(R0EA')>\"<\"(H6F78I@6KA.U_C;-.TYKY>!/^$N@2:B\"07R=N7%ZN]R3@/98H#GHN6Q>DWR&OT!DZ3^W4*?[J^9/Q%VZX3\"NR^S.G#^JISZ]J'US'+@\\H^%+UFV:47QEA;@_D-&7?5$25T./:H:73MA[&E-%?QX]HB,=,E5JUB,J[D'@_?N)]5(`'!:H_QQ)?*`(*N!-KC4U^.XOEP`Y.HA(>#V>,YL0=V;!U?V#Z>]`KUGJSDWB\\\\_4/BI7$L[IX=':6'(_PS'-]FZ+.^43J>P=)83E9R:/]G[7@..G]0MA?`(69MZ$?]#YTITU57<S@I;B@<=QMUM$IV+F\"_\"//3LX]%MRA]TD>2?63)9YEIT]`=DF\"L,R-ED8?3:;(265V03*%EU9U4BB6=\\A#];:JGI2US\"559?'H*9,V#A0%R%:YERB5SKO^LRZ'2B:66)=XK8A!_-0+K6^$Z\"+Y4Q*^X18&NUOL,;LMSOT;2^CH*EC$.C#V]\"G$T&IVC\"GOE_C.H];T'RC3/GX:O0*C)M3ZS.L;!D*6W?7$7S?F\\\"W]$V]XA`5B?.Z/EHOJ/?]HM^E?-%Q&OVOB0R3!X@0?`(B*N;>U,##2,.\\\\F!M<!KY&($;P3VD*\\MZY'E?8#).H$N3SMOQS&%/T`0:#CA64?;ZR%AZK21]?UF+LPAS@;%A9IL\\56(:?!A@C3ZQ_Y*,I+GA)E/)M6HW63LCIF\\_8.K[<K8L&F[YRGFWF$5%N9&25Z\\E$05&H*BP.&@TV<`>$W,(+_*DAB*3)B0`-R63IX\\>CX>RE0.O:E:ZKS@?AORN44XG:BPAA$V7?:<@NZX!&GUG1R:&&^PN@SQ(H/Y6UHP-BVZ\";T/)?,R<R3>P1SWBQ(1,J/8WK)F$@YT=^0KM59!BW,,Y0C*__4FHD!>W6/RSYGEIN$J#E+Y85#HC^_K,[&BPVDV,&*/U?F]N<G/KX[K#@F-!6+YM_\\V)N+]T@\\=^M:(8YN\\-DS,D^V=EHY%D?#T<1K8]59&)XI[#U+5P;Q.=\\39_K?@VX(E:`/COO6R:#'`1;U<6H1S&T,-^,[Y9P6^P[F6*IM[+47#;G$[?\"[LSC?^67![-9U*_4832\\'ZC+GL9Y\"SQ5R'4L0-&^1*A,N3ZQ(9FE;@JI-K&+\\]4IOTXX7Y@=&U&\\VVRY*S6#\"5D\"7)%XT$8S[/)\",HCM:,T%JM@L8#(-_[J*GE)$VG&C`7JK3S(H?^E.;LA!T?-F\\N6SU:10]4/6)QT'5&(3PS/H1DYA*1/?&VT<D*GL5'O@/0,3J,UBPI;M\\#Z@KD2BT@HZISRNVP&'L7H<LX:,*=A%XFXZ9-_Q\"0:3XL?,CD\\K^RST6JQRR05&/-%F@3R6)B`46:I\\]#UL-2LIC]9_-6=8^HR/C0O'7H>D9/:1HSD7:#*.+F$L+2$3QH%@/:%#7*TH2\"(]+A"
+local BYTES={} local n=0 local acc=0 local bits=0
+for i=1,#MSTR do
+  acc=acc*64+(B(MSTR,i)-33) bits=bits+6
+  while bits>=8 do
+    bits=bits-8
+    local v=FL(acc/2^bits)
+    n=n+1 BYTES[n]=v
+    acc=acc-v*2^bits
+  end
+end
+local pos=1
+local function rv() local r,m=0,1 while true do local b=BYTES[pos] pos=pos+1 r=r+(b%128)*m if b<128 then return r end m=m*128 end end
+local hv={} local hcs=0
+for hi=1,6 do
+  local r,m=0,1
+  while true do
+    local b=BYTES[pos] pos=pos+1 hcs=(hcs+b)%4294967296
+    r=r+(b%128)*m
+    if b<128 then break end
+    m=m*128
+  end
+  hv[hi]=r
+end
+local MAGIC,SEED,CL,MAPLEN,SL,ENCL=hv[1],hv[2],hv[3],hv[4],hv[5],hv[6]
+if MAGIC~=8675309 then error(_DC(_EM2),0) end
+if hcs~=rv() then error(_DC(_EM3),0) end
+local INNER=rv()
+local E0=pos
+local h=2166136261
+local function f32(v) v=v%4294967296 for _s=1,4 do h=((h+(v%256)+1)*65599)%4294967296 v=FL(v/256) end end
+f32(48879)f32(8675309)f32(SEED)f32(CL)f32(MAPLEN)f32(SL)f32(hcs)f32(n)f32(INNER)
+local function xk(st) local x=st%4294967296 local k={} for _s=1,16 do x=(x*65599+12345)%4294967296 k[_s]=x%256 end return k end
+local k1=xk(h+314159)
+f32(271828)
+local k2=xk(h+161803)
+local function rc4(key,len)
+  local S={} for i=0,255 do S[i]=i end
+  local j=0 local kl=#key
+  for i=0,255 do j=(j+S[i]+key[(i%kl)+1])%256 local t=S[i] S[i]=S[j] S[j]=t end
+  local out={} local i1,j1=0,0
+  for q=1,len do i1=(i1+1)%256 j1=(j1+S[i1])%256 local t=S[i1] S[i1]=S[j1] S[j1]=t out[q]=S[(S[i1]+S[j1])%256] end
+  return out
+end
+local KS1=rc4(k1,ENCL) local KS2=rc4(k2,CL)
+do local _j896470=806901 if _j896470>854819449 then _j896470=XR(_j896470,83) else _j896470=FL(_j896470/3)+XR(_j896470,83) end end
+local DS={} local isum=0
+for d=1,ENCL-CL do local dv=XR(BYTES[E0+CL+d-1],KS1[CL+d]) DS[d]=dv isum=(isum+dv)%4294967296 end
+if isum~=INNER then error(_DC(_EM4),0) end
+local p2=1
+local function rv2() local r,m=0,1 while true do local b=DS[p2] p2=p2+1 r=r+(b%128)*m if b<128 then return r end m=m*128 if m>4294967296 then error(_DC(_EM4),0) end end end
+local MAP={}
+for i=1,48 do MAP[i]=rv2() end
+local _tw=B('8')==56 and B('AZ',2)==90 and CHR(72,105)=='Hi' and FL(7/2)==3 and FL(-1.5)==-2 and select('#',1,nil,3)==3 and tostring(12)=='12' and XR(12,10)==6 and XR(255,255)==0 and (UN({7,8,9},2)==8)
+if not _tw then
+  for i=1,48 do MAP[i]=(MAP[i]%48)+1 end
+  for i=1,CL do KS2[i]=0 end
+end
+local NPS=rv2()
+local _OlOIOO0OO0734={}
+for pi=1,NPS do
+  local nc=rv2()
+  local OPC,CA,CB,CC={},{},{},{}
+  for i=1,nc do OPC[i]=rv2() CA[i]=rv2() CB[i]=rv2() CC[i]=rv2() end
+  local nk=rv2() local KE={}
+  for i=1,nk do
+    local t=rv2()
+    if t==1 or t==3 then local ln=rv2() local of=rv2() KE[i]={t,of,ln}
+    elseif t==2 then local of=rv2() KE[i]={2,of,8}
+    else KE[i]={t,0,0} end
+  end
+  local ns=rv2() local SUBS={}
+  for i=1,ns do SUBS[i]=rv2() end
+  local nregs=rv2() local nparams=rv2() local isva=(rv2()==1)
+  local nu=rv2() local UPV={}
+  for i=1,nu do local d=rv2() local x=rv2() UPV[i]={d,x} end
+  for i=1,nc do OPC[i]=MAP[OPC[i]]or 0 end
+  _OlOIOO0OO0734[pi]={o=OPC,a=CA,b=CB,c=CC,ke=KE,nc=nc,subs=SUBS,upv=UPV,nregs=nregs,params=nparams,isva=isva}
+end
+do local _j809964={73,41,167} local _j809964s=0 for _j809964i=1,#_j809964 do _j809964s=_j809964s+_j809964[_j809964i] end if _j809964s>529145708 then _j809964s=nil end end
+do local _j170181=816721 if _j170181>480825174 then _j170181=XR(_j170181,194) else _j170181=FL(_j170181/24)+XR(_j170181,194) end end
+local function mkK(ke)
+  local K={}
+  return setmetatable(K,{__index=function(t,i)
+    local e=ke[i]
+    if not e then return nil end
+    local et=e[1]
+    if et==4 then rawset(t,i,true) return true end
+    if et==5 then rawset(t,i,false) return false end
+    if et==6 then return nil end
+    local o=e[2] local ln=e[3]
+    if et==2 then
+      local v=0
+      for j=ln,1,-1 do v=v*256+XR(BYTES[E0+o+j-2],KS2[o+j-1]) end
+      rawset(t,i,v) return v
+    end
+    local s=''
+    for j=1,ln do s=s..CHR(XR(BYTES[E0+o+j-2],KS2[o+j-1])) end
+    if et==3 then s=tonumber(s) end
+    rawset(t,i,s) return s
+  end})
+end
+for pi=1,NPS do _OlOIOO0OO0734[pi].K=mkK(_OlOIOO0OO0734[pi].ke) end
+local _OO1l0O0lll384;_OO1l0O0lll384=function(protoIdx,args,UV,argn)
+  local P=_OlOIOO0OO0734[protoIdx]
+  if not P then return nil end
+  local OPC=P.o local CA=P.a local CB=P.b local CC=P.c
+  local K=P.K local SUBS=P.subs local nc=P.nc
+  if UV==nil then UV={} end
+  local R={} local PB={}
+  local an=argn or 0
+  if args and an>0 then for i=1,an do R[i-1]=args[i] end end
+  local VA,VN=nil,0
+  if P.isva then
+    local np=P.params
+    VA={}
+    if an>np then VN=an-np for i=1,VN do VA[i]=args[np+i] end end
+  end
+  local pc=1
+  local lastrets,lastretsN
+  local _rets,_n={},0
+  local SENT={}
+  local function capture(...) _rets={} _n=select('#',...) for i=1,_n do _rets[i]=select(i,...) end end
+  while pc<=nc do
+    local op=OPC[pc]
+    if op==38 then for i=1,CB[pc] do R[CA[pc]+i-1]=SENT end
+    elseif op==36 then UV[CB[pc]+1].v=R[CA[pc]]
+    elseif op==5 then R[CA[pc]]=R[CB[pc]]+R[CC[pc]]
+    elseif op==54 then local _dq=PB[CA[pc]] if _dq then _dq.v=_dq.v end
+    elseif op==46 then local tt=R[CA[pc]] local st=CB[pc] for i=1,(lastretsN or 0) do tt[st+i-1]=lastrets[i] end
+    elseif op==55 then if SENT==nil then pc=pc+1 end
+    elseif op==4 then R[CA[pc]]=(CB[pc]==1)
+    elseif op==23 then if R[CA[pc]] then R[CB[pc]]=R[CA[pc]] else pc=pc+1 end
+    elseif op==11 then R[CA[pc]]=tostring(R[CB[pc]])..tostring(R[CC[pc]])
+    elseif op==44 then local fixed=CC[pc] local base=CB[pc] local tn=lastretsN or 0 local cnt=fixed+tn local _vargs={} for i=1,fixed do _vargs[i]=R[base+i-1] end for i=1,tn do _vargs[fixed+i]=lastrets[i] end if type(R[CA[pc]])=='function' then capture(R[CA[pc]](UN(_vargs,1,cnt))) lastrets=_rets lastretsN=_n if _n==0 then R[CA[pc]]=nil end local lim=_n if lim>64 then lim=64 end for i=1,lim do R[CA[pc]+i-1]=_rets[i] end end
+    elseif op==27 then R[CB[pc]][R[CC[pc]]]=R[CA[pc]]
+    elseif op==6 then R[CA[pc]]=R[CB[pc]]-R[CC[pc]]
+    elseif op==12 then R[CA[pc]]=not R[CB[pc]]
+    elseif op==16 then R[CA[pc]]=(R[CB[pc]]~=R[CC[pc]])
+    elseif op==30 then if CC[pc]==254 then return UN(lastrets,1,lastretsN or 0) end if CC[pc]==0 then return end if CC[pc]==1 then return R[CA[pc]] end local out={} for i=1,CC[pc] do out[i]=R[CA[pc]+i-1] end return UN(out,1,CC[pc])
+    elseif op==37 then local _g=(ENV[CHR(103,97,109,101)]or game) R[CA[pc]]=_g:GetService(K[CB[pc]+CC[pc]*256+1]) lastrets={R[CA[pc]]} lastretsN=1
+    elseif op==45 then local fixed=CB[pc] local base=CA[pc] local tn=lastretsN or 0 local outv={} for i=1,fixed do outv[i]=R[base+i-1] end for i=1,tn do outv[fixed+i]=lastrets[i] end return UN(outv,1,fixed+tn)
+    elseif op==10 then R[CA[pc]]=R[CB[pc]]^R[CC[pc]]
+    elseif op==35 then R[CA[pc]]=UV[CB[pc]+1].v
+    elseif op==22 then if not R[CA[pc]] then pc=pc+1 end
+    elseif op==40 then local r=CB[pc] local bx=PB[r] if not bx then bx={v=R[r]} PB[r]=bx end R[CA[pc]]=bx.v
+    elseif op==9 then R[CA[pc]]=R[CB[pc]]%R[CC[pc]]
+    elseif op==17 then R[CA[pc]]=(R[CB[pc]]<R[CC[pc]])
+    elseif op==28 then R[CA[pc]]={}
+    elseif op==3 then R[CA[pc]]=nil
+    elseif op==48 then local fixed=CC[pc] local base=CB[pc] local tn=lastretsN or 0 local _targs={} for i=1,fixed do _targs[i]=R[base+i-1] end for i=1,tn do _targs[fixed+i]=lastrets[i] end return R[CA[pc]](UN(_targs,1,fixed+tn))
+    elseif op==43 then local w=CB[pc] local vv=VA or {} if w==0 then lastrets=vv lastretsN=VN for i=1,VN do R[CA[pc]+i-1]=vv[i] end else for i=1,w do R[CA[pc]+i-1]=vv[i] end end
+    elseif op==14 then R[CA[pc]]=#R[CB[pc]]
+    elseif op==29 then local cnt=CC[pc] local _args={} for i=1,cnt do _args[i]=R[CB[pc]+i-1] end if type(R[CA[pc]])=='function' then capture(R[CA[pc]](UN(_args,1,cnt))) lastrets=_rets lastretsN=_n if _n==0 then R[CA[pc]]=nil end local lim=_n if lim>64 then lim=64 end for i=1,lim do R[CA[pc]+i-1]=_rets[i] end end
+    elseif op==21 then local v=CA[pc]+CB[pc]*256+CC[pc]*65536 if v>=8388608 then v=v-16777216 end pc=pc+v if pc<0 then pc=0 elseif pc>nc+1 then pc=nc+1 end
+    elseif op==41 then local r=CB[pc] local bx=PB[r] if not bx then bx={v=R[r]} PB[r]=bx end bx.v=R[CA[pc]]
+    elseif op==32 then local subi=SUBS[CB[pc]+CC[pc]*256+1] local spec=(_OlOIOO0OO0734[subi]and _OlOIOO0OO0734[subi].upv)or nil local uv=(spec and #spec>0)and {}or nil local fn=function(...) local an=select('#',...) return _OO1l0O0lll384(subi,{...},uv,an) end R[CA[pc]]=fn if PB[CA[pc]] then PB[CA[pc]].v=fn end if uv then for i=1,#spec do local sp=spec[i] if sp[1]==1 then local r=sp[2] local bx=PB[r] if not bx then bx={v=R[r]} PB[r]=bx end uv[i]=bx else uv[i]=UV[sp[2]+1] end end end
+    elseif op==8 then R[CA[pc]]=R[CB[pc]]/R[CC[pc]]
+    elseif op==1 then R[CA[pc]]=K[CB[pc]+CC[pc]*256+1]
+    elseif op==25 then ENV[K[CB[pc]+CC[pc]*256+1]]=R[CA[pc]]
+    elseif op==2 then R[CA[pc]]=R[CB[pc]]
+    elseif op==20 then R[CA[pc]]=(R[CB[pc]]>=R[CC[pc]])
+    elseif op==26 then R[CA[pc]]=R[CB[pc]][R[CC[pc]]]
+    elseif op==24 then R[CA[pc]]=ENV[K[CB[pc]+CC[pc]*256+1]]
+    elseif op==18 then R[CA[pc]]=(R[CB[pc]]<=R[CC[pc]])
+    elseif op==47 then local cnt=CC[pc] local _targs={} for i=1,cnt do _targs[i]=R[CB[pc]+i-1] end return R[CA[pc]](UN(_targs,1,cnt))
+    elseif op==62 then local _dz=CA[pc] R[_dz]=R[_dz]
+    elseif op==19 then R[CA[pc]]=(R[CB[pc]]>R[CC[pc]])
+    elseif op==39 then for i=1,CB[pc] do if R[CA[pc]+i-1]==SENT then R[CA[pc]+i-1]=nil end end
+    elseif op==7 then R[CA[pc]]=R[CB[pc]]*R[CC[pc]]
+    elseif op==57 then if SENT==nil then pc=pc+1 end
+    elseif op==13 then R[CA[pc]]=-R[CB[pc]]
+    elseif op==15 then R[CA[pc]]=(R[CB[pc]]==R[CC[pc]])
+    elseif op==42 then local r0=CA[pc] for i=1,CC[pc] do local rr=r0+i-1 PB[rr]={v=R[rr]} end
+    end
+    pc=pc+1
+  end
+end
+return _OO1l0O0lll384(1,nil,nil,0)
+end)()
