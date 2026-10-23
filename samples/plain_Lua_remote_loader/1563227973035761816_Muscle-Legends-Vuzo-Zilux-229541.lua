@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZorVex-Dev/Top/refs/heads/main/Script"))()
