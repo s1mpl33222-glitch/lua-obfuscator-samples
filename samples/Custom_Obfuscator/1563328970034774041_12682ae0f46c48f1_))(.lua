@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://scriptblox.com/raw/DUELS-Murderers-VS-Sheriffs-Duelos-MVS-iDepHub-230558"))()
