@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://access.valkorym.com/RoChess.lua"))()
