@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ALL3Z/ddd/refs/heads/main/mm2"))()
