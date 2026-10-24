@@ -1,0 +1,20 @@
+{
+  "build": 20260929,
+  "default": "https://cruelty.win/s/universal/universal.lua",
+  "10765666801": "https://cruelty.win/s/build-a-battle-bot/bbb_farm.lua",
+  "10383565741": "https://cruelty.win/s/warfare/warfare_hud.lua",
+  "8391342266": "https://cruelty.win/s/hit-the-thrift/thrift_esp.lua",
+  "10258991999": "https://cruelty.win/s/command-an-army/caa_farm.lua",
+  "7673659635": "https://cruelty.win/s/fix-it-up/fiu_main.lua",
+  "4542048826": "https://cruelty.win/s/sneaker-resell-simulator/panel_v2.lua",
+  "10761200080": "https://cruelty.win/s/needle-in-a-haystack/needle_selldrop.lua",
+  "9818302554": "https://cruelty.win/s/jjbi/jjbi_hub.lua",
+  "10571722689": "https://cruelty.win/s/mog-or-die/mog_auto.lua",
+  "10764297006": "https://cruelty.win/s/pixel-conquest/pc_main.lua",
+  "5166944221": "https://cruelty.win/s/death-ball/deathball.lua",
+  "10656201650": "https://cruelty.win/s/junk-crushers-2/jc2_main.lua",
+  "10685282333": "https://cruelty.win/s/ball-vs-ball/bvb_main.lua",
+  "10766200753": "https://cruelty.win/s/trade-up/tu_main.lua",
+  "6751447237": "https://cruelty.win/s/car-zone/cz_farm.lua",
+  "10737656087": "https://cruelty.win/s/tha-bronx-3/tb3.lua"
+}
