@@ -1,0 +1,1487 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+
+]]
+--
+
+local v8 = game:GetService("Players")
+local v9 = game:GetService("Workspace")
+local v10 = game:GetService("RunService")
+local v11 = game:GetService("CoreGui")
+local v12 = game:GetService("Lighting")
+local v13 = game:GetService("SoundService")
+local v14 = v8.LocalPlayer
+local v15 = v9.CurrentCamera
+pcall(function()
+    for v516, v517 in pairs(v11:GetChildren()) do
+        if
+            (v517.Name == "Core_Sys_UI_Key")
+            or (v517.Name == "Core_Sys_UI_Main")
+            or (v517.Name == "Core_Sys_Toggle_Icon")
+            or (v517.Name == "Core_Sys_Alert")
+            or (v517.Name == "Core_Sys_FPS_Display")
+            or (v517.Name == "Core_Sys_Aim_QuickBtn")
+        then
+            v517:Destroy()
+        end
+    end
+end)
+local v16 = "X7HUB12"
+local v17 = "https://discord.gg/PBxT78DXm"
+local v18 = Instance.new("ScreenGui")
+v18.Name = "Core_Sys_UI_Key"
+v18.Parent = v11
+local v21 = Instance.new("Frame")
+v21.Size = UDim2.new(0, 905 - (316 + 289), 0 - 0, 12 + 228)
+v21.Position = UDim2.new(0.5, -150, 0.4, -(1573 - (666 + 787)))
+v21.BackgroundColor3 = Color3.fromRGB(440 - (360 + 65), 12 + 0, 266 - (79 + 175))
+v21.BorderColor3 = Color3.fromRGB(315 - 115, 24 + 6, 30)
+v21.BorderSizePixel = 5 - 3
+v21.Active = true
+v21.Draggable = true
+v21.Parent = v18
+Instance.new("UICorner", v21).CornerRadius = UDim.new(0 - 0, 907 - (503 + 396))
+local v31 = Instance.new("TextLabel")
+v31.Size = UDim2.new(1, 181 - (92 + 89), 0 - 0, 21 + 19)
+v31.BackgroundColor3 = Color3.fromRGB(120, 12 + 8, 78 - 58)
+v31.Text = "X7 HUB - نظام التحقق"
+v31.TextColor3 = Color3.fromRGB(35 + 220, 581 - 326, 223 + 32)
+v31.Font = Enum.Font.SourceSansBold
+v31.TextSize = 8 + 7
+v31.Parent = v21
+Instance.new("UICorner", v31).CornerRadius = UDim.new(0 - 0, 1 + 7)
+local v41 = Instance.new("TextBox")
+v41.Size = UDim2.new(0.85 - 0, 0, 1244 - (485 + 759), 87 - 49)
+v41.Position = UDim2.new(1189.075 - (442 + 747), 0, 0.25, 1135 - (832 + 303))
+v41.BackgroundColor3 = Color3.fromRGB(25, 968 - (88 + 858), 7 + 15)
+v41.BorderColor3 = Color3.fromRGB(200, 25 + 5, 2 + 28)
+v41.BorderSizePixel = 790 - (766 + 23)
+v41.PlaceholderText = "اكتب المفتاح هنا..."
+v41.Text = ""
+v41.TextColor3 = Color3.fromRGB(255, 255, 1258 - 1003)
+v41.Font = Enum.Font.SourceSans
+v41.TextSize = 18 - 4
+v41.Parent = v21
+Instance.new("UICorner", v41).CornerRadius = UDim.new(0, 15 - 9)
+local v55 = Instance.new("TextButton")
+v55.Size = UDim2.new(0.85, 0 - 0, 0, 36)
+v55.Position = UDim2.new(1073.075 - (1036 + 37), 0, 0.47 + 0, 0 - 0)
+v55.BackgroundColor3 = Color3.fromRGB(0 + 0, 1620 - (641 + 839), 913 - (910 + 3))
+v55.BorderColor3 = Color3.fromRGB(0 - 0, 1939 - (1466 + 218), 0)
+v55.BorderSizePixel = 1 + 0
+v55.Text = "دخول"
+v55.TextColor3 = Color3.fromRGB(1403 - (556 + 592), 255, 255)
+v55.Font = Enum.Font.SourceSansBold
+v55.TextSize = 5 + 9
+v55.Parent = v21
+Instance.new("UICorner", v55).CornerRadius = UDim.new(808 - (329 + 479), 6)
+local v67 = Instance.new("TextButton")
+v67.Size = UDim2.new(0.85, 854 - (174 + 680), 0 - 0, 32)
+v67.Position = UDim2.new(0.075 - 0, 0 + 0, 739.67 - (396 + 343), 0 + 0)
+v67.BackgroundColor3 = Color3.fromRGB(35, 1507 - (29 + 1448), 1419 - (135 + 1254))
+v67.BorderColor3 = Color3.fromRGB(200, 113 - 83, 30)
+v67.BorderSizePixel = 4 - 3
+v67.Text = "نسخ رابط ديسكورد"
+v67.TextColor3 = Color3.fromRGB(170 + 85, 255, 255)
+v67.Font = Enum.Font.SourceSansBold
+v67.TextSize = 1539 - (389 + 1138)
+v67.Parent = v21
+Instance.new("UICorner", v67).CornerRadius = UDim.new(0, 580 - (102 + 472))
+v67.MouseButton1Click:Connect(function()
+    pcall(function()
+        if setclipboard then
+            local v579 = 0
+            local v580
+            while true do
+                if v579 == (0 + 0) then
+                    v580 = 0 + 0
+                    while true do
+                        if v580 == 0 then
+                            setclipboard(v17)
+                            v67.Text = "تم النسخ بنجاح! ✅"
+                            v580 = 1
+                        end
+                        if v580 == 1 then
+                            task.wait(1.5)
+                            v67.Text = "نسخ رابط ديسكورد"
+                            break
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end)
+end)
+local function v79()
+    pcall(function()
+        v18:Destroy()
+    end)
+    local v83 = {
+        ["Radar_Active"] = true,
+        ["Trader_ESP"] = true,
+        ["T6_Alerts"] = true,
+        ["Target_Lock"] = false,
+        ["Anti_Lag"] = false,
+        ["FPS_Display"] = false,
+        ["Dist_Limit"] = 933 + 67,
+        ["Trader_Dist_Limit"] = 15000,
+    }
+    local v84 = nil
+    local v85 = 1545 - (320 + 1225)
+    local v86 = Instance.new("ScreenGui")
+    v86.Name = "Core_Sys_Alert"
+    v86.Parent = v11
+    local v89 = Instance.new("TextLabel")
+    v89.Size = UDim2.new(0 - 0, 160 + 100, 1464 - (157 + 1307), 1899 - (821 + 1038))
+    v89.Position = UDim2.new(0.5 - 0, -(15 + 115), 0.05 - 0, 0 + 0)
+    v89.BackgroundColor3 = Color3.fromRGB(37 - 22, 1041 - (834 + 192), 1 + 14)
+    v89.BorderColor3 = Color3.fromRGB(66 + 189, 2 + 78, 123 - 43)
+    v89.BorderSizePixel = 305 - (300 + 4)
+    v89.Text = ""
+    v89.TextColor3 = Color3.fromRGB(69 + 186, 209 - 129, 80)
+    v89.Font = Enum.Font.SourceSansBold
+    v89.TextSize = 375 - (112 + 250)
+    v89.Visible = false
+    v89.Parent = v86
+    local v102 = Instance.new("ScreenGui")
+    v102.Name = "Core_Sys_FPS_Display"
+    v102.Parent = v11
+    v102.Enabled = false
+    local v106 = Instance.new("TextLabel")
+    v106.Size = UDim2.new(0, 110, 0 + 0, 30)
+    v106.Position = UDim2.new(0.02, 0 - 0, 0.02 + 0, 0 + 0)
+    v106.BackgroundColor3 = Color3.fromRGB(12 + 3, 8 + 7, 12 + 3)
+    v106.BorderColor3 = Color3.fromRGB(200, 1414 - (1001 + 413), 0 - 0)
+    v106.BorderSizePixel = 1
+    v106.Text = "FPS: 60"
+    v106.TextColor3 = Color3.fromRGB(882 - (244 + 638), 255, 793 - (627 + 66))
+    v106.Font = Enum.Font.SourceSansBold
+    v106.TextSize = 14
+    v106.Active = true
+    v106.Draggable = true
+    v106.Parent = v102
+    local v119 = Instance.new("ScreenGui")
+    v119.Name = "Core_Sys_Aim_QuickBtn"
+    v119.Parent = v11
+    v119.Enabled = false
+    local v123 = Instance.new("TextButton")
+    v123.Size = UDim2.new(0 - 0, 722 - (512 + 90), 1906 - (1665 + 241), 752 - (373 + 344))
+    v123.Position = UDim2.new(0.02 + 0, 0 + 0, 0.12 - 0, 0 - 0)
+    v123.BackgroundColor3 = Color3.fromRGB(1279 - (35 + 1064), 0 + 0, 0 - 0)
+    v123.BorderColor3 = Color3.fromRGB(2 + 253, 1286 - (298 + 938), 1309 - (233 + 1026))
+    v123.BorderSizePixel = 2
+    v123.Text = "🎯 AIM: OFF"
+    v123.TextColor3 = Color3.fromRGB(1921 - (636 + 1030), 131 + 124, 250 + 5)
+    v123.Font = Enum.Font.SourceSansBold
+    v123.TextSize = 13
+    v123.Active = true
+    v123.Draggable = true
+    v123.Parent = v119
+    local function v136()
+        local v518 = 0
+        local v519
+        while true do
+            if (1 + 0) == v518 then
+                if (v519 - v85) > (1 + 7) then
+                    local v637 = 0
+                    while true do
+                        if v637 == (221 - (55 + 166)) then
+                            v85 = v519
+                            pcall(function()
+                                local v661 = Instance.new("Sound")
+                                v661.SoundId = "rbxassetid://4590657391"
+                                v661.Volume = 1 + 2
+                                v661.Parent = v13
+                                v661:Play()
+                                game:GetService("Debris"):AddItem(v661, 1 + 2)
+                            end)
+                            v637 = 3 - 2
+                        end
+                        if v637 == (298 - (36 + 261)) then
+                            pcall(function()
+                                local v665 = 0
+                                while true do
+                                    if v665 == (0 - 0) then
+                                        v89.Text = "🚨 تم رصد ضب (قوي جداً)!"
+                                        v89.Visible = true
+                                        v665 = 1369 - (34 + 1334)
+                                    end
+                                    if v665 == (1 + 0) then
+                                        task.delay(3 + 0, function()
+                                            v89.Visible = false
+                                        end)
+                                        break
+                                    end
+                                end
+                            end)
+                            break
+                        end
+                    end
+                end
+                break
+            end
+            if v518 == (1283 - (1035 + 248)) then
+                if not v83.T6_Alerts then
+                    return
+                end
+                v519 = tick()
+                v518 = 1
+            end
+        end
+    end
+    local function v137(v520)
+        local v521 = 21 - (20 + 1)
+        local v522
+        while true do
+            if v521 == (1 + 0) then
+                return string.find(v522, "عجاج") or string.find(v522, "ajaj")
+            end
+            if v521 == 0 then
+                if not v520 then
+                    return false
+                end
+                v522 = string.lower(v520.Name)
+                v521 = 320 - (134 + 185)
+            end
+        end
+    end
+    local function v138(v523)
+        local v524 = 0
+        local v525
+        local v526
+        while true do
+            if v524 == 0 then
+                if not v523 or not v523.Parent then
+                    return nil
+                end
+                v525 = v523.Name
+                v524 = 1134 - (549 + 584)
+            end
+            if v524 == 1 then
+                local v589 = 685 - (314 + 371)
+                while true do
+                    if 0 == v589 then
+                        v526 = string.lower(v525)
+                        if v137(v523) then
+                            if v523:IsA("Model") then
+                                return v523.PrimaryPart
+                                    or v523:FindFirstChild("HumanoidRootPart")
+                                    or v523:FindFirstChildWhichIsA("BasePart"),
+                                    "trader"
+                            elseif v523:IsA("BasePart") then
+                                return v523, "trader"
+                            end
+                        end
+                        v589 = 1
+                    end
+                    if v589 == 1 then
+                        v524 = 6 - 4
+                        break
+                    end
+                end
+            end
+            if (970 - (478 + 490)) == v524 then
+                if
+                    (string.sub(v526, 1 + 0, 1177 - (786 + 386)) == "dhab_")
+                    or (v526 == "dhab")
+                    or string.find(v526, "ضب")
+                then
+                    if v523:IsA("Model") then
+                        local v656 = v523:FindFirstChildOfClass("Humanoid")
+                        if v656 and (v656.Health <= (0 - 0)) then
+                            return nil
+                        end
+                        return v523.PrimaryPart
+                            or v523:FindFirstChild("HumanoidRootPart")
+                            or v523:FindFirstChildWhichIsA("BasePart"),
+                            "dhab"
+                    elseif v523:IsA("BasePart") then
+                        return v523, "dhab"
+                    end
+                end
+                return nil
+            end
+        end
+    end
+    local function v139()
+        local v527 = 1379 - (1055 + 324)
+        local v528
+        local v529
+        local v530
+        local v531
+        local v532
+        while true do
+            if v527 == (1342 - (1093 + 247)) then
+                v531 = nil
+                v532 = v83.Dist_Limit
+                v527 = 3 + 0
+            end
+            if v527 == (0 + 0) then
+                local v591 = 0
+                local v592
+                while true do
+                    if v591 == (0 - 0) then
+                        v592 = 0 - 0
+                        while true do
+                            if v592 == (0 - 0) then
+                                v528 = v14.Character
+                                v529 = v528 and v528:FindFirstChild("HumanoidRootPart")
+                                v592 = 1
+                            end
+                            if v592 == 1 then
+                                v527 = 1
+                                break
+                            end
+                        end
+                        break
+                    end
+                end
+            end
+            if v527 == (2 - 1) then
+                if not v529 then
+                    return nil
+                end
+                v530 = v529.Position
+                v527 = 1 + 1
+            end
+            if v527 == 3 then
+                for v619, v620 in pairs(v9:GetChildren()) do
+                    local v621 = 0 - 0
+                    local v622
+                    local v623
+                    while true do
+                        if v621 == (0 - 0) then
+                            v622, v623 = v138(v620)
+                            if v622 and (v623 == "dhab") then
+                                local v667 = 0 + 0
+                                local v668
+                                while true do
+                                    if v667 == 0 then
+                                        v668 = (v622.Position - v530).Magnitude
+                                        if v668 <= v532 then
+                                            local v703 = 0 - 0
+                                            while true do
+                                                if 0 == v703 then
+                                                    v532 = v668
+                                                    v531 = v622
+                                                    break
+                                                end
+                                            end
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+                return v531
+            end
+        end
+    end
+    local v140 = Instance.new("ScreenGui")
+    v140.Name = "Core_Sys_UI_Main"
+    v140.Parent = v11
+    local v143 = Instance.new("Frame")
+    v143.Size = UDim2.new(688 - (364 + 324), 1370 - 870, 0 - 0, 107 + 213)
+    v143.Position = UDim2.new(0.5 - 0, -(400 - 150), 0.5, -(485 - 325))
+    v143.BackgroundColor3 = Color3.fromRGB(1282 - (1249 + 19), 10 + 1, 42 - 31)
+    v143.BorderColor3 = Color3.fromRGB(200, 1121 - (686 + 400), 28 + 7)
+    v143.BorderSizePixel = 231 - (73 + 156)
+    v143.Active = true
+    v143.Draggable = true
+    v143.Parent = v140
+    Instance.new("UICorner", v143).CornerRadius = UDim.new(0, 1 + 9)
+    local v153 = Instance.new("Frame")
+    v153.Size = UDim2.new(1, 0, 811 - (721 + 90), 45)
+    v153.BackgroundColor3 = Color3.fromRGB(18, 1 + 13, 14)
+    v153.BorderSizePixel = 0 - 0
+    v153.Parent = v143
+    Instance.new("UICorner", v153).CornerRadius = UDim.new(470 - (224 + 246), 16 - 6)
+    local v159 = Instance.new("TextLabel")
+    v159.Size = UDim2.new(1 - 0, 0 + 0, 1 + 0, 0 + 0)
+    v159.BackgroundTransparency = 1
+    v159.Text = "X7 HUB"
+    v159.TextColor3 = Color3.fromRGB(255, 119 - 59, 60)
+    v159.Font = Enum.Font.SourceSansBold
+    v159.TextSize = 66 - 46
+    v159.Parent = v153
+    local v167 = Instance.new("TextButton")
+    v167.Size = UDim2.new(0, 545 - (203 + 310), 0, 32)
+    v167.Position = UDim2.new(1994 - (1238 + 755), -(3 + 37), 1534 - (709 + 825), 10 - 4)
+    v167.BackgroundColor3 = Color3.fromRGB(25, 21 - 6, 879 - (196 + 668))
+    v167.BorderColor3 = Color3.fromRGB(789 - 589, 82 - 42, 873 - (171 + 662))
+    v167.BorderSizePixel = 94 - (4 + 89)
+    v167.Text = "X"
+    v167.TextColor3 = Color3.fromRGB(255, 893 - 638, 255)
+    v167.Font = Enum.Font.SourceSansBold
+    v167.TextSize = 14
+    v167.Parent = v153
+    Instance.new("UICorner", v167).CornerRadius = UDim.new(0 + 0, 6)
+    local v179 = Instance.new("Frame")
+    v179.Size = UDim2.new(4 - 3, 0 + 0, 0, 1488 - (35 + 1451))
+    v179.Position = UDim2.new(0, 1453 - (28 + 1425), 1993 - (941 + 1052), 44 + 1)
+    v179.BackgroundColor3 = Color3.fromRGB(1694 - (822 + 692), 42 - 12, 15 + 15)
+    v179.BorderSizePixel = 297 - (45 + 252)
+    v179.Parent = v143
+    local v185 = Instance.new("Frame")
+    v185.Name = "Sidebar"
+    v185.Size = UDim2.new(0 + 0, 49 + 91, 2 - 1, -(488 - (114 + 319)))
+    v185.Position = UDim2.new(0 - 0, 10, 0, 52)
+    v185.BackgroundTransparency = 1
+    v185.Parent = v143
+    local v191 = Instance.new("Frame")
+    v191.Size = UDim2.new(1 - 0, -(106 + 59), 1 - 0, -(129 - 67))
+    v191.Position = UDim2.new(1963 - (556 + 1407), 155, 1206 - (741 + 465), 52)
+    v191.BackgroundColor3 = Color3.fromRGB(18, 16, 481 - (170 + 295))
+    v191.BorderColor3 = Color3.fromRGB(32 + 28, 37 + 3, 40)
+    v191.BorderSizePixel = 1
+    v191.Parent = v143
+    Instance.new("UICorner", v191).CornerRadius = UDim.new(0 - 0, 7 + 1)
+    local v199 = Instance.new("Frame")
+    v199.Size = UDim2.new(1, 0 + 0, 1 + 0, 1230 - (957 + 273))
+    v199.BackgroundTransparency = 1
+    v199.Visible = true
+    v199.Parent = v191
+    local v204 = Instance.new("Frame")
+    v204.Size = UDim2.new(0.9 + 0, 0 + 0, 0 - 0, 100 - 62)
+    v204.Position = UDim2.new(0.05 - 0, 0, 0.04 - 0, 0)
+    v204.BackgroundColor3 = Color3.fromRGB(1804 - (389 + 1391), 20, 13 + 7)
+    v204.BorderColor3 = Color3.fromRGB(16 + 134, 30, 68 - 38)
+    v204.Parent = v199
+    Instance.new("UICorner", v204).CornerRadius = UDim.new(951 - (783 + 168), 19 - 13)
+    local v211 = Instance.new("TextLabel")
+    v211.Size = UDim2.new(0.6 + 0, 311 - (309 + 2), 2 - 1, 1212 - (1090 + 122))
+    v211.Position = UDim2.new(0.05, 0, 0, 0)
+    v211.BackgroundTransparency = 1 + 0
+    v211.Text = "رادار الضبان"
+    v211.TextColor3 = Color3.fromRGB(255, 856 - 601, 255)
+    v211.Font = Enum.Font.SourceSansBold
+    v211.TextSize = 9 + 4
+    v211.TextXAlignment = Enum.TextXAlignment.Left
+    v211.Parent = v204
+    local v222 = Instance.new("TextButton")
+    v222.Size = UDim2.new(1118 - (628 + 490), 9 + 36, 0, 53 - 31)
+    v222.Position = UDim2.new(1, -55, 0.5, -(50 - 39))
+    v222.BackgroundColor3 = Color3.fromRGB(774 - (431 + 343), 363 - 183, 0 - 0)
+    v222.Text = ""
+    v222.Parent = v204
+    Instance.new("UICorner", v222).CornerRadius = UDim.new(0 + 0, 2 + 9)
+    local v229 = Instance.new("Frame")
+    v229.Size = UDim2.new(1695 - (556 + 1139), 16, 15 - (6 + 9), 3 + 13)
+    v229.Position = UDim2.new(1, -19, 0.5 + 0, -(177 - (28 + 141)))
+    v229.BackgroundColor3 = Color3.fromRGB(86 + 134, 271 - 51, 220)
+    v229.BorderSizePixel = 0 + 0
+    v229.Parent = v222
+    Instance.new("UICorner", v229).CornerRadius = UDim.new(1318 - (486 + 831), 0)
+    local v236 = Instance.new("Frame")
+    v236.Size = UDim2.new(0.9 - 0, 0 - 0, 0, 10 + 42)
+    v236.Position = UDim2.new(0.05, 0, 0.22 - 0, 1263 - (668 + 595))
+    v236.BackgroundColor3 = Color3.fromRGB(22 + 2, 5 + 15, 54 - 34)
+    v236.BorderColor3 = Color3.fromRGB(440 - (23 + 267), 1974 - (1129 + 815), 417 - (371 + 16))
+    v236.Parent = v199
+    Instance.new("UICorner", v236).CornerRadius = UDim.new(1750 - (1326 + 424), 10 - 4)
+    local v243 = Instance.new("TextLabel")
+    v243.Size = UDim2.new(0.6 - 0, 118 - (88 + 30), 0, 22)
+    v243.Position = UDim2.new(771.05 - (720 + 51), 0 - 0, 1776.08 - (421 + 1355), 0 - 0)
+    v243.BackgroundTransparency = 1
+    v243.Text = "تفعيل رادار أبو عجاج 🛒"
+    v243.TextColor3 = Color3.fromRGB(126 + 129, 1298 - (286 + 797), 0)
+    v243.Font = Enum.Font.SourceSansBold
+    v243.TextSize = 47 - 34
+    v243.TextXAlignment = Enum.TextXAlignment.Left
+    v243.Parent = v236
+    local v253 = Instance.new("TextLabel")
+    v253.Size = UDim2.new(0.85, 0 - 0, 439 - (397 + 42), 6 + 12)
+    v253.Position = UDim2.new(800.05 - (24 + 776), 0 - 0, 0.52, 785 - (222 + 563))
+    v253.BackgroundTransparency = 1
+    v253.Text = "يعلمك مكان تاجر الخلا (بمسافة 15 كم)"
+    v253.TextColor3 = Color3.fromRGB(170, 170, 374 - 204)
+    v253.Font = Enum.Font.SourceSans
+    v253.TextSize = 11
+    v253.TextXAlignment = Enum.TextXAlignment.Left
+    v253.Parent = v236
+    local v264 = Instance.new("TextButton")
+    v264.Size = UDim2.new(0 + 0, 235 - (23 + 167), 0, 1820 - (690 + 1108))
+    v264.Position = UDim2.new(1, -(20 + 35), 0.35, -11)
+    v264.BackgroundColor3 = Color3.fromRGB(0, 149 + 31, 848 - (40 + 808))
+    v264.Text = ""
+    v264.Parent = v236
+    Instance.new("UICorner", v264).CornerRadius = UDim.new(0 + 0, 42 - 31)
+    local v271 = Instance.new("Frame")
+    v271.Size = UDim2.new(0 + 0, 9 + 7, 0 + 0, 16)
+    v271.Position = UDim2.new(1, -(590 - (47 + 524)), 0.5 + 0, -8)
+    v271.BackgroundColor3 = Color3.fromRGB(601 - 381, 328 - 108, 501 - 281)
+    v271.BorderSizePixel = 1726 - (1165 + 561)
+    v271.Parent = v264
+    Instance.new("UICorner", v271).CornerRadius = UDim.new(1 + 0, 0)
+    local v278 = Instance.new("Frame")
+    v278.Size = UDim2.new(0.9 - 0, 0 + 0, 479 - (341 + 138), 44)
+    v278.Position = UDim2.new(0.05 + 0, 0 - 0, 326.44 - (89 + 237), 0)
+    v278.BackgroundColor3 = Color3.fromRGB(76 - 52, 42 - 22, 901 - (581 + 300))
+    v278.BorderColor3 = Color3.fromRGB(1370 - (855 + 365), 71 - 41, 10 + 20)
+    v278.Parent = v199
+    Instance.new("UICorner", v278).CornerRadius = UDim.new(0, 6)
+    local v285 = Instance.new("TextLabel")
+    v285.Size = UDim2.new(1235.6 - (1030 + 205), 0 + 0, 0 + 0, 308 - (156 + 130))
+    v285.Position = UDim2.new(0.05 - 0, 0 - 0, 0.08 - 0, 0 + 0)
+    v285.BackgroundTransparency = 1
+    v285.Text = "الاشعارات (قوي جداً)"
+    v285.TextColor3 = Color3.fromRGB(255, 149 + 106, 324 - (10 + 59))
+    v285.Font = Enum.Font.SourceSansBold
+    v285.TextSize = 13
+    v285.TextXAlignment = Enum.TextXAlignment.Left
+    v285.Parent = v278
+    local v295 = Instance.new("TextLabel")
+    v295.Size = UDim2.new(0.6 + 0, 0 - 0, 1163 - (671 + 492), 15 + 3)
+    v295.Position = UDim2.new(1215.05 - (369 + 846), 0, 0.52, 0)
+    v295.BackgroundTransparency = 1
+    v295.Text = "تنبهك اذا لقيت ضب قوي جداً"
+    v295.TextColor3 = Color3.fromRGB(46 + 124, 170, 146 + 24)
+    v295.Font = Enum.Font.SourceSans
+    v295.TextSize = 11
+    v295.TextXAlignment = Enum.TextXAlignment.Left
+    v295.Parent = v278
+    local v305 = Instance.new("TextButton")
+    v305.Size = UDim2.new(0, 45, 1945 - (1036 + 909), 18 + 4)
+    v305.Position = UDim2.new(1 - 0, -(258 - (11 + 192)), 0.5 + 0, -(186 - (135 + 40)))
+    v305.BackgroundColor3 = Color3.fromRGB(0 - 0, 109 + 71, 0)
+    v305.Text = ""
+    v305.Parent = v278
+    Instance.new("UICorner", v305).CornerRadius = UDim.new(0, 11)
+    local v312 = Instance.new("Frame")
+    v312.Size = UDim2.new(0 - 0, 23 - 7, 176 - (50 + 126), 16)
+    v312.Position = UDim2.new(2 - 1, -(5 + 14), 1413.5 - (1233 + 180), -(977 - (522 + 447)))
+    v312.BackgroundColor3 = Color3.fromRGB(1641 - (107 + 1314), 103 + 117, 220)
+    v312.BorderSizePixel = 0
+    v312.Parent = v305
+    Instance.new("UICorner", v312).CornerRadius = UDim.new(2 - 1, 0 + 0)
+    local v319 = Instance.new("Frame")
+    v319.Size = UDim2.new(1, 0 - 0, 1, 0)
+    v319.BackgroundTransparency = 3 - 2
+    v319.Visible = false
+    v319.Parent = v191
+    local v324 = Instance.new("Frame")
+    v324.Size = UDim2.new(1910.9 - (716 + 1194), 0, 0, 1 + 39)
+    v324.Position = UDim2.new(0.05 + 0, 503 - (74 + 429), 0.08 - 0, 0 + 0)
+    v324.BackgroundColor3 = Color3.fromRGB(54 - 30, 20, 15 + 5)
+    v324.BorderColor3 = Color3.fromRGB(462 - 312, 74 - 44, 463 - (279 + 154))
+    v324.Parent = v319
+    Instance.new("UICorner", v324).CornerRadius = UDim.new(778 - (454 + 324), 6)
+    local v331 = Instance.new("TextLabel")
+    v331.Size = UDim2.new(0.6, 0, 1 + 0, 17 - (12 + 5))
+    v331.Position = UDim2.new(0.05 + 0, 0 - 0, 0, 0 + 0)
+    v331.BackgroundTransparency = 1094 - (277 + 816)
+    v331.Text = "تفعيل الإيم بوت"
+    v331.TextColor3 = Color3.fromRGB(1089 - 834, 255, 1438 - (1058 + 125))
+    v331.Font = Enum.Font.SourceSansBold
+    v331.TextSize = 3 + 10
+    v331.TextXAlignment = Enum.TextXAlignment.Left
+    v331.Parent = v324
+    local v341 = Instance.new("TextButton")
+    v341.Size = UDim2.new(975 - (815 + 160), 193 - 148, 0, 51 - 29)
+    v341.Position = UDim2.new(1 + 0, -(160 - 105), 1898.5 - (41 + 1857), -11)
+    v341.BackgroundColor3 = Color3.fromRGB(180, 1893 - (1222 + 671), 0 - 0)
+    v341.Text = ""
+    v341.Parent = v324
+    Instance.new("UICorner", v341).CornerRadius = UDim.new(0 - 0, 11)
+    local v348 = Instance.new("Frame")
+    v348.Size = UDim2.new(0, 16, 0, 1198 - (229 + 953))
+    v348.Position = UDim2.new(1774 - (1111 + 663), 1582 - (874 + 705), 0.5, -(2 + 6))
+    v348.BackgroundColor3 = Color3.fromRGB(151 + 69, 457 - 237, 7 + 213)
+    v348.BorderSizePixel = 679 - (642 + 37)
+    v348.Parent = v341
+    Instance.new("UICorner", v348).CornerRadius = UDim.new(1, 0 + 0)
+    local v355 = Instance.new("Frame")
+    v355.Size = UDim2.new(1 + 0, 0 - 0, 1, 454 - (233 + 221))
+    v355.BackgroundTransparency = 1
+    v355.Visible = false
+    v355.Parent = v191
+    local v360 = Instance.new("Frame")
+    v360.Size = UDim2.new(0.9, 0 - 0, 0 + 0, 1581 - (718 + 823))
+    v360.Position = UDim2.new(0.05, 0 + 0, 805.08 - (266 + 539), 0)
+    v360.BackgroundColor3 = Color3.fromRGB(67 - 43, 1245 - (636 + 589), 47 - 27)
+    v360.BorderColor3 = Color3.fromRGB(309 - 159, 30, 24 + 6)
+    v360.Parent = v355
+    Instance.new("UICorner", v360).CornerRadius = UDim.new(0 + 0, 1021 - (657 + 358))
+    local v367 = Instance.new("TextLabel")
+    v367.Size = UDim2.new(0.6 - 0, 0 - 0, 1188 - (1151 + 36), 0 + 0)
+    v367.Position = UDim2.new(0.05, 0 + 0, 0, 0 - 0)
+    v367.BackgroundTransparency = 1833 - (1552 + 280)
+    v367.Text = "تقليل اللاق"
+    v367.TextColor3 = Color3.fromRGB(255, 255, 1089 - (64 + 770))
+    v367.Font = Enum.Font.SourceSansBold
+    v367.TextSize = 13
+    v367.TextXAlignment = Enum.TextXAlignment.Left
+    v367.Parent = v360
+    local v377 = Instance.new("TextButton")
+    v377.Size = UDim2.new(0, 31 + 14, 0, 22)
+    v377.Position = UDim2.new(1, -(124 - 69), 0.5, -11)
+    v377.BackgroundColor3 = Color3.fromRGB(32 + 148, 0, 1243 - (157 + 1086))
+    v377.Text = ""
+    v377.Parent = v360
+    Instance.new("UICorner", v377).CornerRadius = UDim.new(0, 21 - 10)
+    local v384 = Instance.new("Frame")
+    v384.Size = UDim2.new(0 - 0, 16, 0 - 0, 21 - 5)
+    v384.Position = UDim2.new(819 - (599 + 220), 5 - 2, 1931.5 - (1813 + 118), -8)
+    v384.BackgroundColor3 = Color3.fromRGB(161 + 59, 220, 220)
+    v384.BorderSizePixel = 1217 - (841 + 376)
+    v384.Parent = v377
+    Instance.new("UICorner", v384).CornerRadius = UDim.new(1 - 0, 0 + 0)
+    local v391 = Instance.new("Frame")
+    v391.Size = UDim2.new(0.9 - 0, 0, 859 - (464 + 395), 102 - 62)
+    v391.Position = UDim2.new(0.05 + 0, 837 - (467 + 370), 0.3, 0)
+    v391.BackgroundColor3 = Color3.fromRGB(49 - 25, 15 + 5, 68 - 48)
+    v391.BorderColor3 = Color3.fromRGB(24 + 126, 69 - 39, 550 - (150 + 370))
+    v391.Parent = v355
+    Instance.new("UICorner", v391).CornerRadius = UDim.new(0, 1288 - (74 + 1208))
+    local v398 = Instance.new("TextLabel")
+    v398.Size = UDim2.new(0.6, 0, 2 - 1, 0 - 0)
+    v398.Position = UDim2.new(0.05, 0, 0 + 0, 390 - (14 + 376))
+    v398.BackgroundTransparency = 1 - 0
+    v398.Text = "عرض معدل الإطارات (FPS)"
+    v398.TextColor3 = Color3.fromRGB(166 + 89, 225 + 30, 255)
+    v398.Font = Enum.Font.SourceSansBold
+    v398.TextSize = 13
+    v398.TextXAlignment = Enum.TextXAlignment.Left
+    v398.Parent = v391
+    local v408 = Instance.new("TextButton")
+    v408.Size = UDim2.new(0, 43 + 2, 0 - 0, 22)
+    v408.Position = UDim2.new(1 + 0, -55, 0.5, -11)
+    v408.BackgroundColor3 = Color3.fromRGB(180, 78 - (23 + 55), 0)
+    v408.Text = ""
+    v408.Parent = v391
+    Instance.new("UICorner", v408).CornerRadius = UDim.new(0 - 0, 11)
+    local v415 = Instance.new("Frame")
+    v415.Size = UDim2.new(0, 11 + 5, 0 + 0, 24 - 8)
+    v415.Position = UDim2.new(0 + 0, 904 - (652 + 249), 0.5 - 0, -8)
+    v415.BackgroundColor3 = Color3.fromRGB(2088 - (708 + 1160), 597 - 377, 401 - 181)
+    v415.BorderSizePixel = 27 - (10 + 17)
+    v415.Parent = v408
+    Instance.new("UICorner", v415).CornerRadius = UDim.new(1 + 0, 1732 - (1400 + 332))
+    local v422 = Instance.new("Frame")
+    v422.Size = UDim2.new(1 - 0, 1908 - (242 + 1666), 1, 0 + 0)
+    v422.BackgroundTransparency = 1 + 0
+    v422.Visible = false
+    v422.Parent = v191
+    local v427 = Instance.new("Frame")
+    v427.Size = UDim2.new(0.92, 0, 0.88, 0 + 0)
+    v427.Position = UDim2.new(940.04 - (850 + 90), 0, 0.06 - 0, 1390 - (360 + 1030))
+    v427.BackgroundColor3 = Color3.fromRGB(22 + 2, 18, 50 - 32)
+    v427.BorderColor3 = Color3.fromRGB(275 - 75, 30, 1691 - (909 + 752))
+    v427.BorderSizePixel = 1224 - (109 + 1114)
+    v427.Parent = v422
+    Instance.new("UICorner", v427).CornerRadius = UDim.new(0, 14 - 6)
+    local v435 = Instance.new("TextLabel")
+    v435.Size = UDim2.new(1, 0, 0, 14 + 21)
+    v435.Position = UDim2.new(0, 242 - (6 + 236), 0.05 + 0, 0 + 0)
+    v435.BackgroundTransparency = 1
+    v435.Text = "🛡️ X7 HUB CREDITS 🛡️"
+    v435.TextColor3 = Color3.fromRGB(601 - 346, 87 - 37, 1183 - (1076 + 57))
+    v435.Font = Enum.Font.SourceSansBold
+    v435.TextSize = 3 + 15
+    v435.Parent = v427
+    local v444 = Instance.new("TextLabel")
+    v444.Size = UDim2.new(689.9 - (579 + 110), 0, 0 + 0, 35)
+    v444.Position = UDim2.new(0.05 + 0, 0, 0.22, 0 + 0)
+    v444.BackgroundTransparency = 408 - (174 + 233)
+    v444.Text = "جميع الحقوق محفوظة وتعود حصرياً إلى سيرفر X7:"
+    v444.TextColor3 = Color3.fromRGB(712 - 457, 447 - 192, 114 + 141)
+    v444.Font = Enum.Font.SourceSansBold
+    v444.TextSize = 13
+    v444.Parent = v427
+    local v453 = Instance.new("TextLabel")
+    v453.Size = UDim2.new(1174.9 - (663 + 511), 0 + 0, 0 + 0, 92 - 62)
+    v453.Position = UDim2.new(0.05 + 0, 0 - 0, 0.38 - 0, 0 + 0)
+    v453.BackgroundColor3 = Color3.fromRGB(29 - 14, 9 + 3, 12)
+    v453.BorderColor3 = Color3.fromRGB(19 + 181, 752 - (478 + 244), 30)
+    v453.BorderSizePixel = 518 - (440 + 77)
+    v453.Text = v17
+    v453.TextColor3 = Color3.fromRGB(46 + 54, 658 - 478, 1811 - (655 + 901))
+    v453.Font = Enum.Font.SourceSansBold
+    v453.TextSize = 13
+    v453.Parent = v427
+    Instance.new("UICorner", v453).CornerRadius = UDim.new(0 + 0, 4 + 1)
+    local v465 = Instance.new("TextButton")
+    v465.Size = UDim2.new(0.8, 0 + 0, 0 - 0, 30)
+    v465.Position = UDim2.new(1445.1 - (695 + 750), 0, 0.58 - 0, 0 - 0)
+    v465.BackgroundColor3 = Color3.fromRGB(563 - 423, 376 - (285 + 66), 25)
+    v465.BorderColor3 = Color3.fromRGB(594 - 339, 1360 - (682 + 628), 9 + 41)
+    v465.BorderSizePixel = 300 - (176 + 123)
+    v465.Text = "📋 نسخ رابط سيرفر ديسكورد"
+    v465.TextColor3 = Color3.fromRGB(107 + 148, 185 + 70, 255)
+    v465.Font = Enum.Font.SourceSansBold
+    v465.TextSize = 12
+    v465.Parent = v427
+    Instance.new("UICorner", v465).CornerRadius = UDim.new(269 - (239 + 30), 2 + 3)
+    v465.MouseButton1Click:Connect(function()
+        pcall(function()
+            if setclipboard then
+                setclipboard(v17)
+                v465.Text = "تم نسخ رابط ديسكورد بنجاح! ✅"
+                task.wait(1.5 + 0)
+                v465.Text = "📋 نسخ رابط سيرفر ديسكورد"
+            end
+        end)
+    end)
+    local v477 = Instance.new("TextLabel")
+    v477.Size = UDim2.new(0.9 - 0, 0, 0 - 0, 335 - (306 + 9))
+    v477.Position = UDim2.new(0.05, 0 - 0, 0.82 + 0, 0 + 0)
+    v477.BackgroundTransparency = 1
+    v477.Text = "حقوق التطوير والبرمجة © 2026 X7 Community"
+    v477.TextColor3 = Color3.fromRGB(73 + 77, 428 - 278, 150)
+    v477.Font = Enum.Font.SourceSans
+    v477.TextSize = 1386 - (1140 + 235)
+    v477.Parent = v427
+    local function v486(v533, v534)
+        local v535 = Instance.new("TextButton")
+        v535.Size = UDim2.new(1 + 0, 0 + 0, 0 + 0, 86 - (33 + 19))
+        v535.Position = UDim2.new(0 + 0, 0 - 0, 0, v534)
+        v535.BackgroundColor3 = Color3.fromRGB(10 + 12, 17, 33 - 16)
+        v535.BorderColor3 = Color3.fromRGB(150, 29 + 1, 30)
+        v535.BorderSizePixel = 690 - (586 + 103)
+        v535.Text = "   " .. v533
+        v535.TextColor3 = Color3.fromRGB(200, 19 + 181, 615 - 415)
+        v535.Font = Enum.Font.SourceSansBold
+        v535.TextSize = 1501 - (1309 + 179)
+        v535.TextXAlignment = Enum.TextXAlignment.Left
+        v535.Parent = v185
+        Instance.new("UICorner", v535).CornerRadius = UDim.new(0 - 0, 3 + 3)
+        return v535
+    end
+    local v487 = v486("ESP", 0 - 0)
+    local v488 = v486("Aimbot", 31 + 9)
+    local v489 = v486("fps", 80)
+    local v490 = v486("الحقوق 📜", 254 - 134)
+    local function v491(v550, v551, v552)
+        if v552 then
+            local v581 = 0
+            while true do
+                if v581 == (0 - 0) then
+                    v550.BackgroundColor3 = Color3.fromRGB(0, 789 - (295 + 314), 0 - 0)
+                    v551:TweenPosition(
+                        UDim2.new(1963 - (1300 + 662), -(59 - 40), 0.5, -(1763 - (1178 + 577))),
+                        Enum.EasingDirection.Out,
+                        Enum.EasingStyle.Quad,
+                        0.15 + 0,
+                        true
+                    )
+                    break
+                end
+            end
+        else
+            local v582 = 0 - 0
+            while true do
+                if v582 == (1405 - (851 + 554)) then
+                    v550.BackgroundColor3 = Color3.fromRGB(160 + 20, 0 - 0, 0)
+                    v551:TweenPosition(
+                        UDim2.new(0 - 0, 305 - (115 + 187), 0.5 + 0, -8),
+                        Enum.EasingDirection.Out,
+                        Enum.EasingStyle.Quad,
+                        0.15,
+                        true
+                    )
+                    break
+                end
+            end
+        end
+    end
+    local function v492(v553)
+        v83.Target_Lock = v553
+        v491(v341, v348, v553)
+        if v553 then
+            local v583 = 0
+            while true do
+                if 1 == v583 then
+                    v123.BorderColor3 = Color3.fromRGB(0 + 0, 255, 100)
+                    v84 = v139()
+                    break
+                end
+                if v583 == (0 - 0) then
+                    v123.Text = "🎯 AIM: ON"
+                    v123.BackgroundColor3 = Color3.fromRGB(0, 1341 - (160 + 1001), 0)
+                    v583 = 1 + 0
+                end
+            end
+        else
+            local v584 = 0 + 0
+            while true do
+                if v584 == (0 - 0) then
+                    v123.Text = "🎯 AIM: OFF"
+                    v123.BackgroundColor3 = Color3.fromRGB(538 - (237 + 121), 897 - (525 + 372), 0)
+                    v584 = 1 - 0
+                end
+                if v584 == (3 - 2) then
+                    v123.BorderColor3 = Color3.fromRGB(255, 50, 192 - (96 + 46))
+                    v84 = nil
+                    break
+                end
+            end
+        end
+    end
+    v123.MouseButton1Click:Connect(function()
+        v492(not v83.Target_Lock)
+    end)
+    local function v493(v555, v556)
+        local v557 = 0
+        while true do
+            if (777 - (643 + 134)) == v557 then
+                v199.Visible = false
+                v319.Visible = false
+                v355.Visible = false
+                v422.Visible = false
+                v557 = 1
+            end
+            if 3 == v557 then
+                v556.Visible = true
+                v555.BackgroundColor3 = Color3.fromRGB(51 + 89, 59 - 34, 92 - 67)
+                v555.TextColor3 = Color3.fromRGB(245 + 10, 500 - 245, 521 - 266)
+                break
+            end
+            if v557 == (721 - (316 + 403)) then
+                v487.TextColor3 = Color3.fromRGB(133 + 67, 549 - 349, 73 + 127)
+                v488.TextColor3 = Color3.fromRGB(503 - 303, 200, 142 + 58)
+                v489.TextColor3 = Color3.fromRGB(65 + 135, 692 - 492, 955 - 755)
+                v490.TextColor3 = Color3.fromRGB(415 - 215, 12 + 188, 393 - 193)
+                v557 = 3
+            end
+            if (1 + 0) == v557 then
+                v487.BackgroundColor3 = Color3.fromRGB(64 - 42, 17, 34 - (12 + 5))
+                v488.BackgroundColor3 = Color3.fromRGB(85 - 63, 36 - 19, 35 - 18)
+                v489.BackgroundColor3 = Color3.fromRGB(54 - 32, 17, 4 + 13)
+                v490.BackgroundColor3 = Color3.fromRGB(1995 - (1656 + 317), 16 + 1, 14 + 3)
+                v557 = 2
+            end
+        end
+    end
+    v493(v487, v199)
+    v487.MouseButton1Click:Connect(function()
+        v493(v487, v199)
+    end)
+    v488.MouseButton1Click:Connect(function()
+        v493(v488, v319)
+    end)
+    v489.MouseButton1Click:Connect(function()
+        v493(v489, v355)
+    end)
+    v490.MouseButton1Click:Connect(function()
+        v493(v490, v422)
+    end)
+    local v494 = Instance.new("ScreenGui")
+    v494.Name = "Core_Sys_Toggle_Icon"
+    v494.Parent = v11
+    local v497 = Instance.new("TextButton")
+    v497.Size = UDim2.new(0 - 0, 48, 0 - 0, 48)
+    v497.Position = UDim2.new(0.05, 0, 0.15, 0)
+    v497.BackgroundColor3 = Color3.fromRGB(14, 365 - (5 + 349), 52 - 41)
+    v497.BorderColor3 = Color3.fromRGB(200, 30, 1301 - (266 + 1005))
+    v497.BorderSizePixel = 2 + 0
+    v497.Text = "X7"
+    v497.TextColor3 = Color3.fromRGB(869 - 614, 65 - 15, 50)
+    v497.Font = Enum.Font.SourceSansBold
+    v497.TextSize = 1716 - (561 + 1135)
+    v497.Active = true
+    v497.Draggable = true
+    v497.Parent = v494
+    Instance.new("UICorner", v497).CornerRadius = UDim.new(0 - 0, 32 - 22)
+    local v511 = true
+    v497.MouseButton1Click:Connect(function()
+        v511 = not v511
+        v143.Visible = v511
+    end)
+    v167.MouseButton1Click:Connect(function()
+        local v559 = 1066 - (507 + 559)
+        while true do
+            if v559 == (0 - 0) then
+                v511 = false
+                v143.Visible = false
+                break
+            end
+        end
+    end)
+    v222.MouseButton1Click:Connect(function()
+        v83.Radar_Active = not v83.Radar_Active
+        v491(v222, v229, v83.Radar_Active)
+        if not v83.Radar_Active then
+            pcall(function()
+                for v624, v625 in pairs(v9:GetChildren()) do
+                    if
+                        v625:IsA("BillboardGui")
+                        and ((v625.Name == "Secure_Marker_Tag") or (v625.Name == "Secure_Trader_Tag"))
+                    then
+                        v625:Destroy()
+                    end
+                end
+            end)
+        end
+    end)
+    v264.MouseButton1Click:Connect(function()
+        local v561 = 0 - 0
+        while true do
+            if v561 == (388 - (212 + 176)) then
+                v83.Trader_ESP = not v83.Trader_ESP
+                v491(v264, v271, v83.Trader_ESP)
+                v561 = 906 - (250 + 655)
+            end
+            if v561 == (2 - 1) then
+                if not v83.Trader_ESP then
+                    pcall(function()
+                        for v657, v658 in pairs(v9:GetChildren()) do
+                            if v658:IsA("BillboardGui") and (v658.Name == "Secure_Trader_Tag") then
+                                v658:Destroy()
+                            end
+                        end
+                    end)
+                end
+                break
+            end
+        end
+    end)
+    v305.MouseButton1Click:Connect(function()
+        local v562 = 0
+        local v563
+        while true do
+            if v562 == (0 - 0) then
+                v563 = 0 - 0
+                while true do
+                    if v563 == (1956 - (1869 + 87)) then
+                        v83.T6_Alerts = not v83.T6_Alerts
+                        v491(v305, v312, v83.T6_Alerts)
+                        break
+                    end
+                end
+                break
+            end
+        end
+    end)
+    v341.MouseButton1Click:Connect(function()
+        local v564 = 0 - 0
+        local v565
+        while true do
+            if v564 == 0 then
+                v565 = not v119.Enabled
+                v119.Enabled = v565
+                v564 = 1902 - (484 + 1417)
+            end
+            if v564 == (2 - 1) then
+                v491(v341, v348, v565)
+                if not v565 then
+                    v492(false)
+                end
+                break
+            end
+        end
+    end)
+    v377.MouseButton1Click:Connect(function()
+        local v566 = 0 - 0
+        while true do
+            if v566 == (773 - (48 + 725)) then
+                v83.Anti_Lag = not v83.Anti_Lag
+                v491(v377, v384, v83.Anti_Lag)
+                v566 = 1 - 0
+            end
+            if v566 == (2 - 1) then
+                if v83.Anti_Lag then
+                    pcall(function()
+                        local v648 = 0 + 0
+                        while true do
+                            if v648 == (2 - 1) then
+                                v12.FogEnd = 8999999488
+                                v12.Brightness = 1 + 1
+                                v648 = 1 + 1
+                            end
+                            if v648 == 2 then
+                                v12.ClockTime = 14
+                                for v682, v683 in pairs(v12:GetChildren()) do
+                                    if
+                                        v683:IsA("PostEffect")
+                                        or v683:IsA("BloomEffect")
+                                        or v683:IsA("BlurEffect")
+                                        or v683:IsA("ColorCorrectionEffect")
+                                        or v683:IsA("SunRaysEffect")
+                                        or v683:IsA("DepthOfFieldEffect")
+                                    then
+                                        v683:Destroy()
+                                    end
+                                end
+                                break
+                            end
+                            if v648 == (853 - (152 + 701)) then
+                                settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+                                v12.GlobalShadows = false
+                                v648 = 1312 - (430 + 881)
+                            end
+                        end
+                    end)
+                else
+                    pcall(function()
+                        local v649 = 0 + 0
+                        while true do
+                            if v649 == 0 then
+                                settings().Rendering.QualityLevel = Enum.QualityLevel.Automatic
+                                v12.GlobalShadows = true
+                                break
+                            end
+                        end
+                    end)
+                end
+                break
+            end
+        end
+    end)
+    v408.MouseButton1Click:Connect(function()
+        v83.FPS_Display = not v83.FPS_Display
+        v491(v408, v415, v83.FPS_Display)
+        v102.Enabled = v83.FPS_Display
+    end)
+    v491(v222, v229, v83.Radar_Active)
+    v491(v264, v271, v83.Trader_ESP)
+    v491(v305, v312, v83.T6_Alerts)
+    v491(v341, v348, false)
+    v491(v377, v384, v83.Anti_Lag)
+    v491(v408, v415, v83.FPS_Display)
+    v102.Enabled = v83.FPS_Display
+    local v513 = 895 - (557 + 338)
+    v10.RenderStepped:Connect(function(v569)
+        pcall(function()
+            local v574 = 0
+            local v575
+            local v576
+            while true do
+                if v574 == (0 + 0) then
+                    if v83.FPS_Display then
+                        local v650 = 0
+                        local v651
+                        while true do
+                            if v650 == (0 - 0) then
+                                v651 = tick()
+                                if (v651 - v513) > 0.4 then
+                                    local v686 = 0
+                                    local v687
+                                    while true do
+                                        if v686 == (0 - 0) then
+                                            v513 = v651
+                                            v687 = math.floor((2 - 1) / v569)
+                                            v686 = 2 - 1
+                                        end
+                                        if v686 == (802 - (499 + 302)) then
+                                            v106.Text = "FPS: " .. tostring(v687)
+                                            if v687 < 30 then
+                                                v106.TextColor3 = Color3.fromRGB(1121 - (39 + 827), 138 - 88, 111 - 61)
+                                            else
+                                                v106.TextColor3 = Color3.fromRGB(0, 1012 - 757, 153 - 53)
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                    v575 = v14.Character
+                    v574 = 1
+                end
+                if v574 == (1 + 1) then
+                    if v83.Target_Lock then
+                        local v652 = 0
+                        local v653
+                        while true do
+                            if v652 == (0 - 0) then
+                                v653 = 0 + 0
+                                while true do
+                                    if v653 == (0 - 0) then
+                                        if not v84 or not v84.Parent then
+                                            v84 = v139()
+                                        end
+                                        if v84 and v84.Parent then
+                                            local v705 = 104 - (103 + 1)
+                                            local v706
+                                            local v707
+                                            local v708
+                                            while true do
+                                                if (555 - (475 + 79)) == v705 then
+                                                    v708 = nil
+                                                    while true do
+                                                        if v706 == (0 - 0) then
+                                                            v707 = v84.Parent
+                                                            v708 = false
+                                                            v706 = 3 - 2
+                                                        end
+                                                        if 1 == v706 then
+                                                            if v707:IsA("Model") then
+                                                                local v752 = 0
+                                                                local v753
+                                                                while true do
+                                                                    if v752 == (0 + 0) then
+                                                                        v753 = v707:FindFirstChildOfClass("Humanoid")
+                                                                        if v753 and (v753.Health <= (0 + 0)) then
+                                                                            v708 = true
+                                                                        end
+                                                                        break
+                                                                    end
+                                                                end
+                                                            elseif v707:IsA("BasePart") then
+                                                                local v756 = 1503 - (1395 + 108)
+                                                                local v757
+                                                                while true do
+                                                                    if v756 == (0 - 0) then
+                                                                        v757 = v707.Parent
+                                                                        if v757 and v757:IsA("Model") then
+                                                                            local v765 =
+                                                                                v757:FindFirstChildOfClass("Humanoid")
+                                                                            if
+                                                                                v765
+                                                                                and (v765.Health <= (1204 - (7 + 1197)))
+                                                                            then
+                                                                                v708 = true
+                                                                            end
+                                                                        end
+                                                                        break
+                                                                    end
+                                                                end
+                                                            end
+                                                            if v708 then
+                                                                v84 = v139()
+                                                            else
+                                                                v15.CFrame =
+                                                                    CFrame.new(v15.CFrame.Position, v84.Position)
+                                                            end
+                                                            break
+                                                        end
+                                                    end
+                                                    break
+                                                end
+                                                if v705 == 0 then
+                                                    v706 = 0 + 0
+                                                    v707 = nil
+                                                    v705 = 1
+                                                end
+                                            end
+                                        end
+                                        break
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+                if (1 + 0) == v574 then
+                    v576 = v575 and v575:FindFirstChild("HumanoidRootPart")
+                    if v576 then
+                        local v654 = 0
+                        local v655
+                        while true do
+                            if v654 == 0 then
+                                v655 = v576.Position
+                                for v684, v685 in pairs(v9:GetChildren()) do
+                                    if
+                                        v685:IsA("BillboardGui")
+                                        and ((v685.Name == "Secure_Marker_Tag") or (v685.Name == "Secure_Trader_Tag"))
+                                    then
+                                        local v700 = 319 - (27 + 292)
+                                        local v701
+                                        while true do
+                                            if v700 == (0 - 0) then
+                                                v701 = v685.Adornee
+                                                if v701 and v701.Parent then
+                                                    local v731 = 0 - 0
+                                                    local v732
+                                                    local v733
+                                                    while true do
+                                                        if v731 == (4 - 3) then
+                                                            if v733 then
+                                                                if v685.Name == "Secure_Trader_Tag" then
+                                                                    v733.Text = "🛒 أبو عجاج (تاجر الخلا)\n["
+                                                                        .. math.floor(v732)
+                                                                        .. "م]"
+                                                                else
+                                                                    local v759 = 0 - 0
+                                                                    local v760
+                                                                    local v761
+                                                                    while true do
+                                                                        if v759 == (0 - 0) then
+                                                                            v760 = v733.Text
+                                                                            v761 = string.match(v760, "%b[]")
+                                                                                or "[ضعيف]"
+                                                                            v759 = 1
+                                                                        end
+                                                                        if v759 == 1 then
+                                                                            v733.Text = "🐊 ضب "
+                                                                                .. v761
+                                                                                .. "\n["
+                                                                                .. math.floor(v732)
+                                                                                .. "م]"
+                                                                            break
+                                                                        end
+                                                                    end
+                                                                end
+                                                            end
+                                                            break
+                                                        end
+                                                        if v731 == (139 - (43 + 96)) then
+                                                            local v751 = 0 - 0
+                                                            while true do
+                                                                if v751 == (1 - 0) then
+                                                                    v731 = 1
+                                                                    break
+                                                                end
+                                                                if v751 == (0 + 0) then
+                                                                    v732 = (v701.Position - v655).Magnitude
+                                                                    v733 = v685:FindFirstChild("Txt")
+                                                                    v751 = 1
+                                                                end
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                                break
+                                            end
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                    v574 = 1 + 1
+                end
+            end
+        end)
+    end)
+    local function v514(v570)
+        local v571 = 0 - 0
+        local v572
+        local v573
+        while true do
+            if (1 + 0) == v571 then
+                for v627, v628 in pairs(v570:GetAttributes()) do
+                    v572 = v572 .. " " .. tostring(v627) .. " " .. tostring(v628)
+                end
+                v573 = string.upper(v572)
+                v571 = 3 - 1
+            end
+            if v571 == 2 then
+                if string.find(v573, "T6") or string.find(v573, "TIER6") then
+                    return " [قوي جداً]", Color3.fromRGB(81 + 174, 6 + 74, 80), true
+                elseif string.find(v573, "T5") or string.find(v573, "TIER5") then
+                    return " [قوي]", Color3.fromRGB(255, 1871 - (1414 + 337), 0), false
+                elseif string.find(v573, "T4") or string.find(v573, "TIER4") then
+                    return " [قوي قليلا]", Color3.fromRGB(2120 - (1642 + 298), 50, 255), false
+                elseif string.find(v573, "T3") or string.find(v573, "TIER3") then
+                    return " [متوسط]", Color3.fromRGB(0, 180, 664 - 409), false
+                elseif string.find(v573, "T2") or string.find(v573, "TIER2") then
+                    return " [عادي]", Color3.fromRGB(0 - 0, 255, 296 - 196), false
+                elseif string.find(v573, "T1") or string.find(v573, "TIER1") then
+                    return " [ضعيف]", Color3.fromRGB(66 + 134, 156 + 44, 1172 - (357 + 615)), false
+                else
+                    return " [ضعيف]", Color3.fromRGB(106 + 44, 368 - 218, 129 + 21), false
+                end
+                break
+            end
+            if v571 == (0 - 0) then
+                v572 = v570.Name
+                for v629, v630 in pairs(v570:GetChildren()) do
+                    if v630:IsA("ValueBase") or v630:IsA("StringValue") or v630:IsA("IntValue") then
+                        v572 = v572 .. " " .. tostring(v630.Value)
+                    end
+                end
+                v571 = 1 + 0
+            end
+        end
+    end
+    task.spawn(function()
+        while true do
+            task.wait(1.5)
+            pcall(function()
+                if not v83.Radar_Active and not v83.Trader_ESP then
+                    return
+                end
+                local v585 = v14.Character
+                local v586 = v585 and v585:FindFirstChild("HumanoidRootPart")
+                if not v586 then
+                    return
+                end
+                local v587 = v586.Position
+                for v615, v616 in pairs(v9:GetChildren()) do
+                    local v617, v618 = v138(v616)
+                    if v617 then
+                        local v646 = (v617.Position - v587).Magnitude
+                        if (v618 == "trader") and v83.Trader_ESP then
+                            if v646 <= v83.Trader_Dist_Limit then
+                                local v679 = v616:FindFirstChild("Secure_Trader_Tag")
+                                if not v679 then
+                                    local v688 = 0 + 0
+                                    local v689
+                                    local v690
+                                    while true do
+                                        if v688 == (1 + 0) then
+                                            v689.StudsOffset = Vector3.new(1301 - (384 + 917), 700 - (128 + 569), 0)
+                                            v689.AlwaysOnTop = true
+                                            v689.Parent = v616
+                                            v690 = Instance.new("TextLabel")
+                                            v688 = 2
+                                        end
+                                        if v688 == 4 then
+                                            v690.Parent = v689
+                                            break
+                                        end
+                                        if v688 == (1545 - (1407 + 136)) then
+                                            v690.Name = "Txt"
+                                            v690.Size = UDim2.fromScale(1, 1888 - (687 + 1200))
+                                            v690.BackgroundTransparency = 1711 - (556 + 1154)
+                                            v690.Font = Enum.Font.SourceSansBold
+                                            v688 = 3
+                                        end
+                                        if v688 == 0 then
+                                            v689 = Instance.new("BillboardGui")
+                                            v689.Name = "Secure_Trader_Tag"
+                                            v689.Adornee = v617
+                                            v689.Size = UDim2.fromOffset(633 - 453, 140 - (9 + 86))
+                                            v688 = 1
+                                        end
+                                        if v688 == (424 - (275 + 146)) then
+                                            v690.TextSize = 3 + 11
+                                            v690.TextColor3 = Color3.fromRGB(319 - (29 + 35), 215, 0)
+                                            v690.TextStrokeTransparency = 0 - 0
+                                            v690.Text = "🛒 أبو عجاج (تاجر الخلا)\n["
+                                                .. math.floor(v646)
+                                                .. "م]"
+                                            v688 = 11 - 7
+                                        end
+                                    end
+                                end
+                            else
+                                local v680 = 0 - 0
+                                local v681
+                                while true do
+                                    if (0 + 0) == v680 then
+                                        v681 = v616:FindFirstChild("Secure_Trader_Tag")
+                                        if v681 then
+                                            v681:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                        elseif (v618 == "dhab") and v83.Radar_Active then
+                            if v646 <= v83.Dist_Limit then
+                                local v691 = 1012 - (53 + 959)
+                                local v692
+                                local v693
+                                local v694
+                                local v695
+                                while true do
+                                    if v691 == (408 - (312 + 96)) then
+                                        v692, v693, v694 = v514(v616)
+                                        if v694 then
+                                            v136()
+                                        end
+                                        v691 = 1
+                                    end
+                                    if v691 == (1 - 0) then
+                                        v695 = v616:FindFirstChild("Secure_Marker_Tag")
+                                        if not v695 then
+                                            local v728 = 285 - (147 + 138)
+                                            local v729
+                                            local v730
+                                            while true do
+                                                if v728 == 2 then
+                                                    v730.Name = "Txt"
+                                                    v730.Size = UDim2.fromScale(900 - (813 + 86), 1 + 0)
+                                                    v730.BackgroundTransparency = 1 - 0
+                                                    v730.Font = Enum.Font.SourceSansBold
+                                                    v728 = 495 - (18 + 474)
+                                                end
+                                                if v728 == (2 + 1) then
+                                                    v730.TextSize = 42 - 29
+                                                    v730.TextColor3 = v693
+                                                    v730.TextStrokeTransparency = 1086 - (860 + 226)
+                                                    v730.Text = "🐊 ضب "
+                                                        .. v692
+                                                        .. "\n["
+                                                        .. math.floor(v646)
+                                                        .. "م]"
+                                                    v728 = 4
+                                                end
+                                                if v728 == (304 - (121 + 182)) then
+                                                    v729.StudsOffset = Vector3.new(0, 1 + 1, 0)
+                                                    v729.AlwaysOnTop = true
+                                                    v729.Parent = v616
+                                                    v730 = Instance.new("TextLabel")
+                                                    v728 = 1242 - (988 + 252)
+                                                end
+                                                if v728 == (0 + 0) then
+                                                    v729 = Instance.new("BillboardGui")
+                                                    v729.Name = "Secure_Marker_Tag"
+                                                    v729.Adornee = v617
+                                                    v729.Size = UDim2.fromOffset(160, 15 + 30)
+                                                    v728 = 1971 - (49 + 1921)
+                                                end
+                                                if v728 == (894 - (223 + 667)) then
+                                                    v730.Parent = v729
+                                                    break
+                                                end
+                                            end
+                                        end
+                                        break
+                                    end
+                                end
+                            else
+                                local v696 = v616:FindFirstChild("Secure_Marker_Tag")
+                                if v696 then
+                                    v696:Destroy()
+                                end
+                            end
+                        end
+                    end
+                end
+            end)
+        end
+    end)
+end
+v55.MouseButton1Click:Connect(function()
+    if v41.Text == v16 then
+        local v577 = 52 - (51 + 1)
+        while true do
+            if v577 == 1 then
+                task.wait(0.8)
+                v79()
+                break
+            end
+            if v577 == (0 - 0) then
+                v55.Text = "مفتاح صحيح! ✅"
+                v55.BackgroundColor3 = Color3.fromRGB(0, 200, 0 - 0)
+                v577 = 1
+            end
+        end
+    else
+        local v578 = 0
+        while true do
+            if v578 == (1126 - (146 + 979)) then
+                task.wait(1.2)
+                v55.Text = "دخول"
+                v578 = 2
+            end
+            if (1 + 1) == v578 then
+                v55.BackgroundColor3 = Color3.fromRGB(605 - (311 + 294), 390 - 250, 0 + 0)
+                break
+            end
+            if v578 == (1443 - (496 + 947)) then
+                v55.Text = "المفتاح خطأ! ❌"
+                v55.BackgroundColor3 = Color3.fromRGB(1508 - (1233 + 125), 0 + 0, 0)
+                v578 = 1 + 0
+            end
+        end
+    end
+end)
