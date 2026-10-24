@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Remove-Surface-Textures-and-Effects/main/Main.lua"))()
