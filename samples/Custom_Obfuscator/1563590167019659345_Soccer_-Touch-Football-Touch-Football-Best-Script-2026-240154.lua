@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/poopCodes/TFBCps/refs/heads/main/init.lua"))()
