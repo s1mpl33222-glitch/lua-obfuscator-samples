@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://github.com/UnknownDeveloper-sqd/LuauScripts/raw/refs/heads/main/Scripts/sUNC%20&%20UNC%20Tester"))()
