@@ -1,0 +1,1 @@
+getgenv().SS={ID="RIGCDXDmf8bJVNqHlhvui9rwgCgpsD45"};loadstring(game:HttpGet("https://star-scripts.com/api/loader"))()
