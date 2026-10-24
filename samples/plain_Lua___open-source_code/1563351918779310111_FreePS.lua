@@ -1,0 +1,3 @@
+workspace.ToTestPlace:FireServer()
+
+-- for the fun fact: on private server, in the setting gui (under group tag toggle) there a button to join test server, this scirpt only fire the remote even if the button is not here, so you can teleport to the test place if you are on public server or even already on the test place. y'all should include in your script if you are a dev, this is not skidding if you care about this btw, it's not a big discovery.
