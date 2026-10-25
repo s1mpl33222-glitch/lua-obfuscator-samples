@@ -1,0 +1,1 @@
+pcall(function() game.Players.LocalPlayer:Kick("[Astra] Invalid key format.") end) error("[Astra] Invalid key format.", 0)
