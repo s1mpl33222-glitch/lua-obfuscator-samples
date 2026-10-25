@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Goku55050/Ares-roblox/refs/heads/main/BxDchat.lua"))()
