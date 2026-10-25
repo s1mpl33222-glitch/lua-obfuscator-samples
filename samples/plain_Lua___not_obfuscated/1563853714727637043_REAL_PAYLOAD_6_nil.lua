@@ -1,0 +1,2366 @@
+return {
+    Spritesheets = {
+        ["1"] = "rbxassetid://133454478968909",
+        ["2"] = "rbxassetid://72981277089259",
+        ["3"] = "rbxassetid://73688247122068",
+        ["4"] = "rbxassetid://81914421960723",
+        ["5"] = "rbxassetid://86699749765447",
+        ["6"] = "rbxassetid://120220597097660",
+        ["7"] = "rbxassetid://72166980445410",
+        ["8"] = "rbxassetid://101990875962066",
+    },
+    Icons = {
+        accessibility = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["accessibility-unread"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "accessibility-unread2",
+            },
+        },
+        ["accessibility-unread2"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-api"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-csv"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-gif"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-http"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-isr"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-jpg"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-js"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-json"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-markdown"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-page"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-ppr"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-svg"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["acronym-ts"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["alignment-center"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["alignment-left"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["alignment-right"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        alpha = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        analytics = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        anchor = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        api = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        archive = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-circle-down"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-circle-left"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-circle-right"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-circle-up"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-crossed"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-down"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-down-left"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-down-right"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-globe"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-left"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-left-right"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-move"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-move-unread"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-right"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-up"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-up-diagonal-scale"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-up-down"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-up-left"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-up-right"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["arrow-up-right-small"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        backspace = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["bar-chart"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        bell = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["bell-off"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["blend-mode"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        blob = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["book-closed"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["book-open"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        bookmark = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        box = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["branch-minus"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["branch-plus"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        briefcase = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-arc"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-brave"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-chrome"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-edge"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-firefox"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-opera"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["browser-safari"] = {
+            Image = 1,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        bug = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        buildings = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        calculator = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        calendar = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        camera = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        cart = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-activity"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-bar-middle"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-bar-peak"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-bar-random"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-pie"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-trending-down"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chart-trending-up"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        check = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["check-circle"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["check-circle-fill"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["check-square"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-down"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-down-fill"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-left"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-left-fill"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-right"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-right-fill"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-up"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-circle-up-fill"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-double-down"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-double-left"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-double-right"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-double-up"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-down"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-down-small"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-left"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-left-small"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-right"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-right-small"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-up"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["chevron-up-small"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        clipboard = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        clock = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["clock-dashed"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["clock-rewind"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["clock-small"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["closed-captions"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        cloud = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["cloud-download"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["cloud-upload"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        code = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["code-block"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["code-bracket"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["code-wrap"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        codepen = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        coins = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        command = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        compass = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        connection = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        copy = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-down-left"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-down-right"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-left-down"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-left-up"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-right-down"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-right-up"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-up-left"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["corner-up-right"] = {
+            Image = 2,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        cpu = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["credit-card"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        crop = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        cross = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["cross-circle"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["cross-circle-fill"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["cross-small"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        crosshair = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        cursor = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["cursor-click"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["data-point"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["data-point-low"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["data-point-medium"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        database = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        delta = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["desktop-device"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["device-alternate"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        display = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        dollar = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["dollar-fill"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        download = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        droplet = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        edge = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["edge-config"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        email = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        envelope = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        external = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["external-small"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        eye = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["eye-dashed"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["eye-off"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["face-happy"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["face-plus"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["face-sad"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "face-sad2",
+            },
+        },
+        ["face-sad2"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["face-smile"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "face-smile2",
+            },
+        },
+        ["face-smile2"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["face-unhappy"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        file = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["file-text"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["file-zip"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        filter = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        fingerprint = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["firewall-check"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["firewall-globe"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        flag = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["flag-priority"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["floppy-disk"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["folder-closed"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["folder-minus"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["folder-open"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["folder-plus"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        footer = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["forward10-seconds"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        fulcrum = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        fullscreen = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["fullscreen-close"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-edge"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "function-edge2",
+            },
+        },
+        ["function-edge-color"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-edge2"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-go"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-middleware"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-node"] = {
+            Image = 3,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-python"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-rectangle"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-rectangle-fill"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-ruby"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["function-square"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        gauge = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["git-branch"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["git-commit"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["git-merge"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["git-pull-request"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        globe = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["globe-box"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        gps = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["grid-masonry"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["grid-square"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        hash = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        header = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        headset = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        heart = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["heart-fill"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        home = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        hook = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        image = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        inbox = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["inbox-unread"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "inbox-unread2",
+            },
+        },
+        ["inbox-unread2"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        information = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["information-fill"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["information-fill-small"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        inspect = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        invoice = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        isr = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        key = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["key-old"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        kv = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        lambda = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["lambda-rectangle"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["lambda-rectangle-fill"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        layers = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        layout = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["layout-dashed"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["layout-shift"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["layout-shift-unread"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        lens = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        lifebuoy = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        lightning = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["line-chart"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        link = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        linked = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        linkedin = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["list-ordered"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["list-unordered"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["loader-circle"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        location = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["lock-closed"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["lock-closed-small"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["lock-open"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-amex"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-angular-color"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-astro"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-azure"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-azure-devops"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-bitbucket-color"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-checkly"] = {
+            Image = 4,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-contentful"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-data-dog"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-discord"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-ember"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-facebook"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-facebook-messenger"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-figma"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-gatsby"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-geist"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-github"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-gitlab"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-google"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-google-cloud-platform"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-hugo"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-hyper"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-linear"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-mastercard"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-meta"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-new-relic"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-next"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-node"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-nuxt"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-open-ai"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-python"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-react"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-reddit"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-remix"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-rust"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-sanity"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-slack"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-slack-color"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-solid"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-splitbee"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-svelte"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-turbopack"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-turborepo"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-twitter-x"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-v0"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-vercel"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-vercel-api"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-vercel-circle"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-vercel-fill"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-visa"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-vite"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-vue"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-whats-app"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["logo-y-combinator"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        logout = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        logs = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["magnifying-glass"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["magnifying-glass-minus"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["magnifying-glass-plus"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["magnifying-glass-small"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        menu = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["menu-alt"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["menu-alt-unread"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "menu-alt-unread2",
+            },
+        },
+        ["menu-alt-unread2"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        message = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        microphone = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["microphone-off"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        middleware = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        minus = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["minus-circle"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["minus-square-small"] = {
+            Image = 5,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        monitoring = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        monorepo = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        moon = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["moon-alternate"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["more-horizontal"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["more-vertical"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        music = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["musical-notes"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["network-device"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        notebook = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        notes = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        notification = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        option = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["paper-airplane"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        paperclip = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        pause = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        pen = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        pencil = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["pencil-edit"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        percentage = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        phone = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["phone-device"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["picture-in-picture"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        pin = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        play = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["play-fill"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        plus = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["plus-circle"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["plus-square-small"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        postgres = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        power = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["preview-document"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["preview-eye"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        prism = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["prism-color"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "prism-color2",
+            },
+        },
+        ["prism-color2"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        puzzle = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        question = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["question-fill"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["refresh-clockwise"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["refresh-counter-clockwise"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        repositories = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["rewind10-seconds"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        robot = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["rotate-clockwise"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["rotate-counter-clockwise"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        route = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        router = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        rss = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["secure-connection"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        serverless = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        servers = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["settings-gear"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["settings-gear-fill"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["settings-slider"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["settings-sliders"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        share = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        shareplay = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        shield = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["shield-check"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["shield-globe"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["shield-off"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["shield-small"] = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        shift = {
+            Image = 6,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["sidebar-left"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["sidebar-right"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["sign-in"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["skip-back"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["skip-back-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["skip-forward"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["skip-forward-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        slash = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["slash-back"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["slash-forward"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["sort-ascending"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["sort-descending"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        spaces = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        sparkles = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        speaker = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-off"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-off-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-volume-loud"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-volume-loud-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-volume-quiet"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["speaker-volume-quiet-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        star = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["star-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        status = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["status-small"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        stop = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["stop-circle"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["stop-fill"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        stopwatch = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["stopwatch-fast"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["stopwatch-unread"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 384),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        store = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        sun = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["sun-alternate"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        tab = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["tablet-device"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        tabs = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        tag = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        target = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 512),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        terminal = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["terminal-window"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-bold"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-format"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-heading"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-italic"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-strikethrough"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-title"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 640),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["text-uppercase"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["thumb-down"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["thumb-up"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["toggle-off"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["toggle-off-alt"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["toggle-off-alt-unread"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 768),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "toggle-off-alt-unread2",
+            },
+        },
+        ["toggle-off-alt-unread2"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["toggle-on"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 768),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["toggle-on-alt"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(0, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["toggle-on-alt-unread"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(128, 896),
+            ImageRectSize = Vector2.new(128, 128),
+            Parts = {
+                [1] = "toggle-on-alt-unread2",
+            },
+        },
+        ["toggle-on-alt-unread2"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(256, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        toolbar = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(384, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        trash = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(512, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        user = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(640, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["user-check"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(768, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["user-cross"] = {
+            Image = 7,
+            ImageRectPosition = Vector2.new(896, 896),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["user-minus"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(0, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["user-plus"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(128, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["user-screen"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(256, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["user-settings"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(384, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        users = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(512, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        variable = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(640, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        video = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(768, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        warning = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(896, 0),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["warning-fill"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(0, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        webcam = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(128, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["webcam-off"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(256, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        webhook = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(384, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        window = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(512, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["window-globe"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(640, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["window-variable"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(768, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        wrench = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(896, 128),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+        ["zero-config"] = {
+            Image = 8,
+            ImageRectPosition = Vector2.new(0, 256),
+            ImageRectSize = Vector2.new(128, 128),
+        },
+    }
+}
