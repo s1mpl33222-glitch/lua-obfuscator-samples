@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/quitkatluadev/tribes3v3hub/refs/heads/main/quitkathub.lua"))()
