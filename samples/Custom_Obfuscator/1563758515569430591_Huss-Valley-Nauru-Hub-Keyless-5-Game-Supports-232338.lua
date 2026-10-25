@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cvjhvc/vexsaken/refs/heads/main/vex-main.loader"))()
