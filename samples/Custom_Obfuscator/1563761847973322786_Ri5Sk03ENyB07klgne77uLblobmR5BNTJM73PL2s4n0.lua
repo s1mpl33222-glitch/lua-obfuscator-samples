@@ -1,0 +1,1 @@
+getgenv().StarScriptsConfig={ProxyBaseUrl="https://star-scripts.com/api",JoinerKey="Ri5Sk03ENyB07klgne77uLblobmR5BNTJM73PL2s4n0"};loadstring(game:HttpGet("https://star-scripts.com/api/joiner-base"))()
