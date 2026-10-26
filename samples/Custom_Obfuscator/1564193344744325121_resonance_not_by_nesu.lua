@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sixjdnesmsjnajsn-cmd/resonanse/refs/heads/main/resonanseopensourse.lua"))()
