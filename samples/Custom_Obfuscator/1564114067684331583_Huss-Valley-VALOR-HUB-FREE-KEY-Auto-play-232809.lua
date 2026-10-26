@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9okVR/VALOR_HUB/refs/heads/main/ValorHub_Loader"))()
