@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ludowig88/prisonlife/refs/heads/main/prisonlife.lua"))()
