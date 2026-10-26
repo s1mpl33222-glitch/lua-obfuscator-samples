@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/f3a2/kalihub/refs/heads/main/loader.luau"))()
