@@ -1,0 +1,6 @@
+-- dump by LeakD
+
+local fenv = getfenv()
+local _gameGameId2 = game.GameId
+local _bsdata03 = fenv._bsdata0
+local er = error("line 14: attempt to index nil with number")
