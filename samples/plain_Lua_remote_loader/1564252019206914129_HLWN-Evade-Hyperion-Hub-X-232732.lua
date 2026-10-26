@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nymnmz/Hyperion-Hub-X-Loader/refs/heads/main/Hyperion%20free"))()
