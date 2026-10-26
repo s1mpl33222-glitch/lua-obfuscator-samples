@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kni-fe/nebula/refs/heads/main/loader"))()
