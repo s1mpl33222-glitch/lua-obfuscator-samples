@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ali-lov3/CaliShootOutFarm/refs/heads/main/CSOF.lua"))()
