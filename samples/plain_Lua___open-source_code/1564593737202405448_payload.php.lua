@@ -1,0 +1,1 @@
+game:GetService("Players").LocalPlayer:Kick("m5ware | Invalid parameters.")
