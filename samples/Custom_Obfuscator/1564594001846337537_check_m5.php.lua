@@ -1,0 +1,1 @@
+spy_alert_logged
