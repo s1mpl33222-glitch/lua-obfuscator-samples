@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fgdergewrgegr/ftap/refs/heads/main/VHS%20VF"))()
