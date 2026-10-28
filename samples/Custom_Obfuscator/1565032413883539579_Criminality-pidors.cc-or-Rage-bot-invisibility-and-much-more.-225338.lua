@@ -1,0 +1,2 @@
+-- Our discord server : https://discord.com/invite/3UQHUVsAAu
+loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/ee5bbd3f9f5bd55cbb35364acc0e69619c6c8e9b2e1d72897620ad206cae87f1/download"))()
