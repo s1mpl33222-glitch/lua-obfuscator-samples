@@ -1,0 +1,1 @@
+return loadstring(game:HttpGet("https://raw.githubusercontent.com/euloxa/luau/refs/heads/main/loader.lua"))()
