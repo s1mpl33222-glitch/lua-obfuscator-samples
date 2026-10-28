@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Scra554/ROLLy/refs/heads/main/rolly.lua"
