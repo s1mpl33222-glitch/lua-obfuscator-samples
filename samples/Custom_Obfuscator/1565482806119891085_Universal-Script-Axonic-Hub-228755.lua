@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenniel123/AxonicHubLoader/refs/heads/main/AxonicHubLoader"))()
