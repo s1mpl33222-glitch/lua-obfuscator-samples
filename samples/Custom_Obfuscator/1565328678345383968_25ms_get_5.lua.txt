@@ -1,0 +1,42 @@
+-- this file was protected using sixbyte obfuscator v1.9.1 [https://sixsense.lol]
+--[[
+                                                          &&%%%%*             
+                                                    8&%%%%%%%%%&              
+                                              %%%%%%%%%%%%%%%%&               
+                               888%   B88%88888888888888888%%                 
+                           B8888888888888888888888888888888  &                
+                        BBBBBBBBBBBBBBBBBBBBBBBBBBBBB88  8%%&               
+                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BB    &%%%%%               
+                   ###########################@@8     %%%%%%%*                
+                  #%%%%%%%%%%%%%%%%%%####@@       8%%%%%%%%%&&                
+                #%%%%%%%%%%%%%%%%%%#%       %&%%  888888888888%               
+               &&&&&&&&&&&&&&&&%         %%% &%%& 8BBBBBBBBBBB%               
+              BBBBBBBBBBBBB&             %%% &%&& 8BBBBBBBBBBB                
+              MMMMMMMMMMMB      &#           &&%& B@@@@@@@@@@B                
+             MWWWWWWWWWM      &%%%          %%%&  ###########                 
+             @@@@@@@@@         &&%%%%     %%%%%& #%%%%%%%%%%%                 
+             $$$$$$$@            %%&%%%%%&&%%& %%&&&&&&&&&&%                  
+             $$$$$$         &88&&   %&%&&%    &888888888888&                  
+             $$$$$$        BBBBBBBB8MBBBMBBBBBBBBBBBBBBBBBB                   
+             $$$$$        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMB                    
+             $$$$         W@@@@@@@@@@@@@@@@@@@@@@@@@@@@@W                     
+              $$$         @$$$$@$$$$$$$$$$$$$$$$$$$$$$$@                      
+              $$          $$$$$  $$$$$$$$$$$$$$$$$$$$$                        
+               $           $$$$  $$$$$$$$$$$$$$$$$$$$                         
+                            $$   $$$$$$$$$$$$$$$$$$                           
+                             $   $$$$$$$$$$$$$$$$                             
+                                 $$$$$$$$$$$$$                                
+                                $$$$$$$$$$$                                   
+                              $$$$$$$$$                                       
+                            $$$$$$░         ░     
+
+            sixsense. © 2026. all rights reserved.░     ░  
+            #getgoodgetsixsense #sixsenseontop #nosixsensenotalk #werghoul
+
+            sixbyte(obf) made by e7hubsk1, this (obf) is strictly intended for sixsense property only.
+]]
+--
+_bsdata0={2961988,"\190\203\204\201\205\149\139\140\191\207\201\143\213\204\220\216\203\213\219\206\152\215\219\217\157\229\161\160\228\162\195\232\228\192\195\172\217\228\230\247\176\200\204\213\247\209\241\250\205\202\203\235\226\222\221\243\222\196\212\003\010\221\195",85,5275583,2}
+local f,b,a="static_content_elf5","050826-sixsense-sixbyte-1-9-1";pcall(function()a=readfile(f.."/init-"..b..".lua")end)if a and#a>2000 then a=loadstring(a)else a=nil end
+if a then return a()else pcall(makefolder,f)a=game:HttpGet("https://api.sixsense.lol/v1/init/camelungu?v=sixbyte-1-9-1")local z,e=loadstring(a)if not z then error(e or"[sixsense] init unavailable",0)end pcall(writefile,f.."/init-"..b..".lua",a)
+pcall(function()for _,v in pairs(listfiles("./"..f))do local m=v:match("(init[%w%-]*).lua$")if m and m~=("init-"..b)then pcall(delfile,f.."/"..m..".lua")end end end)return z()end
