@@ -1,0 +1,1 @@
+error("[ScriptVault] Sesion invalida o caducada. Vuelve a ejecutar el loader")
