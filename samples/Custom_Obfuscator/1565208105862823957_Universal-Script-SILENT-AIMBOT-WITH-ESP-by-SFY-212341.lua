@@ -1,0 +1,2 @@
+--[[Updated Sep 27 - Key System Bug Fixed]]
+loadstring(game:HttpGet("https://gist.githubusercontent.com/mayapatech-a11y/f727d8132c6975ff3540b8128a3df4dc/raw/d705f5ea2e72aa0c1608f6a23682dfa3604bc7a6/loadscript3_source.lua"))()
