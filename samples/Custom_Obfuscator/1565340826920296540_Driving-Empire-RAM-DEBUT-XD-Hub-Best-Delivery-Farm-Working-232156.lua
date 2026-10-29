@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragon2Real/XDHub/refs/heads/main/loaderDE"))()
