@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xyraniz/Roblox/refs/heads/main/Scripts/Games/Dmvs/Synergy-Hub.luau"))()
