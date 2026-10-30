@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rayware/Serpent-Rivals/refs/heads/main/Mainscript"))()
