@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/M11NEGERO/Script-War-Tycoon/refs/heads/main/script"))()
