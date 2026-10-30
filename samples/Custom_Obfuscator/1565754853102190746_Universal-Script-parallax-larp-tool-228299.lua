@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lakuski/parallax-larp-tools/main/parallax.lua"))()
