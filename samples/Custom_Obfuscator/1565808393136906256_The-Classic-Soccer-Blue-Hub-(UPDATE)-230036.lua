@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/neonxhubofc-hash/b6a422322f0a9480429ad41f44dad5d7/raw/eab83e73c435cb3f1640d5218199dd4e232be2fe/Neon_X_Hub_The_Classic_Soccer_V5.txt"))()
