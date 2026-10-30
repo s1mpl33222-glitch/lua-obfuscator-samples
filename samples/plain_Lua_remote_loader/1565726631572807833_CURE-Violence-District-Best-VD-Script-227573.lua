@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/W3-ENGINE/loader/refs/heads/main/main.lua"))()
