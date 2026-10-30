@@ -1,0 +1,17555 @@
+local v0
+do
+    local v107 = 0 - 0
+    local v108
+    local v109
+    while true do
+        if v107 == (0 - 0) then
+            v108, v109 = pcall(function()
+                return loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"
+                    )
+                )()
+            end)
+            if v108 and v109 then
+                v0 = v109
+            else
+                error("[Choco HUB] Airflow load failed: " .. tostring(v109))
+            end
+            break
+        end
+    end
+end
+local v1 = {}
+v1.Scheme = {}
+do
+    v1.Scheme.AccentColor = Color3.fromRGB(398 - 143, 255, 255)
+    v1.Scheme.BackgroundColor = Color3.fromRGB(10, 10, 1968 - (1869 + 87))
+    v1.Scheme.MainColor = Color3.fromRGB(16, 55 - 39, 18)
+    v1.Scheme.OutlineColor = Color3.fromRGB(255, 255, 2156 - (484 + 1417))
+    v1.Scheme.FontColor = Color3.fromRGB(503 - 268, 393 - 158, 1013 - (48 + 725))
+    v1.Scheme.SubTextColor = Color3.fromRGB(228 - 88, 375 - 235, 88 + 62)
+    v1.Scheme.HoverColor = Color3.fromRGB(58 - 36, 22, 8 + 18)
+    local v117
+    local v118 = {
+        Enabled = false,
+    }
+    local function v119(v792)
+        local v793 = 0
+        while true do
+            if v793 == (0 + 0) then
+                if type(v792) == "string" then
+                    local v3075, v3076 = pcall(function()
+                        return Enum.KeyCode[v792]
+                    end)
+                    if v3075 and v3076 then
+                        return v3076
+                    end
+                end
+                return v792
+            end
+        end
+    end
+    local function v120(v794, v795, v796)
+        return setmetatable({}, {
+            __index = function(v1896, v1897)
+                if v1897 == "AddColorPicker" then
+                    return function(v2791, v2792, v2793)
+                        v2793 = v2793 or {}
+                        return v794:CreateColorPicker({
+                            Name = v2793.Title or v796,
+                            Color = v2792,
+                            Callback = v2793.Callback,
+                            Flag = v2793.Flag,
+                        })
+                    end
+                end
+                if v1897 == "SetValue" then
+                    return function(v2794, v2795)
+                        return v795:Set(v2795)
+                    end
+                end
+                if (v1897 == "Refresh") or (v1897 == "SetValues") or (v1897 == "SetOptions") or (v1897 == "Update") then
+                    return function(v2796, v2797)
+                        if v795.Refresh then
+                            return v795:Refresh(v2797)
+                        elseif v795.Set then
+                            return v795:Set(v2797)
+                        end
+                    end
+                end
+                if v1897 == "Destroy" then
+                    return function()
+                        return v795:Destroy()
+                    end
+                end
+                return nil
+            end,
+        })
+    end
+    local function v121(v797, v798, v799)
+        local v800 = v797:CreateSection(v798)
+        pcall(function()
+            if v797.List and v797.List:IsA("ScrollingFrame") then
+                v797.List.ScrollBarThickness = 861 - (152 + 701)
+            end
+        end)
+        local v801 = {}
+        v801.AddToggle = function(v1898, v1899, v1900, v1901, v1902)
+            local v1903 = 1311 - (430 + 881)
+            while true do
+                if v1903 == (0 + 0) then
+                    v1902 = v1902 or {}
+                    return v120(
+                        v797,
+                        v797:CreateToggle({
+                            Name = v1899,
+                            CurrentValue = v1900,
+                            Callback = v1901,
+                            Flag = v1902.Flag,
+                        }),
+                        v1899
+                    )
+                end
+            end
+        end
+        v801.AddSlider = function(v1904, v1905, v1906, v1907, v1908, v1909, v1910)
+            local v1911 = 0
+            while true do
+                if v1911 == (895 - (557 + 338)) then
+                    v1910 = v1910 or {}
+                    return v120(
+                        v797,
+                        v797:CreateSlider({
+                            Name = v1905,
+                            Range = {
+                                v1906,
+                                v1907,
+                            },
+                            CurrentValue = v1908,
+                            Increment = v1910.Increment or 1,
+                            Callback = v1909,
+                            Flag = v1910.Flag,
+                        }),
+                        v1905
+                    )
+                end
+            end
+        end
+        v801.AddButton = function(v1912, v1913, v1914)
+            return v120(
+                v797,
+                v797:CreateButton({
+                    Name = v1913,
+                    Callback = v1914,
+                }),
+                v1913
+            )
+        end
+        v801.Button = v801.AddButton
+        v801.AddDropdown = function(v1915, v1916, v1917, v1918, v1919, v1920)
+            local v1921 = 0
+            while true do
+                if v1921 == (0 - 0) then
+                    v1920 = v1920 or {}
+                    return v120(
+                        v797,
+                        v797:CreateDropdown({
+                            Name = v1916,
+                            Options = v1917,
+                            CurrentOption = ((v1918 == false) and nil) or v1918,
+                            Callback = v1919,
+                            Flag = v1920.Flag,
+                        }),
+                        v1916
+                    )
+                end
+            end
+        end
+        v801.AddCheckbox = function(v1922, v1923, v1924, v1925, v1926)
+            v1926 = v1926 or {}
+            return v120(
+                v797,
+                v797:CreateToggle({
+                    Name = v1923,
+                    CurrentValue = v1924,
+                    Callback = v1925,
+                    Flag = v1926.Flag,
+                }),
+                v1923
+            )
+        end
+        v801.AddColorPicker = function(v1927, v1928, v1929, v1930)
+            local v1931, v1932, v1933
+            if type(v1928) == "string" then
+                local v2567 = 0
+                while true do
+                    if v2567 == (3 - 2) then
+                        v1932 = v1930 or {}
+                        break
+                    end
+                    if v2567 == (0 - 0) then
+                        v1933 = v1928
+                        v1931 = v1929
+                        v2567 = 1
+                    end
+                end
+            else
+                local v2568 = 0
+                while true do
+                    if v2568 == 0 then
+                        v1931 = v1928
+                        v1932 = v1929 or {}
+                        v2568 = 1
+                    end
+                    if v2568 == (2 - 1) then
+                        v1933 = v1932.Title
+                        break
+                    end
+                end
+            end
+            v1932 = v1932 or {}
+            return v120(
+                v797,
+                v797:CreateColorPicker({
+                    Name = v1933 or v1932.Title,
+                    Color = v1931,
+                    Callback = v1932.Callback,
+                    Flag = v1932.Flag,
+                }),
+                v1933 or v1932.Title or "Color"
+            )
+        end
+        v801.AddKeybind = function(v1934, v1935, v1936, v1937, v1938)
+            return v120(
+                v797,
+                v797:CreateKeybind({
+                    Name = v1935,
+                    CurrentKeybind = (v1936 and tostring(v1936)) or nil,
+                    Callback = v1937,
+                    Flag = v1938,
+                }),
+                v1935
+            )
+        end
+        v801.AddTextbox = function(v1939, v1940, v1941, v1942)
+            return v120(
+                v797,
+                v797:CreateInput({
+                    Name = v1940,
+                    PlaceholderText = v1941,
+                    Callback = v1942,
+                }),
+                v1940
+            )
+        end
+        v801.AddParagraph = function(v1943, v1944, v1945)
+            return v797:CreateParagraph({
+                Title = v1944,
+                Content = v1945,
+            })
+        end
+        v801.AddConfigManager = function()
+            return nil
+        end
+        v801.ThemePicker = function(v1946, v1947)
+            local v1948 = 0
+            while true do
+                if 0 == v1948 then
+                    v1947 = v1947 or {}
+                    return v797:ThemePicker(v1947)
+                end
+            end
+        end
+        v801.Space = function()
+            return v797:CreateDivider()
+        end
+        return setmetatable({}, {
+            __index = v801,
+        })
+    end
+    local function v122(v815)
+        local v816 = {}
+        v816.CreatePage = function(v1949, v1950)
+            return v1949
+        end
+        v816.CreateSection = function(v1951, v1952, v1953)
+            return v121(v815, v1952, v1953)
+        end
+        return v816
+    end
+    local function v123(v819)
+        local v820 = 801 - (499 + 302)
+        local v821
+        while true do
+            if 2 == v820 then
+                v821.SetTransparency = function(v2798, v2799) end
+                v821.Notify = function(v2800, v2801)
+                    v2801 = v2801 or {}
+                    pcall(function()
+                        v0:Notify({
+                            Title = v2801.Title,
+                            Content = v2801.Description or v2801.Content,
+                            Duration = v2801.Duration or v2801.Time or (869 - (39 + 827)),
+                        })
+                    end)
+                end
+                v820 = 7 - 4
+            end
+            if v820 == (6 - 3) then
+                v821.Destroy = function()
+                    pcall(function()
+                        v819:Destroy()
+                    end)
+                end
+                return setmetatable({}, {
+                    __index = v821,
+                })
+            end
+            if v820 == (0 - 0) then
+                v821 = {}
+                v821.CreateTab = function(v2802, v2803, v2804)
+                    if type(v2803) == "table" then
+                        return v122(v819:CreateTab(v2803))
+                    else
+                        local v3260 = 0 - 0
+                        local v3261
+                        while true do
+                            if v3260 == (0 + 0) then
+                                v3261 = {
+                                    Name = v2803,
+                                }
+                                if v2804 then
+                                    v3261.Icon = v2804
+                                end
+                                v3260 = 2 - 1
+                            end
+                            if v3260 == (1 + 0) then
+                                return v122(v819:CreateTab(v3261))
+                            end
+                        end
+                    end
+                end
+                v820 = 1
+            end
+            if v820 == 1 then
+                v821.SetMenuKey = function(v2805, v2806)
+                    pcall(function()
+                        v819:SetKeybind(v119(v2806))
+                    end)
+                end
+                v821.SetLocked = function(v2807, v2808) end
+                v820 = 2 - 0
+            end
+        end
+    end
+    v1.Notify = function(v822, v823)
+        local v824 = 104 - (103 + 1)
+        while true do
+            if v824 == (554 - (475 + 79)) then
+                v823 = v823 or {}
+                pcall(function()
+                    v0:Notify({
+                        Title = v823.Title,
+                        Content = v823.Description or v823.Content,
+                        Duration = v823.Duration or v823.Time or (6 - 3),
+                    })
+                end)
+                break
+            end
+        end
+    end
+    v1.SetWatermark = function(v825, v826)
+        v118.Enabled = (v826 and v826.Enabled) or false
+    end
+    v1.CreateWindow = function(v828, v829)
+        v829 = v829 or {}
+        local v830 = {
+            Base = "Default",
+            Background = Color3.fromHex("#1C1002"),
+            Surface = Color3.fromHex("#33291E"),
+            Surface2 = Color3.fromHex("#342A1E"),
+            Surface3 = Color3.fromHex("#342A1E"),
+            Stroke = Color3.fromHex("#342A1E"),
+            StrokeHover = Color3.fromHex("#C9A24D"),
+            Accent = Color3.fromHex("#C9A24D"),
+            AccentDark = Color3.fromHex("#342A1E"),
+            Text = Color3.fromHex("#F5EBDD"),
+            Muted = Color3.fromHex("#9C8A73"),
+        }
+        local v831 = v829.Theme
+        if v831 == "Mellowsi" then
+            v831 = v830
+        end
+        local v832 = v0:CreateWindow({
+            Name = "Choco HUB",
+            LoadingSubtitle = v829.Author or v829.Subtitle or "",
+            Theme = v831 or v830,
+            ToggleUIKeybind = v829.ToggleKey or Enum.KeyCode.RightAlt,
+            ConfigurationSaving = {
+                Enabled = true,
+                FolderName = v829.Folder or "Choco HUB_VD",
+                FileName = "default",
+            },
+            Home = {
+                Name = "Home",
+                Desc = v829.Author or v829.Subtitle or "",
+            },
+        })
+        v117 = v832
+        _G.Ox = _G.Ox or {}
+        _G.Ox.RawWindow = v832
+        task.spawn(function()
+            local v1954 = 0 - 0
+            while true do
+                if v1954 == (1 + 0) then
+                    pcall(function()
+                        if v832.SetOpen then
+                            v832:SetOpen(false)
+                        elseif v832.Hide then
+                            v832:Hide()
+                        end
+                    end)
+                    break
+                end
+                if v1954 == (0 + 0) then
+                    if v832.LoadConfig then
+                        v832:LoadConfig()
+                    end
+                    task.wait(1503.5 - (1395 + 108))
+                    v1954 = 2 - 1
+                end
+            end
+        end)
+        return v123(v832)
+    end
+    v = v1:CreateWindow({
+        Title = "Choco HUB",
+        Author = "VD | 0.0.2",
+        Icon = "rbxassetid://122666578965463",
+        Folder = "Choco HUB_VD",
+        Size = UDim2.fromOffset(640, 1704 - (7 + 1197)),
+        Theme = "Mellowsi",
+        ToggleKey = Enum.KeyCode.RightAlt,
+        Transparent = false,
+        HideSearchBar = true,
+        OpenButton = false,
+        Open = false,
+    })
+    v117 = v
+    Players = game:GetService("Players")
+    localPlayer = Players.LocalPlayer
+    RunService = game:GetService("RunService")
+    UserInputService = game:GetService("UserInputService")
+    VirtualInputManager = game:GetService("VirtualInputManager")
+    local v128 = game:GetService("GuiService")
+    ReplicatedStorage = game:GetService("ReplicatedStorage")
+    CoreGui = game:GetService("CoreGui")
+    playerGui = localPlayer:WaitForChild("PlayerGui")
+    currentCamera = workspace.CurrentCamera
+    CollectionService = game:GetService("CollectionService")
+    HttpService = game:GetService("HttpService")
+    game:GetService("TeleportService")
+    local v130 = game:GetService("TweenService")
+    getgenv().ChocoHUB_FloatLogoEnabled = true
+    getgenv().ChocoHUB_FloatLogoSize = 56
+    local function v133()
+        local v833 = _G.Ox and _G.Ox.RawWindow
+        if v833 then
+            return v833
+        end
+        local v834 = v117
+        if v834 and v834.Raw then
+            return v834.Raw
+        end
+        return nil
+    end
+    local function v134()
+        local v835 = 0 + 0
+        local v836
+        local v837
+        local v838
+        while true do
+            if v835 == (0 + 0) then
+                v836 = localPlayer:FindFirstChildOfClass("PlayerGui")
+                if v836 then
+                    return v836
+                end
+                v835 = 1
+            end
+            if v835 == 1 then
+                v837, v838 = pcall(function()
+                    return localPlayer:WaitForChild("PlayerGui", 329 - (27 + 292))
+                end)
+                return (v837 and v838) or nil
+            end
+        end
+    end
+    local function v135()
+        local v839 = v134()
+        if not v839 then
+            return nil
+        end
+        local v840 = v839:FindFirstChild("ChocoFloatLogo")
+        if v840 then
+            v840:Destroy()
+        end
+        local v841 = getgenv().ChocoHUB_FloatLogoSize or 56
+        local v842 = Instance.new("ScreenGui")
+        v842.Name = "ChocoFloatLogo"
+        v842.ResetOnSpawn = false
+        v842.IgnoreGuiInset = true
+        v842.DisplayOrder = 2927 - 1928
+        v842.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        v842.Parent = v839
+        local v850 = Instance.new("ImageButton")
+        v850.Name = "FloatLogo"
+        v850.Size = UDim2.new(0 - 0, v841, 0 - 0, v841)
+        v850.Position = UDim2.new(0 - 0, 30 - 14, 0.5, -v841 / (141 - (43 + 96)))
+        v850.BackgroundTransparency = 4 - 3
+        v850.Image = "rbxassetid://122666578965463"
+        v850.ScaleType = Enum.ScaleType.Fit
+        v850.Active = true
+        v850.Parent = v842
+        local v860 = Instance.new("UIAspectRatioConstraint")
+        v860.AspectRatio = 1
+        v860.Parent = v850
+        local v863 = false
+        local v864 = nil
+        local v865 = nil
+        v850.InputBegan:Connect(function(v1955)
+            if
+                (v1955.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v1955.UserInputType == Enum.UserInputType.Touch)
+            then
+                v863 = true
+                v864 = v1955.Position
+                v865 = v850.Position
+            end
+        end)
+        v850.InputChanged:Connect(function(v1956)
+            if
+                v863
+                and (
+                    (v1956.UserInputType == Enum.UserInputType.MouseMovement)
+                    or (v1956.UserInputType == Enum.UserInputType.Touch)
+                )
+            then
+                local v2577 = v1956.Position - v864
+                v850.Position = UDim2.new(v865.X.Scale, v865.X.Offset + v2577.X, v865.Y.Scale, v865.Y.Offset + v2577.Y)
+            end
+        end)
+        v850.InputEnded:Connect(function(v1957)
+            if
+                (v1957.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v1957.UserInputType == Enum.UserInputType.Touch)
+            then
+                v863 = false
+            end
+        end)
+        local v866 = 0
+        v850.MouseButton1Down:Connect(function()
+            v866 = os.clock()
+        end)
+        v850.MouseButton1Up:Connect(function()
+            if (os.clock() - v866) < 0.2 then
+                local v2579 = v133()
+                if v2579 then
+                    pcall(function()
+                        v2579:Toggle()
+                    end)
+                end
+            end
+        end)
+        return v842
+    end
+    _G.Ox = _G.Ox or {}
+    _G.Ox.CreateFloatLogo = v135
+    local function v136()
+        local v867 = 0 - 0
+        local v868
+        while true do
+            if v867 == 1 then
+                if v868 and not v868:FindFirstChild("ChocoFloatLogo") then
+                    pcall(v135)
+                end
+                break
+            end
+            if v867 == (0 + 0) then
+                if getgenv().ChocoHUB_FloatLogoEnabled == false then
+                    return
+                end
+                v868 = v134()
+                v867 = 1
+            end
+        end
+    end
+    _G.Ox.EnsureFloatLogo = v136
+    task.spawn(function()
+        local v869 = 0 + 0
+        while true do
+            if v869 == (0 - 0) then
+                v136()
+                task.wait(0.25 + 0)
+                v869 = 1 - 0
+            end
+            if v869 == 1 then
+                v136()
+                task.wait(1 + 0)
+                v869 = 1 + 1
+            end
+            if v869 == (1753 - (1414 + 337)) then
+                v136()
+                break
+            end
+        end
+    end)
+    task.spawn(function()
+        while _G.Ox and (_G.Ox.ScriptAlive ~= false) do
+            local v1958 = v134()
+            if v1958 then
+                if _G.Ox.FloatLogoPg ~= v1958 then
+                    _G.Ox.FloatLogoPg = v1958
+                    if _G.Ox.FloatLogoChildConn then
+                        pcall(function()
+                            _G.Ox.FloatLogoChildConn:Disconnect()
+                        end)
+                    end
+                    _G.Ox.FloatLogoChildConn = v1958.ChildRemoved:Connect(function(v3262)
+                        if v3262.Name == "ChocoFloatLogo" then
+                            task.defer(v136)
+                        end
+                    end)
+                    v136()
+                end
+            end
+            task.wait(0.5)
+        end
+    end)
+    localPlayer.CharacterAdded:Connect(function()
+        task.defer(function()
+            local v1959 = 1940 - (1642 + 298)
+            while true do
+                if 0 == v1959 then
+                    task.wait(0.2)
+                    v136()
+                    break
+                end
+            end
+        end)
+    end)
+    local v137 = _G.Ox and _G.Ox.RawWindow
+    local v138 = _G.Ox and _G.Ox.CreateFloatLogo
+    local v139 = _G.Ox and _G.Ox.EnsureFloatLogo
+    _G.Ox = {}
+    _G.Ox.RawWindow = v137
+    _G.Ox.CreateFloatLogo = v138
+    _G.Ox.EnsureFloatLogo = v139
+    _G.Ox.AntiBlindEnabled = false
+    _G.Ox.GotBlindedRemote = nil
+    _G.Ox.NoSlowdownEnabled = false
+    _G.Ox.BypassLeapEnabled = false
+    _G.Ox.InfAbyssalEnabled = false
+    _G.Ox.KILLER_SilentAimFlask = false
+    _G.Ox.KILLER_FlaskLaser = false
+    _G.Ox.NEX_CureFlaskLaserThread = nil
+    _G.Ox.NEX_CureFlaskLaserPart = nil
+    _G.Ox.InfiniteLungeEnabled = false
+    local v140 = {
+        ["122812055447896"] = "Veil lunge",
+        ["133963973694098"] = "Mayers Basic",
+        ["117042998468241"] = "Mayers lunge",
+        ["135002183282873"] = "cure lunge",
+        ["121216847022485"] = "cure Basic",
+        ["132817836308238"] = "Jeff Basic",
+        ["129784271201071"] = "Jeff lunge",
+        ["82666958311998"] = "Jeff Frenzy",
+        ["78432063483146"] = "Abyssal Basic",
+        ["118907603246885"] = "Abyssal lunge",
+        ["139369275981139"] = "Jason Basic",
+        ["110355011987939"] = "Jason lunge",
+        ["111920872708571"] = "Masked Basic",
+        ["105374834496520"] = "Masked lunge",
+        ["138720291317243"] = "Masked Tony",
+        ["106871536134254"] = "Masked Alex",
+        ["130593238885843"] = "Masked Cobra",
+        ["115244153053858"] = "Masked Cobra lunge",
+        ["74968262036854"] = "Hidden Basic",
+        ["113255068724446"] = "Hidden lunge",
+        ["98163597193511"] = "Hidden S1",
+        ["80411309607666"] = "Abyssal S1",
+        ["127417297154354"] = "Butcher Basic",
+        ["83333467665074"] = "Butcher lunge",
+    }
+    _G.Ox.ParryConfig = {
+        AutoParry = false,
+        ParrySafety = false,
+        ParryAggressive = false,
+        ParryCircle = true,
+        ParryRadius = 38 - 23,
+        ParryFace = 0.7,
+        AutoCrouch = false,
+        Ignored_Skills = {},
+    }
+    _G.Ox.AttachedParry = {}
+    if not _G.Ox.State then
+        _G.Ox.State = {}
+    end
+    _G.Ox.State.ParryCooldown = false
+    _G.Ox.State.ParryCooldownTime = 172 - 112
+    _G.Ox.State.AutoParryAdornment = nil
+    _G.Ox.State.ParryCooldownThread = nil
+    _G.Ox.AutoParryCustom = {
+        Gui = nil,
+        IsActive = false,
+        GuiVisible = false,
+    }
+    local v141 = _G.Ox
+    local v142 = _G.Ox.ParryHUD
+    local v143 = v142
+    if not v142 then
+        local v1960 = {}
+        v143 = v1960
+        v1960.gradients = {}
+        v1960.icon = nil
+        v1960.rescanConn = nil
+        v1960.cachedIconColor = nil
+    end
+    v141.ParryHUD = v143
+    ParryHUD = _G.Ox.ParryHUD
+    function IsDowned(v870)
+        if not v870 then
+            return false
+        end
+        local v871 = (v870:GetAttribute("Knocked") == true) or (v870:GetAttribute("IsHooked") == true)
+        return v871
+    end
+    function IsKiller(v872)
+        local v873 = 0
+        local v874
+        while true do
+            if 0 == v873 then
+                v874 = v872 and v872.Team and (v872.Team.Name == "Killer")
+                return v874
+            end
+        end
+    end
+    function TriggerCrouch()
+        pcall(function()
+            local v1965 = 0 - 0
+            local v1966
+            while true do
+                if v1965 == (0 + 0) then
+                    v1966 = localPlayer:FindFirstChild("PlayerGui")
+                    for v3077 in string.gmatch("Survivor-mob.Controls.crouch.icon", "[^%.]+") do
+                        if v1966 then
+                            v1966 = v1966:FindFirstChild(v3077)
+                        end
+                    end
+                    v1965 = 1
+                end
+                if v1965 == (1 + 0) then
+                    if
+                        v1966
+                        and v1966:IsA("GuiObject")
+                        and v1966.Visible
+                        and v1966.Parent
+                        and v1966.Parent:IsA("GuiButton")
+                    then
+                        local v3263 = 0
+                        local v3264
+                        while true do
+                            if v3263 == (972 - (357 + 615)) then
+                                v3264 = v1966.Parent
+                                if UserInputService.TouchEnabled and (type(firesignal) == "function") then
+                                    local v3944 = 0 + 0
+                                    while true do
+                                        if v3944 == 1 then
+                                            firesignal(v3264.MouseButton1Click)
+                                            break
+                                        end
+                                        if v3944 == 0 then
+                                            firesignal(v3264.MouseButton1Click)
+                                            task.wait(1.4)
+                                            v3944 = 2 - 1
+                                        end
+                                    end
+                                else
+                                    local v3945 = 0
+                                    while true do
+                                        if v3945 == (1 + 0) then
+                                            VirtualInputManager:SendKeyEvent(
+                                                false,
+                                                Enum.KeyCode.LeftControl,
+                                                false,
+                                                game
+                                            )
+                                            break
+                                        end
+                                        if v3945 == (0 - 0) then
+                                            VirtualInputManager:SendKeyEvent(
+                                                true,
+                                                Enum.KeyCode.LeftControl,
+                                                false,
+                                                game
+                                            )
+                                            task.wait(1.4)
+                                            v3945 = 1 + 0
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    else
+                        local v3265 = 0 + 0
+                        while true do
+                            if v3265 == 1 then
+                                VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
+                                break
+                            end
+                            if v3265 == (0 + 0) then
+                                VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
+                                task.wait(1.4)
+                                v3265 = 1302 - (384 + 917)
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end)
+    end
+    function IsSafeToParry(v875)
+        if not _G.Ox.ParryConfig.ParrySafety then
+            return true
+        end
+        if not v875 then
+            return false
+        end
+        local v876 = v875:FindFirstChild("CheckInterractable")
+        if v876 then
+            local v2320 = 697 - (128 + 569)
+            while true do
+                if v2320 == 0 then
+                    if v876:GetAttribute("isVaulting") == true then
+                        return false
+                    end
+                    if v876:GetAttribute("isRepairing") == true then
+                        return false
+                    end
+                    v2320 = 1544 - (1407 + 136)
+                end
+                if v2320 == 2 then
+                    if v876:GetAttribute("isSliding") == true then
+                        return false
+                    end
+                    break
+                end
+                if v2320 == (1888 - (687 + 1200)) then
+                    if v876:GetAttribute("isUnhooking") == true then
+                        return false
+                    end
+                    if v876:GetAttribute("isHealing") == true then
+                        return false
+                    end
+                    v2320 = 2
+                end
+            end
+        end
+        return true
+    end
+    function tapMobileParryButton()
+        local v877 = 1710 - (556 + 1154)
+        local v878
+        local v879
+        local v880
+        while true do
+            if v877 == (0 - 0) then
+                v878 = localPlayer:FindFirstChild("PlayerGui")
+                if not v878 then
+                    return
+                end
+                v877 = 96 - (9 + 86)
+            end
+            if v877 == (422 - (275 + 146)) then
+                v879 = v878:FindFirstChild("Survivor-mob")
+                v880 = v879 and v879:FindFirstChild("Controls") and v879.Controls:FindFirstChild("Gui-mob")
+                v877 = 2
+            end
+            if v877 == 2 then
+                if v880 and v880.Visible then
+                    if firesignal then
+                        pcall(function()
+                            local v3629 = 0 + 0
+                            while true do
+                                if v3629 == (65 - (29 + 35)) then
+                                    firesignal(v880.MouseButton1Up)
+                                    break
+                                end
+                                if v3629 == 0 then
+                                    firesignal(v880.MouseButton1Down)
+                                    task.wait(0.01 - 0)
+                                    v3629 = 1
+                                end
+                            end
+                        end)
+                    end
+                else
+                    pcall(function()
+                        local v3266 = 0 - 0
+                        while true do
+                            if v3266 == 0 then
+                                if not mouse2click then
+                                    if mouse2press and mouse2release then
+                                        local v4057 = 0 - 0
+                                        while true do
+                                            if v4057 == (0 + 0) then
+                                                mouse2press()
+                                                task.wait(1012.01 - (53 + 959))
+                                                v4057 = 409 - (312 + 96)
+                                            end
+                                            if v4057 == (1 - 0) then
+                                                mouse2release()
+                                                return
+                                            end
+                                        end
+                                    end
+                                    VirtualInputManager:SendMouseButtonEvent(
+                                        285 - (147 + 138),
+                                        899 - (813 + 86),
+                                        1,
+                                        true,
+                                        game,
+                                        0 + 0
+                                    )
+                                    task.wait(0.01)
+                                    VirtualInputManager:SendMouseButtonEvent(0 - 0, 0, 1, false, game, 492 - (18 + 474))
+                                    return
+                                end
+                                mouse2click()
+                                break
+                            end
+                        end
+                    end)
+                end
+                break
+            end
+        end
+    end
+    function ExecuteParry()
+        if _G.Ox.State.ParryCooldown then
+            return
+        end
+        local v881 = ReplicatedStorage:FindFirstChild("Remotes")
+        local v882 = v881 and v881:FindFirstChild("Items")
+        local v883 = v882 and v882:FindFirstChild("Parrying Dagger")
+        local v884 = v883 and v883:FindFirstChild("parry")
+        if v884 then
+            for v2580 = 1 + 0, 8 do
+                v884:FireServer()
+            end
+        end
+        task.spawn(tapMobileParryButton)
+    end
+    ParryHUD.Scan = function()
+        local v885 = 0 - 0
+        local v886
+        local v887
+        local v888
+        local v889
+        while true do
+            if v885 == (1086 - (860 + 226)) then
+                v886 = localPlayer:FindFirstChild("PlayerGui")
+                if not v886 then
+                    return false
+                end
+                v885 = 304 - (121 + 182)
+            end
+            if v885 == (1 + 3) then
+                v889 = (#ParryHUD.gradients > (1240 - (988 + 252))) or (ParryHUD.icon ~= nil)
+                return v889
+            end
+            if v885 == 2 then
+                for v2809, v2810 in ipairs({
+                    "Survivor",
+                    "Survivor-con",
+                }) do
+                    local v2811 = v886:FindFirstChild(v2810)
+                    if v2811 then
+                        local v3267 = 1970 - (49 + 1921)
+                        local v3268
+                        local v3269
+                        while true do
+                            if v3267 == (891 - (223 + 667)) then
+                                if v3269 then
+                                    local v3946 = v3269:FindFirstChild("Gui")
+                                    local v3947 = v3946 and v3946:FindFirstChild("Bar")
+                                    local v3948 = v3947 and v3947:FindFirstChild("UIGradient")
+                                    if v3948 then
+                                        table.insert(ParryHUD.gradients, v3948)
+                                    end
+                                    local v3949 = v3269:FindFirstChild("icon")
+                                    if v3949 then
+                                        ParryHUD.icon = v3949
+                                    end
+                                end
+                                break
+                            end
+                            if v3267 == (52 - (51 + 1)) then
+                                v3268 = v2811:FindFirstChild("Gen")
+                                v3269 = v3268 and v3268:FindFirstChild("ItemFrame")
+                                v3267 = 1
+                            end
+                        end
+                    end
+                end
+                v887 = v886:FindFirstChild("Survivor-mob")
+                v885 = 3
+            end
+            if (1 - 0) == v885 then
+                table.clear(ParryHUD.gradients)
+                ParryHUD.icon = nil
+                v885 = 3 - 1
+            end
+            if v885 == (1128 - (146 + 979)) then
+                v888 = v887 and v887:FindFirstChild("Controls")
+                if v888 then
+                    for v3270, v3271 in ipairs(v888:GetChildren()) do
+                        if v3271:IsA("ImageButton") and (v3271.Name == "Gui-mob") then
+                            local v3630 = v3271:FindFirstChild("Bar")
+                            local v3631 = v3630 and v3630:FindFirstChild("UIGradient")
+                            if v3631 then
+                                table.insert(ParryHUD.gradients, v3631)
+                            end
+                        end
+                    end
+                end
+                v885 = 2 + 2
+            end
+        end
+    end
+    ParryHUD.SetColor = function(v890)
+        local v891 = 605 - (311 + 294)
+        while true do
+            if v891 == 1 then
+                for v2812, v2813 in ipairs(ParryHUD.gradients) do
+                    if v2813 and v2813.Parent and v2813.Parent.Parent then
+                        local v3272 = 0 - 0
+                        local v3273
+                        local v3274
+                        while true do
+                            if v3272 == 0 then
+                                v3273 = v2813.Parent.Parent:FindFirstChild("icon")
+                                if v3273 then
+                                    v3273.ImageColor3 = v890
+                                end
+                                v3272 = 1 + 0
+                            end
+                            if (1444 - (496 + 947)) == v3272 then
+                                v3274 = v2813.Parent.Parent:FindFirstChild("Gui")
+                                if v3274 then
+                                    v3274.ImageColor3 = v890
+                                end
+                                break
+                            end
+                        end
+                    end
+                end
+                if ParryHUD.icon then
+                    ParryHUD.icon.ImageColor3 = v890
+                end
+                break
+            end
+            if v891 == (1358 - (1233 + 125)) then
+                if (#ParryHUD.gradients == (0 + 0)) and not ParryHUD.icon then
+                    ParryHUD.Scan()
+                end
+                ParryHUD.cachedIconColor = v890
+                v891 = 1 + 0
+            end
+        end
+    end
+    ParryHUD.Tween = function(v892)
+        if #ParryHUD.gradients == (0 + 0) then
+            ParryHUD.Scan()
+        end
+        for v1967, v1968 in ipairs(ParryHUD.gradients) do
+            if v1968 and v1968.Parent then
+                local v2583 = 1645 - (963 + 682)
+                local v2584
+                while true do
+                    if (0 + 0) == v2583 then
+                        v1968.Offset = Vector2.new(1504 - (504 + 1000), 0.75)
+                        v2584 = v130:Create(v1968, TweenInfo.new(v892, Enum.EasingStyle.Linear), {
+                            Offset = Vector2.new(0, 0.25 + 0),
+                        })
+                        v2583 = 1
+                    end
+                    if v2583 == (1 + 0) then
+                        v2584:Play()
+                        v2584.Completed:Connect(function()
+                            if not _G.Ox.State.ParryCooldown then
+                                ParryHUD.SetColor(Color3.fromRGB(25 + 230, 376 - 121, 218 + 37))
+                            end
+                        end)
+                        break
+                    end
+                end
+            end
+        end
+    end
+    ParryHUD.Reset = function()
+        local v893 = 0 + 0
+        while true do
+            if v893 == (182 - (156 + 26)) then
+                ParryHUD.SetColor(Color3.fromRGB(147 + 108, 398 - 143, 419 - (149 + 15)))
+                for v2814, v2815 in ipairs(ParryHUD.gradients) do
+                    if v2815 and v2815.Parent then
+                        v2815.Offset = Vector2.new(0, 960.25 - (890 + 70))
+                    end
+                end
+                break
+            end
+        end
+    end
+    ParryHUD.SetupWatcher = function()
+        if ParryHUD.rescanConn then
+            ParryHUD.rescanConn:Disconnect()
+        end
+        local v894 = localPlayer:FindFirstChild("PlayerGui")
+        if not v894 then
+            return
+        end
+        ParryHUD.rescanConn = v894.ChildAdded:Connect(function(v1969)
+            local v1970 = 117 - (39 + 78)
+            local v1971
+            while true do
+                if v1970 == 0 then
+                    v1971 = v1969.Name
+                    if (v1971 == "Survivor") or (v1971 == "Survivor-con") or (v1971 == "Survivor-mob") then
+                        task.wait(482.3 - (14 + 468))
+                        ParryHUD.Scan()
+                        if _G.Ox.State.ParryCooldown and ParryHUD.cachedIconColor then
+                            ParryHUD.SetColor(ParryHUD.cachedIconColor)
+                        end
+                    end
+                    break
+                end
+            end
+        end)
+        task.spawn(function()
+            local v1972 = 0
+            local v1973
+            while true do
+                if v1972 == 0 then
+                    v1973 = 0 - 0
+                    while (v1973 < (27 - 17)) and not ParryHUD.Scan() do
+                        local v3079 = 0
+                        while true do
+                            if v3079 == (0 + 0) then
+                                task.wait(0.5 + 0)
+                                v1973 = v1973 + 0.5 + 0
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end)
+    end
+    ParryHUD.SetupWatcher()
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(1.5 + 0)
+        ParryHUD.Scan()
+        if _G.Ox.State.ParryCooldown and ParryHUD.cachedIconColor then
+            ParryHUD.SetColor(ParryHUD.cachedIconColor)
+        end
+    end)
+    function ListenToParryResult()
+        task.spawn(function()
+            local v1974 = 0
+            local v1975
+            local v1976
+            local v1977
+            while true do
+                if v1974 == (1 + 0) then
+                    v1977 = v1976 and v1976:WaitForChild("parryResult", 9 - 4)
+                    if v1977 then
+                        v1977.OnClientEvent:Connect(function(v3385, v3386)
+                            local v3387 = tonumber(v3386)
+                            local v3388 = v3387 or ((v3385 == true) and (89 + 1)) or (210 - 150)
+                            _G.Ox.State.ParryCooldown = true
+                            if _G.Ox.State.ParryCooldownThread then
+                                task.cancel(_G.Ox.State.ParryCooldownThread)
+                            end
+                            ParryHUD.SetColor(Color3.fromRGB(2 + 75, 128 - (12 + 39), 77))
+                            ParryHUD.Tween(v3388)
+                            _G.Ox.State.ParryCooldownThread = task.delay(v3388, function()
+                                _G.Ox.State.ParryCooldown = false
+                                ParryHUD.SetColor(Color3.fromRGB(238 + 17, 789 - 534, 908 - 653))
+                            end)
+                        end)
+                    end
+                    break
+                end
+                if v1974 == 0 then
+                    v1975 = ReplicatedStorage:WaitForChild("Remotes", 2 + 3)
+                    v1976 = v1975 and v1975:WaitForChild("Items", 3 + 2):WaitForChild("Parrying Dagger", 5)
+                    v1974 = 1
+                end
+            end
+        end)
+    end
+    ListenToParryResult()
+    function IsInKillerPOV(v896, v897, v898)
+        local v899 = 0 - 0
+        local v900
+        local v901
+        local v902
+        local v903
+        local v904
+        local v905
+        while true do
+            if v899 == 4 then
+                v905 = v904 <= v903
+                return v905
+            end
+            if (2 + 1) == v899 then
+                v903 = v902.Unit:Dot(v901.Unit)
+                v904 = v898 or (0.35 - 0)
+                v899 = 1714 - (1596 + 114)
+            end
+            if v899 == (4 - 2) then
+                v902 = Vector3.new(v896.CFrame.LookVector.X, 0, v896.CFrame.LookVector.Z)
+                if v902.Magnitude < 0.05 then
+                    return false
+                end
+                v899 = 716 - (164 + 549)
+            end
+            if v899 == (1438 - (1059 + 379)) then
+                if not v896 or not v897 then
+                    return false
+                end
+                v900 = v897.Position - v896.Position
+                v899 = 1
+            end
+            if (1 - 0) == v899 then
+                v901 = Vector3.new(v900.X, 0 + 0, v900.Z)
+                if v901.Magnitude < (0.15 + 0) then
+                    return true
+                end
+                v899 = 394 - (145 + 247)
+            end
+        end
+    end
+    function AttachParrySensor(v906)
+        if not v906 or _G.Ox.AttachedParry[v906] then
+            return
+        end
+        _G.Ox.AttachedParry[v906] = true
+        local v907 = v906:WaitForChild("Humanoid", 5)
+        if not v907 then
+            return
+        end
+        local v908 = v907:FindFirstChildOfClass("Animator")
+        local v909 = v908 or v907:WaitForChild("Animator", 5 + 0)
+        if not v909 then
+            return
+        end
+        v907.ChildAdded:Connect(function(v1978)
+            if v1978:IsA("Animator") then
+                local v2585 = 0 + 0
+                while true do
+                    if 0 == v2585 then
+                        _G.Ox.AttachedParry[v906] = nil
+                        AttachParrySensor(v906)
+                        break
+                    end
+                end
+            end
+        end)
+        v906.AncestryChanged:Connect(function(v1979, v1980)
+            if not v1980 then
+                _G.Ox.AttachedParry[v906] = nil
+            end
+        end)
+        v909.AnimationPlayed:Connect(function(v1981)
+            local v1982 = v1981.Animation
+            local v1983 = (v1982 and v1981.Animation.AnimationId) or ""
+            local v1984 = v1983:match("%d+")
+            local v1985 = v140[v1984]
+            if not v1985 then
+                return
+            end
+            if (v1984 == "80411309607666") and _G.Ox.ParryConfig.AutoCrouch then
+                local v2586 = localPlayer.Character
+                if IsDowned(v2586) then
+                    return
+                end
+                local v2587 = v2586 and v2586:FindFirstChild("HumanoidRootPart")
+                local v2588 = v906:FindFirstChild("HumanoidRootPart")
+                if v2587 and v2588 and ((v2587.Position - v2588.Position).Magnitude <= (118 - 78)) then
+                    TriggerCrouch()
+                end
+                return
+            end
+            if not _G.Ox.ParryConfig.AutoParry then
+                return
+            end
+            if _G.Ox.State.ParryCooldown then
+                return
+            end
+            if _G.Ox.ParryConfig.Ignored_Skills and _G.Ox.ParryConfig.Ignored_Skills[v1985] then
+                return
+            end
+            local v1986 = localPlayer.Character
+            if IsDowned(v1986) or not IsSafeToParry(v1986) then
+                return
+            end
+            local v1987 = v1986 and v1986:FindFirstChild("HumanoidRootPart")
+            local v1988 = v906:FindFirstChild("HumanoidRootPart")
+            if not v1987 or not v1988 then
+                return
+            end
+            local v1989 = (v1987.Position - v1988.Position).Magnitude
+            local v1990 = _G.Ox.ParryConfig.ParryFace
+            if v1990 < (0.2 + 0) then
+                v1990 = 0.35
+            end
+            if _G.Ox.ParryConfig.ParryAggressive then
+                if (_G.Ox.ParryConfig.ParryRadius + 5 + 0) < v1989 then
+                    return
+                end
+                local function v2589()
+                    local v2817 = 0 - 0
+                    while true do
+                        if v2817 == 0 then
+                            if _G.Ox.State.ParryCooldown or IsDowned(v1986) then
+                                return true
+                            end
+                            if not v1987 or not v1988 or not v1987.Parent or not v1988.Parent then
+                                return true
+                            end
+                            v2817 = 1
+                        end
+                        if v2817 == 2 then
+                            return true
+                        end
+                        if (721 - (254 + 466)) == v2817 then
+                            if
+                                ((v1987.Position - v1988.Position).Magnitude > (572 - (544 + 16)))
+                                or not IsInKillerPOV(v1988, v1987, v1990)
+                            then
+                                return false
+                            end
+                            ExecuteParry()
+                            v2817 = 5 - 3
+                        end
+                    end
+                end
+                if v2589() then
+                    return
+                end
+                local v2590 = nil
+                local v2591 = os.clock()
+                v2590 = RunService.Heartbeat:Connect(function()
+                    if (((os.clock() - v2591) >= (628.85 - (294 + 334))) or v2589()) and v2590 then
+                        v2590:Disconnect()
+                    end
+                end)
+            else
+                local v2592 = _G.Ox.ParryConfig.ParryRadius + 2
+                if (_G.Ox.ParryConfig.ParryRadius + (259 - (236 + 17))) < v1989 then
+                    return
+                end
+                if (v1989 <= v2592) and IsInKillerPOV(v1988, v1987, v1990) then
+                    ExecuteParry()
+                    return
+                end
+                local v2593 = os.clock()
+                local v2594 = nil
+                v2594 = RunService.Heartbeat:Connect(function()
+                    local v2818 = 0 + 0
+                    while true do
+                        if v2818 == (0 + 0) then
+                            if
+                                ((os.clock() - v2593) < (0.28 - 0))
+                                and not _G.Ox.State.ParryCooldown
+                                and v1987
+                                and v1988
+                                and v1987.Parent
+                                and v1988.Parent
+                                and not IsDowned(v1986)
+                            then
+                                if
+                                    ((v1987.Position - v1988.Position).Magnitude <= v2592)
+                                    and IsInKillerPOV(v1988, v1987, v1990)
+                                then
+                                    ExecuteParry()
+                                    if v2594 then
+                                        v2594:Disconnect()
+                                    end
+                                end
+                                return
+                            end
+                            if v2594 then
+                                v2594:Disconnect()
+                            end
+                            break
+                        end
+                    end
+                end)
+            end
+        end)
+    end
+    function TryAttachParry(v910)
+        if (v910 ~= localPlayer) and IsKiller(v910) and v910.Character then
+            AttachParrySensor(v910.Character)
+        end
+    end
+    function SetupPlayerParry(v911)
+        local v912 = 0
+        while true do
+            if (4 - 3) == v912 then
+                v911:GetPropertyChangedSignal("Team"):Connect(function()
+                    TryAttachParry(v911)
+                end)
+                if v911.Character then
+                    TryAttachParry(v911)
+                end
+                break
+            end
+            if (0 + 0) == v912 then
+                if v911 == localPlayer then
+                    return
+                end
+                v911.CharacterAdded:Connect(function()
+                    TryAttachParry(v911)
+                end)
+                v912 = 1 + 0
+            end
+        end
+    end
+    for v913, v914 in ipairs(Players:GetPlayers()) do
+        SetupPlayerParry(v914)
+    end
+    Players.PlayerAdded:Connect(SetupPlayerParry)
+    function UpdateCustomParryGUI(v915)
+        if not _G.Ox.AutoParryCustom.Gui then
+            return
+        end
+        local v916 = _G.Ox.AutoParryCustom.Gui:FindFirstChild("Frame")
+        if not v916 then
+            return
+        end
+        local v917 = v916:FindFirstChild("ActionButton")
+        local v918 = v916:FindFirstChild("UIStroke")
+        if v915 then
+            if v917 then
+                local v2819 = 794 - (413 + 381)
+                while true do
+                    if v2819 == 1 then
+                        v917.BackgroundColor3 = Color3.fromRGB(2 + 38, 85 - 45, 45)
+                        break
+                    end
+                    if v2819 == 0 then
+                        v917.Text = "PARRY [ON]"
+                        v917.TextColor3 = Color3.fromRGB(180, 662 - 407, 2150 - (582 + 1388))
+                        v2819 = 1
+                    end
+                end
+            end
+            if v918 then
+                v918.Color = Color3.fromRGB(100, 340 - 140, 72 + 28)
+            end
+        else
+            local v2321 = 0
+            while true do
+                if v2321 == (364 - (326 + 38)) then
+                    if v917 then
+                        local v3392 = 0 - 0
+                        while true do
+                            if v3392 == (0 - 0) then
+                                v917.Text = "PARRY [OFF]"
+                                v917.TextColor3 = Color3.fromRGB(820 - (47 + 573), 200, 71 + 129)
+                                v3392 = 4 - 3
+                            end
+                            if v3392 == (1 - 0) then
+                                v917.BackgroundColor3 = Color3.fromRGB(1694 - (1269 + 395), 522 - (76 + 416), 35)
+                                break
+                            end
+                        end
+                    end
+                    if v918 then
+                        v918.Color = Color3.fromRGB(533 - (319 + 124), 90, 95)
+                    end
+                    break
+                end
+            end
+        end
+    end
+    function ToggleParryStatus()
+        local v919 = 0 - 0
+        local v920
+        local v921
+        local v922
+        local v923
+        local v924
+        local v925
+        while true do
+            if v919 == (1008 - (564 + 443)) then
+                _G.Ox.AutoParryCustom.IsActive = _G.Ox.ParryConfig.AutoParry
+                UpdateCustomParryGUI(_G.Ox.ParryConfig.AutoParry)
+                v922 = v1.Notify
+                v923 = {
+                    Title = "Auto Parry",
+                }
+                v919 = 5 - 3
+            end
+            if v919 == (461 - (337 + 121)) then
+                v922(v1, v923)
+                break
+            end
+            if v919 == (0 - 0) then
+                v920 = _G.Ox.ParryConfig
+                v921 = nil
+                if _G.Ox.ParryConfig.AutoParry then
+                    v921 = false
+                else
+                    v921 = true
+                end
+                v920.AutoParry = v921
+                v919 = 1
+            end
+            if v919 == (6 - 4) then
+                v924 = _G.Ox.ParryConfig.AutoParry
+                v925 = (v924 and "Aktif") or "Nonaktif"
+                v923.Description = v925
+                v923.Duration = 1913 - (1261 + 650)
+                v919 = 3
+            end
+        end
+    end
+    function CreateCustomParryGUI()
+        if _G.Ox.AutoParryCustom.Gui then
+            _G.Ox.AutoParryCustom.Gui:Destroy()
+        end
+        local v926 = Instance.new("ScreenGui")
+        v926.Name = "AutoParryCustomGui"
+        v926.ResetOnSpawn = false
+        v926.IgnoreGuiInset = true
+        v926.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        v926.Parent = CoreGui
+        v926.Enabled = false
+        _G.Ox.AutoParryCustom.Gui = v926
+        _G.Ox.AutoParryCustom.GuiVisible = false
+        local v934 = Instance.new("Frame", v926)
+        v934.Name = "Frame"
+        v934.Size = UDim2.fromOffset(47 + 63, 56 - 20)
+        v934.Position = UDim2.fromScale(0.85, 1817.35 - (772 + 1045))
+        v934.BackgroundColor3 = Color3.fromRGB(25, 4 + 21, 174 - (102 + 42))
+        v934.BackgroundTransparency = 0.1
+        v934.Active = true
+        v934.BorderSizePixel = 1844 - (1524 + 320)
+        Instance.new("UICorner", v934).CornerRadius = UDim.new(0, 1278 - (1049 + 221))
+        local v943 = Instance.new("UIStroke", v934)
+        v943.Name = "UIStroke"
+        v943.Color = Color3.fromRGB(246 - (18 + 138), 90, 232 - 137)
+        v943.Thickness = 1103.5 - (67 + 1035)
+        v943.Transparency = 348.2 - (136 + 212)
+        local v948 = Instance.new("TextButton", v934)
+        v948.Name = "ActionButton"
+        v948.Size = UDim2.new(4 - 3, 0 + 0, 1 + 0, 0)
+        v948.Text = "PARRY [OFF]"
+        v948.BackgroundColor3 = Color3.fromRGB(1634 - (240 + 1364), 1112 - (1050 + 32), 35)
+        v948.Font = Enum.Font.GothamBold
+        v948.TextSize = 12
+        v948.TextColor3 = Color3.fromRGB(200, 714 - 514, 119 + 81)
+        v948.BorderSizePixel = 0
+        v948.AutoButtonColor = false
+        Instance.new("UICorner", v948).CornerRadius = UDim.new(1055 - (331 + 724), 1 + 7)
+        local v960 = false
+        local v961 = false
+        local v962 = false
+        local v963 = nil
+        local v964 = nil
+        local v965 = nil
+        function update(v1991)
+            local v1992 = 0
+            local v1993
+            while true do
+                if v1992 == (645 - (269 + 375)) then
+                    if not v961 and ((math.abs(v1993.X) > 18) or (math.abs(v1993.Y) > 18)) then
+                        v961 = true
+                    end
+                    if v961 then
+                        v934.Position =
+                            UDim2.new(v964.X.Scale, v964.X.Offset + v1993.X, v964.Y.Scale, v964.Y.Offset + v1993.Y)
+                    end
+                    break
+                end
+                if v1992 == (725 - (267 + 458)) then
+                    if not v960 or not v962 or not v963 or not v964 then
+                        return
+                    end
+                    v1993 = v1991.Position - v963
+                    v1992 = 1 + 0
+                end
+            end
+        end
+        v948.InputBegan:Connect(function(v1994)
+            if
+                (v1994.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v1994.UserInputType == Enum.UserInputType.Touch)
+            then
+                v960 = true
+                v961 = false
+                v962 = false
+                v963 = v1994.Position
+                v964 = v934.Position
+                if v965 then
+                    task.cancel(v965)
+                end
+                v965 = task.delay(0.18 - 0, function()
+                    if v960 then
+                        v962 = true
+                    end
+                end)
+            end
+        end)
+        v948.InputEnded:Connect(function(v1995)
+            if
+                (v1995.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v1995.UserInputType == Enum.UserInputType.Touch)
+            then
+                local v2601 = 818 - (667 + 151)
+                while true do
+                    if v2601 == (1500 - (1410 + 87)) then
+                        v964 = nil
+                        break
+                    end
+                    if v2601 == (1899 - (1504 + 393)) then
+                        v962 = false
+                        v963 = nil
+                        v2601 = 8 - 5
+                    end
+                    if v2601 == (0 - 0) then
+                        if v965 then
+                            task.cancel(v965)
+                        end
+                        if v960 and not v961 then
+                            ToggleParryStatus()
+                        end
+                        v2601 = 797 - (461 + 335)
+                    end
+                    if v2601 == (1 + 0) then
+                        v960 = false
+                        v961 = false
+                        v2601 = 1763 - (1730 + 31)
+                    end
+                end
+            end
+        end)
+        UserInputService.InputChanged:Connect(function(v1996)
+            if
+                v960
+                and v962
+                and (
+                    (v1996.UserInputType == Enum.UserInputType.MouseMovement)
+                    or (v1996.UserInputType == Enum.UserInputType.Touch)
+                )
+            then
+                update(v1996)
+            end
+        end)
+        if _G.Ox.AutoParryCustom._statusConn then
+            _G.Ox.AutoParryCustom._statusConn:Disconnect()
+        end
+        _G.Ox.AutoParryCustom._statusConn = RunService.Heartbeat:Connect(function()
+            if _G.Ox.AutoParryCustom.Gui and _G.Ox.AutoParryCustom.Gui.Parent then
+                if _G.Ox.AutoParryCustom.IsActive ~= _G.Ox.ParryConfig.AutoParry then
+                    _G.Ox.AutoParryCustom.IsActive = _G.Ox.ParryConfig.AutoParry
+                    UpdateCustomParryGUI(_G.Ox.ParryConfig.AutoParry)
+                end
+                return
+            end
+            if _G.Ox.AutoParryCustom._statusConn then
+                _G.Ox.AutoParryCustom._statusConn:Disconnect()
+            end
+        end)
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(1)
+        if _G.Ox.AutoParryCustom.GuiVisible and _G.Ox.AutoParryCustom.Gui then
+            local v2322 = 1667 - (728 + 939)
+            while true do
+                if v2322 == (0 - 0) then
+                    _G.Ox.AutoParryCustom.Gui.Enabled = true
+                    UpdateCustomParryGUI(_G.Ox.ParryConfig.AutoParry)
+                    break
+                end
+            end
+        end
+    end)
+    task.spawn(function()
+        task.wait(1.5 - 0)
+        CreateCustomParryGUI()
+    end)
+    _G.Ox.InstantTPGate = {
+        Enabled = false,
+        GateClientModule = nil,
+        oldGateNew = nil,
+        oldGateCanUse = nil,
+    }
+    _G.Ox.KorlessMorph = {
+        Enabled = false,
+        Connection = nil,
+    }
+    _G.Ox.SelfHeal = {
+        Enabled = false,
+    }
+    _G.Ox.FlowstateNoCD = {
+        Enabled = false,
+        Connection = nil,
+        CharAddedConn = nil,
+    }
+    _G.Ox.NoFall = {
+        Enabled = false,
+    }
+    _G.Ox.BulletBlockConfig = {
+        Enabled = false,
+    }
+    _G.Ox.BypassGate = {
+        Enabled = false,
+    }
+    _G.Ox.NextKiller = {
+        Enabled = false,
+        IndicatorGui = nil,
+    }
+    _G.Ox.CounterParry = {
+        Enabled = false,
+        Distance = 15,
+        Interval = 0.3 - 0,
+        AnimId = "rbxassetid://117042998468241",
+        Thread = nil,
+        Track = nil,
+    }
+    _G.Ox.AutoStalk = {
+        Enabled = false,
+        Range = 1218 - (138 + 930),
+        Conn = nil,
+        LastFire = 0 + 0,
+    }
+    _G.Ox.Crosshair = {
+        Enabled = false,
+        Size = 7 + 1,
+        Thickness = 2 + 0,
+        Color = Color3.fromRGB(1041 - 786, 255, 255),
+        Style = "Dot",
+        OffsetX = 0,
+        OffsetY = 1766 - (459 + 1307),
+    }
+    _G.Ox.Spectator = {
+        Enabled = false,
+        Gui = nil,
+        Label = nil,
+    }
+    _G.Ox.Moonwalk = {
+        Enabled = false,
+        GuiVisible = false,
+        Gui = nil,
+        IsActive = false,
+    }
+    _G.Ox.CrosshairGui = nil
+    _G.Ox.CrosshairElements = {}
+    _G.Ox.CrosshairCreated = false
+    _G.Ox.LastCrosshairStyle = nil
+    local v150 = _G.Ox
+    local v151 = _G.Ox.Config
+    local v152 = v151 or {}
+    v150.Config = v152
+    _G.Ox.Config.Surv_PerfectVault = false
+    _G.Ox.autoVaultEnabled = false
+    _G.Ox.autoPalletSlideEnabled = false
+    _G.Ox.lastActionTime = 0
+    _G.Ox.COOLDOWN = 1.5
+    _G.Ox.StreamerMode = {
+        Enabled = false,
+        SpooferConns = {},
+    }
+    _G.Ox.InfinityZoom = {
+        Enabled = false,
+    }
+    _G.Ox.StretchRes = {
+        Enabled = false,
+        Amount = 1870.67 - (474 + 1396),
+        Conn = nil,
+    }
+    _G.Ox.CameraFOV = {
+        Enabled = false,
+        Value = 90,
+        Connection = nil,
+    }
+    _G.Ox.Auto = {
+        SkillCheck = false,
+        SkillCheckMode = "Legit",
+        TrapSkillCheck = false,
+        TrapSkillCheckMode = "Instant",
+    }
+    _G.Ox.MapPredict = {
+        Enabled = false,
+    }
+    _G.Ox.KillerPerks = {
+        Enabled = false,
+        Gui = nil,
+        Minimized = false,
+    }
+    _G.Ox.Stun = {
+        Enabled = false,
+        Data = {},
+        HitSoundEnabled = false,
+        HitSoundVolume = 1 - 0,
+        HitSoundId = "rbxassetid://106225491596534",
+        HitSoundCooldown = 0.3 + 0,
+        HitSoundLastTime = 0 + 0,
+    }
+    _G.Ox.GodMode = false
+    _G.Ox.ScriptAlive = true
+    _G.Ox.UnlimitedVaultEnabled = false
+    local v154 = _G.Ox
+    local v155 = _G.Ox.State
+    local v156 = v155 or {}
+    v154.State = v156
+    _G.Ox.State.busy = false
+    _G.Ox.Connections = {
+        SkillHeartbeat = nil,
+    }
+    _G.Ox.Speed = {
+        Enabled = false,
+        Value = 0.1 - 0,
+        Connection = nil,
+        Loop = nil,
+    }
+    _G.Ox.AutoRun = {
+        PC = false,
+        Mobile = false,
+        MobileThread = nil,
+    }
+    _G.Ox.Utility = {
+        InvisEnabled = false,
+        BandageEnabled = false,
+        BandageSpeed = 50,
+    }
+    _G.Ox.AntiHook = {
+        Enabled = false,
+        OffsetY = -(32 + 218),
+        Hz = 44,
+        Interval = 0.022727272727272728 - 0,
+        Remote = nil,
+        Connection = nil,
+        Accumulator = 0,
+        SendCounter = 0 - 0,
+        LastCounterTime = os.clock(),
+    }
+    _G.Ox.ConfigData = {
+        Surv_SkillFrequency = 601 - (562 + 29),
+        Surv_SkillSpeed = 1,
+    }
+    _G.Ox.Teleport = {
+        GenIndex = 1,
+        HookIndex = 1 + 0,
+        GateIndex = 1,
+        PalletIndex = 1420 - (374 + 1045),
+        WindowIndex = 1 + 0,
+    }
+    tbl = {
+        Generators = {},
+        Hooks = {},
+        Gates = {},
+        Pallets = {},
+        Windows = {},
+    }
+    tbl2 = {
+        Enabled = false,
+        Conn = nil,
+    }
+    if not _G.Ox.State then
+        _G.Ox.State = {}
+    end
+    _G.Ox.State.ThirdPersonConn = nil
+    tbl3 = {
+        ["Left Arm"] = true,
+        ["Right Arm"] = true,
+        LeftHand = true,
+        RightHand = true,
+        LeftLowerArm = true,
+        RightLowerArm = true,
+        LeftUpperArm = true,
+        RightUpperArm = true,
+    }
+    _G.Ox.FakePerks = {
+        QuickRecoveryEnabled = false,
+        PerfectLandingEnabled = false,
+        FlowstateEnabled = false,
+        FakeAdrenalineRush = false,
+        PerkCooldown = 31 - 21,
+        boostActive = false,
+        perfectLandingBoostActive = false,
+        fsOnCooldown = false,
+        lastQRTime = 638 - (448 + 190),
+        lastPLTime = 0,
+        lastFSTime = 0 + 0,
+        qrConnection = nil,
+        plConnection = nil,
+        fsConnection = nil,
+        fsAnimConnection = nil,
+        adrenalineOn = false,
+        adrenalineConns = {},
+        lastARTime = 0 + 0,
+    }
+    _G.Ox.AutoPallet = {
+        Enabled = false,
+        Safety = true,
+        Distance = 10,
+        Cooldown = 2.5,
+        LastDrop = 0,
+        UsedPallets = {},
+        Connection = nil,
+    }
+    _G.Ox.FullBright = false
+    _G.Ox.NoFog = false
+    _G.Ox.NoShadow = false
+    _G.Ox.TimeOfDayValue = 10 + 4
+    _G.Ox.LowGFX = {
+        Enabled = false,
+        Textures = false,
+        VisualEffects = false,
+        Particles = false,
+        Parts = false,
+        Sky = false,
+        Saved = {},
+    }
+    _G.Ox.AimConfig = {
+        Aim_SilentVeilV2 = false,
+        Veil_ShowFOV = true,
+        SpearSmart_enable = false,
+        Veil_FOV = 150,
+        SPEAR_Speed = 165,
+        SPEAR_Gravity = 396 - 293,
+        SPEAR_AuraSpeed = 512 - 347,
+        SPEAR_AuraGravity = 96.5,
+        SPEAR_MaxDist = 1994 - (1307 + 187),
+        Veil_LeadMultiplier = 1.4,
+        AIM_TargetPart = "Torso",
+        Pistol_BlockKnocked = false,
+        LockAim = false,
+        Flash_Silent = false,
+        Flash_YOffset = 1.5,
+    }
+    _G.Ox.SurvivorFOVFrame = nil
+    _G.Ox.SurvivorFOVGui = nil
+    _G.Ox.isAimbotHolding = false
+    _G.Ox.lockedAimbotTarget = nil
+    _G.Ox.survivorAimbotHighlight = nil
+    _G.Ox.isKillerAimbotHolding = false
+    _G.Ox.lockedKillerAimbotTarget = nil
+    _G.Ox.killerAimbotHighlight = nil
+    _G.Ox.Config = {
+        SpearSmart_enable = false,
+        Surv_Aimbot_Enabled = false,
+        Surv_Aimbot_ShowFOV = true,
+        Surv_Aimbot_Radius = 150,
+        Surv_Aimbot_MaxDist = 1189 - 889,
+        Surv_Aimbot_Smoothness = 0.5 - 0,
+        Surv_Aimbot_Predict = 0.01 - 0,
+        Killer_Aimbot_Enabled = false,
+        Killer_Aimbot_MaxDist = 695 - (232 + 451),
+        Killer_Aimbot_Smoothness = 0.5,
+    }
+    local v158 = false
+    local v159 = false
+    flag = false
+    _G.Ox.ESPConfig = {
+        Master = false,
+        Player = false,
+        Killer = false,
+        Outline = false,
+        Name = false,
+        Distance = false,
+        KillerWarn = false,
+        ItemIcon = false,
+        Generator = false,
+        GeneratorName = true,
+        Pallet = false,
+        Hook = false,
+        Gate = false,
+        Window = false,
+        SCP = false,
+        HookCount = false,
+        Status = false,
+        Pumpkin = false,
+        ButcherTrap = false,
+        MaxDistance = 955 + 45,
+    }
+    _G.Ox.ESPColors = {
+        Player = Color3.fromRGB(60, 226 + 29, 624 - (510 + 54)),
+        Killer = Color3.fromRGB(255, 120 - 60, 96 - (13 + 23)),
+        Generator = Color3.fromRGB(496 - 241, 365 - 110, 0 - 0),
+        GeneratorDone = Color3.fromRGB(1088 - (830 + 258), 899 - 644, 0 + 0),
+        Pallet = Color3.fromRGB(60, 217 + 38, 1696 - (860 + 581)),
+        Hook = Color3.fromRGB(940 - 685, 105, 143 + 37),
+        Gate = Color3.fromRGB(496 - (237 + 4), 599 - 344, 255),
+        Window = Color3.fromRGB(151 - 91, 483 - 228, 255),
+        SCP = Color3.fromRGB(209 + 46, 0, 147 + 108),
+        Injured = Color3.fromRGB(962 - 707, 61 + 79, 0 + 0),
+        Downed = Color3.fromRGB(255, 1466 - (85 + 1341), 68 - 28),
+        Hooked = Color3.fromRGB(677 - 437, 612 - (45 + 327), 481 - 226),
+        Pumpkin = Color3.fromRGB(255, 140, 502 - (444 + 58)),
+        ButcherTrap = Color3.fromRGB(57 + 73, 14 + 66, 125 + 130),
+    }
+    tbl4 = {
+        Generators = {},
+        Windows = {},
+        Pallets = {},
+        Hooks = {},
+        Gates = {},
+        SCPs = {},
+        Pumpkins = {},
+        ButcherTraps = {},
+    }
+    function GetRole()
+        if not localPlayer.Team then
+            return "Unknown"
+        end
+        local v966 = localPlayer.Team.Name
+        if v966 == "Killer" then
+            return "Killer"
+        end
+        if v966 == "Survivors" then
+            return "Survivor"
+        end
+        return "Spectator"
+    end
+    function GetDistance(v967)
+        local v968 = localPlayer.Character
+        local v969 = v968 and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if not v969 then
+            return math.huge
+        end
+        return (v967 - v969.Position).Magnitude
+    end
+    function fn(v970, v971)
+        if v970 and (type(v970.SetValue) == "function") then
+            pcall(function()
+                v970:SetValue(v971)
+            end)
+        end
+    end
+    function ClearCrosshair()
+        if _G.Ox.CrosshairGui then
+            local v2323 = 0 - 0
+            while true do
+                if (1732 - (64 + 1668)) == v2323 then
+                    _G.Ox.CrosshairGui:Destroy()
+                    _G.Ox.CrosshairGui = nil
+                    break
+                end
+            end
+        end
+        _G.Ox.CrosshairElements = {}
+        _G.Ox.CrosshairCreated = false
+        _G.Ox.LastCrosshairStyle = nil
+    end
+    function DrawCrosshair()
+        if not _G.Ox.Crosshair.Enabled then
+            if _G.Ox.CrosshairGui then
+                _G.Ox.CrosshairGui.Enabled = false
+            end
+            return
+        end
+        if _G.Ox.CrosshairGui then
+            _G.Ox.CrosshairGui.Enabled = true
+        end
+        if (_G.Ox.LastCrosshairStyle ~= _G.Ox.Crosshair.Style) or not _G.Ox.CrosshairGui then
+            local v2324 = 1973 - (1227 + 746)
+            while true do
+                if v2324 == (0 - 0) then
+                    ClearCrosshair()
+                    _G.Ox.LastCrosshairStyle = _G.Ox.Crosshair.Style
+                    break
+                end
+            end
+        end
+        if not _G.Ox.CrosshairCreated then
+            _G.Ox.CrosshairCreated = true
+            _G.Ox.CrosshairGui = Instance.new("ScreenGui")
+            _G.Ox.CrosshairGui.Name = "CrosshairUI"
+            _G.Ox.CrosshairGui.IgnoreGuiInset = true
+            _G.Ox.CrosshairGui.ResetOnSpawn = false
+            _G.Ox.CrosshairGui.DisplayOrder = 1853 - 854
+            _G.Ox.CrosshairGui.Parent = CoreGui
+            local function v2325(v2602, v2603)
+                local v2604 = Instance.new("Frame")
+                v2604.BackgroundColor3 = _G.Ox.Crosshair.Color
+                v2604.BorderSizePixel = 0
+                v2604.AnchorPoint = Vector2.new(0.5, 494.5 - (415 + 79))
+                v2604.Size = v2602
+                v2604.Position = v2603
+                v2604.Parent = _G.Ox.CrosshairGui
+                return v2604
+            end
+            local v2326 = UDim2.new(0.5 + 0, _G.Ox.Crosshair.OffsetX, 0.5, _G.Ox.Crosshair.OffsetY)
+            if _G.Ox.Crosshair.Style == "Plus" then
+                _G.Ox.CrosshairElements[492 - (142 + 349)] =
+                    v2325(UDim2.new(0 + 0, _G.Ox.Crosshair.Size * (2 - 0), 0 + 0, _G.Ox.Crosshair.Thickness), v2326)
+                _G.Ox.CrosshairElements[2 + 0] =
+                    v2325(UDim2.new(0, _G.Ox.Crosshair.Thickness, 0, _G.Ox.Crosshair.Size * 2), v2326)
+            elseif _G.Ox.Crosshair.Style == "Dot" then
+                local v3278 = Instance.new("Frame")
+                v3278.BackgroundColor3 = _G.Ox.Crosshair.Color
+                v3278.BorderSizePixel = 0 - 0
+                v3278.AnchorPoint = Vector2.new(1864.5 - (1710 + 154), 318.5 - (200 + 118))
+                v3278.Size = UDim2.new(0 + 0, _G.Ox.Crosshair.Size, 0 - 0, _G.Ox.Crosshair.Size)
+                v3278.Position = v2326
+                Instance.new("UICorner", v3278).CornerRadius = UDim.new(1, 0)
+                v3278.Parent = _G.Ox.CrosshairGui
+                _G.Ox.CrosshairElements[1 - 0] = v3278
+            elseif _G.Ox.Crosshair.Style == "Circle" then
+                local v3632 = 0 + 0
+                local v3633
+                local v3634
+                while true do
+                    if v3632 == 1 then
+                        v3633.Size = UDim2.new(0, _G.Ox.Crosshair.Size * (2 + 0), 0, _G.Ox.Crosshair.Size * (2 + 0))
+                        v3633.Position = v2326
+                        v3633.Parent = _G.Ox.CrosshairGui
+                        v3634 = Instance.new("UIStroke")
+                        v3632 = 2
+                    end
+                    if v3632 == (1 + 2) then
+                        _G.Ox.CrosshairElements[2 - 1] = v3633
+                        break
+                    end
+                    if v3632 == (1250 - (363 + 887)) then
+                        v3633 = Instance.new("Frame")
+                        v3633.BackgroundTransparency = 1 - 0
+                        v3633.BorderSizePixel = 0 - 0
+                        v3633.AnchorPoint = Vector2.new(0.5, 0.5 + 0)
+                        v3632 = 2 - 1
+                    end
+                    if v3632 == (2 + 0) then
+                        v3634.Color = _G.Ox.Crosshair.Color
+                        v3634.Thickness = _G.Ox.Crosshair.Thickness
+                        v3634.Parent = v3633
+                        Instance.new("UICorner", v3633).CornerRadius = UDim.new(1665 - (674 + 990), 0)
+                        v3632 = 3
+                    end
+                end
+            end
+        end
+        local v972 = UDim2.new(0.5 + 0, _G.Ox.Crosshair.OffsetX, 0.5 + 0, _G.Ox.Crosshair.OffsetY)
+        if _G.Ox.Crosshair.Style == "Plus" then
+            if _G.Ox.CrosshairElements[1 - 0] then
+                local v2821 = 1055 - (507 + 548)
+                while true do
+                    if v2821 == (838 - (289 + 548)) then
+                        _G.Ox.CrosshairElements[1819 - (821 + 997)].BackgroundColor3 = _G.Ox.Crosshair.Color
+                        break
+                    end
+                    if v2821 == 0 then
+                        _G.Ox.CrosshairElements[256 - (195 + 60)].Size =
+                            UDim2.new(0, _G.Ox.Crosshair.Size * (1 + 1), 1501 - (251 + 1250), _G.Ox.Crosshair.Thickness)
+                        _G.Ox.CrosshairElements[2 - 1].Position = v972
+                        v2821 = 1 + 0
+                    end
+                end
+            end
+            if _G.Ox.CrosshairElements[1034 - (809 + 223)] then
+                local v2822 = 0 - 0
+                while true do
+                    if v2822 == (2 - 1) then
+                        _G.Ox.CrosshairElements[6 - 4].BackgroundColor3 = _G.Ox.Crosshair.Color
+                        break
+                    end
+                    if v2822 == (0 + 0) then
+                        _G.Ox.CrosshairElements[2].Size = UDim2.new(
+                            0 + 0,
+                            _G.Ox.Crosshair.Thickness,
+                            617 - (14 + 603),
+                            _G.Ox.Crosshair.Size * (131 - (118 + 11))
+                        )
+                        _G.Ox.CrosshairElements[2].Position = v972
+                        v2822 = 1
+                    end
+                end
+            end
+        elseif _G.Ox.Crosshair.Style == "Dot" then
+            if _G.Ox.CrosshairElements[1 + 0] then
+                _G.Ox.CrosshairElements[1].Size = UDim2.new(0 + 0, _G.Ox.Crosshair.Size, 0, _G.Ox.Crosshair.Size)
+                _G.Ox.CrosshairElements[1].Position = v972
+                _G.Ox.CrosshairElements[2 - 1].BackgroundColor3 = _G.Ox.Crosshair.Color
+            end
+        elseif (_G.Ox.Crosshair.Style == "Circle") and _G.Ox.CrosshairElements[950 - (551 + 398)] then
+            local v3286 = 0 + 0
+            local v3287
+            while true do
+                if (1 + 0) == v3286 then
+                    v3287 = _G.Ox.CrosshairElements[1 + 0]:FindFirstChildOfClass("UIStroke")
+                    if v3287 then
+                        local v3962 = 0 - 0
+                        while true do
+                            if v3962 == (0 - 0) then
+                                v3287.Color = _G.Ox.Crosshair.Color
+                                v3287.Thickness = _G.Ox.Crosshair.Thickness
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+                if v3286 == (0 + 0) then
+                    _G.Ox.CrosshairElements[1].Size =
+                        UDim2.new(0, _G.Ox.Crosshair.Size * 2, 0 - 0, _G.Ox.Crosshair.Size * (1 + 1))
+                    _G.Ox.CrosshairElements[1].Position = v972
+                    v3286 = 90 - (40 + 49)
+                end
+            end
+        end
+    end
+    local function v160()
+        local v973 = 0 - 0
+        while true do
+            if (490 - (99 + 391)) == v973 then
+                for v2823, v2824 in ipairs(Players:GetPlayers()) do
+                    if (v2824 ~= localPlayer) and (not v2824.Team or (v2824.Team.Name ~= "Survivors")) then
+                        local v3288 = v2824.Character
+                        if v3288 then
+                            local v3635 = 0 + 0
+                            local v3636
+                            while true do
+                                if v3635 == 0 then
+                                    v3636 = v3288:FindFirstChild("HumanoidRootPart")
+                                    if v3636 then
+                                        return v3636
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                    end
+                end
+                return nil
+            end
+        end
+    end
+    local function v161(v974)
+        if not _G.Ox.AutoPallet.Safety then
+            return true
+        end
+        if not v974 then
+            return false
+        end
+        if v974:GetAttribute("Knocked") == true then
+            return false
+        end
+        if v974:GetAttribute("IsCarried") == true then
+            return false
+        end
+        if v974:GetAttribute("IsHooked") == true then
+            return false
+        end
+        local v975 = v974:FindFirstChild("CheckInterractable")
+        if v975 then
+            if v975:GetAttribute("isVaulting") == true then
+                return false
+            end
+            if v975:GetAttribute("isRepairing") == true then
+                return false
+            end
+            if v975:GetAttribute("isUnhooking") == true then
+                return false
+            end
+            if v975:GetAttribute("isHealing") == true then
+                return false
+            end
+            if v975:GetAttribute("isSliding") == true then
+                return false
+            end
+            if v975:GetAttribute("isCarrying") == true then
+                return false
+            end
+        end
+        local v976 = v974:FindFirstChildOfClass("Humanoid")
+        if v976 and (v976.Health <= 0) then
+            return false
+        end
+        return true
+    end
+    local function v162(v977)
+        local v978 = nil
+        local v979 = _G.Ox.AutoPallet.Distance
+        local v980 = ipairs
+        local v981 = tbl4.Pallets
+        local v982 = v981 or {}
+        for v1997, v1998 in v980(v982) do
+            if v1998 and v1998.Parent and not _G.Ox.AutoPallet.UsedPallets[v1998] then
+                local v2611 = 0 - 0
+                local v2612
+                local v2613
+                while true do
+                    if v2611 == (2 - 1) then
+                        if v2613 then
+                            local v3637 = 0
+                            local v3638
+                            local v3639
+                            while true do
+                                if (0 + 0) == v3637 then
+                                    v3638, v3639 = pcall(function()
+                                        return v2613.Position
+                                    end)
+                                    if v3638 and v3639 then
+                                        local v4059 = 0 - 0
+                                        local v4060
+                                        while true do
+                                            if v4059 == 0 then
+                                                v4060 = (v977.Position - v3639).Magnitude
+                                                if v4060 < v979 then
+                                                    v979 = v4060
+                                                    v978 = v1998
+                                                end
+                                                break
+                                            end
+                                        end
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                        break
+                    end
+                    if v2611 == (1604 - (1032 + 572)) then
+                        v2612 = v1998:FindFirstChild("PrimaryPartPallet")
+                        v2613 = v2612
+                            or v1998:FindFirstChild("PalletPoint")
+                            or v1998:FindFirstChild("PalletPointSlide")
+                            or v1998:FindFirstChildWhichIsA("BasePart")
+                        v2611 = 418 - (203 + 214)
+                    end
+                end
+            end
+        end
+        return v978
+    end
+    local function v163(v983)
+        local v984 = 1817 - (568 + 1249)
+        local v985
+        local v986
+        local v987
+        local v988
+        while true do
+            if v984 == (1 + 0) then
+                v987 = ReplicatedStorage:FindFirstChild("Remotes")
+                v988 = v987 and v987:FindFirstChild("Pallet") and v987.Pallet:FindFirstChild("PalletDropEvent")
+                if not v988 then
+                    return false
+                end
+                pcall(function()
+                    v988:FireServer(v986)
+                end)
+                v984 = 2
+            end
+            if (4 - 2) == v984 then
+                _G.Ox.AutoPallet.UsedPallets[v983] = true
+                _G.Ox.AutoPallet.LastDrop = tick()
+                return true
+            end
+            if v984 == 0 then
+                if not v983 then
+                    return false
+                end
+                v985 = v983:FindFirstChild("PalletPointSlide")
+                v986 = v985 or v983:FindFirstChild("PalletPoint") or v983:FindFirstChildWhichIsA("BasePart")
+                if not v986 then
+                    return false
+                end
+                v984 = 3 - 2
+            end
+        end
+    end
+    function StartAutoPallet()
+        local v989 = 1306 - (913 + 393)
+        while true do
+            if v989 == (0 - 0) then
+                if _G.Ox.AutoPallet.Connection then
+                    return
+                end
+                _G.Ox.AutoPallet.Connection = task.spawn(function()
+                    while _G.Ox.AutoPallet.Enabled do
+                        task.wait(0.3 - 0)
+                        if
+                            (GetRole() == "Survivor")
+                            and ((tick() - _G.Ox.AutoPallet.LastDrop) >= _G.Ox.AutoPallet.Cooldown)
+                        then
+                            pcall(function()
+                                local v3640 = localPlayer.Character
+                                local v3641 = v3640 and v3640:FindFirstChild("HumanoidRootPart")
+                                local v3642 = v3640 and v3640:FindFirstChildOfClass("Humanoid")
+                                if not v3641 or not v3642 or (v3642.Health <= (410 - (269 + 141))) then
+                                    return
+                                end
+                                if not v161(v3640) then
+                                    return
+                                end
+                                local v3643 = v160()
+                                if not v3643 then
+                                    return
+                                end
+                                if _G.Ox.AutoPallet.Distance < (v3641.Position - v3643.Position).Magnitude then
+                                    return
+                                end
+                                local v3644 = v162(v3641)
+                                if v3644 then
+                                    v163(v3644)
+                                end
+                            end)
+                        end
+                    end
+                end)
+                break
+            end
+        end
+    end
+    function StopAutoPallet()
+        if _G.Ox.AutoPallet.Connection then
+            task.cancel(_G.Ox.AutoPallet.Connection)
+            _G.Ox.AutoPallet.Connection = nil
+        end
+        _G.Ox.AutoPallet.UsedPallets = {}
+    end
+    function ToggleAutoPallet(v990)
+        local v991 = 0 - 0
+        while true do
+            if v991 == (1981 - (362 + 1619)) then
+                _G.Ox.AutoPallet.Enabled = v990
+                if v990 then
+                    if GetRole() ~= "Survivor" then
+                        v1:Notify({
+                            Title = "Auto Drop Pallet",
+                            Description = "Kamu harus Survivor!",
+                            Duration = 3,
+                        })
+                        _G.Ox.AutoPallet.Enabled = false
+                        if AutoPalletToggle then
+                            fn(AutoPalletToggle, false)
+                        end
+                        return
+                    end
+                    _G.Ox.AutoPallet.UsedPallets = {}
+                    StartAutoPallet()
+                    v1:Notify({
+                        Title = "Auto Drop Pallet",
+                        Description = "AKTIF",
+                        Duration = 1627 - (950 + 675),
+                    })
+                else
+                    StopAutoPallet()
+                    v1:Notify({
+                        Title = "Auto Drop Pallet",
+                        Description = "NONAKTIF",
+                        Duration = 2,
+                    })
+                end
+                break
+            end
+        end
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        local v992 = 0 + 0
+        while true do
+            if v992 == 0 then
+                _G.Ox.AutoPallet.UsedPallets = {}
+                _G.Ox.AutoPallet.LastDrop = 0
+                break
+            end
+        end
+    end)
+    function DropAllPallets()
+        local v993 = ReplicatedStorage:FindFirstChild("Remotes")
+        local v994 = v993 and v993:FindFirstChild("Pallet") and v993.Pallet:FindFirstChild("PalletDropEvent")
+        if not v994 then
+            v1:Notify({
+                Title = "Drop All Pallet",
+                Description = "Remote tidak ditemukan!",
+                Duration = 1181 - (216 + 963),
+            })
+            return
+        end
+        local v995 = {}
+        local v996 = workspace:FindFirstChild("Map")
+        if not v996 then
+            local v2327 = 1287 - (485 + 802)
+            while true do
+                if v2327 == 0 then
+                    v1:Notify({
+                        Title = "Drop All Pallet",
+                        Description = "Map tidak ditemukan!",
+                        Duration = 2,
+                    })
+                    return
+                end
+            end
+        end
+        for v1999, v2000 in ipairs(v996:GetDescendants()) do
+            if (v2000.Name == "PalletPoint") and v2000:IsA("BasePart") then
+                local v2614 = v2000:FindFirstAncestorWhichIsA("Model")
+                if v2614 then
+                    if not v995[v2614] then
+                        v995[v2614] = {}
+                    end
+                    table.insert(v995[v2614], v2000)
+                end
+            end
+        end
+        local v997 = 559 - (432 + 127)
+        local v998, v999, v1000 = pairs(v995)
+        local v1001 = v1000
+        local v1002 = v998
+        local v1003 = v999
+        while true do
+            local v2001, v2002 = v1002(v1003, v1001)
+            if v2001 == nil then
+                break
+            end
+            for v2328, v2329 in ipairs(v2002) do
+                pcall(function()
+                    local v2615 = 1073 - (1065 + 8)
+                    while true do
+                        if v2615 == (0 + 0) then
+                            v994:FireServer(v2329)
+                            v997 = v997 + 1
+                            break
+                        end
+                    end
+                end)
+            end
+            v1001 = v2001
+        end
+        v1:Notify({
+            Title = "Drop All Pallet",
+            Description = string.format("Berhasil menjatuhkan %d pallet!", v997),
+            Duration = 3,
+        })
+    end
+    local v164 = 1601 - (635 + 966)
+    function fn2(v1004)
+        local v1005 = os.clock()
+        if not v1004 and ((v1005 - v164) < (2 + 0)) then
+            return
+        end
+        v164 = v1005
+        table.clear(tbl.Generators)
+        table.clear(tbl.Windows)
+        table.clear(tbl.Pallets)
+        table.clear(tbl.Hooks)
+        table.clear(tbl.Gates)
+        table.clear(tbl4.Generators)
+        table.clear(tbl4.Windows)
+        table.clear(tbl4.Pallets)
+        table.clear(tbl4.Hooks)
+        table.clear(tbl4.Gates)
+        table.clear(tbl4.SCPs)
+        table.clear(tbl4.Pumpkins)
+        table.clear(tbl4.ButcherTraps)
+        local v1006 = workspace:FindFirstChild("Map")
+        local v1007 = v1006 or workspace
+        local v1008 = v1007:GetDescendants()
+        for v2003, v2004 in ipairs(v1008) do
+            if (v2003 % (842 - (5 + 37))) == 0 then
+                task.wait()
+            end
+            if v2004:IsA("Model") then
+                local v2616 = 0 - 0
+                local v2617
+                while true do
+                    if 0 == v2616 then
+                        v2617 = string.lower(v2004.Name)
+                        if v2617 == "beartrap" then
+                            if not table.find(tbl4.ButcherTraps, v2004) then
+                                table.insert(tbl4.ButcherTraps, v2004)
+                            end
+                        elseif v2617 == "generator" then
+                            local v3839 = v2004:FindFirstChild("GeneratorBody")
+                            local v3840 = v3839 or v2004:FindFirstChildWhichIsA("BasePart")
+                            if v3840 then
+                                local v4002 = {
+                                    model = v2004,
+                                    part = v3840,
+                                }
+                                table.insert(tbl.Generators, v4002)
+                                table.insert(tbl4.Generators, v4002)
+                            end
+                        elseif (v2617 == "hook") and v2004:FindFirstChild("HookPoint") then
+                            table.insert(tbl.Hooks, v2004)
+                            table.insert(tbl4.Hooks, v2004)
+                        elseif (v2617 == "gate") and v2004:FindFirstChild("ExitLever") then
+                            local v4096 = 0 + 0
+                            while true do
+                                if (0 - 0) == v4096 then
+                                    table.insert(tbl.Gates, v2004)
+                                    table.insert(tbl4.Gates, v2004)
+                                    break
+                                end
+                            end
+                        elseif v2617 == "window" then
+                            table.insert(tbl.Windows, v2004)
+                            table.insert(tbl4.Windows, v2004)
+                        end
+                        break
+                    end
+                end
+            elseif
+                v2004:IsA("BasePart")
+                and (string.lower(v2004.Name) == "beartrap")
+                and not (v2004.Parent and v2004.Parent:IsA("Model") and (string.lower(v2004.Parent.Name) == "beartrap"))
+            then
+                table.insert(tbl4.ButcherTraps, v2004)
+            elseif v2004:IsA("BasePart") and v2004.Name:find("Pallet", 1, true) then
+                local v3395 = v2004.Parent
+                if v3395 and not table.find(tbl.Pallets, v3395) then
+                    table.insert(tbl.Pallets, v3395)
+                    table.insert(tbl4.Pallets, v3395)
+                end
+            end
+        end
+        local v1009 = workspace:GetDescendants()
+        for v2005, v2006 in ipairs(v1009) do
+            local v2007 = 0 + 0
+            while true do
+                if v2007 == (1 - 0) then
+                    if
+                        v2006:IsA("Model")
+                        and v2006.Name:find("Pumpkin", 3 - 2, true)
+                        and not table.find(tbl4.Pumpkins, v2006)
+                    then
+                        table.insert(tbl4.Pumpkins, v2006)
+                    end
+                    break
+                end
+                if v2007 == (0 - 0) then
+                    if (v2005 % 200) == (0 - 0) then
+                        task.wait()
+                    end
+                    if
+                        v2006:IsA("Model")
+                        and string.match(string.lower(v2006.Name), "^scp")
+                        and not table.find(tbl4.SCPs, v2006)
+                    then
+                        table.insert(tbl4.SCPs, v2006)
+                    end
+                    v2007 = 1 + 0
+                end
+            end
+        end
+    end
+    function fn3(v1010)
+        if not v1010 then
+            return
+        end
+        local v1011 = localPlayer.Character
+        local v1012 = v1011 and v1011:FindFirstChild("HumanoidRootPart")
+        if v1012 then
+            local v2330 = 529 - (318 + 211)
+            local v2331
+            while true do
+                if 1 == v2330 then
+                    v1:Notify({
+                        Title = "Teleport",
+                        Description = "Berhasil!",
+                        Duration = 4 - 3,
+                    })
+                    break
+                end
+                if v2330 == 0 then
+                    v2331 = Vector3.new(0, 1590 - (963 + 624), 0)
+                    if v1010:IsA("BasePart") then
+                        v1012.CFrame = v1010.CFrame + v2331
+                    elseif v1010:IsA("Model") then
+                        local v3731 = v1010:FindFirstChildWhichIsA("BasePart")
+                        if v3731 then
+                            v1012.CFrame = v3731.CFrame + v2331
+                        end
+                    end
+                    v2330 = 1 + 0
+                end
+            end
+        end
+    end
+    function ApplyFullBright()
+        local v1013 = 0
+        local v1014
+        while true do
+            if v1013 == (847 - (518 + 328)) then
+                if _G.Ox.FullBright then
+                    local v3080 = 0 - 0
+                    while true do
+                        if v3080 == (1 - 0) then
+                            v1014.FogEnd = 100000
+                            v1014.Ambient = Color3.fromRGB(517 - (301 + 16), 200, 586 - 386)
+                            v3080 = 2
+                        end
+                        if v3080 == 0 then
+                            v1014.Brightness = 5.8 - 3
+                            v1014.ClockTime = _G.Ox.TimeOfDayValue
+                            v3080 = 2 - 1
+                        end
+                        if v3080 == (2 + 0) then
+                            v1014.OutdoorAmbient = Color3.fromRGB(200, 114 + 86, 426 - 226)
+                            break
+                        end
+                    end
+                end
+                break
+            end
+            if v1013 == (0 + 0) then
+                v1014 = game:GetService("Lighting")
+                if not v1014 then
+                    return
+                end
+                v1013 = 1 + 0
+            end
+        end
+    end
+    function ApplyNoFog()
+        local v1015 = game:GetService("Lighting")
+        if not v1015 then
+            return
+        end
+        if _G.Ox.NoFog then
+            local v2332 = 0 - 0
+            local v2333
+            while true do
+                if v2332 == (0 + 0) then
+                    v1015.FogStart = 0
+                    v1015.FogEnd = 100000
+                    v2332 = 1020 - (829 + 190)
+                end
+                if v2332 == 2 then
+                    if v2333 then
+                        v2333.Density = 0 - 0
+                        v2333.Offset = 0 - 0
+                        v2333.Glare = 0
+                        v2333.Haze = 0
+                    end
+                    break
+                end
+                if v2332 == 1 then
+                    v1015.FogColor = Color3.fromRGB(352 - 97, 633 - 378, 61 + 194)
+                    v2333 = v1015:FindFirstChildOfClass("Atmosphere")
+                    v2332 = 1 + 1
+                end
+            end
+        end
+    end
+    function ApplyNoShadow()
+        local v1016 = game:GetService("Lighting")
+        if not v1016 then
+            return
+        end
+        local v1017
+        if _G.Ox.NoShadow then
+            v1017 = false
+        else
+            v1017 = true
+        end
+        v1016.GlobalShadows = v1017
+    end
+    function ReapplyPerformance()
+        ApplyFullBright()
+        ApplyNoFog()
+        ApplyNoShadow()
+    end
+    function ReapplyPerformanceDelayed()
+        task.spawn(function()
+            local v2008 = 0 - 0
+            while true do
+                if v2008 == (0 + 0) then
+                    ReapplyPerformance()
+                    task.wait(1.2)
+                    v2008 = 614 - (520 + 93)
+                end
+                if v2008 == 3 then
+                    ReapplyPerformance()
+                    break
+                end
+                if v2008 == 1 then
+                    ReapplyPerformance()
+                    task.wait(278 - (259 + 17))
+                    v2008 = 2
+                end
+                if v2008 == (1 + 1) then
+                    ReapplyPerformance()
+                    task.wait(2 + 1)
+                    v2008 = 10 - 7
+                end
+            end
+        end)
+    end
+    function StartLightingGuard()
+        if _G.Ox.LightingGuardConn then
+            return
+        end
+        local v1019 = 591 - (396 + 195)
+        _G.Ox.LightingGuardConn = RunService.Heartbeat:Connect(function()
+            if not _G.Ox.FullBright and not _G.Ox.NoFog and not _G.Ox.NoShadow then
+                return
+            end
+            local v2009 = tick()
+            if (v2009 - v1019) < (0.4 - 0) then
+                return
+            end
+            v1019 = v2009
+            ReapplyPerformance()
+        end)
+    end
+    function StopLightingGuard()
+        if _G.Ox.FullBright or _G.Ox.NoFog or _G.Ox.NoShadow then
+            return
+        end
+        if _G.Ox.LightingGuardConn then
+            _G.Ox.LightingGuardConn:Disconnect()
+            _G.Ox.LightingGuardConn = nil
+        end
+    end
+    if not _G.Ox.LightingChildConn then
+        _G.Ox.LightingChildConn = game:GetService("Lighting").ChildAdded:Connect(function(v2334)
+            if not _G.Ox.FullBright and not _G.Ox.NoFog then
+                return
+            end
+            task.defer(function()
+                if v2334:IsA("Atmosphere") and _G.Ox.NoFog then
+                    local v3084 = 1761 - (440 + 1321)
+                    while true do
+                        if (1829 - (1059 + 770)) == v3084 then
+                            v2334.Density = 0 - 0
+                            v2334.Offset = 545 - (424 + 121)
+                            v3084 = 1
+                        end
+                        if v3084 == (1 + 0) then
+                            v2334.Glare = 1347 - (641 + 706)
+                            v2334.Haze = 0
+                            break
+                        end
+                    end
+                end
+                ReapplyPerformance()
+            end)
+        end)
+    end
+    local function v165(v1020, v1021, v1022)
+        table.insert(_G.Ox.LowGFX.Saved, {
+            obj = v1020,
+            kind = v1021,
+            extra = v1022,
+        })
+    end
+    function LowGFX_ProcessOne(v1023)
+        if not _G.Ox.LowGFX.Enabled or not v1023 then
+            return
+        end
+        local v1024 = _G.Ox.LowGFX
+        if
+            v1024.Parts
+            and (v1023:IsA("BasePart") or v1023:IsA("UnionOperation") or v1023:IsA("MeshPart"))
+            and (v1023.Material ~= Enum.Material.SmoothPlastic)
+        then
+            local v2335 = 0 + 0
+            while true do
+                if v2335 == (440 - (249 + 191)) then
+                    v165(v1023, "Part", v1023.Material)
+                    v1023.Material = Enum.Material.SmoothPlastic
+                    break
+                end
+            end
+        end
+        if
+            v1024.Particles
+            and (v1023:IsA("ParticleEmitter") or v1023:IsA("Smoke") or v1023:IsA("Explosion") or v1023:IsA("Sparkles") or v1023:IsA(
+                "Fire"
+            ))
+            and (v1023.Enabled ~= false)
+        then
+            v165(v1023, "Particle", true)
+            v1023.Enabled = false
+        end
+        if
+            v1024.VisualEffects
+            and (v1023:IsA("BloomEffect") or v1023:IsA("BlurEffect") or v1023:IsA("DepthOfFieldEffect") or v1023:IsA(
+                "SunRaysEffect"
+            ) or v1023:IsA("ColorCorrectionEffect"))
+            and (v1023.Enabled ~= false)
+        then
+            v165(v1023, "VFX", true)
+            v1023.Enabled = false
+        end
+        if v1024.Sky and v1023:IsA("Sky") then
+            local v2338 = 0
+            while true do
+                if v2338 == (0 - 0) then
+                    v165(v1023, "Sky", v1023.Parent)
+                    v1023.Parent = nil
+                    break
+                end
+            end
+        end
+        if v1024.Textures and (v1023:IsA("Decal") or v1023:IsA("Texture")) and (v1023.Texture ~= "") then
+            local v2339 = 0 + 0
+            while true do
+                if v2339 == (0 - 0) then
+                    v165(v1023, "Texture", v1023.Texture)
+                    v1023.Texture = ""
+                    break
+                end
+            end
+        end
+    end
+    function ApplyLowGFX()
+        if not _G.Ox.LowGFX.Enabled then
+            return
+        end
+        local v1025 = {
+            workspace,
+            game:GetService("Lighting"),
+        }
+        local v1026, v1027, v1028 = ipairs(v1025)
+        local v1029 = v1028
+        local v1030 = v1026
+        local v1031 = v1027
+        while true do
+            local v2010, v2011 = v1030(v1031, v1029)
+            if v2010 == nil then
+                break
+            end
+            local v2012 = v2011:GetDescendants()
+            for v2340, v2341 in ipairs(v2012) do
+                if (v2340 % (980 - (434 + 296))) == 0 then
+                    task.wait()
+                end
+                LowGFX_ProcessOne(v2341)
+            end
+            v1029 = v2010
+        end
+    end
+    function RestoreLowGFX(v1032)
+        local v1033 = 0 - 0
+        local v1034
+        local v1035
+        while true do
+            if v1033 == (512 - (169 + 343)) then
+                v1034 = _G.Ox.LowGFX.Saved
+                v1035 = {}
+                v1033 = 1 + 0
+            end
+            if 1 == v1033 then
+                for v2825 = 1 - 0, #v1034 do
+                    local v2826 = v1034[v2825]
+                    local v2827 = v2826.obj
+                    local v2828 = v2826.kind == "Texture"
+                    local v2829 = (v2828 and "textures") or "graphics"
+                    local v2830 = (v1032 == nil) or (v2829 == v1032)
+                    if v2830 then
+                        if v2827 and v2827.Parent then
+                            pcall(function()
+                                if v2826.kind == "Part" then
+                                    v2827.Material = v2826.extra
+                                elseif (v2826.kind == "Particle") or (v2826.kind == "VFX") then
+                                    v2827.Enabled = v2826.extra
+                                elseif v2826.kind == "Texture" then
+                                    v2827.Texture = v2826.extra
+                                elseif (v2826.kind == "Sky") and v2826.extra then
+                                    v2827.Parent = v2826.extra
+                                end
+                            end)
+                        end
+                    else
+                        table.insert(v1035, v2826)
+                    end
+                end
+                _G.Ox.LowGFX.Saved = v1035
+                break
+            end
+        end
+    end
+    function ToggleLowGFX(v1036, v1037)
+        local v1038 = _G.Ox.LowGFX
+        if v1037 == "textures" then
+            v1038.Textures = v1036
+        elseif v1037 == "graphics" then
+            v1038.Particles = v1036
+            v1038.VisualEffects = v1036
+            v1038.Parts = v1036
+            v1038.Sky = v1036
+        else
+            local v2835 = 0 - 0
+            while true do
+                if v2835 == (1 + 0) then
+                    v1038.VisualEffects = v1036
+                    v1038.Parts = v1036
+                    break
+                end
+                if v2835 == (0 - 0) then
+                    v1038.Textures = v1036
+                    v1038.Particles = v1036
+                    v2835 = 1124 - (651 + 472)
+                end
+            end
+        end
+        v1038.Enabled = v1038.Textures or v1038.Particles or v1038.VisualEffects or v1038.Parts or v1038.Sky
+        if v1036 then
+            task.spawn(ApplyLowGFX)
+        else
+            RestoreLowGFX(v1037)
+        end
+        v1:Notify({
+            Title = ((v1037 == "textures") and "Remove Texture") or "Low Graphics",
+            Description = (v1036 and "AKTIF") or "NONAKTIF",
+            Duration = 2 + 0,
+        })
+    end
+    if not _G.Ox.LowGFX.StreamConn then
+        _G.Ox.LowGFX.StreamConn = workspace.DescendantAdded:Connect(function(v2343)
+            if not _G.Ox.LowGFX.Enabled then
+                return
+            end
+            task.defer(function()
+                LowGFX_ProcessOne(v2343)
+            end)
+        end)
+    end
+    function CreateSpectatorUI()
+        if _G.Ox.Spectator.Gui then
+            local v2344 = 0
+            while true do
+                if v2344 == (0 + 0) then
+                    _G.Ox.Spectator.Gui:Destroy()
+                    _G.Ox.Spectator.Gui = nil
+                    break
+                end
+            end
+        end
+        _G.Ox.Spectator.Gui = Instance.new("ScreenGui")
+        _G.Ox.Spectator.Gui.Name = "SpectatorCounter"
+        _G.Ox.Spectator.Gui.ResetOnSpawn = false
+        _G.Ox.Spectator.Gui.Parent = localPlayer:WaitForChild("PlayerGui")
+        local v1040 = Instance.new("Frame")
+        v1040.Name = "MainBox"
+        v1040.AnchorPoint = Vector2.new(0.5, 1 - 0)
+        v1040.Position = UDim2.new(0.5, 0, 0, -10)
+        v1040.Size = UDim2.new(0, 68, 0, 505 - (397 + 86))
+        v1040.BackgroundColor3 = Color3.fromRGB(892 - (423 + 453), 2 + 14, 3 + 15)
+        v1040.BackgroundTransparency = 0.25
+        v1040.BorderSizePixel = 0 + 0
+        v1040.Parent = _G.Ox.Spectator.Gui
+        Instance.new("UICorner", v1040).CornerRadius = UDim.new(0, 8)
+        local v1050 = Instance.new("UIGradient")
+        v1050.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 1 + 0),
+            NumberSequenceKeypoint.new(0.3, 0.4 + 0),
+            NumberSequenceKeypoint.new(1 + 0, 1 + 0),
+        })
+        v1050.Parent = v1040
+        local v1053 = Instance.new("UIListLayout", v1040)
+        v1053.FillDirection = Enum.FillDirection.Horizontal
+        v1053.HorizontalAlignment = Enum.HorizontalAlignment.Center
+        v1053.VerticalAlignment = Enum.VerticalAlignment.Center
+        v1053.Padding = UDim.new(0 - 0, 5 + 1)
+        local v1061 = Instance.new("ImageLabel", v1040)
+        v1061.Size = UDim2.new(0, 15, 0, 15)
+        v1061.BackgroundTransparency = 1
+        v1061.Image = "rbxassetid://13321848320"
+        v1061.ImageColor3 = Color3.fromRGB(225, 821 - (157 + 439), 225)
+        _G.Ox.Spectator.Label = Instance.new("TextLabel", v1040)
+        _G.Ox.Spectator.Label.BackgroundTransparency = 1 - 0
+        _G.Ox.Spectator.Label.Font = Enum.Font.GothamMedium
+        _G.Ox.Spectator.Label.Text = "0"
+        _G.Ox.Spectator.Label.TextColor3 = Color3.fromRGB(240, 240, 797 - 557)
+        _G.Ox.Spectator.Label.TextSize = 13
+        _G.Ox.Spectator.Label.AutomaticSize = Enum.AutomaticSize.X
+    end
+    function UpdateSpectatorCount()
+        local v1068 = 0
+        local v1069
+        local v1070
+        local v1071
+        while true do
+            if v1068 == (0 - 0) then
+                if not _G.Ox.Spectator.Enabled or not _G.Ox.Spectator.Label then
+                    return
+                end
+                v1069 = 918 - (782 + 136)
+                v1068 = 856 - (112 + 743)
+            end
+            if 3 == v1068 then
+                if v1071 then
+                    local v3089 = UDim2.new
+                    local v3090 = ((v1069 >= (1181 - (1026 + 145))) and (2 + 6)) or (718 - (493 + 225))
+                    local v3091 = (202 - 147) + v3090
+                    local v3092 = ((v1069 >= 100) and 8) or 0
+                    v1071.Size = v3089(0 + 0, v3091 + v3092, 0 - 0, 22)
+                end
+                break
+            end
+            if v1068 == 1 then
+                for v2836, v2837 in ipairs(Players:GetPlayers()) do
+                    if v2837.Team and (v2837.Team.Name == "Spectator") then
+                        v1069 = v1069 + 1 + 0
+                    end
+                end
+                _G.Ox.Spectator.Label.Text = tostring(v1069)
+                v1068 = 2
+            end
+            if (5 - 3) == v1068 then
+                v1070 = _G.Ox.Spectator.Gui
+                v1071 = v1070 and _G.Ox.Spectator.Gui:FindFirstChild("MainBox")
+                v1068 = 1 + 2
+            end
+        end
+    end
+    function StartSpectatorInfo()
+        local v1072 = 0 - 0
+        while true do
+            if v1072 == 1 then
+                CreateSpectatorUI()
+                UpdateSpectatorCount()
+                v1072 = 1597 - (210 + 1385)
+            end
+            if v1072 == (1689 - (1201 + 488)) then
+                if _G.Ox.Spectator.Enabled then
+                    return
+                end
+                _G.Ox.Spectator.Enabled = true
+                v1072 = 1 + 0
+            end
+            if v1072 == 2 then
+                task.spawn(function()
+                    while _G.Ox.Spectator.Enabled do
+                        UpdateSpectatorCount()
+                        task.wait(1.2)
+                    end
+                end)
+                v1:Notify({
+                    Title = "Spectator Info",
+                    Description = "âœ… Display aktif di pojok atas",
+                    Duration = 5 - 2,
+                })
+                break
+            end
+        end
+    end
+    function StopSpectatorInfo()
+        local v1073 = 0 - 0
+        while true do
+            if v1073 == (586 - (352 + 233)) then
+                v1:Notify({
+                    Title = "Spectator Info",
+                    Description = "Display dimatikan",
+                    Duration = 2,
+                })
+                break
+            end
+            if v1073 == (0 - 0) then
+                _G.Ox.Spectator.Enabled = false
+                if _G.Ox.Spectator.Gui then
+                    _G.Ox.Spectator.Gui:Destroy()
+                    _G.Ox.Spectator.Gui = nil
+                    _G.Ox.Spectator.Label = nil
+                end
+                v1073 = 1 + 0
+            end
+        end
+    end
+    function fn4(v1074)
+        if v1074 then
+            StartSpectatorInfo()
+        else
+            StopSpectatorInfo()
+        end
+    end
+    function ScanMapESP(v1075)
+        fn2(v1075)
+    end
+    function ForceRefreshMap()
+        fn2(true)
+        if _G.Ox.ESPConfig.Master then
+            ClearAllESP()
+            task.wait(0.1 - 0)
+            UpdatePlayerESP()
+            UpdateSCPESP()
+            UpdateStaticESP()
+        end
+    end
+    task.spawn(function()
+        local v1076 = 574 - (489 + 85)
+        while true do
+            if v1076 == (1502 - (277 + 1224)) then
+                if _G.Ox.SetupTrapWatcher then
+                    pcall(_G.Ox.SetupTrapWatcher)
+                end
+                break
+            end
+            if v1076 == 0 then
+                task.wait(1495 - (663 + 830))
+                ScanMapESP()
+                v1076 = 1 + 0
+            end
+        end
+    end)
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(2.5 - 1)
+        ScanMapESP()
+        if _G.Ox.SetupTrapWatcher then
+            pcall(_G.Ox.SetupTrapWatcher)
+        end
+        if _G.Ox.RefreshAllTrapESP then
+            pcall(_G.Ox.RefreshAllTrapESP)
+        end
+        if _G.Ox.ESPConfig.Master then
+            task.spawn(function()
+                local v2618 = 875 - (461 + 414)
+                while true do
+                    if v2618 == (1 + 1) then
+                        UpdateSCPESP()
+                        UpdateStaticESP()
+                        break
+                    end
+                    if v2618 == (0 + 0) then
+                        task.wait(0.5 + 0)
+                        ClearAllESP()
+                        v2618 = 1
+                    end
+                    if v2618 == (1 + 0) then
+                        task.wait(250.2 - (172 + 78))
+                        UpdatePlayerESP()
+                        v2618 = 2 - 0
+                    end
+                end
+            end)
+        end
+    end)
+    workspace.ChildAdded:Connect(function(v1077)
+        if v1077.Name == "Map" then
+            local v2345 = 0
+            while true do
+                if v2345 == (0 + 0) then
+                    task.wait(1 - 0)
+                    ScanMapESP(true)
+                    v2345 = 1
+                end
+                if v2345 == (1 + 1) then
+                    if _G.Ox.ESPConfig.Master then
+                        pcall(UpdatePlayerESP)
+                        pcall(UpdateSCPESP)
+                        pcall(UpdateStaticESP)
+                    end
+                    ReapplyPerformanceDelayed()
+                    v2345 = 3
+                end
+                if v2345 == 1 then
+                    if _G.Ox.SetupTrapWatcher then
+                        pcall(_G.Ox.SetupTrapWatcher)
+                    end
+                    if _G.Ox.RefreshAllTrapESP then
+                        pcall(_G.Ox.RefreshAllTrapESP)
+                    end
+                    v2345 = 1 + 1
+                end
+                if (4 - 1) == v2345 then
+                    if _G.Ox.LowGFX.Enabled then
+                        table.clear(_G.Ox.LowGFX.Saved)
+                        task.wait(1.5 - 0)
+                        ApplyLowGFX()
+                        task.wait(1.5 + 1)
+                        if _G.Ox.LowGFX.Enabled then
+                            ApplyLowGFX()
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end)
+    task.spawn(function()
+        while _G.Ox.ScriptAlive do
+            task.wait(23 + 17)
+            if _G.Ox.ESPConfig.Master then
+                ScanMapESP()
+                if _G.Ox.ESPConfig.Master then
+                    pcall(UpdateStaticESP)
+                    pcall(UpdatePlayerESP)
+                    pcall(UpdateSCPESP)
+                end
+            end
+        end
+    end)
+    local function v166()
+        local v1078 = 0 + 0
+        local v1079
+        local v1080
+        local v1081
+        local v1082
+        local v1083
+        while true do
+            if v1078 == (3 - 2) then
+                v1081 = v1080:FindFirstChild("Controls")
+                if not v1081 then
+                    return nil
+                end
+                v1082 = v1081:FindFirstChild("sprint")
+                if not v1082 then
+                    return nil
+                end
+                v1078 = 4 - 2
+            end
+            if v1078 == (0 + 0) then
+                v1079 = localPlayer:FindFirstChild("PlayerGui")
+                if not v1079 then
+                    return nil
+                end
+                v1080 = v1079:FindFirstChild("Survivor-mob")
+                if not v1080 then
+                    return nil
+                end
+                v1078 = 1 + 0
+            end
+            if v1078 == (450 - (133 + 314)) then
+                if v1082.Parent and v1082.Parent:IsA("GuiButton") then
+                    return v1082.Parent
+                end
+                return v1082
+            end
+            if v1078 == (1 + 1) then
+                if v1082:IsA("GuiButton") then
+                    return v1082
+                end
+                v1083 = v1082:FindFirstChild("icon")
+                if v1083 and v1083:IsA("GuiButton") then
+                    return v1083
+                end
+                if v1083 and v1083.Parent and v1083.Parent:IsA("GuiButton") then
+                    return v1083.Parent
+                end
+                v1078 = 216 - (199 + 14)
+            end
+        end
+    end
+    local function v167()
+        local v1084 = v166()
+        if not v1084 then
+            return false
+        end
+        pcall(function()
+            if type(firesignal) == "function" then
+                firesignal(v1084.MouseButton1Click)
+                firesignal(v1084.MouseButton1Down)
+                task.wait(0.04 - 0)
+                firesignal(v1084.MouseButton1Up)
+            else
+                local v2619 = v1084.AbsolutePosition
+                local v2620 = v1084.AbsoluteSize
+                local v2621 = v128:GetGuiInset()
+                local v2622 = v2619.X + (v2620.X / (1551 - (647 + 902))) + v2621.X
+                local v2623 = v2619.Y + (v2620.Y / 2) + v2621.Y
+                VirtualInputManager:SendTouchEvent(29771 - 19870, 233 - (85 + 148), v2622, v2623)
+                task.wait(0.04)
+                VirtualInputManager:SendTouchEvent(11190 - (426 + 863), 9 - 7, v2622, v2623)
+            end
+        end)
+        return true
+    end
+    local function v168()
+        local v1085 = localPlayer.Character
+        if not v1085 then
+            return false
+        end
+        local v1086 = v1085:FindFirstChildOfClass("Humanoid")
+        if not v1086 then
+            return false
+        end
+        if v1086.MoveDirection.Magnitude > (1654.12 - (873 + 781)) then
+            return true
+        end
+        local v1087 = v1085:FindFirstChild("HumanoidRootPart")
+        if v1087 then
+            local v2346 = 0 - 0
+            local v2347
+            while true do
+                if v2346 == (0 - 0) then
+                    v2347 = v1087.AssemblyLinearVelocity
+                    if Vector3.new(v2347.X, 0 + 0, v2347.Z).Magnitude > (3.5 - 2) then
+                        return true
+                    end
+                    break
+                end
+            end
+        end
+        return false
+    end
+    local function v169()
+        local v1088 = localPlayer.Character
+        if not v1088 then
+            return false
+        end
+        local v1089 = (v1088:GetAttribute("Crouching") == true) or (v1088:GetAttribute("Crouchingserver") == true)
+        return v1089
+    end
+    local function v170()
+        local v1090 = localPlayer.Character
+        if not v1090 then
+            return false
+        end
+        local v1091 = (v1090:GetAttribute("Sprinting") == true) or (v1090:GetAttribute("IsRunning") == true)
+        return v1091
+    end
+    function fn5()
+        if _G.Ox.AutoRun.MobileThread then
+            return
+        end
+        _G.Ox.AutoRun.MobileThread = task.spawn(function()
+            local v2013 = 0 - 0
+            while true do
+                if v2013 == (0 - 0) then
+                    while _G.Ox.AutoRun.Mobile do
+                        local v3095 = v168()
+                        local v3096 = v169()
+                        local v3097 = v170()
+                        if v3096 then
+                            if v3097 then
+                                v167()
+                            end
+                        elseif v3095 and not v3097 then
+                            v167()
+                        elseif not v3095 and v3097 then
+                            v167()
+                        end
+                        task.wait(1947.12 - (414 + 1533))
+                    end
+                    _G.Ox.AutoRun.MobileThread = nil
+                    break
+                end
+            end
+        end)
+    end
+    function fn6()
+        _G.Ox.AutoRun.Mobile = false
+        if _G.Ox.AutoRun.MobileThread then
+            local v2348 = 0 + 0
+            while true do
+                if v2348 == (555 - (443 + 112)) then
+                    task.cancel(_G.Ox.AutoRun.MobileThread)
+                    _G.Ox.AutoRun.MobileThread = nil
+                    break
+                end
+            end
+        end
+        if v170() then
+            v167()
+        end
+    end
+    task.spawn(function()
+        while _G.Ox.ScriptAlive do
+            task.wait(1479.1 - (888 + 591))
+            if not _G.Ox.ScriptAlive then
+                break
+            end
+            if not UserInputService.TouchEnabled and ((tick() - _G.Ox.lastActionTime) >= _G.Ox.COOLDOWN) then
+                local v2624 = 0
+                local v2625
+                local v2626
+                while true do
+                    if v2624 == (2 - 1) then
+                        if v2625 or v2626 then
+                            local v3654 = playerGui:FindFirstChild("pcprompts")
+                            local v3655 = v3654 and v3654:FindFirstChild("Frame")
+                            if v3655 then
+                                local v3841 = v3655:FindFirstChild("VaultPromptGui")
+                                local v3842 = v3655:FindFirstChild("PalletSlidePromptGui")
+                                local v3843 = v3841 and v3841.Visible
+                                local v3844 = v3842 and v3842.Visible
+                                if (v2625 and v3843) or (v2626 and v3844) then
+                                    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
+                                    task.wait(0.01 + 0)
+                                    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+                                    _G.Ox.lastActionTime = tick()
+                                end
+                            end
+                        end
+                        break
+                    end
+                    if (0 - 0) == v2624 then
+                        v2625 = _G.Ox.autoVaultEnabled
+                        v2626 = _G.Ox.autoPalletSlideEnabled
+                        v2624 = 1 + 0
+                    end
+                end
+            end
+        end
+    end)
+    local function v171()
+        if not UserInputService.TouchEnabled then
+            return
+        end
+        local v1092 = playerGui:FindFirstChild("Survivor-mob")
+        local v1093 = v1092 or playerGui:WaitForChild("Survivor-mob", 4 + 4)
+        if not v1093 then
+            return
+        end
+        local v1094 = v1093:FindFirstChild("Controls")
+        local v1095 = v1094 or v1093:WaitForChild("Controls", 1 + 4)
+        local v1096 = v1095
+        if v1095 then
+            local v2349 = v1095:FindFirstChild("action")
+            v1096 = v2349 or v1095:WaitForChild("action", 5)
+        end
+        if not v1096 then
+            return
+        end
+        local v1097 = {
+            vault = true,
+            palletvault = true,
+            palletslide = true,
+            slide = true,
+        }
+        local function v1098(v2014)
+            if not v2014:IsA("ImageLabel") and not v2014:IsA("ImageButton") then
+                return
+            end
+            local v2015 = v2014.Name:lower()
+            if not v1097[v2015] then
+                return
+            end
+            v2014:GetPropertyChangedSignal("Visible"):Connect(function()
+                if not v2014.Visible then
+                    return
+                end
+                if (tick() - _G.Ox.lastActionTime) < _G.Ox.COOLDOWN then
+                    return
+                end
+                local v2350 = v2015:find("vault")
+                local v2351 = v2350
+                if v2350 then
+                    if v2015:find("pallet") then
+                        v2351 = false
+                    else
+                        v2351 = true
+                    end
+                end
+                local v2352 = v2015:find("pallet")
+                local v2353 = v2352 or v2015:find("slide")
+                if (v2351 and _G.Ox.autoVaultEnabled) or (v2353 and _G.Ox.autoPalletSlideEnabled) then
+                    pcall(function()
+                        local v3098 = 0 - 0
+                        while true do
+                            if (0 - 0) == v3098 then
+                                firesignal(v1096.MouseButton1Down)
+                                task.wait(0.01)
+                                v3098 = 1679 - (136 + 1542)
+                            end
+                            if v3098 == 1 then
+                                firesignal(v1096.MouseButton1Up)
+                                break
+                            end
+                        end
+                    end)
+                    _G.Ox.lastActionTime = tick()
+                end
+            end)
+        end
+        for v2016, v2017 in pairs(v1096:GetChildren()) do
+            v1098(v2017)
+        end
+        v1096.ChildAdded:Connect(function(v2018)
+            task.wait()
+            v1098(v2018)
+        end)
+    end
+    task.spawn(v171)
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(6 - 4)
+        v171()
+    end)
+    playerGui.ChildAdded:Connect(function(v1099)
+        if v1099.Name == "Survivor-mob" then
+            task.wait(1 + 0)
+            v171()
+        end
+    end)
+    local function v172()
+        if not playerGui then
+            return nil
+        end
+        local v1100 = playerGui:FindFirstChild("Survivor-mob")
+        if not v1100 then
+            return nil
+        end
+        local v1101 = v1100:FindFirstChild("Controls")
+        if not v1101 then
+            return nil
+        end
+        local v1102 = v1101:FindFirstChild("action")
+        local v1103 = v1102 or v1101:FindFirstChild("check")
+        return v1103
+    end
+    local function v173()
+        local v1104 = 0
+        local v1105
+        while true do
+            if v1104 == (1 - 0) then
+                if v1105 and v1105:IsA("GuiObject") and v1105.Visible then
+                    local v3099 = 0
+                    while true do
+                        if v3099 == 0 then
+                            pcall(function()
+                                local v3732 = v1105.AbsolutePosition
+                                local v3733 = v1105.AbsoluteSize
+                                local v3734 = v128:GetGuiInset()
+                                local v3735 = 6385 + 2437 + math.random(1, 9999)
+                                VirtualInputManager:SendTouchEvent(
+                                    v3735,
+                                    486 - (68 + 418),
+                                    v3732.X + (v3733.X / 2) + v3734.X,
+                                    v3732.Y + (v3733.Y / (4 - 2)) + v3734.Y
+                                )
+                                task.wait(0.005)
+                                VirtualInputManager:SendTouchEvent(
+                                    v3735,
+                                    3 - 1,
+                                    v3732.X + (v3733.X / (2 + 0)) + v3734.X,
+                                    v3732.Y + (v3733.Y / 2) + v3734.Y
+                                )
+                            end)
+                            return true
+                        end
+                    end
+                end
+                pcall(function()
+                    local v2838 = 1092 - (770 + 322)
+                    while true do
+                        if v2838 == (0 + 0) then
+                            VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
+                            task.wait(0.005 + 0)
+                            v2838 = 1
+                        end
+                        if v2838 == (1 + 0) then
+                            VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+                            break
+                        end
+                    end
+                end)
+                v1104 = 2 - 0
+            end
+            if v1104 == (0 - 0) then
+                v1105 = v172()
+                if v1105 and v1105:IsA("GuiObject") and v1105.Visible and (type(firesignal) == "function") then
+                    local v3100 = 0 - 0
+                    while true do
+                        if v3100 == (0 - 0) then
+                            pcall(function()
+                                local v3736 = 0 + 0
+                                while true do
+                                    if (0 - 0) == v3736 then
+                                        firesignal(v1105.MouseButton1Down)
+                                        task.wait(0.005 + 0)
+                                        v3736 = 1
+                                    end
+                                    if v3736 == 1 then
+                                        firesignal(v1105.MouseButton1Up)
+                                        break
+                                    end
+                                end
+                            end)
+                            return true
+                        end
+                    end
+                end
+                v1104 = 1 + 0
+            end
+            if v1104 == 2 then
+                return true
+            end
+        end
+    end
+    _G.Ox.StartTrapSkillCheck = function()
+        if _G.Ox.Connections.TrapHeartbeat then
+            local v2354 = 0 + 0
+            while true do
+                if v2354 == 0 then
+                    _G.Ox.Connections.TrapHeartbeat:Disconnect()
+                    _G.Ox.Connections.TrapHeartbeat = nil
+                    break
+                end
+            end
+        end
+        _G.Ox.Connections.TrapHeartbeat = RunService.Heartbeat:Connect(function(v2019)
+            local v2020 = 0 - 0
+            local v2021
+            local v2022
+            local v2023
+            local v2024
+            local v2025
+            local v2026
+            while true do
+                if v2020 == (1 - 0) then
+                    v2024 = v2022 and v2022:FindFirstChild("TrapGoal")
+                    v2025 = v2022 and v2022:FindFirstChild("TrapPerfect")
+                    v2026 = (v2024 and v2024.Visible and v2024) or (v2025 and v2025.Visible and v2025)
+                    if not (v2022 and v2022.Visible and v2023 and v2026) then
+                        return
+                    end
+                    v2020 = 1 + 1
+                end
+                if v2020 == (9 - 7) then
+                    v2023.Rotation = v2026.Rotation + (360 - 251)
+                    _G.Ox.State.trapBusy = true
+                    task.spawn(function()
+                        local v3101 = 0 + 0
+                        while true do
+                            if 1 == v3101 then
+                                _G.Ox.State.trapBusy = false
+                                break
+                            end
+                            if v3101 == (0 - 0) then
+                                v173()
+                                task.wait(0.08)
+                                v3101 = 832 - (762 + 69)
+                            end
+                        end
+                    end)
+                    break
+                end
+                if v2020 == 0 then
+                    if not _G.Ox.Auto.TrapSkillCheck or _G.Ox.State.trapBusy then
+                        return
+                    end
+                    v2021 = playerGui:FindFirstChild("SkillCheckPromptGui")
+                    v2022 = v2021 and v2021:FindFirstChild("Check")
+                    v2023 = v2022 and v2022:FindFirstChild("Line")
+                    v2020 = 3 - 2
+                end
+            end
+        end)
+    end
+    function fn7()
+        if _G.Ox.Connections.SkillHeartbeat then
+            _G.Ox.Connections.SkillHeartbeat:Disconnect()
+            _G.Ox.Connections.SkillHeartbeat = nil
+        end
+        _G.Ox.Connections.SkillHeartbeat = RunService.Heartbeat:Connect(function()
+            local v2027 = 0 + 0
+            local v2028
+            local v2029
+            while true do
+                if v2027 == (2 + 0) then
+                    if v2029 and v2029.Visible then
+                        local v3289 = v2029:FindFirstChild("Line")
+                        local v3290 = v2029:FindFirstChild("Goal")
+                        if not v3289 or not v3290 then
+                            return
+                        end
+                        local v3291 = v2029:FindFirstChild("TrapGoal")
+                        local v3292 = v2029:FindFirstChild("TrapPerfect")
+                        if _G.Ox.Auto.TrapSkillCheck and ((v3291 and v3291.Visible) or (v3292 and v3292.Visible)) then
+                            return
+                        end
+                        if _G.Ox.Auto.SkillCheckMode == "Instant" then
+                            v3289.Rotation = v3290.Rotation + (263 - 154)
+                            _G.Ox.State.busy = true
+                            task.spawn(function()
+                                local v3737 = 0
+                                while true do
+                                    if v3737 == 0 then
+                                        v173()
+                                        task.wait(0.05 + 0)
+                                        v3737 = 1 + 0
+                                    end
+                                    if 1 == v3737 then
+                                        _G.Ox.State.busy = false
+                                        break
+                                    end
+                                end
+                            end)
+                        else
+                            local v3657 = 0
+                            local v3658
+                            local v3659
+                            local v3660
+                            local v3661
+                            local v3662
+                            while true do
+                                if v3657 == 3 then
+                                    if v3662 then
+                                        _G.Ox.State.busy = true
+                                        task.spawn(function()
+                                            v173()
+                                            task.wait(0.05)
+                                            _G.Ox.State.busy = false
+                                        end)
+                                    end
+                                    break
+                                end
+                                if v3657 == (0 - 0) then
+                                    v3658 = v3289.Rotation % 360
+                                    v3659 = v3290.Rotation % (517 - (8 + 149))
+                                    v3657 = 1
+                                end
+                                if (1321 - (1199 + 121)) == v3657 then
+                                    v3660 = (v3659 + 102) % 360
+                                    v3661 = (v3659 + (196 - 80)) % 360
+                                    v3657 = 4 - 2
+                                end
+                                if v3657 == 2 then
+                                    v3662 = nil
+                                    if v3661 < v3660 then
+                                        local v4063 = (v3660 <= v3658) or (v3658 <= v3661)
+                                        v3662 = v4063
+                                    else
+                                        local v4064 = (v3660 <= v3658) and (v3658 <= v3661)
+                                        v3662 = v4064
+                                    end
+                                    v3657 = 3
+                                end
+                            end
+                        end
+                        return
+                    end
+                    break
+                end
+                if (0 + 0) == v2027 then
+                    if not _G.Ox.Auto.SkillCheck or _G.Ox.State.busy then
+                        return
+                    end
+                    v2028 = playerGui:FindFirstChild("SkillCheckPromptGui")
+                    v2027 = 3 - 2
+                end
+                if v2027 == (2 - 1) then
+                    if not v2028 then
+                        return
+                    end
+                    v2029 = v2028:FindFirstChild("Check")
+                    v2027 = 2 + 0
+                end
+            end
+        end)
+    end
+    function getTargetPartObject(v1106)
+        local v1107 = 1807 - (518 + 1289)
+        local v1108
+        local v1109
+        while true do
+            if v1107 == 1 then
+                v1108 = v1106:FindFirstChild("Torso")
+                v1109 = v1108 or v1106:FindFirstChild("UpperTorso") or v1106:FindFirstChild("HumanoidRootPart")
+                v1107 = 2
+            end
+            if v1107 == (2 - 0) then
+                return v1109
+            end
+            if v1107 == (0 + 0) then
+                if _G.Ox.AimConfig.AIM_TargetPart == "Head" then
+                    return v1106:FindFirstChild("Head")
+                end
+                if
+                    (_G.Ox.AimConfig.AIM_TargetPart == "Root") or (_G.Ox.AimConfig.AIM_TargetPart == "HumanoidRootPart")
+                then
+                    return v1106:FindFirstChild("HumanoidRootPart")
+                end
+                v1107 = 1
+            end
+        end
+    end
+    function getClosestSurvivor()
+        local v1110 = localPlayer.Character
+        local v1111 = v1110 and v1110:FindFirstChild("HumanoidRootPart")
+        if not v1111 then
+            return nil
+        end
+        local v1112 = _G.Ox.AimConfig.Veil_FOV
+        local v1113 = nil
+        local v1114 = workspace.CurrentCamera
+        local v1115 = Vector2.new(v1114.ViewportSize.X / (2 - 0), v1114.ViewportSize.Y / 2)
+        for v2030, v2031 in ipairs(Players:GetPlayers()) do
+            if (v2031 ~= localPlayer) and v2031.Team and (v2031.Team.Name == "Survivors") and v2031.Character then
+                local v2627 = v2031.Character
+                local v2628 = v2627:FindFirstChildOfClass("Humanoid")
+                local v2629 = getTargetPartObject(v2627)
+                if
+                    v2628
+                    and (v2628.Health > (0 + 0))
+                    and v2629
+                    and ((v2629.Position - v1111.Position).Magnitude <= _G.Ox.AimConfig.SPEAR_MaxDist)
+                then
+                    local v3102, v3103 = v1114:WorldToViewportPoint(v2629.Position)
+                    if v3103 then
+                        local v3405 = 0
+                        local v3406
+                        while true do
+                            if v3405 == (469 - (304 + 165)) then
+                                v3406 = (Vector2.new(v3102.X, v3102.Y) - v1115).Magnitude
+                                if v3406 <= v1112 then
+                                    v1112 = v3406
+                                    v1113 = v2629
+                                end
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        return v1113
+    end
+    function getBestAimbotTarget()
+        local v1116 = nil
+        local v1117 = GetRole()
+        local v1118 = _G.Ox.Config.Surv_Aimbot_Radius
+        local v1119 = math.huge
+        local v1120 = Vector2.new(currentCamera.ViewportSize.X / (2 + 0), currentCamera.ViewportSize.Y / 2)
+        for v2032, v2033 in ipairs(Players:GetPlayers()) do
+            if (v2033 ~= localPlayer) and v2033.Character and v2033.Character:FindFirstChild("HumanoidRootPart") then
+                local v2630 = false
+                if (v1117 == "Survivor") and _G.Ox.Config.Surv_Aimbot_Enabled and IsKiller(v2033) then
+                    v2630 = true
+                elseif (v1117 == "Killer") and _G.Ox.Config.Killer_Aimbot_Enabled and not IsKiller(v2033) then
+                    local v3407 = 160 - (54 + 106)
+                    local v3408
+                    while true do
+                        if v3407 == (1969 - (1618 + 351)) then
+                            v3408 = v2033.Character:FindFirstChild("Humanoid")
+                            if v3408 and (v3408.Health > (0 + 0)) and not IsDowned(v2033.Character) then
+                                v2630 = true
+                            end
+                            break
+                        end
+                    end
+                end
+                if v2630 then
+                    local v3104 = 1016 - (10 + 1006)
+                    local v3105
+                    local v3106
+                    while true do
+                        if v3104 == (1 + 0) then
+                            if (v1117 == "Survivor") and (v3106 <= _G.Ox.Config.Surv_Aimbot_MaxDist) then
+                                local v3846 = 0 + 0
+                                local v3847
+                                local v3848
+                                while true do
+                                    if v3846 == (0 - 0) then
+                                        v3847, v3848 = currentCamera:WorldToViewportPoint(v3105.Position)
+                                        if v3848 then
+                                            local v4167 = (Vector2.new(v3847.X, v3847.Y) - v1120).Magnitude
+                                            if v4167 < v1118 then
+                                                v1118 = v4167
+                                                v1116 = v3105
+                                            end
+                                        end
+                                        break
+                                    end
+                                end
+                            elseif
+                                (v1117 == "Killer")
+                                and (v3106 <= _G.Ox.Config.Killer_Aimbot_MaxDist)
+                                and (v3106 < v1119)
+                            then
+                                v1119 = v3106
+                                v1116 = v3105
+                            end
+                            break
+                        end
+                        if v3104 == (1033 - (912 + 121)) then
+                            v3105 = v2033.Character.HumanoidRootPart
+                            v3106 = GetDistance(v3105.Position)
+                            v3104 = 1 + 0
+                        end
+                    end
+                end
+            end
+        end
+        return v1116
+    end
+    function getBestKillerAimbotTarget()
+        local v1121 = nil
+        local v1122 = math.huge
+        local v1123 = localPlayer.Character
+        local v1124 = v1123 and v1123:FindFirstChild("HumanoidRootPart")
+        if not v1124 then
+            return nil
+        end
+        for v2034, v2035 in ipairs(Players:GetPlayers()) do
+            if (v2035 ~= localPlayer) and v2035.Team and (v2035.Team.Name == "Survivors") and v2035.Character then
+                local v2631 = 1289 - (1140 + 149)
+                local v2632
+                local v2633
+                while true do
+                    if v2631 == (1 + 0) then
+                        if v2632 and (v2632.Health > 0) and v2633 and not IsDowned(v2035.Character) then
+                            local v3664 = (v2633.Position - v1124.Position).Magnitude
+                            if (v3664 < v1122) and (v3664 <= _G.Ox.Config.Killer_Aimbot_MaxDist) then
+                                v1122 = v3664
+                                v1121 = v2633
+                            end
+                        end
+                        break
+                    end
+                    if v2631 == (0 - 0) then
+                        v2632 = v2035.Character:FindFirstChildOfClass("Humanoid")
+                        v2633 = v2035.Character:FindFirstChild("HumanoidRootPart")
+                        v2631 = 1
+                    end
+                end
+            end
+        end
+        return v1121
+    end
+    function getKillerTargetForFlash()
+        local v1125 = nil
+        local v1126 = math.huge
+        local v1127 = localPlayer.Character
+        local v1128 = v1127 and v1127:FindFirstChild("HumanoidRootPart")
+        if not v1128 then
+            return nil
+        end
+        for v2036, v2037 in ipairs(Players:GetPlayers()) do
+            if (v2037 ~= localPlayer) and v2037.Team and (v2037.Team.Name == "Killer") and v2037.Character then
+                local v2634 = v2037.Character:FindFirstChildOfClass("Humanoid")
+                local v2635 = v2037.Character:FindFirstChild("HumanoidRootPart")
+                if v2634 and (v2634.Health > 0) and v2635 and not IsDowned(v2037.Character) then
+                    local v3107 = 0 + 0
+                    local v3108
+                    while true do
+                        if v3107 == (0 - 0) then
+                            v3108 = (v2635.Position - v1128.Position).Magnitude
+                            if v3108 < v1126 then
+                                v1126 = v3108
+                                v1125 = v2635
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        return v1125
+    end
+    function NEX_UpdateCureFlaskLaser()
+        local v1129 = localPlayer.Character
+        if not v1129 then
+            return
+        end
+        local v1130 = nil
+        local v1131 = nil
+        local v1132 = nil
+        local v1133 = math.huge
+        local v1134 = v1129:FindFirstChild("HumanoidRootPart")
+        if v1134 then
+            local v2355 = 0 - 0
+            local v2356
+            local v2357
+            local v2358
+            while true do
+                if 2 == v2355 then
+                    for v3293, v3294 in pairs(Players:GetPlayers()) do
+                        if
+                            (v3294 ~= localPlayer)
+                            and v3294.Character
+                            and v3294.Character:FindFirstChild("HumanoidRootPart")
+                            and not IsKiller(v3294)
+                        then
+                            local v3666 = (v3294.Character.HumanoidRootPart.Position - v1134.Position).Magnitude
+                            if v3666 < v1133 then
+                                v1133 = v3666
+                                v1132 = v3294
+                            end
+                        end
+                    end
+                    break
+                end
+                if v2355 == (0 + 0) then
+                    v2356 = v1129:FindFirstChild("LeftHand")
+                    v2357 = v2356 or v1129:FindFirstChild("Left Arm")
+                    v2355 = 1
+                end
+                if v2355 == (3 - 2) then
+                    v2358 = (v2357 and v2357.Position) or v1134.Position
+                    v1131 = v2358
+                    v2355 = 2
+                end
+            end
+        end
+        if v1132 then
+            v1130 = v1132.Character.HumanoidRootPart.Position
+        end
+        local v1135 = false
+        for v2038, v2039 in pairs(v1129:GetChildren()) do
+            if v2039:IsA("LocalScript") and (v2039:GetAttribute("action") == true) then
+                v1135 = true
+                break
+            end
+        end
+        if v1131 and v1130 and v1135 then
+            if not _G.Ox.NEX_CureFlaskLaserPart then
+                local v2840 = 186 - (165 + 21)
+                local v2841
+                while true do
+                    if (112 - (61 + 50)) == v2840 then
+                        v2841.CanTouch = false
+                        v2841.CastShadow = false
+                        v2841.Material = Enum.Material.Neon
+                        v2841.Color = Color3.fromRGB(255, 21 + 29, 238 - 188)
+                        v2840 = 3 - 1
+                    end
+                    if v2840 == (0 + 0) then
+                        v2841 = Instance.new("Part")
+                        v2841.Name = "FlaskSilentAimLaser"
+                        v2841.Anchored = true
+                        v2841.CanCollide = false
+                        v2840 = 1461 - (1295 + 165)
+                    end
+                    if v2840 == (1 + 1) then
+                        v2841.Transparency = 0 + 0
+                        v2841.Parent = workspace
+                        _G.Ox.NEX_CureFlaskLaserPart = v2841
+                        break
+                    end
+                end
+            end
+            local v2360 = (v1130 - v1131).Magnitude
+            if v2360 > 0.1 then
+                local v2842 = 0
+                local v2843
+                while true do
+                    if v2842 == (1397 - (819 + 578)) then
+                        v2843 = _G.Ox.NEX_CureFlaskLaserPart
+                        v2843.Size = Vector3.new(1402.16 - (331 + 1071), 743.16 - (588 + 155), v2360)
+                        v2842 = 1283 - (546 + 736)
+                    end
+                    if v2842 == (1938 - (1834 + 103)) then
+                        v2843.CFrame = CFrame.new((v1131 + v1130) / (2 + 0), v1130)
+                        v2843.Transparency = 0 - 0
+                        break
+                    end
+                end
+            end
+        elseif _G.Ox.NEX_CureFlaskLaserPart then
+            _G.Ox.NEX_CureFlaskLaserPart.Transparency = 1767 - (1536 + 230)
+        end
+    end
+    function NEX_StartCureFlaskLaser()
+        local v1136 = 491 - (128 + 363)
+        while true do
+            if v1136 == 0 then
+                if _G.Ox.NEX_CureFlaskLaserThread then
+                    return
+                end
+                _G.Ox.NEX_CureFlaskLaserThread = RunService.RenderStepped:Connect(function()
+                    local v2844 = 0 + 0
+                    while true do
+                        if v2844 == (0 - 0) then
+                            if not _G.Ox.KILLER_FlaskLaser then
+                                local v3738 = 0 + 0
+                                while true do
+                                    if v3738 == (1 - 0) then
+                                        return
+                                    end
+                                    if v3738 == (0 - 0) then
+                                        if _G.Ox.NEX_CureFlaskLaserPart then
+                                            pcall(function()
+                                                _G.Ox.NEX_CureFlaskLaserPart:Destroy()
+                                            end)
+                                            _G.Ox.NEX_CureFlaskLaserPart = nil
+                                        end
+                                        if _G.Ox.NEX_CureFlaskLaserThread then
+                                            _G.Ox.NEX_CureFlaskLaserThread:Disconnect()
+                                            _G.Ox.NEX_CureFlaskLaserThread = nil
+                                        end
+                                        v3738 = 1
+                                    end
+                                end
+                            end
+                            pcall(NEX_UpdateCureFlaskLaser)
+                            break
+                        end
+                    end
+                end)
+                break
+            end
+        end
+    end
+    function setupSpearInterceptor()
+        if v159 then
+            return
+        end
+        if not getrawmetatable or not setreadonly then
+            return
+        end
+        local v1137 = nil
+        pcall(function()
+            v1137 = ReplicatedStorage.Remotes.Killers.Veil.Spearthrow
+        end)
+        local v1138 = ReplicatedStorage:FindFirstChild("Remotes")
+        local v1139 = v1138
+            and ReplicatedStorage.Remotes:FindFirstChild("Mechanics")
+            and ReplicatedStorage.Remotes.Mechanics:FindFirstChild("Fall")
+        local function v1140(v2041, v2042, v2043, v2044)
+            local v2045 = 0 - 0
+            local v2046
+            local v2047
+            local v2048
+            local v2049
+            local v2050
+            local v2051
+            while true do
+                if v2045 == (2 + 0) then
+                    if v2048 < 0 then
+                        v2049 = 1009 - (615 + 394)
+                    end
+                    v2050 = (v2047 - math.sqrt(v2049)) / (v2042 * v2046)
+                    v2045 = 3 + 0
+                end
+                if v2045 == (0 + 0) then
+                    v2046 = math.max(v2043, 0.1 - 0)
+                    v2047 = v2041 * v2041
+                    v2045 = 1
+                end
+                if (13 - 10) == v2045 then
+                    v2051 = math.atan(v2050)
+                    return v2051, v2046 / (v2041 * math.cos(v2051))
+                end
+                if v2045 == (652 - (59 + 592)) then
+                    v2048 = (v2047 * v2047) - (v2042 * ((v2042 * v2046 * v2046) + (2 * v2044 * v2047)))
+                    v2049 = v2048
+                    v2045 = 4 - 2
+                end
+            end
+        end
+        local v1141 = getrawmetatable(game)
+        setreadonly(v1141, false)
+        local v1142 = v1141.__namecall
+        v1141.__namecall = newcclosure(function(v2052, ...)
+            local v2053 = 0 - 0
+            local v2054
+            local v2055
+            while true do
+                if v2053 == (1 + 0) then
+                    if v2055 and not checkcaller() and (typeof(v2052) == "Instance") then
+                        if _G.Ox.NoFall.Enabled and v1139 and (v2052 == v1139) then
+                            local v3667 = 171 - (70 + 101)
+                            local v3668
+                            while true do
+                                if v3667 == (2 - 1) then
+                                    return v1142(v2052, unpack(v3668))
+                                end
+                                if v3667 == 0 then
+                                    v3668 = {
+                                        ...,
+                                    }
+                                    v3668[2 - 1] = 0
+                                    v3667 = 242 - (123 + 118)
+                                end
+                            end
+                        end
+                        if
+                            _G.Ox.AntiBlindEnabled
+                            and _G.Ox.GotBlindedRemote
+                            and (v2052 == _G.Ox.GotBlindedRemote)
+                            and localPlayer.Team
+                            and (localPlayer.Team.Name == "Killer")
+                        then
+                            return nil
+                        end
+                        if _G.Ox.BulletBlockConfig.Enabled and (v2052.Name == "Fire") then
+                            local v3669 = 0 + 0
+                            local v3670
+                            while true do
+                                if v3669 == 0 then
+                                    v3670 = v2052.Parent
+                                    if v3670 and (v3670.Name == "Twist of Fate") then
+                                        return nil
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                        if _G.Ox.KILLER_SilentAimFlask and (v2052.Name == "ThrowFlask") then
+                            local v3671 = {
+                                ...,
+                            }
+                            local v3672 = nil
+                            local v3673 = math.huge
+                            local v3674 = localPlayer.Character
+                            local v3675 = v3674
+                                and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+                                and localPlayer.Character.HumanoidRootPart.Position
+                            if v3675 then
+                                for v3968, v3969 in pairs(Players:GetPlayers()) do
+                                    if
+                                        (v3969 ~= localPlayer)
+                                        and v3969.Character
+                                        and v3969.Character:FindFirstChild("HumanoidRootPart")
+                                        and not IsKiller(v3969)
+                                    then
+                                        local v4065 = (v3969.Character.HumanoidRootPart.Position - v3675).Magnitude
+                                        if v4065 < v3673 then
+                                            local v4168 = 1399 - (653 + 746)
+                                            while true do
+                                                if v4168 == (0 - 0) then
+                                                    v3673 = v4065
+                                                    v3672 = v3969
+                                                    break
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                            end
+                            if v3672 and v3671[2 - 0] and (typeof(v3671[5 - 3]) == "Vector3") then
+                                v3671[1 + 0] = (v3672.Character.HumanoidRootPart.Position - v3671[2]).Unit
+                                setnamecallmethod(v2054)
+                                return v1142(v2052, unpack(v3671))
+                            end
+                        end
+                        if
+                            (v2054 == "FireServer")
+                            and (typeof(v2052) == "Instance")
+                            and (string.lower(tostring(v2052.Name)) == "updatecharacterlook")
+                        then
+                            local v3676 = _G.Ox
+                            local v3677 = v3676 and _G.Ox.Utility and _G.Ox.Utility.InvisEnabled
+                            if v3677 then
+                                local v3851 = 0 + 0
+                                local v3852
+                                while true do
+                                    if v3851 == (1 + 0) then
+                                        return v1142(v2052, unpack(v3852))
+                                    end
+                                    if v3851 == 0 then
+                                        v3852 = {}
+                                        for v4097, v4098 in ipairs({
+                                            ...,
+                                        }) do
+                                            if typeof(v4098) == "CFrame" then
+                                                v3852[v4097] = v4098 * CFrame.new(0 + 0, 5000, 0)
+                                            else
+                                                v3852[v4097] = v4098
+                                            end
+                                        end
+                                        v3851 = 2 - 1
+                                    end
+                                end
+                            end
+                        end
+                        if
+                            (v2052.ClassName == "RemoteEvent")
+                            and (v2052.Name == "Spearthrow")
+                            and _G.Ox.AimConfig.Aim_SilentVeilV2
+                            and not v158
+                        then
+                            local v3678 = localPlayer.Character
+                            local v3679 = v3678 and v3678:FindFirstChild("HumanoidRootPart")
+                            local v3680 = v3678
+                            if v3678 then
+                                local v3853 = v3678:FindFirstChild("Head")
+                                v3680 = v3853 or v3679
+                            end
+                            local v3681 = v3678 and (v3678:GetAttribute("special") == true)
+                            local v3682, v3683
+                            if v3681 then
+                                local v3854 = 0 + 0
+                                local v3855
+                                local v3856
+                                local v3857
+                                local v3858
+                                while true do
+                                    if v3854 == (1 - 0) then
+                                        v3682 = v3856
+                                        v3857 = _G.Ox.AimConfig.SPEAR_AuraGravity
+                                        v3854 = 1236 - (885 + 349)
+                                    end
+                                    if v3854 == (0 + 0) then
+                                        v3855 = _G.Ox.AimConfig.SPEAR_AuraSpeed
+                                        v3856 = v3855 or (449 - 284)
+                                        v3854 = 2 - 1
+                                    end
+                                    if v3854 == (970 - (915 + 53)) then
+                                        v3858 = v3857 or (897.5 - (768 + 33))
+                                        v3683 = v3858
+                                        break
+                                    end
+                                end
+                            else
+                                local v3859 = _G.Ox.AimConfig.SPEAR_Speed
+                                local v3860 = v3859 or (631 - 466)
+                                v3682 = v3860
+                                local v3861 = _G.Ox.AimConfig.SPEAR_Gravity
+                                local v3862 = v3861 or (181 - 78)
+                                v3683 = v3862
+                            end
+                            local v3684 = v3682
+                            local v3685 = (select(3, ...))
+                            if not (select(331 - (287 + 41), ...)) then
+                                local v3863 = 847 - (638 + 209)
+                                local v3864
+                                while true do
+                                    if v3863 == (0 + 0) then
+                                        v3864 = _G.Ox.Config.SpearSmart_enable
+                                        v3685 = v3864 and v3679 and v3679.Position
+                                        break
+                                    end
+                                end
+                            end
+                            if not v3685 then
+                                v3685 = v3680 and v3680.Position
+                            end
+                            local v3686 = v3685
+                            local v3687 = (...)
+                            local v3688 = getClosestSurvivor()
+                            if v3688 and v3686 then
+                                local v3865 = 0
+                                local v3866
+                                local v3867
+                                local v3868
+                                local v3869
+                                local v3870
+                                local v3871
+                                local v3872
+                                local v3873
+                                local v3874
+                                local v3875
+                                local v3876
+                                while true do
+                                    if v3865 == (1688 - (96 + 1590)) then
+                                        v3873 = v3868 - v3686
+                                        v3874 = v3873.Magnitude
+                                        v3875 = Vector3.new(v3873.X, 1672 - (741 + 931), v3873.Z).Magnitude
+                                        v3876 = v3873.Y
+                                        v3865 = 3
+                                    end
+                                    if (0 + 0) == v3865 then
+                                        v3866 = v3688:IsA("Model")
+                                        v3867 = (v3866 and v3688:FindFirstChild("HumanoidRootPart")) or v3688
+                                        v3868 = v3867.Position
+                                        v3869 = Vector3.new(0, 0, 0)
+                                        v3865 = 1
+                                    end
+                                    if v3865 == (8 - 5) then
+                                        if v3874 > 0.1 then
+                                            local v4169 = _G.Ox.AimConfig.SPEAR_MaxDist
+                                            local v4170 = v4169 or 1000
+                                            if v3874 <= v4170 then
+                                                local v4225 = _G.Ox.AimConfig.Veil_LeadMultiplier
+                                                local v4226 = v4225 or (4.4 - 3)
+                                                local v4227, v4228 = v1140(v3682, v3683, v3875, v3876)
+                                                if _G.Ox.Config.SpearSmart_enable and (v3872.Magnitude > 0.5) then
+                                                    local v4253 = v3872 * v4228 * v4226
+                                                    local v4254 = v4253
+                                                    local v4255 = math.clamp(v3874 * (0.6 + 0), 2 + 1, 45)
+                                                    if v4255 < v4253.Magnitude then
+                                                        v4254 = v4253.Unit * v4255
+                                                    end
+                                                    local v4256 = (v3868 + v4254) - v3686
+                                                    local v4257 = Vector3.new(v4256.X, 0 + 0, v4256.Z).Magnitude
+                                                    local v4258 = select(
+                                                        1,
+                                                        v1140(v3682, v3683, math.max(v4257, 0.1 - 0), v4256.Y)
+                                                    )
+                                                    if v4257 > (0.001 + 0) then
+                                                        v3687 = (
+                                                            Vector3.new(v4256.X, 0 + 0, v4256.Z).Unit * math.cos(v4258)
+                                                        )
+                                                            + Vector3.new(0, math.sin(v4258), 0)
+                                                    else
+                                                        v3687 = v4256.Unit
+                                                    end
+                                                else
+                                                    local v4259 = 0 - 0
+                                                    local v4260
+                                                    while true do
+                                                        if v4259 == 0 then
+                                                            v4260 = select(
+                                                                1 + 0,
+                                                                v1140(
+                                                                    v3682,
+                                                                    v3683,
+                                                                    math.max(v3875, 494.1 - (64 + 430)),
+                                                                    v3876
+                                                                )
+                                                            )
+                                                            if v3875 > (0.001 + 0) then
+                                                                v3687 = (
+                                                                    Vector3.new(v3873.X, 0, v3873.Z).Unit
+                                                                    * math.cos(v4260)
+                                                                )
+                                                                    + Vector3.new(
+                                                                        363 - (106 + 257),
+                                                                        math.sin(v4260),
+                                                                        0 + 0
+                                                                    )
+                                                            else
+                                                                v3687 = v3873.Unit
+                                                            end
+                                                            break
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                        break
+                                    end
+                                    if 1 == v3865 then
+                                        v3870 = v3688.Parent
+                                        v3871 = v3870 and v3688.Parent:FindFirstChildOfClass("Humanoid")
+                                        if v3871 and (v3871.MoveDirection.Magnitude > 0) then
+                                            v3869 = v3871.MoveDirection * v3871.WalkSpeed
+                                        elseif v3867:IsA("BasePart") then
+                                            v3869 = v3867.AssemblyLinearVelocity
+                                        end
+                                        v3872 = Vector3.new(v3869.X, 721 - (496 + 225), v3869.Z)
+                                        v3865 = 3 - 1
+                                    end
+                                end
+                            end
+                            v158 = true
+                            pcall(function()
+                                if v1137 then
+                                    v1137:FireServer(v3687, v3684, v3686)
+                                else
+                                    v2052:FireServer(v3687, v3684, v3686)
+                                end
+                            end)
+                            v158 = false
+                            return
+                        end
+                    end
+                    return v1142(v2052, ...)
+                end
+                if (0 - 0) == v2053 then
+                    v2054 = getnamecallmethod()
+                    v2055 = (v2054 == "FireServer") or (v2054 == "fireServer") or (v2054 == "InvokeServer")
+                    v2053 = 1
+                end
+            end
+        end)
+        setreadonly(v1141, true)
+        v159 = true
+    end
+    local function v174()
+        local v1144 = ReplicatedStorage:FindFirstChild("Remotes")
+        local v1145 = v1144 and ReplicatedStorage.Remotes:FindFirstChild("Items")
+        local v1146 = v1145 and v1145:FindFirstChild("Flashlight")
+        if v1146 then
+            _G.Ox.GotBlindedRemote = v1146:FindFirstChild("GotBlinded")
+        end
+    end
+    task.spawn(function()
+        local v1147 = 1658 - (256 + 1402)
+        while true do
+            if v1147 == (1900 - (30 + 1869)) then
+                setupSpearInterceptor()
+                break
+            end
+            if v1147 == 0 then
+                task.wait(1370 - (213 + 1156))
+                v174()
+                v1147 = 1
+            end
+        end
+    end)
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(189 - (96 + 92))
+        v174()
+    end)
+end
+do
+    local v175 = Connections
+    tbl5 = v175 or {}
+    function fn12()
+        if tbl5.LeapBypass then
+            task.cancel(tbl5.LeapBypass)
+            tbl5.LeapBypass = nil
+        end
+        tbl5.LeapBypass = task.spawn(function()
+            local v2056 = 0 + 0
+            local v2057
+            local v2058
+            local v2059
+            local v2060
+            local v2061
+            local v2062
+            local v2063
+            local v2064
+            local v2065
+            local v2066
+            local v2067
+            local v2068
+            local v2069
+            local v2070
+            local v2071
+            local v2072
+            local v2073
+            local v2074
+            local v2075
+            local v2076
+            local v2077
+            local v2078
+            local v2079
+            local v2080
+            local v2081
+            local v2082
+            local v2083
+            while true do
+                if v2056 == (899 - (142 + 757)) then
+                    v2057, v2058, v2059, v2060, v2061, v2062, v2063, v2064, v2065, v2066, v2067, v2068, v2069, v2070, v2071, v2072, v2073, v2074, v2075, v2076 =
+                        nil
+                    v2077, v2078, v2079, v2080, v2081, v2082 = nil
+                    v2056 = 1
+                end
+                if v2056 == (1 + 0) then
+                    v2083 = 0 + 0
+                    v2082 = 1
+                    v2056 = 81 - (32 + 47)
+                end
+                if v2056 == (1979 - (1053 + 924)) then
+                    while true do
+                        if v2082 == 1 then
+                            local v3422 = 0
+                            while true do
+                                if v3422 == (0 + 0) then
+                                    v2057 = nil
+                                    v2058 = nil
+                                    v3422 = 1 - 0
+                                end
+                                if v3422 == (1650 - (685 + 963)) then
+                                    v2082 = 3 - 1
+                                    break
+                                end
+                                if v3422 == (1 - 0) then
+                                    v2059, v2060, v2061 = pairs(getgc(true))
+                                    v2062 = v2061
+                                    v3422 = 1711 - (541 + 1168)
+                                end
+                            end
+                        elseif v2082 == 2 then
+                            local v3739 = 1597 - (645 + 952)
+                            while true do
+                                if v3739 == (838 - (669 + 169)) then
+                                    v2063, v2064 = v2059(v2060, v2062)
+                                    if v2063 == nil then
+                                        v2082 = 31 - 22
+                                    else
+                                        v2082 = 3
+                                    end
+                                    v3739 = 1 - 0
+                                end
+                                if v3739 == 1 then
+                                    v2083 = v2083 + 1
+                                    if (v2083 % 2000) == (0 + 0) then
+                                        task.wait()
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2082 == 3 then
+                            local v3970 = 0 + 0
+                            while true do
+                                if (765 - (181 + 584)) == v3970 then
+                                    v2062 = v2063
+                                    if (type(v2064) == "function") and islclosure(v2064) then
+                                        v2082 = 1399 - (665 + 730)
+                                    else
+                                        v2082 = 2
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2082 == (11 - 7) then
+                            v2065 = debug.getinfo(v2064)
+                            if v2065.name == "tryActivate" then
+                                v2082 = 5
+                            else
+                                v2082 = 6
+                            end
+                        elseif v2082 == (10 - 5) then
+                            local v4171 = 1350 - (540 + 810)
+                            while true do
+                                if v4171 == (0 - 0) then
+                                    v2057 = v2064
+                                    v2082 = 16 - 10
+                                    break
+                                end
+                            end
+                        elseif v2082 == (5 + 1) then
+                            if v2065.name == "playM2Animation" then
+                                v2082 = 210 - (166 + 37)
+                            else
+                                v2082 = 8
+                            end
+                        elseif v2082 == (1888 - (22 + 1859)) then
+                            local v4261 = 1772 - (843 + 929)
+                            while true do
+                                if v4261 == (262 - (30 + 232)) then
+                                    v2058 = v2064
+                                    v2082 = 22 - 14
+                                    break
+                                end
+                            end
+                        elseif v2082 == (785 - (55 + 722)) then
+                            if v2057 and v2058 then
+                                v2082 = 18 - 9
+                            else
+                                v2082 = 1677 - (78 + 1597)
+                            end
+                        elseif v2082 == 9 then
+                            if not v2057 and not v2058 then
+                                v2082 = 20
+                            else
+                                v2082 = 3 + 7
+                            end
+                        elseif v2082 == 10 then
+                            if task.wait(0.1) and _G.Ox.BypassLeapEnabled then
+                                v2082 = 11 + 1
+                            else
+                                v2082 = 10 + 1
+                            end
+                        elseif v2082 == 11 then
+                            return
+                        elseif v2082 == (561 - (305 + 244)) then
+                            v2066, v2067, v2068 = pairs({
+                                v2057,
+                                v2058,
+                            })
+                            v2069 = v2068
+                            v2070 = v2066
+                            v2071 = v2067
+                            v2082 = 10 + 3
+                        elseif v2082 == 13 then
+                            v2072, v2073 = v2070(v2071, v2069)
+                            if v2072 == nil then
+                                v2082 = 10
+                            else
+                                v2082 = 44 - 30
+                            end
+                        elseif v2082 == 14 then
+                            v2069 = v2072
+                            if v2073 then
+                                v2082 = 20 - 5
+                            else
+                                v2082 = 775 - (592 + 170)
+                            end
+                        elseif v2082 == 15 then
+                            v2074, v2075, v2076 = pairs(debug.getupvalues(v2073))
+                            v2077 = v2070
+                            v2078 = v2071
+                            v2079 = v2076
+                            v2082 = 16
+                        elseif v2082 == (55 - 39) then
+                            local v4287 = 0 - 0
+                            while true do
+                                if v4287 == (0 + 0) then
+                                    v2080, v2081 = v2074(v2075, v2079)
+                                    if v2080 == nil then
+                                        v2082 = 19
+                                    else
+                                        v2082 = 17
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2082 == (7 + 10) then
+                            local v4290 = 0 - 0
+                            while true do
+                                if 0 == v4290 then
+                                    v2079 = v2080
+                                    if (type(v2081) == "boolean") and (v2081 == true) then
+                                        v2082 = 3 + 15
+                                    else
+                                        v2082 = 29 - 13
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2082 == (525 - (353 + 154)) then
+                            debug.setupvalue(v2073, v2080, false)
+                            v2082 = 16
+                        elseif v2082 == 19 then
+                            v2069 = v2072
+                            v2070 = v2077
+                            v2071 = v2078
+                            v2082 = 16 - 3
+                        elseif v2082 == (27 - 7) then
+                            local v4294 = 0
+                            while true do
+                                if v4294 == (0 + 0) then
+                                    warn("[BypassLeap] Function tidak ditemukan.")
+                                    return
+                                end
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end)
+    end
+    local v176 = false
+    local function v177()
+        local v1149 = 0 + 0
+        local v1150
+        local v1151
+        while true do
+            if (0 + 0) == v1149 then
+                if GetRole() ~= "Killer" then
+                    return
+                end
+                v1150 = localPlayer:FindFirstChild("SelectedKiller")
+                v1149 = 1 - 0
+            end
+            if v1149 == (1 - 0) then
+                v1151 = (v1150 and v1150.Value) or localPlayer:GetAttribute("SelectedKiller")
+                if v1151 and string.find(string.lower(tostring(v1151)), "abyss") then
+                    pcall(function()
+                        local v3295 = ReplicatedStorage:FindFirstChild("Remotes")
+                            :FindFirstChild("Killers")
+                            :FindFirstChild("Abysswalker")
+                            :FindFirstChild("corrupt")
+                        if v3295 then
+                            v3295:FireServer()
+                        end
+                    end)
+                end
+                break
+            end
+        end
+    end
+    local function v178()
+        if v176 then
+            return
+        end
+        v176 = true
+        task.spawn(function()
+            while v176 and _G.Ox.InfAbyssalEnabled and (GetRole() == "Killer") do
+                v177()
+                task.wait(0.5 - 0)
+            end
+        end)
+    end
+    function fn13()
+        v176 = false
+    end
+    UserInputService.InputBegan:Connect(function(v1152, v1153)
+        if v1153 then
+            return
+        end
+        if _G.Ox.InfAbyssalEnabled and (v1152.KeyCode == Enum.KeyCode.Q) then
+            v178()
+        end
+    end)
+    UserInputService.InputEnded:Connect(function(v1154)
+        if v1154.KeyCode == Enum.KeyCode.Q then
+            fn13()
+        end
+    end)
+    task.spawn(function()
+        while _G.Ox.ScriptAlive do
+            task.wait(86.5 - (7 + 79))
+            if not _G.Ox.ScriptAlive then
+                break
+            end
+            if _G.Ox.InfAbyssalEnabled and (GetRole() == "Killer") then
+                local v2636 = localPlayer:FindFirstChild("PlayerGui")
+                if v2636 then
+                    local v3109 = 0 + 0
+                    local v3110
+                    while true do
+                        if v3109 == 0 then
+                            v3110 = nil
+                            for v3740, v3741 in pairs(v2636:GetChildren()) do
+                                if (string.sub(v3741.Name, -4) == "-mob") and (v3741.Name ~= "Survivor-mob") then
+                                    v3110 = v3741
+                                    break
+                                end
+                            end
+                            v3109 = 1
+                        end
+                        if v3109 == (182 - (24 + 157)) then
+                            if v3110 then
+                                local v3877 = 0 - 0
+                                local v3878
+                                while true do
+                                    if v3877 == (0 - 0) then
+                                        v3878 = v3110:FindFirstChild("Controls")
+                                        if v3878 then
+                                            local v4172 = v3878:FindFirstChild("move2")
+                                            if v4172 and v4172.Visible then
+                                                v178()
+                                            else
+                                                fn13()
+                                            end
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            else
+                fn13()
+            end
+        end
+    end)
+    function EnableInfiniteLunge()
+        _G.Ox.InfiniteLungeEnabled = true
+        local v1155 = localPlayer.Character
+        if v1155 then
+            local v2362 = 0
+            while true do
+                if v2362 == 1 then
+                    _G.Ox.InfLungeAttrConn = v1155:GetAttributeChangedSignal("lungeboost"):Connect(function()
+                        if _G.Ox.InfiniteLungeEnabled and (v1155:GetAttribute("lungeboost") ~= 999) then
+                            v1155:SetAttribute("lungeboost", 284 + 715)
+                        end
+                    end)
+                    break
+                end
+                if v2362 == (0 - 0) then
+                    v1155:SetAttribute("lungeboost", 1379 - (262 + 118))
+                    if _G.Ox.InfLungeAttrConn then
+                        _G.Ox.InfLungeAttrConn:Disconnect()
+                    end
+                    v2362 = 1084 - (1038 + 45)
+                end
+            end
+        end
+        v1:Notify({
+            Title = "Infinite Lunge",
+            Description = "AKTIF (999x)",
+            Duration = 5 - 2,
+        })
+    end
+    function DisableInfiniteLunge()
+        _G.Ox.InfiniteLungeEnabled = false
+        if _G.Ox.InfLungeAttrConn then
+            local v2363 = 230 - (19 + 211)
+            while true do
+                if v2363 == 0 then
+                    _G.Ox.InfLungeAttrConn:Disconnect()
+                    _G.Ox.InfLungeAttrConn = nil
+                    break
+                end
+            end
+        end
+        local v1156 = localPlayer.Character
+        if v1156 then
+            v1156:SetAttribute("lungeboost", 1)
+        end
+        v1:Notify({
+            Title = "Infinite Lunge",
+            Description = "NONAKTIF",
+            Duration = 115 - (88 + 25),
+        })
+    end
+    localPlayer.CharacterAdded:Connect(function(v1157)
+        task.wait(0.8 - 0)
+        if _G.Ox.InfiniteLungeEnabled and v1157 then
+            v1157:SetAttribute("lungeboost", 496 + 503)
+        end
+    end)
+    function StopCounterParry()
+        local v1158 = 0 + 0
+        while true do
+            if v1158 == 0 then
+                _G.Ox.CounterParry.Enabled = false
+                if _G.Ox.CounterParry.Thread then
+                    task.cancel(_G.Ox.CounterParry.Thread)
+                    _G.Ox.CounterParry.Thread = nil
+                end
+                v1158 = 1037 - (1007 + 29)
+            end
+            if v1158 == 1 then
+                if _G.Ox.CounterParry.Track then
+                    pcall(function()
+                        _G.Ox.CounterParry.Track:Stop()
+                    end)
+                    _G.Ox.CounterParry.Track = nil
+                end
+                break
+            end
+        end
+    end
+    function StartCounterParry()
+        if _G.Ox.CounterParry.Thread then
+            return
+        end
+        _G.Ox.CounterParry.Thread = task.spawn(function()
+            local v2084 = 0
+            local v2085
+            local v2086
+            local v2087
+            local v2088
+            local v2089
+            local v2090
+            local v2091
+            local v2092
+            local v2093
+            local v2094
+            local v2095
+            local v2096
+            local v2097
+            local v2098
+            local v2099
+            local v2100
+            local v2101
+            local v2102
+            while true do
+                if v2084 == (1 + 0) then
+                    while true do
+                        if v2102 == 1 then
+                            if _G.Ox.CounterParry.Enabled and _G.Ox.ScriptAlive then
+                                v2102 = 3
+                            else
+                                v2102 = 2
+                            end
+                        elseif v2102 == (4 - 2) then
+                            local v3742 = 0 - 0
+                            while true do
+                                if v3742 == (0 + 0) then
+                                    _G.Ox.CounterParry.Thread = nil
+                                    return
+                                end
+                            end
+                        elseif v2102 == (814 - (340 + 471)) then
+                            local v3971 = 0
+                            while true do
+                                if v3971 == (0 - 0) then
+                                    v2085 = localPlayer.Character
+                                    if v2085 and v2085.Parent and (GetRole() == "Killer") then
+                                        v2102 = 594 - (276 + 313)
+                                    else
+                                        v2102 = 9 - 5
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2102 == (4 + 0) then
+                            task.wait(0.4 + 0)
+                            v2102 = 1
+                        elseif v2102 == (1 + 4) then
+                            local v4173 = 1972 - (495 + 1477)
+                            while true do
+                                if 1 == v4173 then
+                                    if v2086 then
+                                        v2102 = 17 - 11
+                                    else
+                                        v2102 = 7
+                                    end
+                                    break
+                                end
+                                if v4173 == (0 + 0) then
+                                    v2086 = v2085:FindFirstChildOfClass("Humanoid")
+                                    v2087 = v2086
+                                    v4173 = 404 - (342 + 61)
+                                end
+                            end
+                        elseif v2102 == 6 then
+                            v2087 = v2086:FindFirstChildOfClass("Animator")
+                            v2102 = 4 + 3
+                        elseif v2102 == (172 - (4 + 161)) then
+                            local v4262 = 0 + 0
+                            while true do
+                                if v4262 == (0 - 0) then
+                                    v2088 = v2085:FindFirstChild("HumanoidRootPart")
+                                    if v2087 and v2088 then
+                                        v2102 = 23 - 14
+                                    else
+                                        v2102 = 505 - (322 + 175)
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2102 == 8 then
+                            task.wait(563.3 - (173 + 390))
+                            v2102 = 1
+                        elseif v2102 == 9 then
+                            if _G.Ox.CounterParry.Track and (_G.Ox.CounterParry.Track.Parent ~= nil) then
+                                v2102 = 4 + 9
+                            else
+                                v2102 = 324 - (203 + 111)
+                            end
+                        elseif v2102 == 10 then
+                            v2089 = Instance.new("Animation")
+                            v2089.AnimationId = _G.Ox.CounterParry.AnimId
+                            v2090, v2091 = pcall(function()
+                                return v2087:LoadAnimation(v2089)
+                            end)
+                            if v2090 and v2091 then
+                                v2102 = 1 + 11
+                            else
+                                v2102 = 8 + 3
+                            end
+                        elseif v2102 == (32 - 21) then
+                            task.wait(0.5 + 0)
+                            v2102 = 707 - (57 + 649)
+                        elseif v2102 == (396 - (328 + 56)) then
+                            local v4283 = 0 + 0
+                            while true do
+                                if v4283 == (512 - (433 + 79)) then
+                                    _G.Ox.CounterParry.Track = v2091
+                                    v2102 = 2 + 11
+                                    break
+                                end
+                            end
+                        elseif v2102 == (11 + 2) then
+                            v2092 = false
+                            v2093 = _G.Ox.CounterParry.Distance
+                            v2094, v2095, v2096 = ipairs(Players:GetPlayers())
+                            v2097 = v2096
+                            v2102 = 46 - 32
+                        elseif v2102 == 14 then
+                            local v4286 = 0 - 0
+                            while true do
+                                if v4286 == (0 + 0) then
+                                    v2098, v2099 = v2094(v2095, v2097)
+                                    if v2098 == nil then
+                                        v2102 = 20
+                                    else
+                                        v2102 = 14 + 1
+                                    end
+                                    break
+                                end
+                            end
+                        elseif v2102 == 15 then
+                            v2097 = v2098
+                            if (v2099 ~= localPlayer) and v2099.Team and (v2099.Team.Name == "Survivors") then
+                                v2102 = 16
+                            else
+                                v2102 = 1050 - (562 + 474)
+                            end
+                        elseif v2102 == (36 - 20) then
+                            v2100 = v2099.Character
+                            v2101 = v2100
+                            if v2100 then
+                                v2102 = 34 - 17
+                            else
+                                v2102 = 923 - (76 + 829)
+                            end
+                        elseif v2102 == (1690 - (1506 + 167)) then
+                            v2101 = v2099.Character:FindFirstChild("HumanoidRootPart")
+                            v2102 = 33 - 15
+                        elseif v2102 == (284 - (58 + 208)) then
+                            if v2101 and ((v2088.Position - v2101.Position).Magnitude <= v2093) then
+                                v2102 = 12 + 7
+                            else
+                                v2102 = 10 + 4
+                            end
+                        elseif v2102 == (11 + 8) then
+                            local v4292 = 0 - 0
+                            while true do
+                                if v4292 == (337 - (258 + 79)) then
+                                    v2092 = true
+                                    v2102 = 3 + 17
+                                    break
+                                end
+                            end
+                        elseif v2102 == (42 - 22) then
+                            if v2092 and _G.Ox.CounterParry.Track then
+                                v2102 = 21
+                            else
+                                v2102 = 22
+                            end
+                        elseif v2102 == 21 then
+                            local v4296 = 1470 - (1219 + 251)
+                            while true do
+                                if v4296 == 1 then
+                                    pcall(function()
+                                        _G.Ox.CounterParry.Track:Stop()
+                                    end)
+                                    v2102 = 1693 - (1231 + 440)
+                                    break
+                                end
+                                if v4296 == (58 - (34 + 24)) then
+                                    pcall(function()
+                                        local v4299 = 0 + 0
+                                        while true do
+                                            if v4299 == (0 - 0) then
+                                                _G.Ox.CounterParry.Track:Play()
+                                                _G.Ox.CounterParry.Track:AdjustWeight(0)
+                                                break
+                                            end
+                                        end
+                                    end)
+                                    task.wait(0.05 + 0)
+                                    v4296 = 2 - 1
+                                end
+                            end
+                        elseif v2102 == 22 then
+                            local v4297 = 0
+                            while true do
+                                if 0 == v4297 then
+                                    task.wait(_G.Ox.CounterParry.Interval)
+                                    v2102 = 3 - 2
+                                    break
+                                end
+                            end
+                        end
+                    end
+                    break
+                end
+                if v2084 == 0 then
+                    v2085, v2086, v2087, v2088, v2089, v2090, v2091, v2092, v2093, v2094, v2095, v2096, v2097, v2098, v2099, v2100, v2101, v2102 =
+                        nil
+                    v2102 = 2 - 1
+                    v2084 = 3 - 2
+                end
+            end
+        end)
+    end
+    function ToggleCounterParry(v1159)
+        if v1159 then
+            local v2364 = 0 - 0
+            while true do
+                if v2364 == (1589 - (877 + 712)) then
+                    if GetRole() ~= "Killer" then
+                        local v3423 = 0 + 0
+                        while true do
+                            if v3423 == 0 then
+                                v1:Notify({
+                                    Title = "Counter Auto Parry",
+                                    Description = "Khusus Killer!",
+                                    Duration = 757 - (242 + 512),
+                                })
+                                _G.Ox.CounterParry.Enabled = false
+                                v3423 = 1
+                            end
+                            if (1 - 0) == v3423 then
+                                if CounterParryToggle then
+                                    fn(CounterParryToggle, false)
+                                end
+                                return
+                            end
+                        end
+                    end
+                    _G.Ox.CounterParry.Enabled = true
+                    v2364 = 1
+                end
+                if v2364 == (628 - (92 + 535)) then
+                    StartCounterParry()
+                    v1:Notify({
+                        Title = "Counter Auto Parry",
+                        Description = "AKTIF",
+                        Duration = 2,
+                    })
+                    break
+                end
+            end
+        else
+            StopCounterParry()
+            v1:Notify({
+                Title = "Counter Auto Parry",
+                Description = "NONAKTIF",
+                Duration = 2,
+            })
+        end
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        _G.Ox.CounterParry.Track = nil
+        task.wait(1 + 0)
+        if _G.Ox.CounterParry.Enabled then
+            StartCounterParry()
+        end
+    end)
+    local function v179()
+        local v1160 = ReplicatedStorage:FindFirstChild("Remotes")
+        local v1161 = v1160 and v1160:FindFirstChild("Killers")
+        local v1162 = v1161 and v1161:FindFirstChild("Stalker")
+        local v1163 = v1162 and v1162:FindFirstChild("StartStalking")
+        return v1163
+    end
+    local function v180()
+        local v1164 = localPlayer.Character
+        local v1165 = v1164 and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if not v1165 then
+            return nil
+        end
+        local v1166 = nil
+        local v1167 = math.huge
+        local v1168 = _G.Ox.AutoStalk.Range
+        for v2103, v2104 in ipairs(Players:GetPlayers()) do
+            if (v2104 ~= localPlayer) and v2104.Character then
+                local v2637 = v2104.Character:FindFirstChildOfClass("Humanoid")
+                local v2638 = v2104.Character:FindFirstChild("HumanoidRootPart")
+                if v2637 and v2638 and (v2637.Health > (61 - 31)) then
+                    local v3111 = 0
+                    local v3112
+                    while true do
+                        if v3111 == (0 + 0) then
+                            v3112 = (v2638.Position - v1165.Position).Magnitude
+                            if (v3112 <= v1168) and (v3112 < v1167) then
+                                local v3879 = 0 - 0
+                                while true do
+                                    if v3879 == (0 + 0) then
+                                        v1167 = v3112
+                                        v1166 = v2104
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        return v1166
+    end
+    function StopAutoStalk()
+        local v1169 = 0 + 0
+        while true do
+            if v1169 == (0 + 0) then
+                _G.Ox.AutoStalk.Enabled = false
+                if _G.Ox.AutoStalk.Conn then
+                    _G.Ox.AutoStalk.Conn:Disconnect()
+                    _G.Ox.AutoStalk.Conn = nil
+                end
+                break
+            end
+        end
+    end
+    function StartAutoStalk()
+        if _G.Ox.AutoStalk.Conn then
+            return
+        end
+        _G.Ox.AutoStalk.Conn = RunService.Heartbeat:Connect(function()
+            if not _G.Ox.AutoStalk.Enabled or not _G.Ox.ScriptAlive then
+                return
+            end
+            if GetRole() ~= "Killer" then
+                return
+            end
+            local v2105 = tick()
+            local v2106 = _G.Ox.AutoStalk.LastFire
+            local v2107 = v2106 or 0
+            if (v2105 - v2107) < (0.35 - 0) then
+                return
+            end
+            local v2108 = v180()
+            if not v2108 or not v2108.Character then
+                return
+            end
+            local v2109 = v179()
+            if v2109 then
+                local v2639 = 0 - 0
+                while true do
+                    if v2639 == (1785 - (1476 + 309)) then
+                        _G.Ox.AutoStalk.LastFire = v2105
+                        pcall(function()
+                            v2109:FireServer(v2108)
+                        end)
+                        break
+                    end
+                end
+            end
+        end)
+    end
+    function ToggleAutoStalk(v1170)
+        if v1170 then
+            if GetRole() ~= "Killer" then
+                v1:Notify({
+                    Title = "Auto Stalk",
+                    Description = "Khusus Killer!",
+                    Duration = 1287 - (299 + 985),
+                })
+                _G.Ox.AutoStalk.Enabled = false
+                if AutoStalkToggle then
+                    fn(AutoStalkToggle, false)
+                end
+                return
+            end
+            _G.Ox.AutoStalk.Enabled = true
+            StartAutoStalk()
+            v1:Notify({
+                Title = "Auto Stalk",
+                Description = "AKTIF",
+                Duration = 1 + 1,
+            })
+        else
+            local v2365 = 0
+            while true do
+                if (0 - 0) == v2365 then
+                    StopAutoStalk()
+                    v1:Notify({
+                        Title = "Auto Stalk",
+                        Description = "NONAKTIF",
+                        Duration = 95 - (86 + 7),
+                    })
+                    break
+                end
+            end
+        end
+    end
+    local v181 = Instance.new("ScreenGui")
+    v181.Name = "FOVCircleGui_Standalone"
+    v181.ResetOnSpawn = false
+    v181.IgnoreGuiInset = true
+    v181.Parent = CoreGui
+    local v186 = Instance.new("Frame")
+    v186.BackgroundTransparency = 1
+    v186.AnchorPoint = Vector2.new(0.5 - 0, 0.5 + 0)
+    v186.Position = UDim2.new(880.5 - (672 + 208), 0, 0.5 + 0, 132 - (14 + 118))
+    v186.Visible = false
+    v186.Parent = v181
+    Instance.new("UICorner", v186).CornerRadius = UDim.new(446 - (339 + 106), 0 + 0)
+    local v193 = Instance.new("UIStroke", v186)
+    v193.Color = Color3.fromRGB(129 + 126, 1650 - (440 + 955), 252 + 3)
+    v193.Thickness = 1.5
+    local v196 = Instance.new("Highlight")
+    v196.Name = "VD_VeilTarget"
+    v196.FillColor = Color3.fromRGB(458 - 203, 0, 0 + 0)
+    v196.OutlineColor = Color3.fromRGB(634 - 379, 175 + 80, 608 - (260 + 93))
+    v196.FillTransparency = 0.5
+    v196.OutlineTransparency = 0 + 0
+    local v202 = nil
+    local function v203()
+        if v202 then
+            pcall(function()
+                v202:Destroy()
+            end)
+            v202 = nil
+        end
+    end
+    local function v204(v1171, v1172)
+        if v1171 and v1172 then
+            local v2366 = (v1172 - v1171).Magnitude
+            if v2366 < (0.2 - 0) then
+                if v202 then
+                    v202.Transparency = 1 - 0
+                end
+                return
+            end
+            if not v202 then
+                local v2845 = Instance.new("Part")
+                v2845.Name = "VeilTrackerLine"
+                v2845.Anchored = true
+                v2845.CanCollide = false
+                v2845.CanTouch = false
+                v2845.CanQuery = false
+                v2845.CastShadow = false
+                v2845.Material = Enum.Material.Neon
+                v2845.Color = Color3.fromRGB(2229 - (1181 + 793), 255, 255)
+                v2845.Parent = workspace
+                v202 = v2845
+            end
+            local v2367 = Vector3.new(0.08 + 0, 307.08 - (105 + 202), v2366)
+            v202.Size = v2367
+            local v2369 = CFrame.new((v1171 + v1172) / (2 + 0), v1172)
+            v202.CFrame = v2369
+            v202.Transparency = 810.15 - (352 + 458)
+            return
+        end
+        if v202 then
+            v202.Transparency = 3 - 2
+        end
+    end
+    _G.Ox.SurvivorFOVGui = Instance.new("ScreenGui")
+    _G.Ox.SurvivorFOVGui.Name = "SurvivorAimbotFOV"
+    _G.Ox.SurvivorFOVGui.ResetOnSpawn = false
+    _G.Ox.SurvivorFOVGui.IgnoreGuiInset = true
+    _G.Ox.SurvivorFOVGui.Parent = CoreGui
+    _G.Ox.SurvivorFOVFrame = Instance.new("Frame")
+    _G.Ox.SurvivorFOVFrame.BackgroundTransparency = 2 - 1
+    _G.Ox.SurvivorFOVFrame.AnchorPoint = Vector2.new(0.5 + 0, 0.5 - 0)
+    _G.Ox.SurvivorFOVFrame.Position = UDim2.new(949.5 - (438 + 511), 1383 - (1262 + 121), 0.5, 0)
+    _G.Ox.SurvivorFOVFrame.Visible = false
+    _G.Ox.SurvivorFOVFrame.Parent = _G.Ox.SurvivorFOVGui
+    Instance.new("UICorner", _G.Ox.SurvivorFOVFrame).CornerRadius = UDim.new(1, 1068 - (728 + 340))
+    local v206 = Instance.new("UIStroke", _G.Ox.SurvivorFOVFrame)
+    v206.Color = Color3.fromRGB(2045 - (816 + 974), 781 - 526, 255)
+    v206.Thickness = 3.5 - 2
+    v206.Transparency = 339.5 - (163 + 176)
+    _G.Ox.survivorAimbotHighlight = Instance.new("Highlight")
+    _G.Ox.survivorAimbotHighlight.Name = "SurvivorAimbotTarget"
+    _G.Ox.survivorAimbotHighlight.FillColor = Color3.fromRGB(725 - 470, 0 - 0, 0)
+    _G.Ox.survivorAimbotHighlight.OutlineColor = Color3.fromRGB(78 + 177, 255, 1810 - (1564 + 246))
+    _G.Ox.survivorAimbotHighlight.FillTransparency = 345.4 - (124 + 221)
+    _G.Ox.survivorAimbotHighlight.OutlineTransparency = 0.2 + 0
+    _G.Ox.killerAimbotHighlight = Instance.new("Highlight")
+    _G.Ox.killerAimbotHighlight.Name = "KillerAimbotTarget"
+    _G.Ox.killerAimbotHighlight.FillColor = Color3.fromRGB(255, 0, 0)
+    _G.Ox.killerAimbotHighlight.OutlineColor = Color3.fromRGB(706 - (115 + 336), 561 - 306, 0 + 0)
+    _G.Ox.killerAimbotHighlight.FillTransparency = 46.4 - (45 + 1)
+    _G.Ox.killerAimbotHighlight.OutlineTransparency = 0.2 + 0
+    function StopMoonwalk()
+        _G.Ox.Moonwalk.Enabled = false
+        local v1173 = localPlayer.Character
+        local v1174 = v1173 and v1173:FindFirstChildOfClass("Humanoid")
+        if v1174 then
+            v1174.AutoRotate = true
+        end
+    end
+    function StartMoonwalk()
+        local v1175 = localPlayer.Character
+        local v1176 = v1175 and v1175:FindFirstChild("HumanoidRootPart")
+        local v1177 = v1175 and v1175:FindFirstChildOfClass("Humanoid")
+        if not v1176 or not v1177 then
+            return
+        end
+        v1177.AutoRotate = false
+        _G.Ox.Moonwalk.Enabled = true
+    end
+    function UpdateMoonwalkGUI(v1179)
+        local v1180 = 0
+        local v1181
+        local v1182
+        local v1183
+        while true do
+            if v1180 == (1991 - (1282 + 708)) then
+                if not v1181 then
+                    return
+                end
+                v1182 = v1181:FindFirstChild("ActionButton")
+                v1180 = 2
+            end
+            if v1180 == 2 then
+                v1183 = v1181:FindFirstChild("UIStroke")
+                if v1179 then
+                    local v3113 = 0
+                    while true do
+                        if v3113 == 0 then
+                            if v1182 then
+                                local v3880 = 0
+                                while true do
+                                    if v3880 == 1 then
+                                        v1182.BackgroundColor3 = Color3.fromRGB(40, 1252 - (583 + 629), 8 + 37)
+                                        break
+                                    end
+                                    if v3880 == (0 - 0) then
+                                        v1182.Text = "MOON [ON]"
+                                        v1182.TextColor3 = Color3.fromRGB(180, 134 + 121, 180)
+                                        v3880 = 1171 - (943 + 227)
+                                    end
+                                end
+                            end
+                            if v1183 then
+                                v1183.Color = Color3.fromRGB(44 + 56, 1831 - (1539 + 92), 2046 - (706 + 1240))
+                            end
+                            break
+                        end
+                    end
+                else
+                    local v3114 = 0
+                    while true do
+                        if (258 - (81 + 177)) == v3114 then
+                            if v1182 then
+                                local v3882 = 0
+                                while true do
+                                    if v3882 == 0 then
+                                        v1182.Text = "MOON [OFF]"
+                                        v1182.TextColor3 = Color3.fromRGB(565 - 365, 457 - (212 + 45), 669 - 469)
+                                        v3882 = 1
+                                    end
+                                    if v3882 == (1947 - (708 + 1238)) then
+                                        v1182.BackgroundColor3 = Color3.fromRGB(3 + 27, 10 + 20, 1702 - (586 + 1081))
+                                        break
+                                    end
+                                end
+                            end
+                            if v1183 then
+                                v1183.Color = Color3.fromRGB(90, 601 - (348 + 163), 95)
+                            end
+                            break
+                        end
+                    end
+                end
+                break
+            end
+            if v1180 == (0 + 0) then
+                if not _G.Ox.Moonwalk.Gui then
+                    return
+                end
+                v1181 = _G.Ox.Moonwalk.Gui:FindFirstChild("Frame")
+                v1180 = 281 - (215 + 65)
+            end
+        end
+    end
+    function ToggleMoonwalkStatus()
+        if _G.Ox.Moonwalk.Enabled then
+            StopMoonwalk()
+        else
+            StartMoonwalk()
+        end
+        _G.Ox.Moonwalk.IsActive = _G.Ox.Moonwalk.Enabled
+        UpdateMoonwalkGUI(_G.Ox.Moonwalk.Enabled)
+        if MoonwalkPCToggle then
+            fn(MoonwalkPCToggle, _G.Ox.Moonwalk.Enabled)
+        end
+        local v1184 = v1.Notify
+        local v1185 = {
+            Title = "Moonwalk",
+        }
+        local v1186 = _G.Ox.Moonwalk.Enabled
+        local v1187 = (v1186 and "AKTIF") or "NONAKTIF"
+        v1185.Description = v1187
+        v1185.Duration = 4 - 2
+        v1184(v1, v1185)
+    end
+    function CreateMoonwalkGUI()
+        if _G.Ox.Moonwalk.Gui then
+            _G.Ox.Moonwalk.Gui:Destroy()
+        end
+        local v1190 = Instance.new("ScreenGui")
+        v1190.Name = "MoonwalkCustomGui"
+        v1190.ResetOnSpawn = false
+        v1190.IgnoreGuiInset = true
+        v1190.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        v1190.Parent = CoreGui
+        v1190.Enabled = false
+        _G.Ox.Moonwalk.Gui = v1190
+        _G.Ox.Moonwalk.GuiVisible = false
+        local v1198 = Instance.new("Frame", v1190)
+        v1198.Name = "Frame"
+        v1198.Size = UDim2.fromOffset(1969 - (1541 + 318), 32 + 4)
+        v1198.Position = UDim2.fromScale(0.85, 0.45 + 0)
+        v1198.BackgroundColor3 = Color3.fromRGB(19 + 6, 25, 30)
+        v1198.BackgroundTransparency = 1750.1 - (1036 + 714)
+        v1198.Active = true
+        v1198.BorderSizePixel = 0 + 0
+        Instance.new("UICorner", v1198).CornerRadius = UDim.new(0 + 0, 1288 - (883 + 397))
+        local v1207 = Instance.new("UIStroke", v1198)
+        v1207.Name = "UIStroke"
+        v1207.Color = Color3.fromRGB(680 - (563 + 27), 90, 95)
+        v1207.Thickness = 1.5
+        v1207.Transparency = 0.2
+        local v1212 = Instance.new("TextButton", v1198)
+        v1212.Name = "ActionButton"
+        v1212.Size = UDim2.new(1, 0 - 0, 1987 - (1369 + 617), 1487 - (85 + 1402))
+        v1212.Text = "MOON [OFF]"
+        v1212.BackgroundColor3 = Color3.fromRGB(11 + 19, 30, 35)
+        v1212.Font = Enum.Font.GothamBold
+        v1212.TextSize = 30 - 18
+        v1212.TextColor3 = Color3.fromRGB(603 - (274 + 129), 200, 200)
+        v1212.BorderSizePixel = 0
+        v1212.AutoButtonColor = false
+        Instance.new("UICorner", v1212).CornerRadius = UDim.new(0, 8)
+        local v1224 = false
+        local v1225 = false
+        local v1226 = false
+        local v1227 = nil
+        local v1228 = nil
+        local v1229 = nil
+        local function v1230(v2110)
+            if not v1224 or not v1226 or not v1227 or not v1228 then
+                return
+            end
+            local v2111 = v2110.Position - v1227
+            if not v1225 and ((math.abs(v2111.X) > (235 - (12 + 205))) or (math.abs(v2111.Y) > (17 + 1))) then
+                v1225 = true
+            end
+            if v1225 then
+                v1198.Position =
+                    UDim2.new(v1228.X.Scale, v1228.X.Offset + v2111.X, v1228.Y.Scale, v1228.Y.Offset + v2111.Y)
+            end
+        end
+        v1212.InputBegan:Connect(function(v2112)
+            if
+                (v2112.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v2112.UserInputType == Enum.UserInputType.Touch)
+            then
+                local v2641 = 0
+                while true do
+                    if v2641 == (0 - 0) then
+                        v1224 = true
+                        v1225 = false
+                        v2641 = 1 + 0
+                    end
+                    if v2641 == (386 - (27 + 357)) then
+                        v1228 = v1198.Position
+                        if v1229 then
+                            task.cancel(v1229)
+                        end
+                        v2641 = 3
+                    end
+                    if (483 - (91 + 389)) == v2641 then
+                        v1229 = task.delay(297.18 - (90 + 207), function()
+                            if v1224 then
+                                v1226 = true
+                            end
+                        end)
+                        break
+                    end
+                    if (1 + 0) == v2641 then
+                        v1226 = false
+                        v1227 = v2112.Position
+                        v2641 = 863 - (706 + 155)
+                    end
+                end
+            end
+        end)
+        v1212.InputEnded:Connect(function(v2113)
+            if
+                (v2113.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v2113.UserInputType == Enum.UserInputType.Touch)
+            then
+                if v1229 then
+                    task.cancel(v1229)
+                end
+                if v1224 and not v1225 then
+                    ToggleMoonwalkStatus()
+                end
+                v1224 = false
+                v1225 = false
+                v1226 = false
+                v1227 = nil
+                v1228 = nil
+            end
+        end)
+        UserInputService.InputChanged:Connect(function(v2114)
+            if
+                v1224
+                and v1226
+                and (
+                    (v2114.UserInputType == Enum.UserInputType.MouseMovement)
+                    or (v2114.UserInputType == Enum.UserInputType.Touch)
+                )
+            then
+                v1230(v2114)
+            end
+        end)
+        if _G.Ox.Moonwalk._statusConn then
+            _G.Ox.Moonwalk._statusConn:Disconnect()
+        end
+        _G.Ox.Moonwalk._statusConn = RunService.Heartbeat:Connect(function()
+            local v2115 = 1795 - (730 + 1065)
+            while true do
+                if v2115 == (1563 - (1339 + 224)) then
+                    if _G.Ox.Moonwalk.Gui and _G.Ox.Moonwalk.Gui.Parent then
+                        local v3299 = 0 + 0
+                        while true do
+                            if v3299 == 0 then
+                                if _G.Ox.Moonwalk.IsActive ~= _G.Ox.Moonwalk.Enabled then
+                                    _G.Ox.Moonwalk.IsActive = _G.Ox.Moonwalk.Enabled
+                                    UpdateMoonwalkGUI(_G.Ox.Moonwalk.Enabled)
+                                end
+                                return
+                            end
+                        end
+                    end
+                    if _G.Ox.Moonwalk._statusConn then
+                        _G.Ox.Moonwalk._statusConn:Disconnect()
+                    end
+                    break
+                end
+            end
+        end)
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        local v1231 = 0
+        while true do
+            if v1231 == 1 then
+                if _G.Ox.Moonwalk.GuiVisible and _G.Ox.Moonwalk.Gui then
+                    local v3115 = 0 + 0
+                    while true do
+                        if v3115 == (0 - 0) then
+                            _G.Ox.Moonwalk.Gui.Enabled = true
+                            UpdateMoonwalkGUI(_G.Ox.Moonwalk.Enabled)
+                            break
+                        end
+                    end
+                end
+                break
+            end
+            if v1231 == (843 - (268 + 575)) then
+                task.wait(1)
+                if _G.Ox.Moonwalk.Enabled then
+                    StartMoonwalk()
+                end
+                v1231 = 1295 - (919 + 375)
+            end
+        end
+    end)
+    task.spawn(function()
+        local v1232 = 0 - 0
+        while true do
+            if v1232 == (971 - (180 + 791)) then
+                task.wait(1806.5 - (323 + 1482))
+                CreateMoonwalkGUI()
+                break
+            end
+        end
+    end)
+    RunService.RenderStepped:Connect(function(v1233)
+        if
+            not _G.Ox.Speed.Enabled
+            and not _G.Ox.Moonwalk.Enabled
+            and not _G.Ox.Crosshair.Enabled
+            and not _G.Ox.StretchRes.Enabled
+            and not _G.Ox.Config.Surv_Aimbot_Enabled
+            and (not _G.Ox.Config.Killer_Aimbot_Enabled or not _G.Ox.isKillerAimbotHolding)
+            and not _G.Ox.AimConfig.Aim_SilentVeilV2
+            and (not flag or not _G.Ox.AimConfig.Flash_Silent)
+        then
+            return
+        end
+        if _G.Ox.Crosshair.Enabled then
+            DrawCrosshair()
+        end
+        if _G.Ox.Speed.Enabled then
+            local v2374 = localPlayer.Character
+            if v2374 then
+                local v2856 = v2374:FindFirstChildOfClass("Humanoid")
+                if v2856 then
+                    local v3300 = 1918 - (1177 + 741)
+                    local v3301
+                    while true do
+                        if v3300 == (0 + 0) then
+                            v3301 = v2856.MoveDirection
+                            if v3301.Magnitude > 0 then
+                                local v3972 = 0 - 0
+                                local v3973
+                                while true do
+                                    if v3972 == (0 + 0) then
+                                        v3973 = v2374:FindFirstChild("HumanoidRootPart")
+                                        if v3973 then
+                                            local v4204 = 0
+                                            local v4205
+                                            while true do
+                                                if v4204 == 0 then
+                                                    v4205 = (_G.Ox.Speed.Value - (0.1 - 0)) * (1 + 9)
+                                                    if v4205 > 0 then
+                                                        v3973.CFrame = v3973.CFrame + (v3301 * v4205 * v1233)
+                                                    end
+                                                    break
+                                                end
+                                            end
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.Moonwalk.Enabled then
+            local v2375 = localPlayer.Character
+            local v2376 = v2375 and v2375:FindFirstChild("HumanoidRootPart")
+            local v2377 = v2375 and v2375:FindFirstChildOfClass("Humanoid")
+            local v2378 = workspace.CurrentCamera
+            if v2376 and v2377 and v2378 then
+                if v2377.AutoRotate ~= false then
+                    v2377.AutoRotate = false
+                end
+                local v2857 = Vector3.new(v2378.CFrame.LookVector.X, 0, v2378.CFrame.LookVector.Z)
+                local v2858 = v2857
+                local v2859 = Vector3.new(v2378.CFrame.RightVector.X, 109 - (96 + 13), v2378.CFrame.RightVector.Z)
+                local v2860 = v2859
+                if v2857.Magnitude > 0.001 then
+                    v2858 = v2857.Unit
+                end
+                if v2859.Magnitude > 0.001 then
+                    v2860 = v2859.Unit
+                end
+                local v2861 = math.sin(tick() * (1956 - (962 + 959)))
+                local v2862 = CFrame.Angles(0, math.rad((74 - 44) * v2861), 0 + 0) * v2858
+                v2376.CFrame = CFrame.lookAt(v2376.Position, v2376.Position + v2862)
+                v2377:Move((-v2858 * (1352.2 - (461 + 890))) + (v2860 * v2861 * (1.05 + 0)), false)
+            end
+        end
+        if _G.Ox.StretchRes.Enabled and currentCamera then
+            currentCamera.CFrame = currentCamera.CFrame
+                * CFrame.new(
+                    0,
+                    0 - 0,
+                    243 - (19 + 224),
+                    1,
+                    0 + 0,
+                    198 - (37 + 161),
+                    0,
+                    _G.Ox.StretchRes.Amount,
+                    0 + 0,
+                    0,
+                    0,
+                    1
+                )
+        end
+        if flag and _G.Ox.AimConfig.Flash_Silent then
+            local v2380 = 0 + 0
+            local v2381
+            while true do
+                if v2380 == (0 + 0) then
+                    v2381 = getKillerTargetForFlash()
+                    if v2381 then
+                        local v3424 = localPlayer.Character
+                        local v3425 = v3424 and v3424:FindFirstChild("HumanoidRootPart")
+                        local v3426 = v2381.Position
+                            + Vector3.new(61 - (60 + 1), _G.Ox.AimConfig.Flash_YOffset, 923 - (826 + 97))
+                        local v3427 = workspace.CurrentCamera
+                        v3427.CFrame = v3427.CFrame:Lerp(CFrame.lookAt(v3427.CFrame.Position, v3426), 0.5)
+                        if v3425 then
+                            local v3744 = 0 + 0
+                            local v3745
+                            while true do
+                                if v3744 == 0 then
+                                    v3745 =
+                                        CFrame.lookAt(v3425.Position, Vector3.new(v3426.X, v3425.Position.Y, v3426.Z))
+                                    v3425.CFrame = v3425.CFrame:Lerp(v3745, 0.5 - 0)
+                                    break
+                                end
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end
+        if _G.Ox.Config.Surv_Aimbot_Enabled then
+            if GetRole() == "Survivor" then
+                local v2864 = 0 - 0
+                local v2865
+                while true do
+                    if v2864 == (685 - (375 + 310)) then
+                        if _G.Ox.Config.Surv_Aimbot_ShowFOV then
+                            local v3746 = 0
+                            while true do
+                                if v3746 == (1999 - (1864 + 135)) then
+                                    _G.Ox.SurvivorFOVFrame.Visible = true
+                                    _G.Ox.SurvivorFOVFrame.Size = UDim2.new(
+                                        0 - 0,
+                                        _G.Ox.Config.Surv_Aimbot_Radius * (1 + 1),
+                                        0,
+                                        _G.Ox.Config.Surv_Aimbot_Radius * 2
+                                    )
+                                    break
+                                end
+                            end
+                        else
+                            _G.Ox.SurvivorFOVFrame.Visible = false
+                        end
+                        v2865 = getBestAimbotTarget()
+                        v2864 = 1 + 0
+                    end
+                    if (2 - 1) == v2864 then
+                        if v2865 then
+                            _G.Ox.survivorAimbotHighlight.Parent = v2865.Parent
+                            local v3748 = v2865.Position
+                            local v3749 = v3748
+                            local v3750 = GetDistance(v3748)
+                            if v3750 < (1231 - (314 + 817)) then
+                                v3749 = v3748
+                                    + (
+                                        currentCamera.CFrame.RightVector
+                                        * ((57 + 43) - v3750)
+                                        * _G.Ox.Config.Surv_Aimbot_Predict
+                                    )
+                            end
+                            local v3751 = CFrame.new(currentCamera.CFrame.Position, v3749)
+                            currentCamera.CFrame = currentCamera.CFrame:Lerp(v3751, _G.Ox.Config.Surv_Aimbot_Smoothness)
+                            local v3753 = localPlayer.Character
+                            local v3754 = v3753 and v3753:FindFirstChild("HumanoidRootPart")
+                            if v3754 then
+                                local v3974 = 214 - (32 + 182)
+                                local v3975
+                                while true do
+                                    if v3974 == (0 + 0) then
+                                        v3975 =
+                                            CFrame.new(v3754.Position, Vector3.new(v3749.X, v3754.Position.Y, v3749.Z))
+                                        v3754.CFrame = v3754.CFrame:Lerp(v3975, _G.Ox.Config.Surv_Aimbot_Smoothness)
+                                        break
+                                    end
+                                end
+                            end
+                        else
+                            _G.Ox.survivorAimbotHighlight.Parent = nil
+                        end
+                        break
+                    end
+                end
+            end
+        else
+            _G.Ox.SurvivorFOVFrame.Visible = false
+            _G.Ox.survivorAimbotHighlight.Parent = nil
+        end
+        if _G.Ox.Config.Killer_Aimbot_Enabled and _G.Ox.isKillerAimbotHolding then
+            if GetRole() == "Killer" then
+                if _G.Ox.lockedKillerAimbotTarget then
+                    local v3305 = _G.Ox.lockedKillerAimbotTarget.Parent
+                    local v3306 = v3305 and v3305:FindFirstChild("Humanoid")
+                    if not v3306 or (v3306.Health <= (0 - 0)) or IsDowned(v3305) then
+                        _G.Ox.lockedKillerAimbotTarget = getBestKillerAimbotTarget()
+                    end
+                    if _G.Ox.lockedKillerAimbotTarget then
+                        local v3690 = 65 - (39 + 26)
+                        local v3691
+                        local v3692
+                        while true do
+                            if v3690 == 0 then
+                                v3691 = _G.Ox.lockedKillerAimbotTarget.Position
+                                v3692 = GetDistance(v3691)
+                                v3690 = 145 - (54 + 90)
+                            end
+                            if 1 == v3690 then
+                                if _G.Ox.Config.Killer_Aimbot_MaxDist < v3692 then
+                                    _G.Ox.lockedKillerAimbotTarget = getBestKillerAimbotTarget()
+                                else
+                                    _G.Ox.killerAimbotHighlight.Parent = v3305
+                                    local v4077 = CFrame.new(currentCamera.CFrame.Position, v3691)
+                                    currentCamera.CFrame =
+                                        currentCamera.CFrame:Lerp(v4077, _G.Ox.Config.Killer_Aimbot_Smoothness)
+                                    local v4079 = localPlayer.Character
+                                    local v4080 = v4079 and v4079:FindFirstChild("HumanoidRootPart")
+                                    if v4080 then
+                                        local v4174 = 0
+                                        local v4175
+                                        while true do
+                                            if v4174 == (198 - (45 + 153)) then
+                                                v4175 = CFrame.new(
+                                                    v4080.Position,
+                                                    Vector3.new(v3691.X, v4080.Position.Y, v3691.Z)
+                                                )
+                                                v4080.CFrame =
+                                                    v4080.CFrame:Lerp(v4175, _G.Ox.Config.Killer_Aimbot_Smoothness)
+                                                break
+                                            end
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                else
+                    _G.Ox.lockedKillerAimbotTarget = getBestKillerAimbotTarget()
+                end
+            end
+        elseif _G.Ox.killerAimbotHighlight then
+            _G.Ox.killerAimbotHighlight.Parent = nil
+        end
+        local v1234 = localPlayer.Character
+        local v1235 = v1234 and (v1234:GetAttribute("spearmode") == true)
+        local v1236 = _G.Ox.AimConfig.Aim_SilentVeilV2
+        local v1237 = v1236 and v1235
+        local v1238 = v1237 and _G.Ox.AimConfig.Veil_ShowFOV
+        if v1238 then
+            local v2382 = 0 + 0
+            while true do
+                if v2382 == (552 - (457 + 95)) then
+                    v186.Visible = true
+                    v186.Size = UDim2.new(0, _G.Ox.AimConfig.Veil_FOV * 2, 0 + 0, _G.Ox.AimConfig.Veil_FOV * (3 - 1))
+                    break
+                end
+            end
+        else
+            v186.Visible = false
+        end
+        if v1238 then
+            local v2384 = 0 - 0
+            local v2385
+            while true do
+                if v2384 == (0 - 0) then
+                    v2385 = getClosestSurvivor()
+                    if v2385 and v2385.Parent then
+                        local v3429 = 0 + 0
+                        local v3430
+                        local v3431
+                        local v3432
+                        while true do
+                            if v3429 == 0 then
+                                v196.Parent = v2385.Parent
+                                v3430 = v1234 and v1234:FindFirstChild("HumanoidRootPart")
+                                v3429 = 1
+                            end
+                            if v3429 == (6 - 4) then
+                                v3432 = v3431 and v3431.Position
+                                v204(v3432, v2385.Position)
+                                break
+                            end
+                            if v3429 == (2 - 1) then
+                                v3431 = v1234
+                                if v1234 then
+                                    local v4004 = 0
+                                    local v4005
+                                    while true do
+                                        if v4004 == 0 then
+                                            v4005 = v1234:FindFirstChild("Head")
+                                            v3431 = v4005 or v3430
+                                            break
+                                        end
+                                    end
+                                end
+                                v3429 = 2
+                            end
+                        end
+                    else
+                        v196.Parent = nil
+                        v204(nil, nil)
+                    end
+                    break
+                end
+            end
+        else
+            v196.Parent = nil
+            v204(nil, nil)
+            if not v1237 then
+                v203()
+            end
+        end
+    end)
+    local v210 = 748 - (485 + 263)
+    local v211 = 707 - (575 + 132)
+    RunService.Heartbeat:Connect(function()
+        if
+            not (
+                (_G.Ox.ParryConfig.ParryCircle and _G.Ox.ParryConfig.AutoParry)
+                or _G.Ox.State.AutoParryAdornment
+                or _G.Ox.GodMode
+                or _G.Ox.AutoPallet.Enabled
+                or _G.Ox.CameraFOV.Enabled
+                or _G.Ox.NoSlowdownEnabled
+                or _G.Ox.ESPConfig.Master
+            )
+        then
+            return
+        end
+        if _G.Ox.ParryConfig.ParryCircle and _G.Ox.ParryConfig.AutoParry then
+            local v2387 = localPlayer.Character
+            local v2388 = v2387 and v2387:FindFirstChild("HumanoidRootPart")
+            if v2388 then
+                if not _G.Ox.State.AutoParryAdornment or (_G.Ox.State.AutoParryAdornment.Parent ~= v2388) then
+                    if _G.Ox.State.AutoParryAdornment then
+                        _G.Ox.State.AutoParryAdornment:Destroy()
+                    end
+                    _G.Ox.State.AutoParryAdornment = Instance.new("CylinderHandleAdornment")
+                    _G.Ox.State.AutoParryAdornment.Name = "AutoParryCircleESP"
+                    _G.Ox.State.AutoParryAdornment.Height = 861.05 - (750 + 111)
+                    _G.Ox.State.AutoParryAdornment.Transparency = 1010.3 - (445 + 565)
+                    _G.Ox.State.AutoParryAdornment.Adornee = v2388
+                    _G.Ox.State.AutoParryAdornment.Parent = v2388
+                    _G.Ox.State.AutoParryAdornment.ZIndex = 0
+                    _G.Ox.State.AutoParryAdornment.AlwaysOnTop = false
+                end
+                local v2866 = _G.Ox.ParryConfig.ParryRadius
+                _G.Ox.State.AutoParryAdornment.Radius = v2866
+                _G.Ox.State.AutoParryAdornment.InnerRadius = math.max(0.1, v2866 - (0.15 + 0))
+                _G.Ox.State.AutoParryAdornment.CFrame = CFrame.new(0, -(1 + 2), 0)
+                    * CFrame.Angles(math.rad(158 - 68), 0 + 0, 310 - (189 + 121))
+                if _G.Ox.State.ParryCooldown then
+                    _G.Ox.State.AutoParryAdornment.Color3 = Color3.fromRGB(64 + 191, 128, 0)
+                elseif _G.Ox.ParryConfig.ParryAggressive then
+                    _G.Ox.State.AutoParryAdornment.Color3 =
+                        Color3.fromRGB(1602 - (634 + 713), 538 - (493 + 45), 968 - (493 + 475))
+                else
+                    _G.Ox.State.AutoParryAdornment.Color3 = Color3.fromRGB(66 + 189, 1039 - (158 + 626), 120 + 135)
+                end
+            elseif _G.Ox.State.AutoParryAdornment then
+                local v3307 = 0 - 0
+                while true do
+                    if (0 + 0) == v3307 then
+                        _G.Ox.State.AutoParryAdornment:Destroy()
+                        _G.Ox.State.AutoParryAdornment = nil
+                        break
+                    end
+                end
+            end
+        elseif _G.Ox.State.AutoParryAdornment then
+            local v2867 = 0
+            while true do
+                if v2867 == (0 + 0) then
+                    _G.Ox.State.AutoParryAdornment:Destroy()
+                    _G.Ox.State.AutoParryAdornment = nil
+                    break
+                end
+            end
+        end
+        if _G.Ox.GodMode then
+            local v2389 = localPlayer.Character
+            if v2389 then
+                local v2868 = 1091 - (1035 + 56)
+                local v2869
+                while true do
+                    if v2868 == 0 then
+                        v2869 = v2389:FindFirstChildOfClass("Humanoid")
+                        if v2869 and (v2869.Health < v2869.MaxHealth) then
+                            v2869.Health = v2869.MaxHealth
+                        end
+                        break
+                    end
+                end
+            end
+        end
+        if _G.Ox.AutoPallet.Enabled then
+            if (tick() - (v211 or 0)) >= (964 - (114 + 845)) then
+                local v2870 = 0
+                while true do
+                    if v2870 == 0 then
+                        v211 = tick()
+                        for v3693 in pairs(_G.Ox.AutoPallet.UsedPallets) do
+                            if not v3693 or not v3693.Parent then
+                                _G.Ox.AutoPallet.UsedPallets[v3693] = nil
+                            end
+                        end
+                        break
+                    end
+                end
+            end
+        end
+        if _G.Ox.CameraFOV.Enabled then
+            currentCamera.FieldOfView = _G.Ox.CameraFOV.Value
+        end
+        if _G.Ox.NoSlowdownEnabled then
+            local v2391 = localPlayer.Character
+            if v2391 then
+                local v2871 = 0 + 0
+                local v2872
+                while true do
+                    if v2871 == (0 - 0) then
+                        v2872 = v2391:FindFirstChildOfClass("Humanoid")
+                        if v2872 and (v2872.WalkSpeed < (14 + 2)) and (GetRole() == "Killer") then
+                            v2872.WalkSpeed = 1065 - (179 + 870)
+                        end
+                        break
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.Master then
+            local v2392 = os.clock()
+            if (v2392 - v210) >= (2 - 0) then
+                v210 = v2392
+                UpdatePlayerESP()
+                UpdateSCPESP()
+                UpdateStaticESP()
+            end
+        end
+    end)
+    local v212 = ReplicatedStorage:WaitForChild("Items", 883 - (827 + 51))
+    function extractAssetId(v1239)
+        return tostring(v1239):match("%d+")
+    end
+    function getItemIcon(v1240)
+        local v1241 = 0
+        local v1242
+        local v1243
+        while true do
+            if v1241 == (0 - 0) then
+                if not v212 then
+                    return nil
+                end
+                v1242 = v212:FindFirstChild(v1240)
+                v1241 = 1 + 0
+            end
+            if v1241 == (474 - (95 + 378)) then
+                if not v1242 then
+                    return nil
+                end
+                v1243 = nil
+                v1241 = 1 + 1
+            end
+            if (4 - 1) == v1241 then
+                return nil
+            end
+            if (2 + 0) == v1241 then
+                pcall(function()
+                    local v2873 = v1242.Texture
+                    local v2874 = v2873 or v1242.Image
+                    v1243 = v2874
+                end)
+                if v1243 and (v1243 ~= "") then
+                    local v3118 = 1011 - (334 + 677)
+                    local v3119
+                    while true do
+                        if v3118 == 0 then
+                            v3119 = extractAssetId(v1243)
+                            if v3119 then
+                                return string.format("rbxthumb://type=Asset&id=%s&w=420&h=420", v3119)
+                            end
+                            break
+                        end
+                    end
+                end
+                v1241 = 11 - 8
+            end
+        end
+    end
+    function CreateModernESP(v1244, v1245, v1246)
+        if not v1244 then
+            return
+        end
+        local v1247 = v1246.name
+        local v1248 = v1247 or ""
+        local v1249 = v1248 ~= ""
+        local v1250 = v1245 ~= "PE_Text"
+        if not v1250 then
+            if v1249 then
+                v1250 = false
+            else
+                v1250 = true
+            end
+        end
+        local v1251 = (v1250 and "single") or "multi"
+        local v1252 = v1246.infoRich
+        local v1253 = v1252 or ""
+        if v1253 == "" then
+            local v2393 = 1056 - (1049 + 7)
+            local v2394
+            while true do
+                if v2393 == (4 - 3) then
+                    if v1246.distance then
+                        table.insert(v2394, tostring(v1246.distance) .. "m")
+                    end
+                    v1253 = table.concat(v2394, ' <font color="#888888">Â·</font> ')
+                    break
+                end
+                if v2393 == 0 then
+                    v2394 = {}
+                    if v1246.subtext and (v1246.subtext ~= "") then
+                        table.insert(v2394, tostring(v1246.subtext))
+                    end
+                    v2393 = 1 - 0
+                end
+            end
+        end
+        local v1254 = v1244:FindFirstChild(v1245)
+        local v1255 = v1254
+        if v1254 and (v1254:GetAttribute("Layout") ~= v1251) then
+            v1254:Destroy()
+            v1255 = nil
+        end
+        if not v1255 then
+            local v2395 = Instance.new("BillboardGui")
+            v1255 = v2395
+            v2395.Name = v1245
+            v2395.AlwaysOnTop = true
+            v2395:SetAttribute("Layout", v1251)
+            local v2398 = (v1250 and UDim2.new(0 + 0, 589 - 369, 0 - 0, 10 + 12))
+                or UDim2.new(1420 - (1004 + 416), 2177 - (1621 + 336), 1939 - (337 + 1602), 34)
+            v2395.Size = v2398
+            local v2400 = Vector3.new
+            local v2401 = v1246.offsetY
+            local v2402 = v2401 or (1521 - (1014 + 503))
+            v2395.StudsOffset = v2400(1015 - (446 + 569), v2402, 0 + 0)
+            v2395.Parent = v1244
+            local v2405 = Instance.new("Frame")
+            v2405.Name = "Box"
+            v2405.BackgroundTransparency = 2 - 1
+            v2405.Size = UDim2.new(1 + 0, 0 - 0, 1 + 0, 505 - (223 + 282))
+            v2405.AnchorPoint = Vector2.new(0.5, 0.5 + 0)
+            v2405.Position = UDim2.new(0.5 - 0, 0 - 0, 670.5 - (623 + 47), 45 - (32 + 13))
+            v2405.Parent = v2395
+            if v1246.noDistScale then
+                v2395:SetAttribute("NoDistScale", true)
+            else
+                local v2875 = 0 + 0
+                local v2876
+                while true do
+                    if v2875 == (0 + 0) then
+                        v2876 = Instance.new("UIScale")
+                        v2876.Name = "DistScale"
+                        v2875 = 1802 - (1070 + 731)
+                    end
+                    if 1 == v2875 then
+                        v2876.Scale = 1 + 0
+                        v2876.Parent = v2405
+                        break
+                    end
+                end
+            end
+            if v1250 then
+                local v2877 = 1404 - (1257 + 147)
+                local v2878
+                local v2879
+                local v2880
+                while true do
+                    if (2 + 3) == v2877 then
+                        v2880.TextStrokeTransparency = 0
+                        v2880.TextStrokeColor3 = Color3.new(0 - 0, 0, 133 - (98 + 35))
+                        v2880.Parent = v2405
+                        break
+                    end
+                    if v2877 == (2 + 2) then
+                        v2880.TextSize = 42 - 30
+                        v2880.TextWrapped = false
+                        v2880.TextYAlignment = Enum.TextYAlignment.Center
+                        v2880.RichText = true
+                        v2877 = 5
+                    end
+                    if v2877 == 3 then
+                        v2880.Name = "Text"
+                        v2880.BackgroundTransparency = 1
+                        v2880.AutomaticSize = Enum.AutomaticSize.XY
+                        v2880.Font = Enum.Font.GothamBold
+                        v2877 = 13 - 9
+                    end
+                    if v2877 == (2 + 0) then
+                        v2879.Size = UDim2.new(0, 14, 0, 14)
+                        v2879.Visible = false
+                        v2879.Parent = v2405
+                        v2880 = Instance.new("TextLabel")
+                        v2877 = 3 + 0
+                    end
+                    if v2877 == (1 + 0) then
+                        v2878.Padding = UDim.new(557 - (395 + 162), 4 + 0)
+                        v2879 = Instance.new("ImageLabel")
+                        v2879.Name = "Icon"
+                        v2879.BackgroundTransparency = 1
+                        v2877 = 1943 - (816 + 1125)
+                    end
+                    if v2877 == (0 - 0) then
+                        v2878 = Instance.new("UIListLayout", v2405)
+                        v2878.FillDirection = Enum.FillDirection.Horizontal
+                        v2878.HorizontalAlignment = Enum.HorizontalAlignment.Center
+                        v2878.VerticalAlignment = Enum.VerticalAlignment.Center
+                        v2877 = 1149 - (701 + 447)
+                    end
+                end
+            else
+                local v2881 = 0
+                local v2882
+                local v2883
+                local v2884
+                local v2885
+                local v2886
+                local v2887
+                while true do
+                    if v2881 == (4 - 1) then
+                        v2884.FillDirection = Enum.FillDirection.Horizontal
+                        v2884.HorizontalAlignment = Enum.HorizontalAlignment.Center
+                        v2884.VerticalAlignment = Enum.VerticalAlignment.Center
+                        v2884.Padding = UDim.new(0 - 0, 4)
+                        v2881 = 1345 - (391 + 950)
+                    end
+                    if v2881 == (26 - 16) then
+                        v2887.TextYAlignment = Enum.TextYAlignment.Center
+                        v2887.RichText = true
+                        v2887.TextStrokeTransparency = 0
+                        v2887.TextStrokeColor3 = Color3.new(0 - 0, 0, 0)
+                        v2881 = 27 - 16
+                    end
+                    if v2881 == 4 then
+                        v2885 = Instance.new("ImageLabel")
+                        v2885.Name = "Icon"
+                        v2885.BackgroundTransparency = 1
+                        v2885.Size = UDim2.new(0 + 0, 9 + 5, 0 - 0, 1536 - (251 + 1271))
+                        v2881 = 5 + 0
+                    end
+                    if v2881 == 1 then
+                        v2882.Padding = UDim.new(0, 0 - 0)
+                        v2883 = Instance.new("Frame")
+                        v2883.Name = "Row1"
+                        v2883.BackgroundTransparency = 2 - 1
+                        v2881 = 2 - 0
+                    end
+                    if 7 == v2881 then
+                        v2886.TextWrapped = false
+                        v2886.TextYAlignment = Enum.TextYAlignment.Center
+                        v2886.TextStrokeTransparency = 0
+                        v2886.TextStrokeColor3 = Color3.new(1259 - (1147 + 112), 0 + 0, 0 - 0)
+                        v2881 = 3 + 5
+                    end
+                    if v2881 == (706 - (335 + 362)) then
+                        v2887.AutomaticSize = Enum.AutomaticSize.XY
+                        v2887.Font = Enum.Font.GothamBold
+                        v2887.TextSize = 11
+                        v2887.TextWrapped = false
+                        v2881 = 10 + 0
+                    end
+                    if v2881 == (11 - 3) then
+                        v2886.Parent = v2883
+                        v2887 = Instance.new("TextLabel")
+                        v2887.Name = "Info"
+                        v2887.BackgroundTransparency = 1
+                        v2881 = 24 - 15
+                    end
+                    if (22 - 16) == v2881 then
+                        v2886.BackgroundTransparency = 4 - 3
+                        v2886.AutomaticSize = Enum.AutomaticSize.XY
+                        v2886.Font = Enum.Font.GothamBold
+                        v2886.TextSize = 12
+                        v2881 = 19 - 12
+                    end
+                    if v2881 == (568 - (237 + 329)) then
+                        v2883.AutomaticSize = Enum.AutomaticSize.XY
+                        v2883.Size = UDim2.new(0 - 0, 0 + 0, 0 + 0, 1140 - (408 + 716))
+                        v2883.Parent = v2405
+                        v2884 = Instance.new("UIListLayout", v2883)
+                        v2881 = 11 - 8
+                    end
+                    if v2881 == (821 - (344 + 477)) then
+                        v2882 = Instance.new("UIListLayout", v2405)
+                        v2882.FillDirection = Enum.FillDirection.Vertical
+                        v2882.HorizontalAlignment = Enum.HorizontalAlignment.Center
+                        v2882.VerticalAlignment = Enum.VerticalAlignment.Center
+                        v2881 = 1 + 0
+                    end
+                    if v2881 == (1772 - (1188 + 573)) then
+                        v2887.Parent = v2405
+                        break
+                    end
+                    if v2881 == 5 then
+                        v2885.Visible = false
+                        v2885.Parent = v2883
+                        v2886 = Instance.new("TextLabel")
+                        v2886.Name = "Name"
+                        v2881 = 15 - 9
+                    end
+                end
+            end
+        end
+        local v1256 = v1255:FindFirstChild("Box")
+        if v1250 then
+            local v2412 = 0
+            local v2413
+            local v2414
+            while true do
+                if 1 == v2412 then
+                    if v2413 then
+                        local v3515 = "#FFFFFF"
+                        if v1246.color then
+                            v3515 = string.format(
+                                "#%02X%02X%02X",
+                                math.floor(v1246.color.R * (249 + 6)),
+                                math.floor(v1246.color.G * (827 - 572)),
+                                math.floor(v1246.color.B * (393 - 138))
+                            )
+                        end
+                        local v3516 = tostring
+                        local v3517 = v1248 or ""
+                        local v3518 = v3516(v3517):gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
+                        local v3519 = ""
+                        if v1249 then
+                            v3519 = string.format('<font color="%s">%s</font>', v3515, v3518)
+                        end
+                        if v1253 ~= "" then
+                            if v3519 == "" then
+                                v3519 = v1253
+                            elseif v1246.noSeparator then
+                                v3519 = v3519 .. " " .. v1253
+                            else
+                                v3519 = v3519 .. ' <font color="#888888">Â·</font> ' .. v1253
+                            end
+                        end
+                        v2413.Text = v3519
+                    end
+                    if v2414 then
+                        if v1246.icon and (v1246.icon ~= "") then
+                            v2414.Image = v1246.icon
+                            v2414.Visible = true
+                        else
+                            v2414.Visible = false
+                        end
+                    end
+                    break
+                end
+                if v2412 == (0 - 0) then
+                    v2413 = v1256 and v1256:FindFirstChild("Text")
+                    v2414 = v1256 and v1256:FindFirstChild("Icon")
+                    v2412 = 1530 - (508 + 1021)
+                end
+            end
+        else
+            local v2415 = v1256 and v1256:FindFirstChild("Row1")
+            local v2416 = v2415 and v2415:FindFirstChild("Name")
+            local v2417 = v2415 and v2415:FindFirstChild("Icon")
+            local v2418 = v1256 and v1256:FindFirstChild("Info")
+            if v2416 then
+                local v2888 = 0
+                local v2889
+                local v2890
+                while true do
+                    if (0 + 0) == v2888 then
+                        v2416.Text = tostring(v1248):gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
+                        v2889 = v1246.color
+                        v2888 = 1167 - (228 + 938)
+                    end
+                    if v2888 == (686 - (332 + 353)) then
+                        v2890 = v2889 or Color3.new(1, 1 - 0, 1)
+                        v2416.TextColor3 = v2890
+                        break
+                    end
+                end
+            end
+            if v2417 then
+                if v1246.icon and (v1246.icon ~= "") then
+                    local v3308 = 0 - 0
+                    while true do
+                        if v3308 == (0 + 0) then
+                            v2417.Image = v1246.icon
+                            v2417.Visible = true
+                            break
+                        end
+                    end
+                else
+                    v2417.Visible = false
+                end
+            end
+            if v2418 then
+                if v1253 == "" then
+                    v2418.Visible = false
+                else
+                    v2418.Visible = true
+                    v2418.Text = v1253
+                end
+            end
+        end
+    end
+    local function v213()
+        local v1257 = localPlayer.Team
+        local v1258 = v1257 and (localPlayer.Team.Name == "Survivors")
+        return v1258
+    end
+    local function v214(v1259)
+        local v1260 = 0
+        local v1261
+        local v1262
+        while true do
+            if v1260 == (0 + 0) then
+                v1261 = v1259:FindFirstChildOfClass("Humanoid")
+                if not v1261 then
+                    return false
+                end
+                v1260 = 3 - 2
+            end
+            if v1260 == (424 - (18 + 405)) then
+                v1262 = v1261:FindFirstChildOfClass("Animator")
+                if not v1262 then
+                    return false
+                end
+                v1260 = 2
+            end
+            if (1 + 1) == v1260 then
+                for v2891, v2892 in ipairs(v1262:GetPlayingAnimationTracks()) do
+                    if v2892.Animation and string.find(tostring(v2892.Animation.AnimationId), "126081405469607") then
+                        return true
+                    end
+                end
+                return false
+            end
+        end
+    end
+    local function v215(v1263)
+        if not _G.Ox.FakePerks.QuickRecoveryEnabled then
+            return
+        end
+        if not v213() then
+            return
+        end
+        if _G.Ox.FakePerks.boostActive then
+            return
+        end
+        if (tick() - _G.Ox.FakePerks.lastQRTime) < _G.Ox.FakePerks.PerkCooldown then
+            return
+        end
+        _G.Ox.FakePerks.boostActive = true
+        _G.Ox.FakePerks.lastQRTime = tick()
+        local v1264 = tick()
+        task.spawn(function()
+            local v2116 = 0
+            while true do
+                if v2116 == (0 + 0) then
+                    while _G.Ox.FakePerks.QuickRecoveryEnabled and ((tick() - v1264) < (3 - 0)) do
+                        local v3120 = 0
+                        while true do
+                            if v3120 == (978 - (194 + 784)) then
+                                if v1263 and v1263.Parent then
+                                    v1263:SetAttribute("speedboost", 1771.4 - (694 + 1076))
+                                end
+                                task.wait()
+                                break
+                            end
+                        end
+                    end
+                    if v1263 and v1263.Parent then
+                        v1263:SetAttribute("speedboost", 1905 - (122 + 1782))
+                    end
+                    v2116 = 1 + 0
+                end
+                if (1 + 0) == v2116 then
+                    _G.Ox.FakePerks.boostActive = false
+                    break
+                end
+            end
+        end)
+    end
+    local function v216(v1265)
+        if _G.Ox.FakePerks.qrConnection then
+            local v2419 = 0 + 0
+            while true do
+                if v2419 == (0 + 0) then
+                    _G.Ox.FakePerks.qrConnection:Disconnect()
+                    _G.Ox.FakePerks.qrConnection = nil
+                    break
+                end
+            end
+        end
+        if not v1265 then
+            return
+        end
+        _G.Ox.FakePerks.qrConnection = v1265:GetAttributeChangedSignal("isvaulting"):Connect(function()
+            if v1265:GetAttribute("isvaulting") == true then
+                task.spawn(function()
+                    local v2893 = 0 - 0
+                    local v2894
+                    local v2895
+                    while true do
+                        if v2893 == (0 + 0) then
+                            task.wait(1970.05 - (214 + 1756))
+                            v2894 = v214(v1265)
+                            v2893 = 4 - 3
+                        end
+                        if v2893 == (1 + 0) then
+                            v2895 = v2894
+                            if not v2894 then
+                                local v3765 = 0
+                                while true do
+                                    if v3765 == (0 + 0) then
+                                        task.wait(585.05 - (217 + 368))
+                                        v2895 = v214(v1265)
+                                        break
+                                    end
+                                end
+                            end
+                            v2893 = 2
+                        end
+                        if v2893 == (5 - 3) then
+                            if not v2895 and (v1265:GetAttribute("isvaulting") == true) then
+                                v215(v1265)
+                            end
+                            break
+                        end
+                    end
+                end)
+            end
+        end)
+    end
+    function ToggleQuickRecovery(v1266)
+        local v1267 = 0 + 0
+        local v1268
+        local v1269
+        local v1270
+        while true do
+            if (0 + 0) == v1267 then
+                _G.Ox.FakePerks.QuickRecoveryEnabled = v1266
+                if v1266 and localPlayer.Character then
+                    v216(localPlayer.Character)
+                elseif not v1266 and _G.Ox.FakePerks.qrConnection then
+                    _G.Ox.FakePerks.qrConnection:Disconnect()
+                    _G.Ox.FakePerks.qrConnection = nil
+                end
+                v1267 = 1 + 0
+            end
+            if v1267 == (892 - (844 + 45)) then
+                v1269.Duration = 2
+                v1268(v1, v1269)
+                break
+            end
+            if v1267 == 2 then
+                v1270 = (v1266 and "AKTIF") or "NONAKTIF"
+                v1269.Description = v1270
+                v1267 = 3
+            end
+            if v1267 == 1 then
+                v1268 = v1.Notify
+                v1269 = {
+                    Title = "Fake Quick Recovery",
+                }
+                v1267 = 2
+            end
+        end
+    end
+    local function v217(v1271)
+        if not _G.Ox.FakePerks.PerfectLandingEnabled then
+            return
+        end
+        if not v213() then
+            return
+        end
+        if _G.Ox.FakePerks.perfectLandingBoostActive then
+            return
+        end
+        if (tick() - _G.Ox.FakePerks.lastPLTime) < _G.Ox.FakePerks.PerkCooldown then
+            return
+        end
+        _G.Ox.FakePerks.perfectLandingBoostActive = true
+        _G.Ox.FakePerks.lastPLTime = tick()
+        local v1272 = tick()
+        task.spawn(function()
+            local v2117 = 284 - (242 + 42)
+            while true do
+                if 1 == v2117 then
+                    _G.Ox.FakePerks.perfectLandingBoostActive = false
+                    break
+                end
+                if (0 - 0) == v2117 then
+                    while _G.Ox.FakePerks.perfectLandingBoostActive and ((tick() - v1272) < (6 - 3)) do
+                        local v3121 = 1200 - (132 + 1068)
+                        while true do
+                            if v3121 == (0 - 0) then
+                                if v1271 and v1271.Parent then
+                                    v1271:SetAttribute("speedboost", 1624.4 - (214 + 1409))
+                                end
+                                task.wait()
+                                break
+                            end
+                        end
+                    end
+                    if v1271 and v1271.Parent then
+                        v1271:SetAttribute("speedboost", 1 + 0)
+                    end
+                    v2117 = 1635 - (497 + 1137)
+                end
+            end
+        end)
+    end
+    local function v218(v1273)
+        if _G.Ox.FakePerks.plConnection then
+            local v2420 = 0
+            while true do
+                if v2420 == (940 - (9 + 931)) then
+                    _G.Ox.FakePerks.plConnection:Disconnect()
+                    _G.Ox.FakePerks.plConnection = nil
+                    break
+                end
+            end
+        end
+        if not v1273 then
+            return
+        end
+        _G.Ox.FakePerks.plConnection = v1273:GetAttributeChangedSignal("speedboost"):Connect(function()
+            if not v213() then
+                return
+            end
+            if v1273:GetAttribute("speedboost") == 0.625 then
+                v217(v1273)
+            end
+        end)
+    end
+    function TogglePerfectLanding(v1274)
+        local v1275 = 289 - (181 + 108)
+        local v1276
+        local v1277
+        local v1278
+        while true do
+            if (0 + 0) == v1275 then
+                _G.Ox.FakePerks.PerfectLandingEnabled = v1274
+                if v1274 then
+                    if localPlayer.Character then
+                        v218(localPlayer.Character)
+                    end
+                else
+                    local v3122 = 0 - 0
+                    while true do
+                        if v3122 == (0 - 0) then
+                            if _G.Ox.FakePerks.plConnection then
+                                local v3886 = 0
+                                while true do
+                                    if v3886 == (0 + 0) then
+                                        _G.Ox.FakePerks.plConnection:Disconnect()
+                                        _G.Ox.FakePerks.plConnection = nil
+                                        break
+                                    end
+                                end
+                            end
+                            if _G.Ox.FakePerks.perfectLandingBoostActive and localPlayer.Character then
+                                local v3887 = 0 + 0
+                                while true do
+                                    if v3887 == 0 then
+                                        localPlayer.Character:SetAttribute("speedboost", 1)
+                                        _G.Ox.FakePerks.perfectLandingBoostActive = false
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+                v1275 = 1
+            end
+            if v1275 == (478 - (296 + 180)) then
+                v1278 = (v1274 and "AKTIF") or "NONAKTIF"
+                v1277.Description = v1278
+                v1275 = 3
+            end
+            if v1275 == (1406 - (1183 + 220)) then
+                v1277.Duration = 1267 - (1037 + 228)
+                v1276(v1, v1277)
+                break
+            end
+            if v1275 == (1 - 0) then
+                v1276 = v1.Notify
+                v1277 = {
+                    Title = "Fake Perfect Landing",
+                }
+                v1275 = 5 - 3
+            end
+        end
+    end
+    local function v219(v1279)
+        if _G.Ox.FakePerks.fsConnection then
+            _G.Ox.FakePerks.fsConnection:Disconnect()
+            _G.Ox.FakePerks.fsConnection = nil
+        end
+        if _G.Ox.FakePerks.fsAnimConnection then
+            local v2421 = 0
+            while true do
+                if v2421 == (0 - 0) then
+                    _G.Ox.FakePerks.fsAnimConnection:Disconnect()
+                    _G.Ox.FakePerks.fsAnimConnection = nil
+                    break
+                end
+            end
+        end
+        if not v1279 then
+            return
+        end
+        local v1280 = v1279:WaitForChild("Humanoid", 737 - (527 + 207))
+        if not v1280 then
+            return
+        end
+        local v1281 = v1280:WaitForChild("Animator", 530 - (187 + 340))
+        if not v1281 then
+            return
+        end
+        _G.Ox.FakePerks.fsAnimConnection = v1281.AnimationPlayed:Connect(function(v2118)
+            local v2119 = 1870 - (1298 + 572)
+            local v2120
+            while true do
+                if v2119 == (0 - 0) then
+                    if not v2118.Animation then
+                        return
+                    end
+                    if v2118.Animation.AnimationId ~= "rbxassetid://136962284480779" then
+                        return
+                    end
+                    v2119 = 171 - (144 + 26)
+                end
+                if v2119 == (2 - 1) then
+                    v2120 = nil
+                    v2120 = v2118.Stopped:Connect(function()
+                        local v3123 = 0 - 0
+                        while true do
+                            if v3123 == 2 then
+                                task.delay(_G.Ox.FakePerks.PerkCooldown, function()
+                                    _G.Ox.FakePerks.fsOnCooldown = false
+                                    if _G.Ox.FakePerks.FlowstateEnabled and v1279 and v1279.Parent then
+                                        v1279:SetAttribute("Flowstate", true)
+                                    end
+                                end)
+                                break
+                            end
+                            if v3123 == 1 then
+                                _G.Ox.FakePerks.fsOnCooldown = true
+                                if v1279 and v1279.Parent then
+                                    v1279:SetAttribute("Flowstate", false)
+                                end
+                                v3123 = 1 + 1
+                            end
+                            if v3123 == (0 - 0) then
+                                if v2120 then
+                                    v2120:Disconnect()
+                                end
+                                _G.Ox.FakePerks.lastFSTime = tick()
+                                v3123 = 2 - 1
+                            end
+                        end
+                    end)
+                    break
+                end
+            end
+        end)
+        _G.Ox.FakePerks.fsConnection = v1279:GetAttributeChangedSignal("Flowstate"):Connect(function()
+            local v2121 = 0 - 0
+            local v2122
+            while true do
+                if v2121 == (1 + 0) then
+                    v2122 = v1279:GetAttribute("Flowstate")
+                    if v2122 == true then
+                        if
+                            _G.Ox.FakePerks.fsOnCooldown
+                            or ((tick() - _G.Ox.FakePerks.lastFSTime) < _G.Ox.FakePerks.PerkCooldown)
+                        then
+                            v1279:SetAttribute("Flowstate", false)
+                        end
+                    elseif (v2122 == false) and not _G.Ox.FakePerks.fsOnCooldown then
+                        local v3694 = 0 - 0
+                        local v3695
+                        while true do
+                            if v3694 == (0 + 0) then
+                                v3695 = tick() - _G.Ox.FakePerks.lastFSTime
+                                if _G.Ox.FakePerks.PerkCooldown <= v3695 then
+                                    v1279:SetAttribute("Flowstate", true)
+                                end
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+                if v2121 == 0 then
+                    if not _G.Ox.FakePerks.FlowstateEnabled then
+                        return
+                    end
+                    if not v213() then
+                        return
+                    end
+                    v2121 = 1 + 0
+                end
+            end
+        end)
+        task.wait(0.5)
+        if _G.Ox.FakePerks.FlowstateEnabled and v1279 and v1279.Parent then
+            v1279:SetAttribute("Flowstate", true)
+        end
+    end
+    function ToggleFlowstate(v1282)
+        local v1283 = 0
+        local v1284
+        local v1285
+        local v1286
+        while true do
+            if (205 - (5 + 197)) == v1283 then
+                v1285.Duration = 2
+                v1284(v1, v1285)
+                break
+            end
+            if v1283 == 2 then
+                v1286 = (v1282 and "AKTIF") or "NONAKTIF"
+                v1285.Description = v1286
+                v1283 = 689 - (339 + 347)
+            end
+            if (0 - 0) == v1283 then
+                _G.Ox.FakePerks.FlowstateEnabled = v1282
+                if v1282 then
+                    if localPlayer.Character then
+                        v219(localPlayer.Character)
+                    end
+                else
+                    if _G.Ox.FakePerks.fsConnection then
+                        local v3524 = 0 - 0
+                        while true do
+                            if v3524 == (376 - (365 + 11)) then
+                                _G.Ox.FakePerks.fsConnection:Disconnect()
+                                _G.Ox.FakePerks.fsConnection = nil
+                                break
+                            end
+                        end
+                    end
+                    if _G.Ox.FakePerks.fsAnimConnection then
+                        _G.Ox.FakePerks.fsAnimConnection:Disconnect()
+                        _G.Ox.FakePerks.fsAnimConnection = nil
+                    end
+                    if localPlayer.Character then
+                        localPlayer.Character:SetAttribute("Flowstate", false)
+                    end
+                end
+                v1283 = 1
+            end
+            if v1283 == (1 + 0) then
+                v1284 = v1.Notify
+                v1285 = {
+                    Title = "Fake Flowstate",
+                }
+                v1283 = 7 - 5
+            end
+        end
+    end
+    local function v220()
+        local v1287 = 0 - 0
+        local v1288
+        while true do
+            if v1287 == (924 - (837 + 87)) then
+                v1288 = _G.Ox.FakePerks.adrenalineConns
+                if not v1288 then
+                    return
+                end
+                v1287 = 1 - 0
+            end
+            if v1287 == (1671 - (837 + 833)) then
+                for v2896, v2897 in ipairs(v1288) do
+                    pcall(function()
+                        v2897:Disconnect()
+                    end)
+                end
+                _G.Ox.FakePerks.adrenalineConns = {}
+                break
+            end
+        end
+    end
+    local function v221(v1289)
+        local v1290 = 0 + 0
+        local v1291
+        local v1292
+        local v1293
+        local v1294
+        while true do
+            if v1290 == (1388 - (356 + 1031)) then
+                if _G.Ox.FakePerks.boostActive then
+                    return
+                end
+                v1291 = tick()
+                v1292 = _G.Ox.FakePerks.lastARTime
+                v1290 = 2
+            end
+            if v1290 == 3 then
+                _G.Ox.FakePerks.lastARTime = tick()
+                v1294 = tick()
+                task.spawn(function()
+                    local v2898 = 0
+                    while true do
+                        if v2898 == (0 + 0) then
+                            while _G.Ox.FakePerks.FakeAdrenalineRush and ((tick() - v1294) < (1651 - (73 + 1573))) do
+                                if v1289 and v1289.Parent then
+                                    v1289:SetAttribute("speedboost", 1389.4 - (1307 + 81))
+                                end
+                                task.wait()
+                            end
+                            if v1289 and v1289.Parent then
+                                v1289:SetAttribute("speedboost", 235 - (7 + 227))
+                            end
+                            v2898 = 1 - 0
+                        end
+                        if v2898 == 1 then
+                            _G.Ox.FakePerks.boostActive = false
+                            break
+                        end
+                    end
+                end)
+                break
+            end
+            if v1290 == 0 then
+                if not _G.Ox.FakePerks.FakeAdrenalineRush then
+                    return
+                end
+                if not v213() then
+                    return
+                end
+                if not v1289 or not v1289.Parent then
+                    return
+                end
+                v1290 = 167 - (90 + 76)
+            end
+            if v1290 == (6 - 4) then
+                v1293 = v1292 or 0
+                if (v1291 - v1293) < _G.Ox.FakePerks.PerkCooldown then
+                    return
+                end
+                _G.Ox.FakePerks.boostActive = true
+                v1290 = 3
+            end
+        end
+    end
+    local function v222(v1295)
+        if not v1295 then
+            return
+        end
+        local v1296 = v1295:FindFirstChildOfClass("Humanoid")
+        local v1297 = v1296 or v1295:WaitForChild("Humanoid", 5)
+        if not v1297 then
+            return
+        end
+        local v1298 = v1297.Health
+        table.insert(
+            _G.Ox.FakePerks.adrenalineConns,
+            v1297.HealthChanged:Connect(function(v2123)
+                local v2124 = 0 + 0
+                while true do
+                    if 1 == v2124 then
+                        v1298 = v2123
+                        break
+                    end
+                    if v2124 == 0 then
+                        if not _G.Ox.FakePerks.FakeAdrenalineRush then
+                            return
+                        end
+                        if (v2123 < v1298) and (v2123 <= 50) and (v2123 > (0 + 0)) then
+                            v221(v1295)
+                        end
+                        v2124 = 1 + 0
+                    end
+                end
+            end)
+        )
+    end
+    function SetupFakeAdrenalineRush(v1299)
+        local v1300 = 0 - 0
+        local v1301
+        local v1302
+        local v1303
+        local v1304
+        while true do
+            if v1300 == (263 - (197 + 63)) then
+                table.insert(
+                    _G.Ox.FakePerks.adrenalineConns,
+                    localPlayer.CharacterAdded:Connect(function(v2899)
+                        local v2900 = 0 + 0
+                        while true do
+                            if v2900 == (0 + 0) then
+                                task.wait(0.3 + 0)
+                                if _G.Ox.FakePerks.FakeAdrenalineRush then
+                                    v222(v2899)
+                                end
+                                break
+                            end
+                        end
+                    end)
+                )
+                v1:Notify({
+                    Title = "Fake Perks",
+                    Description = "Adrenaline Rush ON",
+                    Duration = 3,
+                })
+                break
+            end
+            if v1300 == (1 + 0) then
+                v1303 = _G.Ox.FakePerks
+                v1304 = v1299 == true
+                v1303.adrenalineOn = v1304
+                v1300 = 2
+            end
+            if v1300 == 0 then
+                v1301 = _G.Ox.FakePerks
+                v1302 = v1299 == true
+                v1301.FakeAdrenalineRush = v1302
+                v1300 = 1 - 0
+            end
+            if (1371 - (618 + 751)) == v1300 then
+                v220()
+                if not v1299 then
+                    v1:Notify({
+                        Title = "Fake Perks",
+                        Description = "Adrenaline Rush OFF",
+                        Duration = 2 + 0,
+                    })
+                    return
+                end
+                v222(localPlayer.Character)
+                v1300 = 3
+            end
+        end
+    end
+    local function v223(v1305)
+        task.wait(0.5)
+        if _G.Ox.FakePerks.QuickRecoveryEnabled then
+            v216(v1305)
+        end
+        if _G.Ox.FakePerks.PerfectLandingEnabled then
+            v218(v1305)
+        end
+        if _G.Ox.FakePerks.FlowstateEnabled then
+            v219(v1305)
+        end
+        if _G.Ox.FakePerks.FakeAdrenalineRush then
+            v222(v1305)
+        end
+    end
+    if localPlayer.Character then
+        v223(localPlayer.Character)
+    end
+    localPlayer.CharacterAdded:Connect(v223)
+    local function v224()
+        if not _G.Ox.StreamerMode.Enabled then
+            return
+        end
+        local v1306 = localPlayer:FindFirstChild("PlayerGui")
+        if not v1306 then
+            return
+        end
+        local function v1307(v2125)
+            if not v2125:IsA("TextLabel") and not v2125:IsA("TextButton") and not v2125:IsA("TextBox") then
+                if v2125:IsA("ImageLabel") or v2125:IsA("ImageButton") then
+                    local function v3124()
+                        if not _G.Ox.StreamerMode.Enabled then
+                            return
+                        end
+                        local v3313 = v2125.Image
+                        local v3314 = false
+                        for v3525, v3526 in ipairs(Players:GetPlayers()) do
+                            if string.find(v3313, tostring(v3526.UserId)) then
+                                if not v2125:GetAttribute("OriginalImage") then
+                                    v2125:SetAttribute("OriginalImage", v3313)
+                                end
+                                v3314 = true
+                                break
+                            end
+                        end
+                        if v3314 and (v2125.Image ~= "rbxassetid://122666578965463") then
+                            v2125.Image = "rbxassetid://122666578965463"
+                        end
+                    end
+                    v3124()
+                    local v3125 = v2125:GetPropertyChangedSignal("Image"):Connect(v3124)
+                    table.insert(_G.Ox.StreamerMode.SpooferConns, v3125)
+                end
+            else
+                local function v2653()
+                    if not _G.Ox.StreamerMode.Enabled then
+                        return
+                    end
+                    local v2901 = v2125.Text
+                    local v2902 = v2901
+                    local v2903 = false
+                    if not v2125:GetAttribute("OriginalText") then
+                        v2125:SetAttribute("OriginalText", v2901)
+                    end
+                    for v3126, v3127 in ipairs(Players:GetPlayers()) do
+                        if string.find(v2902, v3127.Name) or string.find(v2902, v3127.DisplayName) then
+                            local v3527 = 1910 - (206 + 1704)
+                            local v3528
+                            while true do
+                                if (0 - 0) == v3527 then
+                                    v3528 = string.gsub(v2902, v3127.Name, "CHOCO")
+                                    v2902 = string.gsub(v3528, v3127.DisplayName, "CHOCO")
+                                    v3527 = 1 - 0
+                                end
+                                if v3527 == (1 + 0) then
+                                    v2903 = true
+                                    break
+                                end
+                            end
+                        end
+                    end
+                    if v2903 and (v2125.Text ~= v2902) then
+                        v2125.Text = v2902
+                    end
+                end
+                v2653()
+                local v2654 = v2125:GetPropertyChangedSignal("Text"):Connect(v2653)
+                table.insert(_G.Ox.StreamerMode.SpooferConns, v2654)
+            end
+        end
+        for v2126, v2127 in ipairs(v1306:GetDescendants()) do
+            v1307(v2127)
+        end
+        local v1308 = v1306.DescendantAdded:Connect(function(v2128)
+            task.defer(function()
+                v1307(v2128)
+            end)
+        end)
+        table.insert(_G.Ox.StreamerMode.SpooferConns, v1308)
+    end
+    local function v225()
+        local v1309 = 1275 - (155 + 1120)
+        local v1310
+        while true do
+            if v1309 == 1 then
+                v1310 = localPlayer:FindFirstChild("PlayerGui")
+                if v1310 then
+                    for v3316, v3317 in ipairs(v1310:GetDescendants()) do
+                        if not v3317:IsA("TextLabel") and not v3317:IsA("TextButton") and not v3317:IsA("TextBox") then
+                            if v3317:IsA("ImageLabel") or v3317:IsA("ImageButton") then
+                                local v3888 = v3317:GetAttribute("OriginalImage")
+                                if v3888 then
+                                    local v4006 = 0
+                                    while true do
+                                        if v4006 == (1506 - (396 + 1110)) then
+                                            v3317.Image = v3888
+                                            v3317:SetAttribute("OriginalImage", nil)
+                                            break
+                                        end
+                                    end
+                                end
+                            end
+                        else
+                            local v3697 = v3317:GetAttribute("OriginalText")
+                            if v3697 then
+                                v3317.Text = v3697
+                                v3317:SetAttribute("OriginalText", nil)
+                            end
+                        end
+                    end
+                end
+                break
+            end
+            if v1309 == (0 - 0) then
+                for v2904, v2905 in ipairs(_G.Ox.StreamerMode.SpooferConns) do
+                    if v2905.Connected then
+                        v2905:Disconnect()
+                    end
+                end
+                table.clear(_G.Ox.StreamerMode.SpooferConns)
+                v1309 = 1 + 0
+            end
+        end
+    end
+    local function v226(v1311)
+        local v1312 = 0 + 0
+        while true do
+            if v1312 == (0 + 0) then
+                _G.Ox.StreamerMode.Enabled = v1311
+                if v1311 then
+                    local v3128 = 0
+                    while true do
+                        if v3128 == (976 - (230 + 746)) then
+                            v224()
+                            v1:Notify({
+                                Title = "Streamer Mode",
+                                Description = "AKTIF - Nama player disembunyikan",
+                                Duration = 3,
+                            })
+                            break
+                        end
+                    end
+                else
+                    v225()
+                    v1:Notify({
+                        Title = "Streamer Mode",
+                        Description = "NONAKTIF",
+                        Duration = 2,
+                    })
+                end
+                break
+            end
+        end
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        local v1313 = 0
+        while true do
+            if v1313 == (601 - (473 + 128)) then
+                task.wait(1)
+                if _G.Ox.StreamerMode.Enabled then
+                    local v3129 = 0
+                    while true do
+                        if v3129 == 0 then
+                            v225()
+                            v203()
+                            v3129 = 49 - (39 + 9)
+                        end
+                        if v3129 == (267 - (38 + 228)) then
+                            task.wait(0.5 - 0)
+                            v224()
+                            break
+                        end
+                    end
+                end
+                break
+            end
+        end
+    end)
+    playerGui.ChildAdded:Connect(function()
+        local v1314 = 0
+        while true do
+            if v1314 == (473 - (106 + 367)) then
+                task.wait(0.5)
+                if _G.Ox.StreamerMode.Enabled then
+                    v224()
+                end
+                break
+            end
+        end
+    end)
+    local function v227(v1315)
+        _G.Ox.StretchRes.Enabled = v1315
+        local v1316 = v1.Notify
+        local v1317 = {
+            Title = "Stretch Res",
+        }
+        local v1318 = (v1315 and "AKTIF") or "NONAKTIF"
+        v1317.Description = v1318
+        v1317.Duration = 1 + 1
+        v1316(v1, v1317)
+    end
+    local v228 = {}
+    function UpdateHookData()
+        for v2129, v2130 in pairs(Players:GetPlayers()) do
+            if (v2130 ~= localPlayer) and v2130.Team and (v2130.Team.Name == "Survivors") then
+                local v2655 = v2130:GetAttribute("HookCount")
+                local v2656 = v2655 or 0
+                v228[v2130.Name] = v2656
+            end
+        end
+    end
+    function CreateHookESP(v1321, v1322)
+        if not _G.Ox.ESPConfig.HookCount then
+            return
+        end
+        local v1323 = "HookESP_" .. v1321.Name
+        local v1324 = v1321:FindFirstChild(v1323)
+        if v1324 then
+            v1324:Destroy()
+        end
+        local v1325 = Instance.new("BillboardGui")
+        v1325.Name = v1323
+        v1325.Parent = v1321
+        v1325.AlwaysOnTop = true
+        v1325.Size = UDim2.new(0, 1902 - (354 + 1508), 0 - 0, 14)
+        v1325.StudsOffset = Vector3.new(0, 5.5, 0 + 0)
+        local v1331 = Instance.new("TextLabel")
+        v1331.Size = UDim2.new(1 + 0, 0 - 0, 1245 - (334 + 910), 895 - (92 + 803))
+        v1331.BackgroundTransparency = 1 + 0
+        v1331.Font = Enum.Font.GothamBold
+        v1331.TextSize = 1192 - (1035 + 146)
+        v1331.TextScaled = true
+        v1331.Text = string.format("Hooked %d", v1322)
+        v1331.TextXAlignment = Enum.TextXAlignment.Center
+        v1331.TextYAlignment = Enum.TextYAlignment.Center
+        v1331.Parent = v1325
+        if v1322 >= (619 - (230 + 386)) then
+            v1331.TextColor3 = Color3.fromRGB(149 + 106, 50, 50)
+        elseif v1322 >= 2 then
+            v1331.TextColor3 = Color3.fromRGB(255, 1710 - (353 + 1157), 50)
+        else
+            v1331.TextColor3 = Color3.fromRGB(1314 - (53 + 1061), 1835 - (1568 + 67), 92 + 108)
+        end
+        local v1344 = Instance.new("UIStroke")
+        v1344.Color = Color3.fromRGB(0, 0, 0 + 0)
+        v1344.Thickness = 4 - 2
+        v1344.Transparency = 0.5
+        v1344.Parent = v1331
+    end
+    local v229 = {
+        "rbxassetid://120434965879067",
+        "rbxassetid://81511619438196",
+        "rbxassetid://130571419892864",
+    }
+    function CreateHookUICounter(v1349, v1350)
+        if not v1349 then
+            return
+        end
+        local v1351 = tonumber(v1350)
+        local v1352 = v1351 or (1212 - (615 + 597))
+        local v1353 = v1352
+        local v1354 = v1349:FindFirstChild("Choco_HookCounter")
+        local v1355 = v1354
+        if v1353 <= (0 + 0) then
+            local v2423 = 0
+            while true do
+                if v2423 == (0 - 0) then
+                    if v1354 then
+                        v1354:Destroy()
+                    end
+                    return
+                end
+            end
+        end
+        local v1356 = v229[math.clamp(v1353, 1, 3 + 0)]
+        if not v1356 then
+            return
+        end
+        if not v1354 then
+            local v2424 = Instance.new("ImageLabel")
+            v1355 = v2424
+            v2424.Name = "Choco_HookCounter"
+            v2424.BackgroundTransparency = 1 + 0
+            local v2427 = v1349.ZIndex
+            local v2428 = v2427 or (1 + 0)
+            v2424.ZIndex = v2428 + 1
+            v2424.Parent = v1349
+        end
+        v1355.Size = UDim2.new(0.509, 1899 - (1056 + 843), 0.51 - 0, 0)
+        v1355.Position = UDim2.new(0.91, 0 - 0, 0.18 - 0, 0 + 0)
+        v1355.AnchorPoint = Vector2.new(0.5, 1976.5 - (286 + 1690))
+        v1355.Image = v1356
+        v1355.ScaleType = Enum.ScaleType.Fit
+    end
+    function UpdateHookUICounter()
+        if GetRole() == "Killer" then
+            local v2431 = localPlayer:FindFirstChild("PlayerGui")
+            if not v2431 then
+                return
+            end
+            local function v2432(v2658)
+                local v2659 = 911 - (98 + 813)
+                while true do
+                    if v2659 == 0 then
+                        if v2658 and (type(v2658) == "string") then
+                            return tonumber(v2658:match("id=(%d+)"))
+                        end
+                        return nil
+                    end
+                end
+            end
+            local v2433, v2434, v2435 = ipairs(v2431:GetChildren())
+            local v2436 = v2435
+            local v2437 = v2433
+            local v2438 = v2434
+            while true do
+                local v2660, v2661 = v2437(v2438, v2436)
+                if v2660 == nil then
+                    break
+                end
+                v2436 = v2660
+                if typeof(v2661) == "Instance" then
+                    local v3130 = 0 + 0
+                    local v3131
+                    while true do
+                        if v3130 == 0 then
+                            v3131 = v2661:FindFirstChild("Frame")
+                            if v3131 and v3131:IsA("Frame") then
+                                for v3976, v3977 in ipairs(v3131:GetChildren()) do
+                                    local v3978 = 0 - 0
+                                    local v3979
+                                    while true do
+                                        if v3978 == 0 then
+                                            v3979 = v3977:FindFirstChild("ImageLabel")
+                                            if v3979 then
+                                                local v4206 = v3977:GetAttribute("UserId")
+                                                local v4207 = v4206 or v2432(v3979.Image)
+                                                local v4208 = (v4207 and Players:GetPlayerByUserId(tonumber(v4207)))
+                                                    or nil
+                                                if
+                                                    v4208
+                                                    and (v4208 ~= localPlayer)
+                                                    and v4208.Team
+                                                    and (v4208.Team.Name == "Survivors")
+                                                then
+                                                    local v4247 = 0 + 0
+                                                    local v4248
+                                                    local v4249
+                                                    while true do
+                                                        if v4247 == (507 - (263 + 244)) then
+                                                            v4248 = v228[v4208.Name]
+                                                            v4249 = v4248 or v4208:GetAttribute("HookCount") or 0
+                                                            v4247 = 1 + 0
+                                                        end
+                                                        if v4247 == (1688 - (1502 + 185)) then
+                                                            CreateHookUICounter(v3979, v4249)
+                                                            break
+                                                        end
+                                                    end
+                                                else
+                                                    local v4250 = v3979:FindFirstChild("Choco_HookCounter")
+                                                    if v4250 then
+                                                        v4250:Destroy()
+                                                    end
+                                                end
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                                v2436 = v2660
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+            return
+        end
+        ClearHookUICounter()
+    end
+    function ClearHookUICounter()
+        local v1363 = localPlayer:FindFirstChild("PlayerGui")
+        if not v1363 then
+            return
+        end
+        local v1364, v1365, v1366 = ipairs(v1363:GetChildren())
+        local v1367 = v1366
+        local v1368 = v1364
+        local v1369 = v1365
+        while true do
+            local v2131, v2132 = v1368(v1369, v1367)
+            if v2131 == nil then
+                break
+            end
+            v1367 = v2131
+            if typeof(v2132) == "Instance" then
+                local v2662 = 0 + 0
+                local v2663
+                while true do
+                    if v2662 == (0 - 0) then
+                        v2663 = v2132:FindFirstChild("Frame")
+                        if v2663 and v2663:IsA("Frame") then
+                            for v3766, v3767 in ipairs(v2663:GetChildren()) do
+                                local v3768 = 0
+                                local v3769
+                                local v3770
+                                while true do
+                                    if v3768 == (0 - 0) then
+                                        v3769 = v3767:FindFirstChild("ImageLabel")
+                                        v3770 = v3769 and v3769:FindFirstChild("Choco_HookCounter")
+                                        v3768 = 1528 - (629 + 898)
+                                    end
+                                    if v3768 == 1 then
+                                        if v3770 then
+                                            v3770:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                            v1367 = v2131
+                        end
+                        break
+                    end
+                end
+            end
+        end
+    end
+    function UpdateHookESP()
+        if not _G.Ox.ESPConfig.HookCount then
+            ClearHookESP()
+        end
+    end
+    function ClearHookESP()
+        local v1370, v1371, v1372 = pairs(Players:GetPlayers())
+        local v1373 = v1372
+        local v1374 = v1370
+        local v1375 = v1371
+        while true do
+            local v2133, v2134 = v1374(v1375, v1373)
+            if v2133 == nil then
+                break
+            end
+            v1373 = v2133
+            if v2134.Character then
+                for v2908, v2909 in pairs(v2134.Character:GetChildren()) do
+                    if string.match(v2909.Name, "^HookESP_") then
+                        v2909:Destroy()
+                    end
+                end
+                v1373 = v2133
+            end
+        end
+    end
+    function ClearESP(v1376)
+        if v1376 == "Player" then
+            for v2664, v2665 in pairs(Players:GetPlayers()) do
+                if v2665.Character then
+                    local v3132 = 0 - 0
+                    while true do
+                        if v3132 == (0 - 0) then
+                            if v2665.Character:FindFirstChild("PEH") then
+                                v2665.Character.PEH:Destroy()
+                            end
+                            if v2665.Character:FindFirstChild("PE_Text") then
+                                v2665.Character.PE_Text:Destroy()
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        elseif v1376 == "Killer" then
+            for v3133, v3134 in pairs(Players:GetPlayers()) do
+                if v3134.Character then
+                    if v3134.Character:FindFirstChild("KEH") then
+                        v3134.Character.KEH:Destroy()
+                    end
+                    if v3134.Character:FindFirstChild("KE_Text") then
+                        v3134.Character.KE_Text:Destroy()
+                    end
+                end
+            end
+        elseif v1376 == "Generator" then
+            for v3529, v3530 in pairs(tbl4.Generators) do
+                if v3530.model and v3530.model.Parent and v3530.model:FindFirstChild("GEH") then
+                    v3530.model.GEH:Destroy()
+                end
+                if v3530.model and v3530.model.Parent then
+                    local v3771 = v3530.model:FindFirstChild("GE_Bar")
+                    if v3771 then
+                        v3771:Destroy()
+                    end
+                end
+            end
+        elseif v1376 == "Pallet" then
+            for v3772, v3773 in pairs(tbl4.Pallets) do
+                if v3773 and v3773.Parent and v3773:FindFirstChild("PalletEH") then
+                    v3773.PalletEH:Destroy()
+                end
+            end
+        elseif v1376 == "Hook" then
+            for v3980, v3981 in pairs(tbl4.Hooks) do
+                if v3981 and v3981.Parent and v3981:FindFirstChild("HookEH") then
+                    v3981.HookEH:Destroy()
+                end
+            end
+        elseif v1376 == "Window" then
+            for v4081, v4082 in pairs(tbl4.Windows) do
+                if v4082 and v4082.Parent and v4082:FindFirstChild("WindowEH") then
+                    v4082.WindowEH:Destroy()
+                end
+            end
+        elseif v1376 == "Gate" then
+            for v4177, v4178 in pairs(tbl4.Gates) do
+                if v4178 and v4178.Parent and v4178:FindFirstChild("GateEH") then
+                    v4178.GateEH:Destroy()
+                end
+            end
+        elseif v1376 == "SCP" then
+            for v4230, v4231 in pairs(tbl4.SCPs) do
+                if v4231 and v4231.Parent and v4231:FindFirstChild("SCPEH") then
+                    v4231.SCPEH:Destroy()
+                end
+            end
+        elseif v1376 == "Pumpkin" then
+            for v4263, v4264 in pairs(tbl4.Pumpkins) do
+                if v4264 and v4264.Parent and v4264:FindFirstChild("PumpkinEH") then
+                    v4264.PumpkinEH:Destroy()
+                end
+            end
+        elseif v1376 == "ButcherTrap" then
+            for v4273, v4274 in ipairs(tbl4.ButcherTraps) do
+                if v4274 and v4274.Parent then
+                    local v4278 = v4274:FindFirstChild("ButcherTrapEH")
+                    if v4278 then
+                        v4278:Destroy()
+                    end
+                    local v4279 = v4274:FindFirstChild("TrapText")
+                    if v4279 then
+                        v4279:Destroy()
+                    end
+                end
+            end
+        end
+    end
+    function ClearAllESP()
+        ClearESP("Player")
+        ClearESP("Killer")
+        ClearESP("Generator")
+        ClearESP("Pallet")
+        ClearESP("Hook")
+        ClearESP("Gate")
+        ClearESP("SCP")
+        ClearESP("Window")
+        ClearESP("Pumpkin")
+        ClearESP("ButcherTrap")
+        ClearHookESP()
+    end
+    local v230 = nil
+    local v230 = nil
+    local v231 = nil
+    local v232 = nil
+    local v233 = nil
+    _G.Ox.TrapESPStats = _G.Ox.TrapESPStats
+        or {
+            Found = 365 - (12 + 353),
+            Drawn = 1911 - (1680 + 231),
+            Removed = 0 + 0,
+        }
+    local function v234(v1377)
+        return string.lower(tostring(v1377 or "")):gsub("_", ""):gsub("%s", ""):gsub("%-", "")
+    end
+    local function v235(v1378)
+        local v1379 = v234(v1378)
+        if v1379 == "" then
+            return false
+        end
+        if v1379:match("^butchertrap%d*$") then
+            return true
+        end
+        if v1379:match("^butcherbeartrap%d*$") then
+            return true
+        end
+        return v1379:match("^beartrap%d*$") ~= nil
+    end
+    local function v236(v1380)
+        local v1381 = 0
+        local v1382
+        local v1383
+        while true do
+            if v1381 == (1 + 0) then
+                while v1382 and (v1383 < (1161 - (212 + 937))) do
+                    if v1382:IsA("Model") then
+                        local v3318 = v1382:FindFirstChildOfClass("Humanoid")
+                        if v3318 then
+                            return true
+                        end
+                    end
+                    v1382 = v1382.Parent
+                    v1383 = v1383 + 1 + 0
+                end
+                return false
+            end
+            if v1381 == (1062 - (111 + 951)) then
+                v1382 = v1380
+                v1383 = 0 + 0
+                v1381 = 1
+            end
+        end
+    end
+    local function v237(v1384)
+        local v1385 = 0
+        local v1386
+        local v1387
+        while true do
+            if v1385 == (27 - (18 + 9)) then
+                v1386 = v1384.Parent
+                v1387 = 0
+                v1385 = 1 + 0
+            end
+            if (535 - (31 + 503)) == v1385 then
+                while v1386 and (v1387 < (1644 - (595 + 1037))) do
+                    if v235(v1386.Name) then
+                        return true
+                    end
+                    v1386 = v1386.Parent
+                    v1387 = v1387 + (1445 - (189 + 1255))
+                end
+                return false
+            end
+        end
+    end
+    local function v238(v1388)
+        local v1389 = 0 + 0
+        local v1390
+        while true do
+            if v1389 == (4 - 1) then
+                return v1390
+            end
+            if 1 == v1389 then
+                v1390 = v1388
+                if v1388:IsA("BasePart") then
+                    local v3135 = v1388.Parent
+                    if v3135 and v3135:IsA("Model") and v235(v3135.Name) then
+                        v1390 = v3135
+                    end
+                elseif not v1388:IsA("Model") then
+                    return nil
+                end
+                v1389 = 1281 - (1170 + 109)
+            end
+            if v1389 == 2 then
+                if v236(v1390) then
+                    return nil
+                end
+                if v237(v1390) then
+                    return nil
+                end
+                v1389 = 1820 - (348 + 1469)
+            end
+            if v1389 == (1289 - (1115 + 174)) then
+                if not v1388 or (typeof(v1388) ~= "Instance") then
+                    return nil
+                end
+                if not v235(v1388.Name) then
+                    return nil
+                end
+                v1389 = 2 - 1
+            end
+        end
+    end
+    local function v239(v1391)
+        if not v1391 or not v1391.Parent then
+            return
+        end
+        if not (_G.Ox.ESPConfig.ButcherTrap and _G.Ox.ESPConfig.Master) then
+            return
+        end
+        if v236(v1391) then
+            return
+        end
+        local v1392 = pcall(function()
+            local v2135 = _G.Ox.ESPColors.ButcherTrap
+            local v2136 = v1391:FindFirstChild("ButcherTrapEH")
+            if not v2136 then
+                v2136 = Instance.new("Highlight")
+                v2136.Name = "ButcherTrapEH"
+                v2136.Adornee = v1391
+                v2136.Parent = v1391
+            end
+            v2136.FillColor = v2135
+            v2136.OutlineColor = v2135
+            v2136.FillTransparency = (_G.Ox.ESPConfig.Outline and (1015 - (85 + 929))) or (0.5 + 0)
+            v2136.OutlineTransparency = 1867 - (1151 + 716)
+            if _G.Ox.ESPConfig.Name then
+                local v2670 = v1391:FindFirstChild("TrapText")
+                if not v2670 then
+                    local v3136 = (v1391:IsA("BasePart") and v1391) or v1391:FindFirstChildWhichIsA("BasePart", true)
+                    local v3137 = Instance.new("BillboardGui")
+                    v3137.Name = "TrapText"
+                    v3137.AlwaysOnTop = true
+                    v3137.Size = UDim2.new(0, 70, 0, 22)
+                    v3137.StudsOffset = Vector3.new(0 + 0, 2.5, 0 + 0)
+                    v3137.LightInfluence = 1704 - (95 + 1609)
+                    local v3143 = Instance.new("TextLabel")
+                    v3143.Name = "Text"
+                    v3143.Size = UDim2.new(3 - 2, 0, 759 - (364 + 394), 0 + 0)
+                    v3143.BackgroundTransparency = 1
+                    v3143.Text = "Trap"
+                    v3143.TextColor3 = v2135
+                    v3143.Font = Enum.Font.GothamBold
+                    v3143.TextSize = 12
+                    v3143.TextStrokeTransparency = 0
+                    v3143.TextStrokeColor3 = Color3.new(0 + 0, 0 + 0, 0 + 0)
+                    v3143.TextXAlignment = Enum.TextXAlignment.Center
+                    v3143.TextYAlignment = Enum.TextYAlignment.Center
+                    v3143.Parent = v3137
+                    v3137.Adornee = v3136 or v1391
+                    v3137.Parent = v1391
+                else
+                    local v3161 = 0 + 0
+                    local v3162
+                    while true do
+                        if v3161 == (0 + 0) then
+                            v3162 = v2670:FindFirstChild("Text")
+                            if v3162 then
+                                v3162.TextColor3 = v2135
+                            end
+                            break
+                        end
+                    end
+                end
+            else
+                local v2671 = v1391:FindFirstChild("TrapText")
+                if v2671 then
+                    v2671:Destroy()
+                end
+            end
+        end)
+        if v1392 then
+            _G.Ox.TrapESPStats.Drawn = _G.Ox.TrapESPStats.Drawn + 1
+        end
+    end
+    _G.Ox.ApplyTrapESP = v239
+    local function v240(v1393)
+        local v1394 = 0 + 0
+        while true do
+            if v1394 == (0 + 0) then
+                if not v1393 then
+                    return
+                end
+                pcall(function()
+                    local v2912 = v1393:FindFirstChild("ButcherTrapEH")
+                    if v2912 then
+                        v2912:Destroy()
+                    end
+                    local v2913 = v1393:FindFirstChild("TrapText")
+                    if v2913 then
+                        v2913:Destroy()
+                    end
+                end)
+                v1394 = 1
+            end
+            if v1394 == (1 + 0) then
+                _G.Ox.TrapESPStats.Removed = _G.Ox.TrapESPStats.Removed + (957 - (719 + 237))
+                break
+            end
+        end
+    end
+    local function v241(v1395)
+        local v1396 = 0 - 0
+        local v1397
+        while true do
+            if (0 + 0) == v1396 then
+                v1397 = v238(v1395)
+                if not v1397 or not v1397.Parent then
+                    return
+                end
+                v1396 = 2 - 1
+            end
+            if (2 - 1) == v1396 then
+                if not table.find(tbl4.ButcherTraps, v1397) then
+                    local v3163 = 0
+                    while true do
+                        if v3163 == (0 - 0) then
+                            table.insert(tbl4.ButcherTraps, v1397)
+                            _G.Ox.TrapESPStats.Found = _G.Ox.TrapESPStats.Found + (1992 - (761 + 1230))
+                            break
+                        end
+                    end
+                end
+                v239(v1397)
+                break
+            end
+        end
+    end
+    _G.Ox.RegisterTrap = v241
+    local function v242(v1398)
+        local v1399 = 193 - (80 + 113)
+        local v1400
+        local v1401
+        local v1402
+        while true do
+            if v1399 == (0 + 0) then
+                if not v1398 then
+                    return
+                end
+                v1400 = {}
+                v1399 = 1
+            end
+            if v1399 == 2 then
+                v1402 = v1398:FindFirstAncestorWhichIsA("Model")
+                if v1402 and v235(v1402.Name) then
+                    table.insert(v1400, v1402)
+                end
+                v1399 = 3 + 0
+            end
+            if v1399 == (1 + 2) then
+                for v2914, v2915 in ipairs(v1400) do
+                    local v2916 = table.find(tbl4.ButcherTraps, v2915)
+                    if v2916 then
+                        table.remove(tbl4.ButcherTraps, v2916)
+                    end
+                    v240(v2915)
+                end
+                for v2917 = #tbl4.ButcherTraps, 3 - 2, -(1 + 0) do
+                    local v2918 = tbl4.ButcherTraps[v2917]
+                    if not v2918 or not v2918.Parent then
+                        table.remove(tbl4.ButcherTraps, v2917)
+                    end
+                end
+                break
+            end
+            if v1399 == (1 + 0) then
+                v1401 = v238(v1398)
+                if v1401 then
+                    table.insert(v1400, v1401)
+                end
+                v1399 = 1245 - (965 + 278)
+            end
+        end
+    end
+    local function v243(v1403)
+        if not v1403 then
+            return
+        end
+        local v1404 = v238(v1403)
+        if v1404 then
+            v241(v1404)
+        end
+        for v2141, v2142 in ipairs(v1403:GetDescendants()) do
+            local v2143 = 0
+            local v2144
+            while true do
+                if v2143 == (1729 - (1391 + 338)) then
+                    v2144 = v238(v2142)
+                    if v2144 then
+                        v241(v2144)
+                    end
+                    break
+                end
+            end
+        end
+    end
+    local function v244()
+        if v230 then
+            v230:Disconnect()
+            v230 = nil
+        end
+        if v231 then
+            local v2439 = 0
+            while true do
+                if v2439 == (0 - 0) then
+                    v231:Disconnect()
+                    v231 = nil
+                    break
+                end
+            end
+        end
+        if v232 then
+            local v2440 = 0 + 0
+            while true do
+                if v2440 == (0 - 0) then
+                    v232:Disconnect()
+                    v232 = nil
+                    break
+                end
+            end
+        end
+        if v233 then
+            local v2441 = 0
+            while true do
+                if v2441 == (0 + 0) then
+                    v233:Disconnect()
+                    v233 = nil
+                    break
+                end
+            end
+        end
+        local v1405 = workspace:FindFirstChild("Map")
+        if v1405 then
+            v230 = v1405.DescendantAdded:Connect(function(v2672)
+                local v2673 = 1408 - (496 + 912)
+                local v2674
+                while true do
+                    if v2673 == (0 - 0) then
+                        v2674 = v238(v2672)
+                        if v2674 then
+                            task.defer(function()
+                                v241(v2674)
+                            end)
+                        end
+                        break
+                    end
+                end
+            end)
+            v231 = v1405.DescendantRemoving:Connect(function(v2675)
+                local v2676 = v238(v2675)
+                if v2676 or v235(v2675.Name) then
+                    v242(v2676 or v2675)
+                else
+                    local v3164 = 0 + 0
+                    local v3165
+                    while true do
+                        if v3164 == 0 then
+                            v3165 = v2675:FindFirstAncestorWhichIsA("Model")
+                            if v3165 and v235(v3165.Name) then
+                                v242(v3165)
+                            end
+                            break
+                        end
+                    end
+                end
+            end)
+        end
+        v232 = workspace.DescendantAdded:Connect(function(v2145)
+            local v2146 = 0 - 0
+            local v2147
+            while true do
+                if v2146 == (1330 - (1190 + 140)) then
+                    v2147 = v238(v2145)
+                    if v2147 then
+                        task.defer(function()
+                            v241(v2147)
+                        end)
+                    end
+                    break
+                end
+            end
+        end)
+        v233 = workspace.ChildAdded:Connect(function(v2148)
+            if v2148.Name == "Map" then
+                task.wait(0.5 + 0)
+                v243(v2148)
+            end
+        end)
+        if v1405 then
+            v243(v1405)
+        else
+            for v2677, v2678 in ipairs(workspace:GetDescendants()) do
+                local v2679 = 0
+                local v2680
+                while true do
+                    if v2679 == 0 then
+                        v2680 = v238(v2678)
+                        if v2680 then
+                            v241(v2680)
+                        end
+                        break
+                    end
+                end
+            end
+        end
+    end
+    _G.Ox.SetupTrapWatcher = v244
+    local function v245()
+        for v2149 = #tbl4.ButcherTraps, 1, -(719 - (317 + 401)) do
+            local v2150 = tbl4.ButcherTraps[v2149]
+            local v2151 = v2150 and v2150.Parent and not v236(v2150)
+            if v2151 and v237(v2150) then
+                v2151 = false
+            end
+            if not v2151 then
+                if v2150 then
+                    v240(v2150)
+                end
+                table.remove(tbl4.ButcherTraps, v2149)
+            end
+        end
+    end
+    _G.Ox.PurgeInvalidTrapESP = v245
+    local function v246()
+        local v1406 = 0
+        while true do
+            if v1406 == (949 - (303 + 646)) then
+                v245()
+                for v2919, v2920 in ipairs(tbl4.ButcherTraps) do
+                    if v2920 and v2920.Parent and not v236(v2920) then
+                        v239(v2920)
+                    end
+                end
+                break
+            end
+        end
+    end
+    _G.Ox.RefreshAllTrapESP = v246
+    function GetSurvivorStatus(v1407)
+        if not v1407 then
+            return nil, nil
+        end
+        if v1407:GetAttribute("IsHooked") == true then
+            return "HOOKED", _G.Ox.ESPColors.Hooked
+        end
+        if v1407:GetAttribute("Knocked") == true then
+            return "DOWN", _G.Ox.ESPColors.Downed
+        end
+        local v1408 = v1407:FindFirstChildOfClass("Humanoid")
+        if v1408 and (v1408.Health > (0 - 0)) and (v1408.Health < v1408.MaxHealth) then
+            return "INJURED", _G.Ox.ESPColors.Injured
+        end
+        return nil, nil
+    end
+    function buildInfoRich(v1409, v1410, v1411, v1412, v1413)
+        local v1414 = {}
+        if v1409 and (v1409 ~= "") then
+            local v2442 = "#FFFFFF"
+            if v1409 == "INJURED" then
+                v2442 = "#FF8C00"
+            elseif v1409 == "DOWN" then
+                v2442 = "#FF2828"
+            elseif v1409 == "HOOKED" then
+                v2442 = "#F0F0FF"
+            end
+            table.insert(v1414, string.format('<font color="%s">%s</font>', v2442, v1409))
+        end
+        if v1411 then
+            table.insert(v1414, string.format('<font color="#FFFFFF">%dm</font>', v1411))
+        end
+        if not v1413 and v1412 and (v1409 ~= "HOOKED") then
+            local v2443 = 1732 - (1675 + 57)
+            local v2444
+            while true do
+                if v2443 == 1 then
+                    table.insert(v1414, string.format('<font color="%s">Hooked %d</font>', v2444, v1412))
+                    break
+                end
+                if v2443 == (0 + 0) then
+                    v2444 = "#C8C8C8"
+                    if v1412 >= (7 - 4) then
+                        v2444 = "#FF3232"
+                    elseif v1412 >= (1 + 1) then
+                        v2444 = "#FFC832"
+                    end
+                    v2443 = 1
+                end
+            end
+        end
+        return table.concat(v1414, ' <font color="#888888">Â·</font> ')
+    end
+    function UpdatePlayerESP()
+        if not _G.Ox.ESPConfig.Master then
+            return
+        end
+        local v1415 = localPlayer.Character
+        local v1416 = v1415 and v1415:FindFirstChild("HumanoidRootPart")
+        local v1417 = Players:GetPlayers()
+        if _G.Ox.ESPConfig.KillerWarn and v1416 and (GetRole() == "Survivor") then
+            local v2445 = v1416:FindFirstChild("KillerWarn")
+            local v2446 = v2445
+            local v2447 = math.huge
+            for v2681, v2682 in pairs(v1417) do
+                if (v2682 ~= localPlayer) and v2682.Team and (v2682.Team.Name == "Killer") and v2682.Character then
+                    local v3166 = 0
+                    local v3167
+                    while true do
+                        if 0 == v3166 then
+                            v3167 = v2682.Character:FindFirstChild("HumanoidRootPart")
+                            if v3167 then
+                                local v3891 = 977 - (338 + 639)
+                                local v3892
+                                while true do
+                                    if v3891 == (379 - (320 + 59)) then
+                                        v3892 = (v3167.Position - v1416.Position).Magnitude
+                                        if v3892 < v2447 then
+                                            v2447 = v3892
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+            if v2447 <= (41 + 39) then
+                local v2921 = 732 - (628 + 104)
+                local v2922
+                while true do
+                    if v2921 == 1 then
+                        if v2922 then
+                            if v2447 <= (49 - 9) then
+                                local v3982 = 1891 - (439 + 1452)
+                                while true do
+                                    if (1947 - (105 + 1842)) == v3982 then
+                                        v2922.Text = "!!"
+                                        v2922.TextColor3 = Color3.fromRGB(255, 0, 0 - 0)
+                                        break
+                                    end
+                                end
+                            else
+                                v2922.Text = "!"
+                                v2922.TextColor3 = Color3.fromRGB(621 - 366, 1227 - 972, 0 + 0)
+                            end
+                        end
+                        break
+                    end
+                    if v2921 == 0 then
+                        if not v2445 then
+                            local v3774 = 0 - 0
+                            local v3775
+                            local v3776
+                            while true do
+                                if (0 + 0) == v3774 then
+                                    v3775 = Instance.new("BillboardGui")
+                                    v2446 = v3775
+                                    v3775.Name = "KillerWarn"
+                                    v3775.Size = UDim2.new(0, 1194 - (274 + 890), 0, 30)
+                                    v3774 = 1 + 0
+                                end
+                                if v3774 == (2 + 0) then
+                                    v3776.Name = "WarnText"
+                                    v3776.Size = UDim2.new(1 + 0, 0, 1 + 0, 0 + 0)
+                                    v3776.BackgroundTransparency = 1 - 0
+                                    v3776.TextScaled = true
+                                    v3774 = 822 - (731 + 88)
+                                end
+                                if v3774 == (1 + 0) then
+                                    v3775.AlwaysOnTop = true
+                                    v3775.StudsOffset = Vector3.new(0 + 0, 4, 0)
+                                    v3775.Parent = v1416
+                                    v3776 = Instance.new("TextLabel")
+                                    v3774 = 1 + 1
+                                end
+                                if v3774 == (3 - 0) then
+                                    v3776.TextStrokeTransparency = 0 - 0
+                                    v3776.Font = Enum.Font.GothamBlack
+                                    v3776.Parent = v3775
+                                    break
+                                end
+                            end
+                        end
+                        v2922 = v2446:FindFirstChild("WarnText")
+                        v2921 = 2 - 1
+                    end
+                end
+            elseif v2445 then
+                v2445:Destroy()
+            end
+        else
+            local v2448 = v1416 and v1416:FindFirstChild("KillerWarn")
+            if v2448 then
+                v2448:Destroy()
+            end
+        end
+        local v1418, v1419, v1420 = pairs(v1417)
+        local v1421 = v1420
+        local v1422 = v1418
+        local v1423 = v1419
+        while true do
+            local v2152, v2153 = v1422(v1423, v1421)
+            if v2152 == nil then
+                break
+            end
+            v1421 = v2152
+            if (v2153 ~= localPlayer) and v2153.Character then
+                local v2683 = v2153.Character:FindFirstChild("HumanoidRootPart")
+                if
+                    v2683 and (_G.Ox.ESPConfig.MaxDistance < (currentCamera.CFrame.Position - v2683.Position).Magnitude)
+                then
+                    for v3319, v3320 in ipairs({
+                        "PE_Text",
+                        "KE_Text",
+                        "PEH",
+                        "KEH",
+                    }) do
+                        local v3321 = 0
+                        local v3322
+                        while true do
+                            if v3321 == 0 then
+                                v3322 = v2153.Character:FindFirstChild(v3320)
+                                if v3322 then
+                                    v3322:Destroy()
+                                end
+                                break
+                            end
+                        end
+                    end
+                    v1421 = v2152
+                else
+                    local v3168 = v2153.Team
+                    local v3169 = v3168 and (v2153.Team.Name == "Killer")
+                    local v3170
+                    if v3169 then
+                        v3170 = _G.Ox.ESPConfig.Killer
+                    else
+                        local v3531 = 0 + 0
+                        local v3532
+                        local v3533
+                        while true do
+                            if v3531 == (1 + 0) then
+                                v3170 = v3533
+                                break
+                            end
+                            if v3531 == 0 then
+                                v3532 = _G.Ox.ESPConfig.Player
+                                v3533 = v3532 or _G.Ox.ESPConfig.HookCount
+                                v3531 = 1 + 0
+                            end
+                        end
+                    end
+                    local v3171 = (v3169 and "KE_Text") or "PE_Text"
+                    local v3172 = (v3169 and "KEH") or "PEH"
+                    local v3173 = (v3169 and _G.Ox.ESPColors.Killer) or _G.Ox.ESPColors.Player
+                    local v3174 = nil
+                    local v3175 = nil
+                    if not v3169 and _G.Ox.ESPConfig.Status then
+                        local v3534 = 158 - (139 + 19)
+                        local v3535
+                        local v3536
+                        while true do
+                            if v3534 == (0 + 0) then
+                                v3535, v3536 = GetSurvivorStatus(v2153.Character)
+                                if v3535 then
+                                    v3174 = v3535
+                                    v3175 = v3536
+                                end
+                                break
+                            end
+                        end
+                    end
+                    if v3170 then
+                        local v3537, v3538, v3539 = ipairs({
+                            "PE_Text",
+                            "KE_Text",
+                        })
+                        local v3540 = v1422
+                        local v3541 = v1423
+                        for v3698, v3699 in v3537, v3538, v3539 do
+                            if v3699 ~= v3171 then
+                                local v3893 = v2153.Character:FindFirstChild(v3699)
+                                if v3893 then
+                                    v3893:Destroy()
+                                end
+                            end
+                        end
+                        for v3700, v3701 in ipairs({
+                            "PEH",
+                            "KEH",
+                        }) do
+                            if v3701 ~= v3172 then
+                                local v3894 = 0
+                                local v3895
+                                while true do
+                                    if v3894 == (0 - 0) then
+                                        v3895 = v2153.Character:FindFirstChild(v3701)
+                                        if v3895 then
+                                            v3895:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                        end
+                        v1421 = v2152
+                        v1422 = v3540
+                        v1423 = v3541
+                        if v3169 then
+                            local v3777 = 815 - (117 + 698)
+                            while true do
+                                if v3777 == (482 - (305 + 176)) then
+                                    v1422 = v3540
+                                    v1423 = v3541
+                                    break
+                                end
+                                if (0 + 0) == v3777 then
+                                    for v4084, v4085 in ipairs(v2153.Character:GetChildren()) do
+                                        if string.match(v4085.Name, "^HookESP_") then
+                                            v4085:Destroy()
+                                        end
+                                    end
+                                    v1421 = v2152
+                                    v3777 = 1 + 0
+                                end
+                            end
+                        end
+                        local v3542 = v2153.Character:FindFirstChild("HumanoidRootPart")
+                        local v3543 = (v3542 and math.floor(GetDistance(v3542.Position))) or nil
+                        local v3544 = v2153.Character:FindFirstChild(v3172)
+                        local v3545 = v3544
+                        if not v3544 then
+                            local v3778 = 0 - 0
+                            local v3779
+                            while true do
+                                if v3778 == (0 + 0) then
+                                    v3779 = Instance.new("Highlight")
+                                    v3545 = v3779
+                                    v3778 = 1
+                                end
+                                if v3778 == (1 - 0) then
+                                    v3779.Name = v3172
+                                    v3779.Parent = v2153.Character
+                                    break
+                                end
+                            end
+                        end
+                        v3545.FillColor = v3173
+                        v3545.OutlineColor = v3173
+                        local v3548 = _G.Ox.ESPConfig.Outline
+                        local v3549 = (v3548 and (2 - 1)) or (0.5 - 0)
+                        v3545.FillTransparency = v3549
+                        v3545.OutlineTransparency = 0
+                        local v3552 = nil
+                        local v3553 = nil
+                        if _G.Ox.ESPConfig.Name then
+                            local v3780 = 0
+                            while true do
+                                if (261 - (159 + 101)) == v3780 then
+                                    if _G.Ox.ESPConfig.ItemIcon and not v3169 then
+                                        local v4103 = 0
+                                        local v4104
+                                        while true do
+                                            if v4103 == (0 - 0) then
+                                                v4104 = v2153:GetAttribute("EquippedItem")
+                                                if v4104 and (v4104 ~= "") then
+                                                    v3553 = getItemIcon(v4104)
+                                                end
+                                                break
+                                            end
+                                        end
+                                    end
+                                    break
+                                end
+                                if v3780 == (0 - 0) then
+                                    v3552 = v2153.Name
+                                    if v3169 then
+                                        local v4105 = v2153:GetAttribute("SelectedKiller")
+                                        if not v4105 then
+                                            local v4209 = v2153:FindFirstChild("SelectedKiller")
+                                            if v4209 then
+                                                pcall(function()
+                                                    v4105 = v4209.Value
+                                                end)
+                                            end
+                                        end
+                                        if v4105 and (tostring(v4105) ~= "") then
+                                            v3552 = tostring(v4105)
+                                        end
+                                    end
+                                    v3780 = 1 + 0
+                                end
+                            end
+                        end
+                        local v3554 = nil
+                        if not v3169 and _G.Ox.ESPConfig.HookCount then
+                            local v3781 = 0
+                            local v3782
+                            local v3783
+                            while true do
+                                if v3781 == 1 then
+                                    v3554 = v3783
+                                    break
+                                end
+                                if v3781 == (0 - 0) then
+                                    v3782 = v228[v2153.Name]
+                                    v3783 = v3782 or v2153:GetAttribute("HookCount") or 0
+                                    v3781 = 1 - 0
+                                end
+                            end
+                        end
+                        local v3555 = buildInfoRich
+                        local v3556 = _G.Ox.ESPConfig.Distance
+                        local v3557 = (v3556 and v3543) or nil
+                        local v3558 = v3555(v3174, v3175, v3557, v3554, v3169)
+                        if not v3552 and (v3558 == "") then
+                            local v3784 = v2153.Character:FindFirstChild(v3171)
+                            if v3784 then
+                                v3784:Destroy()
+                            end
+                        else
+                            local v3785 = CreateModernESP
+                            local v3786 = v2153.Character
+                            local v3787 = {}
+                            local v3788 = v3552 or ""
+                            v3787.name = v3788
+                            v3787.infoRich = v3558
+                            v3787.color = v3173
+                            v3787.icon = v3553
+                            v3787.offsetY = 1 + 3
+                            v3785(v3786, v3171, v3787)
+                        end
+                    else
+                        local v3559 = 266 - (112 + 154)
+                        local v3560
+                        local v3561
+                        while true do
+                            if v3559 == 0 then
+                                v3560 = v2153.Character:FindFirstChild(v3172)
+                                if v3560 then
+                                    v3560:Destroy()
+                                end
+                                v3559 = 2 - 1
+                            end
+                            if v3559 == (32 - (21 + 10)) then
+                                v3561 = v2153.Character:FindFirstChild(v3171)
+                                if v3561 then
+                                    v3561:Destroy()
+                                end
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    function UpdateSCPESP()
+        if not _G.Ox.ESPConfig.Master then
+            return
+        end
+        if _G.Ox.ESPConfig.SCP then
+            for v2684, v2685 in ipairs(tbl4.SCPs) do
+                if v2685 and v2685.Parent then
+                    local v3176 = 1719 - (531 + 1188)
+                    local v3177
+                    local v3178
+                    local v3179
+                    while true do
+                        if v3176 == 0 then
+                            v3177 = v2685:FindFirstChildOfClass("Humanoid")
+                            v3178 = v2685:FindFirstChild("HumanoidRootPart")
+                            v3176 = 1
+                        end
+                        if v3176 == (1 + 0) then
+                            v3179 = v3178 or v2685:FindFirstChild("Torso") or v2685.PrimaryPart
+                            if
+                                v3179
+                                and (
+                                    _G.Ox.ESPConfig.MaxDistance
+                                    < (currentCamera.CFrame.Position - v3179.Position).Magnitude
+                                )
+                            then
+                                local v3896 = 663 - (96 + 567)
+                                local v3897
+                                while true do
+                                    if 0 == v3896 then
+                                        v3897 = v2685:FindFirstChild("SCPEH")
+                                        if v3897 then
+                                            v3897:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            elseif
+                                v3177
+                                and v3179
+                                and (v3177.Health > (0 - 0))
+                                and (math.floor(v3177.WalkSpeed) == 9)
+                            then
+                                local v4025 = _G.Ox.ESPColors.SCP
+                                local v4026 = v2685:FindFirstChild("SCPEH")
+                                local v4027 = v4026
+                                if not v4026 then
+                                    local v4107
+                                    v4107 = Instance.new("Highlight")
+                                    v4027 = v4107
+                                    v4107.Name = "SCPEH"
+                                    v4107.Parent = v2685
+                                    break
+                                end
+                                v4027.FillColor = v4025
+                                v4027.OutlineColor = v4025
+                                local v4030 = _G.Ox.ESPConfig.Outline
+                                local v4031 = (v4030 and 1) or (0.5 + 0)
+                                v4027.FillTransparency = v4031
+                                v4027.OutlineTransparency = 0 - 0
+                            else
+                                local v4034 = 1695 - (867 + 828)
+                                local v4035
+                                while true do
+                                    if v4034 == (0 - 0) then
+                                        v4035 = v2685:FindFirstChild("SCPEH")
+                                        if v4035 then
+                                            v4035:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        else
+            ClearESP("SCP")
+        end
+    end
+    function UpdateStaticESP()
+        if not _G.Ox.ESPConfig.Master then
+            return
+        end
+        if _G.Ox.ESPConfig.Generator then
+            for v2686, v2687 in pairs(tbl4.Generators) do
+                local v2688 = v2687.model
+                if v2688 and v2688.Parent then
+                    local v3180 = v2687.part
+                    local v3181 = v3180 or v2688:FindFirstChildWhichIsA("BasePart")
+                    if
+                        v3181
+                        and (_G.Ox.ESPConfig.MaxDistance < (currentCamera.CFrame.Position - v3181.Position).Magnitude)
+                    then
+                        local v3562 = v2688:FindFirstChild("GEH")
+                        if v3562 then
+                            v3562:Destroy()
+                        end
+                        local v3563 = v2688:FindFirstChild("GE_Bar")
+                        if v3563 then
+                            v3563:Destroy()
+                        end
+                    else
+                        local v3564 = math.floor
+                        local v3565 = v2688:GetAttribute("RepairProgress")
+                        local v3566 = v3565 or (0 - 0)
+                        local v3567 = math.clamp(v3566, 0 - 0, 100)
+                        local v3568 = v3567 / (154 - 54)
+                        local v3569 = _G.Ox.ESPColors.Generator:Lerp(_G.Ox.ESPColors.GeneratorDone, v3568)
+                        local v3570 = v2688:FindFirstChild("GEH")
+                        local v3571 = v3570
+                        if not v3570 then
+                            local v3794 = Instance.new("Highlight")
+                            v3571 = v3794
+                            v3794.Name = "GEH"
+                            v3794.Parent = v2688
+                        end
+                        v3571.FillColor = v3569
+                        v3571.OutlineColor = v3569
+                        local v3574 = _G.Ox.ESPConfig.Outline
+                        local v3575 = (v3574 and 1) or 0.5
+                        v3571.FillTransparency = v3575
+                        v3571.OutlineTransparency = 0 + 0
+                        if _G.Ox.ESPConfig.GeneratorName then
+                            local v3797 = 0 - 0
+                            local v3798
+                            local v3799
+                            local v3800
+                            local v3801
+                            local v3802
+                            local v3803
+                            local v3804
+                            while true do
+                                if (773 - (134 + 637)) == v3797 then
+                                    v3802 = nil
+                                    if v3801:IsA("BasePart") then
+                                        v3802 = (v3801.Size.Y / (1 + 1)) + (1158 - (775 + 382))
+                                    else
+                                        v3802 = (v2688:GetExtentsSize().Y / (2 - 0)) + (608 - (45 + 562))
+                                    end
+                                    v3797 = 865 - (545 + 317)
+                                end
+                                if v3797 == (1 - 0) then
+                                    v3800 = v2687.part
+                                    v3801 = v3800 or v2688
+                                    v3797 = 2
+                                end
+                                if (1026 - (763 + 263)) == v3797 then
+                                    v3798 = string
+                                        .format("%.1f", math.floor(v3567 * (3 + 7)) / (1760 - (512 + 1238)))
+                                        :gsub("%.", ",") .. "%"
+                                    v3799 = _G.Ox.ESPColors.Generator
+                                    v3797 = 1595 - (272 + 1322)
+                                end
+                                if v3797 == (7 - 3) then
+                                    if not v3803 then
+                                        local v4108 = Instance.new("BillboardGui")
+                                        v4108.Name = "GE_Bar"
+                                        v4108.AlwaysOnTop = true
+                                        v4108.Size = UDim2.new(0, 1330 - (533 + 713), 28 - (14 + 14), 847 - (499 + 326))
+                                        v4108.Adornee = (v3801:IsA("BasePart") and v3801)
+                                            or v2688:FindFirstChildWhichIsA("BasePart")
+                                        v4108.StudsOffset = Vector3.new(0, v3802 + (0.35 - 0), 424 - (104 + 320))
+                                        v4108.Parent = v2688
+                                        local v4115 = Instance.new("TextLabel")
+                                        v4115.Name = "GE_BarText"
+                                        v4115.Size = UDim2.new(1998 - (1929 + 68), 1323 - (1206 + 117), 0 + 0, 13)
+                                        v4115.BackgroundTransparency = 1
+                                        v4115.Text = v3798
+                                        v4115.TextColor3 = Color3.new(1593 - (683 + 909), 2 - 1, 1 - 0)
+                                        v4115.Font = Enum.Font.GothamMedium
+                                        v4115.TextSize = 789 - (772 + 5)
+                                        v4115.TextStrokeColor3 = Color3.new(1427 - (19 + 1408), 0, 0)
+                                        v4115.TextStrokeTransparency = 288 - (134 + 154)
+                                        v4115.TextXAlignment = Enum.TextXAlignment.Center
+                                        v4115.Parent = v4108
+                                        v3803 = Instance.new("Frame")
+                                        v3803.Name = "GE_BarBg"
+                                        v3803.Size = UDim2.new(0 - 0, 173 - 117, 0 + 0, 4 + 0)
+                                        v3803.Position =
+                                            UDim2.new(202.5 - (10 + 192), -28, 47 - (13 + 34), 1305 - (342 + 947))
+                                        v3803.BackgroundColor3 = Color3.fromRGB(12, 49 - 37, 14)
+                                        v3803.BackgroundTransparency = 1708.15 - (119 + 1589)
+                                        v3803.Parent = v4108
+                                        local v4135 = Instance.new("UICorner")
+                                        v4135.CornerRadius = UDim.new(2 - 1, 0 - 0)
+                                        v4135.Parent = v3803
+                                        v3804 = Instance.new("Frame")
+                                        v3804.Name = "GE_BarFill"
+                                        v3804.Size = UDim2.new(v3568, 0, 553 - (545 + 7), 0)
+                                        v3804.BackgroundColor3 = Color3.fromRGB(722 - 467, 106 + 149, 255)
+                                        v3804.Parent = v3803
+                                        local v4142
+                                        v4142 = v2688:GetAttributeChangedSignal("RepairProgress"):Connect(function()
+                                            if not v4108.Parent then
+                                                local v4234 = 0
+                                                while true do
+                                                    if v4234 == (1703 - (494 + 1209)) then
+                                                        v4142:Disconnect()
+                                                        return
+                                                    end
+                                                end
+                                            end
+                                            local v4179 =
+                                                math.clamp(v2688:GetAttribute("RepairProgress") or 0, 0, 267 - 167)
+                                            local v4180 = string
+                                                .format("%.1f", math.floor(v4179 * (1008 - (197 + 801))) / (20 - 10))
+                                                :gsub("%.", ",") .. "%"
+                                            local v4181 = v4108:FindFirstChild("GE_BarText")
+                                            if v4181 then
+                                                v4181.Text = v4180
+                                            end
+                                            v3804:TweenSize(
+                                                UDim2.new(v4179 / (483 - 383), 0, 955 - (919 + 35), 0),
+                                                Enum.EasingDirection.Out,
+                                                Enum.EasingStyle.Linear,
+                                                0.12 + 0,
+                                                true
+                                            )
+                                        end)
+                                        v4108.Destroying:Connect(function()
+                                            v4142:Disconnect()
+                                        end)
+                                        local v4143 = Instance.new("UICorner")
+                                        v4143.CornerRadius = UDim.new(1, 0 - 0)
+                                        v4143.Parent = v3804
+                                    else
+                                        v3803.Parent.Size = UDim2.new(467 - (369 + 98), 1199 - (400 + 715), 0, 22)
+                                        v3803.Parent.Adornee = (v3801:IsA("BasePart") and v3801)
+                                            or v2688:FindFirstChildWhichIsA("BasePart")
+                                        v3803.Parent.StudsOffset = Vector3.new(0 + 0, v3802 + 0.35 + 0, 0)
+                                        if v3804 then
+                                            v3804.Size = UDim2.new(v3568, 1325 - (744 + 581), 1 + 0, 1622 - (653 + 969))
+                                        end
+                                        local v4149 = v3803.Parent:FindFirstChild("GE_BarText")
+                                        if v4149 then
+                                            v4149.Text = v3798
+                                        end
+                                    end
+                                    break
+                                end
+                                if v3797 == (5 - 2) then
+                                    v3803 = v2688:FindFirstChild("GE_BarBg")
+                                    v3804 = v2688:FindFirstChild("GE_BarFill")
+                                    v3797 = 1635 - (12 + 1619)
+                                end
+                            end
+                        else
+                            local v3805 = 163 - (103 + 60)
+                            local v3806
+                            while true do
+                                if v3805 == (0 - 0) then
+                                    v3806 = v2688:FindFirstChild("GE_Bar")
+                                    if v3806 then
+                                        v3806:Destroy()
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.Pallet then
+            for v2689, v2690 in pairs(tbl4.Pallets) do
+                if v2690 and v2690.Parent then
+                    local v3182 = 0 - 0
+                    local v3183
+                    while true do
+                        if v3182 == (0 - 0) then
+                            v3183 = v2690:FindFirstChildWhichIsA("BasePart")
+                            if
+                                v3183
+                                and (
+                                    _G.Ox.ESPConfig.MaxDistance
+                                    < (currentCamera.CFrame.Position - v3183.Position).Magnitude
+                                )
+                            then
+                                local v3898 = 0
+                                local v3899
+                                while true do
+                                    if v3898 == 0 then
+                                        v3899 = v2690:FindFirstChild("PalletEH")
+                                        if v3899 then
+                                            v3899:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            else
+                                local v3900 = 1662 - (710 + 952)
+                                local v3901
+                                local v3902
+                                local v3903
+                                local v3904
+                                while true do
+                                    if v3900 == (1870 - (555 + 1313)) then
+                                        v3902.FillColor = _G.Ox.ESPColors.Pallet
+                                        v3902.OutlineColor = _G.Ox.ESPColors.Pallet
+                                        v3900 = 3
+                                    end
+                                    if v3900 == 4 then
+                                        v3902.FillTransparency = v3904
+                                        v3902.OutlineTransparency = 0 + 0
+                                        break
+                                    end
+                                    if v3900 == (0 + 0) then
+                                        v3901 = v2690:FindFirstChild("PalletEH")
+                                        v3902 = v3901
+                                        v3900 = 1 + 0
+                                    end
+                                    if v3900 == (1471 - (1261 + 207)) then
+                                        v3903 = _G.Ox.ESPConfig.Outline
+                                        v3904 = (v3903 and (253 - (245 + 7))) or (747.5 - (212 + 535))
+                                        v3900 = 19 - 15
+                                    end
+                                    if v3900 == (1477 - (905 + 571)) then
+                                        if not v3901 then
+                                            local v4182 = 0 - 0
+                                            local v4183
+                                            while true do
+                                                if 1 == v4182 then
+                                                    v4183.Name = "PalletEH"
+                                                    v4183.Parent = v2690
+                                                    break
+                                                end
+                                                if (0 - 0) == v4182 then
+                                                    v4183 = Instance.new("Highlight")
+                                                    v3902 = v4183
+                                                    v4182 = 3 - 2
+                                                end
+                                            end
+                                        end
+                                        v3902.Adornee = v2690
+                                        v3900 = 1 + 1
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.Window then
+            for v2691, v2692 in ipairs(tbl4.Windows) do
+                if v2692 and v2692.Parent then
+                    local v3184 = 1463 - (522 + 941)
+                    local v3185
+                    local v3186
+                    while true do
+                        if v3184 == 0 then
+                            v3185 = v2692:FindFirstChild("Bottom")
+                            v3186 = v3185 or v2692:FindFirstChildWhichIsA("BasePart")
+                            v3184 = 1
+                        end
+                        if v3184 == (1512 - (292 + 1219)) then
+                            if
+                                v3186
+                                and (
+                                    _G.Ox.ESPConfig.MaxDistance
+                                    < (currentCamera.CFrame.Position - v3186.Position).Magnitude
+                                )
+                            then
+                                local v3905 = 1112 - (787 + 325)
+                                local v3906
+                                while true do
+                                    if v3905 == (0 - 0) then
+                                        v3906 = v2692:FindFirstChild("WindowEH")
+                                        if v3906 then
+                                            v3906:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            elseif v3186 then
+                                local v4037 = 0 + 0
+                                local v4038
+                                local v4039
+                                local v4040
+                                local v4041
+                                while true do
+                                    if v4037 == (4 - 2) then
+                                        v4039.Size = v3186.Size
+                                        v4039.Color3 = _G.Ox.ESPColors.Window
+                                        v4037 = 537 - (424 + 110)
+                                    end
+                                    if v4037 == (2 + 1) then
+                                        v4040 = _G.Ox.ESPConfig.Outline
+                                        v4041 = (v4040 and (0.8 + 0)) or (0.4 + 0)
+                                        v4037 = 316 - (33 + 279)
+                                    end
+                                    if v4037 == (0 + 0) then
+                                        v4038 = v2692:FindFirstChild("WindowEH")
+                                        v4039 = v4038
+                                        v4037 = 1
+                                    end
+                                    if v4037 == (1354 - (1338 + 15)) then
+                                        if not v4038 then
+                                            local v4236 = Instance.new("BoxHandleAdornment")
+                                            v4039 = v4236
+                                            v4236.Name = "WindowEH"
+                                            v4236.Parent = v2692
+                                            v4236.AlwaysOnTop = true
+                                            v4236.ZIndex = 1428 - (528 + 895)
+                                        end
+                                        v4039.Adornee = v3186
+                                        v4037 = 1 + 1
+                                    end
+                                    if (1928 - (1606 + 318)) == v4037 then
+                                        v4039.Transparency = v4041
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.Hook then
+            for v2693, v2694 in ipairs(tbl4.Hooks) do
+                if v2694 and v2694.Parent then
+                    local v3187 = v2694:FindFirstChild("HookPoint")
+                    local v3188 = v3187 or v2694:FindFirstChildWhichIsA("BasePart")
+                    if
+                        v3188
+                        and (_G.Ox.ESPConfig.MaxDistance < (currentCamera.CFrame.Position - v3188.Position).Magnitude)
+                    then
+                        local v3578 = 0
+                        local v3579
+                        while true do
+                            if (1819 - (298 + 1521)) == v3578 then
+                                v3579 = v2694:FindFirstChild("HookEH")
+                                if v3579 then
+                                    v3579:Destroy()
+                                end
+                                break
+                            end
+                        end
+                    else
+                        local v3580 = 0
+                        local v3581
+                        local v3582
+                        local v3583
+                        local v3584
+                        while true do
+                            if v3580 == (17 - 13) then
+                                v3582.OutlineTransparency = 0
+                                break
+                            end
+                            if v3580 == 0 then
+                                v3581 = v2694:FindFirstChild("HookEH")
+                                v3582 = v3581
+                                v3580 = 311 - (154 + 156)
+                            end
+                            if v3580 == (3 - 2) then
+                                if not v3581 then
+                                    local v4042 = 0
+                                    local v4043
+                                    while true do
+                                        if (1 - 0) == v4042 then
+                                            v4043.Name = "HookEH"
+                                            v4043.Parent = v2694
+                                            break
+                                        end
+                                        if 0 == v4042 then
+                                            v4043 = Instance.new("Highlight")
+                                            v3582 = v4043
+                                            v4042 = 1116 - (712 + 403)
+                                        end
+                                    end
+                                end
+                                v3582.FillColor = _G.Ox.ESPColors.Hook
+                                v3580 = 452 - (168 + 282)
+                            end
+                            if v3580 == 3 then
+                                v3584 = (v3583 and 1) or 0.5
+                                v3582.FillTransparency = v3584
+                                v3580 = 8 - 4
+                            end
+                            if (2 + 0) == v3580 then
+                                v3582.OutlineColor = _G.Ox.ESPColors.Hook
+                                v3583 = _G.Ox.ESPConfig.Outline
+                                v3580 = 1 + 2
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.Gate then
+            for v2695, v2696 in ipairs(tbl4.Gates) do
+                if v2696 and v2696.Parent then
+                    local v3189 = 0 - 0
+                    local v3190
+                    while true do
+                        if v3189 == (1451 - (1242 + 209)) then
+                            v3190 = v2696:FindFirstChildWhichIsA("BasePart")
+                            if
+                                v3190
+                                and (
+                                    _G.Ox.ESPConfig.MaxDistance
+                                    < (currentCamera.CFrame.Position - v3190.Position).Magnitude
+                                )
+                            then
+                                local v3911 = 0
+                                local v3912
+                                while true do
+                                    if v3911 == (679 - (20 + 659)) then
+                                        v3912 = v2696:FindFirstChild("GateEH")
+                                        if v3912 then
+                                            v3912:Destroy()
+                                        end
+                                        break
+                                    end
+                                end
+                            else
+                                local v3913 = v2696:FindFirstChild("GateEH")
+                                local v3914 = v3913
+                                if not v3913 then
+                                    local v4044 = Instance.new("Highlight")
+                                    v3914 = v4044
+                                    v4044.Name = "GateEH"
+                                    v4044.Parent = v2696
+                                end
+                                v3914.Adornee = v2696
+                                v3914.FillColor = _G.Ox.ESPColors.Gate
+                                v3914.OutlineColor = _G.Ox.ESPColors.Gate
+                                local v3918 = _G.Ox.ESPConfig.Outline
+                                local v3919 = (v3918 and (1 + 0)) or 0.5
+                                v3914.FillTransparency = v3919
+                                v3914.OutlineTransparency = 0 + 0
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.Pumpkin then
+            for v2697, v2698 in ipairs(tbl4.Pumpkins) do
+                if v2698 and v2698.Parent then
+                    local v3191 = v2698:FindFirstChildWhichIsA("BasePart")
+                    if
+                        v3191
+                        and (_G.Ox.ESPConfig.MaxDistance < (currentCamera.CFrame.Position - v3191.Position).Magnitude)
+                    then
+                        local v3585 = 0 - 0
+                        local v3586
+                        while true do
+                            if v3585 == 0 then
+                                v3586 = v2698:FindFirstChild("PumpkinEH")
+                                if v3586 then
+                                    v3586:Destroy()
+                                end
+                                break
+                            end
+                        end
+                    else
+                        local v3587 = 0 - 0
+                        local v3588
+                        local v3589
+                        local v3590
+                        local v3591
+                        while true do
+                            if v3587 == 0 then
+                                v3588 = v2698:FindFirstChild("PumpkinEH")
+                                v3589 = v3588
+                                v3587 = 620 - (427 + 192)
+                            end
+                            if v3587 == 1 then
+                                if not v3588 then
+                                    local v4047 = 0 - 0
+                                    local v4048
+                                    while true do
+                                        if v4047 == (0 + 0) then
+                                            v4048 = Instance.new("Highlight")
+                                            v3589 = v4048
+                                            v4047 = 1
+                                        end
+                                        if v4047 == (1948 - (1427 + 520)) then
+                                            v4048.Name = "PumpkinEH"
+                                            v4048.Parent = v2698
+                                            break
+                                        end
+                                    end
+                                end
+                                v3589.Adornee = v2698
+                                v3587 = 2 + 0
+                            end
+                            if v3587 == (7 - 5) then
+                                v3589.FillColor = _G.Ox.ESPColors.Pumpkin
+                                v3589.OutlineColor = _G.Ox.ESPColors.Pumpkin
+                                v3587 = 3
+                            end
+                            if v3587 == (3 + 0) then
+                                v3590 = _G.Ox.ESPConfig.Outline
+                                v3591 = (v3590 and 1) or 0.5
+                                v3587 = 1236 - (712 + 520)
+                            end
+                            if v3587 == (9 - 5) then
+                                v3589.FillTransparency = v3591
+                                v3589.OutlineTransparency = 1346 - (565 + 781)
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if _G.Ox.ESPConfig.ButcherTrap then
+            for v2699, v2700 in ipairs(tbl4.ButcherTraps) do
+                if v2700 and v2700.Parent then
+                    local v3192 = 565 - (35 + 530)
+                    local v3193
+                    while true do
+                        if v3192 == (0 + 0) then
+                            v3193 = (v2700:IsA("BasePart") and v2700) or v2700:FindFirstChildWhichIsA("BasePart", true)
+                            if
+                                v3193
+                                and (
+                                    (currentCamera.CFrame.Position - v3193.Position).Magnitude
+                                    > _G.Ox.ESPConfig.MaxDistance
+                                )
+                            then
+                                local v3927 = v2700:FindFirstChild("ButcherTrapEH")
+                                if v3927 then
+                                    v3927:Destroy()
+                                end
+                                local v3928 = v2700:FindFirstChild("TrapText")
+                                if v3928 then
+                                    v3928:Destroy()
+                                end
+                            elseif v3193 then
+                                v239(v2700)
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+    end
+    task.spawn(function()
+        local v1424, v1425, v1426, v1427, v1428, v1429, v1430, v1431, v1432, v1433, v1434, v1435, v1436, v1437, v1438, v1439, v1440, v1441, v1442, v1443
+        local v1444, v1445, v1446, v1447, v1448, v1449, v1450, v1451, v1452, v1453, v1454, v1455, v1456, v1457, v1458, v1459, v1460, v1461, v1462
+        v1462 = 1
+        while true do
+            if v1462 == (3 - 2) then
+                if _G.Ox.ScriptAlive then
+                    v1462 = 1380 - (1330 + 48)
+                else
+                    v1462 = 19 + 7
+                end
+            elseif v1462 == 2 then
+                task.wait(0.15)
+                v1424 = workspace.CurrentCamera
+                if v1424 and _G.Ox.ESPConfig.Master then
+                    v1462 = 1 + 2
+                else
+                    v1462 = 1 - 0
+                end
+                break
+            elseif v1462 == (13 - 10) then
+                v1425, v1426, v1427 = ipairs(Players:GetPlayers())
+                v1428 = v1427
+                v1429 = v1425
+                v1430 = v1426
+                v1462 = 1173 - (854 + 315)
+            elseif v1462 == 4 then
+                v1431, v1432 = v1429(v1430, v1428)
+                if v1431 == nil then
+                    v1462 = 51 - 35
+                else
+                    v1462 = 2 + 3
+                end
+            elseif v1462 == (49 - (31 + 13)) then
+                v1428 = v1431
+                if (v1432 ~= localPlayer) and v1432.Character then
+                    v1462 = 8 - 2
+                else
+                    v1462 = 4
+                end
+            elseif v1462 == (13 - 7) then
+                v1433 = v1432.Character:FindFirstChild("HumanoidRootPart")
+                if v1433 then
+                    v1462 = 7
+                else
+                    v1462 = 3 + 1
+                end
+            elseif v1462 == (570 - (281 + 282)) then
+                v1434 = (v1424.CFrame.Position - v1433.Position).Magnitude
+                v1435 = math.clamp(40 / math.max(v1434, 14 - 9), 0.8, 1 + 0)
+                v1436 = 4 + math.clamp((v1434 - (989 - (216 + 733))) * 0.05, 1847 - (137 + 1710), 6)
+                v1437, v1438, v1439 = ipairs({
+                    "PE_Text",
+                    "KE_Text",
+                })
+                v1440 = v1429
+                v1441 = v1430
+                v1442 = v1439
+                v1462 = 1373 - (205 + 1160)
+            elseif v1462 == (6 + 2) then
+                local v4241 = 0
+                while true do
+                    if v4241 == (0 + 0) then
+                        v1443, v1444 = v1437(v1438, v1442)
+                        if v1443 == nil then
+                            v1462 = 15
+                        else
+                            v1462 = 1314 - (535 + 770)
+                        end
+                        break
+                    end
+                end
+            elseif v1462 == (1 + 8) then
+                local v4266 = 0 + 0
+                while true do
+                    if v4266 == (1995 - (211 + 1783)) then
+                        if v1445 and not v1445:GetAttribute("NoDistScale") then
+                            v1462 = 2 + 8
+                        else
+                            v1462 = 8
+                        end
+                        break
+                    end
+                    if v4266 == (1429 - (1236 + 193)) then
+                        v1442 = v1443
+                        v1445 = v1432.Character:FindFirstChild(v1444)
+                        v4266 = 1
+                    end
+                end
+            elseif v1462 == (920 - (793 + 117)) then
+                v1446 = v1445:FindFirstChild("Box")
+                v1447 = v1446
+                if v1446 then
+                    v1462 = 11
+                else
+                    v1462 = 1904 - (1607 + 285)
+                end
+            elseif v1462 == 11 then
+                v1447 = v1446:FindFirstChild("DistScale")
+                v1462 = 12
+            elseif v1462 == (872 - (747 + 113)) then
+                if v1447 then
+                    v1462 = 1989 - (80 + 1896)
+                else
+                    v1462 = 67 - 53
+                end
+            elseif v1462 == (22 - 9) then
+                local v4282 = 0
+                while true do
+                    if v4282 == (0 + 0) then
+                        v1447.Scale = v1435
+                        v1462 = 32 - 18
+                        break
+                    end
+                end
+            elseif v1462 == (8 + 6) then
+                v1445.StudsOffset = Vector3.new(0 - 0, v1436, 0 + 0)
+                v1462 = 8
+            elseif v1462 == (5 + 10) then
+                v1428 = v1431
+                v1429 = v1440
+                v1430 = v1441
+                v1462 = 9 - 5
+            elseif v1462 == 16 then
+                v1448, v1449, v1450 = pairs(tbl4.Generators)
+                v1451 = v1450
+                v1462 = 471 - (246 + 208)
+            elseif v1462 == (1909 - (614 + 1278)) then
+                v1452, v1453 = v1448(v1449, v1451)
+                if v1452 == nil then
+                    v1462 = 1 + 0
+                else
+                    v1462 = 332 - (249 + 65)
+                end
+            elseif v1462 == 18 then
+                v1451 = v1452
+                v1454 = v1453.model
+                if v1454 and v1454.Parent then
+                    v1462 = 42 - 23
+                else
+                    v1462 = 1292 - (726 + 549)
+                end
+            elseif v1462 == (13 + 6) then
+                v1455 = v1454:FindFirstChildWhichIsA("BasePart")
+                if v1455 then
+                    v1462 = 1444 - (916 + 508)
+                else
+                    v1462 = 17
+                end
+            elseif v1462 == 20 then
+                v1456 = (v1424.CFrame.Position - v1455.Position).Magnitude
+                v1457 = math.clamp((134 - 94) / math.max(v1456, 4 + 1), 323.8 - (140 + 183), 1 + 0)
+                v1458 = (568 - (297 + 267)) + math.clamp((v1456 - 40) * (0.05 + 0), 342 - (37 + 305), 6)
+                v1459 = v1454:FindFirstChild("GE_Text")
+                if v1459 and not v1459:GetAttribute("NoDistScale") then
+                    v1462 = 1287 - (323 + 943)
+                else
+                    v1462 = 7 + 10
+                end
+            elseif v1462 == (27 - 6) then
+                local v4293 = 1535 - (394 + 1141)
+                while true do
+                    if v4293 == (1 + 0) then
+                        if v1460 then
+                            v1462 = 7 + 15
+                        else
+                            v1462 = 23
+                        end
+                        break
+                    end
+                    if (0 + 0) == v4293 then
+                        v1460 = v1459:FindFirstChild("Box")
+                        v1461 = v1460
+                        v4293 = 1
+                    end
+                end
+            elseif v1462 == 22 then
+                local v4295 = 0 - 0
+                while true do
+                    if v4295 == 0 then
+                        v1461 = v1460:FindFirstChild("DistScale")
+                        v1462 = 23
+                        break
+                    end
+                end
+            elseif v1462 == (33 - 10) then
+                if v1461 then
+                    v1462 = 24
+                else
+                    v1462 = 23 + 2
+                end
+            elseif v1462 == 24 then
+                v1461.Scale = v1457
+                v1462 = 24 + 1
+            elseif v1462 == 25 then
+                local v4300 = 0
+                while true do
+                    if v4300 == (529 - (87 + 442)) then
+                        v1459.StudsOffset = Vector3.new(805 - (13 + 792), v1458, 0)
+                        v1462 = 16 + 1
+                        break
+                    end
+                end
+            elseif v1462 == (11 + 15) then
+                return
+            end
+        end
+    end)
+    function SetupHookDetection()
+        for v2154, v2155 in pairs(Players:GetPlayers()) do
+            if v2155 ~= localPlayer then
+                v2155:GetAttributeChangedSignal("HookCount"):Connect(function()
+                    local v2923 = 0
+                    local v2924
+                    local v2925
+                    local v2926
+                    while true do
+                        if v2923 == (2 + 0) then
+                            if _G.Ox.ESPConfig.HookCount then
+                                local v3807 = 1865 - (1231 + 634)
+                                while true do
+                                    if v3807 == (1766 - (1362 + 404)) then
+                                        UpdateHookESP()
+                                        UpdateHookUICounter()
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                        if v2923 == (0 - 0) then
+                            v2924 = v2155.Name
+                            v2925 = v2155:GetAttribute("HookCount")
+                            v2923 = 1 + 0
+                        end
+                        if v2923 == (2 - 1) then
+                            v2926 = v2925 or 0
+                            v228[v2924] = v2926
+                            v2923 = 1018 - (660 + 356)
+                        end
+                    end
+                end)
+            end
+        end
+    end
+    Players.PlayerAdded:Connect(function(v1463)
+        v1463:GetAttributeChangedSignal("HookCount"):Connect(function()
+            local v2156 = v1463.Name
+            local v2157 = v1463:GetAttribute("HookCount")
+            local v2158 = v2157 or (0 - 0)
+            v228[v2156] = v2158
+            if _G.Ox.ESPConfig.HookCount then
+                local v2701 = 0
+                while true do
+                    if (0 + 0) == v2701 then
+                        UpdateHookESP()
+                        UpdateHookUICounter()
+                        break
+                    end
+                end
+            end
+        end)
+    end)
+    task.spawn(function()
+        task.wait(1952 - (1111 + 839))
+        SetupHookDetection()
+    end)
+    local v247 = false
+    task.spawn(function()
+        while _G.Ox.ScriptAlive do
+            local v2160 = 951 - (496 + 455)
+            while true do
+                if v2160 == (698 - (66 + 632)) then
+                    task.wait(1)
+                    if _G.Ox.ESPConfig.HookCount then
+                        v247 = true
+                        UpdateHookData()
+                        UpdateHookUICounter()
+                    elseif v247 then
+                        local v3703 = 0 - 0
+                        while true do
+                            if v3703 == (1136 - (441 + 695)) then
+                                ClearHookESP()
+                                ClearHookUICounter()
+                                v3703 = 2 - 1
+                            end
+                            if v3703 == (1 - 0) then
+                                UpdatePlayerESP()
+                                v247 = false
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end)
+    local function v248(v1464)
+        _G.Ox.InfinityZoom.Enabled = v1464
+        if v1464 then
+            localPlayer.CameraMaxZoomDistance = math.huge
+            localPlayer.CameraMinZoomDistance = 0
+            v1:Notify({
+                Title = "Infinity Zoom",
+                Description = "AKTIF - Zoom out tanpa batas",
+                Duration = 9 - 7,
+            })
+        else
+            localPlayer.CameraMaxZoomDistance = 8 + 4
+            localPlayer.CameraMinZoomDistance = 1838.5 - (286 + 1552)
+            v1:Notify({
+                Title = "Infinity Zoom",
+                Description = "NONAKTIF",
+                Duration = 1279 - (1016 + 261),
+            })
+        end
+    end
+    local function v249(v1465)
+        _G.Ox.CameraFOV.Enabled = v1465
+        if not v1465 then
+            currentCamera.FieldOfView = 1390 - (708 + 612)
+        end
+        local v1466 = v1.Notify
+        local v1467 = {
+            Title = "Camera FOV",
+        }
+        local v1468 = (v1465 and "AKTIF") or "NONAKTIF"
+        v1467.Description = v1468
+        v1467.Duration = 5 - 3
+        v1466(v1, v1467)
+    end
+    local function v250(v1471)
+        local v1472 = 0 + 0
+        while true do
+            if v1472 == (379 - (113 + 266)) then
+                _G.Ox.CameraFOV.Value = v1471
+                if _G.Ox.CameraFOV.Enabled then
+                    currentCamera.FieldOfView = v1471
+                end
+                break
+            end
+        end
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        local v1473 = 1170 - (979 + 191)
+        while true do
+            if (0 - 0) == v1473 then
+                task.wait(0.5)
+                if _G.Ox.CameraFOV.Enabled then
+                    currentCamera.FieldOfView = _G.Ox.CameraFOV.Value
+                end
+                break
+            end
+        end
+    end)
+    workspace.ChildAdded:Connect(function(v1474)
+        if v1474.Name == "Map" then
+            task.wait(1735.5 - (339 + 1396))
+            if _G.Ox.CameraFOV.Enabled then
+                currentCamera.FieldOfView = _G.Ox.CameraFOV.Value
+            end
+        end
+    end)
+    pcall(function()
+        _G.Ox.InstantTPGate.GateClientModule = require(game:GetService("ReplicatedStorage").Modules.Items.GateClient)
+    end)
+    local function v251(v1475)
+        local v1476 = 0 + 0
+        for v2161, v2162 in getgc(true) do
+            if (typeof(v2162) == "table") and rawget(v2162, "gateDuration") and rawget(v2162, "gateRemote") then
+                rawset(v2162, "gateDuration", v1475)
+            end
+            v1476 = v1476 + 1 + 0
+            if (v1476 % (3839 - 1839)) == (0 + 0) then
+                task.wait()
+            end
+        end
+    end
+    local function v252()
+        local v1477 = 0
+        while true do
+            if (0 + 0) == v1477 then
+                if not _G.Ox.InstantTPGate.GateClientModule then
+                    return
+                end
+                if not _G.Ox.InstantTPGate.oldGateNew then
+                    _G.Ox.InstantTPGate.oldGateNew = _G.Ox.InstantTPGate.GateClientModule.new
+                    _G.Ox.InstantTPGate.GateClientModule.new = function(...)
+                        local v3323 = _G.Ox.InstantTPGate.oldGateNew(...)
+                        if _G.Ox.InstantTPGate.Enabled then
+                            v3323.gateDuration = 347 - (187 + 160)
+                        end
+                        return v3323
+                    end
+                end
+                v1477 = 2 - 1
+            end
+            if v1477 == (3 - 2) then
+                if not _G.Ox.InstantTPGate.oldGateCanUse then
+                    _G.Ox.InstantTPGate.oldGateCanUse = _G.Ox.InstantTPGate.GateClientModule.CanUse
+                    _G.Ox.InstantTPGate.GateClientModule.CanUse = function(v3324)
+                        if not _G.Ox.InstantTPGate.Enabled then
+                            return _G.Ox.InstantTPGate.oldGateCanUse(v3324)
+                        end
+                        if v3324.isSilenced or v3324.isBuffering then
+                            return false
+                        end
+                        local v3325 = os.clock() - v3324.lastUse
+                        local v3326 = v3324.currentCooldown <= v3325
+                        return v3326
+                    end
+                end
+                break
+            end
+        end
+    end
+    local function v253()
+        if not _G.Ox.InstantTPGate.GateClientModule then
+            return
+        end
+        if _G.Ox.InstantTPGate.oldGateNew then
+            _G.Ox.InstantTPGate.GateClientModule.new = _G.Ox.InstantTPGate.oldGateNew
+            _G.Ox.InstantTPGate.oldGateNew = nil
+        end
+        if _G.Ox.InstantTPGate.oldGateCanUse then
+            local v2455 = 0
+            while true do
+                if v2455 == (0 + 0) then
+                    _G.Ox.InstantTPGate.GateClientModule.CanUse = _G.Ox.InstantTPGate.oldGateCanUse
+                    _G.Ox.InstantTPGate.oldGateCanUse = nil
+                    break
+                end
+            end
+        end
+    end
+    local function v254(v1478)
+        _G.Ox.InstantTPGate.Enabled = v1478
+        if v1478 then
+            local v2456 = 0
+            while true do
+                if v2456 == (3 - 2) then
+                    v1:Notify({
+                        Title = "Instant TP Gate",
+                        Description = "AKTIF",
+                        Duration = 2,
+                    })
+                    break
+                end
+                if v2456 == (0 + 0) then
+                    v251(0 + 0)
+                    v252()
+                    v2456 = 1 - 0
+                end
+            end
+        else
+            local v2457 = 328 - (56 + 272)
+            while true do
+                if v2457 == (1 + 0) then
+                    v1:Notify({
+                        Title = "Instant TP Gate",
+                        Description = "NONAKTIF",
+                        Duration = 2 + 0,
+                    })
+                    break
+                end
+                if v2457 == (0 - 0) then
+                    v251(1.5)
+                    v253()
+                    v2457 = 1 + 0
+                end
+            end
+        end
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(640.5 - (455 + 185))
+        if _G.Ox.InstantTPGate.Enabled then
+            v251(788 - (757 + 31))
+            v252()
+        end
+    end)
+    workspace.ChildAdded:Connect(function(v1479)
+        if v1479.Name == "Map" then
+            local v2458 = 1999 - (762 + 1237)
+            while true do
+                if (0 - 0) == v2458 then
+                    task.wait(269.5 - (265 + 4))
+                    if _G.Ox.InstantTPGate.Enabled then
+                        local v3594 = 0 - 0
+                        while true do
+                            if v3594 == (0 + 0) then
+                                v251(0)
+                                v252()
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end)
+    function ResetAllTransparency()
+        local v1480, v1481, v1482 = pairs(currentCamera:GetChildren())
+        local v1483 = v1482
+        local v1484 = v1480
+        local v1485 = v1481
+        while true do
+            local v2163, v2164 = v1484(v1485, v1483)
+            if v2163 == nil then
+                break
+            end
+            v1483 = v2163
+            if v2164 ~= localPlayer.Character then
+                local v2702 = 0
+                while true do
+                    if (0 - 0) == v2702 then
+                        for v3595, v3596 in pairs(v2164:GetDescendants()) do
+                            if v3596:IsA("BasePart") or v3596:IsA("Decal") then
+                                local v3808 = 0
+                                while true do
+                                    if v3808 == (0 - 0) then
+                                        v3596.LocalTransparencyModifier = 0
+                                        v3596.Transparency = 0
+                                        break
+                                    end
+                                end
+                            end
+                        end
+                        v1483 = v2163
+                        break
+                    end
+                end
+            end
+        end
+    end
+    function SetWorldTransparency(v1486)
+        local v1487, v1488, v1489 = pairs(currentCamera:GetChildren())
+        local v1490 = v1489
+        local v1491 = v1487
+        local v1492 = v1488
+        while true do
+            local v2165, v2166 = v1491(v1492, v1490)
+            if v2165 == nil then
+                break
+            end
+            v1490 = v2165
+            if v2166 ~= localPlayer.Character then
+                for v2928, v2929 in pairs(v2166:GetDescendants()) do
+                    if v2929:IsA("BasePart") or v2929:IsA("Decal") then
+                        local v3327 = 0 + 0
+                        while true do
+                            if v3327 == (0 - 0) then
+                                v2929.LocalTransparencyModifier = v1486
+                                v2929.Transparency = v1486
+                                break
+                            end
+                        end
+                    end
+                end
+                v1490 = v2165
+            end
+        end
+    end
+    function SetCharacterTransparency(v1493, v1494)
+        if not v1493 then
+            return
+        end
+        local v1495, v1496, v1497 = pairs(v1493:GetChildren())
+        local v1498 = v1497
+        local v1499 = v1495
+        local v1500 = v1496
+        while true do
+            local v2167, v2168 = v1499(v1500, v1498)
+            if v2167 == nil then
+                break
+            end
+            v1498 = v2167
+            if v2168.Name == "Hat" then
+                local v2703 = 0 - 0
+                while true do
+                    if v2703 == (0 - 0) then
+                        for v3597, v3598 in pairs(v2168:GetDescendants()) do
+                            if v3598:IsA("BasePart") or v3598:IsA("Decal") then
+                                local v3811 = 0
+                                while true do
+                                    if v3811 == (1734 - (1691 + 43)) then
+                                        v3598.LocalTransparencyModifier = v1494
+                                        v3598.Transparency = v1494
+                                        break
+                                    end
+                                end
+                            end
+                        end
+                        v1498 = v2167
+                        break
+                    end
+                end
+            end
+            if v2168:IsA("BasePart") and tbl3[v2168.Name] then
+                local v2704 = 0 + 0
+                while true do
+                    if v2704 == 0 then
+                        v2168.LocalTransparencyModifier = v1494
+                        v2168.Transparency = v1494
+                        break
+                    end
+                end
+            end
+            if v2168:IsA("Tool") or v2168:IsA("Model") then
+                local v2705 = v2168:IsA("BasePart")
+                local v2706 = v2705
+                if v2705 then
+                    local v3197 = {}
+                    v2706 = v3197
+                    v3197[1] = v2168
+                end
+                if not v2706 then
+                    v2706 = v2168:GetDescendants()
+                end
+                for v2930, v2931 in pairs(v2706) do
+                    if v2931:IsA("BasePart") or v2931:IsA("Decal") then
+                        local v3330 = 0 - 0
+                        while true do
+                            if v3330 == (0 + 0) then
+                                v2931.LocalTransparencyModifier = v1494
+                                v2931.Transparency = v1494
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    function ResetCharacterTransparency(v1501)
+        if not localPlayer.Character then
+            return
+        end
+        if v1501 then
+            local v2459, v2460, v2461 = pairs(localPlayer.Character:GetChildren())
+            local v2462 = v2461
+            local v2463 = v2459
+            local v2464 = v2460
+            while true do
+                local v2707, v2708 = v2463(v2464, v2462)
+                if v2707 == nil then
+                    break
+                end
+                v2462 = v2707
+                if v2708.Name == "Hat" then
+                    local v3199 = 0 - 0
+                    while true do
+                        if v3199 == (176 - (127 + 49)) then
+                            for v3814, v3815 in pairs(v2708:GetDescendants()) do
+                                if v3815:IsA("BasePart") or v3815:IsA("Decal") then
+                                    local v3985 = 1680 - (281 + 1399)
+                                    while true do
+                                        if v3985 == 0 then
+                                            v3815.LocalTransparencyModifier = 1660 - (184 + 1475)
+                                            v3815.Transparency = 1 - 0
+                                            break
+                                        end
+                                    end
+                                end
+                            end
+                            v2462 = v2707
+                            break
+                        end
+                    end
+                end
+                if v2708:IsA("BasePart") and tbl3[v2708.Name] then
+                    local v3200 = 0 - 0
+                    while true do
+                        if v3200 == (0 - 0) then
+                            v2708.LocalTransparencyModifier = 1 + 0
+                            v2708.Transparency = 1
+                            break
+                        end
+                    end
+                end
+                if v2708:IsA("Tool") or v2708:IsA("Model") then
+                    local v3201 = 0 + 0
+                    local v3202
+                    local v3203
+                    while true do
+                        if v3201 == (1293 - (260 + 1031)) then
+                            for v3816, v3817 in pairs(v3203) do
+                                if v3817:IsA("BasePart") or v3817:IsA("Decal") then
+                                    v3817.LocalTransparencyModifier = 1178 - (313 + 864)
+                                    v3817.Transparency = 693 - (655 + 37)
+                                end
+                            end
+                            break
+                        end
+                        if v3201 == (0 + 0) then
+                            v3202 = v2708:IsA("BasePart")
+                            v3203 = v3202
+                            v3201 = 1 - 0
+                        end
+                        if (2 - 1) == v3201 then
+                            if v3202 then
+                                local v3929 = {}
+                                v3203 = v3929
+                                v3929[1 + 0] = v2708
+                            end
+                            if not v3203 then
+                                v3203 = v2708:GetDescendants()
+                            end
+                            v3201 = 2 + 0
+                        end
+                    end
+                end
+            end
+        else
+            SetCharacterTransparency(localPlayer.Character, 0 - 0)
+        end
+    end
+    local function v255()
+        pcall(function()
+            localPlayer.CameraMode = Enum.CameraMode.Classic
+            if _G.Ox.InfinityZoom and _G.Ox.InfinityZoom.Enabled then
+                localPlayer.CameraMinZoomDistance = 770 - (383 + 387)
+                localPlayer.CameraMaxZoomDistance = math.huge
+            else
+                localPlayer.CameraMinZoomDistance = 0.5 + 0
+                localPlayer.CameraMaxZoomDistance = 9 + 119
+            end
+        end)
+        ResetAllTransparency()
+        if localPlayer.Character then
+            ResetCharacterTransparency(false)
+        end
+    end
+    local function v256(v1502)
+        local v1503 = localPlayer.Team
+        local v1504 = v1503 and (localPlayer.Team.Name == "Killer")
+        if v1502 and not v1504 then
+            local v2465 = 0 - 0
+            while true do
+                if v2465 == 1 then
+                    fn(ThirdPersonToggle, false)
+                    return
+                end
+                if v2465 == (0 + 0) then
+                    v1:Notify({
+                        Title = "Akses Ditolak",
+                        Description = "Fitur ini khusus Killer!",
+                        Duration = 1 + 2,
+                    })
+                    tbl2.Enabled = false
+                    v2465 = 511 - (304 + 206)
+                end
+            end
+        end
+        tbl2.Enabled = v1502
+        if not v1502 then
+            if _G.Ox.State.ThirdPersonConn then
+                _G.Ox.State.ThirdPersonConn:Disconnect()
+                _G.Ox.State.ThirdPersonConn = nil
+            end
+            v255()
+            v1:Notify({
+                Title = "Third Person",
+                Description = "NONAKTIF",
+                Duration = 227 - (182 + 43),
+            })
+            return
+        end
+        localPlayer.CameraMode = Enum.CameraMode.Classic
+        localPlayer.CameraMinZoomDistance = 7
+        localPlayer.CameraMaxZoomDistance = 903 - (264 + 511)
+        SetWorldTransparency(1)
+        if _G.Ox.State.ThirdPersonConn then
+            local v2466 = 0
+            while true do
+                if v2466 == (0 + 0) then
+                    _G.Ox.State.ThirdPersonConn:Disconnect()
+                    _G.Ox.State.ThirdPersonConn = nil
+                    break
+                end
+            end
+        end
+        _G.Ox.State.ThirdPersonConn = RunService.RenderStepped:Connect(function()
+            if not tbl2.Enabled then
+                return
+            end
+            if localPlayer.Team and (localPlayer.Team.Name == "Killer") then
+                local v2714 = 0 - 0
+                while true do
+                    if v2714 == 1 then
+                        localPlayer.CameraMaxZoomDistance = 1109 - (128 + 853)
+                        if localPlayer.Character then
+                            SetCharacterTransparency(localPlayer.Character, 1702 - (1635 + 67))
+                        end
+                        v2714 = 1 + 1
+                    end
+                    if v2714 == (1 + 1) then
+                        return
+                    end
+                    if v2714 == (197 - (131 + 66)) then
+                        localPlayer.CameraMode = Enum.CameraMode.Classic
+                        localPlayer.CameraMinZoomDistance = 7
+                        v2714 = 3 - 2
+                    end
+                end
+            end
+            tbl2.Enabled = false
+            if _G.Ox.State.ThirdPersonConn then
+                _G.Ox.State.ThirdPersonConn:Disconnect()
+                _G.Ox.State.ThirdPersonConn = nil
+            end
+            v255()
+            fn(ThirdPersonToggle, false)
+        end)
+        v1:Notify({
+            Title = "Third Person",
+            Description = "AKTIF - Khusus Killer",
+            Duration = 14 - 11,
+        })
+    end
+    localPlayer:GetPropertyChangedSignal("Team"):Connect(function()
+        local v1510 = localPlayer.Team
+        local v1511 = v1510 and localPlayer.Team.Name
+        if v1511 ~= "Killer" then
+            if tbl2.Enabled then
+                local v2932 = 0
+                while true do
+                    if v2932 == 0 then
+                        v256(false)
+                        fn(ThirdPersonToggle, false)
+                        break
+                    end
+                end
+            else
+                v255()
+            end
+        end
+    end)
+    localPlayer.CharacterAdded:Connect(function()
+        local v1512 = 0
+        while true do
+            if v1512 == (0 + 0) then
+                task.wait(0.8 + 0)
+                if tbl2.Enabled and localPlayer.Team and (localPlayer.Team.Name == "Killer") then
+                    localPlayer.CameraMode = Enum.CameraMode.Classic
+                    localPlayer.CameraMinZoomDistance = 7
+                    localPlayer.CameraMaxZoomDistance = 128
+                else
+                    v255()
+                end
+                break
+            end
+        end
+    end)
+    function EnableUnlimitedVault()
+        if _G.Ox.UnlimitedVaultEnabled then
+            return
+        end
+        _G.Ox.UnlimitedVaultEnabled = true
+        if _G.Ox.UnlimitedVaultConn then
+            _G.Ox.UnlimitedVaultConn:Disconnect()
+            _G.Ox.UnlimitedVaultConn = nil
+        end
+        for v2172, v2173 in ipairs(CollectionService:GetTagged("Blocked")) do
+            CollectionService:RemoveTag(v2173, "Blocked")
+        end
+        _G.Ox.UnlimitedVaultConn = CollectionService:GetInstanceAddedSignal("Blocked"):Connect(function(v2174)
+            CollectionService:RemoveTag(v2174, "Blocked")
+        end)
+        v1:Notify({
+            Title = "Unlimited Vault",
+            Description = "AKTIF",
+            Duration = 3,
+        })
+    end
+    function DisableUnlimitedVault()
+        _G.Ox.UnlimitedVaultEnabled = false
+        if _G.Ox.UnlimitedVaultConn then
+            _G.Ox.UnlimitedVaultConn:Disconnect()
+            _G.Ox.UnlimitedVaultConn = nil
+        end
+        v1:Notify({
+            Title = "Unlimited Vault",
+            Description = "NONAKTIF",
+            Duration = 2 - 0,
+        })
+    end
+    local function v257(v1513)
+        if v1513 then
+            EnableUnlimitedVault()
+        else
+            DisableUnlimitedVault()
+        end
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        task.wait(1 - 0)
+        if _G.Ox.UnlimitedVaultEnabled then
+            for v2715, v2716 in ipairs(CollectionService:GetTagged("Blocked")) do
+                CollectionService:RemoveTag(v2716, "Blocked")
+            end
+        end
+    end)
+    task.spawn(function()
+        if not game:IsLoaded() then
+            game.Loaded:Wait()
+        end
+        local v1514 = nil
+        local v1515 = 0
+        while not v1514 and (v1515 < (1615 - (306 + 1299))) do
+            local v2175 = 0
+            local v2176
+            local v2177
+            while true do
+                if v2175 == (0 + 0) then
+                    v1515 = v1515 + (2 - 1)
+                    v2176, v2177 = pcall(function()
+                        local v3209 = 0
+                        local v3210
+                        local v3211
+                        local v3212
+                        while true do
+                            if v3209 == (790 - (671 + 118)) then
+                                v3211 = v3210:WaitForChild("Survivors", 19 - 14)
+                                if not v3211 then
+                                    return nil
+                                end
+                                v3209 = 78 - (73 + 3)
+                            end
+                            if v3209 == 2 then
+                                v3212 = v3211:WaitForChild("SurvivorAnimationsController", 14 - 9)
+                                if not v3212 then
+                                    return nil
+                                end
+                                v3209 = 3
+                            end
+                            if v3209 == (14 - 11) then
+                                return require(v3212)
+                            end
+                            if v3209 == (0 - 0) then
+                                v3210 = ReplicatedStorage:WaitForChild("Modules", 1760 - (1668 + 87))
+                                if not v3210 then
+                                    return nil
+                                end
+                                v3209 = 1
+                            end
+                        end
+                    end)
+                    v2175 = 1
+                end
+                if v2175 == 1 then
+                    if v2176 and v2177 then
+                        v1514 = v2177
+                    else
+                        task.wait(1)
+                    end
+                    break
+                end
+            end
+        end
+        if not v1514 then
+            return
+        end
+        local v1516 = v1514._isFacingStraightEnough
+        v1514._isFacingStraightEnough = function(v2178, v2179, v2180, v2181)
+            if not _G.Ox.Config.Surv_PerfectVault then
+                return v1516(v2178, v2179, v2180, v2181)
+            end
+            v2178.characterspeed = 2 + 18
+            return true, 1899 - (296 + 1603)
+        end
+        local v1518 = v1514._onVaultAnimation
+        v1514._onVaultAnimation = function(v2183, v2184, v2185)
+            local v2186 = 0
+            while true do
+                if v2186 == 0 then
+                    if not _G.Ox.Config.Surv_PerfectVault then
+                        return v1518(v2183, v2184, v2185)
+                    end
+                    return v1518(v2183, v2184, true)
+                end
+            end
+        end
+    end)
+    local function v258(v1520)
+        local v1521 = 106 - (79 + 27)
+        while true do
+            if 0 == v1521 then
+                if not v1520 then
+                    return
+                end
+                v1520:SetAttribute("Flowstate", true)
+                v1521 = 1
+            end
+            if v1521 == 1 then
+                if _G.Ox.FlowstateNoCD.Connection then
+                    _G.Ox.FlowstateNoCD.Connection:Disconnect()
+                    _G.Ox.FlowstateNoCD.Connection = nil
+                end
+                _G.Ox.FlowstateNoCD.Connection = v1520:GetAttributeChangedSignal("Flowstate"):Connect(function()
+                    local v2933 = 0 + 0
+                    while true do
+                        if v2933 == 0 then
+                            if not _G.Ox.FlowstateNoCD.Enabled then
+                                return
+                            end
+                            if v1520:GetAttribute("Flowstate") == false then
+                                local v3818 = 1007 - (700 + 307)
+                                while true do
+                                    if v3818 == 0 then
+                                        task.wait(0.05 + 0)
+                                        v1520:SetAttribute("Flowstate", true)
+                                        break
+                                    end
+                                end
+                            end
+                            break
+                        end
+                    end
+                end)
+                break
+            end
+        end
+    end
+    local function v259(v1522)
+        local v1523 = 0
+        while true do
+            if (1800 - (1477 + 322)) == v1523 then
+                if _G.Ox.FlowstateNoCD.CharAddedConn then
+                    local v3213 = 0
+                    while true do
+                        if v3213 == (0 + 0) then
+                            _G.Ox.FlowstateNoCD.CharAddedConn:Disconnect()
+                            _G.Ox.FlowstateNoCD.CharAddedConn = nil
+                            break
+                        end
+                    end
+                end
+                if not v1522 then
+                    local v3214 = localPlayer.Character
+                    if v3214 then
+                        v3214:SetAttribute("Flowstate", false)
+                    end
+                    v1:Notify({
+                        Title = "Flowstate No CD",
+                        Description = "NONAKTIF",
+                        Duration = 4 - 2,
+                    })
+                    return
+                end
+                v1523 = 2 + 0
+            end
+            if v1523 == 2 then
+                v258(localPlayer.Character)
+                _G.Ox.FlowstateNoCD.CharAddedConn = localPlayer.CharacterAdded:Connect(function(v2934)
+                    if not _G.Ox.FlowstateNoCD.Enabled then
+                        return
+                    end
+                    task.wait(3 - 2)
+                    v258(v2934)
+                end)
+                v1523 = 3 + 0
+            end
+            if v1523 == 3 then
+                v1:Notify({
+                    Title = "Flowstate No CD",
+                    Description = "AKTIF",
+                    Duration = 8 - 6,
+                })
+                break
+            end
+            if v1523 == (0 - 0) then
+                _G.Ox.FlowstateNoCD.Enabled = v1522
+                if _G.Ox.FlowstateNoCD.Connection then
+                    _G.Ox.FlowstateNoCD.Connection:Disconnect()
+                    _G.Ox.FlowstateNoCD.Connection = nil
+                end
+                v1523 = 1 + 0
+            end
+        end
+    end
+    function fn14(v1524)
+        local v1525 = 0
+        while true do
+            if v1525 == 0 then
+                _G.Ox.NoFall.Enabled = v1524
+                v1:Notify({
+                    Title = "No Fall Damage",
+                    Description = (v1524 and "AKTIF") or "NONAKTIF",
+                    Duration = 2,
+                })
+                break
+            end
+        end
+    end
+    local function v260()
+        local v1526 = {}
+        local v1527 = workspace:FindFirstChild("Map")
+        if not v1527 then
+            return v1526
+        end
+        for v2187, v2188 in pairs(v1527:GetDescendants()) do
+            if v2188.Name == "Gate" then
+                table.insert(v1526, v2188)
+            end
+        end
+        return v1526
+    end
+    function fn15(v1528)
+        _G.Ox.BypassGate.Enabled = v1528
+        local v1529 = v260()
+        for v2189, v2190 in pairs(v1529) do
+            local v2191 = v2190:FindFirstChild("LeftGate")
+            local v2192 = v2190:FindFirstChild("RightGate")
+            local v2193 = v2190:FindFirstChild("LeftGate-end")
+            local v2194 = v2193 or v2190:FindFirstChild("LeftGate-end2")
+            local v2195 = v2190:FindFirstChild("RightGate-end")
+            local v2196 = v2195 or v2190:FindFirstChild("RightGate-end2")
+            local v2197 = v2190:FindFirstChild("Box")
+            if v1528 then
+                if v2191 then
+                    v2191.Transparency = 1
+                    v2191.CanCollide = false
+                end
+                if v2192 then
+                    v2192.Transparency = 2 - 1
+                    v2192.CanCollide = false
+                end
+                if v2194 then
+                    v2194.Transparency = 0 - 0
+                end
+                if v2196 then
+                    v2196.Transparency = 0 - 0
+                end
+                if v2197 then
+                    v2197.CanCollide = false
+                end
+            else
+                if v2191 then
+                    local v3222 = 0
+                    while true do
+                        if v3222 == 0 then
+                            v2191.Transparency = 0
+                            v2191.CanCollide = true
+                            break
+                        end
+                    end
+                end
+                if v2192 then
+                    local v3223 = 1786 - (20 + 1766)
+                    while true do
+                        if v3223 == (0 - 0) then
+                            v2192.Transparency = 809 - (88 + 721)
+                            v2192.CanCollide = true
+                            break
+                        end
+                    end
+                end
+                if v2194 then
+                    v2194.Transparency = 1 + 0
+                end
+                if v2196 then
+                    v2196.Transparency = 1 + 0
+                end
+                if v2197 then
+                    v2197.CanCollide = true
+                end
+            end
+        end
+        local v1530 = v1.Notify
+        local v1531 = {
+            Title = "Bypass Gate",
+        }
+        local v1532 = (v1528 and "AKTIF") or "NONAKTIF"
+        v1531.Description = v1532
+        v1531.Duration = 1 + 1
+        v1530(v1, v1531)
+    end
+    workspace.ChildAdded:Connect(function(v1535)
+        if v1535.Name == "Map" then
+            local v2467 = 0 + 0
+            while true do
+                if v2467 == 0 then
+                    task.wait(1)
+                    if _G.Ox.BypassGate.Enabled then
+                        fn15(true)
+                    end
+                    break
+                end
+            end
+        end
+    end)
+    local v261 = nil
+    local function v262()
+        if v261 then
+            return
+        end
+        local v1536 = localPlayer.Character
+        if not v1536 then
+            return
+        end
+        local v1537 = v1536:FindFirstChildOfClass("Humanoid")
+        if not v1537 then
+            return
+        end
+        local v1538 = v1537:FindFirstChildOfClass("Animator")
+        if not v1538 then
+            return
+        end
+        v261 = v1538.AnimationPlayed:Connect(function(v2198)
+            if v2198.Animation and v2198.Animation.AnimationId:find("95836365038528") then
+                v2198:Stop(0)
+            end
+        end)
+    end
+    local function v263()
+        if v261 then
+            pcall(function()
+                v261:Disconnect()
+            end)
+            v261 = nil
+        end
+    end
+    task.spawn(function()
+        while _G.Ox.ScriptAlive do
+            task.wait(3)
+            if not _G.Ox.ScriptAlive then
+                break
+            end
+            if _G.Ox.SelfHeal.Enabled and localPlayer.Team and (localPlayer.Team.Name ~= "Killer") then
+                local v2717 = localPlayer.Character
+                if v2717 then
+                    local v3227 = v2717:FindFirstChild("CheckInterractable")
+                    local v3228 = v2717:FindFirstChild("HumanoidRootPart")
+                    local v3229 = v2717:FindFirstChildOfClass("Humanoid")
+                    local v3230 = false
+                    if
+                        v3227
+                        and (
+                            v3227:GetAttribute("isVaulting")
+                            or v3227:GetAttribute("isRepairing")
+                            or v3227:GetAttribute("isUnhooking")
+                            or v3227:GetAttribute("isHealing")
+                            or v3227:GetAttribute("isSliding")
+                        )
+                    then
+                        v3230 = true
+                    end
+                    if not v3230 and v3228 and v3229 and (v3229.Health < v3229.MaxHealth) then
+                        pcall(function()
+                            local v3711 = ReplicatedStorage:FindFirstChild("Remotes")
+                            if v3711 and v3711:FindFirstChild("Healing") then
+                                v3711.Healing.HealEvent:FireServer(v3228, true)
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+    end)
+    localPlayer.CharacterRemoving:Connect(function()
+        v263()
+    end)
+    localPlayer.CharacterAdded:Connect(function()
+        local v1539 = 0 - 0
+        while true do
+            if v1539 == (0 - 0) then
+                task.wait(442 - (93 + 344))
+                if _G.Ox.SelfHeal.Enabled then
+                    v262()
+                end
+                break
+            end
+        end
+    end)
+    function fn16(v1540)
+        _G.Ox.SelfHeal.Enabled = v1540
+        if v1540 then
+            if localPlayer.Team and (localPlayer.Team.Name == "Killer") then
+                v1:Notify({
+                    Title = "Self Heal",
+                    Description = "Kamu harus Survivor!",
+                    Duration = 1216 - (960 + 253),
+                })
+                _G.Ox.SelfHeal.Enabled = false
+                if SelfHealToggle then
+                    fn(SelfHealToggle, false)
+                end
+                return
+            end
+            v262()
+            v1:Notify({
+                Title = "Self Heal",
+                Description = "AKTIF (Tanpa Animasi)",
+                Duration = 2,
+            })
+        else
+            local v2468 = 0 + 0
+            while true do
+                if v2468 == 0 then
+                    v263()
+                    v1:Notify({
+                        Title = "Self Heal",
+                        Description = "NONAKTIF",
+                        Duration = 5 - 3,
+                    })
+                    break
+                end
+            end
+        end
+    end
+    function fn17()
+        local function v1541()
+            repeat
+                task.wait()
+            until localPlayer.Character
+                and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+                and localPlayer.Character:FindFirstChild("Right Leg")
+            task.wait(0.1)
+            local v2199 = localPlayer.Character
+            pcall(function()
+                v2199.Head.Transparency = 2 - 1
+                local v2470 = v2199.Head:FindFirstChild("face")
+                if v2470 then
+                    v2470:Destroy()
+                end
+                v2199["Right Leg"].Transparency = 1
+                local v2472 = Instance.new("MeshPart")
+                v2472.Name = "KorlessHead"
+                v2472.Size = Vector3.new(0.85, 0.85, 0.85)
+                v2472.CanCollide = false
+                v2472.MeshId = "rbxassetid://902942096"
+                v2472.TextureID = "rbxassetid://902843398"
+                v2472.CFrame = v2199["Right Leg"].CFrame * CFrame.new(1416 - (74 + 1342), 0.7, 0 + 0)
+                v2472.Parent = v2199
+                local v2480 = Instance.new("WeldConstraint")
+                v2480.Part0 = v2199["Right Leg"]
+                v2480.Part1 = v2472
+                v2480.Parent = v2472
+            end)
+        end
+        v1541()
+        if _G.Ox.KorlessMorph.Connection then
+            _G.Ox.KorlessMorph.Connection:Disconnect()
+        end
+        _G.Ox.KorlessMorph.Connection = localPlayer.CharacterAdded:Connect(function()
+            task.wait(1)
+            v1541()
+        end)
+    end
+    function fn18()
+        local v1542 = localPlayer.Character
+        local v1543 = v1542 and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if not v1543 then
+            return
+        end
+        local v1544 = nil
+        for v2200, v2201 in ipairs(workspace:GetDescendants()) do
+            if (string.lower(v2201.Name) == "fininshline") and v2201:IsA("BasePart") then
+                v1544 = v2201
+                break
+            end
+        end
+        if not v1544 then
+            local v2485 = 0
+            while true do
+                if 0 == v2485 then
+                    v1:Notify({
+                        Title = "Instan Escape",
+                        Description = "Finish line tidak ditemukan!",
+                        Duration = 476 - (33 + 441),
+                    })
+                    return
+                end
+            end
+        end
+        v1543.CFrame = v1544.CFrame + Vector3.new(0 - 0, 1424 - (64 + 1355), 0)
+        v1:Notify({
+            Title = "Instan Escape",
+            Description = "Berhasil!",
+            Duration = 2 - 0,
+        })
+    end
+    function SetupNextKillerIndicator()
+        if _G.Ox.NextKiller.IndicatorGui then
+            _G.Ox.NextKiller.IndicatorGui:Destroy()
+        end
+        _G.Ox.NextKiller.IndicatorGui = Instance.new("ScreenGui")
+        _G.Ox.NextKiller.IndicatorGui.Name = "NextKillerIndicator"
+        _G.Ox.NextKiller.IndicatorGui.ResetOnSpawn = false
+        _G.Ox.NextKiller.IndicatorGui.Parent = localPlayer:WaitForChild("PlayerGui")
+    end
+    function StartNextKiller()
+        if _G.Ox.NextKiller.IndicatorGui then
+            return
+        end
+        SetupNextKillerIndicator()
+        task.spawn(function()
+            while _G.Ox.NextKiller.Enabled and _G.Ox.NextKiller.IndicatorGui do
+                local v2486 = _G.Ox.NextKiller.IndicatorGui:FindFirstChild("NextKillerDisplay")
+                local v2487 = v2486
+                if not v2486 then
+                    local v2935 = Instance.new("TextLabel")
+                    v2487 = v2935
+                    v2935.Name = "NextKillerDisplay"
+                    v2935.Size = UDim2.new(11 - (5 + 6), 23 + 127, 0, 6 + 16)
+                    v2935.Position = UDim2.new(446.5 - (369 + 77), 0 + 0, 738 - (438 + 300), 10)
+                    v2935.AnchorPoint = Vector2.new(294.5 - (50 + 244), 0)
+                    v2935.BackgroundTransparency = 1201.15 - (95 + 1106)
+                    v2935.BackgroundColor3 = Color3.fromRGB(18 - 8, 49 - 39, 1908 - (1741 + 155))
+                    v2935.TextColor3 = Color3.fromRGB(633 - 413, 330 - 110, 482 - 252)
+                    v2935.Font = Enum.Font.GothamMedium
+                    v2935.TextSize = 11
+                    v2935.RichText = true
+                    v2935.Parent = _G.Ox.NextKiller.IndicatorGui
+                    local v2948 = Instance.new("UICorner")
+                    v2948.CornerRadius = UDim.new(0, 3 + 3)
+                    v2948.Parent = v2935
+                    local v2951 = Instance.new("UIStroke")
+                    v2951.Thickness = 1
+                    v2951.Color = Color3.fromRGB(60, 28 + 32, 70)
+                    v2951.Transparency = 0.3 + 0
+                    v2951.Parent = v2935
+                end
+                local v2488 = Players:GetPlayers()
+                table.sort(v2488, function(v2718, v2719)
+                    local v2720 = v2718:GetAttribute("AllowKiller")
+                    local v2721 = v2720 or false
+                    local v2722 = v2719:GetAttribute("AllowKiller")
+                    local v2723 = v2722 or false
+                    if v2721 ~= v2723 then
+                        return v2721
+                    end
+                    local v2724 = v2718:GetAttribute("KillerChance")
+                    local v2725 = v2724 or (0 - 0)
+                    local v2726 = v2719:GetAttribute("KillerChance")
+                    local v2727 = v2726 or 0
+                    local v2728 = v2727 < v2725
+                    return v2728
+                end)
+                local v2489 = v2488[2 - 1]
+                if v2489 then
+                    local v2956 = 0
+                    local v2957
+                    while true do
+                        if v2956 == (1777 - (1263 + 514)) then
+                            v2957 = ((v2489 == localPlayer) and "<font color='#ff5555'>KAMU</font>") or v2489.Name
+                            v2487.Text = "Next Killer: " .. v2957
+                            break
+                        end
+                    end
+                else
+                    v2487.Text = "Next Killer: <font color='#888888'>Waiting...</font>"
+                end
+                task.wait(498.5 - (73 + 424))
+            end
+        end)
+    end
+    function StopNextKiller()
+        if _G.Ox.NextKiller.IndicatorGui then
+            _G.Ox.NextKiller.IndicatorGui:Destroy()
+            _G.Ox.NextKiller.IndicatorGui = nil
+        end
+    end
+    function fn19(v1546)
+        _G.Ox.NextKiller.Enabled = v1546
+        if v1546 then
+            local v2490 = 0
+            while true do
+                if v2490 == (0 - 0) then
+                    StartNextKiller()
+                    v1:Notify({
+                        Title = "Next Killer Display",
+                        Description = "AKTIF - Menampilkan prediksi killer selanjutnya",
+                        Duration = 3,
+                    })
+                    break
+                end
+            end
+        else
+            StopNextKiller()
+            v1:Notify({
+                Title = "Next Killer Display",
+                Description = "NONAKTIF",
+                Duration = 310 - (93 + 215),
+            })
+        end
+    end
+    local function v264()
+        local v1547 = 0
+        local v1548
+        while true do
+            if v1547 == 0 then
+                v1548 = CoreGui:FindFirstChild("MapPredictUI")
+                if v1548 then
+                    v1548:Destroy()
+                end
+                break
+            end
+        end
+    end
+    local function v265()
+        local v1549 = CoreGui:FindFirstChild("MapPredictUI")
+        if v1549 then
+            return v1549
+        end
+        local v1550 = Instance.new("ScreenGui")
+        v1550.Name = "MapPredictUI"
+        v1550.ResetOnSpawn = false
+        v1550.IgnoreGuiInset = true
+        v1550.Parent = CoreGui
+        local v1555 = Instance.new("TextLabel")
+        v1555.Name = "NextMapDisplay"
+        v1555.Size = UDim2.new(0 - 0, 2155 - (1756 + 179), 1679 - (550 + 1129), 22)
+        v1555.Position = UDim2.new(107.5 - (57 + 50), 629 - (30 + 599), 0 + 0, 48 - 12)
+        v1555.AnchorPoint = Vector2.new(918.5 - (794 + 124), 0)
+        v1555.BackgroundTransparency = 0.15
+        v1555.BackgroundColor3 = Color3.fromRGB(2 + 8, 2 + 8, 23 - 11)
+        v1555.TextColor3 = Color3.fromRGB(2147 - (1299 + 628), 220, 230)
+        v1555.Font = Enum.Font.GothamMedium
+        v1555.TextSize = 24 - 13
+        v1555.RichText = true
+        v1555.Text = "Next Map: <font color='#888888'>Waiting...</font>"
+        v1555.Parent = v1550
+        local v1569 = Instance.new("UICorner")
+        v1569.CornerRadius = UDim.new(0 - 0, 6 + 0)
+        v1569.Parent = v1555
+        local v1572 = Instance.new("UIStroke")
+        v1572.Thickness = 2 - 1
+        v1572.Color = Color3.fromRGB(1505 - (335 + 1110), 58 + 2, 70)
+        v1572.Transparency = 0.3 - 0
+        v1572.Parent = v1555
+        return v1550
+    end
+    local function v266()
+        local v1577 = workspace:FindFirstChild("Map")
+        if not v1577 then
+            return nil
+        end
+        if
+            v1577:FindFirstChild("random shakes")
+            or v1577:FindFirstChild("SCP-173 Room")
+            or v1577:FindFirstChild("SCP-205 Room")
+        then
+            return "Site 68"
+        end
+        if v1577:FindFirstChild("HooksMeat") then
+            return "BLOODBATH! Club"
+        end
+        if v1577:FindFirstChild("Gate") and v1577.Gate:FindFirstChild("vfx") then
+            return "Firelink Shrine"
+        end
+        if v1577:FindFirstChild("Bldg_Addon_RooftopUnit_A") or v1577:FindFirstChild("Rooftop") then
+            return "Mercy Hospital Rooftop"
+        end
+        if v1577:FindFirstChild("White Armored Car") then
+            return "Mount Massive Asylum"
+        end
+        if v1577:FindFirstChild("Dumbster") then
+            return "The Bay Harbor"
+        end
+        if v1577:FindFirstChild("water pump") then
+            return "Valdelobos Village"
+        end
+        if not v1577:FindFirstChild("LargeBoulder01") then
+            return nil
+        end
+        return "Woodview Cabin"
+    end
+    function fn20(v1578)
+        _G.Ox.MapPredict.Enabled = v1578
+        if v1578 then
+            local v2491 = 0 - 0
+            while true do
+                if v2491 == (332 - (268 + 64)) then
+                    task.spawn(function()
+                        local v3335 = 0
+                        local v3336
+                        local v3337
+                        while true do
+                            if v3335 == (0 + 0) then
+                                v3336 = nil
+                                v3337 = false
+                                v3335 = 1279 - (243 + 1035)
+                            end
+                            if v3335 == (2 - 1) then
+                                while _G.Ox.MapPredict.Enabled do
+                                    local v3931 = 0 - 0
+                                    local v3932
+                                    local v3933
+                                    local v3934
+                                    while true do
+                                        if v3931 == (0 - 0) then
+                                            v3932 = v265()
+                                            v3933 = v3932:FindFirstChild("NextMapDisplay")
+                                            v3931 = 1
+                                        end
+                                        if v3931 == (2 + 0) then
+                                            v3932.Enabled = v3934
+                                            if v3934 and v3933 then
+                                                local v4194 = workspace:FindFirstChild("Map") ~= nil
+                                                local v4195 = v266()
+                                                if v3337 and not v4194 then
+                                                    local v4242 = 0
+                                                    local v4243
+                                                    while true do
+                                                        if v4242 == (0 + 0) then
+                                                            v4243 = v3336 or "Unknown"
+                                                            v3933.Text = "Next Map: " .. v4243
+                                                            break
+                                                        end
+                                                    end
+                                                elseif v4194 and v4195 then
+                                                    local v4267 = 0 - 0
+                                                    while true do
+                                                        if v4267 == (100 - (90 + 10)) then
+                                                            v3336 = v4195
+                                                            v3933.Text = "Next Map: " .. v4195
+                                                            break
+                                                        end
+                                                    end
+                                                elseif v4194 and not v4195 then
+                                                    v3933.Text = "Next Map: Unknown"
+                                                else
+                                                    v3933.Text = "Next Map: <font color='#888888'>Waiting...</font>"
+                                                end
+                                                v3337 = v4194
+                                            end
+                                            v3931 = 807 - (209 + 595)
+                                        end
+                                        if v3931 == (806 - (603 + 202)) then
+                                            v3934 = false
+                                            pcall(function()
+                                                local v4152 = localPlayer.Team
+                                                local v4153 = v4152 and (localPlayer.Team.Name == "Spectator")
+                                                v3934 = v4153
+                                            end)
+                                            v3931 = 2
+                                        end
+                                        if v3931 == (2 + 1) then
+                                            task.wait(0.5 - 0)
+                                            break
+                                        end
+                                    end
+                                end
+                                v264()
+                                break
+                            end
+                        end
+                    end)
+                    v1:Notify({
+                        Title = "Next Map Prediction",
+                        Description = "AKTIF - Menampilkan prediksi map selanjutnya",
+                        Duration = 3,
+                    })
+                    break
+                end
+            end
+        else
+            v264()
+            v1:Notify({
+                Title = "Next Map Prediction",
+                Description = "NONAKTIF",
+                Duration = 1 + 1,
+            })
+        end
+    end
+    local function v267(v1579)
+        local v1580 = tostring
+        local v1581 = v1579 or ""
+        return v1580(v1581):gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
+    end
+    local function v268(v1582)
+        local v1583 = tostring
+        local v1584 = v1582 or ""
+        local v1585, v1586 = v1583(v1584):match("^(.+)%s+(%d+)$")
+        if not v1585 then
+            return nil
+        end
+        local v1587 = v1585:gsub("^%s+", ""):gsub("%s+$", "")
+        if v1587 == "" then
+            return nil
+        end
+        if
+            not ({
+                head = true,
+                torso = true,
+                humanoid = true,
+                humanoidrootpart = true,
+                ["left arm"] = true,
+                ["right arm"] = true,
+                ["left leg"] = true,
+                ["right leg"] = true,
+            })[v1587:lower()]
+        then
+            return v1587, v1586
+        end
+        return nil
+    end
+    local function v269()
+        for v2202, v2203 in ipairs(Players:GetPlayers()) do
+            local v2204 = 0 - 0
+            local v2205
+            local v2206
+            while true do
+                if v2204 == (1 + 0) then
+                    if v2206 and v2206:lower():find("killer") then
+                        return v2203
+                    end
+                    break
+                end
+                if v2204 == 0 then
+                    v2205 = v2203.Team
+                    v2206 = v2205 and v2203.Team.Name
+                    v2204 = 2 - 1
+                end
+            end
+        end
+        return nil
+    end
+    local function v270(v1588)
+        local v1589 = 0
+        local v1590
+        local v1591
+        local v1592
+        local v1593
+        while true do
+            if v1589 == (4 - 3) then
+                v1591 = v1590 or workspace:FindFirstChild(v1588.Name) or workspace:FindFirstChild(v1588.DisplayName)
+                if not v1591 then
+                    return {}
+                end
+                v1589 = 281 - (174 + 105)
+            end
+            if v1589 == (0 - 0) then
+                if not v1588 then
+                    return {}
+                end
+                v1590 = v1588.Character
+                v1589 = 914 - (532 + 381)
+            end
+            if 4 == v1589 then
+                return v1592
+            end
+            if (3 + 0) == v1589 then
+                for v2960, v2961 in ipairs(v1591:GetChildren()) do
+                    local v2962, v2963 = v268(v2961.Name)
+                    if v2962 and not v1593[v2962] then
+                        local v3338 = 839 - (137 + 702)
+                        while true do
+                            if v3338 == (0 - 0) then
+                                v1593[v2962] = true
+                                table.insert(v1592, {
+                                    Name = v2962,
+                                    Level = v2963,
+                                })
+                                break
+                            end
+                        end
+                    end
+                end
+                table.sort(v1592, function(v2964, v2965)
+                    local v2966 = tostring(v2964.Name) < tostring(v2965.Name)
+                    return v2966
+                end)
+                v1589 = 1 + 3
+            end
+            if v1589 == (7 - 5) then
+                v1592 = {}
+                v1593 = {}
+                v1589 = 1889 - (1819 + 67)
+            end
+        end
+    end
+    local function v271()
+        local v1594 = v269()
+        local v1595 = v1594
+        if v1594 then
+            local v2492 = v1594.DisplayName
+            v1595 = v2492 or v1594.Name
+        end
+        if not v1595 then
+            v1595 = "Unknown"
+        end
+        local v1596 = v270(v1594)
+        local v1597 = v1596
+        if #v1596 == (0 + 0) then
+            for v2730, v2731 in ipairs(Players:GetPlayers()) do
+                local v2732 = v270(v2731)
+                if #v2732 > (0 + 0) then
+                    local v3231 = v2731.DisplayName
+                    local v3232 = v3231 or v2731.Name
+                    v1595 = v3232
+                    v1597 = v2732
+                    break
+                end
+            end
+        end
+        local v1598 = {
+            'Killer Perks [<font color="rgb(255,80,80)">' .. v267(v1595) .. "</font>]",
+        }
+        if #v1597 == (0 + 0) then
+            table.insert(v1598, '<font color="rgb(200,200,200)">- Waiting for perk data...</font>')
+        else
+            for v2733 = 1 + 0, math.min(#v1597, 1 + 3) do
+                local v2734 = v1597[v2733]
+                local v2735 = v2734.Level
+                local v2736 = (v2735 and (" lvl " .. tostring(v2734.Level))) or ""
+                table.insert(v1598, '<font color="rgb(200,200,200)">- ' .. v267(v2734.Name .. v2736) .. "</font>")
+            end
+        end
+        return table.concat(v1598, "\n"), #v1597
+    end
+    local function v272()
+        if _G.Ox.KillerPerks.Gui then
+            pcall(function()
+                _G.Ox.KillerPerks.Gui:Destroy()
+            end)
+            _G.Ox.KillerPerks.Gui = nil
+        end
+        if not _G.Ox.KillerPerks.Enabled then
+            return
+        end
+        local v1599 = Instance.new("ScreenGui")
+        v1599.Name = "NEX_KillerPerksGui"
+        v1599.ResetOnSpawn = false
+        v1599.IgnoreGuiInset = true
+        v1599.Parent = CoreGui
+        local v1604 = Instance.new("Frame")
+        v1604.Name = "Holder"
+        v1604.Size = UDim2.new(0, 607 - 427, 0 + 0, 83 + 2)
+        v1604.Position = UDim2.new(0.08, 0, 0.22 - 0, 1706 - (667 + 1039))
+        v1604.BackgroundTransparency = 1020 - (274 + 745)
+        v1604.Active = true
+        v1604.Parent = v1599
+        local v1611 = Instance.new("Frame")
+        v1611.Name = "Panel"
+        v1611.Size = UDim2.new(1 + 0, 0 + 0, 431 - (288 + 142), 0)
+        v1611.BackgroundColor3 = Color3.fromRGB(10, 1316 - (301 + 1005), 6 + 6)
+        v1611.BackgroundTransparency = 0.15
+        v1611.BorderSizePixel = 0
+        v1611.Parent = v1604
+        Instance.new("UICorner", v1611).CornerRadius = UDim.new(0 - 0, 1879 - (674 + 1199))
+        local v1619 = Instance.new("UIStroke")
+        v1619.Color = Color3.fromRGB(53 + 7, 60, 42 + 28)
+        v1619.Thickness = 1
+        v1619.Transparency = 0.3 - 0
+        v1619.Parent = v1611
+        local v1624 = Instance.new("Frame")
+        v1624.Size = UDim2.new(4 - 3, 0 + 0, 445 - (92 + 353), 24)
+        v1624.BackgroundColor3 = Color3.fromRGB(14 + 1, 37 - 22, 20)
+        v1624.BorderSizePixel = 0 - 0
+        v1624.Parent = v1611
+        Instance.new("UICorner", v1624).CornerRadius = UDim.new(0, 6)
+        local v1630 = Instance.new("TextLabel")
+        v1630.Size = UDim2.new(1, -(170 - 110), 1 + 0, 0 - 0)
+        v1630.Position = UDim2.new(0 - 0, 8, 0, 0 - 0)
+        v1630.BackgroundTransparency = 1 + 0
+        v1630.Font = Enum.Font.GothamSemibold
+        v1630.Text = "Killer Perks Info"
+        v1630.TextColor3 = Color3.fromRGB(437 - 217, 485 - (34 + 231), 1547 - (930 + 387))
+        v1630.TextSize = 11 + 0
+        v1630.TextXAlignment = Enum.TextXAlignment.Left
+        v1630.Parent = v1624
+        local function v1642(v2207, v2208, v2209)
+            local v2210 = 0 + 0
+            local v2211
+            local v2212
+            while true do
+                if v2210 == (2 - 1) then
+                    v2211.BackgroundColor3 = v2212
+                    v2211.BorderSizePixel = 0
+                    v2211.Font = Enum.Font.GothamMedium
+                    v2211.Text = v2207
+                    v2210 = 2
+                end
+                if v2210 == 0 then
+                    v2211 = Instance.new("TextButton")
+                    v2211.Size = UDim2.new(697 - (389 + 308), 66 - 40, 0, 36 - 20)
+                    v2211.Position = UDim2.new(1, v2208, 0, 11 - 7)
+                    v2212 = v2209 or Color3.fromRGB(10 + 15, 25, 30)
+                    v2210 = 323 - (125 + 197)
+                end
+                if v2210 == 2 then
+                    v2211.TextColor3 = Color3.fromRGB(200, 1197 - (339 + 658), 511 - 301)
+                    v2211.TextSize = 9
+                    v2211.Parent = v1624
+                    Instance.new("UICorner", v2211).CornerRadius = UDim.new(0 - 0, 1352 - (743 + 605))
+                    v2210 = 3 + 0
+                end
+                if v2210 == (1 + 2) then
+                    return v2211
+                end
+            end
+        end
+        local v1643 = v1642("Minimize", -(201 - 147), Color3.fromRGB(92 - 62, 20 + 10, 40))
+        local v1644 = v1642("Close", -(277 - (197 + 52)), Color3.fromRGB(86 - 46, 25, 56 - 31))
+        local v1645 = Instance.new("TextLabel")
+        v1645.Name = "KillerPerksText"
+        v1645.Size = UDim2.new(1 + 0, -(8 + 6), 1, -32)
+        v1645.Position = UDim2.new(0 - 0, 26 - 18, 0 - 0, 11 + 17)
+        v1645.BackgroundTransparency = 1
+        v1645.Font = Enum.Font.GothamMedium
+        v1645.RichText = true
+        v1645.TextXAlignment = Enum.TextXAlignment.Left
+        v1645.TextYAlignment = Enum.TextYAlignment.Top
+        v1645.TextColor3 = Color3.fromRGB(220, 307 - 87, 1327 - (97 + 1000))
+        v1645.TextSize = 11
+        v1645.TextWrapped = false
+        v1645.Parent = v1611
+        v1643.MouseButton1Click:Connect(function()
+            local v2213 = _G.Ox.KillerPerks
+            local v2214
+            if _G.Ox.KillerPerks.Minimized then
+                v2214 = false
+            else
+                v2214 = true
+            end
+            v2213.Minimized = v2214
+            local v2216
+            if _G.Ox.KillerPerks.Minimized then
+                v2216 = false
+            else
+                v2216 = true
+            end
+            v1645.Visible = v2216
+            local v2218 = _G.Ox.KillerPerks.Minimized
+            local v2219 = (v2218 and "Show") or "Minimize"
+            v1643.Text = v2219
+            local v2221 = _G.Ox.KillerPerks.Minimized
+            local v2222 = (v2221 and UDim2.new(0, 640 - 460, 0, 1869 - (143 + 1702)))
+                or UDim2.new(0 - 0, 549 - (40 + 329), 0 + 0, 30 + 55)
+            v1604.Size = v2222
+        end)
+        v1644.MouseButton1Click:Connect(function()
+            local v2224 = 0 - 0
+            while true do
+                if v2224 == (0 + 0) then
+                    _G.Ox.KillerPerks.Enabled = false
+                    if _G.Ox.KillerPerks.Gui then
+                        pcall(function()
+                            _G.Ox.KillerPerks.Gui:Destroy()
+                        end)
+                        _G.Ox.KillerPerks.Gui = nil
+                    end
+                    v2224 = 1
+                end
+                if v2224 == (66 - (9 + 56)) then
+                    if KillerPerksToggle then
+                        fn(KillerPerksToggle, false)
+                    end
+                    break
+                end
+            end
+        end)
+        local v1660 = false
+        local v1661 = nil
+        local v1662 = nil
+        v1604.InputBegan:Connect(function(v2225)
+            if
+                (v2225.UserInputType == Enum.UserInputType.MouseButton1)
+                or (v2225.UserInputType == Enum.UserInputType.Touch)
+            then
+                local v2737 = 0
+                while true do
+                    if v2737 == (584 - (531 + 53)) then
+                        v1660 = true
+                        v1661 = v2225.Position
+                        v2737 = 1 + 0
+                    end
+                    if v2737 == (774 - (89 + 684)) then
+                        v1662 = v1604.Position
+                        v2225.Changed:Connect(function()
+                            if v2225.UserInputState == Enum.UserInputState.End then
+                                v1660 = false
+                            end
+                        end)
+                        break
+                    end
+                end
+            end
+        end)
+        UserInputService.InputChanged:Connect(function(v2226)
+            if not v1660 or not v1661 or not v1662 then
+                return
+            end
+            if
+                (v2226.UserInputType ~= Enum.UserInputType.MouseMovement)
+                and (v2226.UserInputType ~= Enum.UserInputType.Touch)
+            then
+                return
+            end
+            local v2227 = v2226.Position - v1661
+            v1604.Position = UDim2.new(v1662.X.Scale, v1662.X.Offset + v2227.X, v1662.Y.Scale, v1662.Y.Offset + v2227.Y)
+        end)
+        v1599.Parent = CoreGui
+        _G.Ox.KillerPerks.Gui = v1599
+        task.spawn(function()
+            while _G.Ox.KillerPerks.Enabled and _G.Ox.KillerPerks.Gui do
+                if not _G.Ox.KillerPerks.Minimized then
+                    local v2978 = 0 + 0
+                    local v2979
+                    local v2980
+                    local v2981
+                    while true do
+                        if v2978 == (1 + 0) then
+                            v2981 = math.max(1 + 1, math.min(v2980 + (1 - 0), 5))
+                            v1604.Size = UDim2.new(0, 133 + 47, 0, math.max(56 + 9, 28 + (v2981 * (628 - (238 + 375)))))
+                            break
+                        end
+                        if v2978 == 0 then
+                            v2979, v2980 = v271()
+                            v1645.Text = v2979
+                            v2978 = 1 + 0
+                        end
+                    end
+                end
+                task.wait(1 - 0)
+            end
+        end)
+    end
+    function fn21(v1663)
+        local v1664 = 0 + 0
+        while true do
+            if 0 == v1664 then
+                _G.Ox.KillerPerks.Enabled = v1663
+                if v1663 then
+                    v272()
+                    v1:Notify({
+                        Title = "Killer Perks Display",
+                        Description = "AKTIF - Menampilkan perk killer yang digunakan",
+                        Duration = 3,
+                    })
+                else
+                    local v3233 = 0 - 0
+                    while true do
+                        if v3233 == 0 then
+                            if _G.Ox.KillerPerks.Gui then
+                                local v3935 = 0 - 0
+                                while true do
+                                    if v3935 == 0 then
+                                        pcall(function()
+                                            _G.Ox.KillerPerks.Gui:Destroy()
+                                        end)
+                                        _G.Ox.KillerPerks.Gui = nil
+                                        break
+                                    end
+                                end
+                            end
+                            v1:Notify({
+                                Title = "Killer Perks Display",
+                                Description = "NONAKTIF",
+                                Duration = 5 - 3,
+                            })
+                            break
+                        end
+                    end
+                end
+                break
+            end
+        end
+    end
+    function PlayHitSound()
+        local v1665 = 0 - 0
+        local v1666
+        while true do
+            if (0 - 0) == v1665 then
+                if not _G.Ox.Stun.HitSoundEnabled then
+                    return
+                end
+                v1666 = tick()
+                v1665 = 1
+            end
+            if v1665 == (2 - 0) then
+                pcall(function()
+                    local v2982 = Instance.new("Sound")
+                    v2982.SoundId = _G.Ox.Stun.HitSoundId
+                    v2982.Volume = _G.Ox.Stun.HitSoundVolume
+                    v2982.PlayOnRemove = true
+                    local v2986 = workspace.CurrentCamera
+                    local v2987 = v2986 or workspace
+                    v2982.Parent = v2987
+                    v2982:Play()
+                    task.delay(v2982.TimeLength + 0.1 + 0, function()
+                        if v2982 and v2982.Parent then
+                            v2982:Destroy()
+                        end
+                    end)
+                end)
+                break
+            end
+            if v1665 == (1 + 0) then
+                if (v1666 - _G.Ox.Stun.HitSoundLastTime) < _G.Ox.Stun.HitSoundCooldown then
+                    return
+                end
+                _G.Ox.Stun.HitSoundLastTime = v1666
+                v1665 = 1 + 1
+            end
+        end
+    end
+    local function v273(v1667)
+        local v1668 = v1667:FindFirstChild("HumanoidRootPart")
+        if not v1668 then
+            return nil
+        end
+        local v1669 = v1668:FindFirstChild("StunRingUI")
+        if v1669 then
+            v1669:Destroy()
+        end
+        local v1670 = Instance.new("BillboardGui")
+        v1670.Name = "StunRingUI"
+        v1670.Adornee = v1668
+        v1670.AlwaysOnTop = true
+        v1670.Size = UDim2.new(462 - (428 + 34), 10 + 30, 0, 62 - 22)
+        v1670.StudsOffsetWorldSpace = Vector3.new(0 - 0, 9.5 - 5, 918 - (223 + 695))
+        v1670.ResetOnSpawn = false
+        v1670.LightInfluence = 0 - 0
+        v1670.Parent = v1668
+        local v1679 = Instance.new("ImageLabel", v1670)
+        v1679.Size = UDim2.new(512 - (329 + 182), 0, 1 + 0, 0 - 0)
+        v1679.Position = UDim2.new(0 + 0, 0 + 0, 0 + 0, 0)
+        v1679.BackgroundTransparency = 1 - 0
+        v1679.Image = "rbxassetid://129594563448607"
+        v1679.ScaleType = Enum.ScaleType.Fit
+        v1670.Enabled = false
+        return v1670,
+            task.spawn(function()
+                local v2229 = 0 - 0
+                local v2230 = workspace.CurrentCamera
+                while v1670 and v1670.Parent do
+                    local v2493 = 1200 - (177 + 1023)
+                    while true do
+                        if v2493 == 0 then
+                            if v1670.Enabled then
+                                local v3602 = 0 - 0
+                                local v3603
+                                local v3604
+                                while true do
+                                    if v3602 == 2 then
+                                        v1670.Size = UDim2.new(0, v3604, 0 + 0, v3604)
+                                        break
+                                    end
+                                    if v3602 == (0 - 0) then
+                                        v3603 = (v2229 + (1471 - (120 + 1345))) % (697 - (8 + 329))
+                                        v2229 = v3603
+                                        v3602 = 126 - (19 + 106)
+                                    end
+                                    if v3602 == 1 then
+                                        v1679.Rotation = v3603
+                                        v3604 = math.clamp(
+                                            math.floor(
+                                                (2141 - 1541) / (v2230.CFrame.Position - v1668.Position).Magnitude
+                                            ),
+                                            30 - 8,
+                                            43 + 1
+                                        )
+                                        v3602 = 2
+                                    end
+                                end
+                            end
+                            task.wait(0.1 - 0)
+                            break
+                        end
+                    end
+                end
+            end)
+    end
+    local function v274(v1687)
+        local v1688 = 0 - 0
+        local v1689
+        local v1690
+        local v1691
+        local v1692
+        local v1693
+        local v1694
+        while true do
+            if v1688 == (7 - 5) then
+                function v1692(v2989)
+                    if not v1691.stunRing then
+                        return
+                    end
+                    v1691.stunRing.Enabled = true
+                    if v1691._stunTimer then
+                        task.cancel(v1691._stunTimer)
+                    end
+                    v1691._stunTimer = task.delay(v2989, function()
+                        if v1691.stunRing then
+                            v1691.stunRing.Enabled = false
+                        end
+                    end)
+                end
+                v1693 = v1687:GetAttributeChangedSignal("IsStunned"):Connect(function()
+                    if v1687:GetAttribute("IsStunned") == true then
+                        v1692(3.2 - 1)
+                    end
+                end)
+                v1694 = v1687:GetAttributeChangedSignal("Immobile"):Connect(function()
+                    if v1687:GetAttribute("Immobile") == true then
+                        v1692(1.2000000000000002 + 1)
+                    end
+                end)
+                v1688 = 3
+            end
+            if v1688 == (1503 - (957 + 546)) then
+                if not v1687 or _G.Ox.Stun.Data[v1687] then
+                    return
+                end
+                v1689, v1690 = v273(v1687)
+                if not v1689 then
+                    return
+                end
+                v1688 = 1
+            end
+            if 1 == v1688 then
+                v1691 = {
+                    stunRing = v1689,
+                    stunSpinThread = v1690,
+                    _stunTimer = nil,
+                    extraConns = {},
+                }
+                _G.Ox.Stun.Data[v1687] = v1691
+                v1692 = nil
+                v1688 = 2
+            end
+            if v1688 == 3 then
+                table.insert(v1691.extraConns, v1693)
+                table.insert(v1691.extraConns, v1694)
+                break
+            end
+        end
+    end
+    local function v275(v1695)
+        local v1696 = _G.Ox.Stun.Data[v1695]
+        if v1696 then
+            local v2494 = 0 - 0
+            while true do
+                if (1 + 0) == v2494 then
+                    if v1696.stunRing then
+                        v1696.stunRing:Destroy()
+                    end
+                    if v1696.extraConns then
+                        for v3712, v3713 in ipairs(v1696.extraConns) do
+                            pcall(function()
+                                v3713:Disconnect()
+                            end)
+                        end
+                    end
+                    v2494 = 1 + 1
+                end
+                if v2494 == (1 + 1) then
+                    _G.Ox.Stun.Data[v1695] = nil
+                    break
+                end
+                if v2494 == (0 + 0) then
+                    if v1696._stunTimer then
+                        task.cancel(v1696._stunTimer)
+                    end
+                    if v1696.stunSpinThread then
+                        task.cancel(v1696.stunSpinThread)
+                    end
+                    v2494 = 704 - (227 + 476)
+                end
+            end
+        end
+    end
+    local function v276()
+        local v1697 = 0
+        while true do
+            if v1697 == (0 - 0) then
+                if not _G.Ox.Stun.Enabled then
+                    return
+                end
+                for v2992, v2993 in ipairs(Players:GetPlayers()) do
+                    if IsKiller(v2993) and v2993.Character then
+                        v274(v2993.Character)
+                    end
+                end
+                break
+            end
+        end
+    end
+    Players.PlayerAdded:Connect(function(v1698)
+        local v1699 = 0 - 0
+        while true do
+            if v1699 == (1 - 0) then
+                task.wait(0.5 - 0)
+                if _G.Ox.Stun.Enabled and IsKiller(v1698) and v1698.Character then
+                    v274(v1698.Character)
+                end
+                break
+            end
+            if 0 == v1699 then
+                if not _G.Ox.Stun.Enabled then
+                    return
+                end
+                v1698.CharacterAdded:Connect(function(v2994)
+                    task.wait(0.5)
+                    if _G.Ox.Stun.Enabled and IsKiller(v1698) then
+                        v274(v2994)
+                    end
+                end)
+                v1699 = 1 - 0
+            end
+        end
+    end)
+    Players.PlayerAdded:Connect(function(v1700)
+        v1700:GetPropertyChangedSignal("Team"):Connect(function()
+            if not _G.Ox.Stun.Enabled then
+                return
+            end
+            task.wait(954.5 - (166 + 788))
+            if IsKiller(v1700) and v1700.Character then
+                v275(v1700.Character)
+                task.wait(986.1 - (21 + 965))
+                v274(v1700.Character)
+            end
+        end)
+    end)
+    Players.PlayerAdded:Connect(function(v1701)
+        local v1702 = 696 - (127 + 569)
+        while true do
+            if v1702 == (0 + 0) then
+                task.wait(0.5)
+                if _G.Ox.Stun.Enabled then
+                    v276()
+                end
+                break
+            end
+        end
+    end)
+    localPlayer.CharacterAdded:Connect(function()
+        local v1703 = 0 + 0
+        while true do
+            if v1703 == (0 + 0) then
+                task.wait(1.5 - 0)
+                if _G.Ox.Stun.Enabled then
+                    v276()
+                end
+                break
+            end
+        end
+    end)
+    task.spawn(function()
+        local v1704, v1705, v1706, v1707, v1708, v1709, v1710, v1711
+        v1711 = 1
+        while true do
+            if v1711 == (1 + 0) then
+                if _G.Ox.ScriptAlive then
+                    v1711 = 4 - 2
+                else
+                    v1711 = 9
+                end
+            elseif v1711 == (1 + 1) then
+                local v3234 = 0 + 0
+                while true do
+                    if (1292 - (1162 + 130)) == v3234 then
+                        task.wait(10 - 5)
+                        if _G.Ox.ScriptAlive then
+                            v1711 = 3 + 0
+                        else
+                            v1711 = 19 - 10
+                        end
+                        break
+                    end
+                end
+            elseif v1711 == 3 then
+                if _G.Ox.Stun.Enabled then
+                    v1711 = 940 - (889 + 47)
+                else
+                    v1711 = 1 + 0
+                end
+            elseif v1711 == 4 then
+                v1704, v1705, v1706 = ipairs(Players:GetPlayers())
+                v1707 = v1706
+                v1711 = 5
+            elseif v1711 == 5 then
+                local v3988 = 1264 - (1153 + 111)
+                while true do
+                    if v3988 == 0 then
+                        v1708, v1709 = v1704(v1705, v1707)
+                        if v1708 == nil then
+                            v1711 = 1
+                        else
+                            v1711 = 7 - 1
+                        end
+                        break
+                    end
+                end
+            elseif v1711 == 6 then
+                v1707 = v1708
+                if IsKiller(v1709) and v1709.Character then
+                    v1711 = 4 + 3
+                else
+                    v1711 = 3 + 2
+                end
+            elseif v1711 == 7 then
+                local v4196 = 0
+                while true do
+                    if v4196 == (0 + 0) then
+                        v1710 = v1709.Character:FindFirstChild("HumanoidRootPart")
+                        if v1710 and not v1710:FindFirstChild("StunRingUI") then
+                            v1711 = 4 + 4
+                        else
+                            v1711 = 1 + 4
+                        end
+                        break
+                    end
+                end
+            elseif v1711 == 8 then
+                local v4244 = 0 - 0
+                while true do
+                    if v4244 == (0 + 0) then
+                        v274(v1709.Character)
+                        v1711 = 101 - (23 + 73)
+                        break
+                    end
+                end
+            elseif v1711 == 9 then
+                return
+            end
+        end
+    end)
+    function fn22(v1712)
+        local v1713 = 0
+        while true do
+            if v1713 == 0 then
+                _G.Ox.Stun.Enabled = v1712
+                if v1712 then
+                    local v3235 = 285 - (26 + 259)
+                    while true do
+                        if v3235 == (0 + 0) then
+                            for v3820 in pairs(_G.Ox.Stun.Data) do
+                                v275(v3820)
+                            end
+                            _G.Ox.Stun.Data = {}
+                            v3235 = 1 - 0
+                        end
+                        if (3 - 2) == v3235 then
+                            task.wait(1629.5 - (1094 + 535))
+                            v276()
+                            v3235 = 1 + 1
+                        end
+                        if v3235 == (1878 - (1554 + 322)) then
+                            v1:Notify({
+                                Title = "Stun Indicator",
+                                Description = "AKTIF - Menampilkan stun pada killer",
+                                Duration = 3,
+                            })
+                            break
+                        end
+                    end
+                else
+                    local v3236 = 0
+                    while true do
+                        if v3236 == (1425 - (989 + 436)) then
+                            for v3821 in pairs(_G.Ox.Stun.Data) do
+                                v275(v3821)
+                            end
+                            _G.Ox.Stun.Data = {}
+                            v3236 = 1
+                        end
+                        if v3236 == (1179 - (816 + 362)) then
+                            v1:Notify({
+                                Title = "Stun Indicator",
+                                Description = "NONAKTIF",
+                                Duration = 3 - 1,
+                            })
+                            break
+                        end
+                    end
+                end
+                break
+            end
+        end
+    end
+    function AntiHook_GetRemote()
+        if _G.Ox.AntiHook.Remote and _G.Ox.AntiHook.Remote.Parent then
+            return _G.Ox.AntiHook.Remote
+        end
+        local v1714 = ReplicatedStorage:FindFirstChild("Remotes")
+        local v1715 = v1714 and v1714:FindFirstChild("Game")
+        local v1716 = v1715 and v1715:FindFirstChild("UpdateCharacterLook")
+        _G.Ox.AntiHook.Remote = v1716
+        return v1716
+    end
+    function AntiHook_SendRemoteUpdate()
+        if not localPlayer.Character then
+            return
+        end
+        local v1717 = AntiHook_GetRemote()
+        if not v1717 then
+            return
+        end
+        local v1718 = CFrame.new(0, 2 - 1, 0 - 0, 1 - 0, 0, 0 - 0, 0, 1, 0 - 0, 0 + 0, 0, 764 - (86 + 677))
+        local v1719 = CFrame.new(
+            0 + 0,
+            _G.Ox.AntiHook.OffsetY,
+            0 + 0,
+            1027 - (263 + 763),
+            0,
+            0 + 0,
+            0,
+            859 - (649 + 209),
+            0 - 0,
+            731 - (643 + 88),
+            0,
+            1770 - (54 + 1715)
+        )
+        pcall(function()
+            v1717:FireServer(v1718, v1719, v1719, v1719, v1719)
+            local v2231 = _G.Ox.AntiHook
+            v2231.SendCounter = v2231.SendCounter + 1
+        end)
+    end
+    function AntiHook_Update(v1720)
+        if not _G.Ox.AntiHook.Enabled then
+            return
+        end
+        local v1721 = localPlayer.Character
+        if not v1721 then
+            _G.Ox.AntiHook.Accumulator = 0 - 0
+            return
+        end
+        if v1721:GetAttribute("IsCarried") == true then
+            local v2495 = _G.Ox.AntiHook.Accumulator + v1720
+            local v2496 = _G.Ox.AntiHook.Interval
+            if v2496 <= v2495 then
+                local v2995 = v2495 - v2496
+                AntiHook_SendRemoteUpdate()
+                if v2496 <= v2995 then
+                    local v3341 = 0 - 0
+                    local v3342
+                    while true do
+                        if v3341 == 2 then
+                            return
+                        end
+                        if v3341 == (1 - 0) then
+                            if v2496 <= v3342 then
+                                local v3989 = 0 + 0
+                                while true do
+                                    if v3989 == 0 then
+                                        AntiHook_SendRemoteUpdate()
+                                        _G.Ox.AntiHook.Accumulator = v3342 - v2496
+                                        v3989 = 1 + 0
+                                    end
+                                    if v3989 == (3 - 2) then
+                                        return
+                                    end
+                                end
+                            end
+                            _G.Ox.AntiHook.Accumulator = v3342
+                            v3341 = 2
+                        end
+                        if v3341 == (1383 - (132 + 1251)) then
+                            v3342 = v2995 - v2496
+                            AntiHook_SendRemoteUpdate()
+                            v3341 = 1 + 0
+                        end
+                    end
+                end
+                _G.Ox.AntiHook.Accumulator = v2995
+                return
+            end
+            _G.Ox.AntiHook.Accumulator = v2495
+            return
+        end
+        _G.Ox.AntiHook.Accumulator = 0 - 0
+    end
+    function StartAntiHook()
+        local v1722 = 0
+        while true do
+            if (0 + 0) == v1722 then
+                if _G.Ox.AntiHook.Connection then
+                    return
+                end
+                _G.Ox.AntiHook.Accumulator = 0
+                v1722 = 459 - (185 + 273)
+            end
+            if v1722 == (1 + 0) then
+                _G.Ox.AntiHook.Connection = RunService.Heartbeat:Connect(AntiHook_Update)
+                break
+            end
+        end
+    end
+    function StopAntiHook()
+        if _G.Ox.AntiHook.Connection then
+            local v2497 = 0 - 0
+            while true do
+                if v2497 == (0 + 0) then
+                    _G.Ox.AntiHook.Connection:Disconnect()
+                    _G.Ox.AntiHook.Connection = nil
+                    break
+                end
+            end
+        end
+        _G.Ox.AntiHook.Accumulator = 1224 - (361 + 863)
+    end
+    task.spawn(function()
+        while true do
+            task.wait(2 - 1)
+            local v2233 = os.clock()
+            local v2234 = v2233 - _G.Ox.AntiHook.LastCounterTime
+            local v2235 = _G.Ox.AntiHook.SendCounter
+            if _G.Ox.AntiHook.Enabled and (v2234 > 0) and (v2235 > (1327 - (443 + 884))) then
+                print(string.format("[AntiHook] Actual rate: %.2f Hz (%d sends in %.2fs)", v2235 / v2234, v2235, v2234))
+            end
+            _G.Ox.AntiHook.SendCounter = 0
+            _G.Ox.AntiHook.LastCounterTime = v2233
+        end
+    end)
+    function ToggleAntiHook(v1723)
+        _G.Ox.AntiHook.Enabled = v1723
+        if v1723 then
+            local v2498 = 0
+            while true do
+                if v2498 == (0 - 0) then
+                    StartAntiHook()
+                    v1:Notify({
+                        Title = "Anti Hook",
+                        Description = "AKTIF",
+                        Duration = 2,
+                    })
+                    break
+                end
+            end
+        else
+            StopAntiHook()
+            v1:Notify({
+                Title = "Anti Hook",
+                Description = "NONAKTIF",
+                Duration = 1 + 1,
+            })
+        end
+    end
+    local v277 = v:CreateTab("Main", "sword")
+    MainTab = v277
+    local v278 = MainTab:CreatePage("Main")
+    M_Page = v278
+    local v279 = M_Page:CreateSection("Movement", "move")
+    MovementCard = v279
+    local v280 = MovementCard:AddToggle("Auto Vault", false, function(v1724)
+        local v1725 = 0
+        local v1726
+        local v1727
+        local v1728
+        while true do
+            if v1725 == 0 then
+                _G.Ox.autoVaultEnabled = v1724
+                v1726 = v1.Notify
+                v1725 = 1 - 0
+            end
+            if v1725 == 1 then
+                v1727 = {
+                    Title = "Auto Vault",
+                }
+                v1728 = (v1724 and "AKTIF") or "NONAKTIF"
+                v1725 = 2
+            end
+            if v1725 == 2 then
+                v1727.Description = v1728
+                v1727.Duration = 2 + 0
+                v1725 = 3 + 0
+            end
+            if v1725 == (6 - 3) then
+                v1726(v1, v1727)
+                break
+            end
+        end
+    end, {
+        Flag = "AutoVault",
+    })
+    AutoVaultToggle = v280
+    local v281 = MovementCard:AddToggle("Auto Pallet Slide", false, function(v1729)
+        _G.Ox.autoPalletSlideEnabled = v1729
+        local v1730 = v1.Notify
+        local v1731 = {
+            Title = "Auto Pallet Slide",
+        }
+        local v1732 = (v1729 and "AKTIF") or "NONAKTIF"
+        v1731.Description = v1732
+        v1731.Duration = 749 - (16 + 731)
+        v1730(v1, v1731)
+    end, {
+        Flag = "AutoPalletSlide",
+    })
+    AutoSlideToggle = v281
+    local v282 = MovementCard:AddToggle("Auto Run PC", false, function(v1735)
+        _G.Ox.AutoRun.PC = v1735
+        if v1735 then
+            task.spawn(function()
+                while _G.Ox.AutoRun.PC do
+                    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, localPlayer:GetMouse())
+                    task.wait(0.1 + 0)
+                end
+            end)
+        else
+            VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, localPlayer:GetMouse())
+        end
+    end, {
+        Flag = "AutoRunPc",
+    })
+    AutoRunPCToggle = v282
+    local v283 = MovementCard:AddToggle("Auto Run Mobile", false, function(v1736)
+        local v1737 = 0 + 0
+        while true do
+            if 0 == v1737 then
+                _G.Ox.AutoRun.Mobile = v1736
+                if v1736 then
+                    fn5()
+                else
+                    fn6()
+                end
+                break
+            end
+        end
+    end, {
+        Flag = "AutoRunMobile",
+    })
+    AutoRunMobileToggle = v283
+    local v284 = MovementCard:AddToggle("Enable Speed Boost", false, function(v1738)
+        _G.Ox.Speed.Enabled = v1738
+        local v1739 = v1.Notify
+        local v1740 = {
+            Title = "Speed Boost",
+        }
+        local v1741 = (v1738 and "AKTIF") or "NONAKTIF"
+        v1740.Description = v1741
+        v1740.Duration = 2
+        v1739(v1, v1740)
+    end, {
+        Flag = "SpeedBoost",
+    })
+    SpeedToggle = v284
+    MovementCard:AddSlider("SpeedAmount", 0.1 + 0, 763 - (527 + 233), 0.1 + 0, function(v1744)
+        _G.Ox.Speed.Value = v1744
+    end, {
+        Increment = 0.1,
+        Flag = "SpeedAmount",
+    })
+    _G.Ox.SkipEndscreen = false
+    local v285 = M_Page:CreateSection("Server Utility", "server-cog")
+    ServerUtilityCard = v285
+    local v286 = ServerUtilityCard:AddToggle("Skip Endscreen", false, function(v1745)
+        _G.Ox.SkipEndscreen = v1745
+        local v1746 = v1.Notify
+        local v1747 = {
+            Title = "Skip Endscreen",
+        }
+        local v1748 = (v1745 and "AKTIF - Endscreen otomatis dilewati") or "NONAKTIF"
+        v1747.Description = v1748
+        v1747.Duration = 4 - 2
+        v1746(v1, v1747)
+    end, {
+        Flag = "SkipEndscreen",
+    })
+    SkipEndscreenToggle = v286
+    task.spawn(function()
+        while _G.Ox.ScriptAlive do
+            if _G.Ox.SkipEndscreen then
+                pcall(function()
+                    local v2996 = workspace:FindFirstChild("Map")
+                    if v2996 then
+                        local v3343 = 0 + 0
+                        local v3344
+                        while true do
+                            if v3343 == (1785 - (1107 + 678)) then
+                                v3344 = v2996:FindFirstChild("endscreen", true)
+                                if v3344 then
+                                    local v3990 = 0 + 0
+                                    while true do
+                                        if 0 == v3990 then
+                                            for v4197, v4198 in ipairs(v3344:GetDescendants()) do
+                                                if v4198:IsA("LocalScript") then
+                                                    v4198.Disabled = true
+                                                end
+                                            end
+                                            v3344:Destroy()
+                                            break
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                    local v2997 = playerGui:FindFirstChild("Results")
+                    if v2997 then
+                        local v3345 = 0 + 0
+                        local v3346
+                        while true do
+                            if v3345 == 0 then
+                                v3346 = v2997:FindFirstChild("Frame")
+                                if v3346 then
+                                    local v3991 = 50 - (4 + 46)
+                                    local v3992
+                                    while true do
+                                        if v3991 == (0 - 0) then
+                                            v3992 = v3346:FindFirstChild("Close")
+                                            if v3992 and v3346.Visible and v3992.Visible then
+                                                pcall(function()
+                                                    firesignal(v3992.MouseButton1Click)
+                                                end)
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                end)
+            end
+            task.wait(1 - 0)
+        end
+    end)
+    local v287 = M_Page:CreateSection("Fake Perks", "sparkles")
+    FakePerksCard = v287
+    local v288 = FakePerksCard:AddToggle("Quick Recovery", false, function(v1751)
+        ToggleQuickRecovery(v1751)
+    end, {
+        Flag = "FakeQR",
+    })
+    QR_Toggle = v288
+    local v289 = FakePerksCard:AddToggle("Perfect Landing", false, function(v1752)
+        TogglePerfectLanding(v1752)
+    end, {
+        Flag = "FakePL",
+    })
+    PL_Toggle = v289
+    local v290 = FakePerksCard:AddToggle("Flowstate", false, function(v1753)
+        ToggleFlowstate(v1753)
+    end, {
+        Flag = "FakeFS",
+    })
+    FS_Toggle = v290
+    local v291 = FakePerksCard:AddToggle("Adrenaline Rush", false, function(v1754)
+        SetupFakeAdrenalineRush(v1754)
+    end, {
+        Flag = "FakeAR",
+    })
+    AR_Toggle = v291
+    FakePerksCard:AddSlider("Perk Cooldown", 0 + 0, 380 - 200, 16 - 6, function(v1755)
+        _G.Ox.FakePerks.PerkCooldown = v1755
+    end, {
+        Increment = 1,
+        Flag = "FakePerkColdown",
+    })
+    local v292 = M_Page:CreateSection("Camera Settings", "camera")
+    CameraCard = v292
+    local v293 = CameraCard:AddToggle("Enable Stretch Res", false, function(v1756)
+        v227(v1756)
+    end, {
+        Flag = "SretchRes",
+    })
+    StretchToggle = v293
+    CameraCard:AddSlider("Stretch Amount", 1396.4 - (1262 + 134), 2 - 1, 0.67 + 0, function(v1757)
+        _G.Ox.StretchRes.Amount = v1757
+    end, {
+        Increment = 0.01 + 0,
+        Flag = "StretchAmount",
+    })
+    local v294 = CameraCard:AddToggle("Third Person (Killer)", false, function(v1758)
+        v256(v1758)
+    end, {
+        Flag = "ThirdPerson",
+    })
+    ThirdPersonToggle = v294
+    local v295 = CameraCard:AddToggle("Infinity Zoom Out", false, function(v1759)
+        v248(v1759)
+    end, {
+        Flag = "InfinityZoom",
+    })
+    InfinityToggle = v295
+    local v296 = CameraCard:AddToggle("Camera FOV", false, function(v1760)
+        v249(v1760)
+    end, {
+        Flag = "CameraFov",
+    })
+    FOVToggle = v296
+    CameraCard:AddSlider("FOV Value", 855 - (383 + 412), 120, 71 + 19, function(v1761)
+        v250(v1761)
+    end, {
+        Increment = 0 + 0,
+        Flag = "FOVValue",
+    })
+    local v297 = M_Page:CreateSection("Camera DBD", "camera")
+    DbdCard = v297
+    _G.Ox.DBD = {
+        Enabled = false,
+        Distance = 6 + 7,
+        Height = 2.2 + 2,
+        RunSmooth = 0.1 + 0,
+        LookSmooth = 0.28 - 0,
+        Sens = 0.55,
+        PitchMin = -(0.55 + 0),
+        PitchMax = 0.45,
+        FOV = 205 - 135,
+        yaw = 0 - 0,
+        pitch = 0.12,
+        lookInput = nil,
+        lastPos = nil,
+        conn = nil,
+        chg = nil,
+        beg = nil,
+        endc = nil,
+        oldFOV = nil,
+    }
+    function DBD_isLookTouch(v1762)
+        local v1763 = 0
+        local v1764
+        while true do
+            if v1763 == (0 - 0) then
+                v1764 = (currentCamera.ViewportSize.X * 0.22) < v1762.X
+                return v1764
+            end
+        end
+    end
+    function DBD_initYaw()
+        local v1765 = localPlayer.Character
+        local v1766 = v1765 and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if not v1766 then
+            return
+        end
+        local v1767 = v1766.CFrame.LookVector * Vector3.new(1 + 0, 0, 708 - (667 + 40))
+        if v1767.Magnitude > 0.05 then
+            _G.Ox.DBD.yaw = math.atan2(-v1767.X, -v1767.Z)
+        end
+    end
+    function DBD_Stop()
+        local v1768 = _G.Ox.DBD
+        if v1768.conn then
+            v1768.conn:Disconnect()
+            v1768.conn = nil
+        end
+        if v1768.chg then
+            local v2500 = 1310 - (436 + 874)
+            while true do
+                if v2500 == (1606 - (762 + 844)) then
+                    v1768.chg:Disconnect()
+                    v1768.chg = nil
+                    break
+                end
+            end
+        end
+        if v1768.beg then
+            v1768.beg:Disconnect()
+            v1768.beg = nil
+        end
+        if v1768.endc then
+            v1768.endc:Disconnect()
+            v1768.endc = nil
+        end
+        currentCamera.CameraType = Enum.CameraType.Custom
+        if v1768.oldFOV then
+            currentCamera.FieldOfView = v1768.oldFOV
+        end
+        v1768.lookInput = nil
+        v1768.lastPos = nil
+    end
+    function DBD_Start()
+        DBD_Stop()
+        local v1773 = _G.Ox.DBD
+        if not v1773.Enabled then
+            return
+        end
+        DBD_initYaw()
+        v1773.oldFOV = currentCamera.FieldOfView
+        currentCamera.CameraType = Enum.CameraType.Scriptable
+        currentCamera.FieldOfView = v1773.FOV
+        local v1779 = localPlayer.Character
+        local v1780 = v1779 and localPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if v1780 then
+            v1780.AutoRotate = true
+        end
+        v1773.chg = UserInputService.InputChanged:Connect(function(v2236)
+            if v2236.UserInputType ~= Enum.UserInputType.Touch then
+                return
+            end
+            if v2236 ~= v1773.lookInput then
+                return
+            end
+            local v2237 = v2236.Position
+            if v1773.lastPos then
+                v1773.yaw = v1773.yaw - ((v2237.X - v1773.lastPos.X) * (0.011 - 0) * v1773.Sens)
+                v1773.pitch = math.clamp(
+                    v1773.pitch - ((v2237.Y - v1773.lastPos.Y) * (0.011 - 0) * v1773.Sens),
+                    v1773.PitchMin,
+                    v1773.PitchMax
+                )
+            end
+            v1773.lastPos = v2237
+        end)
+        v1773.beg = UserInputService.InputBegan:Connect(function(v2239)
+            if (v2239.UserInputType == Enum.UserInputType.Touch) and DBD_isLookTouch(v2239.Position) then
+                local v2743 = 0 + 0
+                while true do
+                    if v2743 == (0 + 0) then
+                        v1773.lookInput = v2239
+                        v1773.lastPos = v2239.Position
+                        break
+                    end
+                end
+            end
+        end)
+        v1773.endc = UserInputService.InputEnded:Connect(function(v2240)
+            if v2240 == v1773.lookInput then
+                local v2744 = 0
+                while true do
+                    if v2744 == (476 - (209 + 267)) then
+                        v1773.lookInput = nil
+                        v1773.lastPos = nil
+                        break
+                    end
+                end
+            end
+        end)
+        v1773.conn = RunService.RenderStepped:Connect(function(v2241)
+            if not v1773.Enabled then
+                return
+            end
+            local v2242 = localPlayer.Character
+            local v2243 = v2242 and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+            if not v2243 then
+                return
+            end
+            local v2244 = Vector3.new(
+                math.sin(v1773.yaw) * math.cos(v1773.pitch),
+                math.sin(v1773.pitch),
+                math.cos(v1773.yaw) * math.cos(v1773.pitch)
+            )
+            local v2245 = v2243.Position + Vector3.new(0 - 0, 1.6, 0 - 0)
+            local v2246 = (v2245 - (v2244 * v1773.Distance))
+                + Vector3.new(1711 - (1611 + 100), v1773.Height - 1.6, 0 + 0)
+            local v2247 = CFrame.lookAt(v2246, v2245)
+            local v2248 = v1773.lookInput
+            local v2249 = (v2248 and v1773.LookSmooth) or v1773.RunSmooth
+            local v2250 = (785 - (14 + 770)) - math.pow((1785 - (1165 + 619)) - v2249, v2241 * (94 - 34))
+            currentCamera.CFrame = currentCamera.CFrame:Lerp(v2247, v2250)
+        end)
+    end
+    localPlayer.CharacterAdded:Connect(function()
+        local v1785 = 381 - (229 + 152)
+        while true do
+            if (194 - (107 + 87)) == v1785 then
+                task.wait(0.6 - 0)
+                if _G.Ox.DBD.Enabled then
+                    DBD_Start()
+                end
+                break
+            end
+        end
+    end)
+    DbdCard:AddToggle("DBD Camera", false, function(v1786)
+        local v1787 = 0 + 0
+        local v1788
+        local v1789
+        local v1790
+        while true do
+            if v1787 == 2 then
+                v1790 = (v1786 and "AKTIF") or "NONAKTIF"
+                v1789.Description = v1790
+                v1787 = 3 + 0
+            end
+            if 1 == v1787 then
+                v1788 = v1.Notify
+                v1789 = {
+                    Title = "DBD Camera",
+                }
+                v1787 = 9 - 7
+            end
+            if v1787 == 0 then
+                _G.Ox.DBD.Enabled = v1786
+                if v1786 then
+                    if _G.Ox.CameraFOV then
+                        _G.Ox.CameraFOV.Enabled = false
+                    end
+                    DBD_Start()
+                else
+                    DBD_Stop()
+                end
+                v1787 = 1
+            end
+            if v1787 == (11 - 8) then
+                v1789.Duration = 2
+                v1788(v1, v1789)
+                break
+            end
+        end
+    end, {
+        Flag = "DBDCamera",
+    })
+    DbdCard:AddSlider("DBD Distance", 6 + 0, 20, 27 - (13 + 1), function(v1791)
+        _G.Ox.DBD.Distance = v1791
+    end, {
+        Increment = 0.1,
+        Flag = "DBDDistance",
+    })
+    DbdCard:AddSlider("DBD Height", 1 + 0, 6 + 2, 4.2, function(v1792)
+        _G.Ox.DBD.Height = v1792
+    end, {
+        Increment = 1058.1 - (987 + 71),
+        Flag = "DBDHeight",
+    })
+    DbdCard:AddSlider("DBD Run Smooth", 0.03, 0.35 - 0, 0.1 - 0, function(v1793)
+        _G.Ox.DBD.RunSmooth = v1793
+    end, {
+        Increment = 0.01,
+        Flag = "DBDRunSmooth",
+    })
+    DbdCard:AddSlider("DBD Look Smooth", 0.08, 699.6 - (514 + 185), 0.28 + 0, function(v1794)
+        _G.Ox.DBD.LookSmooth = v1794
+    end, {
+        Increment = 0.01 - 0,
+        Flag = "DBDLookSmooth",
+    })
+    DbdCard:AddSlider("DBD Sensitivity", 0.15 - 0, 1505.2 - (771 + 733), 0.55 - 0, function(v1795)
+        _G.Ox.DBD.Sens = v1795
+    end, {
+        Increment = 0.01 - 0,
+        Flag = "DBDSens",
+    })
+    DbdCard:AddSlider("DBD Pitch Min", -1.2, 1167 - (407 + 760), -(0.55 + 0), function(v1796)
+        _G.Ox.DBD.PitchMin = v1796
+    end, {
+        Increment = 0.01 + 0,
+        Flag = "DBDPitchMin",
+    })
+    DbdCard:AddSlider("DBD Pitch Max", 0 + 0, 1.2, 1854.45 - (169 + 1685), function(v1797)
+        _G.Ox.DBD.PitchMax = v1797
+    end, {
+        Increment = 0.01 + 0,
+        Flag = "DBDPitchMax",
+    })
+    DbdCard:AddSlider("DBD FOV", 441 - (41 + 350), 90, 70, function(v1798)
+        local v1799 = 0 - 0
+        while true do
+            if v1799 == (0 - 0) then
+                _G.Ox.DBD.FOV = v1798
+                if _G.Ox.DBD.Enabled then
+                    currentCamera.FieldOfView = v1798
+                end
+                break
+            end
+        end
+    end, {
+        Increment = 4 - 3,
+        Flag = "DBDFOV",
+    })
+    local v298 = M_Page:CreateSection("Streamer Mode", "eye-off")
+    StreamerCard = v298
+    local v299 = StreamerCard:AddToggle("Streamer Mode", false, function(v1800)
+        v226(v1800)
+    end, {
+        Flag = "StreamerMode",
+    })
+    StreamerToggle = v299
+    local v300 = M_Page:CreateSection("Players Utility", "user-cog")
+    UtilityCard = v300
+    local v301 = UtilityCard:AddToggle("Moonwalk GUI", false, function(v1801)
+        if v1801 then
+            local v2506 = 0
+            while true do
+                if v2506 == (0 - 0) then
+                    if not _G.Ox.Moonwalk.Gui then
+                        CreateMoonwalkGUI()
+                    end
+                    _G.Ox.Moonwalk.Gui.Enabled = true
+                    v2506 = 1
+                end
+                if v2506 == (1 + 0) then
+                    _G.Ox.Moonwalk.GuiVisible = true
+                    UpdateMoonwalkGUI(_G.Ox.Moonwalk.Enabled)
+                    v2506 = 889 - (790 + 97)
+                end
+                if v2506 == 2 then
+                    v1:Notify({
+                        Title = "Moonwalk GUI",
+                        Description = "Gui Dimuat",
+                        Duration = 8 - 6,
+                    })
+                    break
+                end
+            end
+        else
+            if _G.Ox.Moonwalk.Enabled then
+                local v2998 = 0
+                while true do
+                    if (0 + 0) == v2998 then
+                        StopMoonwalk()
+                        if MoonwalkPCToggle then
+                            fn(MoonwalkPCToggle, false)
+                        end
+                        break
+                    end
+                end
+            end
+            if _G.Ox.Moonwalk.Gui then
+                local v2999 = 0 + 0
+                while true do
+                    if v2999 == (245 - (235 + 10)) then
+                        _G.Ox.Moonwalk.Gui.Enabled = false
+                        _G.Ox.Moonwalk.GuiVisible = false
+                        break
+                    end
+                end
+            end
+            v1:Notify({
+                Title = "Moonwalk GUI",
+                Description = "Gui Disembunyikan",
+                Duration = 2 + 0,
+            })
+        end
+    end, {
+        Flag = "MoonwalkGui",
+    })
+    MoonwalkGUIToggle = v301
+    local v302 = UtilityCard:AddToggle("Moonwalk PC", false, function(v1802)
+        if v1802 then
+            StartMoonwalk()
+        else
+            StopMoonwalk()
+        end
+        UpdateMoonwalkGUI(_G.Ox.Moonwalk.Enabled)
+        local v1803 = v1.Notify
+        local v1804 = {
+            Title = "Moonwalk PC",
+        }
+        local v1805 = (v1802 and "AKTIF") or "NONAKTIF"
+        v1804.Description = v1805
+        v1804.Duration = 3 - 1
+        v1803(v1, v1804)
+    end, {
+        Flag = "MoonwalkPC",
+    })
+    MoonwalkPCToggle = v302
+    local v303 = M_Page:CreateSection("Crosshair", "crosshair")
+    CrosshairBox = v303
+    local v304 = CrosshairBox:AddToggle("Enable Crosshair", false, function(v1808)
+        local v1809 = 0
+        local v1810
+        local v1811
+        local v1812
+        while true do
+            if v1809 == (1183 - (887 + 296)) then
+                _G.Ox.Crosshair.Enabled = v1808
+                if not v1808 then
+                    ClearCrosshair()
+                end
+                v1809 = 1046 - (512 + 533)
+            end
+            if v1809 == 3 then
+                v1811.Duration = 1426 - (662 + 762)
+                v1810(v1, v1811)
+                break
+            end
+            if v1809 == (679 - (334 + 343)) then
+                v1812 = (v1808 and "AKTIF") or "NONAKTIF"
+                v1811.Description = v1812
+                v1809 = 10 - 7
+            end
+            if 1 == v1809 then
+                v1810 = v1.Notify
+                v1811 = {
+                    Title = "Crosshair",
+                }
+                v1809 = 491 - (198 + 291)
+            end
+        end
+    end, {
+        Flag = "Crosshair",
+    })
+    CrosshairToggle = v304
+    _G.Ox.Crosshair.Enabled = enabled
+    if not enabled then
+        ClearCrosshair()
+    end
+end
+CrosshairToggle:AddColorPicker(_G.Ox.Crosshair.Color, {
+    Flag = "Crosshair_Color",
+    Title = "Crosshair Color",
+    Callback = function(v305)
+        _G.Ox.Crosshair.Color = v305
+    end,
+})
+CrosshairBox:AddDropdown(
+    "Style",
+    {
+        "Plus",
+        "Dot",
+        "Circle",
+    },
+    false,
+    function(v306)
+        _G.Ox.Crosshair.Style = v306
+        ClearCrosshair()
+        _G.Ox.CrosshairCreated = false
+    end,
+    {
+        Flag = "CrosshairStyle",
+    }
+)
+CrosshairBox:AddSlider("Size", 576 - (141 + 433), 140 - 110, 8, function(v307)
+    _G.Ox.Crosshair.Size = v307
+end, {
+    Increment = 1 + 0,
+    Flag = "CrosshairSize",
+})
+CrosshairBox:AddSlider("Thickness", 778 - (227 + 550), 5, 4 - 2, function(v308)
+    _G.Ox.Crosshair.Thickness = v308
+end, {
+    Increment = 2 - 1,
+    Flag = "CrosshairThickness",
+})
+CrosshairBox:AddSlider("Position X", -(203 - (72 + 31)), 448 - (89 + 259), 0, function(v309)
+    _G.Ox.Crosshair.OffsetX = v309
+end, {
+    Increment = 1 + 0,
+    Flag = "CrosshairX",
+})
+CrosshairBox:AddSlider("Position Y", -(88 + 12), 100, 0 + 0, function(v310)
+    _G.Ox.Crosshair.OffsetY = v310
+end, {
+    Increment = 1 - 0,
+    Flag = "CrosshairY",
+})
+local v3 = M_Page:CreateSection("Copy Avatar", "shirt")
+FakeAvatarSection = v3
+Choco_RANDOM_IDS = {
+    978663613,
+    5261701694 - (1333 + 70),
+    1846241771 - (55 + 72),
+    4826530396 - -166925935,
+    424867816 - (1243 + 336),
+    4312176578 - (774 + 555),
+}
+Choco_CURRENT_AVATAR = nil
+Choco_ORIGINAL_ID = localPlayer.UserId
+Choco_FAVORITES = {}
+Choco_Applying = false
+Choco_RespawnConnection = nil
+Choco_SelectedFav = nil
+Choco_FakeThumbUserId = nil
+Choco_ThumbConn = nil
+Choco_ThumbPropConns = {}
+function Choco_ThumbUrl(v311, v312, v313)
+    local v314 = v312 or 150
+    local v315 = v314
+    local v316 = v313 or (72 + 78)
+    local v317 = v316
+    local v318 = string.format
+    local v319 = tonumber(v311)
+    local v320 = v319 or 0
+    return v318("rbxthumb://type=AvatarHeadShot&id=%d&w=%d&h=%d", v320, v315, v317)
+end
+function Choco_ExtractThumbUserId(v321)
+    if (type(v321) == "string") and (v321 ~= "") then
+        return tonumber(v321:match("rbxthumb://[^%s]*id=(%d+)"))
+    end
+    return nil
+end
+function Choco_IsAvatarThumb(v322)
+    if type(v322) ~= "string" then
+        return false
+    end
+    local v323 = v322:find("rbxthumb://", 1, true) ~= nil
+    if v323 then
+        local v2252 = 799 - (150 + 649)
+        local v2253
+        while true do
+            if v2252 == 0 then
+                v2253 = v322:find("AvatarHeadShot", 1 + 0, true)
+                v323 = v2253 or v322:find("AvatarBust", 1, true) or v322:find("type=Avatar", 1 - 0, true)
+                break
+            end
+        end
+    end
+    return v323
+end
+function Choco_IsOurCurrentThumb(v324)
+    local v325 = 0
+    local v326
+    local v327
+    while true do
+        if v325 == 0 then
+            if not v324:IsA("ImageLabel") and not v324:IsA("ImageButton") then
+                return false
+            end
+            if v324:GetAttribute("ChocoFakeThumb") == true then
+                return true
+            end
+            v325 = 1 - 0
+        end
+        if (1986 - (1122 + 862)) == v325 then
+            v327 = v326 == Choco_ORIGINAL_ID
+            return v327
+        end
+        if v325 == (1 - 0) then
+            v326 = Choco_ExtractThumbUserId(v324.Image)
+            if not v326 or not Choco_IsAvatarThumb(v324.Image) then
+                return false
+            end
+            v325 = 1 + 1
+        end
+    end
+end
+function Choco_ForceSetThumb(v328, v329)
+    if not v328 or not v329 then
+        return
+    end
+    if not v328:IsA("ImageLabel") and not v328:IsA("ImageButton") then
+        return
+    end
+    if not Choco_IsOurCurrentThumb(v328) then
+        return
+    end
+    if not v328:GetAttribute("ChocoOrigThumb") then
+        v328:SetAttribute("ChocoOrigThumb", v328.Image)
+    end
+    local v330, v331 = tostring(v328.Image):match("w=(%d+).*h=(%d+)")
+    local v332 = Choco_ThumbUrl
+    local v333 = tonumber(v330)
+    local v334 = v333 or (285 - 135)
+    local v335 = tonumber(v331)
+    local v336 = v335 or 150
+    local v337 = v332(v329, v334, v336)
+    v328:SetAttribute("ChocoFakeThumb", true)
+    v328:SetAttribute("ChocoFakeThumbId", tonumber(v329))
+    if v328.Image ~= v337 then
+        v328.Image = v337
+    end
+    if Choco_ThumbPropConns[v328] then
+        return
+    end
+    Choco_ThumbPropConns[v328] = v328:GetPropertyChangedSignal("Image"):Connect(function()
+        if Choco_FakeThumbUserId and v328.Parent then
+            local v2507 = Choco_ExtractThumbUserId(v328.Image)
+            if v2507 and (v2507 ~= Choco_ORIGINAL_ID) and (v2507 ~= Choco_FakeThumbUserId) then
+                local v3000 = 0 + 0
+                while true do
+                    if v3000 == 2 then
+                        return
+                    end
+                    if v3000 == (1 + 0) then
+                        v328:SetAttribute("ChocoOrigThumb", nil)
+                        if Choco_ThumbPropConns[v328] then
+                            local v3822 = 0
+                            while true do
+                                if (743 - (549 + 194)) == v3822 then
+                                    Choco_ThumbPropConns[v328]:Disconnect()
+                                    Choco_ThumbPropConns[v328] = nil
+                                    break
+                                end
+                            end
+                        end
+                        v3000 = 2 + 0
+                    end
+                    if (0 - 0) == v3000 then
+                        v328:SetAttribute("ChocoFakeThumb", nil)
+                        v328:SetAttribute("ChocoFakeThumbId", nil)
+                        v3000 = 1 + 0
+                    end
+                end
+            end
+            local v2508, v2509 = tostring(v328.Image):match("w=(%d+).*h=(%d+)")
+            local v2510 = Choco_ThumbUrl
+            local v2511 = Choco_FakeThumbUserId
+            local v2512 = tonumber(v2508)
+            local v2513 = v2512 or (234 - 84)
+            local v2514 = tonumber(v2509)
+            local v2515 = v2514 or (128 + 22)
+            local v2516 = v2510(v2511, v2513, v2515)
+            if v328.Image ~= v2516 then
+                v328.Image = v2516
+            end
+            return
+        end
+        if Choco_ThumbPropConns[v328] then
+            Choco_ThumbPropConns[v328]:Disconnect()
+            Choco_ThumbPropConns[v328] = nil
+        end
+    end)
+end
+function Choco_RestoreThumb(v339)
+    local v340 = 0 - 0
+    local v341
+    local v342
+    while true do
+        if v340 == (1703 - (453 + 1250)) then
+            if not v339 then
+                return
+            end
+            if not v339:IsA("ImageLabel") and not v339:IsA("ImageButton") then
+                return
+            end
+            v340 = 2 - 1
+        end
+        if v340 == 2 then
+            v342 = ((type(v341) == "string") and (v341 ~= "") and v341) or Choco_ThumbUrl(Choco_ORIGINAL_ID)
+            v339.Image = v342
+            v340 = 3 + 0
+        end
+        if v340 == (578 - (203 + 372)) then
+            v339:SetAttribute("ChocoFakeThumb", nil)
+            v339:SetAttribute("ChocoFakeThumbId", nil)
+            v340 = 1 + 3
+        end
+        if v340 == (2 - 1) then
+            if v339:GetAttribute("ChocoFakeThumb") ~= true then
+                return
+            end
+            v341 = v339:GetAttribute("ChocoOrigThumb")
+            v340 = 1384 - (978 + 404)
+        end
+        if v340 == (12 - 8) then
+            v339:SetAttribute("ChocoOrigThumb", nil)
+            if Choco_ThumbPropConns[v339] then
+                Choco_ThumbPropConns[v339]:Disconnect()
+                Choco_ThumbPropConns[v339] = nil
+            end
+            break
+        end
+    end
+end
+function Choco_SweepSetThumb(v343)
+    local v344 = 0 + 0
+    local v345
+    local v346
+    local v347
+    local v348
+    local v349
+    local v350
+    local v351
+    while true do
+        if v344 == (319 - (56 + 262)) then
+            v349 = v348
+            v350 = v346
+            v344 = 1 + 1
+        end
+        if v344 == 0 then
+            v345 = {
+                CoreGui,
+                localPlayer:FindFirstChild("PlayerGui"),
+            }
+            v346, v347, v348 = ipairs(v345)
+            v344 = 1 + 0
+        end
+        if v344 == 2 then
+            v351 = v347
+            while true do
+                local v2751, v2752 = v350(v351, v349)
+                if v2751 == nil then
+                    break
+                end
+                v349 = v2751
+                if v2752 then
+                    for v3352, v3353 in ipairs(v2752:GetDescendants()) do
+                        if Choco_IsOurCurrentThumb(v3353) then
+                            pcall(Choco_ForceSetThumb, v3353, v343)
+                        end
+                    end
+                    v349 = v2751
+                end
+            end
+            break
+        end
+    end
+end
+function Choco_SweepRestoreThumb()
+    local v352 = {
+        CoreGui,
+        localPlayer:FindFirstChild("PlayerGui"),
+    }
+    local v353, v354, v355 = ipairs(v352)
+    local v356 = v355
+    local v357 = v353
+    local v358 = v354
+    while true do
+        local v1813, v1814 = v357(v358, v356)
+        if v1813 == nil then
+            break
+        end
+        v356 = v1813
+        if v1814 then
+            local v2519 = 0 + 0
+            while true do
+                if v2519 == (0 + 0) then
+                    for v3354, v3355 in ipairs(v1814:GetDescendants()) do
+                        pcall(Choco_RestoreThumb, v3355)
+                    end
+                    v356 = v1813
+                    break
+                end
+            end
+        end
+    end
+end
+function Choco_SetFakeDisplayPicture(v359)
+    local v360 = tonumber(v359)
+    if not v360 then
+        return
+    end
+    Choco_FakeThumbUserId = v360
+    Choco_SweepSetThumb(v360)
+    task.delay(0.4, function()
+        if Choco_FakeThumbUserId == v360 then
+            Choco_SweepSetThumb(v360)
+        end
+    end)
+    task.delay(1.2, function()
+        if Choco_FakeThumbUserId == v360 then
+            Choco_SweepSetThumb(v360)
+        end
+    end)
+    if Choco_ThumbConn then
+        Choco_ThumbConn:Disconnect()
+        Choco_ThumbConn = nil
+    end
+    local v361 = CoreGui.DescendantAdded:Connect(function(v1815)
+        if not Choco_FakeThumbUserId then
+            return
+        end
+        task.defer(function()
+            if Choco_IsOurCurrentThumb(v1815) then
+                pcall(Choco_ForceSetThumb, v1815, Choco_FakeThumbUserId)
+            end
+        end)
+    end)
+    Choco_ThumbConn = v361
+end
+function Choco_ClearFakeDisplayPicture()
+    Choco_SweepRestoreThumb()
+    task.delay(0.3 - 0, Choco_SweepRestoreThumb)
+    Choco_FakeThumbUserId = nil
+    if Choco_ThumbConn then
+        local v2255 = 0
+        while true do
+            if 0 == v2255 then
+                Choco_ThumbConn:Disconnect()
+                Choco_ThumbConn = nil
+                break
+            end
+        end
+    end
+    for v1816, v1817 in pairs(Choco_ThumbPropConns) do
+        local v1818 = 0
+        while true do
+            if v1818 == (1922 - (1042 + 880)) then
+                pcall(function()
+                    v1817:Disconnect()
+                end)
+                Choco_ThumbPropConns[v1816] = nil
+                break
+            end
+        end
+    end
+end
+Choco_FakeDisplayName = nil
+Choco_OriginalDisplayName = localPlayer.DisplayName
+Choco_NameCharConn = nil
+function Choco_SetCharacterDisplayName(v362)
+    local v363 = localPlayer.Character
+    local v364 = v363 and v363:FindFirstChildOfClass("Humanoid")
+    if v364 and v362 then
+        v364.DisplayName = v362
+    end
+end
+function Choco_LooksLikeOurName(v365)
+    if (type(v365) ~= "string") or (v365 == "") then
+        return false
+    end
+    local v366 = (v365 == localPlayer.Name) or (v365 == localPlayer.DisplayName) or (v365 == Choco_OriginalDisplayName)
+    return v366
+end
+function Choco_ApplyNameToLabel(v367, v368)
+    if not v367 or not v368 then
+        return
+    end
+    if not v367:IsA("TextLabel") and not v367:IsA("TextButton") then
+        return
+    end
+    if (v367:GetAttribute("ChocoFakeName") == true) or Choco_LooksLikeOurName(v367.Text) then
+        local v2257 = 0 + 0
+        while true do
+            if 1 == v2257 then
+                v367.Text = v368
+                break
+            end
+            if v2257 == 0 then
+                if not v367:GetAttribute("ChocoOrigName") then
+                    v367:SetAttribute("ChocoOrigName", v367.Text)
+                end
+                v367:SetAttribute("ChocoFakeName", true)
+                v2257 = 1003 - (16 + 986)
+            end
+        end
+    end
+end
+function Choco_RestoreNameLabel(v369)
+    local v370 = 1218 - (700 + 518)
+    local v371
+    while true do
+        if 1 == v370 then
+            if v369:GetAttribute("ChocoFakeName") ~= true then
+                return
+            end
+            v371 = v369:GetAttribute("ChocoOrigName")
+            v370 = 2
+        end
+        if v370 == (9 - 6) then
+            v369:SetAttribute("ChocoOrigName", nil)
+            break
+        end
+        if v370 == (0 - 0) then
+            if not v369 then
+                return
+            end
+            if not v369:IsA("TextLabel") and not v369:IsA("TextButton") then
+                return
+            end
+            v370 = 1
+        end
+        if (1513 - (617 + 894)) == v370 then
+            if (type(v371) == "string") and (v371 ~= "") then
+                v369.Text = v371
+            else
+                v369.Text = Choco_OriginalDisplayName
+            end
+            v369:SetAttribute("ChocoFakeName", nil)
+            v370 = 5 - 2
+        end
+    end
+end
+function Choco_SweepNames(v372)
+    if not v372 then
+        return
+    end
+    local v373 = {
+        CoreGui,
+        localPlayer:FindFirstChild("PlayerGui"),
+    }
+    local v374, v375, v376 = ipairs(v373)
+    local v377 = v376
+    local v378 = v374
+    local v379 = v375
+    while true do
+        local v1819, v1820 = v378(v379, v377)
+        if v1819 == nil then
+            break
+        end
+        v377 = v1819
+        if v1820 then
+            for v2754, v2755 in ipairs(v1820:GetDescendants()) do
+                pcall(Choco_ApplyNameToLabel, v2755, v372)
+            end
+            v377 = v1819
+        end
+    end
+end
+function Choco_SweepRestoreNames()
+    local v380 = {
+        CoreGui,
+        localPlayer:FindFirstChild("PlayerGui"),
+    }
+    local v381, v382, v383 = ipairs(v380)
+    local v384 = v383
+    local v385 = v381
+    local v386 = v382
+    while true do
+        local v1821, v1822 = v385(v386, v384)
+        if v1821 == nil then
+            break
+        end
+        v384 = v1821
+        if v1822 then
+            local v2520 = 1521 - (199 + 1322)
+            while true do
+                if v2520 == 0 then
+                    for v3356, v3357 in ipairs(v1822:GetDescendants()) do
+                        pcall(Choco_RestoreNameLabel, v3357)
+                    end
+                    v384 = v1821
+                    break
+                end
+            end
+        end
+    end
+end
+function Choco_SetFakeDisplayName(v387)
+    local v388 = 0
+    local v389
+    while true do
+        if v388 == (5 - 2) then
+            if Choco_NameCharConn then
+                Choco_NameCharConn:Disconnect()
+                Choco_NameCharConn = nil
+            end
+            v389 = localPlayer.CharacterAdded:Connect(function(v2756)
+                task.wait(0.5 + 0)
+                if Choco_FakeDisplayName then
+                    local v3239 = v2756:WaitForChild("Humanoid", 5)
+                    if v3239 then
+                        v3239.DisplayName = Choco_FakeDisplayName
+                    end
+                end
+            end)
+            v388 = 1664 - (1291 + 369)
+        end
+        if v388 == (1 + 3) then
+            Choco_NameCharConn = v389
+            break
+        end
+        if v388 == (1 + 0) then
+            Choco_SetCharacterDisplayName(v387)
+            Choco_SweepNames(v387)
+            v388 = 2
+        end
+        if v388 == (0 + 0) then
+            if not v387 or (v387 == "") then
+                return
+            end
+            Choco_FakeDisplayName = v387
+            v388 = 1
+        end
+        if v388 == 2 then
+            task.delay(0.3, function()
+                if Choco_FakeDisplayName == v387 then
+                    local v3240 = 0 + 0
+                    while true do
+                        if v3240 == (685 - (561 + 124)) then
+                            Choco_SetCharacterDisplayName(v387)
+                            Choco_SweepNames(v387)
+                            break
+                        end
+                    end
+                end
+            end)
+            task.delay(1 + 0, function()
+                if Choco_FakeDisplayName == v387 then
+                    local v3241 = 853 - (25 + 828)
+                    while true do
+                        if v3241 == (0 - 0) then
+                            Choco_SetCharacterDisplayName(v387)
+                            Choco_SweepNames(v387)
+                            break
+                        end
+                    end
+                end
+            end)
+            v388 = 4 - 1
+        end
+    end
+end
+function Choco_ClearFakeDisplayName()
+    local v390 = 590 - (99 + 491)
+    while true do
+        if (49 - (18 + 30)) == v390 then
+            Choco_SweepRestoreNames()
+            task.delay(0.3 - 0, Choco_SweepRestoreNames)
+            v390 = 2
+        end
+        if (3 - 1) == v390 then
+            if Choco_NameCharConn then
+                local v3006 = 0
+                while true do
+                    if v3006 == (0 - 0) then
+                        Choco_NameCharConn:Disconnect()
+                        Choco_NameCharConn = nil
+                        break
+                    end
+                end
+            end
+            break
+        end
+        if 0 == v390 then
+            Choco_FakeDisplayName = nil
+            Choco_SetCharacterDisplayName(Choco_OriginalDisplayName)
+            v390 = 1 + 0
+        end
+    end
+end
+function Choco_LoadAssetKeKarakter(v391, v392, v393)
+    local v394 = 0 - 0
+    local v395
+    local v396
+    local v397
+    local v398
+    local v399
+    local v400
+    while true do
+        if v394 == (733 - (501 + 231)) then
+            v398 = nil
+            v399 = nil
+            v400 = {}
+            v394 = 2 + 0
+        end
+        if v394 == 2 then
+            (function()
+                local v2757 = 1698 - (470 + 1228)
+                local v2758
+                while true do
+                    if v2757 == (0 + 0) then
+                        v2758 = nil
+                        function v2758(v3607)
+                            for v3714, v3715 in pairs(v3607:GetChildren()) do
+                                if v3715:IsA("CharacterMesh") then
+                                    table.insert(v395, v3715)
+                                elseif v3715:IsA("BodyColors") then
+                                    v396 = v3715
+                                elseif v3715:IsA("Shirt") then
+                                    v397 = v3715
+                                elseif v3715:IsA("Pants") then
+                                    v398 = v3715
+                                elseif v3715:IsA("ShirtGraphic") then
+                                    v399 = v3715
+                                elseif v3715:IsA("Accessory") then
+                                    table.insert(v400, v3715)
+                                elseif v3715:IsA("SpecialMesh") then
+                                    table.insert(v395, v3715)
+                                elseif v3715:IsA("Decal") and (v3715.Name == "face") then
+                                    table.insert(v395, v3715)
+                                elseif v3715:IsA("Folder") or v3715:IsA("Model") then
+                                    v2758(v3715)
+                                end
+                            end
+                        end
+                        v2757 = 1 + 0
+                    end
+                    if v2757 == (687 - (537 + 149)) then
+                        v2758(v391)
+                        break
+                    end
+                end
+            end)()
+            if v396 then
+                local v3007 = v392:FindFirstChildOfClass("BodyColors")
+                local v3008 = v3007 or v392:FindFirstChild("Body Colors")
+                if v3008 then
+                    v3008:Destroy()
+                end
+                v396:Clone().Parent = v392
+            end
+            if v397 then
+                local v3010 = v392:FindFirstChildOfClass("Shirt")
+                if v3010 then
+                    v3010:Destroy()
+                end
+                v397:Clone().Parent = v392
+            end
+            v394 = 3 - 0
+        end
+        if v394 == (2 + 1) then
+            if v398 then
+                local v3012 = v392:FindFirstChildOfClass("Pants")
+                if v3012 then
+                    v3012:Destroy()
+                end
+                v398:Clone().Parent = v392
+            end
+            if v399 then
+                local v3014 = 0
+                local v3015
+                while true do
+                    if v3014 == 0 then
+                        v3015 = v392:FindFirstChildOfClass("ShirtGraphic")
+                        if v3015 then
+                            v3015:Destroy()
+                        end
+                        v3014 = 1 - 0
+                    end
+                    if v3014 == (3 - 2) then
+                        v399:Clone().Parent = v392
+                        break
+                    end
+                end
+            end
+            for v2759, v2760 in pairs(v395) do
+                if v2760:IsA("CharacterMesh") then
+                    pcall(function()
+                        v2760:Clone().Parent = v392
+                    end)
+                end
+            end
+            v394 = 11 - 7
+        end
+        if v394 == 4 then
+            if v393 then
+                for v3242, v3243 in pairs(v395) do
+                    if v3243:IsA("SpecialMesh") then
+                        pcall(function()
+                            local v3716 = 0 + 0
+                            local v3717
+                            while true do
+                                if v3716 == (1 + 0) then
+                                    v3243:Clone().Parent = v393
+                                    break
+                                end
+                                if (0 + 0) == v3716 then
+                                    v3717 = v393:FindFirstChildOfClass("SpecialMesh")
+                                    if v3717 then
+                                        v3717:Destroy()
+                                    end
+                                    v3716 = 1
+                                end
+                            end
+                        end)
+                    elseif v3243:IsA("Decal") and (v3243.Name == "face") then
+                        pcall(function()
+                            local v3938 = 0 + 0
+                            local v3939
+                            while true do
+                                if 1 == v3938 then
+                                    v3243:Clone().Parent = v393
+                                    break
+                                end
+                                if v3938 == (0 + 0) then
+                                    v3939 = v393:FindFirstChild("face")
+                                    if v3939 then
+                                        v3939:Destroy()
+                                    end
+                                    v3938 = 1 + 0
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+            if #v400 > (0 + 0) then
+                task.spawn(function()
+                    for v3359, v3360 in pairs(v400) do
+                        pcall(function()
+                            local v3609 = v3360:Clone()
+                            local v3610 = v3609:FindFirstChild("Handle")
+                            if v3610 then
+                                v3610.CanCollide = false
+                                v3610.Massless = true
+                                local v3825 = v3610:FindFirstChildOfClass("Attachment")
+                                if v3825 then
+                                    local v3994 = 0
+                                    local v3995
+                                    while true do
+                                        if (0 - 0) == v3994 then
+                                            v3995 = v392:FindFirstChild(v3825.Name, true)
+                                            if v3995 and v3995.Parent then
+                                                local v4212 = Instance.new("Weld")
+                                                v4212.Part0 = v3610
+                                                v4212.Part1 = v3995.Parent
+                                                v4212.C0 = v3825.CFrame
+                                                v4212.C1 = v3995.CFrame
+                                                v4212.Parent = v3610
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                                v3609.Parent = v392
+                            else
+                                v3609.Parent = v392
+                            end
+                        end)
+                    end
+                end)
+            end
+            break
+        end
+        if v394 == 0 then
+            v395 = {}
+            v396 = nil
+            v397 = nil
+            v394 = 1 + 0
+        end
+    end
+end
+function Choco_ApplyFakeAvaAppearance(v401)
+    local v402 = localPlayer.Character
+    if not v402 or not v401 then
+        return false
+    end
+    local v403 = v402:FindFirstChildOfClass("Humanoid")
+    if not v403 then
+        return false
+    end
+    local v404, v405 = pcall(function()
+        return Players:GetCharacterAppearanceAsync(v401)
+    end)
+    if v404 and v405 then
+        local v2258 = 579 - (134 + 445)
+        local v2259
+        local v2260
+        local v2261
+        local v2262
+        while true do
+            if v2258 == (1 - 0) then
+                v2261, v2262 = pcall(function()
+                    return Players:GetCharacterAppearanceInfoAsync(v401)
+                end)
+                if v2261 and v2262 then
+                    v2260 = v2262
+                end
+                if v2260 and v2260.scales then
+                    for v3611, v3612 in pairs(v2260.scales) do
+                        local v3613 = v403:FindFirstChild(v3611)
+                        local v3614 = v3613
+                        if not v3613 then
+                            local v3828 = Instance.new("NumberValue")
+                            v3614 = v3828
+                            v3828.Name = v3611
+                            v3828.Parent = v403
+                        end
+                        v3614.Value = v3612
+                    end
+                end
+                task.wait(0.2)
+                v2258 = 2 + 0
+            end
+            if v2258 == (0 + 0) then
+                for v3244, v3245 in pairs(v402:GetChildren()) do
+                    if
+                        v3245:IsA("Accessory")
+                        or v3245:IsA("Shirt")
+                        or v3245:IsA("Pants")
+                        or v3245:IsA("ShirtGraphic")
+                        or v3245:IsA("BodyColors")
+                        or v3245:IsA("CharacterMesh")
+                        or (v3245.Name == "Body Colors")
+                    then
+                        v3245:Destroy()
+                    end
+                end
+                v2259 = v402:FindFirstChild("Head")
+                if v2259 then
+                    local v3361 = 0
+                    local v3362
+                    local v3363
+                    while true do
+                        if v3361 == (3 - 2) then
+                            v3363 = v2259:FindFirstChild("face")
+                            if v3363 then
+                                v3363:Destroy()
+                            end
+                            break
+                        end
+                        if v3361 == (260 - (36 + 224)) then
+                            v3362 = v2259:FindFirstChildOfClass("SpecialMesh")
+                            if v3362 then
+                                v3362:Destroy()
+                            end
+                            v3361 = 1861 - (1033 + 827)
+                        end
+                    end
+                end
+                v2260 = nil
+                v2258 = 1847 - (1002 + 844)
+            end
+            if v2258 == 2 then
+                Choco_LoadAssetKeKarakter(v405, v402, v2259)
+                if v2260 and v2260.assets and v2259 then
+                    task.spawn(function()
+                        for v3718, v3719 in pairs(v2260.assets) do
+                            if v3719.assetType and (v3719.assetType.name == "Face") then
+                                local v3940 = v2259:FindFirstChild("face")
+                                if v3940 then
+                                    v3940:Destroy()
+                                end
+                                pcall(function()
+                                    local v3996 = 1350 - (1126 + 224)
+                                    local v3997
+                                    while true do
+                                        if v3996 == 2 then
+                                            v3997.Parent = v2259
+                                            break
+                                        end
+                                        if v3996 == (0 + 0) then
+                                            v3997 = Instance.new("Decal")
+                                            v3997.Name = "face"
+                                            v3996 = 1
+                                        end
+                                        if (1 + 0) == v3996 then
+                                            v3997.Texture = "rbxassetid://" .. v3719.id
+                                            v3997.Face = Enum.NormalId.Front
+                                            v3996 = 6 - 4
+                                        end
+                                    end
+                                end)
+                                break
+                            end
+                        end
+                    end)
+                end
+                pcall(function()
+                    v405:Destroy()
+                end)
+                return true
+            end
+        end
+    end
+    v1:Notify({
+        Title = "Error",
+        Description = "Gagal load appearance",
+        Duration = 67 - (48 + 16),
+    })
+    return false
+end
+function Choco_ResolveUser(v406)
+    local v407 = tostring(v406):gsub("%s+", ""):gsub("^@", "")
+    local v408 = tonumber(v407)
+    if v408 then
+        local v2263 = 0 + 0
+        local v2264
+        local v2265
+        while true do
+            if v2263 == 0 then
+                v2264, v2265 = pcall(function()
+                    return Players:GetNameFromUserIdAsync(v408)
+                end)
+                if v2264 and v2265 then
+                    return v408, v2265
+                end
+                break
+            end
+        end
+    else
+        local v2266 = 0 - 0
+        local v2267
+        local v2268
+        while true do
+            if v2266 == (0 - 0) then
+                v2267, v2268 = pcall(function()
+                    return Players:GetUserIdFromNameAsync(v407)
+                end)
+                if v2267 and v2268 then
+                    local v3364, v3365 = pcall(function()
+                        return Players:GetNameFromUserIdAsync(v2268)
+                    end)
+                    if v3364 and v3365 then
+                        return v2268, v3365
+                    end
+                end
+                break
+            end
+        end
+    end
+    return nil, nil
+end
+function Choco_ApplyAvatar(v409)
+    if Choco_Applying then
+        return
+    end
+    Choco_Applying = true
+    task.spawn(function()
+        local v1823, v1824 = Choco_ResolveUser(v409)
+        if not v1823 then
+            local v2521 = 0 + 0
+            while true do
+                if v2521 == (1089 - (910 + 179)) then
+                    v1:Notify({
+                        Title = "Error",
+                        Description = "User tidak ditemukan",
+                        Duration = 5 - 2,
+                    })
+                    Choco_Applying = false
+                    v2521 = 1 - 0
+                end
+                if v2521 == (1380 - (933 + 446)) then
+                    return
+                end
+            end
+        end
+        Choco_CURRENT_AVATAR = {
+            id = v1823,
+            name = v1824,
+        }
+        if Choco_RespawnConnection then
+            local v2522 = 0 + 0
+            while true do
+                if v2522 == (1524 - (248 + 1276)) then
+                    Choco_RespawnConnection:Disconnect()
+                    Choco_RespawnConnection = nil
+                    break
+                end
+            end
+        end
+        local v1825 = false
+        if localPlayer.Character then
+            v1825 = Choco_ApplyFakeAvaAppearance(v1823)
+        end
+        Choco_SetFakeDisplayPicture(v1823)
+        Choco_SetFakeDisplayName(v1824)
+        local v1826 = localPlayer.CharacterAdded:Connect(function()
+            task.wait(1 + 0)
+            if Choco_CURRENT_AVATAR then
+                local v2761 = 0 + 0
+                while true do
+                    if 1 == v2761 then
+                        Choco_SetFakeDisplayName(Choco_CURRENT_AVATAR.name)
+                        break
+                    end
+                    if v2761 == (0 - 0) then
+                        Choco_ApplyFakeAvaAppearance(Choco_CURRENT_AVATAR.id)
+                        Choco_SetFakeDisplayPicture(Choco_CURRENT_AVATAR.id)
+                        v2761 = 3 - 2
+                    end
+                end
+            end
+        end)
+        Choco_RespawnConnection = v1826
+        local v1827 = v1.Notify
+        local v1828 = {
+            Title = "Copy Avatar",
+        }
+        local v1829 = (v1825 and ("Berhasil copy " .. v1824)) or ("Gagal apply " .. v1824)
+        v1828.Description = v1829
+        v1828.Duration = 1548 - (151 + 1394)
+        v1827(v1, v1828)
+        Choco_Applying = false
+    end)
+end
+function Choco_LoadFavorites()
+    local v410 = 944 - (929 + 15)
+    while true do
+        if v410 == (1996 - (1173 + 823)) then
+            Choco_FAVORITES = {}
+            pcall(function()
+                local v2762 = 0 - 0
+                while true do
+                    if v2762 == (1776 - (482 + 1294)) then
+                        if not isfolder("ChocoCopyAvatar") then
+                            makefolder("ChocoCopyAvatar")
+                        end
+                        if isfile("ChocoCopyAvatar/favorites.json") then
+                            local v3720 = 0 - 0
+                            local v3721
+                            while true do
+                                if v3720 == (0 + 0) then
+                                    v3721 = HttpService:JSONDecode(readfile("ChocoCopyAvatar/favorites.json"))
+                                    Choco_FAVORITES = v3721
+                                    break
+                                end
+                            end
+                        end
+                        break
+                    end
+                end
+            end)
+            break
+        end
+    end
+end
+function Choco_SaveFavorites()
+    pcall(function()
+        local v1832 = 0
+        while true do
+            if v1832 == 0 then
+                if not isfolder("ChocoCopyAvatar") then
+                    makefolder("ChocoCopyAvatar")
+                end
+                writefile("ChocoCopyAvatar/favorites.json", HttpService:JSONEncode(Choco_FAVORITES))
+                break
+            end
+        end
+    end)
+end
+Choco_LoadFavorites()
+function Choco_ResetAvatar()
+    local v411 = 1306 - (1125 + 181)
+    while true do
+        if v411 == 2 then
+            task.spawn(function()
+                local v2763 = 0 - 0
+                local v2764
+                local v2765
+                local v2766
+                local v2767
+                while true do
+                    if v2763 == 3 then
+                        v2765(v1, v2766)
+                        break
+                    end
+                    if v2763 == (1 + 0) then
+                        v2766 = {
+                            Title = "Reset Avatar",
+                        }
+                        v2767 = (v2764 and "Avatar direset") or "Gagal reset"
+                        v2763 = 2 - 0
+                    end
+                    if v2763 == 0 then
+                        v2764 = Choco_ApplyFakeAvaAppearance(Choco_ORIGINAL_ID)
+                        v2765 = v1.Notify
+                        v2763 = 1190 - (626 + 563)
+                    end
+                    if v2763 == (1252 - (153 + 1097)) then
+                        v2766.Description = v2767
+                        v2766.Duration = 3
+                        v2763 = 3
+                    end
+                end
+            end)
+            break
+        end
+        if v411 == (0 - 0) then
+            Choco_CURRENT_AVATAR = nil
+            if Choco_RespawnConnection then
+                local v3016 = 0 + 0
+                while true do
+                    if v3016 == (0 - 0) then
+                        Choco_RespawnConnection:Disconnect()
+                        Choco_RespawnConnection = nil
+                        break
+                    end
+                end
+            end
+            v411 = 1
+        end
+        if v411 == 1 then
+            Choco_ClearFakeDisplayPicture()
+            Choco_ClearFakeDisplayName()
+            v411 = 2 + 0
+        end
+    end
+end
+Choco_AvatarList = {
+    "Self Avatar",
+    "Random 1",
+    "Random 2",
+    "Random 3",
+    "Random 4",
+    "Random 5",
+    "Random 6",
+    "Random 7",
+    "WoozyNate",
+    "Nicholas",
+    "yvlyf",
+    "traevp",
+    "J0LLY",
+    "LucashDev",
+    "CEOofIsaac",
+    "Stealthy",
+    "Wildes",
+    "Talon",
+    "Relukt",
+    "Sammy",
+    "Diesel",
+    "S4ans03",
+    "Aura",
+    "iJava",
+    "White Guy",
+    "Purple King",
+    "Mpruyyy",
+}
+Choco_AvatarIDs = {
+    ["Self Avatar"] = localPlayer.UserId,
+    ["Random 1"] = 2888300111 - (684 + 576),
+    ["Random 2"] = 10074747755,
+    ["Random 3"] = 5209567453 - 0,
+    ["Random 4"] = 8847120624 - -144862219,
+    ["Random 5"] = 5796320091 - (61 + 1001),
+    ["Random 6"] = 9744452890 - (311 + 462),
+    ["Random 7"] = 8476755006,
+    WoozyNate = 22678624 + 123410700,
+    Nicholas = 909635,
+    yvlyf = 54084032 + 127667671,
+    traevp = 471607078,
+    J0LLY = 1073848886 - (230 + 1618),
+    LucashDev = 2525651744,
+    CEOofIsaac = 63238912,
+    Stealthy = 56602747,
+    Wildes = 32277713 + 8120120,
+    Talon = 75974130,
+    Relukt = 65042011,
+    Sammy = 2678001507,
+    Diesel = 9236829766 - 112908190,
+    S4ans03 = 35441078 - (447 + 837),
+    Aura = 2275806428,
+    iJava = 192928409 + 83629411,
+    ["White Guy"] = 8843268357,
+    ["Purple King"] = 9070760018 - (1267 + 143),
+    Mpruyyy = 8340163775,
+}
+function Choco_GetFavoritesList()
+    local v412 = 0 - 0
+    local v413
+    while true do
+        if v412 == (0 - 0) then
+            v413 = {}
+            for v2768, v2769 in ipairs(Choco_FAVORITES) do
+                table.insert(v413, v2769.name)
+            end
+            v412 = 1
+        end
+        if 1 == v412 then
+            return v413
+        end
+    end
+end
+Choco_SelectedAvatarOption = "Self Avatar"
+FakeAvatarSection:AddDropdown("Pilih Avatar", Choco_AvatarList, false, function(v414)
+    Choco_SelectedAvatarOption = v414
+end)
+Choco_UsernameInput = ""
+FakeAvatarSection:AddTextbox("Username / ID", "Masukkan username atau ID...", function(v415)
+    local v416 = 0
+    local v417
+    while true do
+        if v416 == (0 - 0) then
+            v417 = v415:gsub("^@", "")
+            Choco_UsernameInput = v417
+            break
+        end
+    end
+end)
+FakeAvatarSection:AddButton("Apply Avatar", function()
+    if Choco_UsernameInput == "" then
+        if Choco_SelectedAvatarOption and (Choco_SelectedAvatarOption ~= "") then
+            local v2770 = Choco_AvatarIDs[Choco_SelectedAvatarOption]
+            if v2770 then
+                Choco_ApplyAvatar(v2770)
+            else
+                v1:Notify({
+                    Title = "Error",
+                    Description = "Pilih avatar atau masukkan username!",
+                    Duration = 5 - 2,
+                })
+            end
+        else
+            v1:Notify({
+                Title = "Error",
+                Description = "Pilih avatar atau masukkan username!",
+                Duration = 3,
+            })
+        end
+    else
+        Choco_ApplyAvatar(Choco_UsernameInput)
+    end
+end)
+FakeAvatarSection:AddButton("Random Avatar", function()
+    Choco_ApplyAvatar(Choco_RANDOM_IDS[math.random(1 - 0, #Choco_RANDOM_IDS)])
+end)
+FakeAvatarSection:AddButton("Reset Avatar", function()
+    Choco_ResetAvatar()
+end)
+FakeAvatarSection:AddButton("Add to Favorite", function()
+    if not Choco_CURRENT_AVATAR then
+        local v2269 = 404 - (72 + 332)
+        while true do
+            if v2269 == 0 then
+                v1:Notify({
+                    Title = "Error",
+                    Description = "Tidak ada avatar",
+                    Duration = 979 - (269 + 707),
+                })
+                return
+            end
+        end
+    end
+    for v1833, v1834 in ipairs(Choco_FAVORITES) do
+        if tonumber(v1834.id) == tonumber(Choco_CURRENT_AVATAR.id) then
+            local v2523 = 0
+            while true do
+                if v2523 == 0 then
+                    v1:Notify({
+                        Title = "Info",
+                        Description = "Sudah ada di favorite",
+                        Duration = 2,
+                    })
+                    return
+                end
+            end
+        end
+    end
+    table.insert(Choco_FAVORITES, {
+        id = Choco_CURRENT_AVATAR.id,
+        name = Choco_CURRENT_AVATAR.name,
+    })
+    Choco_SaveFavorites()
+    Choco_FavDropdown.SetValues(Choco_GetFavoritesList())
+    v1:Notify({
+        Title = "Favorite",
+        Description = "Ditambahkan ke favorite",
+        Duration = 3 - 1,
+    })
+end)
+local v6 = FakeAvatarSection:AddDropdown("Favorites", Choco_GetFavoritesList(), false, function(v418)
+    for v1835, v1836 in ipairs(Choco_FAVORITES) do
+        if v1836.name == v418 then
+            Choco_SelectedFav = v1836.id
+            Choco_ApplyAvatar(v1836.id)
+            break
+        end
+    end
+end)
+Choco_FavDropdown = v6
+FakeAvatarSection:AddButton("Delete Favorite", function()
+    if not Choco_SelectedFav then
+        local v2270 = 0 - 0
+        while true do
+            if v2270 == (130 - (123 + 7)) then
+                v1:Notify({
+                    Title = "Error",
+                    Description = "Pilih favorite dulu",
+                    Duration = 3 + 0,
+                })
+                return
+            end
+        end
+    end
+    for v1837, v1838 in ipairs(Choco_FAVORITES) do
+        if tonumber(v1838.id) == tonumber(Choco_SelectedFav) then
+            table.remove(Choco_FAVORITES, v1837)
+            break
+        end
+    end
+    Choco_SaveFavorites()
+    Choco_FavDropdown.SetValues(Choco_GetFavoritesList())
+    Choco_SelectedFav = nil
+    v1:Notify({
+        Title = "Favorite",
+        Description = "Favorite dihapus",
+        Duration = 2,
+    })
+end)
+localPlayer.CharacterAdded:Connect(function(v419)
+    task.wait(1 + 0)
+    if Choco_CURRENT_AVATAR then
+        local v2271 = 0
+        while true do
+            if 1 == v2271 then
+                Choco_SetFakeDisplayName(Choco_CURRENT_AVATAR.name)
+                break
+            end
+            if v2271 == (0 - 0) then
+                Choco_ApplyFakeAvaAppearance(Choco_CURRENT_AVATAR.id)
+                Choco_SetFakeDisplayPicture(Choco_CURRENT_AVATAR.id)
+                v2271 = 2 - 1
+            end
+        end
+    end
+end)
+local v7 = v:CreateTab("Survivor", "heart")
+SurvivorTab = v7
+local v8 = SurvivorTab:CreatePage("Survivor")
+S_Page = v8
+local v9 = S_Page:CreateSection("Generator Settings", "plug-zap")
+GenCard = v9
+local v10 = GenCard:AddToggle("Auto Skill Check", false, function(v420)
+    _G.Ox.Auto.SkillCheck = v420
+    if v420 then
+        fn7()
+    elseif _G.Ox.Connections.SkillHeartbeat then
+        local v2771 = 1088 - (38 + 1050)
+        while true do
+            if 0 == v2771 then
+                _G.Ox.Connections.SkillHeartbeat:Disconnect()
+                _G.Ox.Connections.SkillHeartbeat = nil
+                break
+            end
+        end
+    end
+end, {
+    Flag = "AutoSkillCheck",
+})
+SkillCheckToggle = v10
+GenCard:AddDropdown(
+    "Skill Check Mode",
+    {
+        "Legit",
+        "Instant",
+    },
+    false,
+    function(v421)
+        local v422 = 0
+        while true do
+            if v422 == (0 + 0) then
+                if (v421 ~= "Legit") and (v421 ~= "Instant") then
+                    v421 = "Legit"
+                end
+                _G.Ox.Auto.SkillCheckMode = v421
+                break
+            end
+        end
+    end,
+    {
+        Flag = "SkillCheckMode",
+    }
+)
+GenCard:AddToggle("Auto Trap Skill Check", false, function(v423)
+    _G.Ox.Auto.TrapSkillCheck = v423
+    _G.Ox.Auto.TrapSkillCheckMode = "Instant"
+    if v423 then
+        _G.Ox.StartTrapSkillCheck()
+    elseif _G.Ox.Connections.TrapHeartbeat then
+        _G.Ox.Connections.TrapHeartbeat:Disconnect()
+        _G.Ox.Connections.TrapHeartbeat = nil
+    end
+end, {
+    Flag = "AutoTrapSkillCheck",
+})
+local v11 = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Items")["Twist of Fate"].Fire
+local v12 = false
+local v13 = false
+local v14 = true
+local v15 = false
+local v16 = false
+local v17 = nil
+local v18 = nil
+local v19 = "Killer"
+UDim2.new(0.5, -(66 + 54), 0, 933 - (426 + 397))
+local v20 = {}
+local v21 = {
+    PredictionEfficiency = 1406.85 - (751 + 655),
+    LerpSmoothness = 0.4,
+    EnableJitter = false,
+    MaxJitterStuds = 0,
+}
+function getGunObject()
+    local v424 = localPlayer.Character
+    if not v424 then
+        return nil
+    end
+    local v425 = v424:FindFirstChild("Twist of Fate", true)
+    if not v425 then
+        return nil
+    end
+    local v426 = v425:FindFirstChild("Right Arm")
+    if v426 then
+        local v2272 = 0 - 0
+        local v2273
+        local v2274
+        local v2275
+        while true do
+            if (0 + 0) == v2272 then
+                v2273 = v426:FindFirstChild("gun")
+                if v2273 then
+                    return v2273
+                end
+                v2272 = 1
+            end
+            if v2272 == (1247 - (39 + 1206)) then
+                v2275 = v426:FindFirstChildOfClass("BasePart")
+                if v2275 then
+                    return v2275
+                end
+                break
+            end
+            if v2272 == 1 then
+                v2274 = v426:FindFirstChild("EmperorGun")
+                if v2274 then
+                    return v2274
+                end
+                v2272 = 2
+            end
+        end
+    end
+    return v425:FindFirstChildOfClass("BasePart") or v425
+end
+function isTargetVisible(v427, v428, v429)
+    local v430 = v428 - v427
+    local v431 = v430.Magnitude
+    if v431 < (0.1 - 0) then
+        return true
+    end
+    local v432 = RaycastParams.new()
+    v432.FilterType = Enum.RaycastFilterType.Exclude
+    local v435 = {}
+    local v436 = localPlayer.Character
+    if v436 then
+        table.insert(v435, v436)
+    end
+    if v429 and (v429 ~= v436) then
+        table.insert(v435, v429)
+    end
+    if v18 then
+        table.insert(v435, v18)
+    end
+    v432.FilterDescendantsInstances = v435
+    local v438 = workspace:Raycast(v427, v430.Unit * v431, v432) == nil
+    return v438
+end
+local v22 = {}
+local v23 = 841 - (566 + 275)
+function GetSCPs()
+    local v439 = 935 - (167 + 768)
+    local v440
+    local v441
+    while true do
+        if v439 == (1 + 0) then
+            v441 = workspace:FindFirstChild("Map")
+            if v441 then
+                for v3246, v3247 in pairs(v441:GetDescendants()) do
+                    if v3247:IsA("Model") then
+                        local v3616 = 0
+                        local v3617
+                        while true do
+                            if v3616 == (0 - 0) then
+                                v3617 = v3247:GetAttributes()
+                                if v3247:GetAttribute("CorpseCreated0492") or (next(v3617) ~= nil) then
+                                    local v4054 = 0 + 0
+                                    local v4055
+                                    while true do
+                                        if v4054 == (0 + 0) then
+                                            v4055 = v3247:FindFirstChild("HumanoidRootPart")
+                                            if v4055 then
+                                                table.insert(v440, v4055)
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                end
+            end
+            v439 = 2 - 0
+        end
+        if v439 == (18 - (8 + 7)) then
+            return v22
+        end
+        if v439 == (1683 - (1510 + 173)) then
+            if (tick() - v23) < (0.5 - 0) then
+                return v22
+            end
+            v440 = {}
+            v439 = 1 + 0
+        end
+        if v439 == (255 - (30 + 223)) then
+            v22 = v440
+            v23 = tick()
+            v439 = 1259 - (300 + 956)
+        end
+    end
+end
+local function v24(v442)
+    local v443 = v442:FindFirstChild("HumanoidRootPart")
+    if not v443 then
+        return Vector3.zero
+    end
+    local v444 = v443.Position
+    local v445 = v20[v442]
+    if v445 then
+        local v2276 = 0
+        local v2277
+        while true do
+            if v2276 == 0 then
+                v2277 = tick() - v445.time
+                if (v2277 > (122.001 - (22 + 100))) and (v2277 < 0.1) then
+                    local v3369 = v445.vel:Lerp((v444 - v445.pos) / v2277, v21.LerpSmoothness)
+                    local v3370 = {
+                        pos = v444,
+                        vel = v3369,
+                        time = tick(),
+                    }
+                    v20[v442] = v3370
+                    return v3369
+                end
+                break
+            end
+        end
+    end
+    local v446 = {
+        pos = v444,
+        vel = v443.Velocity,
+        time = tick(),
+    }
+    v20[v442] = v446
+    return v443.Velocity
+end
+local function v25(v448, v449, v450, v451)
+    local v452 = v451 or (1102 - 602)
+    local v453 = v452
+    local v454 = v449.Position
+    if (v454 - v448).Magnitude < (290 - (47 + 235)) then
+        return v454
+    end
+    local v455 = v24(v450)
+    local v456 = v454 - v448
+    local v457 = v455:Dot(v455) - (v453 * v453)
+    local v458 = (6 - 4) * v456:Dot(v455)
+    local v459 = v456:Dot(v456)
+    local v460 = nil
+    if math.abs(v457) < 0.01 then
+        if math.abs(v458) > (0.01 + 0) then
+            v460 = -v459 / v458
+        end
+    else
+        local v2278 = (v458 * v458) - ((490 - (21 + 465)) * v457 * v459)
+        if v2278 >= (0 + 0) then
+            local v2772 = math.sqrt(v2278)
+            local v2773 = (-v458 - v2772) / ((2 + 0) * v457)
+            local v2774 = (-v458 + v2772) / ((1 + 1) * v457)
+            if v2773 > (0.001 - 0) then
+                v460 = v2773
+            elseif v2774 > 0.001 then
+                v460 = v2774
+            end
+        end
+    end
+    local v461 = v454
+    if v460 then
+        local v2279 = 1217 - (553 + 664)
+        local v2280
+        while true do
+            if v2279 == (1 + 0) then
+                if v21.EnableJitter then
+                    v461 = v2280
+                        + Vector3.new(
+                            (math.random() - 0.5) * v21.MaxJitterStuds,
+                            (math.random() - 0.5) * (v21.MaxJitterStuds / 2),
+                            (math.random() - 0.5) * v21.MaxJitterStuds
+                        )
+                end
+                break
+            end
+            if v2279 == (78 - (73 + 5)) then
+                v2280 = v454 + (v455 * v21.PredictionEfficiency * v460)
+                v461 = v2280
+                v2279 = 1716 - (1128 + 587)
+            end
+        end
+    end
+    return v461
+end
+function getTargetPosition()
+    local v462 = workspace.CurrentCamera
+    local v463 = getGunObject()
+    local v464 = localPlayer.Character
+    if not v463 or not v464 then
+        return nil, nil, nil, nil
+    end
+    local v465 = v464:FindFirstChild("HumanoidRootPart")
+    if not v465 then
+        return nil, nil, nil, nil
+    end
+    local v466 = v465.Position
+    local v467 = nil
+    if v464:GetAttribute("IsCarried") then
+        v467 = v464.HumanoidRootPart.Position + (v464.HumanoidRootPart.CFrame.LookVector * (7 - 5))
+    else
+        local v2281 = 690 - (558 + 132)
+        local v2282
+        while true do
+            if v2281 == 1 then
+                v467 = v2282
+                break
+            end
+            if v2281 == 0 then
+                pcall(function()
+                    local v3248 = v463:IsA("BasePart")
+                    local v3249 = v3248 and v463.Position
+                    if not v3249 then
+                        local v3618 = v463:FindFirstChildOfClass("BasePart")
+                        v3249 = v3618 and v463:FindFirstChildOfClass("BasePart").Position
+                    end
+                    v467 = v3249
+                end)
+                v2282 = v467 or Vector3.new(v466.X, v466.Y + 1.5, v466.Z)
+                v2281 = 1
+            end
+        end
+    end
+    local function v468(v1839, v1840)
+        local v1841 = v1839.Position
+        if v15 and not isTargetVisible(v467, v1841, v1840) then
+            return nil, nil, nil, nil
+        end
+        local v1842 = getGunObject()
+        local v1843 = v467
+        pcall(function()
+            if v1842 and v1842:IsA("BasePart") then
+                v1843 = v1842.Position
+            elseif v1842 then
+                local v3250 = v1842:FindFirstChildOfClass("BasePart")
+                if v3250 then
+                    v1843 = v3250.Position
+                end
+            end
+        end)
+        if (v1841 - v1843).Magnitude < (21 - 13) then
+            return (v1841 - v1843).Unit, v1842, v1843, v1841
+        end
+        if not v13 then
+            return (v1841 - v1843).Unit, v1842, v1843, v1841
+        end
+        local v1844 = v25(v1843, v1839, v1840, 500)
+        return (v1844 - v1843).Unit, v1842, v1843, v1844
+    end
+    if v19 == "Killer" then
+        local v2283 = nil
+        local v2284 = nil
+        local v2285 = math.huge
+        for v2525, v2526 in ipairs(Players:GetPlayers()) do
+            if v2526 ~= localPlayer then
+                local v3017 = 0
+                local v3018
+                local v3019
+                while true do
+                    if v3017 == (2 - 1) then
+                        if v3019 and v2526.Character then
+                            local v3831 = 0
+                            local v3832
+                            while true do
+                                if v3831 == (0 + 0) then
+                                    v3832 = v2526.Character:FindFirstChild("Torso")
+                                    if v3832 then
+                                        local v4159 = (v466 - v3832.Position).Magnitude
+                                        if v4159 < v2285 then
+                                            local v4221 = 0 + 0
+                                            while true do
+                                                if v4221 == (1 + 0) then
+                                                    v2284 = v2526.Character
+                                                    break
+                                                end
+                                                if v4221 == 0 then
+                                                    v2285 = v4159
+                                                    v2283 = v3832
+                                                    v4221 = 1 + 0
+                                                end
+                                            end
+                                        end
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                        break
+                    end
+                    if v3017 == 0 then
+                        v3018 = v2526.Team
+                        v3019 = v3018 and (v2526.Team.Name == "Killer")
+                        v3017 = 1 - 0
+                    end
+                end
+            end
+        end
+        if not v2283 then
+            return nil, nil, nil, nil
+        end
+        return v468(v2283, v2284)
+    end
+    if v19 == "Survivors" then
+        local v2286 = nil
+        local v2287 = nil
+        local v2288 = -math.huge
+        local v2289 = workspace.CurrentCamera
+        local v2290 = v2289.CFrame.LookVector
+        for v2527, v2528 in ipairs(Players:GetPlayers()) do
+            if (v2528 ~= localPlayer) and v2528.Team and (v2528.Team.Name == "Survivors") and v2528.Character then
+                local v3020 = v2528.Character:FindFirstChild("Torso")
+                if v3020 then
+                    local v3372 = 0
+                    local v3373
+                    while true do
+                        if (0 + 0) == v3372 then
+                            v3373 = v2290:Dot((v3020.Position - v2289.CFrame.Position).Unit)
+                            if (v3373 > 0.5) and (v2288 < v3373) then
+                                v2288 = v3373
+                                v2286 = v3020
+                                v2287 = v2528.Character
+                            end
+                            break
+                        end
+                    end
+                end
+            end
+        end
+        if not v2286 then
+            return nil, nil, nil, nil
+        end
+        return v468(v2286, v2287)
+    end
+    if v19 ~= "Zombie" then
+        return nil, nil, nil, nil
+    end
+    local v469 = nil
+    local v470 = GetSCPs()
+    local v471 = -math.huge
+    local v472 = workspace.CurrentCamera
+    local v473 = v472.CFrame.LookVector
+    for v1845, v1846 in ipairs(v470) do
+        if v1846 and v1846.Parent then
+            local v2529 = v473:Dot((v1846.Position - v472.CFrame.Position).Unit)
+            if (v2529 > 0.5) and (v471 < v2529) then
+                local v3021 = 0 + 0
+                while true do
+                    if 0 == v3021 then
+                        v471 = v2529
+                        v469 = v1846
+                        break
+                    end
+                end
+            end
+        end
+    end
+    if not v469 then
+        return nil, nil, nil, nil
+    end
+    return v468(v469, v469.Parent)
+end
+function updateLaser(v474, v475)
+    local v476 = 0
+    local v477
+    local v478
+    while true do
+        if (773 - (294 + 477)) == v476 then
+            v18.CFrame = v478
+            v18.Transparency = 0 + 0
+            break
+        end
+        if (0 - 0) == v476 then
+            if not v18 then
+                v18 = Instance.new("Part")
+                v18.Name = "ToFLaser"
+                v18.Anchored = true
+                v18.CanCollide = false
+                v18.CanTouch = false
+                v18.CastShadow = false
+                v18.Material = Enum.Material.Neon
+                local v3029 = Color3.fromRGB(502 - 247, 13 + 37, 50)
+                v18.Color = v3029
+                v18.Parent = workspace
+            end
+            v477 = Vector3.new(0.05, 0.05 + 0, (v475 - v474).Magnitude)
+            v476 = 1
+        end
+        if v476 == (2 - 1) then
+            v18.Size = v477
+            v478 = CFrame.new((v474 + v475) / 2, v475)
+            v476 = 2
+        end
+    end
+end
+function clearLaser()
+    if v18 then
+        local v2291 = 982 - (97 + 885)
+        while true do
+            if v2291 == 0 then
+                v18:Destroy()
+                v18 = nil
+                break
+            end
+        end
+    end
+end
+local v26 = {}
+local function v27()
+    local v479 = localPlayer:GetAttribute("EquippedSkin_Twist_of_Fate")
+    local v480 = v479 or ""
+    if v480:find("AWP") or v480:find("Awp") or v480:find("awp") then
+        return "rbxassetid://119691839016468"
+    end
+    if not v480:find("SCP") and not v480:find("3108") then
+        return "rbxassetid://124735239320776"
+    end
+    return "rbxassetid://116394362601423"
+end
+local function v28()
+    for v1847, v1848 in ipairs(v26) do
+        v1848:Disconnect()
+    end
+    v26 = {}
+    local v481 = localPlayer.Character
+    if not v481 then
+        return
+    end
+    local v482 = v481:FindFirstChildOfClass("Humanoid")
+    local v483 = v482 and v482:FindFirstChildOfClass("Animator")
+    if not v483 then
+        return
+    end
+    local function v484()
+        local v1849 = 0
+        local v1850
+        local v1851
+        while true do
+            if 0 == v1849 then
+                v1850 = v481:GetAttribute("IsCarried")
+                v1851 = v1850 or v481:GetAttribute("Knocked")
+                v1849 = 1 + 0
+            end
+            if (1 - 0) == v1849 then
+                return v1851
+            end
+        end
+    end
+    local function v485()
+        local v1852 = {}
+        v1852[v27()] = true
+        v1852["rbxassetid://111824163160605"] = true
+        v1852["rbxassetid://72749744367268"] = true
+        return v1852
+    end
+    table.insert(
+        v26,
+        v483.AnimationPlayed:Connect(function(v1856)
+            local v1857 = 365 - (271 + 94)
+            while true do
+                if v1857 == (1603 - (777 + 826)) then
+                    if not v484() then
+                        return
+                    end
+                    if not v1856.Animation then
+                        return
+                    end
+                    v1857 = 1 + 0
+                end
+                if v1857 == (1356 - (117 + 1238)) then
+                    if v485()[v1856.Animation.AnimationId] then
+                        v1856:Stop(0)
+                    end
+                    break
+                end
+            end
+        end)
+    )
+    table.insert(
+        v26,
+        v481:GetAttributeChangedSignal("IsCarried"):Connect(function()
+            local v1858 = 1715 - (686 + 1029)
+            local v1859
+            while true do
+                if 0 == v1858 then
+                    if not v484() then
+                        return
+                    end
+                    v1859 = v485()
+                    v1858 = 1357 - (1074 + 282)
+                end
+                if v1858 == (1618 - (1359 + 258)) then
+                    for v3032, v3033 in ipairs(v483:GetPlayingAnimationTracks()) do
+                        if v3033.Animation and v1859[v3033.Animation.AnimationId] then
+                            v3033:Stop(0 - 0)
+                        end
+                    end
+                    break
+                end
+            end
+        end)
+    )
+    table.insert(
+        v26,
+        v481:GetAttributeChangedSignal("Knocked"):Connect(function()
+            local v1860 = 1935 - (1730 + 205)
+            local v1861
+            while true do
+                if v1860 == 1 then
+                    for v3034, v3035 in ipairs(v483:GetPlayingAnimationTracks()) do
+                        if v3035.Animation and v1861[v3035.Animation.AnimationId] then
+                            v3035:Stop(528 - (67 + 461))
+                        end
+                    end
+                    break
+                end
+                if v1860 == (0 - 0) then
+                    if not v484() then
+                        return
+                    end
+                    v1861 = v485()
+                    v1860 = 1
+                end
+            end
+        end)
+    )
+end
+task.defer(v28)
+localPlayer.CharacterAdded:Connect(function()
+    task.defer(function()
+        task.wait(0.25)
+        v28()
+    end)
+end)
+function doShoot()
+    if not v12 or not v16 then
+        return
+    end
+    local v486 = localPlayer.Character
+    if v486 and _G.Ox.AimConfig.Pistol_BlockKnocked and IsDowned(v486) then
+        return
+    end
+    local v487, v488, v489, v490 = getTargetPosition()
+    if not v487 or not v488 or not v490 or not v489 then
+        return
+    end
+    local v491 = (v490 - v489).Unit
+    pcall(function()
+        v11:FireServer(v488, v491)
+    end)
+end
+function startConnection()
+    local v492 = 0
+    while true do
+        if v492 == (0 - 0) then
+            if v17 then
+                return
+            end
+            v17 = RunService.Heartbeat:Connect(function()
+                if v16 and v12 then
+                    local v3251 = 0 - 0
+                    local v3252
+                    local v3253
+                    local v3254
+                    local v3255
+                    while true do
+                        if (0 + 0) == v3251 then
+                            v3252, v3253, v3254, v3255 = getTargetPosition()
+                            if v3252 and v3253 and v3255 then
+                                local v3941 = 629 - (129 + 500)
+                                while true do
+                                    if 1 == v3941 then
+                                        if v14 and v3254 and v3255 then
+                                            updateLaser(v3254, v3255)
+                                        end
+                                        break
+                                    end
+                                    if v3941 == (1711 - (1157 + 554)) then
+                                        pcall(function()
+                                            local v4160 = localPlayer.Character
+                                            local v4161 = v4160 and v4160:FindFirstChild("HumanoidRootPart")
+                                            if v4161 and not v4160:GetAttribute("IsCarried") then
+                                                v4161.CFrame = CFrame.new(
+                                                    v4161.Position,
+                                                    Vector3.new(v3255.X, v4161.Position.Y, v3255.Z)
+                                                )
+                                            end
+                                        end)
+                                        if _G.Ox.AimConfig.LockAim then
+                                            local v4199 = CFrame.lookAt(currentCamera.CFrame.Position, v3255)
+                                            currentCamera.CFrame = currentCamera.CFrame:Lerp(v4199, 0.15 - 0)
+                                        end
+                                        v3941 = 608 - (82 + 525)
+                                    end
+                                end
+                            elseif v18 then
+                                v18.Transparency = 1 + 0
+                            end
+                            break
+                        end
+                    end
+                elseif v18 then
+                    v18.Transparency = 2 - 1
+                end
+            end)
+            break
+        end
+    end
+end
+function stopConnection()
+    local v493 = 0
+    while true do
+        if v493 == (1623 - (948 + 675)) then
+            if v17 then
+                local v3036 = 0
+                while true do
+                    if v3036 == (0 + 0) then
+                        v17:Disconnect()
+                        v17 = nil
+                        break
+                    end
+                end
+            end
+            clearLaser()
+            break
+        end
+    end
+end
+local v29 = UDim2.new(0.5, -(75 + 7), 0 - 0, 883 - (406 + 447))
+local v30 = nil
+local v31 = nil
+local v32 = {
+    {
+        internal = "Killer",
+        display = "Killer (K)",
+        activeColor = Color3.fromRGB(623 - 443, 34 + 11, 45),
+        activeTxt = Color3.fromRGB(255, 180, 1166 - (968 + 18)),
+    },
+    {
+        internal = "Survivors",
+        display = "Survivors (J)",
+        activeColor = Color3.fromRGB(25, 73 + 7, 304 - 154),
+        activeTxt = Color3.fromRGB(160, 210, 522 - (172 + 95)),
+    },
+    {
+        internal = "Zombie",
+        display = "Zombie (L)",
+        activeColor = Color3.fromRGB(120, 267 - 187, 275 - (260 + 5)),
+        activeTxt = Color3.fromRGB(694 - 439, 1029 - (265 + 554), 100),
+    },
+}
+function createTargetSelectorUI()
+    if not CoreGui then
+        return
+    end
+    if v30 and v30.Parent then
+        return
+    end
+    local v494 = CoreGui:FindFirstChild("ToFTargetSelector")
+    if v494 then
+        v494:Destroy()
+    end
+    local v495 = Instance.new("ScreenGui")
+    v495.Name = "ToFTargetSelector"
+    v495.ResetOnSpawn = false
+    v495.IgnoreGuiInset = true
+    v495.Parent = CoreGui
+    local v500 = Instance.new("Frame")
+    v500.Name = "Main"
+    v500.Size = UDim2.new(1571 - (1440 + 131), 165, 0 - 0, 1427 - (253 + 1142))
+    v500.Position = v29
+    v500.BackgroundTransparency = 254 - (133 + 120)
+    v500.Active = true
+    v500.Parent = v495
+    local v507 = false
+    local v508 = Instance.new("TextButton")
+    v508.Size = UDim2.new(1 - 0, 1956 - (809 + 1147), 1, 0)
+    v508.BackgroundColor3 = Color3.fromRGB(512 - (178 + 319), 15, 20)
+    v508.BackgroundTransparency = 0.25 - 0
+    v508.BorderSizePixel = 0 + 0
+    v508.Font = Enum.Font.GothamBold
+    v508.TextSize = 1281 - (1255 + 15)
+    v508.TextColor3 = Color3.fromRGB(240, 1782 - (1221 + 321), 669 - 429)
+    v508.Parent = v500
+    Instance.new("UICorner", v508).CornerRadius = UDim.new(0 + 0, 29 - 21)
+    local v519 = Instance.new("UIStroke", v508)
+    v519.Color = Color3.fromRGB(371 - 271, 46 + 54, 106 + 4)
+    v519.Thickness = 1.2 - 0
+    v519.Transparency = 407.3 - (204 + 203)
+    local v523 = Instance.new("Frame")
+    v523.Size = UDim2.new(79 - (48 + 30), 0 + 0, 1964 - (1472 + 492), 0 - 0)
+    v523.Position = UDim2.new(0 + 0, 611 - (258 + 353), 1995 - (1382 + 612), 5 + 0)
+    v523.BackgroundColor3 = Color3.fromRGB(1 + 14, 15, 1 + 19)
+    v523.BackgroundTransparency = 0.25 - 0
+    v523.BorderSizePixel = 0 + 0
+    v523.ClipsDescendants = true
+    v523.Visible = false
+    v523.AutomaticSize = Enum.AutomaticSize.Y
+    v523.Parent = v500
+    Instance.new("UICorner", v523).CornerRadius = UDim.new(119 - (35 + 84), 223 - (75 + 140))
+    local v535 = Instance.new("UIStroke", v523)
+    v535.Color = Color3.fromRGB(80, 290 - 210, 1889 - (923 + 876))
+    v535.Thickness = 2.2 - 1
+    v535.Transparency = 812.4 - (284 + 528)
+    local v539 = Instance.new("UIListLayout", v523)
+    v539.FillDirection = Enum.FillDirection.Vertical
+    v539.SortOrder = Enum.SortOrder.LayoutOrder
+    v539.Padding = UDim.new(1019 - (867 + 152), 1110 - (709 + 397))
+    local v545 = Instance.new("UIPadding", v523)
+    v545.PaddingTop = UDim.new(0, 4)
+    v545.PaddingBottom = UDim.new(0, 4)
+    v545.PaddingLeft = UDim.new(0 - 0, 4)
+    v545.PaddingRight = UDim.new(0, 4)
+    local v550 = {}
+    local function v551()
+        local v1862 = 36 - (21 + 15)
+        local v1863
+        local v1864
+        local v1865
+        while true do
+            if v1862 == (0 - 0) then
+                v1863 = "Unknown"
+                for v3037, v3038 in ipairs(v32) do
+                    if v3038.internal == v19 then
+                        v1863 = v3038.internal
+                        break
+                    end
+                end
+                v1862 = 1 - 0
+            end
+            if (1 + 0) == v1862 then
+                v1864 = v507
+                v1865 = (v1864 and "v") or ">"
+                v1862 = 5 - 3
+            end
+            if v1862 == (7 - 4) then
+                for v3039, v3040 in ipairs(v32) do
+                    local v3041 = v550[v3040.internal]
+                    if v3041 then
+                        if v3040.internal == v19 then
+                            v3041.BackgroundColor3 = v3040.activeColor
+                            v3041.TextColor3 = v3040.activeTxt
+                        else
+                            local v3726 = 0 + 0
+                            while true do
+                                if v3726 == 0 then
+                                    v3041.BackgroundColor3 = Color3.fromRGB(160 - (97 + 38), 25, 30)
+                                    v3041.TextColor3 = Color3.fromRGB(230 - (52 + 28), 150, 73 + 77)
+                                    break
+                                end
+                            end
+                        end
+                    end
+                end
+                break
+            end
+            if v1862 == 2 then
+                v508.Text = string.format("Target: %s   %s", v1863, v1865)
+                v523.Visible = v507
+                v1862 = 852 - (59 + 790)
+            end
+        end
+    end
+    for v1866, v1867 in ipairs(v32) do
+        local v1868 = Instance.new("TextButton")
+        v1868.Size = UDim2.new(1 + 0, 0 + 0, 940 - (467 + 473), 129 - 103)
+        v1868.BorderSizePixel = 0 - 0
+        v1868.Font = Enum.Font.GothamBold
+        v1868.TextSize = 10
+        v1868.Text = v1867.display
+        v1868.LayoutOrder = v1866
+        v1868.Parent = v523
+        Instance.new("UICorner", v1868).CornerRadius = UDim.new(0 - 0, 15 - 9)
+        local function v1879()
+            local v2292 = 0
+            while true do
+                if v2292 == (1 + 0) then
+                    v551()
+                    break
+                end
+                if v2292 == (0 - 0) then
+                    v19 = v1867.internal
+                    v507 = false
+                    v2292 = 1
+                end
+            end
+        end
+        v1868.MouseButton1Click:Connect(v1879)
+        v1868.InputEnded:Connect(function(v2293)
+            if v2293.UserInputType == Enum.UserInputType.Touch then
+                v1879()
+            end
+        end)
+        v550[v1867.internal] = v1868
+    end
+    v551()
+    local v552 = false
+    local v553 = false
+    local v554 = nil
+    local v555 = nil
+    local v556 = nil
+    v508.InputBegan:Connect(function(v1881)
+        if
+            (v1881.UserInputType == Enum.UserInputType.MouseButton1) or (
+                v1881.UserInputType == Enum.UserInputType.Touch
+            )
+        then
+            local v2533 = 0
+            while true do
+                if v2533 == (7 - 5) then
+                    v556 = v500.Position
+                    break
+                end
+                if 0 == v2533 then
+                    v552 = true
+                    v553 = false
+                    v2533 = 1 - 0
+                end
+                if (1 + 0) == v2533 then
+                    v554 = v1881
+                    v555 = v1881.Position
+                    v2533 = 1 + 1
+                end
+            end
+        end
+    end)
+    v508.InputEnded:Connect(function(v1882)
+        if v1882 == v554 then
+            local v2534 = 0 + 0
+            while true do
+                if v2534 == 1 then
+                    v554 = nil
+                    break
+                end
+                if v2534 == (237 - (58 + 179)) then
+                    v552 = false
+                    if not v553 then
+                        local v3622 = 0
+                        local v3623
+                        while true do
+                            if v3622 == 1 then
+                                v507 = v3623
+                                v551()
+                                break
+                            end
+                            if v3622 == 0 then
+                                v3623 = nil
+                                if v507 then
+                                    v3623 = false
+                                else
+                                    v3623 = true
+                                end
+                                v3622 = 2 - 1
+                            end
+                        end
+                    end
+                    v2534 = 1254 - (677 + 576)
+                end
+            end
+        end
+    end)
+    UserInputService.InputChanged:Connect(function(v1883)
+        if not v552 then
+            return
+        end
+        local v1884 = false
+        if (v1883.UserInputType == Enum.UserInputType.Touch) and (v1883 == v554) then
+            v1884 = true
+        elseif
+            (v1883.UserInputType == Enum.UserInputType.MouseMovement)
+            and (v554.UserInputType == Enum.UserInputType.MouseButton1)
+        then
+            v1884 = true
+        end
+        if v1884 then
+            local v2535 = 0 + 0
+            local v2536
+            while true do
+                if v2535 == 0 then
+                    v2536 = v1883.Position - v555
+                    if (math.abs(v2536.X) > (8 - 4)) or (math.abs(v2536.Y) > 4) then
+                        v553 = true
+                    end
+                    v2535 = 1
+                end
+                if v2535 == 1 then
+                    if v553 then
+                        local v3624 = 0
+                        local v3625
+                        while true do
+                            if (220 - (88 + 132)) == v3624 then
+                                v3625 = UDim2.new(
+                                    v556.X.Scale,
+                                    v556.X.Offset + v2536.X,
+                                    v556.Y.Scale,
+                                    v556.Y.Offset + v2536.Y
+                                )
+                                v500.Position = v3625
+                                v3624 = 1 + 0
+                            end
+                            if v3624 == (4 - 3) then
+                                v29 = v3625
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end)
+    if v31 then
+        v31:Disconnect()
+        v31 = nil
+    end
+    v31 = UserInputService.InputBegan:Connect(function(v1885, v1886)
+        if not v12 then
+            return
+        end
+        if v1886 or (v1885.UserInputType ~= Enum.UserInputType.Keyboard) then
+            return
+        end
+        local v1887 = nil
+        if v1885.KeyCode == Enum.KeyCode.K then
+            v1887 = "Killer"
+            v1:Notify({
+                Title = "Target Mode",
+                Description = "Killer",
+                Time = 3 - 2,
+            })
+        elseif v1885.KeyCode == Enum.KeyCode.J then
+            v1887 = "Survivors"
+            v1:Notify({
+                Title = "Target Mode",
+                Description = "Survivors",
+                Time = 292 - (12 + 279),
+            })
+        elseif v1885.KeyCode == Enum.KeyCode.L then
+            v1887 = "Zombie"
+            v1:Notify({
+                Title = "Target Mode",
+                Description = "Zombie",
+                Time = 1 - 0,
+            })
+        end
+        if v1887 and (v1887 ~= v19) then
+            v19 = v1887
+            v551()
+        end
+    end)
+    v30 = v495
+end
+function destroyTargetSelectorUI()
+    if v31 then
+        local v2294 = 0
+        while true do
+            if 0 == v2294 then
+                v31:Disconnect()
+                v31 = nil
+                break
+            end
+        end
+    end
+    if v30 then
+        local v2295 = 0 + 0
+        while true do
+            if v2295 == 0 then
+                v30:Destroy()
+                v30 = nil
+                break
+            end
+        end
+    end
+end
+local v33 = S_Page:CreateSection("Silent Aim (Pistol)", "crosshair")
+PistolSection = v33
+local v34 = PistolSection:AddToggle("Silent Aim Twist Of Fate", false, function(v557)
+    local v558 = 947 - (652 + 295)
+    while true do
+        if v558 == (0 + 0) then
+            v12 = v557
+            if v557 then
+                local v3043 = 0 + 0
+                while true do
+                    if v3043 == 0 then
+                        createTargetSelectorUI()
+                        startConnection()
+                        break
+                    end
+                end
+            else
+                destroyTargetSelectorUI()
+                stopConnection()
+            end
+            break
+        end
+    end
+end)
+SilentAimToggle = v34
+local v35 = PistolSection:AddToggle("Predict Aim ToF", false, function(v559)
+    local v560 = 989 - (848 + 141)
+    local v561
+    local v562
+    local v563
+    while true do
+        if v560 == 3 then
+            v561(v1, v562)
+            break
+        end
+        if v560 == (742 - (372 + 368)) then
+            v562.Description = v563
+            v562.Duration = 2 + 0
+            v560 = 1133 - (542 + 588)
+        end
+        if v560 == (818 - (6 + 812)) then
+            v13 = v559
+            v561 = v1.Notify
+            v560 = 1706 - (1599 + 106)
+        end
+        if v560 == (2 - 1) then
+            v562 = {
+                Title = "Predict Aim",
+            }
+            v563 = (v559 and "Enabled") or "Disabled"
+            v560 = 1 + 1
+        end
+    end
+end, {
+    Flag = "Pistol_Predict",
+})
+PredictToggle = v35
+local v36 = PistolSection:AddCheckbox("Block aim Knocked", false, function(v564)
+    _G.Ox.AimConfig.Pistol_BlockKnocked = v564
+end, {
+    Flag = "Pistol_BlockKnocked",
+})
+BlockKnockedToggle = v36
+local v37 = PistolSection:AddToggle("Block Peluru (TOF)", false, function(v565)
+    local v566 = 0 + 0
+    local v567
+    local v568
+    local v569
+    while true do
+        if v566 == (11 - 8) then
+            v567(v1, v568)
+            break
+        end
+        if v566 == 1 then
+            v568 = {
+                Title = "Block Peluru",
+            }
+            v569 = (v565 and "AKTIF - Peluru tidak keluar") or "NONAKTIF"
+            v566 = 2 - 0
+        end
+        if v566 == (1 + 1) then
+            v568.Description = v569
+            v568.Duration = 1 + 2
+            v566 = 3 + 0
+        end
+        if v566 == 0 then
+            _G.Ox.BulletBlockConfig.Enabled = v565
+            v567 = v1.Notify
+            v566 = 1 + 0
+        end
+    end
+end, {
+    Flag = "Pistol_BlockPeluru",
+})
+BulletBlockToggle = v37
+local v38 = PistolSection:AddToggle("Lock Aim (Twist Of Fate)", false, function(v570)
+    _G.Ox.AimConfig.LockAim = v570
+end, {
+    Flag = "Pistol_LockAim",
+})
+LockAimToggle = v38
+local v39 = PistolSection:AddToggle("Wallcheck", false, function(v571)
+    v15 = v571
+end, {
+    Flag = "Pistol_Wallcheck",
+})
+WallCheckToggle = v39
+local v40 = PistolSection:AddToggle("Enable Laser Effect", true, function(v572)
+    v14 = v572
+    if not v572 then
+        clearLaser()
+    end
+end, {
+    Flag = "Pistol_Laser",
+})
+LaserToggle = v40
+UserInputService.InputBegan:Connect(function(v573, v574)
+    local v575 = v573.UserInputType == Enum.UserInputType.Touch
+    if v574 and not v575 then
+        return
+    end
+    if v573.UserInputType == Enum.UserInputType.MouseButton2 then
+        v16 = true
+        if _G.Ox.AimConfig.Flash_Silent then
+            flag = true
+        end
+    elseif v573.UserInputType == Enum.UserInputType.MouseButton1 then
+        doShoot()
+    end
+end)
+PistolSection:AddToggle("Silent Aim Flashlight", false, function(v576)
+    _G.Ox.AimConfig.Flash_Silent = v576
+    local v577 = v1.Notify
+    local v578 = {
+        Title = "Flash Silent Aim",
+    }
+    local v579 = (v576 and "AKTIF") or "NONAKTIF"
+    v578.Description = v579
+    v578.Duration = 1 + 1
+    v577(v1, v578)
+end)
+PistolSection:AddSlider("FlashHeadOffset", 0, 5 + 10, 1.5, function(v582)
+    _G.Ox.AimConfig.Flash_YOffset = v582
+end, {
+    Increment = 1929.1 - (1690 + 239),
+    Flag = "Flash_YOffset",
+})
+UserInputService.InputEnded:Connect(function(v583)
+    if v583.UserInputType == Enum.UserInputType.MouseButton2 then
+        v16 = false
+        flag = false
+        if v18 then
+            v18.Transparency = 3 - 2
+        end
+    end
+end)
+local v41 = nil
+function hookMobileButtons(v584)
+    task.wait(0.5 + 0)
+    local v585 = v584:WaitForChild("Controls", 10)
+    if not v585 then
+        return
+    end
+    local v586 = v585:WaitForChild("Gui-mob", 10 - 5)
+    if not v586 then
+        return
+    end
+    v586.InputBegan:Connect(function(v1888)
+        if
+            (v1888.UserInputType == Enum.UserInputType.Touch) or (
+                v1888.UserInputType == Enum.UserInputType.MouseButton1
+            )
+        then
+            local v2543 = 0
+            while true do
+                if v2543 == (0 - 0) then
+                    v16 = true
+                    if _G.Ox.AimConfig.Flash_Silent then
+                        flag = true
+                    end
+                    break
+                end
+            end
+        end
+    end)
+    v586.InputEnded:Connect(function(v1889)
+        if
+            (v1889.UserInputType == Enum.UserInputType.Touch) or (
+                v1889.UserInputType == Enum.UserInputType.MouseButton1
+            )
+        then
+            doShoot()
+            v16 = false
+            flag = false
+            if v18 then
+                v18.Transparency = 1 + 0
+            end
+        end
+    end)
+end
+function setupMobileButton()
+    local v587 = 0 - 0
+    local v588
+    local v589
+    while true do
+        if v587 == 1 then
+            v589 = v588:FindFirstChild("Survivor-mob")
+            if v589 then
+                task.spawn(hookMobileButtons, v589)
+            end
+            v587 = 2
+        end
+        if v587 == (1868 - (1736 + 132)) then
+            v588 = localPlayer:WaitForChild("PlayerGui", 10)
+            if not v588 then
+                return
+            end
+            v587 = 1 + 0
+        end
+        if v587 == (6 - 4) then
+            if v41 then
+                local v3045 = 0
+                while true do
+                    if v3045 == 0 then
+                        v41:Disconnect()
+                        v41 = nil
+                        break
+                    end
+                end
+            end
+            v41 = v588.ChildAdded:Connect(function(v2779)
+                if v2779.Name == "Survivor-mob" then
+                    task.spawn(hookMobileButtons, v2779)
+                end
+            end)
+            break
+        end
+    end
+end
+setupMobileButton()
+localPlayer.CharacterAdded:Connect(function(v590)
+    local v591 = 0 - 0
+    while true do
+        if v591 == 3 then
+            setupMobileButton()
+            if v12 then
+                stopConnection()
+                task.wait(0.2)
+                startConnection()
+                createTargetSelectorUI()
+            end
+            break
+        end
+        if v591 == (0 + 0) then
+            clearLaser()
+            v20 = {}
+            v591 = 1
+        end
+        if 2 == v591 then
+            v16 = false
+            v590:WaitForChild("HumanoidRootPart", 37 - (27 + 5))
+            v591 = 1 + 2
+        end
+        if v591 == (1 + 0) then
+            v22 = {}
+            v23 = 0 + 0
+            v591 = 1 + 1
+        end
+    end
+end)
+playerGui.ChildRemoved:Connect(function(v592)
+    if not v12 then
+        return
+    end
+    task.wait(0.5 + 0)
+    if not v12 then
+        return
+    end
+    if v592.Name == "ToFTargetSelector" then
+        createTargetSelectorUI()
+    end
+end)
+local v42 = S_Page:CreateSection("Anti Hook", "shield")
+AntiHookCard = v42
+local v43 = AntiHookCard:AddToggle("Anti Hook", false, function(v593)
+    ToggleAntiHook(v593)
+end)
+AntiHookToggle = v43
+AntiHookCard:AddSlider("Offset", 1167 - (771 + 346), 2634 - (1577 + 57), 437 - 187, function(v594)
+    _G.Ox.AntiHook.OffsetY = -v594
+end, {
+    Increment = 50,
+    Flag = "AntiHookOffsetY",
+})
+AntiHookCard:AddSlider("Send HZ", 1, 1140 - (684 + 396), 129 - 85, function(v595)
+    local v596 = 1196 - (700 + 496)
+    while true do
+        if v596 == (0 + 0) then
+            _G.Ox.AntiHook.Hz = v595
+            _G.Ox.AntiHook.Interval = (253 - (65 + 187)) / v595
+            break
+        end
+    end
+end, {
+    Increment = 940 - (827 + 112),
+    Flag = "AntiHookHz",
+})
+local v44 = S_Page:CreateSection("Survivor Ability", "zap")
+AbilityCard = v44
+local v45 = AbilityCard:AddToggle("Instant TP Gate", false, function(v597)
+    fn50(v597)
+end, {
+    Flag = "InstanTPGate",
+})
+InstantTPToggle = v45
+AbilityCard:AddToggle("Auto Crouch (Dodge S1)", false, function(v598)
+    _G.Ox.ParryConfig.AutoCrouch = v598
+end, {
+    Flag = "AutoCrouch",
+})
+local v46 = AbilityCard:AddToggle("Unlimited Vault", false, function(v599)
+    fn53(v599)
+end, {
+    Flag = "UnlimitedVault",
+})
+UnlimitedVaultToggle = v46
+local v47 = AbilityCard:AddToggle("Anti Slow Vault", false, function(v600)
+    _G.Ox.Config.Surv_PerfectVault = v600
+    local v601 = v1.Notify
+    local v602 = {
+        Title = "Anti Slow Vault",
+    }
+    local v603 = (v600 and "AKTIF") or "NONAKTIF"
+    v602.Description = v603
+    v602.Duration = 2
+    v601(v1, v602)
+end, {
+    Flag = "AntiSlowVault",
+})
+AntiSlowVaultToggle = v47local
+v48 = AbilityCard:AddToggle("Flowstate No CD", false, function(v606)
+    fn55(v606)
+end, {
+    Flag = "FlowstateNoCD",
+})
+FlowstateToggle = v48end
+local v48 = AbilityCard:AddToggle("No Fall Damage", false, function(v607)
+    fn14(v607)
+end, {
+    Flag = "NoFallDamage",
+})
+NoFallToggle = v3local
+v4 = AbilityCard:AddToggle("Bypass Exit Gate", false, function(v608)
+    fn15(v608)
+end, {
+    Flag = "BypassExiteGate",
+})
+BypassGateToggle = v4
+local v49 = AbilityCard:AddToggle("Self Heal", false, function(v609)
+    fn16(v609)
+end, {
+    Flag = "SelfHeal",
+})
+SelfHealToggle = v5local
+v6 = AbilityCard:AddToggle("God Mode (Anti Knockdown)", false, function(v610)
+    local v611 = 0 + 0
+    local v612
+    local v613
+    local v614
+    while true do
+        if v611 == (4 - 2) then
+            v613.Description = v614
+            v613.Duration = 7 - 4
+            v611 = 14 - 11
+        end
+        if v611 == (0 + 0) then
+            _G.Ox.GodMode = v610
+            v612 = v1.Notify
+            v611 = 1 + 0
+        end
+        if v611 == 3 then
+            v612(v1, v613)
+            break
+        end
+        if (1197 - (551 + 645)) == v611 then
+            v613 = {
+                Title = "God Mode",
+            }
+            v614 = (v610 and "AKTIF - HP tidak akan berkurang") or "NONAKTIF"
+            v611 = 345 - (166 + 177)
+        end
+    end
+end, {
+    Flag = "GodMode",
+})
+GodModeToggle = v6
+AbilityCard:AddButton("Apply Korless", function()
+    local v615 = 0
+    while true do
+        if (1856 - (1361 + 495)) == v615 then
+            fn17()
+            v1:Notify({
+                Title = "Korless",
+                Description = "Korless Morph Applied!",
+                Duration = 7 - 4,
+            })
+            break
+        end
+    end
+end)
+AbilityCard:AddButton("Instan Escape", function()
+    fn18()
+end)
+local v50 = S_Page:CreateSection("Survivor Aimbot", "crosshair")
+AimbotCard = v50
+local v51 = AimbotCard:AddToggle("Enable Aimbot", false, function(v616)
+    _G.Ox.Config.Surv_Aimbot_Enabled = v616
+    if not v616 then
+        local v2296 = 0 + 0
+        while true do
+            if 0 == v2296 then
+                if _G.Ox.survivorAimbotHighlight then
+                    _G.Ox.survivorAimbotHighlight.Parent = nil
+                end
+                if _G.Ox.SurvivorFOVFrame then
+                    _G.Ox.SurvivorFOVFrame.Visible = false
+                end
+                break
+            end
+        end
+    end
+    local v617 = v1.Notify
+    local v618 = {
+        Title = "Survivor Aimbot",
+    }
+    local v619 = (v616 and "AKTIF") or "NONAKTIF"
+    v618.Description = v619
+    v618.Duration = 4 - 2
+    v617(v1, v618)
+end, {
+    Flag = "SurvAimbot",
+})
+AimbotToggle = v51
+_G.Ox.Config.Surv_Aimbot_Enabled = survAimbotEnabled
+if not survAimbotEnabled then
+    local v1890 = 0 + 0
+    while true do
+        if v1890 == (224 - (148 + 76)) then
+            if _G.Ox.survivorAimbotHighlight then
+                _G.Ox.survivorAimbotHighlight.Parent = nil
+            end
+            if _G.Ox.SurvivorFOVFrame then
+                _G.Ox.SurvivorFOVFrame.Visible = false
+            end
+            break
+        end
+    end
+end
+AimbotCard:AddToggle("Show FOV Circle", true, function(v622)
+    local v623 = 0 - 0
+    while true do
+        if v623 == 0 then
+            _G.Ox.Config.Surv_Aimbot_ShowFOV = v622
+            if not v622 and _G.Ox.SurvivorFOVFrame then
+                _G.Ox.SurvivorFOVFrame.Visible = false
+            end
+            break
+        end
+    end
+end, {
+    Flag = "SurvAimbotFOV",
+})
+AimbotCard:AddSlider("FOV Radius", 30, 500, 405 - 255, function(v624)
+    _G.Ox.Config.Surv_Aimbot_Radius = v624
+end, {
+    Increment = 1 + 0,
+    Flag = "SurvAimbotRadius",
+})
+AimbotCard:AddSlider("Max Distance", 1792 - (735 + 1007), 1000, 300, function(v625)
+    _G.Ox.Config.Surv_Aimbot_MaxDist = v625
+end, {
+    Increment = 10,
+    Flag = "SurvAimbotMaxDist",
+})
+AimbotCard:AddSlider("Smoothness", 279.1 - (111 + 168), 1, 0.5 + 0, function(v626)
+    _G.Ox.Config.Surv_Aimbot_Smoothness = v626
+end, {
+    Increment = 0.05 + 0,
+    Flag = "SurvAimbotSmoot",
+})
+AimbotCard:AddSlider("Predict Offset", 0 - 0, 0.1 + 0, 0.01 + 0, function(v627)
+    _G.Ox.Config.Surv_Aimbot_Predict = v627
+end, {
+    Increment = 0.001 + 0,
+    Flag = "SurvAimbotPredict",
+})
+AimbotCard:AddDropdown(
+    "Target Part",
+    {
+        "Torso",
+        "Head",
+        "Root",
+    },
+    false,
+    function(v628)
+        _G.Ox.Config.Surv_Aimbot_TargetPart = v628
+    end,
+    {
+        Flag = "SurvAimbotTarget",
+    }
+)
+local v52 = S_Page:CreateSection("Auto Parry V1", "sword")
+ParryCardV1 = v52
+local v53 = ParryCardV1:AddToggle("Auto Parry V1", false, function(v629)
+    local v630 = 0
+    local v631
+    local v632
+    local v633
+    while true do
+        if (932 - (147 + 785)) == v630 then
+            _G.Ox.ParryConfig.AutoParry = v629
+            if not v629 then
+                local v3046 = 666 - (483 + 183)
+                while true do
+                    if v3046 == (0 - 0) then
+                        _G.Ox.State.ParryCooldown = false
+                        if _G.Ox.State.ParryCooldownThread then
+                            task.cancel(_G.Ox.State.ParryCooldownThread)
+                            _G.Ox.State.ParryCooldownThread = nil
+                        end
+                        v3046 = 1 + 0
+                    end
+                    if v3046 == (1912 - (1790 + 121)) then
+                        if ParryHUD and ParryHUD.Reset then
+                            ParryHUD.Reset()
+                        end
+                        break
+                    end
+                end
+            end
+            v630 = 3 - 2
+        end
+        if v630 == (1541 - (259 + 1280)) then
+            v633 = (v629 and "AKTIF") or "NONAKTIF"
+            v632.Description = v633
+            v630 = 1587 - (160 + 1424)
+        end
+        if v630 == (3 + 0) then
+            v632.Duration = 1 + 1
+            v631(v1, v632)
+            break
+        end
+        if v630 == (771 - (479 + 291)) then
+            v631 = v1.Notify
+            v632 = {
+                Title = "Auto Parry V1",
+            }
+            v630 = 3 - 1
+        end
+    end
+end, {
+    Flag = "AutoParryV1",
+})
+AutoParryToggle = v53
+local v54 = ParryCardV1:AddToggle("Custom GUI (V1)", false, function(v634)
+    if v634 then
+        if not _G.Ox.AutoParryCustom.Gui then
+            CreateCustomParryGUI()
+        end
+        _G.Ox.AutoParryCustom.Gui.Enabled = true
+        _G.Ox.AutoParryCustom.GuiVisible = true
+        UpdateCustomParryGUI(_G.Ox.ParryConfig.AutoParry)
+        v1:Notify({
+            Title = "Auto Parry GUI",
+            Description = "Gui Dimuat",
+            Duration = 973 - (569 + 402),
+        })
+    else
+        if _G.Ox.ParryConfig.AutoParry then
+            local v2780 = 1305 - (635 + 670)
+            while true do
+                if v2780 == (0 - 0) then
+                    _G.Ox.ParryConfig.AutoParry = false
+                    _G.Ox.AutoParryCustom.IsActive = false
+                    v2780 = 1
+                end
+                if v2780 == (3 - 2) then
+                    fn(AutoParryToggle, false)
+                    break
+                end
+            end
+        end
+        if _G.Ox.AutoParryCustom.Gui then
+            local v2781 = 598 - (42 + 556)
+            while true do
+                if (1401 - (1246 + 155)) == v2781 then
+                    _G.Ox.AutoParryCustom.Gui.Enabled = false
+                    _G.Ox.AutoParryCustom.GuiVisible = false
+                    break
+                end
+            end
+        end
+        v1:Notify({
+            Title = "Auto Parry GUI",
+            Description = "Gui Disembunyikan",
+            Duration = 734 - (31 + 701),
+        })
+    end
+end, {
+    Flag = "AutoParryGuiV1",
+})
+CustomParryToggle = v54
+ParryCardV1:AddCheckbox("Safety Parry", false, function(v635)
+    _G.Ox.ParryConfig.ParrySafety = v635
+end, {
+    Flag = "ParrySafetyV1",
+})
+ParryCardV1:AddToggle("Aggressive Mode", false, function(v636)
+    _G.Ox.ParryConfig.ParryAggressive = v636
+end, {
+    Flag = "ParryAggressiveV1",
+})
+ParryCardV1:AddToggle("Show Range Circle", true, function(v637)
+    _G.Ox.ParryConfig.ParryCircle = v637
+end, {
+    Flag = "ParryCircleV1",
+})
+ParryCardV1:AddSlider("Parry Radius", 16 - 11, 524 - (393 + 106), 1186 - (727 + 444), function(v638)
+    _G.Ox.ParryConfig.ParryRadius = v638
+end, {
+    Increment = 1,
+    Flag = "ParryRadiusV1",
+})
+ParryCardV1:AddSlider("Face Sensitivity", -(29 - 19), 4 + 6, 660 - (269 + 384), function(v639)
+    _G.Ox.ParryConfig.ParryFace = v639 / (1579 - (598 + 971))
+end, {
+    Increment = 1,
+    Flag = "ParryFaceV1",
+})
+local v55 = S_Page:CreateSection("Auto Drop Pallet", "fence")
+PalletCard = v55
+local v56 = PalletCard:AddToggle("Auto Drop Pallet", false, function(v640)
+    ToggleAutoPallet(v640)
+end, {
+    Flag = "AutoDropPallet",
+})
+AutoPalletToggle = v56
+PalletCard:AddCheckbox("Safety", true, function(v641)
+    _G.Ox.AutoPallet.Safety = v641
+end, {
+    Flag = "PalletSafety",
+})
+PalletCard:AddSlider("Trigger Distance", 2 + 3, 30, 10, function(v642)
+    _G.Ox.AutoPallet.Distance = v642
+end, {
+    Increment = 3 - 2,
+    Flag = "PalletDistance",
+})
+PalletCard:AddButton("Drop All Pallets", function()
+    DropAllPallets()
+end)
+local v57 = v:CreateTab("Killer", "skull")
+KillerTab = v57
+local v58 = KillerTab:CreatePage("Killer")
+K_Page = v58
+local v59 = K_Page:CreateSection("Killer Aimbot", "swords")
+KillerAimbotCard = v59
+local v60 = KillerAimbotCard:AddToggle("Enable Aimbot (Melee)", false, function(v643)
+    _G.Ox.Config.Killer_Aimbot_Enabled = v643
+    if not v643 and _G.Ox.killerAimbotHighlight then
+        _G.Ox.killerAimbotHighlight.Parent = nil
+    end
+    local v644 = v1.Notify
+    local v645 = {
+        Title = "Killer Aimbot",
+    }
+    local v646 = (v643 and "AKTIF") or "NONAKTIF"
+    v645.Description = v646
+    v645.Duration = 9 - 7
+    v644(v1, v645)
+end)
+KillerAimbotToggle = v60
+KillerAimbotCard:AddSlider("Max Distance", 13 - 8, 1475 - (800 + 645), 12, function(v649)
+    _G.Ox.Config.Killer_Aimbot_MaxDist = v649
+end, {
+    Increment = 1 + 0,
+    Flag = "AimbotKillerMaxDist",
+})
+KillerAimbotCard:AddSlider("Smoothness", 790.1 - (687 + 103), 1, 0.5, function(v650)
+    _G.Ox.Config.Killer_Aimbot_Smoothness = v650
+end, {
+    Increment = 1162.05 - (142 + 1020),
+    Flag = "AimbotKillerSmoothness",
+})
+local v61 = K_Page:CreateSection("Silent Veil", "arrow-up-right")
+VeilCard = v61
+local v62 = VeilCard:AddToggle("Silent Veil", false, function(v651)
+    _G.Ox.AimConfig.Aim_SilentVeilV2 = v651
+    local v652 = v1.Notify
+    local v653 = {
+        Title = "Silent Veil",
+    }
+    local v654 = (v651 and "ON") or "OFF"
+    v653.Description = v654
+    v653.Duration = 4 - 2
+    v652(v1, v653)
+end)
+VeilTog = v62
+VeilCard:AddToggle("Auto Predict", false, function(v657)
+    _G.Ox.Config.SpearSmart_enable = v657
+end, {
+    Flag = "SpearSmartVeil",
+})
+VeilCard:AddToggle("Show FOV", true, function(v658)
+    _G.Ox.AimConfig.Veil_ShowFOV = v658
+end, {
+    Flag = "VeilShowFOV",
+})
+VeilCard:AddSlider("Lead", 0.5 + 0, 518 - (306 + 207), 1405.4 - (112 + 1292), function(v659)
+    _G.Ox.AimConfig.Veil_LeadMultiplier = v659
+end, {
+    Increment = 0.1 + 0,
+    Flag = "VeilLeadMulti",
+})
+VeilCard:AddSlider("Spear Speed", 50, 1152 - (587 + 365), 1880 - (829 + 886), function(v660)
+    _G.Ox.AimConfig.SPEAR_Speed = v660
+end, {
+    Increment = 2 - 1,
+    Flag = "VeilSpearSpeed",
+})
+VeilCard:AddSlider("Spear Gravity", 3 + 7, 200, 408 - 305, function(v661)
+    _G.Ox.AimConfig.SPEAR_Gravity = v661
+end, {
+    Increment = 3 - 2,
+    Flag = "VeilSpearGravity",
+})
+VeilCard:AddSlider("Aura Speed", 50, 195 + 5, 74 + 91, function(v662)
+    _G.Ox.AimConfig.SPEAR_AuraSpeed = v662
+end, {
+    Increment = 1,
+    Flag = "VeilSpearAuraSpeed",
+})
+VeilCard:AddSlider("Aura Gravity", 17 - 7, 1177 - (613 + 364), 96.5, function(v663)
+    _G.Ox.AimConfig.SPEAR_AuraGravity = v663
+end, {
+    Increment = 1 + 0,
+    Flag = "VeilSpearAuraGravity",
+})
+VeilCard:AddSlider("FOV", 23 + 27, 112 + 388, 342 - 192, function(v664)
+    _G.Ox.AimConfig.Veil_FOV = v664
+end, {
+    Increment = 3 - 2,
+    Flag = "VeilFOV",
+})
+VeilCard:AddSlider("Max Dist", 50, 3184 - 2184, 327 + 173, function(v665)
+    _G.Ox.AimConfig.SPEAR_MaxDist = v665
+end, {
+    Increment = 1949 - (1467 + 472),
+    Flag = "SpearMaxDist",
+})
+local v63 = K_Page:CreateSection("Killer Ability", "zap")
+AntiBlindSection = v63
+local v64 = AntiBlindSection:AddToggle("Anti Blind (Flashlight)", false, function(v666)
+    _G.Ox.AntiBlindEnabled = v666
+    local v667 = v1.Notify
+    local v668 = {
+        Title = "Anti Blind",
+    }
+    local v669 = (v666 and "AKTIF - Immune dari flashlight") or "NONAKTIF"
+    v668.Description = v669
+    v668.Duration = 3
+    v667(v1, v668)
+end, {
+    Flag = "AntiBlind",
+})
+AntiBlindToggle = v64
+local v65 = AntiBlindSection:AddToggle("Anti Parry", false, function(v672)
+    ToggleCounterParry(v672)
+end)
+CounterParryToggle = v65
+local v66 = AntiBlindSection:AddToggle("Infinite Lunge", false, function(v673)
+    if v673 then
+        EnableInfiniteLunge()
+    else
+        DisableInfiniteLunge()
+    end
+end, {
+    Flag = "InfiniteLunge",
+})
+InfLungeToggle = v66
+local v67 = AntiBlindSection:AddToggle("Auto Stalk", false, function(v674)
+    ToggleAutoStalk(v674)
+end, {
+    Flag = "AutoStalk",
+})
+AutoStalkToggle = v67
+local v68 = AntiBlindSection:AddToggle("No Slowdown Killer", false, function(v675)
+    local v676 = 0
+    while true do
+        if v676 == 0 then
+            _G.Ox.NoSlowdownEnabled = v675
+            if v675 then
+                local v3047 = localPlayer.Character
+                if v3047 then
+                    local v3375 = v3047:FindFirstChildOfClass("Humanoid")
+                    if v3375 then
+                        v3375.WalkSpeed = 16
+                    end
+                end
+                v1:Notify({
+                    Title = "No Slowdown Killer",
+                    Description = "AKTIF - WalkSpeed dikunci 16",
+                    Duration = 3 - 0,
+                })
+            else
+                v1:Notify({
+                    Title = "No Slowdown Killer",
+                    Description = "NONAKTIF",
+                    Duration = 2,
+                })
+            end
+            break
+        end
+    end
+end, {
+    Flag = "NoSlowdown",
+})
+AntiSlowdownToggle = v68
+_G.Ox.NoSlowdownEnabled = noSlowdownEnabled
+if noSlowdownEnabled then
+    local v1891 = localPlayer.Character
+    if v1891 then
+        local v2550 = 1547 - (1077 + 470)
+        local v2551
+        while true do
+            if v2550 == (0 + 0) then
+                v2551 = v1891:FindFirstChildOfClass("Humanoid")
+                if v2551 then
+                    v2551.WalkSpeed = 16
+                end
+                break
+            end
+        end
+    end
+end
+local v69 = AntiBlindSection:AddToggle("Skill Hidden No CD", false, function(v677)
+    _G.Ox.BypassLeapEnabled = v677
+    if v677 then
+        fn12()
+        v1:Notify({
+            Title = "Skill Hidden No CD",
+            Description = "AKTIF - Cooldown skill Hidden dihilangkan",
+            Duration = 1 + 2,
+        })
+    else
+        local v2297 = 0 - 0
+        while true do
+            if v2297 == 0 then
+                if tbl5.LeapBypass then
+                    task.cancel(tbl5.LeapBypass)
+                    tbl5.LeapBypass = nil
+                end
+                v1:Notify({
+                    Title = "Skill Hidden No CD",
+                    Description = "NONAKTIF",
+                    Duration = 2,
+                })
+                break
+            end
+        end
+    end
+end, {
+    Flag = "BypassSkilHidden",
+})
+BypassLeapToggle = v69
+_G.Ox.BypassLeapEnabled = bypassLeapEnabled
+if bypassLeapEnabled then
+    fn12()
+elseif tbl5.LeapBypass then
+    task.cancel(tbl5.LeapBypass)
+    tbl5.LeapBypass = nil
+end
+local v70 = AntiBlindSection:AddToggle("Infinite Corrupt (Abyssal)", false, function(v678)
+    local v679 = 429 - (12 + 417)
+    local v680
+    local v681
+    local v682
+    while true do
+        if v679 == 1 then
+            v680 = v1.Notify
+            v681 = {
+                Title = "Infinite Corrupt",
+            }
+            v679 = 2
+        end
+        if v679 == (4 - 2) then
+            v682 = (v678 and "AKTIF - Tekan Q (PC) atau tombol skill (Mobile)") or "NONAKTIF"
+            v681.Description = v682
+            v679 = 3 + 0
+        end
+        if (0 - 0) == v679 then
+            _G.Ox.InfAbyssalEnabled = v678
+            if not v678 then
+                fn13()
+            end
+            v679 = 1
+        end
+        if v679 == (5 - 2) then
+            v681.Duration = 3
+            v680(v1, v681)
+            break
+        end
+    end
+end, {
+    Flag = "InfinityCorrupt",
+})
+InfAbyssalToggle = v70
+_G.Ox.InfAbyssalEnabled = infAbyssalEnabled
+if not infAbyssalEnabled then
+    fn13()
+end
+local v3 = K_Page:CreateSection("Silent Aim Flask (Cure)", "flask-conical")
+FlaskCard = v3
+local v9 = FlaskCard:AddToggle("Silent Aim Flask", false, function(v683)
+    _G.Ox.KILLER_SilentAimFlask = v683
+    local v684 = v1.Notify
+    local v685 = {
+        Title = "Silent Aim Flask",
+    }
+    local v686 = (v683 and "AKTIF") or "NONAKTIF"
+    v685.Description = v686
+    v685.Duration = 3 - 1
+    v684(v1, v685)
+end)
+FlaskToggle = v9
+local v10 = FlaskCard:AddToggle("Flask Laser", false, function(v689)
+    local v690 = 0
+    while true do
+        if 0 == v690 then
+            _G.Ox.KILLER_FlaskLaser = v689
+            if v689 then
+                local v3048 = 0
+                while true do
+                    if v3048 == (0 + 0) then
+                        pcall(NEX_StartCureFlaskLaser)
+                        v1:Notify({
+                            Title = "Flask Laser",
+                            Description = "AKTIF - Laser merah muncul",
+                            Duration = 1 + 1,
+                        })
+                        break
+                    end
+                end
+            else
+                if _G.Ox.NEX_CureFlaskLaserThread then
+                    _G.Ox.NEX_CureFlaskLaserThread:Disconnect()
+                    _G.Ox.NEX_CureFlaskLaserThread = nil
+                end
+                if _G.Ox.NEX_CureFlaskLaserPart then
+                    local v3377 = 0
+                    while true do
+                        if v3377 == (0 + 0) then
+                            pcall(function()
+                                _G.Ox.NEX_CureFlaskLaserPart:Destroy()
+                            end)
+                            _G.Ox.NEX_CureFlaskLaserPart = nil
+                            break
+                        end
+                    end
+                end
+                v1:Notify({
+                    Title = "Flask Laser",
+                    Description = "NONAKTIF",
+                    Duration = 5 - 3,
+                })
+            end
+            break
+        end
+    end
+end, {
+    Flag = "LaserFlask",
+})
+FlaskLaserToggle = v10
+_G.Ox.KILLER_FlaskLaser = killerFlaskLaser
+if killerFlaskLaser then
+    pcall(NEX_StartCureFlaskLaser)
+else
+    if _G.Ox.NEX_CureFlaskLaserThread then
+        local v2556 = 1105 - (924 + 181)
+        while true do
+            if v2556 == (797 - (263 + 534)) then
+                _G.Ox.NEX_CureFlaskLaserThread:Disconnect()
+                _G.Ox.NEX_CureFlaskLaserThread = nil
+                break
+            end
+        end
+    end
+    if _G.Ox.NEX_CureFlaskLaserPart then
+        pcall(function()
+            _G.Ox.NEX_CureFlaskLaserPart:Destroy()
+        end)
+        _G.Ox.NEX_CureFlaskLaserPart = nil
+    end
+end
+local v71 = K_Page:CreateSection("Anti Looping", "repeat")
+AntiLoopingSection = v71
+local v30 = AntiLoopingSection:AddToggle("Block Vault & Pallets", false, function(v691)
+    _G.Ox.BlockPalletEnabled = v691
+    if not v691 then
+        local v2298 = game:GetService("ReplicatedStorage").Remotes.Window.VaultCompleteEvent
+        local v2299 = game:GetService("ReplicatedStorage").Remotes.Pallet.PalletSlideCompleteEvent
+        local v2300 = workspace:FindFirstChild("Map")
+        if v2300 then
+            for v3049, v3050 in pairs(v2300:GetDescendants()) do
+                if v3050.Name == "VaultPointInUse" then
+                    pcall(function()
+                        v2298:FireServer(v3050.Parent, false)
+                    end)
+                elseif v3050.Name == "PalletPointSlideInUse" then
+                    pcall(function()
+                        v2299:FireServer(v3050.Parent, false)
+                    end)
+                end
+            end
+        end
+        return
+    end
+    local v692 = game:GetService("ReplicatedStorage").Remotes.Window.VaultEvent
+    local v693 = game:GetService("ReplicatedStorage").Remotes.Pallet.PalletSlideEvent
+    local v694 = workspace:FindFirstChild("Map")
+    if v694 then
+        for v2557, v2558 in pairs(v694:GetDescendants()) do
+            if v2558.Name == "VaultTrigger" then
+                pcall(function()
+                    v692:FireServer(v2558, true)
+                end)
+            end
+            if (v2558.Name == "PalletPointSlide") and v2558:IsA("BasePart") then
+                pcall(function()
+                    v693:FireServer(v2558, true)
+                end)
+            end
+        end
+    end
+    task.spawn(function()
+        local v1892 = 0
+        local v1893
+        local v1894
+        local v1895
+        while true do
+            if v1892 == 2 then
+                for v3051, v3052 in pairs(v1893:GetDescendants()) do
+                    watchPallet(v3052)
+                end
+                v1895 = v1893.DescendantAdded:Connect(function(v3053)
+                    watchPallet(v3053)
+                end)
+                v1892 = 1 + 2
+            end
+            if v1892 == 4 then
+                for v3054, v3055 in pairs(v1894) do
+                    v3055:Disconnect()
+                end
+                v1894 = {}
+                break
+            end
+            if v1892 == 0 then
+                v1893 = workspace:FindFirstChild("Map")
+                if not v1893 then
+                    return
+                end
+                v1892 = 1
+            end
+            if v1892 == 1 then
+                v1894 = {}
+                function watchPallet(v3056)
+                    if v3056:IsA("BasePart") and (v3056.Name == "PalletPoint") then
+                        local v3378 = v3056:GetPropertyChangedSignal("Name"):Connect(function()
+                            local v3627 = 0 + 0
+                            while true do
+                                if (0 - 0) == v3627 then
+                                    if not _G.Ox.BlockPalletEnabled then
+                                        return
+                                    end
+                                    if v3056.Name == "PalletPointSlide" then
+                                        task.wait(0.1 - 0)
+                                        pcall(function()
+                                            v693:FireServer(v3056, true)
+                                        end)
+                                    end
+                                    break
+                                end
+                            end
+                        end)
+                        table.insert(v1894, v3378)
+                    end
+                end
+                v1892 = 2
+            end
+            if v1892 == 3 then
+                table.insert(v1894, v1895)
+                while _G.Ox.BlockPalletEnabled do
+                    task.wait(0.5)
+                end
+                v1892 = 3 + 1
+            end
+        end
+    end)
+    v1:Notify({
+        Title = "Anti Looping",
+        Description = "âœ… Aktif!",
+        Duration = 709 - (562 + 145),
+    })
+end)
+AntiLoopingToggle = v30
+local v72 = v:CreateTab("Visual", "eye")
+EspTab = v72
+local v73 = EspTab:CreatePage("ESP")
+EspPage = v73
+local v33 = EspPage:CreateSection("ESP Settings", "eye")
+EspMasterCard = v33
+local v34 = EspMasterCard:AddToggle("Enable ESP", false, function(v695)
+    local v696 = 0 + 0
+    while true do
+        if v696 == 0 then
+            _G.Ox.ESPConfig.Master = v695
+            if v695 then
+                ForceRefreshMap()
+                if _G.Ox.SetupTrapWatcher then
+                    pcall(_G.Ox.SetupTrapWatcher)
+                end
+                if _G.Ox.ESPConfig.ButcherTrap and _G.Ox.RefreshAllTrapESP then
+                    task.spawn(function()
+                        local v3628 = 0
+                        while true do
+                            if v3628 == (0 + 0) then
+                                task.wait(0.2)
+                                pcall(_G.Ox.RefreshAllTrapESP)
+                                v3628 = 1 + 0
+                            end
+                            if v3628 == (1 + 0) then
+                                pcall(UpdateStaticESP)
+                                break
+                            end
+                        end
+                    end)
+                end
+                v1:Notify({
+                    Title = "ESP",
+                    Description = "AKTIF",
+                    Duration = 1 + 1,
+                })
+            else
+                local v3057 = 0 - 0
+                while true do
+                    if v3057 == (0 + 0) then
+                        ClearAllESP()
+                        v1:Notify({
+                            Title = "ESP",
+                            Description = "NONAKTIF",
+                            Duration = 9 - 7,
+                        })
+                        break
+                    end
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "EnableEspMaster",
+})
+EspMasterToggle = v34
+EspMasterCard:AddSlider("ESP Max Distance", 100, 1814 + 3186, 652 + 348, function(v697)
+    _G.Ox.ESPConfig.MaxDistance = v697
+end, {
+    Increment = 1976 - (1459 + 417),
+    Flag = "EspMaxDistance",
+})
+local v35 = EspMasterCard:AddCheckbox("Player ESP", false, function(v698)
+    local v699 = 0
+    while true do
+        if v699 == (286 - (194 + 92)) then
+            _G.Ox.ESPConfig.Player = v698
+            if _G.Ox.ESPConfig.Master then
+                if v698 then
+                    ScanMapESP()
+                else
+                    ClearESP("Player")
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "PlayerEsp",
+})
+PlayerToggle = v35
+PlayerToggle:AddColorPicker(_G.Ox.ESPColors.Player, {
+    Flag = "EspPlayer_Color",
+    Title = "Warna Player ESP",
+    Callback = function(v700)
+        local v701 = 1385 - (1057 + 328)
+        while true do
+            if v701 == (0 - 0) then
+                _G.Ox.ESPColors.Player = v700
+                if _G.Ox.ESPConfig.Master then
+                    UpdatePlayerESP()
+                end
+                break
+            end
+        end
+    end,
+})
+local v36 = EspMasterCard:AddCheckbox("Killer ESP", false, function(v702)
+    local v703 = 0
+    while true do
+        if (0 - 0) == v703 then
+            _G.Ox.ESPConfig.Killer = v702
+            if _G.Ox.ESPConfig.Master then
+                if v702 then
+                    ScanMapESP()
+                else
+                    ClearESP("Killer")
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "KillerEsp",
+})
+KillerToggle = v36
+KillerToggle:AddColorPicker(_G.Ox.ESPColors.Killer, {
+    Flag = "EspKiller_Color",
+    Title = "Warna Killer ESP",
+    Callback = function(v704)
+        local v705 = 0
+        while true do
+            if (532 - (5 + 527)) == v705 then
+                _G.Ox.ESPColors.Killer = v704
+                if _G.Ox.ESPConfig.Master then
+                    UpdatePlayerESP()
+                end
+                break
+            end
+        end
+    end,
+})
+local v37 = EspMasterCard:AddCheckbox("ESP Name", false, function(v706)
+    _G.Ox.ESPConfig.Name = v706
+    if _G.Ox.ESPConfig.Master then
+        ScanMapESP()
+        if _G.Ox.ESPConfig.ButcherTrap and _G.Ox.RefreshAllTrapESP then
+            pcall(_G.Ox.RefreshAllTrapESP)
+        end
+    else
+        ClearAllESP()
+    end
+end, {
+    Flag = "EspName",
+})
+NameToggle = v37
+local v38 = EspMasterCard:AddCheckbox("ESP Distance", false, function(v707)
+    _G.Ox.ESPConfig.Distance = v707
+    if _G.Ox.ESPConfig.Master then
+        UpdatePlayerESP()
+    end
+end, {
+    Flag = "EspDistancw",
+})
+DistToggle = v38
+local v40 = EspMasterCard:AddCheckbox("ESP Status survivors", false, function(v708)
+    local v709 = 0 + 0
+    while true do
+        if v709 == (780 - (342 + 438)) then
+            _G.Ox.ESPConfig.Status = v708
+            if _G.Ox.ESPConfig.Master then
+                UpdatePlayerESP()
+            end
+            break
+        end
+    end
+end, {
+    Flag = "EspStatus",
+})
+StatusToggle = v40
+local v42 = EspMasterCard:AddCheckbox("ESP Item Icon", false, function(v710)
+    _G.Ox.ESPConfig.ItemIcon = v710
+    if _G.Ox.ESPConfig.Master then
+        UpdatePlayerESP()
+    end
+end, {
+    Flag = "EspItemIcon",
+})
+IconToggle = v42
+local v43 = EspMasterCard:AddCheckbox("ESP Killer Warn", false, function(v711)
+    local v712 = 0
+    while true do
+        if v712 == (0 + 0) then
+            _G.Ox.ESPConfig.KillerWarn = v711
+            if not v711 then
+                local v3058 = localPlayer.Character
+                local v3059 = v3058 and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+                if v3059 and v3059:FindFirstChild("KillerWarn") then
+                    v3059.KillerWarn:Destroy()
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "KillerWarn",
+})
+WarnToggle = v43
+local v44 = EspMasterCard:AddCheckbox("ESP Outline Mode", false, function(v713)
+    _G.Ox.ESPConfig.Outline = v713
+    if _G.Ox.ESPConfig.Master and _G.Ox.ESPConfig.ButcherTrap and _G.Ox.RefreshAllTrapESP then
+        pcall(_G.Ox.RefreshAllTrapESP)
+    end
+end, {
+    Flag = "EspOutlineMode",
+})
+OutlineToggle = v44
+local v45 = EspMasterCard:AddCheckbox("ESP Hook Count", false, function(v714)
+    _G.Ox.ESPConfig.HookCount = v714
+    if v714 then
+        local v2301 = 0 + 0
+        while true do
+            if (0 + 0) == v2301 then
+                UpdateHookData()
+                UpdatePlayerESP()
+                v2301 = 1 - 0
+            end
+            if v2301 == (1 + 0) then
+                UpdateHookUICounter()
+                v1:Notify({
+                    Title = "Hook ESP",
+                    Description = "AKTIF",
+                    Duration = 1 + 1,
+                })
+                break
+            end
+        end
+    else
+        local v2302 = 0
+        while true do
+            if v2302 == 1 then
+                UpdatePlayerESP()
+                v1:Notify({
+                    Title = "Hook ESP",
+                    Description = "NONAKTIF",
+                    Duration = 3 - 1,
+                })
+                break
+            end
+            if v2302 == 0 then
+                ClearHookESP()
+                ClearHookUICounter()
+                v2302 = 1 - 0
+            end
+        end
+    end
+end, {
+    Flag = "EspHookCount",
+})
+HookCountToggle = v45
+local v46 = EspPage:CreateSection("World Effects", "flashlight")
+PerfCard = v46
+local v47 = PerfCard:AddToggle("Full Bright", false, function(v715)
+    _G.Ox.FullBright = v715
+    local v716 = game:GetService("Lighting")
+    if not v716 then
+        return
+    end
+    if v715 then
+        local v2303 = 0
+        while true do
+            if v2303 == (12 - (6 + 6)) then
+                StartLightingGuard()
+                ReapplyPerformanceDelayed()
+                v2303 = 2 - 1
+            end
+            if v2303 == 1 then
+                v1:Notify({
+                    Title = "Full Bright",
+                    Description = "AKTIF",
+                    Duration = 5 - 3,
+                })
+                break
+            end
+        end
+    else
+        v716.Brightness = 1 + 0
+        v716.ClockTime = 1267 - (206 + 1047)
+        v716.FogEnd = 2112 - (470 + 642)
+        v716.Ambient = Color3.fromRGB(33 + 95, 128, 1195 - (552 + 515))
+        v716.OutdoorAmbient = Color3.fromRGB(103 + 25, 101 + 27, 128)
+        StopLightingGuard()
+        v1:Notify({
+            Title = "Full Bright",
+            Description = "NONAKTIF",
+            Duration = 2 + 0,
+        })
+    end
+end, {
+    Flag = "FullBright",
+})
+FullBrightToggle = v47
+PerfCard:AddSlider("Time Of Day", 0 + 0, 14 + 10, 14, function(v717)
+    _G.Ox.TimeOfDayValue = v717
+    if _G.Ox.FullBright then
+        local v2309 = game:GetService("Lighting")
+        if v2309 then
+            v2309.ClockTime = v717
+        end
+    end
+end, {
+    Increment = 1,
+    Flag = "TimeOfDay",
+})
+local v74 = PerfCard:AddToggle("No Fog", false, function(v718)
+    _G.Ox.NoFog = v718
+    if v718 then
+        local v2310 = 0
+        while true do
+            if v2310 == (1 + 0) then
+                v1:Notify({
+                    Title = "No Fog",
+                    Description = "AKTIF - Kabut hilang",
+                    Duration = 3,
+                })
+                break
+            end
+            if v2310 == (1051 - (701 + 350)) then
+                StartLightingGuard()
+                ApplyNoFog()
+                v2310 = 1 + 0
+            end
+        end
+    else
+        local v2311 = 0
+        local v2312
+        while true do
+            if v2311 == (1 + 0) then
+                StopLightingGuard()
+                v1:Notify({
+                    Title = "No Fog",
+                    Description = "NONAKTIF",
+                    Duration = 2,
+                })
+                break
+            end
+            if v2311 == 0 then
+                v2312 = game:GetService("Lighting")
+                if v2312 then
+                    v2312.FogStart = 0 + 0
+                    v2312.FogEnd = 1572 - 572
+                    local v3381 = v2312:FindFirstChildOfClass("Atmosphere")
+                    if v3381 then
+                        v3381.Density = 0.35 - 0
+                    end
+                end
+                v2311 = 1
+            end
+        end
+    end
+end, {
+    Flag = "NoFog",
+})
+NoFogToggle = v74
+local v75 = PerfCard:AddToggle("No Shadow", false, function(v719)
+    _G.Ox.NoShadow = v719
+    if v719 then
+        local v2313 = 0 + 0
+        while true do
+            if v2313 == (2 - 1) then
+                v1:Notify({
+                    Title = "No Shadow",
+                    Description = "AKTIF - Shadow hilang",
+                    Duration = 2,
+                })
+                break
+            end
+            if v2313 == (0 + 0) then
+                StartLightingGuard()
+                ApplyNoShadow()
+                v2313 = 1
+            end
+        end
+    else
+        ApplyNoShadow()
+        StopLightingGuard()
+        v1:Notify({
+            Title = "No Shadow",
+            Description = "NONAKTIF",
+            Duration = 2 + 0,
+        })
+    end
+end, {
+    Flag = "NoShadow",
+})
+NoShadowToggle = v75
+local v76 = PerfCard:AddToggle("Remove Texture", false, function(v720)
+    ToggleLowGFX(v720, "textures")
+end, {
+    Flag = "RemoveTexture",
+})
+LowGFXToggle = v76
+local v77 = PerfCard:AddToggle("Low Graphics", false, function(v721)
+    ToggleLowGFX(v721, "graphics")
+end, {
+    Flag = "LowGraphics",
+})
+LowGraphicsToggle = v77
+local v78 = EspPage:CreateSection("Map ESP", "map")
+MapCard = v78
+local v79 = MapCard:AddCheckbox("Generator ESP", false, function(v722)
+    local v723 = 0
+    while true do
+        if v723 == (0 - 0) then
+            _G.Ox.ESPConfig.Generator = v722
+            if _G.Ox.ESPConfig.Master then
+                if v722 then
+                    ScanMapESP()
+                else
+                    ClearESP("Generator")
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "GeneratorEsp",
+})
+GenToggle = v79
+GenToggle:AddColorPicker(_G.Ox.ESPColors.Generator, {
+    Flag = "Generator_Color",
+    Title = "Warna Generator",
+    Callback = function(v724)
+        local v725 = 1346 - (281 + 1065)
+        while true do
+            if v725 == (0 - 0) then
+                _G.Ox.ESPColors.Generator = v724
+                if _G.Ox.ESPConfig.Master then
+                    UpdateStaticESP()
+                end
+                break
+            end
+        end
+    end,
+})
+local v80 = MapCard:AddCheckbox("Generator Name & Progress", true, function(v726)
+    _G.Ox.ESPConfig.GeneratorName = v726
+    if _G.Ox.ESPConfig.Master then
+        ScanMapESP()
+    end
+end, {
+    Flag = "GeneratorName",
+})
+GenNameToggle = v80
+MapCard:AddColorPicker("Gen Done Color", _G.Ox.ESPColors.GeneratorDone, {
+    Flag = "GeneratorDone_Color",
+    Title = "Warna Generator Selesai",
+    Callback = function(v727)
+        _G.Ox.ESPColors.GeneratorDone = v727
+        if _G.Ox.ESPConfig.Master then
+            UpdateStaticESP()
+        end
+    end,
+})
+local v81 = MapCard:AddCheckbox("Pallet ESP", false, function(v728)
+    local v729 = 0
+    while true do
+        if v729 == (0 - 0) then
+            _G.Ox.ESPConfig.Pallet = v728
+            if _G.Ox.ESPConfig.Master then
+                if v728 then
+                    ScanMapESP()
+                else
+                    ClearESP("Pallet")
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "EspPallet",
+})
+PalletToggle = v81
+PalletToggle:AddColorPicker(_G.Ox.ESPColors.Pallet, {
+    Flag = "Pallet_Color",
+    Title = "Warna Pallet",
+    Callback = function(v730)
+        _G.Ox.ESPColors.Pallet = v730
+        if _G.Ox.ESPConfig.Master then
+            UpdateStaticESP()
+        end
+    end,
+})
+local v82 = MapCard:AddCheckbox("Window ESP", false, function(v731)
+    local v732 = 1211 - (1114 + 97)
+    while true do
+        if v732 == (0 - 0) then
+            _G.Ox.ESPConfig.Window = v731
+            if _G.Ox.ESPConfig.Master then
+                if v731 then
+                    ScanMapESP()
+                else
+                    ClearESP("Window")
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "EspWindow",
+})
+WindowToggle = v82
+WindowToggle:AddColorPicker(_G.Ox.ESPColors.Window, {
+    Flag = "Window_Color",
+    Title = "Warna Window",
+    Callback = function(v733)
+        _G.Ox.ESPColors.Window = v733
+        if _G.Ox.ESPConfig.Master then
+            UpdateStaticESP()
+        end
+    end,
+})
+local v83 = MapCard:AddCheckbox("Hook ESP", false, function(v734)
+    local v735 = 1913 - (279 + 1634)
+    while true do
+        if v735 == 0 then
+            _G.Ox.ESPConfig.Hook = v734
+            if _G.Ox.ESPConfig.Master then
+                if v734 then
+                    ScanMapESP()
+                else
+                    ClearESP("Hook")
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "HookEsp",
+})
+HookToggle = v83
+HookToggle:AddColorPicker(_G.Ox.ESPColors.Hook, {
+    Flag = "Hook_Color",
+    Title = "Warna Hook",
+    Callback = function(v736)
+        _G.Ox.ESPColors.Hook = v736
+        if _G.Ox.ESPConfig.Master then
+            UpdateStaticESP()
+        end
+    end,
+})
+local v84 = MapCard:AddCheckbox("Gate ESP", false, function(v737)
+    _G.Ox.ESPConfig.Gate = v737
+    if _G.Ox.ESPConfig.Master then
+        if v737 then
+            ScanMapESP()
+        else
+            ClearESP("Gate")
+        end
+    end
+end, {
+    Flag = "GateEsp",
+})
+GateToggle = v84
+GateToggle:AddColorPicker(_G.Ox.ESPColors.Gate, {
+    Flag = "Gate_Color",
+    Title = "Warna Gate",
+    Callback = function(v738)
+        _G.Ox.ESPColors.Gate = v738
+        if _G.Ox.ESPConfig.Master then
+            UpdateStaticESP()
+        end
+    end,
+})
+local v85 = MapCard:AddCheckbox("SCP ESP", false, function(v739)
+    _G.Ox.ESPConfig.SCP = v739
+    if _G.Ox.ESPConfig.Master then
+        if v739 then
+            ScanMapESP()
+        else
+            ClearESP("SCP")
+        end
+    end
+end, {
+    Flag = "EspScp",
+})
+SCPToggle = v85
+SCPToggle:AddColorPicker(_G.Ox.ESPColors.SCP, {
+    Flag = "ScpEsp_Color",
+    Title = "Warna SCP",
+    Callback = function(v740)
+        _G.Ox.ESPColors.SCP = v740
+        if _G.Ox.ESPConfig.Master then
+            UpdateSCPESP()
+        end
+    end,
+})
+local v86 = MapCard:AddCheckbox("Pumpkin ESP", false, function(v741)
+    _G.Ox.ESPConfig.Pumpkin = v741
+    if _G.Ox.ESPConfig.Master then
+        if v741 then
+            ScanMapESP()
+        else
+            ClearESP("Pumpkin")
+        end
+    end
+end, {
+    Flag = "EspPumpkin",
+})
+PumpkinToggle = v86
+PumpkinToggle:AddColorPicker(_G.Ox.ESPColors.Pumpkin, {
+    Flag = "Pumpkin_Color",
+    Title = "Warna Pumpkin",
+    Callback = function(v742)
+        local v743 = 1280 - (1213 + 67)
+        while true do
+            if v743 == 0 then
+                _G.Ox.ESPColors.Pumpkin = v742
+                if _G.Ox.ESPConfig.Master then
+                    UpdateStaticESP()
+                end
+                break
+            end
+        end
+    end,
+})
+local v87 = MapCard:AddCheckbox("Butcher Trap ESP", false, function(v744)
+    _G.Ox.ESPConfig.ButcherTrap = v744
+    if _G.Ox.ESPConfig.Master then
+        if v744 then
+            local v2783 = 0
+            while true do
+                if v2783 == (192 - (65 + 126)) then
+                    if _G.Ox.RefreshAllTrapESP then
+                        pcall(_G.Ox.RefreshAllTrapESP)
+                    end
+                    pcall(UpdateStaticESP)
+                    break
+                end
+                if v2783 == (0 + 0) then
+                    if _G.Ox.SetupTrapWatcher then
+                        pcall(_G.Ox.SetupTrapWatcher)
+                    end
+                    ScanMapESP()
+                    v2783 = 1086 - (189 + 896)
+                end
+            end
+        else
+            ClearESP("ButcherTrap")
+        end
+    end
+end, {
+    Flag = "ButcherTrapEsp",
+})
+v87:AddColorPicker(_G.Ox.ESPColors.ButcherTrap, {
+    Flag = "ButcherTrap_Color",
+    Title = "Butcher Trap Color",
+    Callback = function(v745)
+        _G.Ox.ESPColors.ButcherTrap = v745
+        if _G.Ox.ESPConfig.Master then
+            local v2314 = 0 + 0
+            while true do
+                if v2314 == (1963 - (1872 + 91)) then
+                    if _G.Ox.RefreshAllTrapESP then
+                        pcall(_G.Ox.RefreshAllTrapESP)
+                    end
+                    pcall(UpdateStaticESP)
+                    break
+                end
+            end
+        end
+    end,
+})
+MapCard:AddButton("Refresh Map", function()
+    ForceRefreshMap()
+    v1:Notify({
+        Title = "Map",
+        Description = "Refreshed!",
+        Duration = 4 - 2,
+    })
+end)
+local v88 = EspPage:CreateSection("Information", "info")
+NextKillerCard = v88
+local v86 = NextKillerCard:AddToggle("Next Killer Display", false, function(v746)
+    fn19(v746)
+end, {
+    Flag = "NextKillerDisplay",
+})
+NextKillerToggle = v86
+local v89 = NextKillerCard:AddToggle("Next Map Prediction", false, function(v747)
+    fn20(v747)
+end, {
+    Flag = "NextMapPredict",
+})
+MapPredictToggle = v89
+local v90 = NextKillerCard:AddToggle("Killer Perks Display", false, function(v748)
+    fn21(v748)
+end, {
+    Flag = "KillerPerkDisplay",
+})
+KillerPerksToggle = v90
+local v91 = NextKillerCard:AddToggle("Killer Stun Indicator", false, function(v749)
+    fn22(v749)
+end, {
+    Flag = "KillerStunIndicator",
+})
+StunToggle = v91
+local v92 = NextKillerCard:AddToggle("Spectator info", false, function(v750)
+    fn4(v750)
+end, {
+    Flag = "SpectatorInfo",
+})
+SpectatorToggle = v92
+local v93 = v:CreateTab("Teleport", "navigation")
+TeleportTab = v93
+local v94 = TeleportTab:CreatePage("Teleport")
+T_Page = v94
+local v95 = T_Page:CreateSection("Teleport Map", "map")
+TeleportMapCard = v95
+TeleportMapCard:AddButton("Refresh Map Cache", function()
+    local v751 = 0
+    while true do
+        if v751 == 2 then
+            _G.Ox.Teleport.PalletIndex = 1
+            _G.Ox.Teleport.WindowIndex = 1 + 0
+            v751 = 3
+        end
+        if v751 == (10 - 7) then
+            v1:Notify({
+                Title = "Refresh",
+                Description = "Cache map di-refresh!",
+                Duration = 2,
+            })
+            break
+        end
+        if v751 == 1 then
+            _G.Ox.Teleport.HookIndex = 1
+            _G.Ox.Teleport.GateIndex = 1 + 0
+            v751 = 1 + 1
+        end
+        if v751 == (0 - 0) then
+            fn2()
+            _G.Ox.Teleport.GenIndex = 77 - (22 + 54)
+            v751 = 2 - 1
+        end
+    end
+end)
+TeleportMapCard:AddButton("Teleport ke Generator", function()
+    local v752 = 0
+    local v753
+    while true do
+        if v752 == (0 - 0) then
+            if #tbl.Generators == (0 + 0) then
+                fn2()
+            end
+            if #tbl.Generators < _G.Ox.Teleport.GenIndex then
+                _G.Ox.Teleport.GenIndex = 3 - 2
+            end
+            v752 = 1535 - (553 + 981)
+        end
+        if v752 == 2 then
+            _G.Ox.Teleport.GenIndex = _G.Ox.Teleport.GenIndex + 1
+            break
+        end
+        if v752 == (1 + 0) then
+            v753 = tbl.Generators[_G.Ox.Teleport.GenIndex]
+            if v753 and v753.part then
+                local v3060 = 0
+                while true do
+                    if v3060 == (0 + 0) then
+                        fn3(v753.part)
+                        v1:Notify({
+                            Title = "TP Generator",
+                            Description = "Generator " .. _G.Ox.Teleport.GenIndex,
+                            Duration = 1.2,
+                        })
+                        break
+                    end
+                end
+            else
+                v1:Notify({
+                    Title = "TP Generator",
+                    Description = "Generator tidak ditemukan!",
+                    Duration = 2 + 0,
+                })
+            end
+            v752 = 5 - 3
+        end
+    end
+end)
+TeleportMapCard:AddButton("Teleport ke Hook", function()
+    if #tbl.Hooks == (0 - 0) then
+        fn2()
+    end
+    if #tbl.Hooks < _G.Ox.Teleport.HookIndex then
+        _G.Ox.Teleport.HookIndex = 1898 - (1320 + 577)
+    end
+    local v754 = tbl.Hooks[_G.Ox.Teleport.HookIndex]
+    local v755 = v754
+    if v754 then
+        local v2315 = v754:FindFirstChild("HookPoint")
+        v755 = v2315 or v754:FindFirstChildWhichIsA("BasePart")
+    end
+    if v755 then
+        fn3(v755)
+        v1:Notify({
+            Title = "TP Hook",
+            Description = "Hook " .. _G.Ox.Teleport.HookIndex,
+            Duration = 1.2,
+        })
+    end
+    _G.Ox.Teleport.HookIndex = _G.Ox.Teleport.HookIndex + 1
+end)
+TeleportMapCard:AddButton("Teleport ke Gate", function()
+    local v756 = 849 - (667 + 182)
+    local v757
+    local v758
+    while true do
+        if v756 == 0 then
+            if #tbl.Gates == (1288 - (1115 + 173)) then
+                fn2()
+            end
+            if #tbl.Gates < _G.Ox.Teleport.GateIndex then
+                _G.Ox.Teleport.GateIndex = 1 - 0
+            end
+            v756 = 1 + 0
+        end
+        if (1757 - (1375 + 380)) == v756 then
+            if v758 then
+                local v3061 = 0 + 0
+                while true do
+                    if v3061 == 0 then
+                        fn3(v758)
+                        v1:Notify({
+                            Title = "TP Gate",
+                            Description = "Gate " .. _G.Ox.Teleport.GateIndex,
+                            Duration = 27.2 - (12 + 14),
+                        })
+                        break
+                    end
+                end
+            end
+            _G.Ox.Teleport.GateIndex = _G.Ox.Teleport.GateIndex + (2 - 1)
+            break
+        end
+        if 1 == v756 then
+            v757 = tbl.Gates[_G.Ox.Teleport.GateIndex]
+            v758 = v757 and v757:FindFirstChildWhichIsA("BasePart")
+            v756 = 2
+        end
+    end
+end)
+TeleportMapCard:AddButton("Teleport ke Pallet", function()
+    local v759 = 0 - 0
+    local v760
+    local v761
+    while true do
+        if (4 - 2) == v759 then
+            if v760 then
+                local v3062 = 0
+                local v3063
+                while true do
+                    if 0 == v3062 then
+                        v3063 = v760:FindFirstChild("PrimaryPartPallet")
+                        v761 = v3063 or v760:FindFirstChildWhichIsA("BasePart")
+                        break
+                    end
+                end
+            end
+            if v761 then
+                local v3064 = 0
+                while true do
+                    if v3064 == (0 - 0) then
+                        fn3(v761)
+                        v1:Notify({
+                            Title = "TP Pallet",
+                            Description = "Pallet " .. _G.Ox.Teleport.PalletIndex,
+                            Duration = 1.2,
+                        })
+                        break
+                    end
+                end
+            end
+            v759 = 3
+        end
+        if v759 == 1 then
+            v760 = tbl.Pallets[_G.Ox.Teleport.PalletIndex]
+            v761 = v760
+            v759 = 2
+        end
+        if 3 == v759 then
+            _G.Ox.Teleport.PalletIndex = _G.Ox.Teleport.PalletIndex + (1 - 0)
+            break
+        end
+        if v759 == 0 then
+            if #tbl.Pallets == (0 - 0) then
+                fn2()
+            end
+            if #tbl.Pallets < _G.Ox.Teleport.PalletIndex then
+                _G.Ox.Teleport.PalletIndex = 1
+            end
+            v759 = 732 - (354 + 377)
+        end
+    end
+end)
+TeleportMapCard:AddButton("Teleport ke Window", function()
+    local v762 = 0 - 0
+    local v763
+    local v764
+    while true do
+        if v762 == (7 - 4) then
+            _G.Ox.Teleport.WindowIndex = _G.Ox.Teleport.WindowIndex + (1983 - (263 + 1719))
+            break
+        end
+        if v762 == (1 + 1) then
+            if v763 then
+                local v3065 = v763:FindFirstChild("Bottom")
+                v764 = v3065 or v763:FindFirstChildWhichIsA("BasePart")
+            end
+            if v764 then
+                fn3(v764)
+                v1:Notify({
+                    Title = "TP Window",
+                    Description = "Window " .. _G.Ox.Teleport.WindowIndex,
+                    Duration = 360.2 - (335 + 24),
+                })
+            end
+            v762 = 3
+        end
+        if (951 - (882 + 69)) == v762 then
+            if #tbl.Windows == (1686 - (657 + 1029)) then
+                fn2()
+            end
+            if #tbl.Windows < _G.Ox.Teleport.WindowIndex then
+                _G.Ox.Teleport.WindowIndex = 1201 - (685 + 515)
+            end
+            v762 = 1
+        end
+        if v762 == (1639 - (745 + 893)) then
+            v763 = tbl.Windows[_G.Ox.Teleport.WindowIndex]
+            v764 = v763
+            v762 = 1 + 1
+        end
+    end
+end)
+local v96 = T_Page:CreateSection("Teleport Player", "users")
+PlayerCard = v96
+local v97 = nil
+local v98 = {}
+local function v99()
+    local v765 = 772 - (274 + 498)
+    while true do
+        if (0 + 0) == v765 then
+            v98 = {}
+            for v2784, v2785 in pairs(Players:GetPlayers()) do
+                if (v2785 ~= localPlayer) and v2785.Character then
+                    table.insert(v98, v2785.Name)
+                end
+            end
+            v765 = 1 + 0
+        end
+        if v765 == 1 then
+            table.sort(v98)
+            break
+        end
+    end
+end
+v99()
+local v100 = PlayerCard:AddDropdown("Pilih Player", v98, false, function(v766)
+    v97 = v766
+end)
+PlayerDropdown = v100
+PlayerCard:AddButton("Refresh Player List", function()
+    local v767 = 0
+    while true do
+        if v767 == 0 then
+            v99()
+            pcall(function()
+                if PlayerDropdown.Refresh then
+                    PlayerDropdown:Refresh(v98)
+                elseif PlayerDropdown.SetValues then
+                    PlayerDropdown:SetValues(v98)
+                elseif PlayerDropdown.SetOptions then
+                    PlayerDropdown:SetOptions(v98)
+                elseif PlayerDropdown.Update then
+                    PlayerDropdown:Update(v98)
+                end
+            end)
+            v767 = 1607 - (1035 + 571)
+        end
+        if v767 == (1 + 0) then
+            v1:Notify({
+                Title = "Refresh",
+                Description = "List player di-refresh! (" .. #v98 .. " player)",
+                Duration = 1 + 1,
+            })
+            break
+        end
+    end
+end)
+Players.PlayerAdded:Connect(function()
+    task.wait(0.3 - 0)
+    v99()
+    pcall(function()
+        if PlayerDropdown.Refresh then
+            PlayerDropdown:Refresh(v98)
+        end
+    end)
+    break
+end)
+Players.PlayerRemoving:Connect(function()
+    task.wait(0.1)
+    v99()
+    pcall(function()
+        if PlayerDropdown.Refresh then
+            PlayerDropdown:Refresh(v98)
+        end
+    end)
+end)
+PlayerCard:AddButton("Teleport ke Player", function()
+    local v769 = 0 - 0
+    while true do
+        if v769 == 0 then
+            if v97 and (v97 ~= "") then
+                local v3066 = 0 + 0
+                local v3067
+                while true do
+                    if v3066 == 0 then
+                        v3067 = Players:FindFirstChild(v97)
+                        if v3067 and v3067.Character and v3067.Character:FindFirstChild("HumanoidRootPart") then
+                            local v3833 = localPlayer.Character
+                            if v3833 and v3833:FindFirstChild("HumanoidRootPart") then
+                                local v4001 = 0
+                                while true do
+                                    if v4001 == (0 + 0) then
+                                        v3833.HumanoidRootPart.CFrame = v3067.Character.HumanoidRootPart.CFrame
+                                            + Vector3.new(0, 8 - 5, 224 - (109 + 115))
+                                        v1:Notify({
+                                            Title = "Teleport",
+                                            Description = "Ke " .. v97,
+                                            Duration = 1401 - (1047 + 352),
+                                        })
+                                        break
+                                    end
+                                end
+                            end
+                        else
+                            v1:Notify({
+                                Title = "Error",
+                                Description = "Target tidak valid!",
+                                Duration = 1767 - (852 + 913),
+                            })
+                        end
+                        v3066 = 1
+                    end
+                    if v3066 == (1 + 0) then
+                        return
+                    end
+                end
+            end
+            v1:Notify({
+                Title = "Error",
+                Description = "Pilih pemain terlebih dulu!",
+                Duration = 1348 - (384 + 961),
+            })
+            break
+        end
+    end
+end)
+local v101 = v:CreateTab("Settings", "settings")
+SettingsTab = v101
+local v102 = SettingsTab:CreatePage("Settings")
+S_Page1 = v102
+local v103 = S_Page1:CreateSection("UI Config", "sliders-vertical")
+AppearanceCard = v103
+AppearanceCard:AddKeybind("Menu Keybind", "RightAlt", function(v770)
+    v:SetMenuKey(v770)
+end, {
+    Flag = "MenuKeybing",
+})
+local v104 = S_Page1:CreateSection("Config", "sliders-vertical")
+SavesCard = v104
+SavesCard:AddConfigManager("Choco HUB/Configs")
+v104:ThemePicker({
+    Title = "Theme",
+    Description = "Select UI theme",
+    Callback = function(v771)
+        v:Notify({
+            Title = "Choco HUB",
+            Description = "Theme changed to: " .. tostring(v771),
+            Duration = 4 - 2,
+        })
+    end,
+})
+v104:Button("Unload", function()
+    if _G.Ox and _G.Ox.RawWindow then
+        pcall(function()
+            _G.Ox.RawWindow:Destroy()
+        end)
+    end
+end)
+local v105 = S_Page1:CreateSection("Float Logo", "sliders-vertical")
+v105:AddToggle("Enable Float Logo", true, function(v772)
+    local v773 = 0 - 0
+    while true do
+        if (0 - 0) == v773 then
+            getgenv().ChocoHUB_FloatLogoEnabled = v772
+            if not v772 then
+                local v3068 = playerGui:FindFirstChild("ChocoFloatLogo")
+                if v3068 then
+                    v3068:Destroy()
+                end
+            end
+            break
+        end
+    end
+end, {
+    Flag = "FloatLogoEnabled",
+})
+v105:AddSlider("Logo Size", 624 - (591 + 1), 24 + 96, 1526 - (218 + 1252), function(v774)
+    local v775 = 0 + 0
+    local v776
+    while true do
+        if (357 - (321 + 35)) == v775 then
+            if v776 then
+                v776.Size = UDim2.new(394 - (239 + 155), v774, 0, v774)
+            end
+            break
+        end
+        if v775 == (0 + 0) then
+            getgenv().ChocoHUB_FloatLogoSize = v774
+            v776 = playerGui:FindFirstChild("ChocoFloatLogo") and playerGui.ChocoFloatLogo:FindFirstChild("FloatLogo")
+            v775 = 1
+        end
+    end
+end, {
+    Flag = "FloatLogoSize",
+})
+task.spawn(function()
+    local v777 = 42 - (41 + 1)
+    while true do
+        if 0 == v777 then
+            task.wait(202 - (80 + 120))
+            fn2()
+            break
+        end
+    end
+end)
+localPlayer.CharacterAdded:Connect(function()
+    _G.Ox.State.busy = false
+    _G.Ox.State.trapBusy = false
+    if _G.Ox.Auto.SkillCheck then
+        task.wait(1 + 0)
+        fn7()
+    end
+    if _G.Ox.Auto.TrapSkillCheck then
+        _G.Ox.StartTrapSkillCheck()
+    end
+end)
+localPlayer.CharacterAdded:Connect(function()
+    task.wait(1.5)
+    if _G.Ox.NoSlowdownEnabled then
+        local v2316 = localPlayer.Character
+        if v2316 then
+            local v2786 = v2316:FindFirstChildOfClass("Humanoid")
+            if v2786 then
+                v2786.WalkSpeed = 29 - 13
+            end
+        end
+    end
+end)
+localPlayer.CharacterAdded:Connect(function()
+    task.wait(1.5 + 0)
+    if _G.Ox.BypassLeapEnabled then
+        fn12()
+    end
+end)
+UserInputService.InputBegan:Connect(function(v778, v779)
+    local v780 = 0 + 0
+    while true do
+        if v780 == 0 then
+            if v779 then
+                return
+            end
+            if
+                (v778.UserInputType == Enum.UserInputType.MouseButton2)
+                and _G.Ox.Config.Surv_Aimbot_Enabled
+                and (GetRole() == "Survivor")
+            then
+                _G.Ox.isAimbotHolding = true
+                _G.Ox.lockedAimbotTarget = getBestAimbotTarget()
+            end
+            break
+        end
+    end
+end)
+UserInputService.InputEnded:Connect(function(v781)
+    if v781.UserInputType == Enum.UserInputType.MouseButton2 then
+        _G.Ox.isAimbotHolding = false
+        _G.Ox.lockedAimbotTarget = nil
+        if _G.Ox.survivorAimbotHighlight then
+            _G.Ox.survivorAimbotHighlight.Parent = nil
+        end
+    end
+end)
+task.spawn(function()
+    while _G.Ox.ScriptAlive do
+        task.wait(1)
+        if not _G.Ox.ScriptAlive then
+            break
+        end
+        if _G.Ox.Config.Surv_Aimbot_Enabled and (GetRole() == "Survivor") and UserInputService.TouchEnabled then
+            local v2565 = localPlayer:FindFirstChild("PlayerGui")
+            if v2565 then
+                local v3070 = 0 - 0
+                local v3071
+                while true do
+                    if v3070 == (0 - 0) then
+                        v3071 = v2565:FindFirstChild("Survivor-mob")
+                        if v3071 then
+                            local v3834 = 0 - 0
+                            local v3835
+                            while true do
+                                if v3834 == (0 - 0) then
+                                    v3835 = v3071:FindFirstChild("Controls")
+                                    if v3835 then
+                                        local v4163 = v3835:FindFirstChild("attack")
+                                        local v4164 = v4163 or v3835:FindFirstChild("Gui-mob")
+                                        if v4164 and v4164.Visible then
+                                            if not _G.Ox.isAimbotHolding then
+                                                _G.Ox.isAimbotHolding = true
+                                                _G.Ox.lockedAimbotTarget = getBestAimbotTarget()
+                                            end
+                                        elseif _G.Ox.isAimbotHolding then
+                                            _G.Ox.isAimbotHolding = false
+                                            _G.Ox.lockedAimbotTarget = nil
+                                            if _G.Ox.survivorAimbotHighlight then
+                                                _G.Ox.survivorAimbotHighlight.Parent = nil
+                                            end
+                                        end
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                        break
+                    end
+                end
+            end
+        elseif _G.Ox.isAimbotHolding and UserInputService.TouchEnabled then
+            _G.Ox.isAimbotHolding = false
+            _G.Ox.lockedAimbotTarget = nil
+            if _G.Ox.survivorAimbotHighlight then
+                _G.Ox.survivorAimbotHighlight.Parent = nil
+            end
+        end
+    end
+end)
+local v106 = nil
+UserInputService.InputBegan:Connect(function(v782, v783)
+    local v784 = v782.UserInputType == Enum.UserInputType.Touch
+    local v785 = GetRole()
+    if v782.UserInputType == Enum.UserInputType.MouseButton1 then
+        if v783 then
+            return
+        end
+        if (v785 == "Killer") and _G.Ox.Config.Killer_Aimbot_Enabled then
+            _G.Ox.lockedKillerAimbotTarget = getBestKillerAimbotTarget()
+            if _G.Ox.lockedKillerAimbotTarget then
+                _G.Ox.isKillerAimbotHolding = true
+            end
+        end
+    end
+    if v784 and (v785 == "Killer") and _G.Ox.Config.Killer_Aimbot_Enabled then
+        local v2317 = localPlayer:FindFirstChild("PlayerGui")
+        local v2318 = nil
+        if v2317 then
+            for v3072, v3073 in pairs(v2317:GetChildren()) do
+                if (string.sub(v3073.Name, -(2 + 2)) == "-mob") and (v3073.Name ~= "Survivor-mob") then
+                    v2318 = v3073
+                    break
+                end
+            end
+        end
+        local v2319 = v2318 and v2318:FindFirstChild("Controls") and v2318.Controls:FindFirstChild("attack")
+        if v2319 and v2319.Visible then
+            local v2787 = 0 + 0
+            local v2788
+            local v2789
+            local v2790
+            while true do
+                if v2787 == 0 then
+                    v2788 = v782.Position
+                    v2789 = v2319.AbsolutePosition
+                    v2787 = 1 + 0
+                end
+                if v2787 == 1 then
+                    v2790 = v2319.AbsoluteSize
+                    if
+                        (v2789.X <= v2788.X)
+                        and (v2788.X <= (v2789.X + v2790.X))
+                        and (v2789.Y <= v2788.Y)
+                        and (v2788.Y <= (v2789.Y + v2790.Y))
+                    then
+                        local v3729 = 0
+                        while true do
+                            if 0 == v3729 then
+                                _G.Ox.lockedKillerAimbotTarget = getBestKillerAimbotTarget()
+                                if _G.Ox.lockedKillerAimbotTarget then
+                                    local v4093 = 1226 - (165 + 1061)
+                                    while true do
+                                        if v4093 == 0 then
+                                            _G.Ox.isKillerAimbotHolding = true
+                                            v106 = v782
+                                            break
+                                        end
+                                    end
+                                end
+                                break
+                            end
+                        end
+                    end
+                    break
+                end
+            end
+        end
+    end
+end)
+UserInputService.InputEnded:Connect(function(v786)
+    local v787 = 0 + 0
+    while true do
+        if v787 == (0 + 0) then
+            if v786.UserInputType == Enum.UserInputType.MouseButton1 then
+                local v3074 = 0
+                while true do
+                    if v3074 == 0 then
+                        _G.Ox.isKillerAimbotHolding = false
+                        _G.Ox.lockedKillerAimbotTarget = nil
+                        v3074 = 1644 - (596 + 1047)
+                    end
+                    if v3074 == (1 + 0) then
+                        if _G.Ox.killerAimbotHighlight then
+                            _G.Ox.killerAimbotHighlight.Parent = nil
+                        end
+                        break
+                    end
+                end
+            end
+            if (v786.UserInputType == Enum.UserInputType.Touch) and (v786 == v106) then
+                _G.Ox.isKillerAimbotHolding = false
+                _G.Ox.lockedKillerAimbotTarget = nil
+                v106 = nil
+                if _G.Ox.killerAimbotHighlight then
+                    _G.Ox.killerAimbotHighlight.Parent = nil
+                end
+            end
+            break
+        end
+    end
+end)
+localPlayer.CharacterAdded:Connect(function()
+    local v788 = 0 + 0
+    while true do
+        if v788 == 0 then
+            task.wait(1.5 - 0)
+            ReapplyPerformanceDelayed()
+            break
+        end
+    end
+end)
+workspace.ChildAdded:Connect(function(v789)
+    if v789.Name == "Map" then
+        task.wait(1 + 0)
+        ReapplyPerformanceDelayed()
+    end
+end)
+task.spawn(function()
+    local v790 = 737 - (185 + 552)
+    while true do
+        if v790 == (0 + 0) then
+            task.wait(603 - (507 + 94))
+            ReapplyPerformanceDelayed()
+            break
+        end
+    end
+end)
+task.spawn(function()
+    local v791 = 0
+    while true do
+        if v791 == 0 then
+            task.wait(8 - 6)
+            if _G.Ox.SetupTrapWatcher then
+                pcall(_G.Ox.SetupTrapWatcher)
+            end
+            break
+        end
+    end
+end)
+v1:Notify({
+    Title = "Choco HUB",
+    Description = "Loaded",
+    Duration = 1 + 2,
+})
