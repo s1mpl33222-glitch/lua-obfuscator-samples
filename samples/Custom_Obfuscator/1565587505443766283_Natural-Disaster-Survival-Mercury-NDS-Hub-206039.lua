@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/celestialkendall/mercuryhub/refs/heads/main/mainnds.lua"))()
