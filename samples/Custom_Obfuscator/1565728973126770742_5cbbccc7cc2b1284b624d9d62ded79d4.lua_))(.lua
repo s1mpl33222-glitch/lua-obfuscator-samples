@@ -1,0 +1,7 @@
+-- Do not save this file
+-- Always use the loadstring
+  _bsdata0={618409032,"=k8FJTtF5ZJoUEUghIUqTURSULOORIr2QXFxPcpK8Zx18Cab.nA4s0tDMK2aG6FaDiDUwxFdVHrQmY1BTcAalwNzvN",1793369338460,"\111\116\76\59\13\55\81\119\42\152\141\105\198\89\46\41","sRlag4H3oIF8Cf0fNvD5O0bUkWfcQ9feBTNbbT7sQUCF_Z70X5wHmLAW_IbTOq.9HOvsXZSorYsvbIXepiR3Q1OE2","wPtClKUoCxIHBZZ6_KjgO2jR6v5rZGRHU_cIME7hjzimkivZuDFFB.faqVp9t8XnttveXe_Z5I7XKASs4Oau3HYCM","d11c4b3a0809ba4ef1511095b4a4362f",622641916,298038503,2286944147,4125482107,1985670524,1292604737,"\110\76\168\143\0\138\164\72\18\236\245\169\68\26\62\146\18\52\68\170\179\147\155\215\47\40\64\34\233\205\143\125\0","\52\78\123\101\120\126\106\142\126\94\232\169\210\242\185\187\241\223\6\209\32\31\55\221\64\168\135\31\156"};
+local f,b,a="static_content_130520","init-v43-siqhdpaq";pcall(function()a=readfile(f.."/init-"..b..".lua")end) if a and #a>2000 then a=loadstring(a) else a=nil; end;
+if a then return a() else pcall(makefolder,f) a=game:HttpGet("https://cdn.xhider.xyz/v4_init_xam.lua"..(_ca920af6193 or "")) writefile(f.."/init-"..b..".lua", a);
+local k,s="init-"..b..".lua",string.char(92) local function c(d)local o,l=pcall(listfiles,d)if not o or type(l)~="table"then return false end for _,v in ipairs(l)do local n=tostring(v):gsub(s,"/"):match("([^/]+)$")if n and n~=k and n:match("^init[%w%-]*%.lua$")then if not pcall(delfile,v)then pcall(delfile,f.."/"..n)end end end return true end if not c(f)then c("./"..f)end
+return loadstring(a)() end
