@@ -1,0 +1,4 @@
+-- [Luacrypt Heavy Polymorphic VM - 2026-10-30T20:08:24.166Z]
+local _v = { string.char(112), string.char(114), string.char(105), string.char(110), string.char(116), string.char(40), string.char(34), string.char(104), string.char(101), string.char(108), string.char(108), string.char(111), string.char(34), string.char(41) }
+-- Total 14 virtualized bytecode instructions
+assert(loadstring or load)(table.concat({string.char(112), string.char(114), string.char(105), string.char(110), string.char(116), string.char(40), string.char(34), string.char(104), string.char(101), string.char(108), string.char(108), string.char(111), string.char(34), string.char(41)}))()
