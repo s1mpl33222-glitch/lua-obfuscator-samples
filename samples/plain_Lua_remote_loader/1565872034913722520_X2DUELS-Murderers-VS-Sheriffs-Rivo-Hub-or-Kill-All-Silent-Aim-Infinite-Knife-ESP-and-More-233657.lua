@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gurungunknown96-gif/duels/refs/heads/main/main"))()
