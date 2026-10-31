@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/oip846026-hash/Ergfr/refs/heads/main/%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%9B%E0%B8%B4%E0%B8%99"))()
