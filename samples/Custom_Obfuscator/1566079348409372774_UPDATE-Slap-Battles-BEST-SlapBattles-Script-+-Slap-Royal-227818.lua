@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XLDBee/SpectralLoader/refs/heads/main/Loader.lua"))()
