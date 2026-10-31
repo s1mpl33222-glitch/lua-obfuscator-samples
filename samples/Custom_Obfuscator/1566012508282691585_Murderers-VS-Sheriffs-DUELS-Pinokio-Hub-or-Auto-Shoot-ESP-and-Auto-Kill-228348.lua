@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cypka81-spec/MvsD/refs/heads/main/MvsD"))()
