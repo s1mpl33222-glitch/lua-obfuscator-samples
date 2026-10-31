@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://gitlab.com/azulacs/catware-turbo-soccer/-/raw/main/catware.lua"))()
