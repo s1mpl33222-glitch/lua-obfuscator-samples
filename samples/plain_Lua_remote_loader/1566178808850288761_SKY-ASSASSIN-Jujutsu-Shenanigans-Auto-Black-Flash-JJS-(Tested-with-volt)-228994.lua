@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AntiByfronClub/Auto-Black-Flash/refs/heads/main/Main.luau"))()
